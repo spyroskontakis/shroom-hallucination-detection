@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "frozen_utc": "2026-09-11T09:09:26.365970+00:00",
+  "files": {
+    "features/e6_v4_new_7_features.csv": "92347405ec404c37798c60ee98dde8f2f047048d7e285050966da7da2e3bbb67",
+    "features/e6_v4_43_features.csv": "a929027509db076742fd6acf005787e11d0e0ef0e44c7cd7332a5bacfc69e1a9",
+    "features/truncation_audit.csv": "bf62f5e928defe7f0616047520ff3e2897e5ee8265934369fb18cde8f62f1a2d",
+    "execution/extraction_contracts.json": "7ad0c49549b93d694eeb66950106505e66e678563b53000b79daca002faa1f81"
+  },
+  "rows": 561,
+  "features": 43,
+  "RF_fits": 0
+}

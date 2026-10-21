@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "read-only publication audit; zero new fits or inference",
+  "experiment": "E6-v4",
+  "result": {
+    "n": 561,
+    "correct": 468,
+    "accuracy": 0.8342245989304813,
+    "spearman": 0.7820211175136652
+  },
+  "paired": {
+    "corrections": 1,
+    "regressions": 7,
+    "net": -6,
+    "accuracy_difference": -0.0106951871657754,
+    "mcnemar": 0.0703125,
+    "ci_pp": [
+      -2.13903743315508,
+      -0.17825311942959002
+    ]
+  },
+  "protected_files_unchanged": 1784,
+  "completed_evaluations": 1,
+  "historical_RF_fits": 5,
+  "historical_network_attempts": 0,
+  "official_test_access": false,
+  "baseline_E6_v3": {
+    "n": 561,
+    "correct": 474,
+    "accuracy": 0.8449197860962567,
+    "spearman": 0.7816945786401444
+  },
+  "frozen_artifacts_modified": false,
+  "secret_findings": 0,
+  "staged_files_over_50MB": 0,
+  "inventory_classes": {
+    "A": 42,
+    "B": 1630,
+    "C": 45
+  },
+  "row_features_predictions_publication": "local-only; existing repository policy unchanged",
+  "local_inventory_sha256": "1e96bf85a0fb18cd6e1dbdff0bd279a4222a51a69dd5430af65ff8e6b37af996",
+  "E6_v3_commit_tag": "not present; separate future freezing required"
+}

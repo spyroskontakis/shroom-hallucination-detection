@@ -1,0 +1,58 @@
+{
+  "fold_id": 5,
+  "training_ids_sha256": "d82ebfc48e074fb339aea16e40ea80218d98286f0482a2d8ef0d007f3d861a89",
+  "heldout_rows": 112,
+  "human_training_rows": 445,
+  "human_class_counts": {
+    "0": 245,
+    "1": 200
+  },
+  "eligible_unlabeled": 28615,
+  "removed_by_leakage_purge": 34,
+  "per_task": {
+    "DM": {
+      "eligible": 9992,
+      "accepted_H": 0,
+      "accepted_NH": 0,
+      "retained_H": 0,
+      "retained_NH": 0
+    },
+    "MT": {
+      "eligible": 8624,
+      "accepted_H": 41,
+      "accepted_NH": 0,
+      "retained_H": 0,
+      "retained_NH": 0
+    },
+    "PG": {
+      "eligible": 9999,
+      "accepted_H": 0,
+      "accepted_NH": 0,
+      "retained_H": 0,
+      "retained_NH": 0
+    }
+  },
+  "accepted_before_balancing": 41,
+  "retained_after_balancing": 0,
+  "uncertain_discarded": 28574,
+  "accepted_removed_by_balancing": 41,
+  "retained_p_H_H": {
+    "min": null,
+    "median": null,
+    "max": null
+  },
+  "retained_p_H_NH": {
+    "min": null,
+    "median": null,
+    "max": null
+  },
+  "teacher_converged": true,
+  "teacher_n_iter": [
+    20
+  ],
+  "teacher_warning_types": [
+    "FutureWarning"
+  ],
+  "eligibility_source": "fold_5_eligibility.jsonl",
+  "eligibility_source_sha256": "8ed5b5fbe1a2b3b47dbcd07bc76b1cf4bf0badfa8cfb4b4e59460e8f94fc64b4"
+}

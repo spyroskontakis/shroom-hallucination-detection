@@ -1,0 +1,254 @@
+# E11-C pretraining audit
+
+PASS before any model fit. Fixed one-epoch synthetic stage and unchanged five-epoch E11-A human stage.
+
+```json
+{
+  "status": "PASS",
+  "model_fits": 0,
+  "teacher_pool": 11887,
+  "hallucination": 5111,
+  "not_hallucination": 6776,
+  "uncertain_excluded": 109,
+  "technical_failures_excluded": 4,
+  "Azure_rescue_excluded": 4,
+  "duplicate_candidate_ids": 0,
+  "duplicate_input_exclusions": 82,
+  "folds": {
+    "1": {
+      "synthetic_rows": 11787,
+      "leakage_exclusions": 18,
+      "reasons": {
+        "hyp": 4,
+        "reference": 14,
+        "tgt": 13,
+        "source_pair": 8,
+        "src": 9
+      },
+      "class_counts": {
+        "1": 5088,
+        "0": 6699
+      },
+      "per_task": {
+        "DM": {
+          "1": 2771,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1034,
+          "0": 2887
+        },
+        "PG": {
+          "0": 2675,
+          "1": 1283
+        }
+      },
+      "human_train_rows": 448,
+      "heldout_rows": 113,
+      "files_sha256": {
+        "synthetic.jsonl": "663a2d1750ee96efa491634f4b65c41838b33e6997c282ce20a1480f93f12774",
+        "leakage_exclusions.jsonl": "cdfbd6c09906418f2ca6ed308416f7a13e360d10dd7a52121474824375dd4610",
+        "train.jsonl": "e0b37488f5008b0eccbed5c5cca904be90c22e23513042851c504aacf5850ed7",
+        "heldout.jsonl": "cb525a485a0d784e6d90419854caa6968bad6000daec399cabb00a253889e84e"
+      }
+    },
+    "2": {
+      "synthetic_rows": 11791,
+      "leakage_exclusions": 14,
+      "reasons": {
+        "hyp": 3,
+        "reference": 12,
+        "tgt": 12,
+        "source_pair": 5,
+        "src": 5
+      },
+      "class_counts": {
+        "1": 5088,
+        "0": 6703
+      },
+      "per_task": {
+        "DM": {
+          "1": 2767,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1037,
+          "0": 2890
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "d4509851a728f6a9620d54cdee700dc033503be87ea1e9019967502395e81f2a",
+        "leakage_exclusions.jsonl": "78c139306b996cd8922119e1dec0b3258bb160d7dfbd28fb9bf1212273008863",
+        "train.jsonl": "cf9900870c34566313a247cee6f1496962a0a9c77cbd874efe831aabe596ef73",
+        "heldout.jsonl": "04bac826ad3618a4f6d7bd560b07ea572ef184fd95ef22a77a12c4c69276ba3f"
+      }
+    },
+    "3": {
+      "synthetic_rows": 11795,
+      "leakage_exclusions": 10,
+      "reasons": {
+        "hyp": 2,
+        "reference": 9,
+        "tgt": 9,
+        "source_pair": 7,
+        "src": 7
+      },
+      "class_counts": {
+        "1": 5097,
+        "0": 6698
+      },
+      "per_task": {
+        "DM": {
+          "1": 2773,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1040,
+          "0": 2885
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "1eb1b8a5a6464cea0a3e755b7550e0cd52b8a85a34f1884be81b277797be257d",
+        "leakage_exclusions.jsonl": "ec77dfea73fed2a56b68e31c38a89df691d593b6caa51cac5b02b9223568c792",
+        "train.jsonl": "deaae989155e6d6424d56083e9560fb811cdd62f6cabc53406cef536528bacf6",
+        "heldout.jsonl": "cc68e546d654dff5d54531d3a9489aaf1382cbca409ce92cd73a16f2aba79caa"
+      }
+    },
+    "4": {
+      "synthetic_rows": 11787,
+      "leakage_exclusions": 18,
+      "reasons": {
+        "hyp": 6,
+        "reference": 14,
+        "tgt": 14,
+        "source_pair": 8,
+        "src": 8
+      },
+      "class_counts": {
+        "1": 5089,
+        "0": 6698
+      },
+      "per_task": {
+        "DM": {
+          "1": 2769,
+          "0": 1136
+        },
+        "MT": {
+          "1": 1036,
+          "0": 2886
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "c6d80a04a28f4fd5dd40e63915bacc55b7604eb46ef1173dbbb55f0fbf87df40",
+        "leakage_exclusions.jsonl": "a9f9641bd836b70ad82a63cd8b7c9767a5b6b6502be0be5d50e0bc9f0c6639e4",
+        "train.jsonl": "7209bfa5c08e452cb9b8cafbe70c8746a8895c7c167671d30fe01565ec74bf56",
+        "heldout.jsonl": "4574e4fa0da93159374900f0507a4b82b0f9830ce997ced55d257ed3eb5fc08a"
+      }
+    },
+    "5": {
+      "synthetic_rows": 11790,
+      "leakage_exclusions": 15,
+      "reasons": {
+        "hyp": 3,
+        "reference": 12,
+        "tgt": 12,
+        "source_pair": 7,
+        "src": 8
+      },
+      "class_counts": {
+        "1": 5091,
+        "0": 6699
+      },
+      "per_task": {
+        "DM": {
+          "1": 2772,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1035,
+          "0": 2886
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "0b2644acc6fbb3669351ad49436ae291db6b0f2adf9479759106ebd410f906fa",
+        "leakage_exclusions.jsonl": "3b47a4e7da93b57ddb110c7d137ac192de45582d1b2b415fc60743e52908a7a6",
+        "train.jsonl": "3e98dde7cac2a2e680e009c268eac06be954d145a7106399f7f54ee7f244a16a",
+        "heldout.jsonl": "c6e077914aa412551bd2830fd64eada8f1d2a1cf68a02bd35cdc751ae90c9e7e"
+      }
+    }
+  },
+  "E11A": {
+    "n": 561,
+    "correct": 460,
+    "accuracy": 0.8199643493761141,
+    "spearman": 0.7172565081322899,
+    "confusion_matrix": [
+      [
+        261,
+        46
+      ],
+      [
+        55,
+        199
+      ]
+    ],
+    "precision": 0.8122448979591836,
+    "recall": 0.7834645669291339,
+    "f1": 0.7975951903807615
+  },
+  "E10": {
+    "n": 561,
+    "correct": 475,
+    "accuracy": 0.8467023172905526,
+    "spearman": 0.7828092941190203
+  },
+  "protocol_sha256": "93f031c7b0b76cd01f2c9babd57d6f68b8b2a504d604064c198d423541409c0e",
+  "provenance": "Synthetic sample_key and source_row_index validated against hash-anchored unlabeled master and raw-source digest; human canonical IDs, source_split/row index and text are from hash-anchored canonical manifest. Split-scoped row indices are not cross-split identifiers.",
+  "leakage_limit": "Conservative exact normalized content/source matching; undocumented upstream semantic derivations cannot be proven absent. No cross-split upstream source IDs are supplied.",
+  "E11A_control": {
+    "protocol": "RAG\\results\\phase3_e11_task_adaptation\\E11A_TRAINING_PROTOCOL.json",
+    "training_code": "RAG\\results\\phase3_e11_task_adaptation\\e11a_train_fold.py",
+    "evaluation_code": "RAG\\results\\phase3_e11_task_adaptation\\e11a_results\\assemble_e11a_results.py"
+  },
+  "folds_identical_to_E11A": true,
+  "teacher_artifacts_unchanged": true,
+  "official_test_access": false,
+  "tests_passed": 78,
+  "tests": {
+    "teacher": "c9863eebc18b38de4db6cba9aa5bae1d089ecf5536e1a26f57ebff271e25419e",
+    "e11": "62eddbe052404837267914b1079ac1b6204d07b7f612e5fecccf3a5947fc412c",
+    "training": "040b2e167374842527077583e2c1d787bf476adeba920f8847d5d9cdf3bac78b"
+  },
+  "runtime_code_sha256": {
+    "train_stages.py": "a56ccc2a4a794d9b332d97facf9b3ee0402a609e798b84e8033003c45dfd9be2",
+    "modal_training.py": "b4ae59dfad64657581d6c071106f71bde2971f30045101105367701689132c99",
+    "prepare_training.py": "75db84281923eb6245ca54d8388dff26fac6e3f06f514126190c5b8153e8b0bf",
+    "test_training.py": "8dd83ce3322caa14e8a7b9e0646331365275e02baf2bbc188e0a7c0123829f6e",
+    "evaluate_training.py": "16fa160e012996332a45bb9bf7727231ec5d6fa1517c53dd5d0ca98e81faad2c"
+  }
+}
+```

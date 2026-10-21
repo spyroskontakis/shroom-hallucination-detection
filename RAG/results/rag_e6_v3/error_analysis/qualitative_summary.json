@@ -1,0 +1,64 @@
+{
+  "high_nli_and_hhem_common_false_negatives": 22,
+  "common_false_negatives": 40,
+  "high_signal_ids": [
+    "HDEV_0012_ee4bd6b64576",
+    "HDEV_0046_3e012854564a",
+    "HDEV_0123_7aff2b4aa5cd",
+    "HDEV_0124_a7534fc3e3f8",
+    "HDEV_0160_0aa56695a651",
+    "HDEV_0185_f90c56d6efe5",
+    "HDEV_0211_9d6941b2190e",
+    "HDEV_0214_6a1a853abe66",
+    "HDEV_0300_76ca00f11dcd",
+    "HDEV_0324_77c2f5bdb4f0",
+    "HDEV_0350_ed417a3f5146",
+    "HDEV_0356_ae45ab1eb081",
+    "HDEV_0357_90fedf8730d4",
+    "HDEV_0372_ecdd3b2cd11d",
+    "HDEV_0374_6549d0f50730",
+    "HDEV_0389_fe527c2f211a",
+    "HDEV_0443_fe65c7fd6a4c",
+    "HDEV_0448_0e9041f51dba",
+    "HDEV_0452_e0e32cb329e4",
+    "HDEV_0477_7ae14330fe6f",
+    "HDEV_0484_13ea852c4bbb",
+    "HDEV_0531_581fed84fb7e"
+  ],
+  "tags_reviewed97": {
+    "form_reference": 24,
+    "label_tension": 45,
+    "sense_context": 33,
+    "omission_generality": 34,
+    "evidence_mismatch": 6,
+    "relation_scope": 31,
+    "addition_specificity": 15,
+    "pragmatic_fluency": 19
+  },
+  "tags_common78": {
+    "form_reference": 20,
+    "label_tension": 39,
+    "sense_context": 28,
+    "omission_generality": 28,
+    "evidence_mismatch": 5,
+    "relation_scope": 26,
+    "addition_specificity": 12,
+    "pragmatic_fluency": 12
+  },
+  "changes_both_margins_le_0_10": 13,
+  "changes_at_least_one_margin_le_0_10": 19,
+  "same_tgt_hyp_groups": [
+    [
+      [
+        "HDEV_0150_3f30690a6d38",
+        5,
+        "v3_corrected"
+      ],
+      [
+        "HDEV_0498_901cecdbe33b",
+        4,
+        "both_wrong"
+      ]
+    ]
+  ]
+}

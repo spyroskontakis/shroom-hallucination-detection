@@ -1,0 +1,21 @@
+{
+  "baseline": {
+    "additional_baseline_verification_fits": 0,
+    "binary_and_rounded_predictions_equal": true,
+    "fresh_e7_e6_max_absolute_difference": 4.440892098500626e-16,
+    "metrics": {
+      "accuracy": 0.8074866310160428,
+      "correct": 453,
+      "n": 561,
+      "spearman": 0.744420539373989
+    },
+    "status": "PASS"
+  },
+  "c0_identity": "PASS",
+  "completed_utc": "2026-09-10T07:18:37.996511+00:00",
+  "real_estimator_fits": 0,
+  "real_input_alignment": "PASS",
+  "runtime_thread_smoke": "PASS",
+  "status": "PASS",
+  "tests_run": 10
+}

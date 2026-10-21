@@ -1,0 +1,43 @@
+{
+  "duration_seconds": 276.99833730002865,
+  "e5_fused_serialization_max_absolute_difference": 0.0,
+  "files": {
+    "config/ranking_consistency.json": "a12a76c871f02edc11cbf5b7c8bec7c44a64b7a344c274917abd79f1788d7048",
+    "features/e6_25_features.csv": "ee19ec1d875844c222d42faf7e6642d13173d353a257bafc07bebe1e700871ac",
+    "features/e6_added_4_features.csv": "05978f495bd8fbec4cfd3cf7a5e8b8f0e9d4c78cc3086f8de62c59970ce6b776",
+    "features/hyp_inputs_label_free.csv": "8296d217ad263e46c3e2148fc213e5b3af01317f2f3a403d1597a788807f9e38"
+  },
+  "frozen_utc": "2026-09-09T13:44:35.870065+00:00",
+  "network_attempts": 0,
+  "predictors": [
+    "src_ent",
+    "src_neu",
+    "src_con",
+    "tgt_ent",
+    "tgt_neu",
+    "tgt_con",
+    "sim_src_hyp",
+    "sim_tgt_hyp",
+    "sim_src_tgt",
+    "sim_max",
+    "sim_min",
+    "sim_mean",
+    "sim_gap_tgt_src",
+    "sim_hyp_distance_from_truth",
+    "rag_evidence_available",
+    "rag_sense_count",
+    "rag_retrieval_top1_cosine",
+    "rag_target_definition_max_cosine",
+    "rag_target_definition_max_entailment",
+    "rag_target_definition_max_contradiction",
+    "rag_target_definition_max_lexical_overlap",
+    "rag_definition_hyp_cosine",
+    "rag_definition_hyp_entailment",
+    "rag_definition_hyp_neutral",
+    "rag_definition_hyp_contradiction"
+  ],
+  "ranking_sha256": "abf81867dacc2c7d067cd8c762e7c7ee915c9d7643a55c1c365b5c8eff3c635c",
+  "rows": 561,
+  "started_utc": "2026-09-09T13:39:58.871677+00:00",
+  "status": "FEATURE_MATRIX_FROZEN_BEFORE_EVALUATION_LABEL_JOIN"
+}

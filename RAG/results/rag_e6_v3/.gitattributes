@@ -1,0 +1,2 @@
+# Keep frozen hashes exact, including existing CRLF.
+* -text whitespace=trailing-space,space-before-tab,cr-at-eol

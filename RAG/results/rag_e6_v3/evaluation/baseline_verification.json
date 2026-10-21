@@ -1,0 +1,13 @@
+{
+  "canonical_ids_folds": "exact match",
+  "e6_v2_features_unchanged": true,
+  "metrics": {
+    "accuracy": 0.8431372549019608,
+    "correct": 473,
+    "n": 561,
+    "spearman": 0.7775058304756869
+  },
+  "new_baseline_fits": 0,
+  "prediction_and_row_diagnostics_exact": true,
+  "status": "PASS"
+}

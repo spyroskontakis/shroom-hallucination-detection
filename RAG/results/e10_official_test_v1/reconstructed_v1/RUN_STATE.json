@@ -1,0 +1,37 @@
+{
+  "status": "NLI2_RUNNING_OTHER_FEATURES_COMPLETE",
+  "session_id": 24867,
+  "local_pid": 24688,
+  "started_with": "python -B RAG/results/e10_official_test_v1/reconstructed_v1/reconstruct.py",
+  "do_not_duplicate_running_acquisition": true,
+  "CPU_interpreter": "external-artifacts/local-21bb07554028/python.exe",
+  "feature_stages_prepared": [
+    "base14",
+    "rag11",
+    "nli2",
+    "hhem"
+  ],
+  "CPU_inference_started": true,
+  "Modal_started": true,
+  "RF_fits": 0,
+  "test_gold_scored": false,
+  "next": "Wait for reconstruction manifest and coverage; report coverage before feature execution. Run base14 and rag11 on CPU; after rag11 run nli2 and hhem. Print GPU plan, then execute only FactCG on Modal. Freeze all predictions before separate score action.",
+  "reconstruction_complete": true,
+  "CPU_sessions": {
+    "nli2": 35638
+  },
+  "Modal_launch_requested": true,
+  "Modal_session": 30737,
+  "Modal_app_id": "private-service-id-withheld",
+  "Modal_status": "COMPLETED",
+  "FactCG_rows": 1500,
+  "Modal_seconds": 149.35736441612244,
+  "RAG_status": "PASS",
+  "RAG_rows": 1500,
+  "NLI2_session": 35638,
+  "Base14_status": "PASS",
+  "Base14_rows": 1500,
+  "HHEM_started": true,
+  "HHEM_session": 81212,
+  "HHEM_status": "PASS"
+}

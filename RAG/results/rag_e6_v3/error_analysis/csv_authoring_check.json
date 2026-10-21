@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "rows": 561,
+  "columns": 67,
+  "engine": "@oai/artifact-tool",
+  "format": "CSV UTF-8 RFC4180",
+  "all_cells_round_trip": true,
+  "rendering": "not applicable to plain CSV",
+  "null_policy": "empty CSV fields; missing_fields and evidence_available distinguish missing versus score fallback"
+}

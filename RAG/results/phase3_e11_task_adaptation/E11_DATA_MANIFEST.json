@@ -1,0 +1,2652 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-28",
+  "scope": "Read-only development/training-data and protocol audit; no training, pseudo-label generation, API, Modal, RF, or official-test access",
+  "normalization_for_overlap": "Unicode NFC, trim and collapse whitespace; exact sample=(task,src,tgt,hyp), pair=(task,src,tgt)",
+  "canonical_development": {
+    "path": "codex\\canonical_human_development_manifest.csv",
+    "sha256": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "rows": 561,
+    "unique_canonical_ids": 561,
+    "fields": [
+      "canonical_id",
+      "source_split",
+      "original_row_index",
+      "task",
+      "src",
+      "tgt",
+      "hyp",
+      "label",
+      "label_bin",
+      "p_hallucination",
+      "labels",
+      "model",
+      "ref",
+      "exact_text_key",
+      "source_pair_key",
+      "task_reference_key"
+    ],
+    "task_counts": {
+      "DM": 211,
+      "MT": 216,
+      "PG": 134
+    },
+    "label_counts": {
+      "Hallucination": 254,
+      "Not Hallucination": 307
+    },
+    "label_bin_counts": {
+      "0": 307,
+      "1": 254
+    },
+    "source_split_counts": {
+      "development_model_agnostic": 493,
+      "trial": 68
+    },
+    "task_label_counts": {
+      "DM": {
+        "Hallucination": 107,
+        "Not Hallucination": 104
+      },
+      "MT": {
+        "Hallucination": 97,
+        "Not Hallucination": 119
+      },
+      "PG": {
+        "Hallucination": 50,
+        "Not Hallucination": 84
+      }
+    },
+    "reference_indicator_counts_by_task": {
+      "DM:tgt": 211,
+      "MT:either": 216,
+      "PG:either": 134
+    },
+    "task_specific_reference_policy_used_by_E6_E9_E10": {
+      "DM": "tgt",
+      "MT": "tgt",
+      "PG": "src"
+    },
+    "empty_text_fields_by_task": {
+      "src": {
+        "DM": 0,
+        "MT": 0,
+        "PG": 0
+      },
+      "tgt": {
+        "DM": 0,
+        "MT": 0,
+        "PG": 0
+      },
+      "hyp": {
+        "DM": 0,
+        "MT": 0,
+        "PG": 0
+      },
+      "model": {
+        "DM": 211,
+        "MT": 216,
+        "PG": 125
+      }
+    },
+    "duplicate_profile": {
+      "unique_hypotheses": 555,
+      "duplicate_hypothesis_rows": 6,
+      "unique_source_target_pairs": 561,
+      "duplicate_source_target_pair_rows": 0,
+      "unique_exact_samples": 561,
+      "duplicate_exact_sample_rows": 0
+    }
+  },
+  "locked_folds": {
+    "path": "codex\\canonical_fold_assignments.csv",
+    "sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "rows": 561,
+    "ids_match_canonical_in_order": true,
+    "fold_sizes": {
+      "1": 113,
+      "2": 112,
+      "3": 112,
+      "4": 112,
+      "5": 112
+    },
+    "fold_task_counts": {
+      "1": {
+        "DM": 43,
+        "MT": 44,
+        "PG": 26
+      },
+      "2": {
+        "DM": 42,
+        "MT": 43,
+        "PG": 27
+      },
+      "3": {
+        "DM": 42,
+        "MT": 43,
+        "PG": 27
+      },
+      "4": {
+        "DM": 42,
+        "MT": 43,
+        "PG": 27
+      },
+      "5": {
+        "DM": 42,
+        "MT": 43,
+        "PG": 27
+      }
+    },
+    "fold_task_label_strata": {
+      "1": {
+        "DM__0": 21,
+        "DM__1": 22,
+        "MT__0": 24,
+        "MT__1": 20,
+        "PG__0": 16,
+        "PG__1": 10
+      },
+      "2": {
+        "DM__0": 21,
+        "DM__1": 21,
+        "MT__0": 23,
+        "MT__1": 20,
+        "PG__0": 17,
+        "PG__1": 10
+      },
+      "3": {
+        "DM__0": 21,
+        "DM__1": 21,
+        "MT__0": 24,
+        "MT__1": 19,
+        "PG__0": 17,
+        "PG__1": 10
+      },
+      "4": {
+        "DM__0": 21,
+        "DM__1": 21,
+        "MT__0": 24,
+        "MT__1": 19,
+        "PG__0": 17,
+        "PG__1": 10
+      },
+      "5": {
+        "DM__0": 20,
+        "DM__1": 22,
+        "MT__0": 24,
+        "MT__1": 19,
+        "PG__0": 17,
+        "PG__1": 10
+      }
+    },
+    "generation_metadata_path": "codex\\canonical_fold_generation_metadata.json",
+    "generation_metadata_sha256": "1f728364204f20057a47f54e069cf4b0a21b39f54e051fff69dc3120db7a9beb",
+    "no_new_folds_created": true
+  },
+  "candidate_datasets": [
+    {
+      "path": "Trial\\SHROOM_trial-v1.1\\trial-v1.json",
+      "relative_path": "Trial/SHROOM_trial-v1.1/trial-v1.json",
+      "sha256": "8000998423f8beebe2646f4ba0d76eac8f269f32a9a4440b009f153ed39b429a",
+      "role": "trial_human",
+      "rows": 80,
+      "task_counts": {
+        "DM": 36,
+        "MT": 35,
+        "PG": 9
+      },
+      "fields": [
+        "hyp",
+        "ref",
+        "src",
+        "tgt",
+        "model",
+        "task",
+        "labels",
+        "label",
+        "p(Hallucination)"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "labels",
+        "p(Hallucination)"
+      ],
+      "labels_exist": true,
+      "label_origin": "human",
+      "canonical_exact_overlap_rows": 80,
+      "canonical_source_target_pair_overlap_rows": 80,
+      "canonical_hypothesis_overlap_rows": 80,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 80,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 80,
+        "duplicate_source_target_pair_rows": 0,
+        "unique_exact_samples": 80,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 42,
+        "Not Hallucination": 38
+      },
+      "reference_indicator_counts_by_task": {
+        "DM:tgt": 36,
+        "MT:either": 35,
+        "PG:either": 9
+      }
+    },
+    {
+      "path": "Dev\\SHROOM_dev-v2\\val.model-agnostic.json",
+      "relative_path": "Dev/SHROOM_dev-v2/val.model-agnostic.json",
+      "sha256": "5ca9b6400b6dc1a86d69e1b8fa0d121275650f836fdba87fb23784d1d61ce611",
+      "role": "development_model_agnostic_human",
+      "rows": 499,
+      "task_counts": {
+        "DM": 187,
+        "MT": 187,
+        "PG": 125
+      },
+      "fields": [
+        "hyp",
+        "ref",
+        "src",
+        "tgt",
+        "model",
+        "task",
+        "labels",
+        "label",
+        "p(Hallucination)"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "labels",
+        "p(Hallucination)"
+      ],
+      "labels_exist": true,
+      "label_origin": "human",
+      "canonical_exact_overlap_rows": 493,
+      "canonical_source_target_pair_overlap_rows": 494,
+      "canonical_hypothesis_overlap_rows": 494,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 495,
+        "duplicate_hypothesis_rows": 4,
+        "unique_source_target_pairs": 497,
+        "duplicate_source_target_pair_rows": 2,
+        "unique_exact_samples": 498,
+        "duplicate_exact_sample_rows": 1
+      },
+      "label_distribution": {
+        "Hallucination": 218,
+        "Not Hallucination": 281
+      },
+      "reference_indicator_counts_by_task": {
+        "DM:tgt": 187,
+        "MT:either": 187,
+        "PG:either": 125
+      }
+    },
+    {
+      "path": "Dev\\SHROOM_dev-v2\\val.model-aware.v2.json",
+      "relative_path": "Dev/SHROOM_dev-v2/val.model-aware.v2.json",
+      "sha256": "d623b90ee503809a6b331eebccff1ca209f63312c64a2fce3c0e2574779b9a54",
+      "role": "development_model_aware_human",
+      "rows": 501,
+      "task_counts": {
+        "DM": 188,
+        "MT": 188,
+        "PG": 125
+      },
+      "fields": [
+        "hyp",
+        "ref",
+        "src",
+        "tgt",
+        "model",
+        "task",
+        "labels",
+        "label",
+        "p(Hallucination)"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "labels",
+        "p(Hallucination)"
+      ],
+      "labels_exist": true,
+      "label_origin": "human",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 496,
+        "duplicate_hypothesis_rows": 5,
+        "unique_source_target_pairs": 501,
+        "duplicate_source_target_pair_rows": 0,
+        "unique_exact_samples": 501,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 206,
+        "Not Hallucination": 295
+      },
+      "reference_indicator_counts_by_task": {
+        "DM:tgt": 188,
+        "MT:either": 188,
+        "PG:src": 125
+      }
+    },
+    {
+      "path": "Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-agnostic.json",
+      "relative_path": "Unlabeled train/SHROOM_unlabeled-training-data-v2/train.model-agnostic.json",
+      "sha256": "dead22eb9b11bbd5bf8e895d01e11ab517a7a7dcebe82f82c6349a3f235d86a3",
+      "role": "unlabeled_model_agnostic",
+      "rows": 30000,
+      "task_counts": {
+        "DM": 10000,
+        "MT": 10000,
+        "PG": 10000
+      },
+      "fields": [
+        "hyp",
+        "tgt",
+        "src",
+        "ref",
+        "task",
+        "model"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [],
+      "labels_exist": false,
+      "label_origin": "none",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 80,
+      "canonical_hypothesis_overlap_rows": 34,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 27587,
+        "duplicate_hypothesis_rows": 2413,
+        "unique_source_target_pairs": 27787,
+        "duplicate_source_target_pair_rows": 2213,
+        "unique_exact_samples": 28649,
+        "duplicate_exact_sample_rows": 1351
+      },
+      "reference_indicator_counts_by_task": {
+        "DM:tgt": 10000,
+        "MT:either": 10000,
+        "PG:src": 10000
+      }
+    },
+    {
+      "path": "Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-aware.v2.json",
+      "relative_path": "Unlabeled train/SHROOM_unlabeled-training-data-v2/train.model-aware.v2.json",
+      "sha256": "dfe3b6706bb598648e61c3feb667cdd8ab30dd88fc7db98462dfc34927814d54",
+      "role": "unlabeled_model_aware",
+      "rows": 30000,
+      "task_counts": {
+        "DM": 10000,
+        "MT": 10000,
+        "PG": 10000
+      },
+      "fields": [
+        "hyp",
+        "tgt",
+        "src",
+        "ref",
+        "task",
+        "model"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [],
+      "labels_exist": false,
+      "label_origin": "none",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 29360,
+        "duplicate_hypothesis_rows": 640,
+        "unique_source_target_pairs": 30000,
+        "duplicate_source_target_pair_rows": 0,
+        "unique_exact_samples": 30000,
+        "duplicate_exact_sample_rows": 0
+      },
+      "reference_indicator_counts_by_task": {
+        "DM:tgt": 10000,
+        "MT:either": 10000,
+        "PG:src": 10000
+      }
+    },
+    {
+      "path": "codex\\canonical_synthetic_diagnostic_manifest.csv",
+      "relative_path": "codex/canonical_synthetic_diagnostic_manifest.csv",
+      "sha256": "a131a7b2fde22cd65b90729baee1251c501093467039b3fcd92cff75ac63cf90",
+      "role": "canonical_synthetic_diagnostic",
+      "rows": 505,
+      "task_counts": {
+        "DM": 97,
+        "MT": 218,
+        "PG": 190
+      },
+      "fields": [
+        "synthetic_id",
+        "source_csv_row_index",
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "generation_mode",
+        "reference_text",
+        "original_task",
+        "original_src",
+        "original_tgt",
+        "original_hyp",
+        "exact_text_key",
+        "source_pair_key",
+        "task_reference_key",
+        "original_task_reference_key",
+        "sample_id_task_matches_train",
+        "sample_id_src_matches_train",
+        "sample_id_tgt_matches_train",
+        "sample_id_original_hyp_matches_train"
+      ],
+      "id_field": "synthetic_id",
+      "unique_ids": 505,
+      "id_note": "explicit row identifier",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 505,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 380,
+        "duplicate_source_target_pair_rows": 125,
+        "unique_exact_samples": 505,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 252,
+        "Not Hallucination": 253
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 253,
+        "synthetic_hallucination": 252
+      },
+      "unique_unlabeled_source_sample_ids": 380
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\5 samples - augmentation_outputs_vertex\\synthetic_raw_data.csv",
+      "relative_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/synthetic_raw_data.csv",
+      "sha256": "83f79ba69eb25f96d5d5538eaaa134b5a94680ad727ba2420a72c04e09a6f564",
+      "role": "historical_synthetic_5_stage",
+      "rows": 30,
+      "task_counts": {
+        "DM": 10,
+        "MT": 10,
+        "PG": 10
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 15,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 30,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 15,
+        "duplicate_source_target_pair_rows": 15,
+        "unique_exact_samples": 30,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 15,
+        "Not Hallucination": 15
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 15,
+        "synthetic_hallucination": 15
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\5 samples - augmentation_outputs_vertex\\filtered_synthetic_data.csv",
+      "relative_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/filtered_synthetic_data.csv",
+      "sha256": "b7c963dc48650cda4de24525e87998fbc77a98a5b5a21f54ea6b0c163a3f73f1",
+      "role": "historical_synthetic_5_stage",
+      "rows": 20,
+      "task_counts": {
+        "DM": 2,
+        "MT": 10,
+        "PG": 8
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 11,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 20,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 11,
+        "duplicate_source_target_pair_rows": 9,
+        "unique_exact_samples": 20,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 11,
+        "Not Hallucination": 9
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 9,
+        "synthetic_hallucination": 11
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\5 samples - augmentation_outputs_vertex\\filtered_synthetic_data.jsonl",
+      "relative_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/filtered_synthetic_data.jsonl",
+      "sha256": "097bcebe621de2b2390b3faa7948a2671f73e58b991dafc3779077864f888315",
+      "role": "historical_synthetic_5_stage",
+      "rows": 20,
+      "task_counts": {
+        "DM": 2,
+        "MT": 10,
+        "PG": 8
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 11,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 20,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 11,
+        "duplicate_source_target_pair_rows": 9,
+        "unique_exact_samples": 20,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 11,
+        "Not Hallucination": 9
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 9,
+        "synthetic_hallucination": 11
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\5 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.csv",
+      "relative_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.csv",
+      "sha256": "21cd952f37c42b6e0f5015fbf65f4605e0903b4cf174c0f47b79f54375feb2b4",
+      "role": "historical_synthetic_5_stage",
+      "rows": 18,
+      "task_counts": {
+        "DM": 2,
+        "MT": 9,
+        "PG": 7
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 11,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 18,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 11,
+        "duplicate_source_target_pair_rows": 7,
+        "unique_exact_samples": 18,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 9,
+        "Not Hallucination": 9
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 9,
+        "synthetic_hallucination": 9
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\5 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.jsonl",
+      "relative_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.jsonl",
+      "sha256": "b4c91dc59874d78def667dd7c0b2dc6b8e893b6d1b3a2378fe88d553a72886e6",
+      "role": "historical_synthetic_5_stage",
+      "rows": 18,
+      "task_counts": {
+        "DM": 2,
+        "MT": 9,
+        "PG": 7
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 11,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 18,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 11,
+        "duplicate_source_target_pair_rows": 7,
+        "unique_exact_samples": 18,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 9,
+        "Not Hallucination": 9
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 9,
+        "synthetic_hallucination": 9
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\5 samples - augmentation_outputs_vertex\\augmented_training_data.csv",
+      "relative_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/augmented_training_data.csv",
+      "sha256": "54c568885f77a6bf0134453b5dbcc4b515abe74812ea894391411fda4578e140",
+      "role": "historical_synthetic_5_stage",
+      "rows": 98,
+      "task_counts": {
+        "DM": 38,
+        "MT": 44,
+        "PG": 16
+      },
+      "fields": [
+        "task",
+        "src",
+        "tgt",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "synthetic",
+        "reference_text"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 80,
+      "canonical_source_target_pair_overlap_rows": 80,
+      "canonical_hypothesis_overlap_rows": 80,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 98,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 91,
+        "duplicate_source_target_pair_rows": 7,
+        "unique_exact_samples": 98,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 51,
+        "Not Hallucination": 47
+      },
+      "source_type_counts": {
+        "human_labeled": 80,
+        "synthetic_faithful": 9,
+        "synthetic_hallucination": 9
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\20 samples - augmentation_outputs_vertex\\synthetic_raw_data.csv",
+      "relative_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/synthetic_raw_data.csv",
+      "sha256": "7449b0727ce4a2b4be3d260ee1426731b0ce5079052cd08248634c5917b29ae9",
+      "role": "historical_synthetic_20_stage",
+      "rows": 120,
+      "task_counts": {
+        "DM": 40,
+        "MT": 40,
+        "PG": 40
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 60,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 120,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 60,
+        "duplicate_source_target_pair_rows": 60,
+        "unique_exact_samples": 120,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 60,
+        "Not Hallucination": 60
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 60,
+        "synthetic_hallucination": 60
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\20 samples - augmentation_outputs_vertex\\filtered_synthetic_data.csv",
+      "relative_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/filtered_synthetic_data.csv",
+      "sha256": "a735648a5edf329138c61cc54632e353a6e74ea098e088a5af0f601975f585b2",
+      "role": "historical_synthetic_20_stage",
+      "rows": 75,
+      "task_counts": {
+        "DM": 7,
+        "MT": 39,
+        "PG": 29
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 46,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 75,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 46,
+        "duplicate_source_target_pair_rows": 29,
+        "unique_exact_samples": 75,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 44,
+        "Not Hallucination": 31
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 31,
+        "synthetic_hallucination": 44
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\20 samples - augmentation_outputs_vertex\\filtered_synthetic_data.jsonl",
+      "relative_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/filtered_synthetic_data.jsonl",
+      "sha256": "a79043f6c0cc6aff6dfeecc13802dfeb1d4acaa5f209d8b9c8adc029d8df415e",
+      "role": "historical_synthetic_20_stage",
+      "rows": 75,
+      "task_counts": {
+        "DM": 7,
+        "MT": 39,
+        "PG": 29
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 46,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 75,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 46,
+        "duplicate_source_target_pair_rows": 29,
+        "unique_exact_samples": 75,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 44,
+        "Not Hallucination": 31
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 31,
+        "synthetic_hallucination": 44
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\20 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.csv",
+      "relative_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.csv",
+      "sha256": "965d786e148ccbb7bd2dabb44a73897e78c1927aa19647c608d8f22406ca0c71",
+      "role": "historical_synthetic_20_stage",
+      "rows": 62,
+      "task_counts": {
+        "DM": 6,
+        "MT": 33,
+        "PG": 23
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 41,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 62,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 41,
+        "duplicate_source_target_pair_rows": 21,
+        "unique_exact_samples": 62,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 31,
+        "Not Hallucination": 31
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 31,
+        "synthetic_hallucination": 31
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\20 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.jsonl",
+      "relative_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.jsonl",
+      "sha256": "45067c11f935ab5263fe20418f0d350d4eb52af1a5c6d597e31f8a79c42a48d3",
+      "role": "historical_synthetic_20_stage",
+      "rows": 62,
+      "task_counts": {
+        "DM": 6,
+        "MT": 33,
+        "PG": 23
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 41,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 62,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 41,
+        "duplicate_source_target_pair_rows": 21,
+        "unique_exact_samples": 62,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 31,
+        "Not Hallucination": 31
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 31,
+        "synthetic_hallucination": 31
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\20 samples - augmentation_outputs_vertex\\augmented_training_data.csv",
+      "relative_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/augmented_training_data.csv",
+      "sha256": "15430bea4124d8e025b5f82fc0d29bea9a9163163368564d06557fe6611635de",
+      "role": "historical_synthetic_20_stage",
+      "rows": 142,
+      "task_counts": {
+        "DM": 42,
+        "MT": 68,
+        "PG": 32
+      },
+      "fields": [
+        "task",
+        "src",
+        "tgt",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "synthetic",
+        "reference_text"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 80,
+      "canonical_source_target_pair_overlap_rows": 80,
+      "canonical_hypothesis_overlap_rows": 80,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 142,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 121,
+        "duplicate_source_target_pair_rows": 21,
+        "unique_exact_samples": 142,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 73,
+        "Not Hallucination": 69
+      },
+      "source_type_counts": {
+        "human_labeled": 80,
+        "synthetic_faithful": 31,
+        "synthetic_hallucination": 31
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\50 samples - augmentation_outputs_vertex\\synthetic_raw_data.csv",
+      "relative_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/synthetic_raw_data.csv",
+      "sha256": "ec029f0b8a9f654739b326a819476e49d7d80c15bb13a39359003af6c67ffe63",
+      "role": "historical_synthetic_50_stage",
+      "rows": 300,
+      "task_counts": {
+        "DM": 100,
+        "MT": 100,
+        "PG": 100
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 150,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 300,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 150,
+        "duplicate_source_target_pair_rows": 150,
+        "unique_exact_samples": 300,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 150,
+        "Not Hallucination": 150
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 150,
+        "synthetic_hallucination": 150
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\50 samples - augmentation_outputs_vertex\\filtered_synthetic_data.csv",
+      "relative_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/filtered_synthetic_data.csv",
+      "sha256": "5711bbe6b94e2e0720587c78bea557cbecd030450af03723d10c7eedbe0406ac",
+      "role": "historical_synthetic_50_stage",
+      "rows": 198,
+      "task_counts": {
+        "DM": 39,
+        "MT": 86,
+        "PG": 73
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 129,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 198,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 129,
+        "duplicate_source_target_pair_rows": 69,
+        "unique_exact_samples": 198,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 125,
+        "Not Hallucination": 73
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 73,
+        "synthetic_hallucination": 125
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\50 samples - augmentation_outputs_vertex\\filtered_synthetic_data.jsonl",
+      "relative_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/filtered_synthetic_data.jsonl",
+      "sha256": "6f05a4cce20d4ee0639ad7a2cbbbc2cc9cfbf825393ea2001e01c6d7bc478cf9",
+      "role": "historical_synthetic_50_stage",
+      "rows": 198,
+      "task_counts": {
+        "DM": 39,
+        "MT": 86,
+        "PG": 73
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 129,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 198,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 129,
+        "duplicate_source_target_pair_rows": 69,
+        "unique_exact_samples": 198,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 125,
+        "Not Hallucination": 73
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 73,
+        "synthetic_hallucination": 125
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\50 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.csv",
+      "relative_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.csv",
+      "sha256": "ba405a32a5d839e527bf1b01e0977b9f0e56a81d7bd846358448da7df4f0ad6b",
+      "role": "historical_synthetic_50_stage",
+      "rows": 146,
+      "task_counts": {
+        "DM": 31,
+        "MT": 67,
+        "PG": 48
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 104,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 146,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 104,
+        "duplicate_source_target_pair_rows": 42,
+        "unique_exact_samples": 146,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 73,
+        "Not Hallucination": 73
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 73,
+        "synthetic_hallucination": 73
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\50 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.jsonl",
+      "relative_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.jsonl",
+      "sha256": "8045bf9685ba1a653e44c0789394861d8134a502dbffc5ce94b7d14f85a926b2",
+      "role": "historical_synthetic_50_stage",
+      "rows": 146,
+      "task_counts": {
+        "DM": 31,
+        "MT": 67,
+        "PG": 48
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 104,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 146,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 104,
+        "duplicate_source_target_pair_rows": 42,
+        "unique_exact_samples": 146,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 73,
+        "Not Hallucination": 73
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 73,
+        "synthetic_hallucination": 73
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\50 samples - augmentation_outputs_vertex\\augmented_training_data.csv",
+      "relative_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/augmented_training_data.csv",
+      "sha256": "9f297d897876868ffe105b3a8d407a42752194936334c4dd87793c51fe579df5",
+      "role": "historical_synthetic_50_stage",
+      "rows": 226,
+      "task_counts": {
+        "DM": 67,
+        "MT": 102,
+        "PG": 57
+      },
+      "fields": [
+        "task",
+        "src",
+        "tgt",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "synthetic",
+        "reference_text"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 80,
+      "canonical_source_target_pair_overlap_rows": 80,
+      "canonical_hypothesis_overlap_rows": 80,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 226,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 184,
+        "duplicate_source_target_pair_rows": 42,
+        "unique_exact_samples": 226,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 115,
+        "Not Hallucination": 111
+      },
+      "source_type_counts": {
+        "human_labeled": 80,
+        "synthetic_faithful": 73,
+        "synthetic_hallucination": 73
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\200 samples - augmentation_outputs_vertex\\synthetic_raw_data.csv",
+      "relative_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/synthetic_raw_data.csv",
+      "sha256": "2c683c99d75516efae67fa72498669fa90b22f6cc7f15e7e9efb3ccf572007f1",
+      "role": "historical_synthetic_200_stage",
+      "rows": 1200,
+      "task_counts": {
+        "DM": 400,
+        "MT": 400,
+        "PG": 400
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 600,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 4,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 1199,
+        "duplicate_hypothesis_rows": 1,
+        "unique_source_target_pairs": 600,
+        "duplicate_source_target_pair_rows": 600,
+        "unique_exact_samples": 1200,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 600,
+        "Not Hallucination": 600
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 600,
+        "synthetic_hallucination": 600
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\200 samples - augmentation_outputs_vertex\\filtered_synthetic_data.csv",
+      "relative_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data.csv",
+      "sha256": "ae870af9c4120308975ec4f33c98ba3d076caf80e8f07e349754bf41922c9949",
+      "role": "historical_synthetic_200_stage",
+      "rows": 763,
+      "task_counts": {
+        "DM": 153,
+        "MT": 326,
+        "PG": 284
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 521,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 763,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 521,
+        "duplicate_source_target_pair_rows": 242,
+        "unique_exact_samples": 763,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 504,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 504
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\200 samples - augmentation_outputs_vertex\\filtered_synthetic_data.jsonl",
+      "relative_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data.jsonl",
+      "sha256": "0a02e410bdaf59710eeb0f84482c86b8f12cfaf2e3c3ad63fb8eec8f050fb669",
+      "role": "historical_synthetic_200_stage",
+      "rows": 763,
+      "task_counts": {
+        "DM": 153,
+        "MT": 326,
+        "PG": 284
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 521,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 763,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 521,
+        "duplicate_source_target_pair_rows": 242,
+        "unique_exact_samples": 763,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 504,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 504
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\200 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.csv",
+      "relative_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.csv",
+      "sha256": "51ba397e280070496de074bca0b3ec895306f82aeecf8980b3f7e74e83a4a971",
+      "role": "historical_synthetic_200_stage",
+      "rows": 518,
+      "task_counts": {
+        "DM": 99,
+        "MT": 228,
+        "PG": 191
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 390,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 518,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 390,
+        "duplicate_source_target_pair_rows": 128,
+        "unique_exact_samples": 518,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 259,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 259
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\200 samples - augmentation_outputs_vertex\\filtered_synthetic_data_balanced.jsonl",
+      "relative_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.jsonl",
+      "sha256": "e6ff58bdef15b41e913ce652c28987a698bf8540977f6818a519a6a66d5b6b3f",
+      "role": "historical_synthetic_200_stage",
+      "rows": 518,
+      "task_counts": {
+        "DM": 99,
+        "MT": 228,
+        "PG": 191
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 390,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 518,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 390,
+        "duplicate_source_target_pair_rows": 128,
+        "unique_exact_samples": 518,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 259,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 259
+      }
+    },
+    {
+      "path": "codex\\data\\5. Augmentation\\200 samples - augmentation_outputs_vertex\\augmented_training_data.csv",
+      "relative_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/augmented_training_data.csv",
+      "sha256": "9f83663a61f2c210209d6501dba7f77e88d6f6f3f9839246777866ab5beb87d3",
+      "role": "historical_synthetic_200_stage",
+      "rows": 598,
+      "task_counts": {
+        "DM": 135,
+        "MT": 263,
+        "PG": 200
+      },
+      "fields": [
+        "task",
+        "src",
+        "tgt",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "synthetic",
+        "reference_text"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 80,
+      "canonical_source_target_pair_overlap_rows": 81,
+      "canonical_hypothesis_overlap_rows": 80,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 598,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 470,
+        "duplicate_source_target_pair_rows": 128,
+        "unique_exact_samples": 598,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 301,
+        "Not Hallucination": 297
+      },
+      "source_type_counts": {
+        "human_labeled": 80,
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 259
+      }
+    },
+    {
+      "path": "codex\\data\\6. Feature Extraction on Augmented Training Data\\synthetic_raw_data.csv",
+      "relative_path": "codex/data/6. Feature Extraction on Augmented Training Data/synthetic_raw_data.csv",
+      "sha256": "2c683c99d75516efae67fa72498669fa90b22f6cc7f15e7e9efb3ccf572007f1",
+      "role": "historical_synthetic_final_stage",
+      "rows": 1200,
+      "task_counts": {
+        "DM": 400,
+        "MT": 400,
+        "PG": 400
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 600,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 4,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 1199,
+        "duplicate_hypothesis_rows": 1,
+        "unique_source_target_pairs": 600,
+        "duplicate_source_target_pair_rows": 600,
+        "unique_exact_samples": 1200,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 600,
+        "Not Hallucination": 600
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 600,
+        "synthetic_hallucination": 600
+      }
+    },
+    {
+      "path": "codex\\data\\6. Feature Extraction on Augmented Training Data\\filtered_synthetic_data.csv",
+      "relative_path": "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data.csv",
+      "sha256": "ae870af9c4120308975ec4f33c98ba3d076caf80e8f07e349754bf41922c9949",
+      "role": "historical_synthetic_final_stage",
+      "rows": 763,
+      "task_counts": {
+        "DM": 153,
+        "MT": 326,
+        "PG": 284
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 521,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 763,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 521,
+        "duplicate_source_target_pair_rows": 242,
+        "unique_exact_samples": 763,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 504,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 504
+      }
+    },
+    {
+      "path": "codex\\data\\6. Feature Extraction on Augmented Training Data\\filtered_synthetic_data.jsonl",
+      "relative_path": "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data.jsonl",
+      "sha256": "0a02e410bdaf59710eeb0f84482c86b8f12cfaf2e3c3ad63fb8eec8f050fb669",
+      "role": "historical_synthetic_final_stage",
+      "rows": 763,
+      "task_counts": {
+        "DM": 153,
+        "MT": 326,
+        "PG": 284
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 521,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 763,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 521,
+        "duplicate_source_target_pair_rows": 242,
+        "unique_exact_samples": 763,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 504,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 504
+      }
+    },
+    {
+      "path": "codex\\data\\6. Feature Extraction on Augmented Training Data\\filtered_synthetic_data_balanced.csv",
+      "relative_path": "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data_balanced.csv",
+      "sha256": "51ba397e280070496de074bca0b3ec895306f82aeecf8980b3f7e74e83a4a971",
+      "role": "historical_synthetic_final_stage",
+      "rows": 518,
+      "task_counts": {
+        "DM": 99,
+        "MT": 228,
+        "PG": 191
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 390,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 518,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 390,
+        "duplicate_source_target_pair_rows": 128,
+        "unique_exact_samples": 518,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 259,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 259
+      }
+    },
+    {
+      "path": "codex\\data\\6. Feature Extraction on Augmented Training Data\\filtered_synthetic_data_balanced.jsonl",
+      "relative_path": "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data_balanced.jsonl",
+      "sha256": "e6ff58bdef15b41e913ce652c28987a698bf8540977f6818a519a6a66d5b6b3f",
+      "role": "historical_synthetic_final_stage",
+      "rows": 518,
+      "task_counts": {
+        "DM": 99,
+        "MT": 228,
+        "PG": 191
+      },
+      "fields": [
+        "sample_id",
+        "task",
+        "src",
+        "tgt",
+        "reference_text",
+        "original_hyp",
+        "synthetic",
+        "generation_mode",
+        "hyp",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "hyp_tokens",
+        "reference_tokens",
+        "sim_ref_hyp",
+        "label"
+      ],
+      "id_field": "sample_id",
+      "unique_ids": 390,
+      "id_note": "sample_id is an unlabeled-source row index and may repeat across generated variants",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "literal_canonical_id_overlap": 0,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 518,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 390,
+        "duplicate_source_target_pair_rows": 128,
+        "unique_exact_samples": 518,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 259,
+        "Not Hallucination": 259
+      },
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 259
+      }
+    },
+    {
+      "path": "codex\\data\\6. Feature Extraction on Augmented Training Data\\augmented_training_data.csv",
+      "relative_path": "codex/data/6. Feature Extraction on Augmented Training Data/augmented_training_data.csv",
+      "sha256": "9f83663a61f2c210209d6501dba7f77e88d6f6f3f9839246777866ab5beb87d3",
+      "role": "historical_synthetic_final_stage",
+      "rows": 598,
+      "task_counts": {
+        "DM": 135,
+        "MT": 263,
+        "PG": 200
+      },
+      "fields": [
+        "task",
+        "src",
+        "tgt",
+        "hyp",
+        "label",
+        "label_bin",
+        "p_hallucination",
+        "source_type",
+        "synthetic",
+        "reference_text"
+      ],
+      "id_field": null,
+      "unique_ids": null,
+      "id_note": "No explicit row ID; row index is local to this file",
+      "label_fields_present": [
+        "label",
+        "label_bin",
+        "p_hallucination"
+      ],
+      "labels_exist": true,
+      "label_origin": "synthetic_or_heuristic",
+      "canonical_exact_overlap_rows": 80,
+      "canonical_source_target_pair_overlap_rows": 81,
+      "canonical_hypothesis_overlap_rows": 80,
+      "literal_canonical_id_overlap": null,
+      "official_test_id_overlap": null,
+      "duplicates": {
+        "unique_hypotheses": 598,
+        "duplicate_hypothesis_rows": 0,
+        "unique_source_target_pairs": 470,
+        "duplicate_source_target_pair_rows": 128,
+        "unique_exact_samples": 598,
+        "duplicate_exact_sample_rows": 0
+      },
+      "label_distribution": {
+        "Hallucination": 301,
+        "Not Hallucination": 297
+      },
+      "source_type_counts": {
+        "human_labeled": 80,
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 259
+      }
+    }
+  ],
+  "byte_identical_aliases_not_additional_examples": [
+    {
+      "path": "data\\Trial\\SHROOM_trial-v1.1\\trial-v1.json",
+      "same_sha256_as": "Trial\\SHROOM_trial-v1.1\\trial-v1.json",
+      "sha256": "8000998423f8beebe2646f4ba0d76eac8f269f32a9a4440b009f153ed39b429a",
+      "byte_identical": true
+    },
+    {
+      "path": "codex\\data\\Trial\\SHROOM_trial-v1.1\\trial-v1.json",
+      "same_sha256_as": "Trial\\SHROOM_trial-v1.1\\trial-v1.json",
+      "sha256": "8000998423f8beebe2646f4ba0d76eac8f269f32a9a4440b009f153ed39b429a",
+      "byte_identical": true
+    },
+    {
+      "path": "data\\Dev\\SHROOM_dev-v2\\val.model-agnostic.json",
+      "same_sha256_as": "Dev\\SHROOM_dev-v2\\val.model-agnostic.json",
+      "sha256": "5ca9b6400b6dc1a86d69e1b8fa0d121275650f836fdba87fb23784d1d61ce611",
+      "byte_identical": true
+    },
+    {
+      "path": "data\\Dev\\SHROOM_dev-v2\\val.model-aware.v2.json",
+      "same_sha256_as": "Dev\\SHROOM_dev-v2\\val.model-aware.v2.json",
+      "sha256": "d623b90ee503809a6b331eebccff1ca209f63312c64a2fce3c0e2574779b9a54",
+      "byte_identical": true
+    },
+    {
+      "path": "data\\Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-agnostic.json",
+      "same_sha256_as": "Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-agnostic.json",
+      "sha256": "dead22eb9b11bbd5bf8e895d01e11ab517a7a7dcebe82f82c6349a3f235d86a3",
+      "byte_identical": true
+    },
+    {
+      "path": "codex\\data\\Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-agnostic.json",
+      "same_sha256_as": "Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-agnostic.json",
+      "sha256": "dead22eb9b11bbd5bf8e895d01e11ab517a7a7dcebe82f82c6349a3f235d86a3",
+      "byte_identical": true
+    },
+    {
+      "path": "data\\Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-aware.v2.json",
+      "same_sha256_as": "Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-aware.v2.json",
+      "sha256": "dfe3b6706bb598648e61c3feb667cdd8ab30dd88fc7db98462dfc34927814d54",
+      "byte_identical": true
+    },
+    {
+      "path": "codex\\data\\Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-aware.v2.json",
+      "same_sha256_as": "Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-aware.v2.json",
+      "sha256": "dfe3b6706bb598648e61c3feb667cdd8ab30dd88fc7db98462dfc34927814d54",
+      "byte_identical": true
+    },
+    {
+      "path": "data\\filtered_synthetic_data_balanced.csv",
+      "same_sha256_as": "codex\\data\\6. Feature Extraction on Augmented Training Data\\filtered_synthetic_data_balanced.csv",
+      "sha256": "51ba397e280070496de074bca0b3ec895306f82aeecf8980b3f7e74e83a4a971",
+      "byte_identical": true
+    },
+    {
+      "path": "data\\6. Feature Extraction on Augmented Training Data\\e4_synthetic_clean.csv",
+      "same_sha256_as": "codex\\data\\6. Feature Extraction on Augmented Training Data\\filtered_synthetic_data_balanced.csv",
+      "sha256": "51ba397e280070496de074bca0b3ec895306f82aeecf8980b3f7e74e83a4a971",
+      "byte_identical": true
+    }
+  ],
+  "leakage": {
+    "canonical_crossfold_repetition": {
+      "hypothesis": {
+        "repeated_groups": 5,
+        "duplicate_rows": 6,
+        "cross_fold_groups": 3,
+        "cross_fold_rows": 7
+      },
+      "source_target_pair": {
+        "repeated_groups": 0,
+        "duplicate_rows": 0,
+        "cross_fold_groups": 0,
+        "cross_fold_rows": 0
+      },
+      "task_reference": {
+        "repeated_groups": 5,
+        "duplicate_rows": 5,
+        "cross_fold_groups": 3,
+        "cross_fold_rows": 6
+      }
+    },
+    "unlabeled_model_agnostic": {
+      "unique_hypotheses": 27587,
+      "duplicate_hypothesis_rows": 2413,
+      "unique_source_target_pairs": 27787,
+      "duplicate_source_target_pair_rows": 2213,
+      "unique_exact_samples": 28649,
+      "duplicate_exact_sample_rows": 1351,
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 80,
+      "canonical_hypothesis_overlap_rows": 34,
+      "label_fields_present": [],
+      "canonical_task_reference_overlap_rows": 180,
+      "canonical_task_reference_overlap_by_task": {
+        "MT": 125,
+        "DM": 52,
+        "PG": 3
+      }
+    },
+    "unlabeled_model_aware": {
+      "unique_hypotheses": 29360,
+      "duplicate_hypothesis_rows": 640,
+      "unique_source_target_pairs": 30000,
+      "duplicate_source_target_pair_rows": 0,
+      "unique_exact_samples": 30000,
+      "duplicate_exact_sample_rows": 0,
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 0,
+      "canonical_hypothesis_overlap_rows": 0,
+      "label_fields_present": []
+    },
+    "historical_balanced_synthetic": {
+      "unique_hypotheses": 518,
+      "duplicate_hypothesis_rows": 0,
+      "unique_source_target_pairs": 390,
+      "duplicate_source_target_pair_rows": 128,
+      "unique_exact_samples": 518,
+      "duplicate_exact_sample_rows": 0,
+      "canonical_exact_overlap_rows": 0,
+      "canonical_source_target_pair_overlap_rows": 1,
+      "canonical_hypothesis_overlap_rows": 0,
+      "source_type_counts": {
+        "synthetic_faithful": 259,
+        "synthetic_hallucination": 259
+      }
+    },
+    "fold_isolation_count_estimates": {
+      "1": {
+        "validation_human": 113,
+        "training_human_before_reference_purge": 448,
+        "training_human_rows_matching_validation_hypothesis_or_reference": 3,
+        "training_human_after_reference_purge": 445,
+        "unique_unlabeled_agnostic_after_exact_hypothesis_pair_reference_purge": 28575,
+        "unique_unlabeled_agnostic_source_pairs_after_purge": 27716
+      },
+      "2": {
+        "validation_human": 112,
+        "training_human_before_reference_purge": 449,
+        "training_human_rows_matching_validation_hypothesis_or_reference": 1,
+        "training_human_after_reference_purge": 448,
+        "unique_unlabeled_agnostic_after_exact_hypothesis_pair_reference_purge": 28623,
+        "unique_unlabeled_agnostic_source_pairs_after_purge": 27762
+      },
+      "3": {
+        "validation_human": 112,
+        "training_human_before_reference_purge": 449,
+        "training_human_rows_matching_validation_hypothesis_or_reference": 0,
+        "training_human_after_reference_purge": 449,
+        "unique_unlabeled_agnostic_after_exact_hypothesis_pair_reference_purge": 28627,
+        "unique_unlabeled_agnostic_source_pairs_after_purge": 27766
+      },
+      "4": {
+        "validation_human": 112,
+        "training_human_before_reference_purge": 449,
+        "training_human_rows_matching_validation_hypothesis_or_reference": 1,
+        "training_human_after_reference_purge": 448,
+        "unique_unlabeled_agnostic_after_exact_hypothesis_pair_reference_purge": 28611,
+        "unique_unlabeled_agnostic_source_pairs_after_purge": 27753
+      },
+      "5": {
+        "validation_human": 112,
+        "training_human_before_reference_purge": 449,
+        "training_human_rows_matching_validation_hypothesis_or_reference": 4,
+        "training_human_after_reference_purge": 445,
+        "unique_unlabeled_agnostic_after_exact_hypothesis_pair_reference_purge": 28615,
+        "unique_unlabeled_agnostic_source_pairs_after_purge": 27757
+      }
+    },
+    "official_test_overlap_check": {
+      "official_test_content_read": false,
+      "direct_id_overlap_verified": false,
+      "reason": "Raw unlabeled splits have no IDs; no safe current test-ID-only inventory was found.",
+      "historical_metadata_only": {
+        "source": "codex\\evaluation_protocol_decision.md",
+        "canonical_preparation_removed_exact_development_test_rows": 4,
+        "balanced_synthetic_test_source_pair_overlaps_reported": 5,
+        "balanced_synthetic_test_exact_overlaps_reported": 0
+      }
+    },
+    "historical_prediction_outputs_are_not_ground_truth": [
+      "codex/data/6. Feature Extraction on Augmented Training Data/nli_baseline_oof_predictions.csv",
+      "codex/data/6. Feature Extraction on Augmented Training Data/nli_sim_baseline_oof_predictions.csv",
+      "codex/data/7. Ablation Synthetic Data/ablation_predictions.csv",
+      "RAG/results/rag_e6_v3/evaluation/e6_v3_oof_predictions.csv",
+      "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_oof.csv"
+    ],
+    "standalone_pseudo_label_corpus_found": false
+  },
+  "existing_model_infrastructure": {
+    "moritz_deberta_nli": {
+      "model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+      "implementation": "RAG\\results\\rag_e6_v2\\scripts\\nli_backend.py",
+      "implementation_sha256": "b2ab335aa8e856af65db64f6ba141c57090accc96642525cc2467f27e14f0702",
+      "configuration": "RAG\\results\\rag_e6_v2\\config\\run_config.json",
+      "local_model_config": "RAG\\results\\rag_e6_v2\\model\\config.json",
+      "local_model_config_sha256": "7f9d420b616691c5b575bab8839719aefbddc656d8e1316519414b097ce43e3d",
+      "local_weights": "RAG\\results\\rag_e6_v2\\model\\model.safetensors",
+      "architecture": {
+        "model_type": "deberta-v2",
+        "hidden_size": 1024,
+        "num_hidden_layers": 24,
+        "num_attention_heads": 16,
+        "max_position_embeddings": 512,
+        "vocab_size": 128100
+      },
+      "existing_use": "CPU float32 NLI inference, max_length 512, longest_first truncation, batch 2"
+    },
+    "hhem": {
+      "implementation": "RAG\\results\\rag_e6_v3\\scripts\\hhem_backend.py",
+      "implementation_sha256": "84a84df1a75563a57286291276abe91e6b490327a7ca662810c3c410ce0a6cb0",
+      "configuration": "RAG\\results\\rag_e6_v3\\config\\run_config.json",
+      "model_id": "vectara/hallucination_evaluation_model",
+      "revision": "58383384656cbaec2949a75a41f20e891e90a73b"
+    },
+    "factcg": {
+      "implementation": "RAG\\results\\phase3_e9_claim_verification\\factcg_gpu\\factcg_backend.py",
+      "implementation_sha256": "1e72485f9458ffd87ff8503f7ccdbe4fdd19e05f2a3bd0283607f94fb0f4a36e",
+      "manifest": "RAG\\results\\phase3_e9_claim_verification\\factcg_gpu\\GPU_RUN_MANIFEST.json",
+      "model_id": "yaxili96/FactCG-DeBERTa-v3-Large",
+      "revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80"
+    },
+    "minicheck": {
+      "implementation": "RAG\\results\\phase3_e9_claim_verification\\minicheck_gpu\\run_minicheck_gpu.py",
+      "implementation_sha256": "cb140483019a2c9885a3d858ebbfaf8981f52d354f2c108542251d5847bed0ef",
+      "manifest": "RAG\\results\\phase3_e9_claim_verification\\minicheck_gpu\\GPU_RUN_MANIFEST.json",
+      "model_id": "bespokelabs/Bespoke-MiniCheck-7B",
+      "revision": "1ed7786bcda3fa1dc35f7c4ed9e3f36b785d33b8"
+    },
+    "e6_v3": {
+      "evaluator": "RAG\\results\\rag_e6_v3\\scripts\\evaluate_v3.py",
+      "evaluator_sha256": "fd6a041ac07201f702a0927628d01e58060ed4e5ed3d1ab5cc0b9d468a251893",
+      "feature_matrix": "RAG\\results\\rag_e6_v3\\features\\e6_v3_36_features.csv",
+      "feature_matrix_sha256": "1e6386fbd0b89a3a295828259ec8fea9b5b3fc03465d65f82e546687c32e7229",
+      "fold_file": "codex\\canonical_fold_assignments.csv"
+    }
+  },
+  "environment_and_feasibility": {
+    "frozen_local_evaluation_environment": {
+      "python": "3.11.9",
+      "torch": "2.11.0+cpu",
+      "cuda_available": false,
+      "transformers": "5.5.4"
+    },
+    "observed_modal_phase3_gpu": {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "vram_bytes": 85094825984,
+      "compute_capability": [
+        8,
+        0
+      ],
+      "torch": "2.4.0+cu121",
+      "torch_cuda": "12.1",
+      "bf16_preflight_passed": true
+    },
+    "training_hardware_assessment": "A100-80GB should fit DeBERTa-v3-large full fine-tuning at 512 tokens; untested estimate, separate CUDA training environment needed"
+  },
+  "strategies_not_frozen": {
+    "A": {
+      "labeled_training_rows_per_fold_before_purge": [
+        448,
+        449,
+        449,
+        449,
+        449
+      ],
+      "after_hypothesis_reference_purge": [
+        445,
+        448,
+        449,
+        448,
+        445
+      ],
+      "additional_rows": 0
+    },
+    "B": {
+      "eligible_source": "Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-agnostic.json",
+      "raw_rows": 30000,
+      "unique_exact_rows": 28649,
+      "unique_source_pairs": 27787,
+      "fold_specific_unique_exact_after_purge_range": [
+        28575,
+        28627
+      ],
+      "real_pseudo_label_yield_unknown": true
+    },
+    "C": {
+      "historical_canonical_synthetic_rows": 505,
+      "unique_synthetic_ids": 505,
+      "unique_unlabeled_source_ids": 380,
+      "new_generation_count_not_fixed": true
+    }
+  },
+  "prohibitions_observed": {
+    "model_training": false,
+    "pseudo_label_generation": false,
+    "api_calls": false,
+    "modal_gpu_run": false,
+    "random_forest_evaluation": false,
+    "official_1500_test_access": false,
+    "existing_E6_E9_E10_modified": false,
+    "commit": false,
+    "push": false
+  },
+  "content_duplicate_groups_not_independent_datasets": [
+    {
+      "sha256": "2c683c99d75516efae67fa72498669fa90b22f6cc7f15e7e9efb3ccf572007f1",
+      "paths": [
+        "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/synthetic_raw_data.csv",
+        "codex/data/6. Feature Extraction on Augmented Training Data/synthetic_raw_data.csv"
+      ]
+    },
+    {
+      "sha256": "ae870af9c4120308975ec4f33c98ba3d076caf80e8f07e349754bf41922c9949",
+      "paths": [
+        "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data.csv",
+        "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data.csv"
+      ]
+    },
+    {
+      "sha256": "0a02e410bdaf59710eeb0f84482c86b8f12cfaf2e3c3ad63fb8eec8f050fb669",
+      "paths": [
+        "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data.jsonl",
+        "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data.jsonl"
+      ]
+    },
+    {
+      "sha256": "51ba397e280070496de074bca0b3ec895306f82aeecf8980b3f7e74e83a4a971",
+      "paths": [
+        "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.csv",
+        "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data_balanced.csv"
+      ]
+    },
+    {
+      "sha256": "e6ff58bdef15b41e913ce652c28987a698bf8540977f6818a519a6a66d5b6b3f",
+      "paths": [
+        "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/filtered_synthetic_data_balanced.jsonl",
+        "codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data_balanced.jsonl"
+      ]
+    },
+    {
+      "sha256": "9f83663a61f2c210209d6501dba7f77e88d6f6f3f9839246777866ab5beb87d3",
+      "paths": [
+        "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/augmented_training_data.csv",
+        "codex/data/6. Feature Extraction on Augmented Training Data/augmented_training_data.csv"
+      ]
+    }
+  ]
+}

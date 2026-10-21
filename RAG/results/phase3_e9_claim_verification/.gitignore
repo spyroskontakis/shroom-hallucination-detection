@@ -1,0 +1,37 @@
+# Row-level data and caches remain local under the existing publication policy.
+claims/
+features/
+evaluation/*_oof.csv
+evaluation/fit_*.json
+tests/tmp/
+__pycache__/
+
+# PHASE 3D: exact reviewed publication-inventory exceptions only.
+!/evaluation/
+!/evaluation/fit_E9-A_1.json
+!/evaluation/fit_E9-A_1_started.json
+!/evaluation/fit_E9-A_2.json
+!/evaluation/fit_E9-A_2_started.json
+!/evaluation/fit_E9-A_3.json
+!/evaluation/fit_E9-A_3_started.json
+!/evaluation/fit_E9-A_4.json
+!/evaluation/fit_E9-A_4_started.json
+!/evaluation/fit_E9-A_5.json
+!/evaluation/fit_E9-A_5_started.json
+!/evaluation/fit_E9-B_1.json
+!/evaluation/fit_E9-B_1_started.json
+!/evaluation/fit_E9-B_2.json
+!/evaluation/fit_E9-B_2_started.json
+!/evaluation/fit_E9-B_3.json
+!/evaluation/fit_E9-B_3_started.json
+!/evaluation/fit_E9-B_4.json
+!/evaluation/fit_E9-B_4_started.json
+!/evaluation/fit_E9-B_5.json
+!/evaluation/fit_E9-B_5_started.json
+!/features/
+!/features/E9-A_freeze.json
+!/features/E9-B_freeze.json
+!/features/e10_return/
+!/features/e10_return/E10_freeze.json
+!/features/minicheck_return/
+!/features/minicheck_return/E9-B_freeze.json

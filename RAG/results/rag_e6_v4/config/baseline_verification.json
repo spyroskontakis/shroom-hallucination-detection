@@ -1,0 +1,21 @@
+{
+  "fold_counts": {
+    "1": 113,
+    "2": 112,
+    "3": 112,
+    "4": 112,
+    "5": 112
+  },
+  "ids_folds_labels_predictions_exact": true,
+  "metrics": {
+    "accuracy": 0.8449197860962567,
+    "correct": 474,
+    "n": 561,
+    "spearman": 0.7816945786401444
+  },
+  "new_baseline_fits": 0,
+  "saved_feature_matrix_sha256": "1e6386fbd0b89a3a295828259ec8fea9b5b3fc03465d65f82e546687c32e7229",
+  "source_36_features_verified": true,
+  "status": "PASS",
+  "v4_combined_matrix_exists": false
+}

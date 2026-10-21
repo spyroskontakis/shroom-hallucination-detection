@@ -1,0 +1,409 @@
+[
+  {
+    "git_object_id": "adbd78c365bf75fdf843534d87745d15107c9557",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py",
+    "original_sha256": "16fa160e012996332a45bb9bf7727231ec5d6fa1517c53dd5d0ca98e81faad2c",
+    "current_sha256": "84d43f3844f6ff66787fc8aec7bdfba2203554af951aa1ded2911e448ddaf99f",
+    "public_path": "historical_versions/adbd78c365bf75fdf843534d87745d15107c9557/RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "E11-C evaluation before checkpoint verification/collapse checks and resumed-run provenance.",
+    "changed_definitions": [
+      "evaluate"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "5629dae9079e1f185da40f82e99e054e113e279f",
+    "original_path": "RAG/results/phase3_e9_claim_verification/scripts/evaluate.py",
+    "original_sha256": "680d24f2e2c6095bcc2ae192dfe7912601ac6021817b98e06fe51ac8527c8521",
+    "current_sha256": "f70209db783c39ca18716ef838f95cbfc6d016a4c7af2caef444f06653ddded3",
+    "public_path": "historical_versions/5629dae9079e1f185da40f82e99e054e113e279f/RAG/results/phase3_e9_claim_verification/scripts/evaluate.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "E9 evaluation before feature-freeze validation and per-fit array provenance.",
+    "changed_definitions": [
+      "evaluate"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "584d72a776a4a6691a5b5a49084828872721349b",
+    "original_path": "RAG/results/phase3_e9_claim_verification/scripts/nli_features.py",
+    "original_sha256": "b2378a57251f1a6d71c2138d13bb265b5487006d10ecae4cd152928d07236c64",
+    "current_sha256": "95c431086e6ac33948101b82b3dbc2efa8c5af9cde42a7ea7b03e8be0573f647",
+    "public_path": "historical_versions/584d72a776a4a6691a5b5a49084828872721349b/RAG/results/phase3_e9_claim_verification/scripts/nli_features.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Initial E9 NLI extraction before decomposition freeze and input hashing.",
+    "changed_definitions": [
+      "main"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "4c41eba009de5ca6b36970128b1a287b4aa48536",
+    "original_path": "RAG/results/phase3_e9_claim_verification/tests/test_e9.py",
+    "original_sha256": "4722890b1ca84fa66834de4ae5ada87ce1c41e02c9262daca7abc7e8d74b5455",
+    "current_sha256": "d93aa3a6c666584a19a2ba1c489ccab4f6a221c23cace0fafa919153aab1d49d",
+    "public_path": "historical_versions/4c41eba009de5ca6b36970128b1a287b4aa48536/RAG/results/phase3_e9_claim_verification/tests/test_e9.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Earlier decomposition test schema, selection semantics and regression fixtures.",
+    "changed_definitions": [
+      "Contracts",
+      "setUp"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "9cc676467a61566ed5ac0b6a86918be0d207f1b8",
+    "original_path": "RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
+    "original_sha256": "0382c1ec8acca7ea06fa5a903ab4420b9ee238703b9de0b5b1f5e333de165a3c",
+    "current_sha256": "df4d53072af0042353531886d4ad77ee7e95ef73feeb49cac6d06aa6ddd558fb",
+    "public_path": "historical_versions/9cc676467a61566ed5ac0b6a86918be0d207f1b8/RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Earlier Modal package layout and 102400 MiB ephemeral disk instead of 524288 MiB.",
+    "changed_definitions": [
+      "run_phase3"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "1a40378cf2387f5298c5a518013377b8a7207dcc",
+    "original_path": "RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
+    "original_sha256": "7ca36c6b8e132f19e6dc4a8dc2bcec7572287781b4e5669a603451bc0ab8fd23",
+    "current_sha256": "df4d53072af0042353531886d4ad77ee7e95ef73feeb49cac6d06aa6ddd558fb",
+    "public_path": "historical_versions/1a40378cf2387f5298c5a518013377b8a7207dcc/RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Intermediate Modal layout using /opt/phase3 with the later disk setting.",
+    "changed_definitions": [],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "bffe88699a68e555820cfc6d9c90ee4790144242",
+    "original_path": "RAG/results/phase3_e9_claim_verification/scripts/nli_features.py",
+    "original_sha256": "ad75949055980b7e9b4943ba9b856f607e08c1877d119eb04fa6c04839ad0a9f",
+    "current_sha256": "95c431086e6ac33948101b82b3dbc2efa8c5af9cde42a7ea7b03e8be0573f647",
+    "public_path": "historical_versions/bffe88699a68e555820cfc6d9c90ee4790144242/RAG/results/phase3_e9_claim_verification/scripts/nli_features.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Intermediate frozen E9 features before per-pair input hashes.",
+    "changed_definitions": [
+      "main"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "18675dcdd946dfcdc3ab0394e53cfa03360759e1",
+    "original_path": "RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py",
+    "original_sha256": "6027820755f394ccd9e85ea73c19bc8a1fd2bbd5a0d633e4af72393747c63e52",
+    "current_sha256": "dcc6f45f87820f52e551af0509c769798597c282fc23b4985749ba0db7f4c791",
+    "public_path": "historical_versions/18675dcdd946dfcdc3ab0394e53cfa03360759e1/RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Earlier transport without serialized spacing and completed-response replay; preserves failed-attempt behavior.",
+    "changed_definitions": [
+      "caller",
+      "main",
+      "worker"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "64d236b32d6edd87323175c865ea8f18d4549800",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py",
+    "original_sha256": "3a1f5fe252c5dc3c8de25ffa767502242357cc2a60fd87182fd701ad0364488d",
+    "current_sha256": "f1dc79d87d1b4b1cbf52e8a1aca422666e318d15d631e892b82be9b6fbbff513",
+    "public_path": "historical_versions/64d236b32d6edd87323175c865ea8f18d4549800/RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Original teacher-protocol root and GPU-manifest resolution before portability correction.",
+    "changed_definitions": [
+      "main"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "bfe9692af66c955d8bee07340bd5feecd7ccf191",
+    "original_path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+    "original_sha256": "9bdcd7805c430547712010d77be94af5f6e14eccb03b77595b18b40cc79055cc",
+    "current_sha256": "38a1eb0fb6f6b456a50bb021bc0cc2d5fd313f606068eaa84eb8eacd1f8c49e7",
+    "public_path": "historical_versions/bfe9692af66c955d8bee07340bd5feecd7ccf191/RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Uses decomposer instead of decomposer_v1; distinct implementation dependency.",
+    "changed_definitions": [],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "5d09d8ce13bada7ad74d065d90c35c5251dd0eb4",
+    "original_path": "RAG/results/rag_e7_agentic_v1/scripts/e7_common.py",
+    "original_sha256": "1e0c503d1fc9539dda727d209aeaec53fb01ab45d7ce9fee21583288d12544e1",
+    "current_sha256": "e498ef2d09c15dd79463a60474ec64b61aa1bb8d5464a50707ed507c519cdc85",
+    "public_path": "historical_versions/5d09d8ce13bada7ad74d065d90c35c5251dd0eb4/RAG/results/rag_e7_agentic_v1/scripts/e7_common.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Original E7 access guard before Windows shell-probe handling and expanded diagnostics.",
+    "changed_definitions": [
+      "AccessGuard",
+      "__init__",
+      "hook",
+      "offline"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "4902cddb409eedb61c1d791ad3ff7a73b470ba3a",
+    "original_path": "RAG/results/rag_e7_agentic_v1/scripts/preflight.py",
+    "original_sha256": "673410ce34a1647d637b2c9a78ae84e614817e698598a0d4c2a68a96f9340308",
+    "current_sha256": "915cd943284c7d2eb4ba4391e6dc605917a7535f5659bdee6de5ac69382cc525",
+    "public_path": null,
+    "decision": "PRIVATE_SUPERSEDED_NO_UNIQUE_FUNCTIONALITY",
+    "comparison": "Only guard phase label changed; executable procedure and assertions unchanged.",
+    "changed_definitions": [],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "4324fa258b7cbb077dc12b2db1c7640d2bbef1cf",
+    "original_path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/tests/test_mpnet_provenance_static.py",
+    "original_sha256": "f89a6071dbd312f5a5a5cf471824ebb4303d80f7a1b403978b8b834714af189e",
+    "current_sha256": null,
+    "public_path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/tests/test_mpnet_provenance_static.py",
+    "decision": "PUBLIC_FUNCTIONAL_TEST",
+    "comparison": "Unique absent AST tests for pinned MPNet revision and local_files_only; restore at original functional path.",
+    "changed_definitions": [],
+    "historical_only_definitions": [
+      "MpnetProvenanceStaticTests",
+      "parse_script",
+      "test_mpnet_revision_constant_is_pinned",
+      "test_sentence_transformer_uses_pinned_revision_and_local_files_only"
+    ],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "ee74fe504276271fc66a73965126b5ced3df997c",
+    "original_path": "RAG/results/rag_e7_agentic_v1/scripts/evaluation_common.py",
+    "original_sha256": "8a674e2b98b4d91de7a459aa4f38995cbce8fc50d38ae6177073bf3f9b2e0d9b",
+    "current_sha256": "61ebd02866cf73813a308b6c895d889eb9d0036b3bf2036afef17c60a3dd4a2d",
+    "public_path": "historical_versions/ee74fe504276271fc66a73965126b5ced3df997c/RAG/results/rag_e7_agentic_v1/scripts/evaluation_common.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Earlier estimator/CV guards before added pre/post-fit assertions.",
+    "changed_definitions": [
+      "AuditedEstimator",
+      "audited_cv",
+      "fit",
+      "predict"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "ae6588adc3bb555c2956cf29c71e158d325e203a",
+    "original_path": "RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py",
+    "original_sha256": "92f3673257d7fdeb7737e6c167377a51316e7badf7822c7afd39cf8aa6148c8c",
+    "current_sha256": "f15fbbc7e7721be337d981fe2748f05e145abdd1ad8097d3e3b0c34a16df2c0c",
+    "public_path": "historical_versions/ae6588adc3bb555c2956cf29c71e158d325e203a/RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Earlier imported guard reference and subset hash comparison before exact map equality.",
+    "changed_definitions": [
+      "main"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "dcd8faea7bed70a9fa3196e4288c133e907a7594",
+    "original_path": "RAG/results/rag_e7_agentic_v1/tests/test_e7.py",
+    "original_sha256": "bec8adf9f90f6c827e0beea52c9fc4a2c8ba6d99be0c84f1f8a84adb45157827",
+    "current_sha256": "d47b83f25670e437cf6acaa3354b759cda2e11dcbbc3afb3b478c79bd2588235",
+    "public_path": "historical_versions/dcd8faea7bed70a9fa3196e4288c133e907a7594/RAG/results/rag_e7_agentic_v1/tests/test_e7.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Earlier zero-based synthetic folds, cosine values and median expectations; distinct historical routing fixtures.",
+    "changed_definitions": [
+      "GuardContracts",
+      "RouterContracts",
+      "fixture",
+      "test_five_fold_medians_use_only_training_evidence",
+      "test_validation_score_cannot_change_its_fold_threshold"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "133b206c87ec2159a7492ec12345845ff0a38a7c",
+    "original_path": "RAG/results/rag_e6_v2/scripts/report_v2.py",
+    "original_sha256": "b9418fc829fa4e0d0cbb1390107f86595bec81329677e185511bfde8855b1080",
+    "current_sha256": "4fb76da98a5e7e1210738ab8f481b38e7395faad62ed2ee525ec4b424541af6f",
+    "public_path": null,
+    "decision": "PRIVATE_SUPERSEDED_NO_UNIQUE_FUNCTIONALITY",
+    "comparison": "Only unmatched quote differs; current report retains all logic with corrected syntax. Broken original preserved privately.",
+    "changed_definitions": [],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": {
+      "line": 165,
+      "message": "unterminated f-string literal (detected at line 165)"
+    }
+  },
+  {
+    "git_object_id": "8f0d08bf8575ea0e2c747061212c86245d4a17b5",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/build_scoring_manifest.py",
+    "original_sha256": "f0c9ecbec4dd760b3b2d9a632752096bab5ea5095790ddafd5305a76acab8afa",
+    "current_sha256": "4fefb3c9fb373c8ac5c6410827587d9c5df2e77df8a81e97790a3977bc6df8c5",
+    "public_path": "historical_versions/8f0d08bf8575ea0e2c747061212c86245d4a17b5/RAG/results/phase3_e11_task_adaptation/build_scoring_manifest.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Initial benchmark-001 builder before asset hashes and explicit remote-layout contracts.",
+    "changed_definitions": [
+      "build"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "fb0f3595d804a40ab62453383e3f633aaca15050",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/e11_modal.py",
+    "original_sha256": "eff276f9429466b639b13f9173fd08c4cdf9330b22836bddd9d29a0bd1b9566d",
+    "current_sha256": "93c7c9efd8253eac80f81ff484bc34483670946965dbdeccb9c73960200c6c5c",
+    "public_path": "historical_versions/fb0f3595d804a40ab62453383e3f633aaca15050/RAG/results/phase3_e11_task_adaptation/e11_modal.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Original E11 image/import layout before explicit module path, assets and shallow-image repair.",
+    "changed_definitions": [
+      "make_image",
+      "score_e11",
+      "validate_local"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "6e527da610242ca0b888a5b7c997831cc91e1669",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/run_detector.py",
+    "original_sha256": "9c19c35f6b67d70ad1e4b3de661887c0e175b8bcfa6be853d4c4aa4716e050d0",
+    "current_sha256": "f02cad6c6152c1eb6ae7f616fb74eb7f14afc08a658911cb22e8031dde7d555d",
+    "public_path": null,
+    "decision": "PRIVATE_SUPERSEDED_NO_UNIQUE_FUNCTIONALITY",
+    "comparison": "Only unused ROOT import removed; detector functions and behavior unchanged.",
+    "changed_definitions": [],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "9e17fe62e1f8f469477e7506b1d790fe11431759",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/scoring_common.py",
+    "original_sha256": "f7510e3acd8574a44df180fbeccf82d274787c75656d8eda356f8ecc3deffc11",
+    "current_sha256": "250a9d7a2ed5fd9cb9a0e13d69d883cb4c0031941581fbc7c1afd5db989c0c6f",
+    "public_path": "historical_versions/9e17fe62e1f8f469477e7506b1d790fe11431759/RAG/results/phase3_e11_task_adaptation/scoring_common.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Original fixed-ancestor ROOT before local/remote separation; historical layout limitation.",
+    "changed_definitions": [],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "1a98655bb5df77da3b040fe356133e155aadb94f",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/test_scoring.py",
+    "original_sha256": "b9ce26846fd7979ac785af455700727bf961d1c108b1c2de2cc9a17ac2498443",
+    "current_sha256": "7ef08f699910bcdb4644e5910b773966078ea8128a23ea1175785667cb4a8a6f",
+    "public_path": "historical_versions/1a98655bb5df77da3b040fe356133e155aadb94f/RAG/results/phase3_e11_task_adaptation/test_scoring.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Original scoring tests before separate-working-directory and local-root regression tests.",
+    "changed_definitions": [
+      "PreparedDataTests"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "b672c0a1ba8f009a6a21ed2178f63c57903d9dfe",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/e11a_modal.py",
+    "original_sha256": "77871dd2ffd7bf1b7b2447a07ab781cf8f59e4c6f6bec8cb242c56629732b574",
+    "current_sha256": "73d7f04ea70c7f79e5ded0f59f7369d18f225a0a66b299640f8f945abe12a8b1",
+    "public_path": "historical_versions/b672c0a1ba8f009a6a21ed2178f63c57903d9dfe/RAG/results/phase3_e11_task_adaptation/e11a_modal.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Smoke-only Modal interface before explicitly gated full-fold execution.",
+    "changed_definitions": [
+      "main"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "a17ea1a8ebbbe4d4c8c4c716388dfdd00fffa494",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py",
+    "original_sha256": "a8f258f78b16912a1e69d5d791f7918dcef9e518d9f215bb360a3000f77df341",
+    "current_sha256": "d1676e37e3d42dd41ed053d20e44065db416488e6037458111f8a041b47ea893",
+    "public_path": "historical_versions/a17ea1a8ebbbe4d4c8c4c716388dfdd00fffa494/RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Original E11-A reporting before per-epoch losses; objective and optimizer unchanged.",
+    "changed_definitions": [
+      "execute"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "6fe956954b94855ed307e621cb35f880136a5e00",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/build_scoring_manifest.py",
+    "original_sha256": "8b829623de5dddf62c912845a3e1d50c0b3dfc7749c33a9980d731e4d62e11ff",
+    "current_sha256": "4fefb3c9fb373c8ac5c6410827587d9c5df2e77df8a81e97790a3977bc6df8c5",
+    "public_path": "historical_versions/6fe956954b94855ed307e621cb35f880136a5e00/RAG/results/phase3_e11_task_adaptation/build_scoring_manifest.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Intermediate benchmark-002 commands before benchmark-003.",
+    "changed_definitions": [
+      "build"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "2092da822a3bc99dc9da7ca5fec0b184e56e24ec",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/import_layout_smoke.py",
+    "original_sha256": "6c396f23fb4a4643ec47d15b1d3cccbbb65ba15135ff4de8ed3a94b416b6d303",
+    "current_sha256": "66e62723163de1cb351651a35bc8614997ce8998a5ac65caaeab957328aab3e4",
+    "public_path": "historical_versions/2092da822a3bc99dc9da7ca5fec0b184e56e24ec/RAG/results/phase3_e11_task_adaptation/import_layout_smoke.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Intermediate import smoke before AST ancestor-depth audit and remote-root assertions.",
+    "changed_definitions": [
+      "main"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "ecf7a94da5ccd992518027200ce10a51801962d5",
+    "original_path": "RAG/results/phase3_e11_task_adaptation/test_scoring.py",
+    "original_sha256": "19351ae03f5b714a70670ae7e2ea36c4217a0ca1a210f023ba97f69dc9286c52",
+    "current_sha256": "7ef08f699910bcdb4644e5910b773966078ea8128a23ea1175785667cb4a8a6f",
+    "public_path": "historical_versions/ecf7a94da5ccd992518027200ce10a51801962d5/RAG/results/phase3_e11_task_adaptation/test_scoring.py",
+    "decision": "PUBLIC_HISTORICAL_SOURCE_SNAPSHOT",
+    "comparison": "Intermediate scoring tests before ancestor-depth/local-root regression assertions.",
+    "changed_definitions": [
+      "PreparedDataTests",
+      "test_remote_import_layout_from_independent_cwd"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null
+  },
+  {
+    "git_object_id": "b307db7c6f31b543d82274f1b629249d8ebaceba",
+    "original_path": "solution/src/main.py",
+    "original_sha256": "c322835606971deb5d38322e6c6a5d278109c551f19c1dbd1e32b19036ba4a4d",
+    "current_sha256": "1e8caad6f9e18acc721cec6f4b83011b026454e129d5b9b78e1d028cc8eacfd7",
+    "public_path": null,
+    "decision": "PRIVATE_SUPERSEDED_NO_UNIQUE_FUNCTIONALITY",
+    "comparison": "Old solution CLI subset: train/evaluate/pseudo_label arguments and calls retained; current adds NLI and ensemble commands. Original torch entry-point import preserved privately. PHASE 3E-C removes only the redundant function-local torch import; module-level import and existing CLI branches remain.",
+    "changed_definitions": [
+      "main"
+    ],
+    "historical_only_definitions": [],
+    "historical_syntax_issue": null,
+    "comparison_at_base_commit": {
+      "commit": "3f612b18cd7066fdbaceba751eec8357bcd218f5",
+      "current_sha256": "89f588c958d33d2d404534c9b04a50c7e293bef9c86464bb8311903c8a99cba6",
+      "comparison": "Old solution CLI subset: train/evaluate/pseudo_label arguments and calls retained; current adds NLI and ensemble commands. Original torch entry-point import preserved privately."
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "experiment": "E11-A",
+  "protocol_content_sha256": "518c2df610a1483472b94e8baf3c0c4b277275f351e7448822e35d9dc871772d",
+  "files_sha256": {
+    "protocol": "b4ec853e57b285846e9c59f0e07242be8fa424d031bcf0ee3e101fc89438995c",
+    "canonical": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "locked_folds": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "fold_1_checkpoint": "84d3fc50bc2fa39f3c0e02e22459aa4dc5a88e4da79f7beab4a230e092097d9a",
+    "fold_1_predictions": "5c4d0b3e9e80225784254aa1507dd5ca73b074922ff5a9aeed7106b2a6d27aec",
+    "fold_1_status": "19a757dc79a0b38c903e0220eba0fe6d98bf075c8631a9f8edfeddb5e2b616e5",
+    "fold_2_checkpoint": "45323835c8200b091d39a4be36f8451fa30d5654f2917b85983b8ac85c7e0b88",
+    "fold_2_predictions": "67494de244af51e2f68ed5dbde49e412a5bf314c059f99ad0b34892608c190b1",
+    "fold_2_status": "608cbb2956d3de73b383c15a47d96650f7cf33300be052e341302317ecdc4476",
+    "fold_3_checkpoint": "ccb3fea339bd43c084892635046479f882fb9a2b68a1c309c8e4e1253ad8173b",
+    "fold_3_predictions": "429231524ead1db79a5f93b02dfa8ca7b438bd19689021572862a5ee627588bc",
+    "fold_3_status": "e7608a6b987fe6aa6cd9d9d6f57a92df2d2b932959a3cb0923be0b167829da6d",
+    "fold_4_checkpoint": "9b73aef9034a8486845fbe1e2ccfa2246fecdbb5f6e6014b812696cc39a89511",
+    "fold_4_predictions": "f30a87cc5c89c29975b5e6f4b6552c7a45a1c3f06939df6aa8a970229f902f81",
+    "fold_4_status": "c3a45e7c365a0a68b70ca7cf581e56c30d91a1c00f3747adf4ac4d735c9316a7",
+    "fold_5_checkpoint": "ed7f6591b80cde866e89fae5d174b588f86a09afe031b0248322604d584bd555",
+    "fold_5_predictions": "ef8c130671b582a5bc09d0f21fa2396c643191caca41cb62b5e98f25d367539c",
+    "fold_5_status": "27e582c467c8cd6f24ef34fbcae3dd205a881669dd7fdef326f9feebef748a5f",
+    "oof_predictions": "07d3ad0ab0549b1dec0a32ca43ad194dbb4a6d32cba1519f7b4d56a490c87e16",
+    "results_json": "be5cc0cf9300284684e19904691c5d79e24ef76885c4ad47ba59b2ebd04228ca",
+    "results_md": "acdb90e1aca59e201d8b232d502263dc2b6e04db044ed0260e806ac617db8882"
+  },
+  "baseline_oof_sha256": {
+    "E6-v3": "a838f6d23e63adbb772d94ec82eadd8379a90e01d08d3426c386c354afacffa4",
+    "E10": "6a9a20b32db79bc25ea325a804cb0abe75c9f7f5583bec9a4bad4addc0ddd871"
+  },
+  "fold_count": 5,
+  "oof_rows": 561
+}

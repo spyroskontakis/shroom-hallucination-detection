@@ -1,0 +1,2 @@
+e3_overall_oof_accuracy,e4_overall_oof_accuracy,delta_accuracy_e4_minus_e3,e3_overall_oof_spearman,e4_overall_oof_spearman,delta_spearman_e4_minus_e3,delta_precision_e4_minus_e3,delta_recall_e4_minus_e3,delta_f1_e4_minus_e3,fixed_errors,introduced_errors,unchanged_correct,unchanged_incorrect
+0.7932263814616756,0.8057040998217468,0.012477718360071277,0.7390395612811848,0.7237505756549399,-0.015288985626244811,-0.008017179670722907,0.055118110236220486,0.022297307354539164,23,16,429,93

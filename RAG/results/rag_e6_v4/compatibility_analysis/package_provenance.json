@@ -1,0 +1,17 @@
+{
+  "wheels": {
+    "huggingface_hub-0.25.2-py3-none-any.whl": "1897caf88ce7f97fe0110603d8f66ac264e3ba6accdf30cd66cc0fed5282ad25",
+    "tokenizers-0.13.3-cp311-cp311-win_amd64.whl": "ecf182bf59bd541a8876deccf0360f5ae60496fd50b58510048020751cf1724c",
+    "transformers-4.30.2-py3-none-any.whl": "c332e3a3097f9ed89ce556b403251235931c00237b8bc2d7adaa19d226c13f1d"
+  },
+  "record_entries_verified": {
+    "huggingface_hub-0.25.2.dist-info": 119,
+    "tokenizers-0.13.3.dist-info": 30,
+    "transformers-4.30.2.dist-info": 1343
+  },
+  "isolation": "venv with system-site-packages; three pinned packages installed locally, shared dependencies read from unchanged base environment",
+  "package_acquisition": "pip download --no-deps; pip install --no-index --no-deps --no-compile --target env/Lib/site-packages",
+  "shared_environment_modified": false,
+  "official_bert_score_package": "RAG\\results\\rag_e6_v4\\packages",
+  "official_bert_score_wheel_sha256": "bbbb4c7fcdaa46d7681aff49f37f96faa09ed74e1b150e659bdc6b58a66989b9"
+}

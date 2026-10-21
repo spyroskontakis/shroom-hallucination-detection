@@ -1,0 +1,39 @@
+test_frozen_identity_model_labels_and_threshold (test_e11a.E11APreparationTests.test_frozen_identity_model_labels_and_threshold) ... ok
+test_full_fold_and_smoke_guards_before_gpu (test_e11a.E11APreparationTests.test_full_fold_and_smoke_guards_before_gpu) ... ok
+test_local_pretraining_validator (test_e11a.E11APreparationTests.test_local_pretraining_validator) ... ok
+test_locked_fold_ids_and_smoke_selection (test_e11a.E11APreparationTests.test_locked_fold_ids_and_smoke_selection) ... ok
+test_modal_function_hydration_from_separate_directory (test_e11a.E11APreparationTests.test_modal_function_hydration_from_separate_directory) ... ok
+test_modal_smoke_configuration_static (test_e11a.E11APreparationTests.test_modal_smoke_configuration_static) ... ok
+test_no_test_pseudo_or_detector_inputs_in_prepared_rows (test_e11a.E11APreparationTests.test_no_test_pseudo_or_detector_inputs_in_prepared_rows) ... ok
+test_preparation_idempotent_without_training (test_e11a.E11APreparationTests.test_preparation_idempotent_without_training) ... ok
+test_shallow_remote_import_from_other_cwd (test_e11a.E11APreparationTests.test_shallow_remote_import_from_other_cwd) ... ok
+test_benchmark_exact_balance_and_hash_order (test_scoring.PreparedDataTests.test_benchmark_exact_balance_and_hash_order) ... ok
+test_detector_inputs_are_strictly_label_blind (test_scoring.PreparedDataTests.test_detector_inputs_are_strictly_label_blind) ... ok
+test_factcg_join_exact_existing_scores (test_scoring.PreparedDataTests.test_factcg_join_exact_existing_scores) ... ok
+test_five_fold_eligibility_maps_and_text_purge (test_scoring.PreparedDataTests.test_five_fold_eligibility_maps_and_text_purge) ... ok
+test_frozen_protocol_byte_and_content_hash (test_scoring.PreparedDataTests.test_frozen_protocol_byte_and_content_hash) ... ok
+test_hhem_nli_join_exact_existing_matrix (test_scoring.PreparedDataTests.test_hhem_nli_join_exact_existing_matrix) ... ok
+test_human_minicheck_whole_hyp_only (test_scoring.PreparedDataTests.test_human_minicheck_whole_hyp_only) ... ok
+test_human_population_and_reuse_coverage (test_scoring.PreparedDataTests.test_human_population_and_reuse_coverage) ... ok
+test_local_root_discovery_uses_marker_not_fixed_depth (test_scoring.PreparedDataTests.test_local_root_discovery_uses_marker_not_fixed_depth) ... ok
+test_modal_resources_and_full_guard (test_scoring.PreparedDataTests.test_modal_resources_and_full_guard) ... ok
+test_nli_indices_and_hhem_orientation (test_scoring.PreparedDataTests.test_nli_indices_and_hhem_orientation) ... ok
+test_no_official_test_or_teacher_training_in_operational_code (test_scoring.PreparedDataTests.test_no_official_test_or_teacher_training_in_operational_code) ... ok
+test_normalization_and_policy (test_scoring.PreparedDataTests.test_normalization_and_policy) ... ok
+test_remote_import_layout_from_independent_cwd (test_scoring.PreparedDataTests.test_remote_import_layout_from_independent_cwd) ... ok
+test_reproducible_preparation (test_scoring.PreparedDataTests.test_reproducible_preparation) ... ok
+test_unlabeled_counts_and_pg_reference (test_scoring.PreparedDataTests.test_unlabeled_counts_and_pg_reference) ... ok
+test_corrupt_checkpointed_score_detected (test_scoring.ScoreContractTests.test_corrupt_checkpointed_score_detected) ... ok
+test_duplicate_output_fails (test_scoring.ScoreContractTests.test_duplicate_output_fails) ... ok
+test_factcg_adapter_passes_entire_reference_hypothesis (test_scoring.ScoreContractTests.test_factcg_adapter_passes_entire_reference_hypothesis) ... ok
+test_hhem_and_minicheck_ranges (test_scoring.ScoreContractTests.test_hhem_and_minicheck_ranges) ... ok
+test_invalid_score_ranges_and_nli_sum (test_scoring.ScoreContractTests.test_invalid_score_ranges_and_nli_sum) ... ok
+test_minicheck_adapter_batches_whole_hypotheses (test_scoring.ScoreContractTests.test_minicheck_adapter_batches_whole_hypotheses) ... ok
+test_missing_output_detected (test_scoring.ScoreContractTests.test_missing_output_detected) ... ok
+test_partial_resume_without_recompute (test_scoring.ScoreContractTests.test_partial_resume_without_recompute) ... ok
+test_valid_tail_after_interrupted_checkpoint_reconciles (test_scoring.ScoreContractTests.test_valid_tail_after_interrupted_checkpoint_reconciles) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 18.686s
+
+OK

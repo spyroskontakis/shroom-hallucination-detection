@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "utc": "2026-09-11T09:10:37.801115+00:00",
+  "protected_files": 1784,
+  "old_v4_files": 108,
+  "diagnosis_files": 1518,
+  "old_report_archived_sha256": "8a77e55fe64ca9d1d11d153dd4d2a94b1435c0869e9bf603c477b77e0959ce27",
+  "original_protocol_sha256": "4b349aaf37ef664eecbfb2e9979e0e02aada8bb06b064c96d41e8e0b29cd7ae8",
+  "amendment_sha256": "562023f2e837393eaad00156997946e592b04c9f4d711e1bf703c6b3c6ce288e",
+  "execution_config_sha256": "1d603312df6adbcfd9a7af8bc440bc1a15908af12546b3ba540fa902c8bc8444",
+  "exact_encoding_versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "safetensors": "0.7.0",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "sentencepiece": "0.2.1",
+    "tokenizers": "0.13.3",
+    "torch": "2.11.0",
+    "transformers": "4.30.2",
+    "huggingface-hub": "0.25.2",
+    "bert-score": "0.3.13"
+  },
+  "evaluation_runtime": {
+    "python": "3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]",
+    "executable": "external-artifacts/local-21bb07554028/python.exe",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "safetensors": "0.7.0",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1",
+      "sentencepiece": "0.2.1",
+      "tokenizers": "0.22.2",
+      "torch": "2.11.0",
+      "transformers": "5.5.4"
+    }
+  },
+  "network_attempts": 0,
+  "real_feature_rows": 561,
+  "RF_fits": 5,
+  "baseline_fits": 0,
+  "OOF_evaluations": 1,
+  "official_test_access": false,
+  "git_branch": "agentic-rag-e7",
+  "git_status": "?? \"Augmentation Pipeline.txt\"\n?? RAG/results/rag_e6_v2/\n?? RAG/results/rag_e6_v3/\n?? RAG/results/rag_e6_v4/\n?? RAG/results/rag_e7_agentic_v1/\n?? RAG/results/rag_e8_rf_tuning_v1/\n",
+  "old_v4_report_update": "authorized; original preserved byte-for-byte in phase1 archive",
+  "no_post_score_design_change": true
+}

@@ -1,0 +1,14 @@
+{
+  "baseline_rf_fits": 0,
+  "baseline_verified": true,
+  "checked_utc": "2026-09-11T08:20:50.689432+00:00",
+  "e6_v4_rf_fits": 0,
+  "evaluation_status": "NOT_RUN",
+  "full_extraction_seconds": null,
+  "prior_artifacts_unchanged": true,
+  "protected_files": 1784,
+  "real_pairs_scored": 0,
+  "real_truncation_count": null,
+  "status": "PASS",
+  "wheel_record_entries_verified": 84
+}

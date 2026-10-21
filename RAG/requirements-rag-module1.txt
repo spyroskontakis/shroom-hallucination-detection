@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+scikit-learn
+google-genai
+google-auth
+jupyter
+ipykernel
+nbformat

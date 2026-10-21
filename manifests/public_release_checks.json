@@ -1,0 +1,5503 @@
+{
+  "scope": "All candidate files without size exclusions; no runtime execution",
+  "python_count": 266,
+  "notebooks": 15,
+  "notebook_cells": 767,
+  "syntax_errors": [
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8.py",
+      "line": 138,
+      "message": "unterminated f-string literal (detected at line 138)"
+    }
+  ],
+  "notebook_errors": [],
+  "json_errors": [],
+  "privacy_candidates": [
+    {
+      "path": "tools/public_release/audit_candidate.py",
+      "category": "personal_home",
+      "line": 28
+    },
+    {
+      "path": "tools/public_release/audit_candidate.py",
+      "category": "personal_home",
+      "line": 28
+    }
+  ],
+  "source_dumps": [],
+  "markdown_links": [
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "target": "MIT_LICENSE_DRAFT.txt",
+      "exists": true
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "target": "../manifests/license_inventory.public.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PHASE3C1_REPORT.md",
+      "target": "PUBLIC_RELEASE_REVIEW.md",
+      "exists": true
+    },
+    {
+      "path": "docs/PHASE4C_REPORT.md",
+      "target": "../manifests/public_release_checks.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PHASE4C_REPORT.md",
+      "target": "../manifests/file_inventory.public.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PHASE4C_REPORT.md",
+      "target": "../manifests/phase4c_changes.public.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PRIVATE_INTEGRATION_STATUS.md",
+      "target": "PUBLIC_RELEASE_REVIEW.md",
+      "exists": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "PHASE4C_REPORT.md",
+      "exists": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/public_release_transformations.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/public_release_provenance.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/file_inventory.public.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/public_release_checks.json",
+      "exists": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/license_inventory.public.json",
+      "exists": true
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "target": "../manifests/canonical_fold_assignments.public.csv",
+      "exists": true
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "target": "DATA_ACCESS.md",
+      "exists": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../manifests/third_party_verification.public.json",
+      "exists": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/LICENSE",
+      "exists": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../RAG/results/rag_e6_v4/packages/LICENSE.bert_score",
+      "exists": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../manifests/license_inventory.public.json",
+      "exists": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "LICENSE_PROPOSAL.md",
+      "exists": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../manifests/public_release_transformations.json",
+      "exists": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/config/run_config.json",
+      "exists": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/config/completion_manifest.json",
+      "exists": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/E6_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/E6_RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "RAG/E6_V3_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v3/E6_V3_RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "RAG/E6_V3_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v3/E6_V3_PROTOCOL.md",
+      "exists": true
+    },
+    {
+      "path": "RAG/README_MODULE1.md",
+      "target": "MODULE1_RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../../../codex/canonical_fold_generation_metadata.json",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../../../codex/evaluation_protocol_decision.md",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../rag_e6_v2/scripts/nli_backend.py",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../rag_e6_v3/scripts/hhem_backend.py",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../rag_e6_v3/scripts/evaluate_v3.py",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_TEACHER_PROTOCOL.md",
+      "target": "E11_TEACHER_PROTOCOL.json",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_PROTOCOL.md",
+      "target": "E9_PROTOCOL_AMENDMENT_01.md",
+      "exists": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/modal_gpu/README_MODAL_RUN.md",
+      "target": "modal_phase3_gpu.py",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/EXPERIMENTS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_metrics.json",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "RAG/results/phase3_e9_claim_verification/evaluation/E9-B_metrics.json",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "RAG/results/e10_official_test_v1/reconstructed_v1/E10_OFFICIAL_TEST_METRICS.json",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/KNOWN_LIMITATIONS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/ARCHITECTURE.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/EXPERIMENTS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/REPRODUCIBILITY.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "solution/QUICKSTART.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/ENVIRONMENTS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/DATA_ACCESS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/KNOWN_LIMITATIONS.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/REPRODUCIBILITY.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/LICENSE_PROPOSAL.md",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/THIRD_PARTY_NOTICES.md",
+      "exists": true
+    },
+    {
+      "path": "solution/QUICKSTART.md",
+      "target": "README.md#historical-orchestration-example",
+      "exists": true,
+      "anchor_exists": true
+    },
+    {
+      "path": "solution/QUICKSTART.md",
+      "target": "../docs/RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "solution/README.md",
+      "target": "../docs/EXPERIMENTS.md",
+      "exists": true
+    },
+    {
+      "path": "solution/README.md",
+      "target": "../docs/RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "solution/README.md",
+      "target": "../docs/RESULTS.md",
+      "exists": true
+    },
+    {
+      "path": "solution/SETUP_COMPLETE.md",
+      "target": "README.md#configuration",
+      "exists": true,
+      "anchor_exists": true
+    }
+  ],
+  "external_urls": [
+    {
+      "path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "codex/data/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "data/2. EDA/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "host": "choosealicense.com"
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "host": "spdx.org"
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "host": "www.apache.org"
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "host": "github.com"
+    },
+    {
+      "path": "historical_versions/18675dcdd946dfcdc3ab0394e53cfa03360759e1/RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "historical_versions/bfe9692af66c955d8bee07340bd5feecd7ccf191/RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "historical_versions/bfe9692af66c955d8bee07340bd5feecd7ccf191/RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "manifests/license_review.public.json",
+      "host": "github.com"
+    },
+    {
+      "path": "manifests/public_release_transformations.json",
+      "host": "github.com"
+    },
+    {
+      "path": "manifests/third_party_verification.public.json",
+      "host": "raw.githubusercontent.com"
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/E10_OFFICIAL_TEST_DATA_AUDIT.md",
+      "host": "helsinki-nlp.github.io"
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/OFFICIAL_RELEASE_CHECK.json",
+      "host": "drive.google.com"
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/E10_RECONSTRUCTION_MANIFEST.json",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/PUBLISHED_COMPARISON_SOURCES.json",
+      "host": "aclanthology.org"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11A_REQUIREMENTS.lock.txt",
+      "host": "download.pytorch.org"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/close_e11c_retry.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/e11c_batch.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/E11C_LLM_LABEL_PROTOCOL.json",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/E11C_LLM_LABEL_PROTOCOL.md",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/prepare_e11c.py",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/README_AZURE_ALTERNATE_RESCUE.md",
+      "host": "learn.microsoft.com"
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/rescue_e11c_retry.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_MULTIPROPOSITION_SMOKE_RESULTS.md",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_PROTOCOL.md",
+      "host": "aclanthology.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_PROTOCOL.md",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_PROVENANCE.md",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_PROVENANCE.md",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_PROVENANCE.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_SMOKE_AMENDMENT01_RESULTS.md",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_SMOKE_RESULTS.md",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/FACTCG_PROTOCOL.md",
+      "host": "arxiv.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/FACTCG_PROTOCOL.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/FACTCG_PROTOCOL.md",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/GPU_RUN_MANIFEST.json",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/GPU_RUN_MANIFEST.json",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/GPU_RUN_MANIFEST.json",
+      "host": "arxiv.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/prepare_gpu_inputs.py",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/prepare_gpu_inputs.py",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/prepare_gpu_inputs.py",
+      "host": "arxiv.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.lock.txt",
+      "host": "download.pytorch.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.txt",
+      "host": "download.pytorch.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/requirements_local.txt",
+      "host": "download.pytorch.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/GPU_RUN_MANIFEST.json",
+      "host": "raw.githubusercontent.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/GPU_RUN_MANIFEST.json",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/GPU_RUN_MANIFEST.json",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py",
+      "host": "raw.githubusercontent.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/README_GPU_RUN.md",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/README_GPU_RUN.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.lock.txt",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.lock.txt",
+      "host": "download.pytorch.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.txt",
+      "host": "download.pytorch.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.txt",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/modal_gpu/README_MODAL_RUN.md",
+      "host": "modal.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/reports/minicheck_preflight.json",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/reports/minicheck_preflight.json",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/reports/PRE_COMPLETION_E9_PROVENANCE.md",
+      "host": "aclanthology.org"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/reports/PRE_COMPLETION_E9_PROVENANCE.md",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/decomposer.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/decomposer_v1.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/minicheck_preflight.py",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/minicheck_preflight.py",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_multi12.py",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_multi12.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_nine.py",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_nine.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+      "host": "developers.openai.com"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+      "host": "api.openai.com"
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/E6_V2_PROTOCOL.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/E6_V2_RESULTS.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/provenance/acquisition.json",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/acquire_model.py",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/report_v2.py",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/E6_V3_RESULTS.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/provenance/acquisition.json",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/record_acquisition.py",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/report_v3.py",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/E6_V4_COMPATIBILITY_ANALYSIS.md",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/finalize_diagnosis.py",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/minimal_current.json",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/minimal_pinned.json",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/official_sources.json",
+      "host": "github.com"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/utils.py",
+      "host": "s3-us-west-2.amazonaws.com"
+    },
+    {
+      "path": "RAG/results/rag_module3/phase2b/external_kb/MODULE3_PHASE2B_SOURCE_MANIFEST.json",
+      "host": "wordnet.princeton.edu"
+    },
+    {
+      "path": "RAG/results/rag_module3/phase2b/external_kb/MODULE3_PHASE2B_SOURCE_MANIFEST.json",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module3/phase2b/external_kb/MODULE3_PHASE2B_SOURCE_MANIFEST.json",
+      "host": "wordnetcode.princeton.edu"
+    },
+    {
+      "path": "RAG/results/rag_module3/phase2b/MODULE3_PHASE2B_PLAN.md",
+      "host": "wordnetcode.princeton.edu"
+    },
+    {
+      "path": "RAG/results/rag_module3/phase2b/MODULE3_PHASE2B_PLAN.md",
+      "host": "wordnet.princeton.edu"
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/CONTINUATION_AUDIT.json",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/CONTINUATION_AUTHORIZATION_AND_DEVIATION.md",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/CONTINUATION_FINAL_REPORT.md",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/SCHANNEL_TRANSPORT_ADDENDUM.md",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_schannel_acquire.py",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/tests/test_schannel_transport.py",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/TLS_DIAGNOSTIC_REPORT.md",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/static_protocol/MODULE4_EXTERNAL_PARSER_SPEC.md",
+      "host": "wordnetcode.princeton.edu"
+    },
+    {
+      "path": "RAG/results/rag_module4/static_protocol/MODULE4_EXTERNAL_PARSER_SPEC.md",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_MANIFEST.json",
+      "host": "wordnetcode.princeton.edu"
+    },
+    {
+      "path": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_MANIFEST.json",
+      "host": "distcache.freebsd.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_MANIFEST.json",
+      "host": "ftpv6.lug.ro"
+    },
+    {
+      "path": "RAG/results/rag_module4/static_protocol/MODULE4_WORDNET_TRANSPORT_RECOVERY_ADDENDUM.md",
+      "host": "distcache.freebsd.org"
+    },
+    {
+      "path": "RAG/results/rag_module4/static_protocol/MODULE4_WORDNET_TRANSPORT_RECOVERY_ADDENDUM.md",
+      "host": "ftpv6.lug.ro"
+    },
+    {
+      "path": "RAG/scripts/module4_build_external_lexicon.py",
+      "host": "wordnetcode.princeton.edu"
+    },
+    {
+      "path": "RAG/scripts/module4_build_external_lexicon.py",
+      "host": "en.wiktionary.org"
+    },
+    {
+      "path": "RAG/shroom_ensemble.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "RAG/shroom_rag_e5_module1.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "RAG/shroom_rag_e5_module1_gemini_trial.ipynb",
+      "host": "www.googleapis.com"
+    },
+    {
+      "path": "solution/README.md",
+      "host": "github.com"
+    },
+    {
+      "path": "solution/README.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "solution/README.md",
+      "host": "pytorch.org"
+    },
+    {
+      "path": "solution/SETUP_COMPLETE.md",
+      "host": "huggingface.co"
+    },
+    {
+      "path": "solution/SETUP_COMPLETE.md",
+      "host": "pytorch.org"
+    },
+    {
+      "path": "tools/public_release/transform_diagnostics.py",
+      "host": "github.com"
+    }
+  ],
+  "csv_review": [
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_confusion_matrices.csv",
+      "rows": 24,
+      "columns": [
+        "experiment",
+        "scope",
+        "fold_id",
+        "tn",
+        "fp",
+        "fn",
+        "tp"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_e4_vs_e3_diagnostic.csv",
+      "rows": 1,
+      "columns": [
+        "e3_overall_oof_accuracy",
+        "e4_overall_oof_accuracy",
+        "delta_accuracy_e4_minus_e3",
+        "e3_overall_oof_spearman",
+        "e4_overall_oof_spearman",
+        "delta_spearman_e4_minus_e3",
+        "delta_precision_e4_minus_e3",
+        "delta_recall_e4_minus_e3",
+        "delta_f1_e4_minus_e3",
+        "fixed_errors",
+        "introduced_errors",
+        "unchanged_correct",
+        "unchanged_incorrect"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_feature_importance_by_fold.csv",
+      "rows": 210,
+      "columns": [
+        "experiment",
+        "fold_id",
+        "feature",
+        "importance"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_feature_importance_summary.csv",
+      "rows": 42,
+      "columns": [
+        "experiment",
+        "feature",
+        "mean_importance",
+        "std_importance",
+        "min_importance",
+        "max_importance",
+        "folds"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_fold_metrics.csv",
+      "rows": 20,
+      "columns": [
+        "experiment",
+        "fold_id",
+        "n_train_human",
+        "n_train_synthetic",
+        "n_train_total",
+        "n_validation",
+        "accuracy",
+        "spearman",
+        "precision",
+        "recall",
+        "f1",
+        "tn",
+        "fp",
+        "fn",
+        "tp"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_integrity_audit.csv",
+      "rows": 18,
+      "columns": [
+        "check",
+        "expected",
+        "observed",
+        "passed",
+        "note"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_model_selection.csv",
+      "rows": 1,
+      "columns": [
+        "selected_experiment",
+        "selection_rule",
+        "selected_overall_oof_accuracy",
+        "selected_overall_oof_spearman",
+        "e4_diagnostic_only",
+        "official_test_used"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_overall_metrics.csv",
+      "rows": 4,
+      "columns": [
+        "experiment",
+        "selection_eligible",
+        "n_oof",
+        "mean_cv_accuracy",
+        "std_cv_accuracy",
+        "overall_oof_accuracy",
+        "mean_cv_spearman",
+        "std_cv_spearman",
+        "overall_oof_spearman",
+        "mean_cv_precision",
+        "std_cv_precision",
+        "mean_cv_recall",
+        "std_cv_recall",
+        "mean_cv_f1",
+        "std_cv_f1",
+        "overall_precision",
+        "overall_recall",
+        "overall_f1",
+        "tn",
+        "fp",
+        "fn",
+        "tp"
+      ]
+    },
+    {
+      "path": "codex/canonical_cv_outputs/canonical_cv_per_task_metrics.csv",
+      "rows": 12,
+      "columns": [
+        "experiment",
+        "task",
+        "n",
+        "accuracy",
+        "spearman",
+        "precision",
+        "recall",
+        "f1",
+        "tn",
+        "fp",
+        "fn",
+        "tp"
+      ]
+    },
+    {
+      "path": "codex/canonical_feature_outputs/canonical_feature_compatibility_audit.csv",
+      "rows": 16,
+      "columns": [
+        "feature",
+        "matched_rows",
+        "mean_abs_diff",
+        "median_abs_diff",
+        "max_abs_diff",
+        "pearson",
+        "spearman",
+        "note"
+      ]
+    },
+    {
+      "path": "codex/canonical_feature_outputs/canonical_feature_quality_audit.csv",
+      "rows": 30,
+      "columns": [
+        "dataset",
+        "check",
+        "passed",
+        "value",
+        "max_abs_error"
+      ]
+    },
+    {
+      "path": "codex/canonical_fold_balance_audit.csv",
+      "rows": 30,
+      "columns": [
+        "fold_id",
+        "stratum",
+        "samples"
+      ]
+    },
+    {
+      "path": "data/2. EDA/shroom_final_implementation/development_experiment_summary.csv",
+      "rows": 4,
+      "columns": [
+        "experiment",
+        "selection_eligible",
+        "overall_oof_accuracy",
+        "overall_oof_spearman"
+      ]
+    },
+    {
+      "path": "data/2. EDA/shroom_final_implementation/e1_nli_dev_cv_results.csv",
+      "rows": 5,
+      "columns": [
+        "fold",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "path": "data/2. EDA/shroom_final_implementation/e2_similarity_dev_cv_results.csv",
+      "rows": 5,
+      "columns": [
+        "fold",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "path": "data/2. EDA/shroom_final_implementation/e3_nli_similarity_dev_cv_results.csv",
+      "rows": 5,
+      "columns": [
+        "fold",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "path": "data/2. EDA/shroom_final_implementation/e4_synthetic_dev_cv_results.csv",
+      "rows": 5,
+      "columns": [
+        "fold",
+        "human_training_samples",
+        "synthetic_training_samples",
+        "total_training_samples",
+        "validation_samples",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "path": "data/2. EDA/shroom_final_implementation/e4_synthetic_dev_task_results.csv",
+      "rows": 3,
+      "columns": [
+        "task",
+        "samples",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "path": "data/7. Ablation Synthetic Data/ablation_feature_importance.csv",
+      "rows": 28,
+      "columns": [
+        "feature",
+        "importance",
+        "experiment"
+      ]
+    },
+    {
+      "path": "data/7. Ablation Synthetic Data/ablation_per_task_results.csv",
+      "rows": 6,
+      "columns": [
+        "experiment",
+        "task",
+        "n_test",
+        "accuracy",
+        "spearman",
+        "mae"
+      ]
+    },
+    {
+      "path": "data/7. Ablation Synthetic Data/ablation_summary_results.csv",
+      "rows": 2,
+      "columns": [
+        "experiment",
+        "n_train",
+        "accuracy",
+        "spearman",
+        "mae"
+      ]
+    },
+    {
+      "path": "data/7. Ablation Synthetic Data/ablation_synthetic_ratio_results.csv",
+      "rows": 5,
+      "columns": [
+        "experiment",
+        "synthetic_ratio",
+        "n_train",
+        "n_human",
+        "n_synthetic",
+        "accuracy",
+        "spearman",
+        "mae"
+      ]
+    },
+    {
+      "path": "data/7. Ablation Synthetic Data/ablation_synthetic_weight_results.csv",
+      "rows": 5,
+      "columns": [
+        "experiment",
+        "n_train",
+        "human_weight",
+        "synthetic_weight",
+        "accuracy",
+        "spearman",
+        "mae"
+      ]
+    },
+    {
+      "path": "data/7. Ablation Synthetic Data/fixed_errors_by_task_and_type.csv",
+      "rows": 3,
+      "columns": [
+        "task",
+        "False Negative",
+        "False Positive"
+      ]
+    },
+    {
+      "path": "data/7. Ablation Synthetic Data/introduced_errors_by_task_and_type.csv",
+      "rows": 3,
+      "columns": [
+        "task",
+        "False Negative",
+        "False Positive"
+      ]
+    },
+    {
+      "path": "manifests/canonical_fold_assignments.public.csv",
+      "rows": 561,
+      "columns": [
+        "canonical_id",
+        "fold_id"
+      ]
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_FINAL_TABLE.csv",
+      "rows": 6,
+      "columns": [
+        "Experiment",
+        "Human",
+        "Synthetic",
+        "Contrastive",
+        "Correct/561",
+        "Accuracy",
+        "Spearman"
+      ]
+    },
+    {
+      "path": "RAG/results/rag_module2/evaluation/module2_dev_retrieval_metrics.csv",
+      "rows": 8,
+      "columns": [
+        "query_variant",
+        "reference_assisted",
+        "retrieval_method",
+        "n_examples",
+        "top1_result_coverage",
+        "strict_relevant_at_1",
+        "lenient_relevant_at_1",
+        "strict_precision_at_1",
+        "lenient_precision_at_1",
+        "annotation_complete_at_1",
+        "strict_precision_at_2",
+        "lenient_precision_at_2",
+        "annotation_complete_at_2",
+        "strict_precision_at_3",
+        "lenient_precision_at_3",
+        "annotation_complete_at_3",
+        "strict_precision_at_4",
+        "lenient_precision_at_4",
+        "annotation_complete_at_4",
+        "strict_precision_at_5",
+        "lenient_precision_at_5",
+        "annotation_complete_at_5",
+        "strict_mrr",
+        "strict_mrr_fully_defined",
+        "lenient_mrr",
+        "lenient_mrr_fully_defined",
+        "strict_mrr_at_3",
+        "lenient_mrr_at_3",
+        "unsafe_top1_rate",
+        "different_sense_top1_rate",
+        "irrelevant_top1_rate",
+        "uncertain_top1_rate",
+        "evidence_eligible_coverage_at_3",
+        "raw_abstention_rate",
+        "raw_irrelevant_evidence_rate"
+      ]
+    }
+  ],
+  "prohibited": [],
+  "import_audit": [
+    {
+      "path": "codex/canonical_development_cv.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "logging",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy",
+        "scipy.stats",
+        "sklearn",
+        "sklearn.ensemble",
+        "sklearn.metrics",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "codex/canonical_evaluation_data_prep.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pandas",
+        "pathlib",
+        "random",
+        "typing",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "codex/canonical_feature_extraction.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "platform",
+        "scipy.stats",
+        "sentence_transformers",
+        "sys",
+        "time",
+        "torch",
+        "transformers",
+        "transformers.utils",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "codex/prompt6_development_eda.py",
+      "imports": [
+        "__future__",
+        "json",
+        "matplotlib",
+        "matplotlib.pyplot",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "codex/regenerate_canonical_folds_sklearn.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sklearn",
+        "sklearn.model_selection",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "data/llm_reasoning.py",
+      "imports": [
+        "os",
+        "vertexai",
+        "vertexai.generative_models"
+      ],
+      "dynamic": [
+        {
+          "line": 6,
+          "call": "__import__"
+        },
+        {
+          "line": 9,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/18675dcdd946dfcdc3ab0394e53cfa03360759e1/RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py",
+      "imports": [
+        "argparse",
+        "concurrent.futures",
+        "datetime",
+        "decomposer",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "subprocess",
+        "threading",
+        "urllib.error",
+        "urllib.request",
+        "uuid"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/1a40378cf2387f5298c5a518013377b8a7207dcc/RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "modal",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys",
+        "zipfile"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/1a98655bb5df77da3b040fe356133e155aadb94f/RAG/results/phase3_e11_task_adaptation/test_scoring.py",
+      "imports": [
+        "__future__",
+        "ast",
+        "collections",
+        "contextlib",
+        "csv",
+        "detector_adapters",
+        "e11_modal",
+        "io",
+        "json",
+        "pathlib",
+        "prepare_scoring_inputs",
+        "run_detector",
+        "scoring_common",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/2092da822a3bc99dc9da7ca5fec0b184e56e24ec/RAG/results/phase3_e11_task_adaptation/import_layout_smoke.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "e11_modal",
+        "io",
+        "json",
+        "pathlib",
+        "scoring_common",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/4c41eba009de5ca6b36970128b1a287b4aa48536/RAG/results/phase3_e9_claim_verification/tests/test_e9.py",
+      "imports": [
+        "aggregates",
+        "decomposer",
+        "e9_common",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [
+        {
+          "line": 11,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/5629dae9079e1f185da40f82e99e054e113e279f/RAG/results/phase3_e9_claim_verification/scripts/evaluate.py",
+      "imports": [
+        "argparse",
+        "e9_common",
+        "importlib.metadata",
+        "numpy",
+        "pandas",
+        "sklearn.ensemble",
+        "verify_baseline"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/584d72a776a4a6691a5b5a49084828872721349b/RAG/results/phase3_e9_claim_verification/scripts/nli_features.py",
+      "imports": [
+        "aggregates",
+        "decomposer",
+        "e9_common",
+        "json",
+        "nli_backend",
+        "os",
+        "pandas",
+        "sys",
+        "torch",
+        "v2_common",
+        "verify_baseline"
+      ],
+      "dynamic": [
+        {
+          "line": 30,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/5d09d8ce13bada7ad74d065d90c35c5251dd0eb4/RAG/results/rag_e7_agentic_v1/scripts/e7_common.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sklearn.ensemble",
+        "sys",
+        "types"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/64d236b32d6edd87323175c865ea8f18d4549800/RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/6fe956954b94855ed307e621cb35f880136a5e00/RAG/results/phase3_e11_task_adaptation/build_scoring_manifest.py",
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/8f0d08bf8575ea0e2c747061212c86245d4a17b5/RAG/results/phase3_e11_task_adaptation/build_scoring_manifest.py",
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/9cc676467a61566ed5ac0b6a86918be0d207f1b8/RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "modal",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys",
+        "zipfile"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/9e17fe62e1f8f469477e7506b1d790fe11431759/RAG/results/phase3_e11_task_adaptation/scoring_common.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/a17ea1a8ebbbe4d4c8c4c716388dfdd00fffa494/RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "e11a_prepare_data",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "re",
+        "scoring_common",
+        "sys",
+        "time",
+        "torch",
+        "torch.utils.data",
+        "transformers",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/adbd78c365bf75fdf843534d87745d15107c9557/RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py",
+      "imports": [
+        "collections",
+        "json",
+        "math",
+        "prepare_training",
+        "subprocess"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/ae6588adc3bb555c2956cf29c71e158d325e203a/RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py",
+      "imports": [
+        "e7_common",
+        "numpy",
+        "router"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/b672c0a1ba8f009a6a21ed2178f63c57903d9dfe/RAG/results/phase3_e11_task_adaptation/e11a_modal.py",
+      "imports": [
+        "__future__",
+        "e11a_prepare_data",
+        "e11a_train_fold",
+        "json",
+        "modal",
+        "pathlib",
+        "re",
+        "scoring_common",
+        "sys",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [
+        {
+          "line": 17,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/bfe9692af66c955d8bee07340bd5feecd7ccf191/RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+      "imports": [
+        "argparse",
+        "copy",
+        "datetime",
+        "decomposer",
+        "hashlib",
+        "json",
+        "os",
+        "pandas",
+        "pathlib",
+        "subprocess",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/bffe88699a68e555820cfc6d9c90ee4790144242/RAG/results/phase3_e9_claim_verification/scripts/nli_features.py",
+      "imports": [
+        "aggregates",
+        "decomposer",
+        "e9_common",
+        "json",
+        "nli_backend",
+        "os",
+        "pandas",
+        "run_decomposition",
+        "sys",
+        "torch",
+        "v2_common",
+        "verify_baseline"
+      ],
+      "dynamic": [
+        {
+          "line": 35,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/dcd8faea7bed70a9fa3196e4288c133e907a7594/RAG/results/rag_e7_agentic_v1/tests/test_e7.py",
+      "imports": [
+        "e7_common",
+        "math",
+        "os",
+        "pandas",
+        "pathlib",
+        "router",
+        "sys",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 8,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "historical_versions/ecf7a94da5ccd992518027200ce10a51801962d5/RAG/results/phase3_e11_task_adaptation/test_scoring.py",
+      "imports": [
+        "__future__",
+        "ast",
+        "collections",
+        "contextlib",
+        "csv",
+        "detector_adapters",
+        "e11_modal",
+        "import_layout_smoke",
+        "io",
+        "json",
+        "pathlib",
+        "prepare_scoring_inputs",
+        "run_detector",
+        "scoring_common",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/ee74fe504276271fc66a73965126b5ced3df997c/RAG/results/rag_e7_agentic_v1/scripts/evaluation_common.py",
+      "imports": [
+        "e7_common",
+        "numpy",
+        "scipy.stats"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "historical_versions/fb0f3595d804a40ab62453383e3f633aaca15050/RAG/results/phase3_e11_task_adaptation/e11_modal.py",
+      "imports": [
+        "__future__",
+        "fcntl",
+        "json",
+        "modal",
+        "os",
+        "pathlib",
+        "re",
+        "scoring_common",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "modal_gpu_check.py",
+      "imports": [
+        "modal",
+        "torch"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/module4_release_v1/tests/test_verify_module4.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 15,
+          "call": "importlib.util.spec_from_file_location"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/module4_release_v1/verify_module4.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "sys",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/audit_data.py",
+      "imports": [
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/extract_cpu.py",
+      "imports": [
+        "argparse",
+        "build_features",
+        "canonical_feature_extraction",
+        "collections",
+        "hashlib",
+        "hhem_backend",
+        "importlib.util",
+        "json",
+        "module4_build_external_lexicon",
+        "nli_backend",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sentence_transformers",
+        "sys",
+        "time",
+        "torch",
+        "transformers",
+        "v3_common"
+      ],
+      "dynamic": [
+        {
+          "line": 6,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/final_report.py",
+      "imports": [
+        "collections",
+        "hashlib",
+        "json",
+        "pathlib",
+        "predict_and_score",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [
+        {
+          "line": 6,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/modal_factcg.py",
+      "imports": [
+        "factcg_backend",
+        "factcg_common",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "math",
+        "modal",
+        "nltk",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "dynamic": [
+        {
+          "line": 26,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/predict_and_score.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "e9_common",
+        "hashlib",
+        "joblib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sklearn",
+        "sklearn.ensemble",
+        "sys",
+        "time"
+      ],
+      "dynamic": [
+        {
+          "line": 7,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/reconstruct.py",
+      "imports": [
+        "audit_data",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "module4_schannel_acquire",
+        "pathlib",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/reconstructed_v1/test_pipeline.py",
+      "imports": [
+        "audit_data",
+        "build_features",
+        "e6_common",
+        "hashlib",
+        "json",
+        "module4_build_external_lexicon",
+        "pathlib",
+        "predict_and_score",
+        "sklearn.ensemble",
+        "sys",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [
+        {
+          "line": 6,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/recovery_audit/finalize_audit.py",
+      "imports": [
+        "audit_data",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [
+        {
+          "line": 13,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/recovery_audit/recover.py",
+      "imports": [
+        "audit_data",
+        "collections",
+        "csv",
+        "hashlib",
+        "importlib.util",
+        "io",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "unicodedata",
+        "zipfile"
+      ],
+      "dynamic": [
+        {
+          "line": 7,
+          "call": "sys.path.insert"
+        },
+        {
+          "line": 16,
+          "call": "importlib.util.spec_from_file_location"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/recovery_audit/supplement.py",
+      "imports": [
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/recovery_audit/test_recovery.py",
+      "imports": [
+        "audit_data",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "sys",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 11,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/e10_official_test_v1/test_audit_data.py",
+      "imports": [
+        "audit_data",
+        "json",
+        "pathlib",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/build_scoring_manifest.py",
+      "imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/cpu_smoke.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "math",
+        "scoring_common",
+        "sys"
+      ],
+      "dynamic": [
+        {
+          "line": 19,
+          "call": "sys.path.insert"
+        },
+        {
+          "line": 20,
+          "call": "__import__"
+        },
+        {
+          "line": 21,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/detector_adapters.py",
+      "imports": [
+        "__future__",
+        "factcg_backend",
+        "factcg_common",
+        "gpu_common",
+        "nltk",
+        "pathlib",
+        "run_factcg_gpu",
+        "run_minicheck_gpu",
+        "scoring_common",
+        "sys",
+        "torch",
+        "transformers"
+      ],
+      "dynamic": [
+        {
+          "line": 18,
+          "call": "sys.path.insert"
+        },
+        {
+          "line": 43,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/download_scoring_outputs.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11_finalization/finalize.py",
+      "imports": [
+        "collections",
+        "csv",
+        "datetime",
+        "e11e_common",
+        "hashlib",
+        "io",
+        "json",
+        "math",
+        "pathlib",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11_modal.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "fcntl",
+        "json",
+        "modal",
+        "os",
+        "pathlib",
+        "re",
+        "scoring_common",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "dynamic": [
+        {
+          "line": 33,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11a_freeze_protocol.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11a_modal.py",
+      "imports": [
+        "__future__",
+        "e11a_prepare_data",
+        "e11a_train_fold",
+        "json",
+        "modal",
+        "pathlib",
+        "re",
+        "scoring_common",
+        "sys",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [
+        {
+          "line": 17,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11a_prepare_data.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11a_results/assemble_e11a_results.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "datetime",
+        "e11a_prepare_data",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "scipy.stats",
+        "scoring_common",
+        "sys"
+      ],
+      "dynamic": [
+        {
+          "line": 22,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11a_results/download_checkpoint_blocks.py",
+      "imports": [
+        "__future__",
+        "aiohttp",
+        "argparse",
+        "asyncio",
+        "hashlib",
+        "json",
+        "modal._utils.async_utils",
+        "modal.volume",
+        "modal_proto",
+        "os",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "e11a_prepare_data",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "re",
+        "scoring_common",
+        "sys",
+        "time",
+        "torch",
+        "torch.utils.data",
+        "transformers",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/audit_e11c_production.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "e11c_common",
+        "e11c_production",
+        "statistics"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/build_e11c_folds.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "e11c_common",
+        "parse_e11c_results"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/build_e11c_requests.py",
+      "imports": [
+        "argparse",
+        "e11c_common",
+        "parse_e11c_results"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/close_e11c_retry.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "e11c_common",
+        "e11c_production",
+        "os",
+        "statistics",
+        "subprocess",
+        "sys",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/e11c_batch.py",
+      "imports": [
+        "argparse",
+        "datetime",
+        "e11c_common",
+        "os",
+        "parse_e11c_results",
+        "urllib.error",
+        "urllib.request",
+        "uuid"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/e11c_common.py",
+      "imports": [
+        "__future__",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/e11c_pilot.py",
+      "imports": [
+        "argparse",
+        "build_e11c_requests",
+        "collections",
+        "contextlib",
+        "e11c_batch",
+        "e11c_common",
+        "parse_e11c_results",
+        "statistics"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/e11c_production.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "contextlib",
+        "e11c_common",
+        "e11c_pilot",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/estimate_e11c_cost.py",
+      "imports": [
+        "e11c_common",
+        "math",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/parse_e11c_results.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "e11c_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/prepare_e11c.py",
+      "imports": [
+        "collections",
+        "e11c_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/rescue_e11c_retry.py",
+      "imports": [
+        "argparse",
+        "close_e11c_retry",
+        "os",
+        "urllib.error",
+        "urllib.request",
+        "uuid"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/run_azure_alternate_rescue.py",
+      "imports": [
+        "argparse",
+        "close_e11c_retry",
+        "copy",
+        "e11c_common",
+        "openai",
+        "os",
+        "parse_e11c_results",
+        "pathlib",
+        "re",
+        "subprocess",
+        "time"
+      ],
+      "dynamic": [
+        {
+          "line": 17,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/test_e11c.py",
+      "imports": [
+        "build_e11c_folds",
+        "contextlib",
+        "copy",
+        "e11c_batch",
+        "e11c_common",
+        "parse_e11c_results",
+        "random",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/test_e11c_azure_alternate.py",
+      "imports": [
+        "copy",
+        "os",
+        "run_azure_alternate_rescue",
+        "sys",
+        "tempfile",
+        "test_e11c",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/test_e11c_closure.py",
+      "imports": [
+        "close_e11c_retry",
+        "e11c_common",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/test_e11c_pilot.py",
+      "imports": [
+        "contextlib",
+        "e11c_common",
+        "e11c_pilot",
+        "tempfile",
+        "test_e11c",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/test_e11c_production.py",
+      "imports": [
+        "e11c_common",
+        "e11c_production",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c/validate_e11c.py",
+      "imports": [
+        "ast",
+        "build_e11c_folds",
+        "collections",
+        "e11c_common",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py",
+      "imports": [
+        "collections",
+        "json",
+        "math",
+        "prepare_training",
+        "subprocess"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c_training/modal_training.py",
+      "imports": [
+        "json",
+        "modal",
+        "pathlib",
+        "sys",
+        "train_stages"
+      ],
+      "dynamic": [
+        {
+          "line": 9,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c_training/prepare_training.py",
+      "imports": [
+        "assemble_e11a_results",
+        "collections",
+        "csv",
+        "e11a_prepare_data",
+        "e11c_common",
+        "e11c_production",
+        "pathlib",
+        "sys",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c_training/test_returned_results.py",
+      "imports": [
+        "math",
+        "prepare_training",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c_training/test_training.py",
+      "imports": [
+        "ast",
+        "pathlib",
+        "prepare_training",
+        "train_stages",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c_training/train_stages.py",
+      "imports": [
+        "collections",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "sys",
+        "time",
+        "torch",
+        "torch.utils.data",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11c_training/verify_saved_checkpoints.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "modal",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/contrastive.py",
+      "imports": [
+        "torch",
+        "torch.nn.functional"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/evaluate.py",
+      "imports": [
+        "collections",
+        "hashlib",
+        "json",
+        "math",
+        "prepare"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/freeze_runtime.py",
+      "imports": [
+        "json",
+        "prepare"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/modal_training.py",
+      "imports": [
+        "json",
+        "modal",
+        "pathlib",
+        "scoring_common",
+        "sys",
+        "train_fold"
+      ],
+      "dynamic": [
+        {
+          "line": 9,
+          "call": "sys.path.insert"
+        },
+        {
+          "line": 10,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/prepare.py",
+      "imports": [
+        "assemble_e11a_results",
+        "contrastive",
+        "datetime",
+        "e11a_prepare_data",
+        "hashlib",
+        "json",
+        "pathlib",
+        "scoring_common",
+        "sys",
+        "transformers",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [
+        {
+          "line": 10,
+          "call": "sys.path.insert"
+        },
+        {
+          "line": 11,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/test_contrastive.py",
+      "imports": [
+        "contrastive",
+        "torch",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/test_evaluation.py",
+      "imports": [
+        "copy",
+        "evaluate",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/test_protocol.py",
+      "imports": [
+        "json",
+        "prepare",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/train_fold.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "contrastive",
+        "e11a_prepare_data",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "re",
+        "scoring_common",
+        "sys",
+        "time",
+        "torch",
+        "torch.utils.data",
+        "transformers",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [
+        {
+          "line": 250,
+          "call": "__import__"
+        },
+        {
+          "line": 250,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11d_training/verify_saved_checkpoints.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "modal",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/contrastive.py",
+      "imports": [
+        "torch",
+        "torch.nn.functional"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/e11e_common.py",
+      "imports": [
+        "assemble_e11a_results",
+        "e11a_prepare_data",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "math",
+        "pathlib",
+        "scoring_common",
+        "sys",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [
+        {
+          "line": 35,
+          "call": "importlib.util.spec_from_file_location"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/evaluate.py",
+      "imports": [
+        "collections",
+        "e11e_common",
+        "math"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/modal_training.py",
+      "imports": [
+        "json",
+        "modal",
+        "pathlib",
+        "shutil",
+        "sys",
+        "train_stages"
+      ],
+      "dynamic": [
+        {
+          "line": 9,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/prepare.py",
+      "imports": [
+        "argparse",
+        "collections",
+        "datetime",
+        "e11e_common",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/run_tests.py",
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [
+        {
+          "line": 21,
+          "call": "__import__('hashlib').sha256((HERE / 'private' / name).read_bytes()).hexdigest"
+        },
+        {
+          "line": 21,
+          "call": "__import__('hashlib').sha256"
+        },
+        {
+          "line": 21,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/test_contrastive.py",
+      "imports": [
+        "contrastive",
+        "torch",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/test_evaluation.py",
+      "imports": [
+        "copy",
+        "evaluate",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/test_training.py",
+      "imports": [
+        "e11e_common",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/train_stages.py",
+      "imports": [
+        "collections",
+        "contrastive",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "sys",
+        "time",
+        "torch",
+        "torch.utils.data",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/verify_saved_checkpoints.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "modal",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/import_layout_smoke.py",
+      "imports": [
+        "__future__",
+        "ast",
+        "contextlib",
+        "e11_modal",
+        "io",
+        "json",
+        "pathlib",
+        "scoring_common",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/prepare_scoring_inputs.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "io",
+        "json",
+        "math",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/run_detector.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "detector_adapters",
+        "fcntl",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "platform",
+        "scoring_common",
+        "sys",
+        "time"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/run_teacher_stage.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "platform",
+        "scoring_common",
+        "sklearn",
+        "sklearn.exceptions",
+        "sklearn.linear_model",
+        "validate_scoring_outputs",
+        "warnings"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/scoring_common.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/test_e11a.py",
+      "imports": [
+        "__future__",
+        "ast",
+        "e11a_modal",
+        "e11a_prepare_data",
+        "e11a_train_fold",
+        "json",
+        "pathlib",
+        "scoring_common",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "unittest",
+        "validate_e11a_protocol"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/test_scoring.py",
+      "imports": [
+        "__future__",
+        "ast",
+        "collections",
+        "contextlib",
+        "csv",
+        "detector_adapters",
+        "e11_modal",
+        "import_layout_smoke",
+        "io",
+        "json",
+        "pathlib",
+        "prepare_scoring_inputs",
+        "run_detector",
+        "scoring_common",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/validate_e11a_protocol.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "e11a_prepare_data",
+        "json",
+        "math",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/validate_scoring_outputs.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "scoring_common",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/verify_teacher_stage.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "math",
+        "pathlib",
+        "scoring_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/evaluate_e10.py",
+      "imports": [
+        "argparse",
+        "e9_common",
+        "factcg_common",
+        "json",
+        "numpy",
+        "pandas",
+        "return_to_local",
+        "sklearn.ensemble",
+        "sys",
+        "verify_baseline"
+      ],
+      "dynamic": [
+        {
+          "line": 11,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
+      "imports": [
+        "factcg_common",
+        "nltk",
+        "torch",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_common.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/prepare_gpu_inputs.py",
+      "imports": [
+        "csv",
+        "factcg_common",
+        "json"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/return_to_local.py",
+      "imports": [
+        "argparse",
+        "csv",
+        "factcg_common",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/run_factcg_gpu.py",
+      "imports": [
+        "argparse",
+        "factcg_backend",
+        "factcg_common",
+        "importlib.metadata",
+        "json",
+        "math",
+        "nltk",
+        "os",
+        "pathlib",
+        "platform",
+        "psutil",
+        "shutil",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/test_factcg_package.py",
+      "imports": [
+        "ast",
+        "contextlib",
+        "copy",
+        "csv",
+        "factcg_backend",
+        "factcg_common",
+        "io",
+        "json",
+        "nltk",
+        "numpy",
+        "pathlib",
+        "return_to_local",
+        "run_factcg_gpu",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "transformers",
+        "types",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/factcg/factcg_score.py",
+      "imports": [
+        ".inference",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/factcg/inference.py",
+      "imports": [
+        ".grounding_model",
+        ".utils",
+        "logging",
+        "math",
+        "nltk",
+        "nltk.tokenize",
+        "torch",
+        "torch.nn",
+        "tqdm",
+        "transformers",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/factcg/utils.py",
+      "imports": [],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/validate_gpu_inputs.py",
+      "imports": [
+        "factcg_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/validate_gpu_outputs.py",
+      "imports": [
+        "argparse",
+        "factcg_common",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/run_cpu_sun12.py",
+      "imports": [
+        "factcg_backend",
+        "factcg_common",
+        "hashlib",
+        "huggingface_hub",
+        "importlib.metadata",
+        "json",
+        "math",
+        "nltk",
+        "os",
+        "pathlib",
+        "platform",
+        "psutil",
+        "statistics",
+        "sys",
+        "threading",
+        "time",
+        "torch",
+        "transformers",
+        "winreg"
+      ],
+      "dynamic": [
+        {
+          "line": 21,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/run_local_smoke.py",
+      "imports": [
+        "factcg_backend",
+        "factcg_common",
+        "hashlib",
+        "huggingface_hub",
+        "importlib.metadata",
+        "json",
+        "math",
+        "nltk",
+        "os",
+        "pathlib",
+        "platform",
+        "psutil",
+        "statistics",
+        "sys",
+        "threading",
+        "time",
+        "torch",
+        "transformers"
+      ],
+      "dynamic": [
+        {
+          "line": 20,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/gpu_common.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py",
+      "imports": [
+        "csv",
+        "gpu_common",
+        "hashlib",
+        "io",
+        "json",
+        "urllib.request",
+        "zipfile"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/return_to_local.py",
+      "imports": [
+        "argparse",
+        "csv",
+        "gpu_common",
+        "io",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+      "imports": [
+        "argparse",
+        "gpu_common",
+        "importlib.metadata",
+        "json",
+        "math",
+        "minicheck.minicheck",
+        "nltk",
+        "os",
+        "pathlib",
+        "platform",
+        "psutil",
+        "shutil",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "unittest.mock",
+        "vllm"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/test_gpu_package.py",
+      "imports": [
+        "copy",
+        "csv",
+        "gpu_common",
+        "json",
+        "math",
+        "pathlib",
+        "return_to_local",
+        "run_minicheck_gpu",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/validate_gpu_inputs.py",
+      "imports": [
+        "gpu_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/validate_gpu_outputs.py",
+      "imports": [
+        "argparse",
+        "gpu_common",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
+      "imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "modal",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys",
+        "zipfile"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/aggregates.py",
+      "imports": [
+        "e9_common",
+        "numpy"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/audit_e9_a.py",
+      "imports": [
+        "aggregates",
+        "collections",
+        "decomposer",
+        "e9_common",
+        "json",
+        "numpy",
+        "pandas",
+        "run_decomposition",
+        "verify_baseline"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/audit_features.py",
+      "imports": [
+        "aggregates",
+        "collections",
+        "e9_common",
+        "json",
+        "numpy",
+        "pandas",
+        "run_decomposition",
+        "verify_baseline"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/claim_runner.py",
+      "imports": [
+        "argparse",
+        "decomposer",
+        "e9_common",
+        "json",
+        "os",
+        "pandas",
+        "verify_baseline"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/decomposer.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "time",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/decomposer_v1.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "time",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/e9_common.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "scipy.stats"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/evaluate.py",
+      "imports": [
+        "argparse",
+        "e9_common",
+        "importlib.metadata",
+        "numpy",
+        "pandas",
+        "run_decomposition",
+        "sklearn.ensemble",
+        "verify_baseline"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/minicheck_preflight.py",
+      "imports": [
+        "ctypes",
+        "datetime",
+        "e9_common",
+        "importlib.util",
+        "json",
+        "platform",
+        "torch"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/nli_features.py",
+      "imports": [
+        "aggregates",
+        "decomposer",
+        "e9_common",
+        "json",
+        "nli_backend",
+        "os",
+        "pandas",
+        "run_decomposition",
+        "sys",
+        "torch",
+        "v2_common",
+        "verify_baseline"
+      ],
+      "dynamic": [
+        {
+          "line": 35,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/prepare.py",
+      "imports": [
+        "datetime",
+        "decomposer",
+        "e9_common",
+        "os",
+        "subprocess",
+        "verify_baseline"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/report_completed.py",
+      "imports": [
+        "e9_common",
+        "json",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py",
+      "imports": [
+        "argparse",
+        "concurrent.futures",
+        "datetime",
+        "decomposer",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "re",
+        "subprocess",
+        "threading",
+        "time",
+        "urllib.error",
+        "urllib.request",
+        "uuid"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_multi12.py",
+      "imports": [
+        "argparse",
+        "datetime",
+        "decomposer",
+        "hashlib",
+        "json",
+        "os",
+        "pandas",
+        "pathlib",
+        "re",
+        "subprocess",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_nine.py",
+      "imports": [
+        "argparse",
+        "datetime",
+        "decomposer",
+        "hashlib",
+        "json",
+        "os",
+        "pandas",
+        "pathlib",
+        "subprocess",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/smoke_three.py",
+      "imports": [
+        "argparse",
+        "copy",
+        "datetime",
+        "decomposer_v1",
+        "hashlib",
+        "json",
+        "os",
+        "pandas",
+        "pathlib",
+        "subprocess",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/scripts/verify_baseline.py",
+      "imports": [
+        "e9_common",
+        "importlib.metadata",
+        "json",
+        "numpy",
+        "pandas",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/tests/test_e9.py",
+      "imports": [
+        "aggregates",
+        "decomposer",
+        "e9_common",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "dynamic": [
+        {
+          "line": 11,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v1/scripts/build_features.py",
+      "imports": [
+        "collections",
+        "e6_common",
+        "json",
+        "numpy",
+        "pandas",
+        "time",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v1/scripts/e6_common.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "os",
+        "pathlib",
+        "socket"
+      ],
+      "dynamic": [
+        {
+          "line": 61,
+          "call": "importlib.util.spec_from_file_location"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v1/scripts/evaluate_e6.py",
+      "imports": [
+        "e6_common",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v1/scripts/preflight.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "importlib.util",
+        "json",
+        "pandas",
+        "pathlib"
+      ],
+      "dynamic": [
+        {
+          "line": 18,
+          "call": "importlib.util.spec_from_file_location"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v1/scripts/prepare_run.py",
+      "imports": [
+        "e6_common",
+        "importlib.metadata",
+        "sklearn.ensemble",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v1/scripts/report_e6.py",
+      "imports": [
+        "e6_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v1/tests/test_e6.py",
+      "imports": [
+        "build_features",
+        "numpy",
+        "pathlib",
+        "sys",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 8,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/acquire_model.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "time"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/evaluate_v2.py",
+      "imports": [
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/extract_features.py",
+      "imports": [
+        "nli_backend",
+        "numpy",
+        "pandas",
+        "time",
+        "torch",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/freeze_run.py",
+      "imports": [
+        "io",
+        "sklearn.ensemble",
+        "unittest",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/nli_backend.py",
+      "imports": [
+        "numpy",
+        "random",
+        "torch",
+        "transformers",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/prepare_inputs.py",
+      "imports": [
+        "json",
+        "numpy",
+        "pandas",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/report_v2.py",
+      "imports": [
+        "evaluate_v2",
+        "extract_features",
+        "json",
+        "numpy",
+        "pandas",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/smoke_nli.py",
+      "imports": [
+        "nli_backend",
+        "time",
+        "torch",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/scripts/v2_common.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "socket",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/tests/test_v2.py",
+      "imports": [
+        "evaluate_v2",
+        "extract_features",
+        "numpy",
+        "pandas",
+        "prepare_inputs",
+        "unittest",
+        "v2_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/error_analysis/analyze_saved.py",
+      "imports": [
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "socket",
+        "statistics"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/error_analysis/build_report.py",
+      "imports": [
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "statistics"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/error_analysis/refine_review_wording.py",
+      "imports": [
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/error_analysis/verify_deliverables.py",
+      "imports": [
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "dynamic": [
+        {
+          "line": 60,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/bootstrap_sources.py",
+      "imports": [
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
+      "imports": [
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/extract_features.py",
+      "imports": [
+        "hhem_backend",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "scipy.special",
+        "time",
+        "torch",
+        "uuid",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/freeze_run.py",
+      "imports": [
+        "io",
+        "json",
+        "sklearn.ensemble",
+        "sys",
+        "unittest",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/hhem_backend.py",
+      "imports": [
+        "numpy",
+        "random",
+        "torch",
+        "transformers",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/prepare_inputs.py",
+      "imports": [
+        "numpy",
+        "pandas",
+        "shutil",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/record_acquisition.py",
+      "imports": [
+        "re",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/report_v3.py",
+      "imports": [
+        "evaluate_v3",
+        "extract_features",
+        "json",
+        "numpy",
+        "pandas",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/smoke_hhem.py",
+      "imports": [
+        "hhem_backend",
+        "time",
+        "torch",
+        "v3_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/scripts/v3_common.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "socket",
+        "sys",
+        "uuid"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/tests/test_v3.py",
+      "imports": [
+        "copy",
+        "evaluate_v3",
+        "extract_features",
+        "hhem_backend",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "prepare_inputs",
+        "sys",
+        "torch",
+        "transformers",
+        "unittest",
+        "v3_common"
+      ],
+      "dynamic": [
+        {
+          "line": 4,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/finalize_diagnosis.py",
+      "imports": [
+        "base64",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [
+        {
+          "line": 44,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/reproduce_minimal.py",
+      "imports": [
+        "bert_score",
+        "bert_score.utils",
+        "hashlib",
+        "importlib.metadata",
+        "inspect",
+        "json",
+        "os",
+        "pathlib",
+        "socket",
+        "sys",
+        "tokenizers",
+        "torch",
+        "traceback",
+        "transformers"
+      ],
+      "dynamic": [
+        {
+          "line": 5,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/compatibility_analysis/test_official_pinned.py",
+      "imports": [
+        "bert_score",
+        "bert_score.utils",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "socket",
+        "sys",
+        "time",
+        "torch",
+        "traceback",
+        "transformers"
+      ],
+      "dynamic": [
+        {
+          "line": 5,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/execution/common.py",
+      "imports": [
+        "bert_score",
+        "bert_score.utils",
+        "datetime",
+        "hashlib",
+        "huggingface_hub",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "socket",
+        "sys",
+        "tokenizers",
+        "torch",
+        "transformers"
+      ],
+      "dynamic": [
+        {
+          "line": 5,
+          "call": "sys.path.insert"
+        },
+        {
+          "line": 5,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/execution/evaluate.py",
+      "imports": [
+        "common",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "time",
+        "traceback"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/execution/extract.py",
+      "imports": [
+        "bert_score.utils",
+        "common",
+        "numpy",
+        "pandas",
+        "structure",
+        "time",
+        "torch",
+        "traceback"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/execution/freeze.py",
+      "imports": [
+        "ast",
+        "common",
+        "structure"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/execution/report.py",
+      "imports": [
+        "common",
+        "evaluate",
+        "numpy",
+        "pandas",
+        "subprocess"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/execution/smoke.py",
+      "imports": [
+        "common",
+        "structure",
+        "time",
+        "torch",
+        "traceback"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/__init__.py",
+      "imports": [
+        ".score",
+        ".scorer"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/score.py",
+      "imports": [
+        ".utils",
+        "collections",
+        "matplotlib.pyplot",
+        "mpl_toolkits.axes_grid1",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/scorer.py",
+      "imports": [
+        ".utils",
+        "collections",
+        "matplotlib.pyplot",
+        "mpl_toolkits.axes_grid1",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "transformers",
+        "warnings"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/utils.py",
+      "imports": [
+        ".",
+        "collections",
+        "functools",
+        "itertools",
+        "math",
+        "multiprocessing",
+        "os",
+        "packaging",
+        "sys",
+        "torch",
+        "torch.nn.utils.rnn",
+        "tqdm.auto",
+        "transformers"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score_cli/__init__.py",
+      "imports": [],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score_cli/score.py",
+      "imports": [
+        "argparse",
+        "bert_score",
+        "os",
+        "torch"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score_cli/visualize.py",
+      "imports": [
+        "argparse",
+        "bert_score",
+        "collections",
+        "os",
+        "time",
+        "torch"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/scripts/check_compatibility.py",
+      "imports": [
+        "base64",
+        "bert_score",
+        "bert_score.utils",
+        "csv",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "socket",
+        "sys",
+        "time",
+        "torch",
+        "traceback",
+        "transformers"
+      ],
+      "dynamic": [
+        {
+          "line": 5,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/scripts/document_blocker.py",
+      "imports": [
+        "base64",
+        "csv",
+        "json",
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "structure",
+        "v4_common"
+      ],
+      "dynamic": [
+        {
+          "line": 95,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/scripts/prepare_inputs.py",
+      "imports": [
+        "numpy",
+        "pandas",
+        "v4_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/scripts/structure.py",
+      "imports": [
+        "re",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/scripts/v4_common.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "socket",
+        "sys",
+        "uuid"
+      ],
+      "dynamic": [
+        {
+          "line": 14,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/diagnose_imports.py",
+      "imports": [
+        "e7_common",
+        "numpy",
+        "sklearn.ensemble"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/e7_common.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sklearn.ensemble",
+        "sys",
+        "types"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/evaluate_e7.py",
+      "imports": [
+        "e7_common",
+        "evaluation_common",
+        "numpy",
+        "pandas",
+        "router",
+        "scipy.stats",
+        "sklearn.ensemble"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/evaluation_common.py",
+      "imports": [
+        "e7_common",
+        "numpy",
+        "scipy.stats"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/preflight.py",
+      "imports": [
+        "e7_common"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py",
+      "imports": [
+        "e7_common",
+        "numpy",
+        "router"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/report_e7.py",
+      "imports": [
+        "e7_common",
+        "evaluation_common",
+        "numpy",
+        "pandas",
+        "router"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/scripts/router.py",
+      "imports": [
+        "math",
+        "numpy",
+        "pandas"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/tests/test_access_repair.py",
+      "imports": [
+        "e7_common",
+        "os",
+        "pathlib",
+        "platform",
+        "sys",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 6,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/tests/test_e7.py",
+      "imports": [
+        "e7_common",
+        "joblib",
+        "math",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "router",
+        "sys",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 8,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/scripts/e8_common.py",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "platform",
+        "sys",
+        "types"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/scripts/e8_data.py",
+      "imports": [
+        "e8_common",
+        "importlib.metadata",
+        "nested_rf",
+        "numpy",
+        "pandas",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/scripts/evaluate_e8.py",
+      "imports": [
+        "e8_common",
+        "e8_data",
+        "hashlib",
+        "json",
+        "nested_rf",
+        "numpy",
+        "pandas",
+        "sklearn.ensemble"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/scripts/nested_rf.py",
+      "imports": [
+        "numpy",
+        "pandas",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.model_selection"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/scripts/prepare_e8.py",
+      "imports": [
+        "e8_common",
+        "e8_data",
+        "io",
+        "joblib",
+        "nested_rf",
+        "numpy",
+        "pandas",
+        "sys",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8_render_fixed.py",
+      "imports": [
+        "e8_common",
+        "e8_data",
+        "evaluate_e8",
+        "hashlib",
+        "json",
+        "nested_rf",
+        "numpy",
+        "pandas"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/tests/test_e8.py",
+      "imports": [
+        "copy",
+        "nested_rf",
+        "numpy",
+        "pandas",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/scripts/run_replay.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "huggingface_hub",
+        "importlib.metadata",
+        "json",
+        "os",
+        "pathlib",
+        "runpy",
+        "sys",
+        "time"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/scripts/sitecustomize.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "json",
+        "os",
+        "pathlib",
+        "socket"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/tests/test_rag_features_pinned.py",
+      "imports": [
+        "importlib.util",
+        "math",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 4,
+          "call": "importlib.util.spec_from_file_location"
+        },
+        {
+          "line": 4,
+          "call": "__import__('os').environ.get"
+        },
+        {
+          "line": 4,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/tests/test_replay_static.py",
+      "imports": [
+        "ast",
+        "importlib.util",
+        "os",
+        "pathlib",
+        "socket",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 4,
+          "call": "__import__('os').environ.get"
+        },
+        {
+          "line": 5,
+          "call": "__import__('os').environ.get"
+        },
+        {
+          "line": 4,
+          "call": "__import__"
+        },
+        {
+          "line": 5,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "re",
+        "sentence_transformers",
+        "torch",
+        "transformers",
+        "typing",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_exact_overlap_audit_pinned.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "json",
+        "module4_build_rag_features",
+        "numpy",
+        "os",
+        "pathlib",
+        "sentence_transformers",
+        "sys",
+        "unicodedata"
+      ],
+      "dynamic": [
+        {
+          "line": 9,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/tests/test_mpnet_provenance_static.py",
+      "imports": [
+        "ast",
+        "pathlib",
+        "unittest"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.ensemble",
+        "sklearn.metrics"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_exact_overlap_audit.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "json",
+        "module4_build_rag_features",
+        "numpy",
+        "os",
+        "pathlib",
+        "sentence_transformers",
+        "sys",
+        "unicodedata"
+      ],
+      "dynamic": [
+        {
+          "line": 9,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_finalize_diagnostics.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "scipy.stats",
+        "sklearn.metrics"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_schannel_acquire.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "email.utils",
+        "hashlib",
+        "json",
+        "module4_build_wiktionary_lexicon",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "typing"
+      ],
+      "dynamic": [
+        {
+          "line": 11,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/tests/test_schannel_transport.py",
+      "imports": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 3,
+          "call": "importlib.util.spec_from_file_location"
+        },
+        {
+          "line": 9,
+          "call": "__import__('hashlib').sha256(raw).hexdigest"
+        },
+        {
+          "line": 9,
+          "call": "__import__('hashlib').sha256"
+        },
+        {
+          "line": 9,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/scripts/module4_build_rag_features.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "re",
+        "sentence_transformers",
+        "torch",
+        "transformers",
+        "typing",
+        "unicodedata"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/scripts/module4_build_wiktionary_lexicon.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "module4_build_external_lexicon",
+        "os",
+        "pathlib",
+        "ssl",
+        "sys",
+        "time",
+        "typing",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "dynamic": [
+        {
+          "line": 16,
+          "call": "sys.path.insert"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/tests/test_rag_features.py",
+      "imports": [
+        "importlib.util",
+        "math",
+        "numpy",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 4,
+          "call": "importlib.util.spec_from_file_location"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/results/rag_module4/continuation_v1/tests/test_wiktionary_orchestration.py",
+      "imports": [
+        "csv",
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 5,
+          "call": "importlib.util.spec_from_file_location"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "RAG/scripts/module2_dense_cache.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "random",
+        "re",
+        "sentence_transformers",
+        "sys",
+        "time",
+        "torch",
+        "transformers",
+        "typing",
+        "unicodedata"
+      ],
+      "dynamic": [
+        {
+          "line": 910,
+          "call": "__import__('os').environ.get"
+        },
+        {
+          "line": 910,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/scripts/module4_build_external_lexicon.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "bs4",
+        "collections",
+        "copy",
+        "csv",
+        "datetime",
+        "hashlib",
+        "html",
+        "json",
+        "pathlib",
+        "re",
+        "tarfile",
+        "time",
+        "typing",
+        "unicodedata",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "RAG/tests/test_module4_external_lexicon.py",
+      "imports": [
+        "importlib.util",
+        "io",
+        "json",
+        "pathlib",
+        "tarfile",
+        "tempfile",
+        "unittest"
+      ],
+      "dynamic": [
+        {
+          "line": 10,
+          "call": "importlib.util.spec_from_file_location"
+        },
+        {
+          "line": 81,
+          "call": "__import__('hashlib').sha256(b'alpha').hexdigest"
+        },
+        {
+          "line": 81,
+          "call": "__import__('hashlib').sha256"
+        },
+        {
+          "line": 81,
+          "call": "__import__"
+        }
+      ],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "solution/create_example_data.py",
+      "imports": [
+        "json",
+        "pathlib",
+        "src.data.loader"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/__init__.py",
+      "imports": [],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/data/__init__.py",
+      "imports": [
+        ".loader",
+        ".preprocess"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/data/loader.py",
+      "imports": [
+        "json",
+        "pandas",
+        "pathlib",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/data/nli_loader.py",
+      "imports": [
+        "datasets",
+        "logging",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/data/preprocess.py",
+      "imports": [
+        "pandas",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/main.py",
+      "imports": [
+        "argparse",
+        "datasets",
+        "json",
+        "pathlib",
+        "src.data.nli_loader",
+        "src.models.entailment_model",
+        "src.training.ensemble_meta_train",
+        "src.training.evaluate",
+        "src.training.pseudo_label",
+        "src.training.train",
+        "sys",
+        "torch",
+        "transformers",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/models/__init__.py",
+      "imports": [
+        ".entailment_model"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/models/entailment_model.py",
+      "imports": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "safetensors.torch",
+        "torch",
+        "transformers",
+        "transformers.modeling_outputs",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/training/__init__.py",
+      "imports": [
+        ".evaluate",
+        ".pseudo_label",
+        ".train"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/training/ensemble_meta_train.py",
+      "imports": [
+        "argparse",
+        "datasets",
+        "json",
+        "logging",
+        "numpy",
+        "pathlib",
+        "src.data.loader",
+        "src.data.preprocess",
+        "src.models.entailment_model",
+        "src.utils.metrics",
+        "src.utils.seed",
+        "torch",
+        "torch.nn",
+        "torch.optim",
+        "torch.utils.data",
+        "transformers",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/training/evaluate.py",
+      "imports": [
+        "argparse",
+        "numpy",
+        "src.data.loader",
+        "src.data.preprocess",
+        "src.models.entailment_model",
+        "src.utils.metrics",
+        "src.utils.seed",
+        "torch",
+        "torch.utils.data",
+        "tqdm",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/training/pseudo_label.py",
+      "imports": [
+        "argparse",
+        "numpy",
+        "src.data.loader",
+        "src.data.preprocess",
+        "src.models.entailment_model",
+        "src.utils.seed",
+        "torch",
+        "torch.utils.data",
+        "tqdm",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/training/train.py",
+      "imports": [
+        "argparse",
+        "datasets",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pathlib",
+        "src.data.loader",
+        "src.data.preprocess",
+        "src.models.entailment_model",
+        "src.utils.metrics",
+        "src.utils.seed",
+        "torch",
+        "transformers",
+        "typing",
+        "yaml"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/utils/__init__.py",
+      "imports": [
+        ".metrics",
+        ".seed"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/utils/metrics.py",
+      "imports": [
+        "numpy",
+        "scipy.stats",
+        "sklearn.metrics",
+        "typing"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/src/utils/seed.py",
+      "imports": [
+        "numpy",
+        "random",
+        "torch"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "solution/train_best_pipeline.py",
+      "imports": [
+        "argparse",
+        "logging",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": false
+    },
+    {
+      "path": "thesis_writing/chapter9_phase1/verify_sources.py",
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "statistics"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "tools/public_release/audit_candidate.py",
+      "imports": [
+        "IPython.core.inputtransformer2",
+        "ast",
+        "collections",
+        "csv",
+        "hashlib",
+        "io",
+        "ipaddress",
+        "json",
+        "pathlib",
+        "re",
+        "urllib.parse"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "tools/public_release/finalize_manifests.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    },
+    {
+      "path": "tools/public_release/transform_diagnostics.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "dynamic": [],
+      "has_relative_path_logic": true
+    }
+  ],
+  "notes": [
+    "Static imports are enumerated, not imported or executed. External/dynamic artifacts are not claimed resolvable.",
+    "Known historical E8 syntax exception is reviewed separately.",
+    "Source paths remain unchanged; candidate source hashes are compared independently to private HEAD.",
+    "URL scan checks host types, not HTTP availability. No model/API calls.",
+    "Pattern scanning is not a proof against every possible secret. Review candidates before release.",
+    "No file-size cutoff; report does not scan its newly written version until the final independent pass.",
+    "Notebook structure and all code cells checked with IPython transformation plus AST; nbformat package unavailable, no dependency installation performed."
+  ]
+}

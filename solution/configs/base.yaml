@@ -1,0 +1,27 @@
+# Base configuration for hallucination detection model
+
+# Data
+train_data: data/raw/train.model-agnostic.json
+eval_data: data/raw/train.model-agnostic.json
+task_type: null  # Auto-detect if null, or specify: DM/MT/PG
+
+# Model
+model_name: microsoft/deberta-large
+num_labels: 2
+
+# Training
+epochs: 3
+batch_size: 8
+learning_rate: 2e-5
+max_length: 512
+warmup_steps: 500
+weight_decay: 0.01
+
+# Output
+output_dir: ./output
+
+# Seed
+seed: 42
+
+# Pseudo-labeling
+confidence_threshold: 0.8

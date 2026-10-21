@@ -1,0 +1,15 @@
+{
+  "frozen_decomposer": "PASS",
+  "baseline_hashes": "PASS",
+  "persisted_request_payloads_verified": 78,
+  "prompt_fields": [
+    "hyp",
+    "task"
+  ],
+  "official_test_accessed": false,
+  "full_coverage": "PENDING",
+  "rf_fits": 0,
+  "nli_calls": 0,
+  "minicheck_calls": 0,
+  "source_syntax": "PASS"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "purpose": "Orchestrate frozen E9-B then frozen E10 on one Modal A100-80GB function invocation; no model or scoring changes",
+  "modal_client_version": "1.5.5",
+  "app_name": "shroom-phase3-frozen-gpu",
+  "volume_name": "shroom-phase3-frozen-gpu-results",
+  "volume_mount": "/results",
+  "remote_package_root": "/opt/SHROOM/SHROOM2024/RAG/results/phase3_e9_claim_verification",
+  "gpu": "A100-80GB",
+  "gpu_count": 1,
+  "cpu": 8,
+  "memory_mib": 65536,
+  "ephemeral_disk_mib": 524288,
+  "timeout_seconds": 14400,
+  "stages": [
+    "minicheck_gpu",
+    "factcg_gpu"
+  ],
+  "packages": {
+    "minicheck_gpu": {
+      "archive": "minicheck_gpu_portable.zip",
+      "archive_sha256": "02373bfdf2f851b31e3e6883c66225e3ec23618e2272fcaae4478c623613c8f4",
+      "manifest_sha256": "29661b0377ccfc5bae18dede57924e7440385c3eb75eef460a94ab6c4e863be7",
+      "input_file": "minicheck_inputs.jsonl",
+      "input_sha256": "e41506779d4798c0ad2476e8da38ca197ebda2960a100848890181b852f3080a",
+      "samples": 561,
+      "rows": 575,
+      "model_id": "bespokelabs/Bespoke-MiniCheck-7B",
+      "model_revision": "1ed7786bcda3fa1dc35f7c4ed9e3f36b785d33b8",
+      "runner": "run_minicheck_gpu.py",
+      "input_validator": "validate_gpu_inputs.py",
+      "output_validator": "validate_gpu_outputs.py",
+      "output_file": "minicheck_scores.jsonl",
+      "report_file": "MINICHECK_GPU_REPORT.json"
+    },
+    "factcg_gpu": {
+      "archive": "factcg_gpu_portable.zip",
+      "archive_sha256": "5388d4373f054af19ecdaa10b1960c1ca982affb4827fa6a98028caf46e362ad",
+      "manifest_sha256": "357e2b011f9403dfe9fb28ae84ffc4cd3524eeb5e9f347d3d295f90dceb30d3f",
+      "input_file": "factcg_inputs.jsonl",
+      "input_sha256": "10ecdbc5f25bd4b9c7c7d4c2d131194647a86c556591c75418dbcb436ba1753d",
+      "samples": 561,
+      "rows": 561,
+      "model_id": "yaxili96/FactCG-DeBERTa-v3-Large",
+      "model_revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80",
+      "runner": "run_factcg_gpu.py",
+      "input_validator": "validate_gpu_inputs.py",
+      "output_validator": "validate_gpu_outputs.py",
+      "output_file": "factcg_scores.jsonl",
+      "report_file": "FACTCG_GPU_REPORT.json"
+    }
+  }
+}

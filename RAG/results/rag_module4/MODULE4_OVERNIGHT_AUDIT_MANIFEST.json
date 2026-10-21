@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "run": "E5 Module 4 overnight autonomous run",
+  "status": "STOPPED",
+  "verdict": "MODULE4_OVERNIGHT_STOPPED_STAGE0_PREMATURE_DEVELOPMENT_LABEL_ACCESS",
+  "last_successful_work": "Stage 0 Phase 0D/Stage A hash and population verification",
+  "stop_stage": "Stage 0",
+  "stop_timestamp_utc": "2026-08-30T06:34:51.7277692Z",
+  "blocker": {
+    "type": "PREMATURE_DEVELOPMENT_LABEL_ACCESS",
+    "path": "codex/canonical_feature_outputs/canonical_human_14_features.csv",
+    "access_scope": "header and first data row, read-only",
+    "fields_exposed": ["label", "label_bin", "p_hallucination"],
+    "feature_lock_preexisted": false,
+    "labels_used_for_design_or_tuning": false,
+    "reason_execution_cannot_continue": "The frozen protocol requires development-label access before feature lock to equal zero."
+  },
+  "verified_integrity": {
+    "phase0_plan_sha256": "d27ef3f4965aa277bc1fda6c0e24670b63326c037e5e36ed63477b32c7f4bb7b",
+    "stage_a_addendum_sha256": "bcb4e866ecd43e9072d98284421d6e194a16c8cc5c41e196d686cd285906de91",
+    "parser_spec_sha256": "c7e5d9398c67bebc93dd5d418591da94afb34923fdf6b2a522a6e3579fe6405a",
+    "parser_script_sha256": "db6d3a8ffe595ca875d349b074041c7679328fc9f50df4499a943d129411021e",
+    "parser_tests_sha256": "ace643aab5b29fba7e1859241e81db342e8088a362ef6bd44477040d16b764fb",
+    "parser_requirements_sha256": "8ea52aa64e76c5e431833b80cb25b8fcd11e6bac3eda9ad36d31e737ca8fd799",
+    "locked_inputs_sha256": "3f92a0b398b97873716dda69d108467a4309fe28bd565be692a74e1af74523d5",
+    "phase0d_addendum_sha256": "09b809b0ce91bb184ac3d2e79840f443b63ebd75b8d988a7b4a45e27cab8e9d1",
+    "phase0d_report_sha256": "a53fc398e19cc62005e3ca2ae11a608f1bcfe37e804ea7cb44cdd1c00dc43e7d",
+    "phase0d_manifest_sha256": "771fc939502ffa7caee1100a2077a81132d877b0adfb6d2537d0170644418fc5",
+    "historical_network_log_sha256": "ebb9a79eb9d0b87936e954bd406fb52f962868e750d88104a4a6d0523cc768c1",
+    "canonical_rows": 561,
+    "task_counts": {"DM": 211, "MT": 216, "PG": 134},
+    "rag_applicable_dm_rows": 211,
+    "unique_normalized_dm_terms": 206,
+    "invented_mt_pg_terms": 0,
+    "historical_transport_attempts": 6,
+    "historical_successful_responses": 0
+  },
+  "execution_accounting": {
+    "new_wiktionary_logical_requests": 0,
+    "new_wiktionary_transport_attempts": 0,
+    "new_wordnet_requests": 0,
+    "other_network_requests": 0,
+    "http_requests": 0,
+    "tls_bypasses": 0,
+    "unapproved_source_requests": 0,
+    "mpnet_executions": 0,
+    "nli_executions": 0,
+    "rag_feature_generation_executions": 0,
+    "rf_training_executions": 0,
+    "prediction_executions": 0,
+    "metric_executions": 0,
+    "development_label_accesses_before_feature_lock": 1,
+    "holdout_label_accesses": 0,
+    "official_test_accesses": 0,
+    "ai_annotation_accesses": 0,
+    "human_annotation_accesses": 0,
+    "protected_content_accesses": 0,
+    "quarantine_content_accesses": 0
+  },
+  "artifacts": [
+    {
+      "path": "RAG/results/rag_module4/MODULE4_FINAL_RESULTS.md",
+      "size": 3044,
+      "sha256": "58b37f56302d47204a8202963c217931e8fdad8c6134d91bc5ae36349ddcfb74",
+      "operation": "created"
+    }
+  ]
+}

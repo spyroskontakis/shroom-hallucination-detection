@@ -1,0 +1,8 @@
+{
+  "baseline_fits": 0,
+  "configuration_count": 1,
+  "expected_rf_fits": 5,
+  "feature_freeze_sha256": "dd3a7506ff375757ec072644503197fb691f5ed6003599d4d2acd30d89069b94",
+  "run_config_sha256": "a9d661b533425bc8b9c5cd0583f7e9c49b5fe40c60727a4430548121cbe55acc",
+  "started_utc": "2026-09-10T15:56:41.973200+00:00"
+}

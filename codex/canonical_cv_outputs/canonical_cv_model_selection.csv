@@ -1,0 +1,2 @@
+selected_experiment,selection_rule,selected_overall_oof_accuracy,selected_overall_oof_spearman,e4_diagnostic_only,official_test_used
+E3_NLI_similarity,E1-E3 only; primary overall_oof_accuracy; secondary overall_oof_spearman,0.7932263814616756,0.7390395612811848,True,False

@@ -1,0 +1,8 @@
+{
+  "evaluation_freeze_sha256": "d30bf8372baac2ccc941b57561539a490e899bc25637c223cf5cc40e2576cd14",
+  "expected_evaluation_count": 1,
+  "expected_outer_folds": 5,
+  "expected_rf_fits": 10,
+  "protocol_sha256": "0491505c0f98a2a4d2a0896370adbbc3674c6fdf873b96a8a31833e587923002",
+  "started_utc": "2026-09-09T18:14:50.534408+00:00"
+}

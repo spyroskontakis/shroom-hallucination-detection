@@ -1,0 +1,83 @@
+{
+  "status": "COMPLETED",
+  "rf_fits": 5,
+  "feature_count": 37,
+  "oof_predictions": 561,
+  "metrics": {
+    "overall": {
+      "n": 561,
+      "correct": 475,
+      "accuracy": 0.8467023172905526,
+      "spearman": 0.7828092941190203
+    },
+    "per_fold": {
+      "1": {
+        "n": 113,
+        "correct": 100,
+        "accuracy": 0.8849557522123894,
+        "spearman": 0.8201828246248272
+      },
+      "2": {
+        "n": 112,
+        "correct": 91,
+        "accuracy": 0.8125,
+        "spearman": 0.7703867857508642
+      },
+      "3": {
+        "n": 112,
+        "correct": 93,
+        "accuracy": 0.8303571428571429,
+        "spearman": 0.7688003849894893
+      },
+      "4": {
+        "n": 112,
+        "correct": 93,
+        "accuracy": 0.8303571428571429,
+        "spearman": 0.774702565398518
+      },
+      "5": {
+        "n": 112,
+        "correct": 98,
+        "accuracy": 0.875,
+        "spearman": 0.7906591417265447
+      }
+    },
+    "per_task": {
+      "DM": {
+        "n": 211,
+        "correct": 171,
+        "accuracy": 0.8104265402843602,
+        "spearman": 0.691600046315641
+      },
+      "MT": {
+        "n": 216,
+        "correct": 190,
+        "accuracy": 0.8796296296296297,
+        "spearman": 0.831582341870796
+      },
+      "PG": {
+        "n": 134,
+        "correct": 114,
+        "accuracy": 0.8507462686567164,
+        "spearman": 0.752681064841593
+      }
+    }
+  },
+  "paired_vs_e6_v3": {
+    "corrections": 2,
+    "regressions": 1,
+    "net_correct": 1,
+    "mcnemar_exact_p": 1.0,
+    "accuracy_difference": 0.0017825311942959,
+    "bootstrap_95_ci": [
+      -0.0035650623885918,
+      0.0071301247771836
+    ],
+    "bootstrap_seed": 42,
+    "bootstrap_samples": 10000
+  },
+  "selected": "E10",
+  "selection_rule": "Accuracy first, Spearman on exact accuracy tie; exact tie retains E6-v3",
+  "features_sha256": "3df72798ced45c5f0efeabd024765356afa4f57eba381c86a9ba7645ceb4f51a",
+  "oof_sha256": "6a9a20b32db79bc25ea325a804cb0abe75c9f7f5583bec9a4bad4addc0ddd871"
+}

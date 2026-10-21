@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Dev/SHROOM_dev-v2/README-v2.txt",
+    "original_sha256": "c604b8448e6faccf61fa935c1342f0058953b20e4a0c9d2bbdded76ed6de98d7",
+    "decision": "PRIVATE_LICENSE_NOTICE_UNCONFIRMED",
+    "reason": "Organizer documentation: no verified accompanying redistribution notice. Preserved privately; acquire from the authorized dataset source."
+  },
+  {
+    "path": "Trial/SHROOM_trial-v1.1/README-v1.1.txt",
+    "original_sha256": "f0d64caa8e4ae04cb9a531a8cab5af753537b50533ab5aee6c15c4d459266ed4",
+    "decision": "PRIVATE_LICENSE_NOTICE_UNCONFIRMED",
+    "reason": "Organizer documentation: no verified accompanying redistribution notice. Preserved privately; acquire from the authorized dataset source."
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "schema_version": "module4-release-manifest-v1",
+  "release_root": "RAG/module4_release_v1",
+  "inventories": {
+    "source": [
+      {
+        "path": "RAG/module4_release_v1/verify_module4.py",
+        "size": 10972,
+        "sha256": "74676563cace86438c4487f2135bb65fb234307e2ff894341d50e38e7b26d638"
+      },
+      {
+        "path": "RAG/module4_release_v1/tests/test_verify_module4.py",
+        "size": 7225,
+        "sha256": "aff6a2bf128ac094c4372c787025740825c029cec223f3235f85e68a000497e4"
+      },
+      {
+        "path": "RAG/module4_release_v1/README.md",
+        "size": 10119,
+        "sha256": "5198fde85146f5815311f006710f65424c61bc431787a64bc8707d98383b8bbd"
+      },
+      {
+        "path": "RAG/module4_release_v1/THESIS_MODULE4.md",
+        "size": 13834,
+        "sha256": "6dddd8c3c5a6fcb00f404a601ead3762d4dda4934a9a6b8c1891521f43124e85"
+      },
+      {
+        "path": "RAG/module4_release_v1/HANDOFF.md",
+        "size": 4619,
+        "sha256": "fd0051704e7418812d19a789ff0166580794c50ff561990e2a85e1f4620ccf54"
+      }
+    ],
+    "local_artifacts": [
+      {
+        "path": "RAG/results/rag_module4/MODULE4_RAG_ASSISTED_FUSION_PLAN.md",
+        "size": 19363,
+        "sha256": "d27ef3f4965aa277bc1fda6c0e24670b63326c037e5e36ed63477b32c7f4bb7b"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/MODULE4_FEATURE_PREPARATION_SPEC.md",
+        "size": 2080,
+        "sha256": "958158a8c79145bbfdc1d4ceed91378174f19115be92aa1ad0e9a96ec52ffb33"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/CONTINUATION_AUTHORIZATION_AND_DEVIATION.md",
+        "size": 5208,
+        "sha256": "a0f4d6582eaac1c44ad8460bce860105a9c947756731cfcf65adaacb94e1524f"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/SCHANNEL_CONTINUATION_FINAL_REPORT.md",
+        "size": 11714,
+        "sha256": "b895c0e089c437077a401f54815ca7f435924a475e7960b3a1cfd2efa009b5bc"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/SCHANNEL_STATE.json",
+        "size": 3924,
+        "sha256": "c21ff07e95495c9cd756be3b4d1008685a32f295419e9de98cc6ba8cd2269ec0"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/PRE_RUN_MANIFEST.json",
+        "size": 2742,
+        "sha256": "0841cb16eb010dd36d5c0cf9bd41557010386b97f2ea97d5020e3d00d0a2f339"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/PINNED_REPLAY_REPORT.md",
+        "size": 5801,
+        "sha256": "0dcfd36870ddd1afeb590c00148e97e30cffd83f8cf5eba1157a259f059da5e6"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/RUNTIME_PROVENANCE_MANIFEST.json",
+        "size": 4534,
+        "sha256": "2c110059ff1b27ac2a14beb973f4ad10f2749798663a0afd247c0943149dc772"
+      },
+      {
+        "path": "RAG/results/rag_module4/static_protocol/module4_dev_inputs_locked.csv",
+        "size": 96241,
+        "sha256": "3f92a0b398b97873716dda69d108467a4309fe28bd565be692a74e1af74523d5"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_external_lexical_snapshot.jsonl",
+        "size": 381385,
+        "sha256": "7677937ace64644afa4f39d8745f54711640a578f1387d9e389008b1e0440d40"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_rag_features.csv",
+        "size": 38385,
+        "sha256": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_exact_overlap_audit.csv",
+        "size": 16350,
+        "sha256": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/outputs/module4_rag_features_pinned_replay.csv",
+        "size": 38385,
+        "sha256": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/outputs/module4_exact_overlap_audit_pinned_replay.csv",
+        "size": 16350,
+        "sha256": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a"
+      }
+    ]
+  }
+}

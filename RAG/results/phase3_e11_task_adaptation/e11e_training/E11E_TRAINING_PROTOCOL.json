@@ -1,0 +1,378 @@
+{
+  "experiment": "E11-E",
+  "status": "FROZEN_BEFORE_TRAINING",
+  "teacher_protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "e11a_protocol_sha256": "518c2df610a1483472b94e8baf3c0c4b277275f351e7448822e35d9dc871772d",
+  "model": {
+    "id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+    "local_mirror_dir": "RAG/results/rag_e6_v2/model",
+    "local_assets_sha256": {
+      "model.safetensors": "c03cd208bf920b4fbbb182a0535859a566e8acc3477d2b536bf87b769978524b",
+      "config.json": "7f9d420b616691c5b575bab8839719aefbddc656d8e1316519414b097ce43e3d",
+      "tokenizer.json": "7aa118770f066a74530d161c7d0b994d0629cc0ff3a0df213f184192773f960a",
+      "tokenizer_config.json": "556a192d83e3edb45a09a6207095dd9295c3b2279062e5cc430feac4cb7a0817",
+      "special_tokens_map.json": "fcfbeb4e25cd37fb5b8030406394253b245230fd3b552750092bab7d24d827da",
+      "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+      "added_tokens.json": "cd0141b19e809eb963a8f8244fad72530233f729e1f6960d281e1fbb3537b2fb"
+    },
+    "loading": "local_files_only=True; safetensors; reuse pinned pretrained encoder; replace mismatched 3-way NLI classifier head with a seeded 2-way head",
+    "num_labels": 2,
+    "id2label": {
+      "0": "not_hallucination",
+      "1": "hallucination"
+    },
+    "label2id": {
+      "not_hallucination": 0,
+      "hallucination": 1
+    },
+    "quantization": null
+  },
+  "input": {
+    "type": "tokenizer_text_pair",
+    "sequence_a_template": "TASK: {task}\nREFERENCE:\n{reference}",
+    "sequence_b_template": "HYPOTHESIS:\n{hyp}",
+    "reference_field_by_task": {
+      "DM": "tgt",
+      "MT": "tgt",
+      "PG": "src"
+    },
+    "claim": "Unchanged complete original hyp field",
+    "tokenization": {
+      "add_special_tokens": true,
+      "truncation": "longest_first",
+      "max_length": 512,
+      "batch_padding": "longest_in_batch"
+    },
+    "forbidden_text_fields": [
+      "label",
+      "label_bin",
+      "p_hallucination",
+      "model",
+      "detector_scores",
+      "RF_predictions",
+      "external_definitions"
+    ]
+  },
+  "stage1": {
+    "optimizer": "torch.optim.AdamW",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "epochs": 1,
+    "train_batch_size": 8,
+    "evaluation_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_train_batch_size": 16,
+    "warmup_ratio": 0.1,
+    "warmup_steps_rule": "ceil(0.1 * total_optimizer_steps)",
+    "lr_schedule": "linear warmup then linear decay to zero by final optimizer step",
+    "gradient_clip_max_norm": 1.0,
+    "random_seed": 42,
+    "precision": "BF16 autocast on one A100-80GB",
+    "loss": "weighted torch.nn.CrossEntropyLoss",
+    "class_weight_formula": "weight_c = N_train / (2 * N_class_c), using only fold training labels",
+    "class_weight_values_by_fold": {
+      "1": {
+        "1": 1.158313679245283,
+        "0": 0.8797581728616212
+      },
+      "2": {
+        "1": 1.1587067610062893,
+        "0": 0.8795315530359541
+      },
+      "3": {
+        "1": 1.157053168530508,
+        "0": 0.880486712451478
+      },
+      "4": {
+        "1": 1.158086067989782,
+        "0": 0.8798895192594804
+      },
+      "5": {
+        "1": 1.1579257513258692,
+        "0": 0.8799820868786385
+      }
+    },
+    "oversampling": false,
+    "early_stopping": false,
+    "checkpoint_selection": "final model after exactly one synthetic epoch"
+  },
+  "stage2": {
+    "optimizer": "torch.optim.AdamW",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "epochs": 5,
+    "train_batch_size": 8,
+    "evaluation_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_train_batch_size": 16,
+    "warmup_ratio": 0.1,
+    "warmup_steps_rule": "ceil(0.1 * total_optimizer_steps)",
+    "lr_schedule": "linear warmup then linear decay to zero by final optimizer step",
+    "gradient_clip_max_norm": 1.0,
+    "random_seed": 42,
+    "precision": "BF16 autocast on one A100-80GB",
+    "loss": "weighted torch.nn.CrossEntropyLoss",
+    "class_weight_formula": "weight_c = N_train / (2 * N_class_c), using only fold training labels",
+    "class_weight_values_by_fold": {
+      "1": {
+        "0": 0.9105691056910569,
+        "1": 1.108910891089109
+      },
+      "2": {
+        "0": 0.9126016260162602,
+        "1": 1.1059113300492611
+      },
+      "3": {
+        "0": 0.9163265306122449,
+        "1": 1.1004901960784315
+      },
+      "4": {
+        "0": 0.9163265306122449,
+        "1": 1.1004901960784315
+      },
+      "5": {
+        "0": 0.9126016260162602,
+        "1": 1.1059113300492611
+      }
+    },
+    "oversampling": false,
+    "early_stopping": false,
+    "checkpoint_selection": "final model after exactly five epochs; no held-out-based selection"
+  },
+  "output": {
+    "hallucination_class_id": 1,
+    "probability": "softmax(logits)[class_id=1] using explicit id2label/label2id assertion",
+    "classification_threshold": 0.5,
+    "prediction_rule": "predicted_class=1 if p(H)>=0.5 else 0",
+    "oof_fields": [
+      "sample_id",
+      "fold_id",
+      "task",
+      "gold_label",
+      "predicted_class",
+      "p_H"
+    ],
+    "oof_rule": "Five independent final checkpoints, one per locked fold; predict held-out fold only; concatenate to 561 unique IDs after all five runs."
+  },
+  "folds_sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+  "architecture": "five fold-specific synthetic Stage-1 then human Stage-2 fits, both with frozen E11-D contrastive loss",
+  "fits": 10,
+  "seed": 42,
+  "stage1_choice": "One fixed conservative epoch; all other optimizer/input settings inherited from E11-A. No search.",
+  "selection_override": "Current user instruction uses the full definitive pool after leakage/duplicate exclusions; supersedes earlier teacher-preparation balanced/capped selection. Teacher artifacts unchanged.",
+  "leakage_policy": "NFC whitespace-normalized casefold full/task-source/task-target/task-reference/source-pair and global hypothesis matches to outer validation; no validation labels used.",
+  "folds": {
+    "1": {
+      "synthetic_rows": 11787,
+      "leakage_exclusions": 18,
+      "reasons": {
+        "hyp": 4,
+        "reference": 14,
+        "tgt": 13,
+        "source_pair": 8,
+        "src": 9
+      },
+      "class_counts": {
+        "1": 5088,
+        "0": 6699
+      },
+      "per_task": {
+        "DM": {
+          "1": 2771,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1034,
+          "0": 2887
+        },
+        "PG": {
+          "0": 2675,
+          "1": 1283
+        }
+      },
+      "human_train_rows": 448,
+      "heldout_rows": 113,
+      "files_sha256": {
+        "synthetic.jsonl": "663a2d1750ee96efa491634f4b65c41838b33e6997c282ce20a1480f93f12774",
+        "leakage_exclusions.jsonl": "cdfbd6c09906418f2ca6ed308416f7a13e360d10dd7a52121474824375dd4610",
+        "train.jsonl": "e0b37488f5008b0eccbed5c5cca904be90c22e23513042851c504aacf5850ed7",
+        "heldout.jsonl": "cb525a485a0d784e6d90419854caa6968bad6000daec399cabb00a253889e84e"
+      }
+    },
+    "2": {
+      "synthetic_rows": 11791,
+      "leakage_exclusions": 14,
+      "reasons": {
+        "hyp": 3,
+        "reference": 12,
+        "tgt": 12,
+        "source_pair": 5,
+        "src": 5
+      },
+      "class_counts": {
+        "1": 5088,
+        "0": 6703
+      },
+      "per_task": {
+        "DM": {
+          "1": 2767,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1037,
+          "0": 2890
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "d4509851a728f6a9620d54cdee700dc033503be87ea1e9019967502395e81f2a",
+        "leakage_exclusions.jsonl": "78c139306b996cd8922119e1dec0b3258bb160d7dfbd28fb9bf1212273008863",
+        "train.jsonl": "cf9900870c34566313a247cee6f1496962a0a9c77cbd874efe831aabe596ef73",
+        "heldout.jsonl": "04bac826ad3618a4f6d7bd560b07ea572ef184fd95ef22a77a12c4c69276ba3f"
+      }
+    },
+    "3": {
+      "synthetic_rows": 11795,
+      "leakage_exclusions": 10,
+      "reasons": {
+        "hyp": 2,
+        "reference": 9,
+        "tgt": 9,
+        "source_pair": 7,
+        "src": 7
+      },
+      "class_counts": {
+        "1": 5097,
+        "0": 6698
+      },
+      "per_task": {
+        "DM": {
+          "1": 2773,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1040,
+          "0": 2885
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "1eb1b8a5a6464cea0a3e755b7550e0cd52b8a85a34f1884be81b277797be257d",
+        "leakage_exclusions.jsonl": "ec77dfea73fed2a56b68e31c38a89df691d593b6caa51cac5b02b9223568c792",
+        "train.jsonl": "deaae989155e6d6424d56083e9560fb811cdd62f6cabc53406cef536528bacf6",
+        "heldout.jsonl": "cc68e546d654dff5d54531d3a9489aaf1382cbca409ce92cd73a16f2aba79caa"
+      }
+    },
+    "4": {
+      "synthetic_rows": 11787,
+      "leakage_exclusions": 18,
+      "reasons": {
+        "hyp": 6,
+        "reference": 14,
+        "tgt": 14,
+        "source_pair": 8,
+        "src": 8
+      },
+      "class_counts": {
+        "1": 5089,
+        "0": 6698
+      },
+      "per_task": {
+        "DM": {
+          "1": 2769,
+          "0": 1136
+        },
+        "MT": {
+          "1": 1036,
+          "0": 2886
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "c6d80a04a28f4fd5dd40e63915bacc55b7604eb46ef1173dbbb55f0fbf87df40",
+        "leakage_exclusions.jsonl": "a9f9641bd836b70ad82a63cd8b7c9767a5b6b6502be0be5d50e0bc9f0c6639e4",
+        "train.jsonl": "7209bfa5c08e452cb9b8cafbe70c8746a8895c7c167671d30fe01565ec74bf56",
+        "heldout.jsonl": "4574e4fa0da93159374900f0507a4b82b0f9830ce997ced55d257ed3eb5fc08a"
+      }
+    },
+    "5": {
+      "synthetic_rows": 11790,
+      "leakage_exclusions": 15,
+      "reasons": {
+        "hyp": 3,
+        "reference": 12,
+        "tgt": 12,
+        "source_pair": 7,
+        "src": 8
+      },
+      "class_counts": {
+        "1": 5091,
+        "0": 6699
+      },
+      "per_task": {
+        "DM": {
+          "1": 2772,
+          "0": 1137
+        },
+        "MT": {
+          "1": 1035,
+          "0": 2886
+        },
+        "PG": {
+          "0": 2676,
+          "1": 1284
+        }
+      },
+      "human_train_rows": 449,
+      "heldout_rows": 112,
+      "files_sha256": {
+        "synthetic.jsonl": "0b2644acc6fbb3669351ad49436ae291db6b0f2adf9479759106ebd410f906fa",
+        "leakage_exclusions.jsonl": "3b47a4e7da93b57ddb110c7d137ac192de45582d1b2b415fc60743e52908a7a6",
+        "train.jsonl": "3e98dde7cac2a2e680e009c268eac06be954d145a7106399f7f54ee7f244a16a",
+        "heldout.jsonl": "c6e077914aa412551bd2830fd64eada8f1d2a1cf68a02bd35cdc751ae90c9e7e"
+      }
+    }
+  },
+  "requirements_sha256": "28d6e3c646b425f1c8c1795b04337e1bb94f22a5fb9e49ae3aaf64d116fb40a5",
+  "e11c_protocol_sha256": "93f031c7b0b76cd01f2c9babd57d6f68b8b2a504d604064c198d423541409c0e",
+  "e11d_loss_protocol_file_sha256": "3c4959748cd5a6ce427324c3265dd6920354a82a8e18b608f64c0dfc7e79a26e",
+  "contrastive": {
+    "classification": "Identical E11-A fold-weighted torch.nn.CrossEntropyLoss",
+    "formula": "mean_i[(1-y_i)*(1-cos(a_i,b_i)) + y_i*max(0,cos(a_i,b_i)-margin)]",
+    "total_loss": "weighted_CE + lambda * contrastive",
+    "lambda": 0.1,
+    "margin": 0.0,
+    "temperature": null,
+    "normalization": "cosine L2 normalization, eps=1e-8, float32",
+    "representation": "Final encoder layer; mean pool each paired sequence using fast-tokenizer sequence_ids; exclude special and padding tokens; include frozen textual prefixes.",
+    "contextualization": "Both representations are contextualized jointly by the original cross-encoder pair; no independent encoder passes.",
+    "positive": "label 0 not_hallucination: minimize 1-cos",
+    "negative": "label 1 hallucination: penalize cosine above zero",
+    "rationale": "Simple standard pairwise cosine embedding objective with modest fixed auxiliary weight; no projection head, mined pairs, alternatives or parameter selection."
+  },
+  "contrastive_applies_to_stages": [
+    1,
+    2
+  ],
+  "runtime_code_sha256": {
+    "train_stages.py": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+    "contrastive.py": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67"
+  },
+  "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087"
+}

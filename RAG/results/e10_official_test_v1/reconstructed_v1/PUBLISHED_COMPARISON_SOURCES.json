@@ -1,0 +1,43 @@
+{
+  "source": "https://aclanthology.org/2024.semeval-1.273.pdf",
+  "location": "Table 1(a), printed page 1985 / PDF page 7",
+  "track": "model-agnostic",
+  "comparison_type": "Descriptive retrospective only; no official rank or competition participation claim.",
+  "published_rounded_scores": [
+    {
+      "team": "Halu-NLP",
+      "accuracy": 0.847,
+      "spearman": 0.77
+    },
+    {
+      "team": "OPDAI",
+      "accuracy": 0.836,
+      "spearman": 0.732
+    },
+    {
+      "team": "HIT-MI&T Lab",
+      "accuracy": 0.831,
+      "spearman": 0.768
+    },
+    {
+      "team": "SHROOM-INDElab",
+      "accuracy": 0.829,
+      "spearman": 0.721
+    },
+    {
+      "team": "DeepPavlov",
+      "accuracy": 0.821,
+      "spearman": 0.752
+    },
+    {
+      "team": "TU Wien",
+      "accuracy": 0.817,
+      "spearman": 0.737
+    },
+    {
+      "team": "organizer baseline",
+      "accuracy": 0.697,
+      "spearman": 0.403
+    }
+  ]
+}

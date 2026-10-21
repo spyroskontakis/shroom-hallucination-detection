@@ -1,0 +1,115 @@
+{
+  "files": [
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/LICENSE",
+      "upstream": "https://raw.githubusercontent.com/derenlei/FactCG/41f185413312ed9b3904ec03963fe899693498e0/LICENSE",
+      "local_sha256": "dae315139c14a7560efde932a56caea62817e6322a07378b1d09f308588b89ba",
+      "upstream_sha256": "dae315139c14a7560efde932a56caea62817e6322a07378b1d09f308588b89ba",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/factcg/factcg_score.py",
+      "upstream": "https://raw.githubusercontent.com/derenlei/FactCG/41f185413312ed9b3904ec03963fe899693498e0/factcg/factcg_score.py",
+      "local_sha256": "c2e54e97a92e6f4d6bf5e242b40da0cceb7d2082f1af0b4f18d5a3ef461a3542",
+      "upstream_sha256": "c2e54e97a92e6f4d6bf5e242b40da0cceb7d2082f1af0b4f18d5a3ef461a3542",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/factcg/inference.py",
+      "upstream": "https://raw.githubusercontent.com/derenlei/FactCG/41f185413312ed9b3904ec03963fe899693498e0/factcg/inference.py",
+      "local_sha256": "db968b0952310e95ba93213b12914a62af4fe594a25dc4a1dd42322c18f9c8f2",
+      "upstream_sha256": "db968b0952310e95ba93213b12914a62af4fe594a25dc4a1dd42322c18f9c8f2",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/factcg/utils.py",
+      "upstream": "https://raw.githubusercontent.com/derenlei/FactCG/41f185413312ed9b3904ec03963fe899693498e0/factcg/utils.py",
+      "local_sha256": "f6186fec546372d2d451abb9c1cd3fa28749d512364ddc01fdd84f2e55005653",
+      "upstream_sha256": "f6186fec546372d2d451abb9c1cd3fa28749d512364ddc01fdd84f2e55005653",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/LICENSE.bert_score",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/LICENSE",
+      "local_sha256": "a0444a63d2a9eea7f3ad6a912700cad4c4e5e50e9bac371aa584a8e2e770f766",
+      "upstream_sha256": "a0444a63d2a9eea7f3ad6a912700cad4c4e5e50e9bac371aa584a8e2e770f766",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/score.py",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/bert_score/score.py",
+      "local_sha256": "f75b54e95de81109fd351362db3c29c663ecaf6c94c711fdbbe853e944abeec5",
+      "upstream_sha256": "f75b54e95de81109fd351362db3c29c663ecaf6c94c711fdbbe853e944abeec5",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/scorer.py",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/bert_score/scorer.py",
+      "local_sha256": "80c3682b8e0b426a48a8c74bbab10ae065132272e0fc294e977fc9d51df90abc",
+      "upstream_sha256": "80c3682b8e0b426a48a8c74bbab10ae065132272e0fc294e977fc9d51df90abc",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/utils.py",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/bert_score/utils.py",
+      "local_sha256": "e6126c5697aaa8f075fd30cdf907c38f8892668d20c086d5cd56995216438798",
+      "upstream_sha256": "e6126c5697aaa8f075fd30cdf907c38f8892668d20c086d5cd56995216438798",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score/__init__.py",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/bert_score/__init__.py",
+      "local_sha256": "4fe8f81df7d93ab5c069d4ed7fb587d46bd36df57e3d290429b49e502e837946",
+      "upstream_sha256": "4fe8f81df7d93ab5c069d4ed7fb587d46bd36df57e3d290429b49e502e837946",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score_cli/score.py",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/bert_score_cli/score.py",
+      "local_sha256": "68690d19dc66bd35172902db1aea20df0511efe01b7fb11d8b02fc3e83cab69e",
+      "upstream_sha256": "68690d19dc66bd35172902db1aea20df0511efe01b7fb11d8b02fc3e83cab69e",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score_cli/visualize.py",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/bert_score_cli/visualize.py",
+      "local_sha256": "8a747e1ceac18f3afd32ccc4ab37d79f8b1f4799d0657a762da430646ba2d1f6",
+      "upstream_sha256": "8a747e1ceac18f3afd32ccc4ab37d79f8b1f4799d0657a762da430646ba2d1f6",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/packages/bert_score_cli/__init__.py",
+      "upstream": "https://raw.githubusercontent.com/Tiiiger/bert_score/v0.3.13/bert_score_cli/__init__.py",
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "upstream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "equal_after_newline_normalization": true,
+      "license": "MIT"
+    }
+  ],
+  "upstream_factcg_revision": "41f185413312ed9b3904ec03963fe899693498e0",
+  "upstream_bertscore_tag": "v0.3.13",
+  "scope": "All 12 bundled upstream files, including both MIT license notices. Project adapter retains separate upstream attribution. No models or datasets downloaded."
+}

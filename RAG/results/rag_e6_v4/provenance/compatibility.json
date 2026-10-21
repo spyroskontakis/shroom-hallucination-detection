@@ -1,0 +1,67 @@
+{
+  "status": "BLOCKED_COMPATIBILITY",
+  "real_pairs_scored": 0,
+  "rf_fits": 0,
+  "model_id": "microsoft/deberta-large-mnli",
+  "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+  "distribution_version": "0.3.13",
+  "internal_version": "0.3.12",
+  "wheel_sha256": "bbbb4c7fcdaa46d7681aff49f37f96faa09ed74e1b150e659bdc6b58a66989b9",
+  "record_entries_verified": 84,
+  "num_layers": 18,
+  "official_hash": "microsoft/deberta-large-mnli_L18_no-idf_version=0.3.12(hug_trans=5.5.4)",
+  "model_files": {
+    "config.json": {
+      "bytes": 729,
+      "path": "external-artifacts/local-ba247bf9f1e2/config.json",
+      "sha256": "d9f6829f2e13bdb4743f97bd4c0866412b91129bfa0195cdd0414d836cc6f130"
+    },
+    "merges.txt": {
+      "bytes": 456318,
+      "path": "external-artifacts/local-8b4aba2fb897/merges.txt",
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+    },
+    "pytorch_model.bin": {
+      "bytes": 1624928186,
+      "path": "external-artifacts/local-0614da5abc2f/pytorch_model.bin",
+      "sha256": "3abd875c9e6dd137a689a1fa1a433f0c2d6bc7462afc42a0095878f88f23be87"
+    },
+    "tokenizer_config.json": {
+      "bytes": 52,
+      "path": "external-artifacts/local-ab2ed7e881d6/tokenizer_config.json",
+      "sha256": "052b1ce2b5b3bf119a72dee8cbb2de441dd4ff8f2255be61cd8aa63fb24d8149"
+    },
+    "vocab.json": {
+      "bytes": 898825,
+      "path": "external-artifacts/local-ead2e01dae1b/vocab.json",
+      "sha256": "ef13b2af772bf95f74e5512265bbe22b786bf25861df22d9f19fde0b3937fdea"
+    }
+  },
+  "cache_ref_path": "external-artifacts/local-58c036cc94aa/main",
+  "cache_ref_sha256": "39d4a56cf432dd7eea7dc9d8e98ec9633300a3a019a771f6993acd24162285cc",
+  "packages": {
+    "torch": "2.11.0",
+    "transformers": "5.5.4",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "tokenizers": "0.22.2",
+    "bert-score": "0.3.13"
+  },
+  "model_class": "DebertaModel",
+  "tokenizer_class": "DebertaTokenizer",
+  "tokenizer_name_or_path": "microsoft/deberta-large-mnli",
+  "tokenizer_max_length": 1000000000000000019884624838656,
+  "model_max_position_embeddings": 512,
+  "observed_commit": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+  "scorer_hash": "microsoft/deberta-large-mnli_L18_no-idf_version=0.3.12(hug_trans=5.5.4)",
+  "device": "cpu",
+  "dtype": "float32",
+  "batch_size": 2,
+  "torch_threads": 4,
+  "torch_interop_threads": 4,
+  "error": "OverflowError('int too big to convert')",
+  "traceback": "Traceback (most recent call last):\n  File \"RAG\\results\\rag_e6_v4\\scripts\\check_compatibility.py\", line 72, in main\n    p,r,f=scorer.score(cands=[s[2] for s in samples],refs=[s[1] for s in samples],batch_size=2)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"RAG\\results\\rag_e6_v4\\packages\\bert_score\\scorer.py\", line 220, in score\n    all_preds = bert_cos_score_idf(\n                ^^^^^^^^^^^^^^^^^^^\n  File \"RAG\\results\\rag_e6_v4\\packages\\bert_score\\utils.py\", line 616, in bert_cos_score_idf\n    embs, masks, padded_idf = get_bert_embedding(\n                              ^^^^^^^^^^^^^^^^^^^\n  File \"RAG\\results\\rag_e6_v4\\packages\\bert_score\\utils.py\", line 445, in get_bert_embedding\n    padded_sens, padded_idf, lens, mask = collate_idf(\n                                          ^^^^^^^^^^^^\n  File \"RAG\\results\\rag_e6_v4\\packages\\bert_score\\utils.py\", line 409, in collate_idf\n    arr = [sent_encode(tokenizer, a) for a in arr]\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"RAG\\results\\rag_e6_v4\\packages\\bert_score\\utils.py\", line 409, in <listcomp>\n    arr = [sent_encode(tokenizer, a) for a in arr]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"RAG\\results\\rag_e6_v4\\packages\\bert_score\\utils.py\", line 224, in sent_encode\n    return tokenizer.encode(\n           ^^^^^^^^^^^^^^^^^\n  File \"external-artifacts/local-925d92b5d1ab/tokenization_utils_base.py\", line 2264, in encode\n    encoded_inputs = self._encode_plus(\n                     ^^^^^^^^^^^^^^^^^^\n  File \"external-artifacts/local-f0e526facbee/tokenization_utils_tokenizers.py\", line 942, in _encode_plus\n    self.set_truncation_and_padding(\n  File \"external-artifacts/local-f0e526facbee/tokenization_utils_tokenizers.py\", line 839, in set_truncation_and_padding\n    self._tokenizer.enable_truncation(**target)\nOverflowError: int too big to convert\n",
+  "network_attempts": []
+}

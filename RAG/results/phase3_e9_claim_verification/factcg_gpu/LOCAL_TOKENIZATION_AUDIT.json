@@ -1,0 +1,7 @@
+{
+  "samples": 561,
+  "reference_chunks": 561,
+  "max_formatted_tokens": 162,
+  "chunks_over_2048": 0,
+  "model_weights_loaded": false
+}

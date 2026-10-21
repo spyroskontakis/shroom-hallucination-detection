@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "real_features_extracted": 0,
+  "rf_fits": 0,
+  "evaluations": 0,
+  "model_max_length_override": false,
+  "runtime": {
+    "python": "3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]",
+    "executable": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Scripts\\python.exe",
+    "packages": {
+      "bert-score": "0.3.13",
+      "transformers": "4.30.2",
+      "tokenizers": "0.13.3",
+      "huggingface-hub": "0.25.2",
+      "torch": "2.11.0",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "safetensors": "0.7.0",
+      "regex": "2026.4.4",
+      "packaging": "26.0"
+    }
+  },
+  "model_id": "microsoft/deberta-large-mnli",
+  "checkpoint_revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+  "num_layers": 18,
+  "tokenizer_class": "DebertaTokenizer",
+  "tokenizer_max_length": 512,
+  "hash_string": "microsoft/deberta-large-mnli_L18_no-idf_version=0.3.12(hug_trans=4.30.2)",
+  "model_max_position_embeddings": 512,
+  "load_seconds": 10.696109800000158,
+  "model_class": "DebertaModel",
+  "score_seconds": 0.9236402000001362,
+  "synthetic_scores": [
+    {
+      "reference": "a",
+      "candidate": "a",
+      "P": 0.9999998807907104,
+      "R": 0.9999998807907104,
+      "F1": 0.9999998807907104,
+      "reference_tokens": [
+        1,
+        102,
+        2
+      ],
+      "candidate_tokens": [
+        1,
+        102,
+        2
+      ]
+    },
+    {
+      "reference": "A cat sleeps.",
+      "candidate": "A cat.",
+      "P": 0.8436069488525391,
+      "R": 0.7194966673851013,
+      "F1": 0.7766246199607849,
+      "reference_tokens": [
+        1,
+        250,
+        4758,
+        36831,
+        4,
+        2
+      ],
+      "candidate_tokens": [
+        1,
+        250,
+        4758,
+        4,
+        2
+      ]
+    }
+  ],
+  "synthetic_truncation_check": {
+    "untruncated_tokens": 602,
+    "official_sent_encode_tokens": 512
+  },
+  "network_attempts": []
+}

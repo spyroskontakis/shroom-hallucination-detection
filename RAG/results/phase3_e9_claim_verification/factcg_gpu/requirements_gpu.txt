@@ -1,0 +1,11 @@
+# Separate environment from MiniCheck. Official FactCG Torch version, HF safetensors only.
+torch @ https://download.pytorch.org/whl/cu121/torch-2.2.1%2Bcu121-cp311-cp311-linux_x86_64.whl
+transformers==4.38.1
+tokenizers==0.15.2
+numpy==1.26.4
+nltk==3.9.1
+huggingface-hub==0.26.2
+safetensors==0.4.5
+sentencepiece==0.2.0
+protobuf==4.25.5
+psutil==6.1.0

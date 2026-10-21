@@ -1,0 +1,106 @@
+{
+  "evaluation_type": "reconstructed retrospective evaluation on the official labeled SHROOM test set",
+  "overall": {
+    "n": 1500,
+    "correct": 1234,
+    "accuracy": 0.8226666666666667,
+    "spearman": 0.7501095670770198,
+    "confusion_matrix_NH_H": [
+      [
+        773,
+        116
+      ],
+      [
+        150,
+        461
+      ]
+    ],
+    "gold_counts": {
+      "H": 611,
+      "NH": 889
+    },
+    "predicted_counts": {
+      "H": 577,
+      "NH": 923
+    }
+  },
+  "by_task": {
+    "DM": {
+      "n": 563,
+      "correct": 449,
+      "accuracy": 0.7975133214920072,
+      "spearman": 0.7144986003003486,
+      "confusion_matrix_NH_H": [
+        [
+          219,
+          56
+        ],
+        [
+          58,
+          230
+        ]
+      ],
+      "gold_counts": {
+        "H": 288,
+        "NH": 275
+      },
+      "predicted_counts": {
+        "H": 286,
+        "NH": 277
+      }
+    },
+    "MT": {
+      "n": 562,
+      "correct": 472,
+      "accuracy": 0.8398576512455516,
+      "spearman": 0.7633131215661662,
+      "confusion_matrix_NH_H": [
+        [
+          306,
+          30
+        ],
+        [
+          60,
+          166
+        ]
+      ],
+      "gold_counts": {
+        "H": 226,
+        "NH": 336
+      },
+      "predicted_counts": {
+        "H": 196,
+        "NH": 366
+      }
+    },
+    "PG": {
+      "n": 375,
+      "correct": 313,
+      "accuracy": 0.8346666666666667,
+      "spearman": 0.6589483263487542,
+      "confusion_matrix_NH_H": [
+        [
+          248,
+          30
+        ],
+        [
+          32,
+          65
+        ]
+      ],
+      "gold_counts": {
+        "H": 97,
+        "NH": 278
+      },
+      "predicted_counts": {
+        "H": 95,
+        "NH": 280
+      }
+    }
+  },
+  "prediction_sha256": "25ef714faada55c20c811f2f7025134b9b52fa99b3946256154fa90fc07ad752",
+  "spearman_prediction_rounding_decimals": 12,
+  "RF_fits": 1,
+  "no_tuning_after_scoring": true,
+  "scoring_completed_unix": 1791026711.6784012
+}

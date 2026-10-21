@@ -1,0 +1,51 @@
+{
+  "fold_id": 2,
+  "protocol_sha256": "c0645ef01f885ef22b7abaf5634f8a62d66a3e7174cb0d07aa2a47fba425a5ac",
+  "model": "sklearn.linear_model.LogisticRegression",
+  "configuration": {
+    "penalty": "l2",
+    "C": 1.0,
+    "solver": "lbfgs",
+    "class_weight": "balanced",
+    "max_iter": 2000,
+    "random_state": 42
+  },
+  "fit_intercept": true,
+  "feature_order": [
+    "factcg_support_probability",
+    "minicheck_support_probability",
+    "hhem_ref_hyp_consistency",
+    "nli_ref_hyp_entailment",
+    "nli_ref_hyp_neutral",
+    "nli_ref_hyp_contradiction",
+    "task_DM",
+    "task_MT",
+    "task_PG"
+  ],
+  "classes_": [
+    0,
+    1
+  ],
+  "hallucination_class": 1,
+  "hallucination_predict_proba_column": 1,
+  "coef_": [
+    [
+      -0.7824222297168905,
+      -2.3183640326795993,
+      -1.5763190373039897,
+      -0.7067580036107259,
+      0.6062876703825882,
+      0.10234489596584129,
+      0.030507461782512325,
+      0.11328201018115498,
+      -0.14191517728036412
+    ]
+  ],
+  "intercept_": [
+    2.2556538776818233
+  ],
+  "n_iter_": [
+    19
+  ],
+  "converged": true
+}

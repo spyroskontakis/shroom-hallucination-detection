@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "read-only publication audit; zero new fits or inference",
+  "experiment": "E7",
+  "result": {
+    "n": 561,
+    "correct": 448,
+    "accuracy": 0.7985739750445633,
+    "spearman": 0.7402641043306862
+  },
+  "paired": {
+    "corrections": 2,
+    "regressions": 7,
+    "net": -5,
+    "accuracy_difference": -0.008912655971479501,
+    "mcnemar": 0.1796875,
+    "ci_pp": [
+      -1.9607843137254901,
+      0.17825311942959002
+    ]
+  },
+  "protected_files_unchanged": 481,
+  "completed_evaluations": 1,
+  "historical_RF_fits": 10,
+  "historical_network_attempts": 0,
+  "official_test_access": false,
+  "baseline_E6_v3": null,
+  "frozen_artifacts_modified": false,
+  "secret_findings": 0,
+  "staged_files_over_50MB": 0,
+  "inventory_classes": {
+    "A": 31,
+    "B": 0,
+    "C": 44
+  },
+  "row_features_predictions_publication": "local-only; existing repository policy unchanged",
+  "local_inventory_sha256": "1e96bf85a0fb18cd6e1dbdff0bd279a4222a51a69dd5430af65ff8e6b37af996",
+  "E6_v3_commit_tag": "not present; separate future freezing required"
+}

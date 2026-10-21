@@ -1,0 +1,20 @@
+fold_*/
+E11A_OOF_PREDICTIONS.jsonl
+__pycache__/
+
+# PHASE 3D: exact reviewed publication-inventory exceptions only.
+!/fold_1/
+!/fold_2/
+!/fold_3/
+!/fold_4/
+!/fold_5/
+!/fold_1/e11a-fold-001/
+!/fold_1/e11a-fold-001/FOLD_PASS.json
+!/fold_2/e11a-fold-002/
+!/fold_2/e11a-fold-002/FOLD_PASS.json
+!/fold_3/e11a-fold-003/
+!/fold_3/e11a-fold-003/FOLD_PASS.json
+!/fold_4/e11a-fold-004/
+!/fold_4/e11a-fold-004/FOLD_PASS.json
+!/fold_5/e11a-fold-005/
+!/fold_5/e11a-fold-005/FOLD_PASS.json

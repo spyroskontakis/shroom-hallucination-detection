@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-09-11T08:43:09.692210+00:00",
+  "branch": "agentic-rag-e7",
+  "git_status": "?? \"Augmentation Pipeline.txt\"\n?? RAG/results/rag_e6_v2/\n?? RAG/results/rag_e6_v3/\n?? RAG/results/rag_e6_v4/\n?? RAG/results/rag_e7_agentic_v1/\n?? RAG/results/rag_e8_rf_tuning_v1/\n",
+  "protected_verified": 1784,
+  "blocked_manifest_verified": 108,
+  "baseline": {
+    "correct": 474,
+    "n": 561,
+    "accuracy": 0.8449197860962567,
+    "spearman": 0.7816945786401444,
+    "fits": 0
+  },
+  "v4_preexisting_hashes": {
+    "E6_V4_PROTOCOL.md": "4b349aaf37ef664eecbfb2e9979e0e02aada8bb06b064c96d41e8e0b29cd7ae8",
+    "config/run_config.json": "07f92a980fdc6cbfb6b676f858ee2ba11f30656deeaf3eff3965295ffaedf32a",
+    "E6_V4_RESULTS.md": "8a77e55fe64ca9d1d11d153dd4d2a94b1435c0869e9bf603c477b77e0959ce27",
+    "config/blocked_state_manifest.json": "9d529b798461e48fac2810d595bb1795a950935fabea5c232ee01212364e9d89"
+  },
+  "status": "PASS"
+}

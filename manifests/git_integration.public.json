@@ -1,0 +1,420 @@
+{
+  "schema": "shroom.git-integration.public.v1",
+  "base_commit": "6e3c702be45329ae0e3199def4091de61911621f",
+  "branch": "publication-e1-e11-candidate",
+  "base_only_file_decisions": [
+    {
+      "path": "RAG/results/rag_e6_v1/config/network_attempts.jsonl",
+      "decision": "RETAIN_BYTE_IDENTICAL",
+      "reason": "Preserve zero-byte historical network-attempt log; contains no rows.",
+      "base_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "base_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/.gitattributes",
+      "decision": "RETAIN_BYTE_IDENTICAL",
+      "reason": "Preserve frozen-byte Git attribute policy.",
+      "base_git_blob": "afc06b8a5e4d163e28432592f27cd6de24d4017a",
+      "base_sha256": "15e345ca3deb11e3eee54b39c915567b694f6cac399bde81361dc8b40bd74e35",
+      "current_sha256": "15e345ca3deb11e3eee54b39c915567b694f6cac399bde81361dc8b40bd74e35"
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/.gitignore",
+      "decision": "RETAIN_WITH_EXACT_IGNORE_EXCEPTIONS",
+      "reason": "Retain exact-path publication rules with approved exceptions.",
+      "base_git_blob": "db746b274d80e67d47ecb57e31241dd27496df0b",
+      "base_sha256": "6cddc5f30eefebff7bd4c278bb70fe3adecad5fb41e99dd6795bfe1721218bdb",
+      "current_sha256": "33b702b093aff8cc80cf3d421180e9376e8eb5e683ae24a8f115654afe5844e9"
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/.gitattributes",
+      "decision": "RETAIN_BYTE_IDENTICAL",
+      "reason": "Preserve frozen-byte Git attribute policy.",
+      "base_git_blob": "54bfc2a084560cb04aa4f759515a748e0ec6aa3f",
+      "base_sha256": "a88c7af7ee9ae851aa48a3090427653e3aa538726c4b0bb708aad584c84580a8",
+      "current_sha256": "a88c7af7ee9ae851aa48a3090427653e3aa538726c4b0bb708aad584c84580a8"
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/.gitignore",
+      "decision": "RETAIN_WITH_EXACT_IGNORE_EXCEPTIONS",
+      "reason": "Retain exact-path publication rules with approved exceptions.",
+      "base_git_blob": "3bb740cbc85bb92d6d1c7a770a8f511a13273477",
+      "base_sha256": "46b4d90cc15bdd729a39e81a52ae89e6bdae527be637e437f2e56da8adaf9e02",
+      "current_sha256": "3feec4563857d111f7cb79558ff2cd7030573d019fe1f084d0364e6beb8b73d1"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/.gitattributes",
+      "decision": "RETAIN_BYTE_IDENTICAL",
+      "reason": "Preserve frozen-byte Git attribute policy.",
+      "base_git_blob": "39fc76bdc46edc6dc177e2eb55befdc8ee1379cd",
+      "base_sha256": "1baf15f82db5c2927665b6256beded9157082c68922954c965fb6f59ffc1adce",
+      "current_sha256": "1baf15f82db5c2927665b6256beded9157082c68922954c965fb6f59ffc1adce"
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/.gitignore",
+      "decision": "RETAIN_WITH_EXACT_IGNORE_EXCEPTIONS",
+      "reason": "Retain exact-path publication rules with approved exceptions.",
+      "base_git_blob": "f9107cc08c124ff37d91ae409ce83be583dd9348",
+      "base_sha256": "d28fe67a78a943103fcc972a7669b33cec2a601682d43ac06203ef2834c7cc4b",
+      "current_sha256": "6b386e9424c63542a3fe446261297afda90d5d174eb89fa5ddd37fde7032f68a"
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/.gitattributes",
+      "decision": "RETAIN_BYTE_IDENTICAL",
+      "reason": "Preserve frozen-byte Git attribute policy.",
+      "base_git_blob": "39fc76bdc46edc6dc177e2eb55befdc8ee1379cd",
+      "base_sha256": "1baf15f82db5c2927665b6256beded9157082c68922954c965fb6f59ffc1adce",
+      "current_sha256": "1baf15f82db5c2927665b6256beded9157082c68922954c965fb6f59ffc1adce"
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/.gitignore",
+      "decision": "RETAIN_WITH_EXACT_IGNORE_EXCEPTIONS",
+      "reason": "Retain exact-path publication rules with approved exceptions.",
+      "base_git_blob": "00cf467b668ed468ad0ed281e2550d95f27e1ab9",
+      "base_sha256": "be8d9ee560eba8413ab5887f590efa219995d40a5319c637c0fd2bf659e86fe6",
+      "current_sha256": "a293e9dd252610f9daaa2f2d4ea7e3e2af6bed331786f599fe96848844062891"
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/.gitattributes",
+      "decision": "RETAIN_BYTE_IDENTICAL",
+      "reason": "Preserve frozen-byte Git attribute policy.",
+      "base_git_blob": "b2213a139093e9aec0820ce8d86d837daa465eee",
+      "base_sha256": "45facdffa0826e47a0f2bead91b9fbb7476a27b7c3ce3b3cfbbc1b30a991cc08",
+      "current_sha256": "45facdffa0826e47a0f2bead91b9fbb7476a27b7c3ce3b3cfbbc1b30a991cc08"
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/.gitignore",
+      "decision": "RETAIN_WITH_EXACT_IGNORE_EXCEPTIONS",
+      "reason": "Retain exact-path publication rules with approved exceptions.",
+      "base_git_blob": "863e51e1db4724b3504fbc97383e5cb6cb5b6b14",
+      "base_sha256": "aefa622cabd98bacbe004fd258d806b40c1509bf80e936a35e594c6e2bfadc4b",
+      "current_sha256": "609afd2bbdee23992cd650bee020deb5baeb3fe1954a53348f54b5c459f7291b"
+    },
+    {
+      "path": "RAG/thesis_revision_module4/E5_FULL_PARAGRAPH_CHANGELOG.md",
+      "decision": "HISTORY_ONLY",
+      "reason": "Thesis drafting/QA document, not executable implementation; full blob and two private audit copies verified. Personal paths/document identifiers omitted from current tree.",
+      "base_git_blob": "9971c28a642747b0853f52156a1285292f7187c0",
+      "base_sha256": "1cd6f5c2689f24288bd5f2b32774002f9b88b8186f1c33d28f9d01fa2d6dcf98",
+      "current_sha256": null
+    },
+    {
+      "path": "RAG/thesis_revision_module4/E5_FULL_WRITING_QA.md",
+      "decision": "HISTORY_ONLY",
+      "reason": "Thesis drafting/QA document, not executable implementation; full blob and two private audit copies verified. Personal paths/document identifiers omitted from current tree.",
+      "base_git_blob": "dd3fd6abce46508333648ba331f9e879400b2515",
+      "base_sha256": "d3649def7ee1e93e547197a894b197a78c0c2bea92cb8b1a85387950ad96a424",
+      "current_sha256": null
+    },
+    {
+      "path": "RAG/thesis_revision_module4/THESIS_PARAGRAPH_CHANGELOG.md",
+      "decision": "HISTORY_ONLY",
+      "reason": "Thesis drafting/QA document, not executable implementation; full blob and two private audit copies verified. Personal paths/document identifiers omitted from current tree.",
+      "base_git_blob": "c6003c1bcfb93342f7a3cffab610c372854cb8b6",
+      "base_sha256": "7ee04c0297aa1c4546c0c8dc816c59da4f3340a1a5510a6c80d45968962957af",
+      "current_sha256": null
+    },
+    {
+      "path": "RAG/thesis_revision_module4/THESIS_WRITING_QA.md",
+      "decision": "HISTORY_ONLY",
+      "reason": "Thesis drafting/QA document, not executable implementation; full blob and two private audit copies verified. Personal paths/document identifiers omitted from current tree.",
+      "base_git_blob": "4cb6ee4855aa001f6be2267c9417a9efd0cf7191",
+      "base_sha256": "6826526a478e45bb2116ef0ed5bfaad777dd3521985a52d53f3cd9e53a4f1dcb",
+      "current_sha256": null
+    }
+  ],
+  "ignore_policy_changes": [
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/e11a_results/.gitignore",
+      "base_sha256": "4283c572626bb4e66bda6eac20c6da167bcf8452f95e7ac69a6892e5194dd4fb",
+      "integration_sha256": "242753ac181abf23cc0e0fd0664a589db3c7d40a4d8c28f3c0470a121814cc59",
+      "approved_paths": [
+        "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_1/e11a-fold-001/FOLD_PASS.json",
+        "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_2/e11a-fold-002/FOLD_PASS.json",
+        "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_3/e11a-fold-003/FOLD_PASS.json",
+        "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_4/e11a-fold-004/FOLD_PASS.json",
+        "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_5/e11a-fold-005/FOLD_PASS.json"
+      ],
+      "added_rules": [
+        "!/fold_1/",
+        "!/fold_1/e11a-fold-001/",
+        "!/fold_1/e11a-fold-001/FOLD_PASS.json",
+        "!/fold_2/",
+        "!/fold_2/e11a-fold-002/",
+        "!/fold_2/e11a-fold-002/FOLD_PASS.json",
+        "!/fold_3/",
+        "!/fold_3/e11a-fold-003/",
+        "!/fold_3/e11a-fold-003/FOLD_PASS.json",
+        "!/fold_4/",
+        "!/fold_4/e11a-fold-004/",
+        "!/fold_4/e11a-fold-004/FOLD_PASS.json",
+        "!/fold_5/",
+        "!/fold_5/e11a-fold-005/",
+        "!/fold_5/e11a-fold-005/FOLD_PASS.json"
+      ]
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/.gitignore",
+      "base_sha256": "9d1c3e206096d490f5d4a259fd8a6206484a97926169a571c1ab76878c17b064",
+      "integration_sha256": "0092337bcbfcd5be26f4314763575a22f54c23f5311c15d09c30640b3a064188",
+      "approved_paths": [
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_1.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_1_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_2.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_2_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_3.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_3_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_4.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_4_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_5.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-A_5_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_1.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_1_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_2.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_2_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_3.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_3_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_4.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_4_started.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_5.json",
+        "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_5_started.json",
+        "RAG/results/phase3_e9_claim_verification/features/E9-A_freeze.json",
+        "RAG/results/phase3_e9_claim_verification/features/E9-B_freeze.json",
+        "RAG/results/phase3_e9_claim_verification/features/e10_return/E10_freeze.json",
+        "RAG/results/phase3_e9_claim_verification/features/minicheck_return/E9-B_freeze.json"
+      ],
+      "added_rules": [
+        "!/evaluation/",
+        "!/evaluation/fit_E9-A_1.json",
+        "!/evaluation/fit_E9-A_1_started.json",
+        "!/evaluation/fit_E9-A_2.json",
+        "!/evaluation/fit_E9-A_2_started.json",
+        "!/evaluation/fit_E9-A_3.json",
+        "!/evaluation/fit_E9-A_3_started.json",
+        "!/evaluation/fit_E9-A_4.json",
+        "!/evaluation/fit_E9-A_4_started.json",
+        "!/evaluation/fit_E9-A_5.json",
+        "!/evaluation/fit_E9-A_5_started.json",
+        "!/evaluation/fit_E9-B_1.json",
+        "!/evaluation/fit_E9-B_1_started.json",
+        "!/evaluation/fit_E9-B_2.json",
+        "!/evaluation/fit_E9-B_2_started.json",
+        "!/evaluation/fit_E9-B_3.json",
+        "!/evaluation/fit_E9-B_3_started.json",
+        "!/evaluation/fit_E9-B_4.json",
+        "!/evaluation/fit_E9-B_4_started.json",
+        "!/evaluation/fit_E9-B_5.json",
+        "!/evaluation/fit_E9-B_5_started.json",
+        "!/features/",
+        "!/features/E9-A_freeze.json",
+        "!/features/E9-B_freeze.json",
+        "!/features/e10_return/",
+        "!/features/e10_return/E10_freeze.json",
+        "!/features/minicheck_return/",
+        "!/features/minicheck_return/E9-B_freeze.json"
+      ]
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/.gitignore",
+      "base_sha256": "f2f7235e86d424eb76e44be1aac30ab7cf61f23276ca86c849be9b2e17892f6e",
+      "integration_sha256": "74c3ac6ac6448305f8ae395b0f3cd6cdb28f0e2bc6df95e4d1e5a76bfe2118d2",
+      "approved_paths": [
+        "RAG/results/phase3_e9_claim_verification/factcg_gpu/local_preflight/FACTCG_GPU_REPORT.json",
+        "RAG/results/phase3_e9_claim_verification/factcg_gpu/local_preflight/FACTCG_GPU_REPORT.md",
+        "RAG/results/phase3_e9_claim_verification/factcg_gpu/local_preflight/environment_freeze.txt"
+      ],
+      "added_rules": [
+        "!/local_preflight/",
+        "!/local_preflight/FACTCG_GPU_REPORT.json",
+        "!/local_preflight/FACTCG_GPU_REPORT.md",
+        "!/local_preflight/environment_freeze.txt"
+      ]
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/.gitignore",
+      "base_sha256": "42c443873d8ee7b2006fecfe831c88d8cb9d6b3e6c7e67e25c8679e4281ae6d5",
+      "integration_sha256": "cecee5dfea1c0dea1d3f505e4a3f0c1ba7f90f64ca0f9f555121c6cbd5789416",
+      "approved_paths": [
+        "RAG/results/phase3_e9_claim_verification/minicheck_gpu/local_preflight/MINICHECK_GPU_REPORT.json",
+        "RAG/results/phase3_e9_claim_verification/minicheck_gpu/local_preflight/MINICHECK_GPU_REPORT.md",
+        "RAG/results/phase3_e9_claim_verification/minicheck_gpu/local_preflight/environment_freeze.txt"
+      ],
+      "added_rules": [
+        "!/local_preflight/",
+        "!/local_preflight/MINICHECK_GPU_REPORT.json",
+        "!/local_preflight/MINICHECK_GPU_REPORT.md",
+        "!/local_preflight/environment_freeze.txt"
+      ]
+    },
+    {
+      "path": "RAG/results/rag_e6_v2/.gitignore",
+      "base_sha256": "6cddc5f30eefebff7bd4c278bb70fe3adecad5fb41e99dd6795bfe1721218bdb",
+      "integration_sha256": "33b702b093aff8cc80cf3d421180e9376e8eb5e683ae24a8f115654afe5844e9",
+      "approved_paths": [
+        "RAG/results/rag_e6_v2/config/run_config.json",
+        "RAG/results/rag_e6_v2/config/smoke.json",
+        "RAG/results/rag_e6_v2/provenance/pinned_repository_metadata.json"
+      ],
+      "added_rules": [
+        "!/config/",
+        "!/config/run_config.json",
+        "!/config/smoke.json",
+        "!/provenance/",
+        "!/provenance/pinned_repository_metadata.json"
+      ]
+    },
+    {
+      "path": "RAG/results/rag_e6_v3/.gitignore",
+      "base_sha256": "46b4d90cc15bdd729a39e81a52ae89e6bdae527be637e437f2e56da8adaf9e02",
+      "integration_sha256": "3feec4563857d111f7cb79558ff2cd7030573d019fe1f084d0364e6beb8b73d1",
+      "approved_paths": [
+        "RAG/results/rag_e6_v3/error_analysis/E6_ERROR_ANALYSIS.md",
+        "RAG/results/rag_e6_v3/error_analysis/analysis_completion_manifest.json",
+        "RAG/results/rag_e6_v3/error_analysis/analyze_saved.py",
+        "RAG/results/rag_e6_v3/error_analysis/build_csv.mjs",
+        "RAG/results/rag_e6_v3/error_analysis/build_report.py",
+        "RAG/results/rag_e6_v3/error_analysis/csv_authoring_check.json",
+        "RAG/results/rag_e6_v3/error_analysis/input_verification.json",
+        "RAG/results/rag_e6_v3/error_analysis/qualitative_summary.json",
+        "RAG/results/rag_e6_v3/error_analysis/quantitative_summary.json",
+        "RAG/results/rag_e6_v3/error_analysis/refine_review_wording.py",
+        "RAG/results/rag_e6_v3/error_analysis/verify_deliverables.py",
+        "RAG/results/rag_e6_v3/provenance/hf_revision_api.json"
+      ],
+      "added_rules": [
+        "!/error_analysis/",
+        "!/error_analysis/E6_ERROR_ANALYSIS.md",
+        "!/error_analysis/analysis_completion_manifest.json",
+        "!/error_analysis/analyze_saved.py",
+        "!/error_analysis/build_csv.mjs",
+        "!/error_analysis/build_report.py",
+        "!/error_analysis/csv_authoring_check.json",
+        "!/error_analysis/input_verification.json",
+        "!/error_analysis/qualitative_summary.json",
+        "!/error_analysis/quantitative_summary.json",
+        "!/error_analysis/refine_review_wording.py",
+        "!/error_analysis/verify_deliverables.py",
+        "!/provenance/",
+        "!/provenance/hf_revision_api.json"
+      ]
+    },
+    {
+      "path": "RAG/results/rag_e6_v4/.gitignore",
+      "base_sha256": "d28fe67a78a943103fcc972a7669b33cec2a601682d43ac06203ef2834c7cc4b",
+      "integration_sha256": "6b386e9424c63542a3fe446261297afda90d5d174eb89fa5ddd37fde7032f68a",
+      "approved_paths": [
+        "RAG/results/rag_e6_v4/compatibility_analysis/final_integrity.json",
+        "RAG/results/rag_e6_v4/compatibility_analysis/finalize_diagnosis.py",
+        "RAG/results/rag_e6_v4/compatibility_analysis/initial_integrity.json",
+        "RAG/results/rag_e6_v4/compatibility_analysis/minimal_current.json",
+        "RAG/results/rag_e6_v4/compatibility_analysis/minimal_pinned.json",
+        "RAG/results/rag_e6_v4/execution/initial_integrity.json",
+        "RAG/results/rag_e6_v4/packages/LICENSE.bert_score",
+        "RAG/results/rag_e6_v4/packages/bert_score/__init__.py",
+        "RAG/results/rag_e6_v4/packages/bert_score/score.py",
+        "RAG/results/rag_e6_v4/packages/bert_score/scorer.py",
+        "RAG/results/rag_e6_v4/packages/bert_score/utils.py",
+        "RAG/results/rag_e6_v4/packages/bert_score_cli/__init__.py",
+        "RAG/results/rag_e6_v4/packages/bert_score_cli/score.py",
+        "RAG/results/rag_e6_v4/packages/bert_score_cli/visualize.py",
+        "RAG/results/rag_e6_v4/scripts/document_blocker.py"
+      ],
+      "added_rules": [
+        "!/compatibility_analysis/",
+        "!/compatibility_analysis/final_integrity.json",
+        "!/compatibility_analysis/finalize_diagnosis.py",
+        "!/compatibility_analysis/initial_integrity.json",
+        "!/compatibility_analysis/minimal_current.json",
+        "!/compatibility_analysis/minimal_pinned.json",
+        "!/execution/",
+        "!/execution/initial_integrity.json",
+        "!/packages/",
+        "!/packages/LICENSE.bert_score",
+        "!/packages/bert_score/",
+        "!/packages/bert_score/__init__.py",
+        "!/packages/bert_score/score.py",
+        "!/packages/bert_score/scorer.py",
+        "!/packages/bert_score/utils.py",
+        "!/packages/bert_score_cli/",
+        "!/packages/bert_score_cli/__init__.py",
+        "!/packages/bert_score_cli/score.py",
+        "!/packages/bert_score_cli/visualize.py",
+        "!/scripts/",
+        "!/scripts/document_blocker.py"
+      ]
+    },
+    {
+      "path": "RAG/results/rag_e7_agentic_v1/.gitignore",
+      "base_sha256": "be8d9ee560eba8413ab5887f590efa219995d40a5319c637c0fd2bf659e86fe6",
+      "integration_sha256": "a293e9dd252610f9daaa2f2d4ea7e3e2af6bed331786f599fe96848844062891",
+      "approved_paths": [
+        "RAG/results/rag_e7_agentic_v1/config/security_access_contracts_repaired_v1.json",
+        "RAG/results/rag_e7_agentic_v1/config/security_e7_contracts_v1.json",
+        "RAG/results/rag_e7_agentic_v1/config/security_evaluate_e7_v1.json",
+        "RAG/results/rag_e7_agentic_v1/config/security_import_diagnostic.json",
+        "RAG/results/rag_e7_agentic_v1/config/security_preflight.json",
+        "RAG/results/rag_e7_agentic_v1/config/security_preflight_repaired_v1.json",
+        "RAG/results/rag_e7_agentic_v1/config/security_prepare_evaluation_v1.json",
+        "RAG/results/rag_e7_agentic_v1/config/security_report_e7_v1.json"
+      ],
+      "added_rules": [
+        "!/config/",
+        "!/config/security_access_contracts_repaired_v1.json",
+        "!/config/security_e7_contracts_v1.json",
+        "!/config/security_evaluate_e7_v1.json",
+        "!/config/security_import_diagnostic.json",
+        "!/config/security_preflight.json",
+        "!/config/security_preflight_repaired_v1.json",
+        "!/config/security_prepare_evaluation_v1.json",
+        "!/config/security_report_e7_v1.json"
+      ]
+    },
+    {
+      "path": "RAG/results/rag_e8_rf_tuning_v1/.gitignore",
+      "base_sha256": "aefa622cabd98bacbe004fd258d806b40c1509bf80e936a35e594c6e2bfadc4b",
+      "integration_sha256": "609afd2bbdee23992cd650bee020deb5baeb3fe1954a53348f54b5c459f7291b",
+      "approved_paths": [
+        "RAG/results/rag_e8_rf_tuning_v1/config/configurations.json",
+        "RAG/results/rag_e8_rf_tuning_v1/config/initial_integrity.json",
+        "RAG/results/rag_e8_rf_tuning_v1/config/security_evaluate_v1.json",
+        "RAG/results/rag_e8_rf_tuning_v1/config/security_prepare_v1.json",
+        "RAG/results/rag_e8_rf_tuning_v1/config/security_report_v1.json",
+        "RAG/results/rag_e8_rf_tuning_v1/evaluation/selected_configurations.json"
+      ],
+      "added_rules": [
+        "!/config/",
+        "!/config/configurations.json",
+        "!/config/initial_integrity.json",
+        "!/config/security_evaluate_v1.json",
+        "!/config/security_prepare_v1.json",
+        "!/config/security_report_v1.json",
+        "!/evaluation/",
+        "!/evaluation/selected_configurations.json"
+      ]
+    }
+  ],
+  "upstream_candidate_inventory_sha256": "dd881029d414c4de2252e9d33c09fdc00385056de84c6d2e596072dc268c6b88",
+  "upstream_candidate_files": 878,
+  "history_publication_blocker": {
+    "affected_blobs": 38,
+    "status": "PUBLICATION_BLOCKER",
+    "scope": "Known personal local paths in existing reachable history; all branches and tags require separate review/remediation before any PUBLIC visibility change."
+  },
+  "private_audit_records_included": false,
+  "project_license_selected": false,
+  "integration_attributes": {
+    "path": ".gitattributes",
+    "purpose": "Preserve exact bytes; recognize CRLF while retaining actual whitespace diagnostics.",
+    "sha256": "f526c26d1b42eaa6bb1aa3b72cddb1abe9dd3c5b104e5617bbcfe5bc7f499f0e"
+  },
+  "preserved_whitespace_warnings": {
+    "count": 275,
+    "files": 24,
+    "categories": {
+      "trailing whitespace": 271,
+      "new blank line at EOF": 4
+    },
+    "all_affected_files_byte_identical_to_upstream_candidate": true
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "model_name": "yaxili96/FactCG-DeBERTa-v3-Large",
+  "revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80",
+  "revision_verified": true,
+  "device": "cpu",
+  "leakage_status": "PASS",
+  "recommendation": "GPU_FULL_RUN",
+  "outputs": [
+    {
+      "canonical_id": "HDEV_0001_e3a6ae1bd526",
+      "task": "DM",
+      "factcg_support_probability": 0.21851980686187744
+    },
+    {
+      "canonical_id": "HDEV_0002_3d51bbb57230",
+      "task": "DM",
+      "factcg_support_probability": 0.9528976082801819
+    },
+    {
+      "canonical_id": "HDEV_0003_530e1aebd9d8",
+      "task": "DM",
+      "factcg_support_probability": 0.03801347315311432
+    },
+    {
+      "canonical_id": "HDEV_0004_e249137cb532",
+      "task": "DM",
+      "factcg_support_probability": 0.32430094480514526
+    },
+    {
+      "canonical_id": "HDEV_0313_309fe2c60a90",
+      "task": "MT",
+      "factcg_support_probability": 0.027230676263570786
+    },
+    {
+      "canonical_id": "HDEV_0314_cc66f0011ead",
+      "task": "MT",
+      "factcg_support_probability": 0.32089370489120483
+    },
+    {
+      "canonical_id": "HDEV_0315_a999432d4765",
+      "task": "MT",
+      "factcg_support_probability": 0.025684555992484093
+    },
+    {
+      "canonical_id": "HDEV_0316_b50d3005456c",
+      "task": "MT",
+      "factcg_support_probability": 0.05519058555364609
+    },
+    {
+      "canonical_id": "HDEV_0188_10b0356acc52",
+      "task": "PG",
+      "factcg_support_probability": 0.6211690306663513
+    },
+    {
+      "canonical_id": "HDEV_0189_059ce4f91dea",
+      "task": "PG",
+      "factcg_support_probability": 0.10110051184892654
+    },
+    {
+      "canonical_id": "HDEV_0190_5d6ecaa6eba3",
+      "task": "PG",
+      "factcg_support_probability": 0.18130838871002197
+    },
+    {
+      "canonical_id": "HDEV_0191_75d66ca83425",
+      "task": "PG",
+      "factcg_support_probability": 0.06806567311286926
+    }
+  ],
+  "error": null,
+  "leakage_justification": "Existing label-blind 12-ID manifest and four-field hash-validated portable input only; no labels, p(Hallucination), previous predictions/correctness, folds, or official test data accessed.",
+  "reference_policy": {
+    "DM": "tgt",
+    "MT": "tgt",
+    "PG": "src"
+  },
+  "selection_manifest_sha256": "657561ca67ff4e2676d12136121f8314ce33b392e6b2d19baeeab190fc7750a1",
+  "software": {
+    "torch": "2.2.1+cpu",
+    "transformers": "4.38.1",
+    "tokenizers": "0.15.2",
+    "numpy": "1.26.4",
+    "safetensors": "0.4.5",
+    "nltk": "3.9.1",
+    "huggingface-hub": "0.26.2",
+    "accelerate": "0.28.0",
+    "psutil": "6.1.0"
+  },
+  "memory": {
+    "peak_sampled_rss_bytes": 1959149568,
+    "min_available_system_bytes": 28602368,
+    "rss_before_load_bytes": 218841088,
+    "rss_after_load_bytes": 374067200,
+    "os_peak_working_set_bytes": 1959149568,
+    "ram_available_end_bytes": 2182115328,
+    "measurement_method": "psutil process RSS sampled every 50 ms; Windows OS peak working set also recorded"
+  },
+  "threads": {
+    "intraop": 4,
+    "interop": 1
+  },
+  "weights_sha256": "379a343d1ca25c9dfe24ae149f76cc958ea4f09c00dae88bd49bbbf58c749d5e",
+  "download_or_cache_time_sec": 7.899269999994431,
+  "cache_note": "Weights cached from prior interrupted-turn smoke; cache preparation includes tokenizer acquisition and checkpoint hash verification. Prior first weight download was separate.",
+  "model_load_time_sec": 17.68408159998944,
+  "sanity_inference_time_sec": 2.2381680000107735,
+  "orientation": {
+    "supported_score": 0.690319299697876,
+    "contradictory_score": 0.032046083360910416,
+    "delta": 0.6582732163369656,
+    "supported_raw": [
+      {
+        "logits": [
+          -0.34924083948135376,
+          0.4523714780807495
+        ],
+        "softmax": [
+          0.3096807599067688,
+          0.690319299697876
+        ]
+      }
+    ],
+    "contradictory_raw": [
+      {
+        "logits": [
+          1.6988554000854492,
+          -1.7091540098190308
+        ],
+        "softmax": [
+          0.9679539203643799,
+          0.032046083360910416
+        ]
+      }
+    ],
+    "support_class_index": 1,
+    "documentation": "Frozen official HF scoring path explicitly selects softmax(logits)[:,1]",
+    "status": "PASS"
+  },
+  "shroom_12_inference_time_sec": 14.020998499996495,
+  "mean_sec_per_sample": 1.167778616664388,
+  "median_sec_per_sample": 1.2078746499901172,
+  "estimated_561_inference_sec": 655.1238039487216,
+  "estimated_561_total_sec": 672.807885548711,
+  "per_sample_seconds": [
+    1.014812100038398,
+    1.469997100008186,
+    1.2433298000250943,
+    1.216532599995844,
+    1.1231535999686457,
+    1.211646199983079,
+    1.2591886000009254,
+    0.9792416999698617,
+    1.2041030999971554,
+    1.0571517000207677,
+    0.943636099982541,
+    1.2905507999821566
+  ],
+  "range": {
+    "min": 0.025684555992484093,
+    "max": 0.9528976082801819
+  },
+  "output_sha256": "827f5564b1e454cc43f97af5076c11e6901bf0acdf33c9cd831bd81d74a33863",
+  "frozen_gpu_package_unchanged": true,
+  "wall_time_sec": 77.38348219997715
+}

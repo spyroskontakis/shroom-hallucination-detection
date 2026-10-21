@@ -1,0 +1,40 @@
+{
+  "status": "RECOMMENDED_B_EXECUTION_BLOCKED",
+  "recommended_protocol": "B_THESIS_FROZEN_TRAINING_POOL",
+  "planned_training_rows": 561,
+  "source_counts": {
+    "development_model_agnostic": 493,
+    "trial": 68
+  },
+  "manifest_path": "codex/canonical_human_development_manifest.csv",
+  "manifest_sha256": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+  "all_labels_match_public_trial_or_validation": true,
+  "reason": "Preserve the exact already selected E10 training methodology; no test-performance-based choice.",
+  "alternative_not_run": "A_STRICT_OFFICIAL_DEV_499; includes four exact test overlaps before cleaning",
+  "rf_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 500,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "target": "p_hallucination",
+  "random_seed": 42,
+  "fits_completed": 0,
+  "fitted_model_sha256": null,
+  "unresolved_source_pair_overlap_training_rows": 14,
+  "gold_inspected": false
+}

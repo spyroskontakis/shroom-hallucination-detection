@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-09-09T18:14:49.566233+00:00",
+  "metrics": {
+    "E3": {
+      "accuracy": 0.7932263814616756,
+      "correct": 445,
+      "n": 561,
+      "spearman": 0.7390395612811848
+    },
+    "E5": {
+      "accuracy": 0.7950089126559715,
+      "correct": 446,
+      "n": 561,
+      "spearman": 0.7421719692110536
+    },
+    "E6": {
+      "accuracy": 0.8074866310160428,
+      "correct": 453,
+      "n": 561,
+      "spearman": 0.744420539373989
+    }
+  },
+  "routes_freeze_sha256": "11f20e40b58952282eef7bbaf1f4f55e9e83f7a95834347d01f5c3d3da87d775",
+  "routes_frozen_before_label_projection": true,
+  "status": "PASS"
+}

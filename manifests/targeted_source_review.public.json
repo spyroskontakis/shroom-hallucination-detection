@@ -1,0 +1,2285 @@
+[
+  {
+    "path": "modal_gpu_check.py",
+    "experiment": "project/support",
+    "sha256": "1ebb5d5dabf4b0ac8636dd0b8ff227d4e7e6133ee4820420dc25f8cab0f187a1",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "modal_gpu_check.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [
+        "check_gpu",
+        "main"
+      ],
+      "imports": [
+        "modal",
+        "torch"
+      ]
+    }
+  },
+  {
+    "path": "codex/prompt6_development_eda.py",
+    "experiment": "project/support",
+    "sha256": "4c05f2994717dd53bffe3154cf766e2c4c9d9a78880fe4b04f09c2484f457eeb",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/prompt6_development_eda.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [
+        "load_split",
+        "save_figure",
+        "inspection_table",
+        "token_count",
+        "add_token_lengths",
+        "write_tables",
+        "plot_distributions",
+        "plot_token_lengths",
+        "plot_multivariate",
+        "main"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "transformers"
+      ]
+    }
+  },
+  {
+    "path": "codex/data/llm_reasoning.py",
+    "experiment": "project/support",
+    "sha256": "b675559f035a729c35b4b2babec2cba074eb84534dd2a2191a85fe521f96aea6",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "data/llm_reasoning.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "os",
+        "vertexai"
+      ]
+    }
+  },
+  {
+    "path": "codex/data/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "e9713859e1aeec74fcc1a72d6dcadb4c05b6fb71bb1181d98aa57254dd35133f",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "3fb7cb98640594ad335e7c297457860d3fb7794f4439bdf55f013ef6c14a3192",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "d1cef19a8f503f61088b3b518e32987dd4173c5630bbe35973f0350fc19196b4",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "cb134f661a61adf5f0a27c760cd99c03f3c0db05e7a2795489d00b1077b4641e",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "ea44bf322ad76342a3f11e6db9139838b44968fc4148cc9bbd914f232798d859",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/6. Feature Extraction on Augmented Training Data/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "ce9a1d89894b92d7ef8a030d4ac535741f408f767dea816b81379aad7a40753c",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/7. Ablation Synthetic Data/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/Participant kit/participant_kit/Baseline_LLMs_SHROOM_SemEval_2024_Task_6.ipynb",
+    "experiment": "project/support",
+    "sha256": "75f096d3d51beb2f83f9e076421a9d214c46a22aa0583633f5ce3bd811b60d83",
+    "decision": "PRIVATE_THIRD_PARTY",
+    "public_representatives": [],
+    "reason": "Organizer code without redistribution license in local delivery; preserve privately and obtain separately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "codex/data/Participant kit/participant_kit/check_output.py",
+    "experiment": "project/support",
+    "sha256": "083531abfeeec435dfde59d3e8282da984fdd2034d6fc793649f99909b403f61",
+    "decision": "PRIVATE_THIRD_PARTY",
+    "public_representatives": [],
+    "reason": "Organizer code without redistribution license in local delivery; preserve privately and obtain separately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "argparse",
+        "collections",
+        "json",
+        "pathlib",
+        "scipy"
+      ]
+    }
+  },
+  {
+    "path": "codex/data/Participant kit/participant_kit/score.py",
+    "experiment": "project/support",
+    "sha256": "63478cbab853c6c2397541c9149655aec4b6db3aa6914ff4120ce136eba5b481",
+    "decision": "PRIVATE_THIRD_PARTY",
+    "public_representatives": [],
+    "reason": "Organizer code without redistribution license in local delivery; preserve privately and obtain separately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "argparse",
+        "collections",
+        "json",
+        "pathlib",
+        "scipy"
+      ]
+    }
+  },
+  {
+    "path": "data/llm_reasoning.py",
+    "experiment": "project/support",
+    "sha256": "b675559f035a729c35b4b2babec2cba074eb84534dd2a2191a85fe521f96aea6",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "data/llm_reasoning.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "os",
+        "vertexai"
+      ]
+    }
+  },
+  {
+    "path": "data/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/2. EDA/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "43424b6807fb3f486d44fe7d42828bf194d89b18dd2e8dd418fe8e4ae38f76f4",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "data/2. EDA/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "200f55ba9d7b8ef80098291ad6394c438dc11ac3a57dcdd3da8f10598ed25525",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "RAG/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "3fb7cb98640594ad335e7c297457860d3fb7794f4439bdf55f013ef6c14a3192",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "d1cef19a8f503f61088b3b518e32987dd4173c5630bbe35973f0350fc19196b4",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "cb134f661a61adf5f0a27c760cd99c03f3c0db05e7a2795489d00b1077b4641e",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "ea44bf322ad76342a3f11e6db9139838b44968fc4148cc9bbd914f232798d859",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/6. Feature Extraction on Augmented Training Data/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/7. Ablation Synthetic Data/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "codex/data/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/Participant kit/participant_kit/Baseline_LLMs_SHROOM_SemEval_2024_Task_6.ipynb",
+    "experiment": "project/support",
+    "sha256": "75f096d3d51beb2f83f9e076421a9d214c46a22aa0583633f5ce3bd811b60d83",
+    "decision": "PRIVATE_THIRD_PARTY",
+    "public_representatives": [],
+    "reason": "Organizer code without redistribution license in local delivery; preserve privately and obtain separately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "data/Participant kit/participant_kit/check_output.py",
+    "experiment": "project/support",
+    "sha256": "083531abfeeec435dfde59d3e8282da984fdd2034d6fc793649f99909b403f61",
+    "decision": "PRIVATE_THIRD_PARTY",
+    "public_representatives": [],
+    "reason": "Organizer code without redistribution license in local delivery; preserve privately and obtain separately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "argparse",
+        "collections",
+        "json",
+        "pathlib",
+        "scipy"
+      ]
+    }
+  },
+  {
+    "path": "data/Participant kit/participant_kit/score.py",
+    "experiment": "project/support",
+    "sha256": "63478cbab853c6c2397541c9149655aec4b6db3aa6914ff4120ce136eba5b481",
+    "decision": "PRIVATE_THIRD_PARTY",
+    "public_representatives": [],
+    "reason": "Organizer code without redistribution license in local delivery; preserve privately and obtain separately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "argparse",
+        "collections",
+        "json",
+        "pathlib",
+        "scipy"
+      ]
+    }
+  },
+  {
+    "path": "Participant kit/participant_kit/Baseline_LLMs_SHROOM_SemEval_2024_Task_6.ipynb",
+    "experiment": "SHROOM resources",
+    "sha256": "75f096d3d51beb2f83f9e076421a9d214c46a22aa0583633f5ce3bd811b60d83",
+    "decision": "PRIVATE_THIRD_PARTY",
+    "public_representatives": [],
+    "reason": "Organizer code without redistribution license in local delivery; preserve privately and obtain separately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_inspiration/.build/build.mjs",
+    "experiment": "project/support",
+    "sha256": "e08e882215481364dbf002458a40d44df7910bd688a79ab169e2a5cc2cbb03e2",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_inspiration/.build/document_and_audit.py",
+    "experiment": "project/support",
+    "sha256": "5047e0bda515fffb3eb7115543062be99da66e0b4cd6039ad147ad54b8100dda",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "mm",
+        "rows",
+        "pct",
+        "sp"
+      ],
+      "imports": [
+        "json",
+        "lxml",
+        "pathlib",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "presentation_inspiration/.build/finalize.mjs",
+    "experiment": "project/support",
+    "sha256": "44e883ff38499e033fa7391073eec37ca57a52049f8e4644dfb4e36fbab46d16",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_inspiration/.build/finish_powerpoint.ps1",
+    "experiment": "project/support",
+    "sha256": "ce14238548220d8dad6ffad48356405b11db92abb73b8fecb47cdf5a75dd8593",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_inspiration/.build/package_delivery.py",
+    "experiment": "project/support",
+    "sha256": "b9ee89d995688678332d402d048dfcce6f830a7efb5ab2720da259556763cc12",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "presentation_inspiration/.build/verify_show.ps1",
+    "experiment": "project/support",
+    "sha256": "615c4ef6d88af671bde5cc7e0399dbaf32ad794ab849ba1433c5dc057e654ee4",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/audit_source.py",
+    "experiment": "project/support",
+    "sha256": "29f2cf6c1d515b5a1d99662a5668c87d8825c2f933218fe4b829bb06904245b3",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "PIL",
+        "json",
+        "lxml",
+        "pathlib",
+        "sys",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "presentation_output/.build/build.mjs",
+    "experiment": "project/support",
+    "sha256": "1d90529d503706e8f6ca72f0dc12141e42be30d531f347b2efcb3d4a2765401e",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/correction.mjs",
+    "experiment": "project/support",
+    "sha256": "278f02a291f32afc35cfaaf744770b4a0c9fd7cf1dcbf7954d85f06eb93e8ee7",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/correction_finalize.mjs",
+    "experiment": "project/support",
+    "sha256": "ee6944263dfa524214ba651cf5512b3eb7f32e6206fdfc632430d13af335dd4e",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/correction_package.py",
+    "experiment": "project/support",
+    "sha256": "fb2a2570d01c64fd52578daec4c791dd62aa7b77e2c477ee1feda0f763f5aebe",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "target"
+      ],
+      "imports": [
+        "copy",
+        "lxml",
+        "pathlib",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "presentation_output/.build/correction_render.ps1",
+    "experiment": "project/support",
+    "sha256": "68c5092680bac26d09bd3c21a3380200b2538c4fa899d8293fbab3f8bd44cf5c",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/finalize.mjs",
+    "experiment": "project/support",
+    "sha256": "6bed858075079cfc15738657c9793633e663f31a3a5944bce2839f73386d5068",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/package_decks.py",
+    "experiment": "project/support",
+    "sha256": "daa25bc5bd5e4cf54fe4071620d4ec4dc0880239f45f4e344761b18044951a15",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "xml"
+      ],
+      "imports": [
+        "hashlib",
+        "lxml",
+        "pathlib",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "presentation_output/.build/render_final.ps1",
+    "experiment": "project/support",
+    "sha256": "e8088e2887814179e0fabfe15672d7648ea02bebd95acc505b1768c515572437",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/render_original.ps1",
+    "experiment": "project/support",
+    "sha256": "020cf48ab0ec252a30575dd49457ef23e9b28d13c1973be1eb3eb7eae960b092",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "presentation_output/.build/verify.py",
+    "experiment": "project/support",
+    "sha256": "87b798becbedee9aa556a62b824109ea6279bc7cbad3dc55fe238ad43407a21f",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "PIL",
+        "json",
+        "pathlib",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/css.py",
+    "experiment": "E10",
+    "sha256": "fe6fe5ff84865879d8eb6d15276d63fea407d515f7a7dd6c6157a680ac5a2ec3",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "CSS",
+        "__init__",
+        "escape",
+        "_ns",
+        "_rs",
+        "compile",
+        "select_one",
+        "select",
+        "iselect",
+        "closest",
+        "match",
+        "filter"
+      ],
+      "imports": [
+        "__future__",
+        "bs4",
+        "soupsieve",
+        "types",
+        "typing",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/dammit.py",
+    "experiment": "E10",
+    "sha256": "64959af4adf65fa3768a614795ea94ab47a47f9f76c1e53596f50b37f5985989",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "_chardet_dammit",
+        "EntitySubstitution",
+        "EncodingDetector",
+        "UnicodeDammit",
+        "_populate_class_variables",
+        "_substitute_html_entity",
+        "_substitute_xml_entity",
+        "_escape_entity_name",
+        "_escape_unrecognized_entity_name",
+        "quoted_attribute_value",
+        "substitute_xml",
+        "substitute_xml_containing_entities",
+        "substitute_html",
+        "substitute_html5",
+        "substitute_html5_raw",
+        "__init__",
+        "_usable",
+        "encodings",
+        "strip_byte_order_mark",
+        "find_declared_encoding",
+        "__init__",
+        "_sub_ms_char",
+        "_convert_from",
+        "_to_unicode",
+        "declared_html_encoding",
+        "find_codec",
+        "_codec",
+        "numeric_character_reference",
+        "detwingle"
+      ],
+      "imports": [
+        "bs4",
+        "cchardet",
+        "chardet",
+        "charset_normalizer",
+        "codecs",
+        "collections",
+        "html",
+        "logging",
+        "re",
+        "types",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/diagnose.py",
+    "experiment": "E10",
+    "sha256": "6adf7c8aec723aba9e73857c8b091321b354a810acabd2ebddf0c0431db5dbd6",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "diagnose",
+        "lxml_trace",
+        "AnnouncingParser",
+        "htmlparser_trace",
+        "rword",
+        "rsentence",
+        "rdoc",
+        "benchmark_parsers",
+        "profile",
+        "_p",
+        "handle_starttag",
+        "handle_endtag",
+        "handle_data",
+        "handle_charref",
+        "handle_entityref",
+        "handle_comment",
+        "handle_decl",
+        "unknown_decl",
+        "handle_pi"
+      ],
+      "imports": [
+        "bs4",
+        "cProfile",
+        "html",
+        "html5lib",
+        "io",
+        "lxml",
+        "pstats",
+        "random",
+        "sys",
+        "tempfile",
+        "time",
+        "traceback",
+        "typing"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/element.py",
+    "experiment": "E10",
+    "sha256": "a179a3ecb1bfd8da6c0caf749aaef7ab43cc2b416314120649e4d324b570c137",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "__getattr__",
+        "NamespacedAttribute",
+        "AttributeValueWithCharsetSubstitution",
+        "CharsetMetaAttributeValue",
+        "AttributeValueList",
+        "AttributeDict",
+        "XMLAttributeDict",
+        "HTMLAttributeDict",
+        "ContentMetaAttributeValue",
+        "PageElement",
+        "NavigableString",
+        "PreformattedString",
+        "CData",
+        "ProcessingInstruction",
+        "XMLProcessingInstruction",
+        "Comment",
+        "Declaration",
+        "Doctype",
+        "Stylesheet",
+        "Script",
+        "TemplateString",
+        "RubyTextString",
+        "RubyParenthesisString",
+        "Tag",
+        "ResultSet",
+        "__new__",
+        "substitute_encoding",
+        "__new__",
+        "substitute_encoding",
+        "__setitem__",
+        "__setitem__",
+        "__new__",
+        "substitute_encoding",
+        "setup",
+        "format_string",
+        "formatter_for_name",
+        "_is_xml",
+        "__deepcopy__",
+        "__copy__",
+        "_all_strings",
+        "stripped_strings",
+        "get_text",
+        "replace_with",
+        "wrap",
+        "extract",
+        "decompose",
+        "_last_descendant",
+        "insert_before",
+        "insert_after",
+        "find_next",
+        "find_next",
+        "find_next",
+        "find_all_next",
+        "find_all_next",
+        "find_all_next",
+        "find_next_sibling",
+        "find_next_sibling",
+        "find_next_sibling",
+        "find_next_siblings",
+        "find_next_siblings",
+        "find_next_siblings",
+        "find_previous",
+        "find_previous",
+        "find_previous",
+        "find_all_previous",
+        "find_all_previous",
+        "find_all_previous",
+        "find_previous_sibling",
+        "find_previous_sibling",
+        "find_previous_sibling",
+        "find_previous_siblings",
+        "find_previous_siblings",
+        "find_previous_siblings",
+        "find_parent",
+        "find_parents",
+        "next",
+        "previous",
+        "_find_one",
+        "_find_all",
+        "next_elements",
+        "self_and_next_elements",
+        "next_siblings",
+        "self_and_next_siblings",
+        "previous_elements",
+        "self_and_previous_elements",
+        "previous_siblings",
+        "self_and_previous_siblings",
+        "parents",
+        "self_and_parents",
+        "_self_and",
+        "decomposed",
+        "nextGenerator",
+        "nextSiblingGenerator",
+        "previousGenerator",
+        "previousSiblingGenerator",
+        "parentGenerator",
+        "__new__",
+        "__deepcopy__",
+        "__getnewargs__",
+        "__getitem__",
+        "string",
+        "output_ready",
+        "name",
+        "name",
+        "_all_strings",
+        "strings",
+        "output_ready",
+        "for_name_and_ids",
+        "_string_for_name_and_ids",
+        "__init__",
+        "__deepcopy__",
+        "copy_self",
+        "is_empty_element",
+        "isSelfClosing",
+        "string",
+        "string",
+        "_all_strings",
+        "insert",
+        "_insert",
+        "unwrap",
+        "replaceWithChildren",
+        "append",
+        "extend",
+        "clear",
+        "smooth",
+        "index",
+        "get",
+        "get_attribute_list",
+        "has_attr",
+        "__hash__",
+        "__getitem__",
+        "__iter__",
+        "__len__",
+        "__contains__",
+        "__bool__",
+        "__setitem__",
+        "__delitem__",
+        "__call__",
+        "__call__",
+        "__call__",
+        "__getattr__",
+        "__eq__",
+        "__ne__",
+        "__repr__",
+        "encode",
+        "decode",
+        "_TreeTraversalEvent",
+        "_event_stream",
+        "_indent_string",
+        "_format_tag",
+        "_should_pretty_print",
+        "prettify",
+        "prettify",
+        "prettify",
+        "decode_contents",
+        "encode_contents",
+        "renderContents",
+        "find",
+        "find",
+        "find",
+        "find_all",
+        "find_all",
+        "find_all",
+        "children",
+        "self_and_descendants",
+        "descendants",
+        "select_one",
+        "select",
+        "css",
+        "childGenerator",
+        "recursiveChildGenerator",
+        "has_key",
+        "__init__",
+        "__getattr__",
+        "rewrite"
+      ],
+      "imports": [
+        "__future__",
+        "bs4",
+        "re",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/exceptions.py",
+    "experiment": "E10",
+    "sha256": "43d14e69d35ef1046fcc331a2925ded96b65f092bfa00656ee66c564154ffc61",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "StopParsing",
+        "FeatureNotFound",
+        "ParserRejectedMarkup",
+        "__init__"
+      ],
+      "imports": [
+        "typing"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/filter.py",
+    "experiment": "E10",
+    "sha256": "af0f193614c32c425508489289fa2ee6d651ff7cc12debaf032a2e63cdaa53f1",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "ElementFilter",
+        "MatchRule",
+        "TagNameMatchRule",
+        "AttributeValueMatchRule",
+        "StringMatchRule",
+        "SoupStrainer",
+        "__init__",
+        "includes_everything",
+        "excludes_everything",
+        "match",
+        "filter",
+        "find",
+        "find_all",
+        "allow_tag_creation",
+        "allow_string_creation",
+        "__init__",
+        "_base_match",
+        "matches_string",
+        "__repr__",
+        "__eq__",
+        "matches_tag",
+        "__init__",
+        "includes_everything",
+        "excludes_everything",
+        "string",
+        "text",
+        "__repr__",
+        "_make_match_rules",
+        "matches_tag",
+        "_attribute_match",
+        "allow_tag_creation",
+        "allow_string_creation",
+        "matches_any_string_rule",
+        "match",
+        "search_tag",
+        "search",
+        "_match_attribute_value_helper"
+      ],
+      "imports": [
+        "__future__",
+        "bs4",
+        "collections",
+        "re",
+        "typing",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/formatter.py",
+    "experiment": "E10",
+    "sha256": "b814f493a5bc3b9909f4f0ae2588eb6bdef2a14a82f9d94cf43feffa844cd2bf",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "Formatter",
+        "HTMLFormatter",
+        "XMLFormatter",
+        "_default",
+        "__init__",
+        "substitute",
+        "attribute_value",
+        "attributes",
+        "__init__",
+        "__init__"
+      ],
+      "imports": [
+        "__future__",
+        "bs4",
+        "element",
+        "typing",
+        "typing_extensions"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/_deprecation.py",
+    "experiment": "E10",
+    "sha256": "9e21c90a4dfb00f83c284b8539ae7b6576b12dd06673fd95eaeb9a26abbbaf7d",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "_deprecated_alias",
+        "_deprecated_function_alias",
+        "_deprecated",
+        "alias",
+        "alias",
+        "alias",
+        "deprecate",
+        "with_warning"
+      ],
+      "imports": [
+        "functools",
+        "typing",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/_typing.py",
+    "experiment": "E10",
+    "sha256": "ccd731ed1d720932bc5b0b6e98fdbc85cec2277a4cc995e3fd501e61a3573190",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "_RegularExpressionProtocol",
+        "search",
+        "pattern"
+      ],
+      "imports": [
+        "bs4",
+        "typing",
+        "typing_extensions"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/_warnings.py",
+    "experiment": "E10",
+    "sha256": "66e3844e072711b660c363749e73579fac2fb6b9f6badec017477df1bbe43057",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "GuessedAtParserWarning",
+        "UnusualUsageWarning",
+        "MarkupResemblesLocatorWarning",
+        "AttributeResemblesVariableWarning",
+        "XMLParsedAsHTMLWarning"
+      ],
+      "imports": []
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/__init__.py",
+    "experiment": "E10",
+    "sha256": "13bc22569ee840ad0985d018c697a165af1daefdd6fec26fe6879316205f479a",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "BeautifulSoup",
+        "BeautifulStoneSoup",
+        "__init__",
+        "copy_self",
+        "__getstate__",
+        "__setstate__",
+        "_decode_markup",
+        "_markup_is_url",
+        "_markup_resembles_filename",
+        "_feed",
+        "reset",
+        "new_tag",
+        "string_container",
+        "new_string",
+        "insert_before",
+        "insert_after",
+        "popTag",
+        "pushTag",
+        "endData",
+        "object_was_parsed",
+        "_linkage_fixer",
+        "_popToTag",
+        "handle_starttag",
+        "handle_endtag",
+        "handle_data",
+        "decode",
+        "__init__",
+        "deprecated_argument"
+      ],
+      "imports": [
+        "_deprecation",
+        "bs4",
+        "builder",
+        "collections",
+        "css",
+        "dammit",
+        "element",
+        "filter",
+        "formatter",
+        "io",
+        "sys",
+        "typing",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/builder/_html5lib.py",
+    "experiment": "E10",
+    "sha256": "84beb1524e3f2368b908c82e16860596b236e9c6380eeb7b7ce110ad472d1c83",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "HTML5TreeBuilder",
+        "TreeBuilderForHtml5lib",
+        "AttrList",
+        "BeautifulSoupNode",
+        "Element",
+        "TextNode",
+        "prepare_markup",
+        "feed",
+        "create_treebuilder",
+        "test_fragment_to_document",
+        "__init__",
+        "documentClass",
+        "insertDoctype",
+        "elementClass",
+        "commentClass",
+        "fragmentClass",
+        "getFragment",
+        "appendChild",
+        "getDocument",
+        "testSerializer",
+        "__init__",
+        "__iter__",
+        "__setitem__",
+        "items",
+        "keys",
+        "__len__",
+        "__getitem__",
+        "__contains__",
+        "element",
+        "nodeType",
+        "cloneNode",
+        "__init__",
+        "appendChild",
+        "getAttributes",
+        "setAttributes",
+        "insertText",
+        "insertBefore",
+        "removeChild",
+        "reparentChildren",
+        "hasContent",
+        "cloneNode",
+        "getNameTuple",
+        "__init__"
+      ],
+      "imports": [
+        "bs4",
+        "html5lib",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/builder/_htmlparser.py",
+    "experiment": "E10",
+    "sha256": "0a750b3d0576ae6e2f2e88c9001a50ed79bd76275d9c4671d96733fd54c2d4c8",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "BeautifulSoupHTMLParser",
+        "HTMLParserTreeBuilder",
+        "__init__",
+        "error",
+        "handle_startendtag",
+        "handle_starttag",
+        "handle_endtag",
+        "handle_data",
+        "handle_charref",
+        "handle_entityref",
+        "handle_comment",
+        "handle_decl",
+        "unknown_decl",
+        "handle_pi",
+        "__init__",
+        "prepare_markup",
+        "feed"
+      ],
+      "imports": [
+        "__future__",
+        "bs4",
+        "html",
+        "typing"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/builder/_lxml.py",
+    "experiment": "E10",
+    "sha256": "92cd5ef1ba00fe7380da8a26021c5eb9d71c47a4e16c413e125945a874683cb0",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "_invert",
+        "LXMLTreeBuilderForXML",
+        "LXMLTreeBuilder",
+        "initialize_soup",
+        "_register_namespaces",
+        "default_parser",
+        "parser_for",
+        "__init__",
+        "_getNsTag",
+        "prepare_markup",
+        "feed",
+        "close",
+        "start",
+        "_prefix_for_namespace",
+        "end",
+        "pi",
+        "data",
+        "doctype",
+        "comment",
+        "test_fragment_to_document",
+        "default_parser",
+        "feed",
+        "test_fragment_to_document"
+      ],
+      "imports": [
+        "__future__",
+        "bs4",
+        "io",
+        "lxml",
+        "typing",
+        "typing_extensions"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/bs4/builder/__init__.py",
+    "experiment": "E10",
+    "sha256": "465e2a8ce5ef772cb28dac8e16a6e4828528a3cd48828c8a0fe47059e54ae7d8",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "TreeBuilderRegistry",
+        "TreeBuilder",
+        "SAXTreeBuilder",
+        "HTMLTreeBuilder",
+        "DetectsXMLParsedAsHTML",
+        "register_treebuilders_from",
+        "__init__",
+        "register",
+        "lookup",
+        "__init__",
+        "initialize_soup",
+        "reset",
+        "can_be_empty_element",
+        "feed",
+        "prepare_markup",
+        "test_fragment_to_document",
+        "set_up_substitutions",
+        "_replace_cdata_list_attribute_values",
+        "__init__",
+        "feed",
+        "close",
+        "startElement",
+        "endElement",
+        "startElementNS",
+        "endElementNS",
+        "startPrefixMapping",
+        "endPrefixMapping",
+        "characters",
+        "startDocument",
+        "endDocument",
+        "set_up_substitutions",
+        "warn_if_markup_looks_like_xml",
+        "_warn",
+        "_initialize_xml_detector",
+        "_document_might_be_xml",
+        "_root_tag_encountered"
+      ],
+      "imports": [
+        "",
+        "__future__",
+        "bs4",
+        "collections",
+        "re",
+        "sys",
+        "types",
+        "typing",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/soupsieve/css_match.py",
+    "experiment": "E10",
+    "sha256": "b691ea0050be52d657bb0df7ececa5094dff94a0db79ab8caeaba3e369a5fcc4",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "_FakeParent",
+        "_DocumentNav",
+        "Inputs",
+        "CSSMatch",
+        "SoupSieve",
+        "__init__",
+        "__len__",
+        "assert_valid_input",
+        "is_doc",
+        "is_tag",
+        "is_declaration",
+        "is_cdata",
+        "is_processing_instruction",
+        "is_navigable_string",
+        "is_special_string",
+        "is_content_string",
+        "create_fake_parent",
+        "is_xml_tree",
+        "is_iframe",
+        "is_root",
+        "get_contents",
+        "get_tag_children",
+        "get_children",
+        "get_tag_descendants",
+        "get_descendants",
+        "get_parent",
+        "get_tag_name",
+        "get_prefix_name",
+        "get_uri",
+        "get_next_tag",
+        "get_next",
+        "get_previous_tag",
+        "get_previous",
+        "has_html_ns",
+        "split_namespace",
+        "normalize_value",
+        "get_attribute_by_name",
+        "iter_attributes",
+        "get_classes",
+        "get_text",
+        "get_own_text",
+        "validate_day",
+        "validate_week",
+        "validate_month",
+        "validate_year",
+        "validate_hour",
+        "validate_minutes",
+        "parse_value",
+        "__init__",
+        "supports_namespaces",
+        "get_tag_ns",
+        "is_html_tag",
+        "get_tag",
+        "get_prefix",
+        "find_bidi",
+        "extended_language_filter",
+        "match_attribute_name",
+        "match_namespace",
+        "match_attributes",
+        "match_tagname",
+        "match_tag",
+        "match_past_relations",
+        "match_future_child",
+        "match_future_relations",
+        "match_relations",
+        "match_id",
+        "match_classes",
+        "match_root",
+        "match_scope",
+        "match_nth_tag_type",
+        "match_nth",
+        "match_empty",
+        "match_subselectors",
+        "match_contains",
+        "match_default",
+        "match_indeterminate",
+        "match_lang",
+        "match_dir",
+        "match_range",
+        "match_defined",
+        "match_placeholder_shown",
+        "match_selectors",
+        "select",
+        "closest",
+        "filter",
+        "match",
+        "__init__",
+        "match",
+        "closest",
+        "filter",
+        "select_one",
+        "select",
+        "iselect",
+        "__repr__",
+        "get_parent_form"
+      ],
+      "imports": [
+        "",
+        "__future__",
+        "bs4",
+        "datetime",
+        "re",
+        "typing",
+        "unicodedata"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/soupsieve/css_parser.py",
+    "experiment": "E10",
+    "sha256": "3fe71dd55f4db7def3361e119e2913ac9e01faa356b607581c8e39398a527ab1",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "_cached_css_compile",
+        "_purge_cache",
+        "process_custom",
+        "css_unescape",
+        "escape",
+        "SelectorPattern",
+        "SpecialPseudoPattern",
+        "_Selector",
+        "CSSParser",
+        "replace",
+        "__init__",
+        "get_name",
+        "match",
+        "__init__",
+        "get_name",
+        "match",
+        "__init__",
+        "_freeze_relations",
+        "freeze",
+        "__str__",
+        "__init__",
+        "parse_attribute_selector",
+        "parse_tag_pattern",
+        "parse_pseudo_class_custom",
+        "parse_pseudo_class",
+        "parse_pseudo_nth",
+        "parse_pseudo_open",
+        "parse_has_combinator",
+        "parse_combinator",
+        "parse_class_id",
+        "parse_pseudo_contains",
+        "parse_pseudo_lang",
+        "parse_pseudo_dir",
+        "parse_selectors",
+        "selector_iter",
+        "process_selectors"
+      ],
+      "imports": [
+        "",
+        "__future__",
+        "functools",
+        "re",
+        "typing",
+        "util",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/soupsieve/css_types.py",
+    "experiment": "E10",
+    "sha256": "a82c414565fdb068e02d7814f6a98cf79f8e6421cf67c922c9a1ef9f48a4ffdc",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "Immutable",
+        "ImmutableDict",
+        "Namespaces",
+        "CustomSelectors",
+        "Selector",
+        "SelectorNull",
+        "SelectorTag",
+        "SelectorAttribute",
+        "SelectorContains",
+        "SelectorNth",
+        "SelectorLang",
+        "SelectorList",
+        "_pickle",
+        "pickle_register",
+        "__init__",
+        "__base__",
+        "__eq__",
+        "__ne__",
+        "__hash__",
+        "__setattr__",
+        "__repr__",
+        "pretty",
+        "__init__",
+        "_validate",
+        "__iter__",
+        "__len__",
+        "__getitem__",
+        "__hash__",
+        "__repr__",
+        "__init__",
+        "_validate",
+        "__init__",
+        "_validate",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__iter__",
+        "__len__",
+        "__getitem__",
+        "__init__",
+        "__iter__",
+        "__len__",
+        "__getitem__"
+      ],
+      "imports": [
+        "__future__",
+        "copyreg",
+        "pretty",
+        "typing"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/soupsieve/pretty.py",
+    "experiment": "E10",
+    "sha256": "f33f5937291be7b611fa6654ad8e0ef586570cfe818462d2abdf8303963caf0c",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "pretty"
+      ],
+      "imports": [
+        "__future__",
+        "re",
+        "typing"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/soupsieve/util.py",
+    "experiment": "E10",
+    "sha256": "4343151fbedc5015ccb4a5740f67fc4b27fdd2b7a63ded047cba9eebe9ac01e2",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "lower",
+        "SelectorSyntaxError",
+        "deprecated",
+        "warn_deprecated",
+        "get_pattern_context",
+        "__init__",
+        "_wrapper",
+        "_deprecated_func"
+      ],
+      "imports": [
+        "__future__",
+        "functools",
+        "re",
+        "typing",
+        "warnings"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/soupsieve/__init__.py",
+    "experiment": "E10",
+    "sha256": "155e0e97615195dcbbac6f789d01cd1e82536487506d425d6641a15e4237b621",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "compile",
+        "purge",
+        "closest",
+        "match",
+        "filter",
+        "select_one",
+        "select",
+        "iselect",
+        "escape"
+      ],
+      "imports": [
+        "",
+        "__future__",
+        "__meta__",
+        "bs4",
+        "typing",
+        "util"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/reconstructed_v1/vendor/soupsieve/__meta__.py",
+    "experiment": "E10",
+    "sha256": "0b0ef41d46335cd8140d62e36ba6f9b11697fbacca292b595dce0de081e1d41f",
+    "decision": "EXTERNAL_DEPENDENCY",
+    "public_representatives": [],
+    "reason": "Unlicensed local vendor copy withheld; obtain pinned package through official distribution and license.",
+    "static_role_evidence": {
+      "definitions": [
+        "Version",
+        "parse_version",
+        "__new__",
+        "_is_pre",
+        "_is_dev",
+        "_is_post",
+        "_get_dev_status",
+        "_get_canonical"
+      ],
+      "imports": [
+        "__future__",
+        "collections",
+        "re"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/private/runtime_bundle/contrastive.py",
+    "experiment": "E11",
+    "sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "RAG/results/phase3_e11_task_adaptation/e11d_training/contrastive.py",
+      "RAG/results/phase3_e11_task_adaptation/e11e_training/contrastive.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [
+        "sequence_masks",
+        "pair_loss",
+        "pool"
+      ],
+      "imports": [
+        "torch"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/private/runtime_bundle/modal_training.py",
+    "experiment": "E11",
+    "sha256": "ff682b45ade46f73b61cf57522fbdcdf289b9e87d984a8639f31fcb3aa8e8f8e",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "RAG/results/phase3_e11_task_adaptation/e11e_training/modal_training.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [
+        "image_definition",
+        "train",
+        "main"
+      ],
+      "imports": [
+        "json",
+        "modal",
+        "pathlib",
+        "shutil",
+        "sys",
+        "train_stages"
+      ]
+    }
+  },
+  {
+    "path": "RAG/results/phase3_e11_task_adaptation/e11e_training/private/runtime_bundle/train_stages.py",
+    "experiment": "E11",
+    "sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "RAG/results/phase3_e11_task_adaptation/e11e_training/train_stages.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [
+        "require",
+        "sha_file",
+        "read_jsonl",
+        "linear_lr",
+        "execute",
+        "encode",
+        "collate"
+      ],
+      "imports": [
+        "collections",
+        "contrastive",
+        "hashlib",
+        "importlib",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "sys",
+        "time",
+        "torch",
+        "transformers"
+      ]
+    }
+  },
+  {
+    "path": "RAG/v2 sent/shroom_ensemble.ipynb",
+    "experiment": "E1-E4",
+    "sha256": "200f55ba9d7b8ef80098291ad6394c438dc11ac3a57dcdd3da8f10598ed25525",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "RAG/shroom_ensemble.ipynb"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "thesis_writing/c1_1_work/export_word.ps1",
+    "experiment": "project/support",
+    "sha256": "d8a7c38f4b24405fd608277f4888fd004dcbb5e0b6b66f8f2ed19150bab73df6",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "thesis_writing/c1_1_work/polish.py",
+    "experiment": "project/support",
+    "sha256": "d75298de4eac572d1591cad51bb8b7b47a353ac1b58f78eb32cd6a0ca045d936",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "text",
+        "sty",
+        "paras"
+      ],
+      "imports": [
+        "hashlib",
+        "lxml",
+        "pathlib",
+        "xml",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/c1_1_work/verify_render.py",
+    "experiment": "project/support",
+    "sha256": "a97d2f49f9e841ea0e6809572082b83c80f3445e03ed73fd5766e0cd17149b20",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "text",
+        "style",
+        "compact"
+      ],
+      "imports": [
+        "json",
+        "lxml",
+        "pathlib",
+        "pypdf",
+        "pypdfium2",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/c1_work/build_chapter7.py",
+    "experiment": "project/support",
+    "sha256": "cd4a2bde7a2115211962e62df27c618ee6688fe4a6d8b18ce2da6ef90b3cca57",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "text",
+        "style",
+        "spans",
+        "prop",
+        "addp",
+        "addtable",
+        "start",
+        "end"
+      ],
+      "imports": [
+        "copy",
+        "docx",
+        "hashlib",
+        "lxml",
+        "pathlib",
+        "xml",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/c1_work/export_word.ps1",
+    "experiment": "project/support",
+    "sha256": "260d84351d831f37814aaa6dd7df77ee449c84101c66981edaf8885bad28b04b",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "thesis_writing/c1_work/verify_chapter7.py",
+    "experiment": "project/support",
+    "sha256": "aaa33f3687849ffede6baef666e779d9fac7fbbb267aeaf87cea0333287fa0e1",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "text",
+        "chapter",
+        "compact",
+        "heading"
+      ],
+      "imports": [
+        "hashlib",
+        "lxml",
+        "pathlib",
+        "pypdf",
+        "pypdfium2",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/chapter9_phase1/verify_sources.py",
+    "experiment": "project/support",
+    "sha256": "3d4d726ab53bc384d8fc95aaf05f2b374e1bc3bda9ad0efa2d9d977e8298af63",
+    "decision": "REPRESENTED",
+    "public_representatives": [
+      "thesis_writing/chapter9_phase1/verify_sources.py"
+    ],
+    "reason": "Exact source represented by linked byte-preserving or public-safe derivative.",
+    "static_role_evidence": {
+      "definitions": [
+        "read",
+        "sha",
+        "rows",
+        "ranks",
+        "metrics",
+        "check_metrics",
+        "main",
+        "record"
+      ],
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "statistics"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/final_alignment_work/align.py",
+    "experiment": "project/support",
+    "sha256": "2c0a19dbf2eb0654714ecb9a95cd2619739ae6691f27ebde3751723ef9b87299",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "txt",
+        "replace",
+        "setp",
+        "spans",
+        "rewrite",
+        "clone",
+        "duplicates",
+        "begin",
+        "end"
+      ],
+      "imports": [
+        "collections",
+        "lxml",
+        "pathlib",
+        "re",
+        "xml",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/final_alignment_work/final_audit.py",
+    "experiment": "project/support",
+    "sha256": "817810ecfc0c3e86d946462ad601aafdc35a8065c285872bcc020a7be3739873",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "txt",
+        "doc",
+        "chapters",
+        "serial",
+        "numbers",
+        "dupes"
+      ],
+      "imports": [
+        "collections",
+        "lxml",
+        "pathlib",
+        "re",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/final_alignment_work/finish_qa.py",
+    "experiment": "project/support",
+    "sha256": "05e12933e34d279d973e07139994d9efd5ab18374d4d39a7bbad26b848a0b94c",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "txt",
+        "style",
+        "spans",
+        "toc_range",
+        "rewrite",
+        "remove_bookmarks",
+        "begin",
+        "end"
+      ],
+      "imports": [
+        "hashlib",
+        "lxml",
+        "pathlib",
+        "xml",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/final_alignment_work/qa_scope_fix.py",
+    "experiment": "project/support",
+    "sha256": "7bf0dcb5e2a8a479d02c86411732ac96e38c4db0ddc00d35a103e4954b16d1f5",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "ast",
+        "lxml",
+        "pathlib",
+        "xml",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/final_alignment_work/sync_toc_pages.py",
+    "experiment": "project/support",
+    "sha256": "300a350ae260ce118c90de4a66af4d09a1cd6559d5e723cc5d2a84446a00c563",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "norm"
+      ],
+      "imports": [
+        "ast",
+        "io",
+        "lxml",
+        "pathlib",
+        "pypdfium2",
+        "xml",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/final_alignment_work/update_toc_candidate.ps1",
+    "experiment": "project/support",
+    "sha256": "7210daf2519b6ef4474dfd46cfd548942f2c9260bf5d6185a5290263f67a75b4",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "thesis_writing/final_alignment_work/verify_render.py",
+    "experiment": "project/support",
+    "sha256": "3768e0be105dda6cc18d83d04d5d0fdd4a1562b1d1e792b4f028e218045d60ac",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "normalize"
+      ],
+      "imports": [
+        "PIL",
+        "json",
+        "pathlib",
+        "pypdfium2"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/references_qa_work/apply_references_qa.py",
+    "experiment": "project/support",
+    "sha256": "065d565cec03c3e9194a32d117b013c831b71f5868c32ba80a1a4860767c0533",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "edit"
+      ],
+      "imports": [
+        "ast",
+        "io",
+        "lxml",
+        "pathlib",
+        "xml",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/references_qa_work/final_audit.py",
+    "experiment": "project/support",
+    "sha256": "7b115843354667f5d5d55ea5da1ea386650b54820e4eaee4417b4989df246a1d",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "sha",
+        "txt",
+        "numbers"
+      ],
+      "imports": [
+        "PIL",
+        "ast",
+        "lxml",
+        "pathlib",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/references_qa_work/release_saved_working_copy.ps1",
+    "experiment": "project/support",
+    "sha256": "e4c2520e7ad02912c25ba30bd57050fbcb94af5b6ccb0624a6844ea6b34bcbe9",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "thesis_writing/references_qa_work/render_qa.py",
+    "experiment": "project/support",
+    "sha256": "2f9228821172815e84609fcc0b2a7c8b833ea1a7309a1f406870c671c5fdb4cc",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [
+        "txt",
+        "norm"
+      ],
+      "imports": [
+        "PIL",
+        "ast",
+        "lxml",
+        "pathlib",
+        "pypdfium2",
+        "zipfile"
+      ]
+    }
+  },
+  {
+    "path": "thesis_writing/references_qa_work/reopen_working_copy.ps1",
+    "experiment": "project/support",
+    "sha256": "04ed6fa1e9c106548f8525f8dab93a5f41405efb81e3e7c4a03722a8f12d7f04",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "review": "notebook/code duplicate mapping or office-document runtime script inspection"
+    }
+  },
+  {
+    "path": "thesis_writing/references_qa_work/restore_valid_line_breaks.py",
+    "experiment": "project/support",
+    "sha256": "2072591cf463f935ac81bea862929ad12876637e1ad3b139abed11c7e215327c",
+    "decision": "PRIVATE_RESEARCH_SUPPORT",
+    "public_representatives": [],
+    "reason": "Document/presentation construction or QA, not E1-E11 implementation; preserved privately.",
+    "static_role_evidence": {
+      "definitions": [],
+      "imports": [
+        "ast",
+        "io",
+        "lxml",
+        "pathlib",
+        "xml",
+        "zipfile"
+      ]
+    }
+  }
+]

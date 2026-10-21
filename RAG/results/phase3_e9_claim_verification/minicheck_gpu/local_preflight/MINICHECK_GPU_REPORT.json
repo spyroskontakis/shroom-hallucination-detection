@@ -1,0 +1,36 @@
+{
+  "status": "BLOCKED",
+  "model_id": "bespokelabs/Bespoke-MiniCheck-7B",
+  "model_revision": "1ed7786bcda3fa1dc35f7c4ed9e3f36b785d33b8",
+  "model_loaded": false,
+  "claims_processed": 0,
+  "inference_errors": [],
+  "retries": 0,
+  "output_sha256": null,
+  "settings": {
+    "backend": "vllm",
+    "attention_backend": "FLASH_ATTN",
+    "dtype": "bfloat16",
+    "quantization": null,
+    "tensor_parallel_size": 1,
+    "max_model_len": 32768,
+    "chunk_size": 32468,
+    "enable_prefix_caching": false,
+    "seed": 2024,
+    "temperature": 0,
+    "max_tokens": 1,
+    "logprobs": 5,
+    "gpu_memory_utilization": 0.9,
+    "cpu_offload_gb": 0,
+    "kv_cache_dtype": "auto",
+    "batch_claims": 16,
+    "scoring": "official whole-claim max over document chunks; sum exp(logprob) of yes tokens in top-5"
+  },
+  "device": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]"
+  },
+  "reason": "Linux x86_64 required",
+  "manifest_sha256": "29661b0377ccfc5bae18dede57924e7440385c3eb75eef460a94ab6c4e863be7",
+  "elapsed_seconds": 0.09399999998277053
+}

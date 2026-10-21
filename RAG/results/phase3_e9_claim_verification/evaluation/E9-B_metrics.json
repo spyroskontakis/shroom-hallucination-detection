@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETED",
+  "rf_fits": 5,
+  "feature_count": 49,
+  "metrics": {
+    "overall": {
+      "n": 561,
+      "correct": 468,
+      "accuracy": 0.8342245989304813,
+      "spearman": 0.7885801351353285
+    },
+    "per_fold": {
+      "1": {
+        "n": 113,
+        "correct": 95,
+        "accuracy": 0.8407079646017699,
+        "spearman": 0.8136199073025646
+      },
+      "2": {
+        "n": 112,
+        "correct": 93,
+        "accuracy": 0.8303571428571429,
+        "spearman": 0.7883276980162751
+      },
+      "3": {
+        "n": 112,
+        "correct": 91,
+        "accuracy": 0.8125,
+        "spearman": 0.775297021066694
+      },
+      "4": {
+        "n": 112,
+        "correct": 92,
+        "accuracy": 0.8214285714285714,
+        "spearman": 0.7772580092410883
+      },
+      "5": {
+        "n": 112,
+        "correct": 97,
+        "accuracy": 0.8660714285714286,
+        "spearman": 0.8076193190408382
+      }
+    },
+    "per_task": {
+      "DM": {
+        "n": 211,
+        "correct": 168,
+        "accuracy": 0.7962085308056872,
+        "spearman": 0.7106890546666308
+      },
+      "MT": {
+        "n": 216,
+        "correct": 190,
+        "accuracy": 0.8796296296296297,
+        "spearman": 0.8297377889898405
+      },
+      "PG": {
+        "n": 134,
+        "correct": 110,
+        "accuracy": 0.8208955223880597,
+        "spearman": 0.7565404155256157
+      }
+    }
+  },
+  "paired_vs_e6_v3": {
+    "corrections": 6,
+    "regressions": 12,
+    "net_correct": -6,
+    "mcnemar_exact_p": 0.237884521484375,
+    "accuracy_difference": -0.0106951871657754,
+    "bootstrap_95_ci": [
+      -0.024955436720142603,
+      0.0035650623885918
+    ],
+    "bootstrap_seed": 42,
+    "bootstrap_samples": 10000
+  },
+  "features_sha256": "2b425d706d7345a8d381fa9324b1dc80e072dc1a45c52d5c93f1bcfcda75fa8e",
+  "oof_sha256": "82f3011ec736537081c6646163294b023af8e3968c47a51ed30e8e5d653bdbe9"
+}

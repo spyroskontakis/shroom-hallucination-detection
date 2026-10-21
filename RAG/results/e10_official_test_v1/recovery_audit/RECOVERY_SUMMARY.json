@@ -1,0 +1,22 @@
+{
+  "recovery_status": "C. EXACT RECOVERY IMPOSSIBLE",
+  "qualification": "Within the searched local repository, archives and Git object database; no assertion about unavailable remote backups.",
+  "strict_training_examples": 547,
+  "MT_overlap_exclusions": 14,
+  "missing_wiktionary_terms": 557,
+  "recovered_frozen_terms": 0,
+  "official_DM_examples_resource_reproducible": 2,
+  "official_DM_examples_total": 563,
+  "official_DM_examples_blocked": 561,
+  "full_test_feature_vectors_generated_or_numerically_verified": 0,
+  "test_gold_seen_before": true,
+  "test_performance_computed_before": true,
+  "required_evaluation_description": "retrospective evaluation on the official labeled test set",
+  "model_fits": 0,
+  "inference_runs": 0,
+  "new_test_predictions": 0,
+  "new_test_scoring_runs": 0,
+  "network_retrievals": 0,
+  "modal_runs": 0,
+  "recommended_next_action": "Keep full official evaluation blocked. Choose explicitly between a resource-eligible strict subset and a separately documented reconstructed retrospective evaluation; execute neither in this audit."
+}

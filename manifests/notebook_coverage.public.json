@@ -1,0 +1,268 @@
+[
+  {
+    "source_path": "codex/data/shroom_ensemble.ipynb",
+    "original_sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "public_path": "codex/data/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb",
+    "original_sha256": "e9713859e1aeec74fcc1a72d6dcadb4c05b6fb71bb1181d98aa57254dd35133f",
+    "public_path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb",
+    "original_sha256": "3fb7cb98640594ad335e7c297457860d3fb7794f4439bdf55f013ef6c14a3192",
+    "public_path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "d1cef19a8f503f61088b3b518e32987dd4173c5630bbe35973f0350fc19196b4",
+    "public_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "public_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "cb134f661a61adf5f0a27c760cd99c03f3c0db05e7a2795489d00b1077b4641e",
+    "public_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "ea44bf322ad76342a3f11e6db9139838b44968fc4148cc9bbd914f232798d859",
+    "public_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/6. Feature Extraction on Augmented Training Data/shroom_ensemble.ipynb",
+    "original_sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "public_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb",
+    "original_sha256": "ce9a1d89894b92d7ef8a030d4ac535741f408f767dea816b81379aad7a40753c",
+    "public_path": "data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/7. Ablation Synthetic Data/shroom_ensemble.ipynb",
+    "original_sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "public_path": "codex/data/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "codex/data/Participant kit/participant_kit/Baseline_LLMs_SHROOM_SemEval_2024_Task_6.ipynb",
+    "original_sha256": "75f096d3d51beb2f83f9e076421a9d214c46a22aa0583633f5ce3bd811b60d83",
+    "public_path": null,
+    "decision": "PRIVATE_THIRD_PARTY_LICENSE_REVIEW",
+    "reason": "organizer baseline: no redistribution license in local delivery"
+  },
+  {
+    "source_path": "data/shroom_ensemble.ipynb",
+    "original_sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "public_path": "codex/data/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/2. EDA/shroom_ensemble.ipynb",
+    "original_sha256": "43424b6807fb3f486d44fe7d42828bf194d89b18dd2e8dd418fe8e4ae38f76f4",
+    "public_path": "data/2. EDA/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb",
+    "original_sha256": "200f55ba9d7b8ef80098291ad6394c438dc11ac3a57dcdd3da8f10598ed25525",
+    "public_path": "RAG/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb",
+    "original_sha256": "3fb7cb98640594ad335e7c297457860d3fb7794f4439bdf55f013ef6c14a3192",
+    "public_path": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "d1cef19a8f503f61088b3b518e32987dd4173c5630bbe35973f0350fc19196b4",
+    "public_path": "codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "public_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "cb134f661a61adf5f0a27c760cd99c03f3c0db05e7a2795489d00b1077b4641e",
+    "public_path": "codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "original_sha256": "ea44bf322ad76342a3f11e6db9139838b44968fc4148cc9bbd914f232798d859",
+    "public_path": "codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/6. Feature Extraction on Augmented Training Data/shroom_ensemble.ipynb",
+    "original_sha256": "87400d6d3c875ad0068ab75adae84eca23d19bd8c4a2d68571029c4d289b4491",
+    "public_path": "codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb",
+    "original_sha256": "ce9a1d89894b92d7ef8a030d4ac535741f408f767dea816b81379aad7a40753c",
+    "public_path": "data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/7. Ablation Synthetic Data/shroom_ensemble.ipynb",
+    "original_sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+    "public_path": "codex/data/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "data/Participant kit/participant_kit/Baseline_LLMs_SHROOM_SemEval_2024_Task_6.ipynb",
+    "original_sha256": "75f096d3d51beb2f83f9e076421a9d214c46a22aa0583633f5ce3bd811b60d83",
+    "public_path": null,
+    "decision": "PRIVATE_THIRD_PARTY_LICENSE_REVIEW",
+    "reason": "organizer baseline: no redistribution license in local delivery"
+  },
+  {
+    "source_path": "FINAL_SUBMISSION_PACKAGE/data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb",
+    "original_sha256": "ce9a1d89894b92d7ef8a030d4ac535741f408f767dea816b81379aad7a40753c",
+    "public_path": "data/7. Ablation Synthetic Data/7.Ablation_Synthetic_Data.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "FINAL_SUBMISSION_PACKAGE/RAG/shroom_ensemble.ipynb",
+    "original_sha256": "200f55ba9d7b8ef80098291ad6394c438dc11ac3a57dcdd3da8f10598ed25525",
+    "public_path": "RAG/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "FINAL_SUBMISSION_PACKAGE/RAG/shroom_rag_e5_module1.ipynb",
+    "original_sha256": "6eca8baecc27cf918357089ee6bf2f1e9bb83a5425e7c9e297b651010f95e868",
+    "public_path": "RAG/shroom_rag_e5_module1.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "FINAL_SUBMISSION_PACKAGE/RAG/shroom_rag_e5_module1_gemini_trial.ipynb",
+    "original_sha256": "a7e0455a11effb7c195effb1cacb542dd82992fcce027fb0d297be598557d20b",
+    "public_path": "RAG/shroom_rag_e5_module1_gemini_trial.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "FINAL_SUBMISSION_PACKAGE/RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb",
+    "original_sha256": "7b15c4151b4d1151a7722d519cdd3b13d0c4c596c29cdb7d22e82c1b6b743c27",
+    "public_path": "RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "FINAL_SUBMISSION_PACKAGE/RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb",
+    "original_sha256": "03d0d1b5303d2802b70fe789c029e7638432a851afd79855a43eb39d89f365ae",
+    "public_path": "RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "FINAL_SUBMISSION_PACKAGE/RAG/shroom_rag_e5_module2_retrieval.ipynb",
+    "original_sha256": "8be1da3095a5bdd859f427ac99328285272e72dffbc65652a7b271e4eb1b5415",
+    "public_path": "RAG/shroom_rag_e5_module2_retrieval.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "Participant kit/participant_kit/Baseline_LLMs_SHROOM_SemEval_2024_Task_6.ipynb",
+    "original_sha256": "75f096d3d51beb2f83f9e076421a9d214c46a22aa0583633f5ce3bd811b60d83",
+    "public_path": null,
+    "decision": "PRIVATE_THIRD_PARTY_LICENSE_REVIEW",
+    "reason": "organizer baseline: no redistribution license in local delivery"
+  },
+  {
+    "source_path": "RAG/shroom_ensemble.ipynb",
+    "original_sha256": "200f55ba9d7b8ef80098291ad6394c438dc11ac3a57dcdd3da8f10598ed25525",
+    "public_path": "RAG/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "RAG/shroom_rag_e5_module1.ipynb",
+    "original_sha256": "6eca8baecc27cf918357089ee6bf2f1e9bb83a5425e7c9e297b651010f95e868",
+    "public_path": "RAG/shroom_rag_e5_module1.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "RAG/shroom_rag_e5_module1_gemini_trial.ipynb",
+    "original_sha256": "a7e0455a11effb7c195effb1cacb542dd82992fcce027fb0d297be598557d20b",
+    "public_path": "RAG/shroom_rag_e5_module1_gemini_trial.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb",
+    "original_sha256": "7b15c4151b4d1151a7722d519cdd3b13d0c4c596c29cdb7d22e82c1b6b743c27",
+    "public_path": "RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb",
+    "original_sha256": "03d0d1b5303d2802b70fe789c029e7638432a851afd79855a43eb39d89f365ae",
+    "public_path": "RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "RAG/shroom_rag_e5_module2_retrieval.ipynb",
+    "original_sha256": "8be1da3095a5bdd859f427ac99328285272e72dffbc65652a7b271e4eb1b5415",
+    "public_path": "RAG/shroom_rag_e5_module2_retrieval.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  },
+  {
+    "source_path": "RAG/v2 sent/shroom_ensemble.ipynb",
+    "original_sha256": "200f55ba9d7b8ef80098291ad6394c438dc11ac3a57dcdd3da8f10598ed25525",
+    "public_path": "RAG/shroom_ensemble.ipynb",
+    "decision": "PUBLIC_REPRESENTATIVE",
+    "reason": "original content represented by mapped public notebook"
+  }
+]

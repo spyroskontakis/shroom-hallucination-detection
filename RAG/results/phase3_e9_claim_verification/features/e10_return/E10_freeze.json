@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "samples": 561,
+  "feature_count": 37,
+  "features_sha256": "3df72798ced45c5f0efeabd024765356afa4f57eba381c86a9ba7645ceb4f51a",
+  "baseline_sha256": "1e6386fbd0b89a3a295828259ec8fea9b5b3fc03465d65f82e546687c32e7229",
+  "gpu_output_sha256": "c89ab73a68238f42820a85faf06d9e013e128bdb8cf5d26ba24faa9078105716",
+  "manifest_sha256": "357e2b011f9403dfe9fb28ae84ffc4cd3524eeb5e9f347d3d295f90dceb30d3f",
+  "e6_cells_preserved": true,
+  "rf_fits": 0
+}

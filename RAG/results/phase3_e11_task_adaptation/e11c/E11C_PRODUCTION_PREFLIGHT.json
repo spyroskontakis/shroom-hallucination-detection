@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "pilot_count": 300,
+  "production_count": 11700,
+  "total_count": 12000,
+  "per_task": {
+    "pilot": 100,
+    "production": 3900,
+    "total": 4000
+  },
+  "duplicates": 0,
+  "missing": 0,
+  "intersection": 0,
+  "outside_pool": 0,
+  "requests_sha256": "df555abad7d6852289efa03824e2858d49cfdb7bc83eb2491982749e3d515514",
+  "request_manifest_sha256": "705d6d6a1fde87f05f7064d60f9861c8d2caa71c30fa2c5db155ae355a9ce04c",
+  "preservation_baseline_sha256": "ea883a9c8f9827657af87752d64327587da21e73beb9b9a8f1063799a6e6bd63",
+  "frozen_request_replay": "PASS",
+  "frozen_and_pilot_preservation": "PASS",
+  "private_files_git_ignored": true,
+  "test_suites": [
+    {
+      "command": [
+        "external-artifacts/local-27d73a276c7f/python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "RAG\\results\\phase3_e11_task_adaptation\\e11c",
+        "-p",
+        "test_e11c*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "E11C_PRODUCTION_PREFLIGHT_TEST_1.txt",
+      "sha256": "bdf5b0eb586d8de3d43dae0fd20b96728152d37c02e7b8ad5426a9440c6f1c1b"
+    },
+    {
+      "command": [
+        "external-artifacts/local-27d73a276c7f/python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "RAG\\results\\phase3_e11_task_adaptation",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "E11C_PRODUCTION_PREFLIGHT_TEST_2.txt",
+      "sha256": "0b62161c9f7354df726607b8e74f9080ad496e0f0da05beab5483225a96c2928"
+    }
+  ],
+  "production_cost_estimate_usd": 15.74547,
+  "combined_cost_estimate_usd": 16.1492
+}

@@ -1,0 +1,75 @@
+{
+  "architecture": [
+    "DebertaV2ForSequenceClassification"
+  ],
+  "base_model": "microsoft/deberta-v3-base",
+  "contamination_independently_audited": false,
+  "created_utc": "2026-09-10T15:46:02.469749+00:00",
+  "declared_training_datasets": [
+    "multi_nli",
+    "snli",
+    "fever",
+    "tals/vitaminc",
+    "paws"
+  ],
+  "download_tool": "curl.exe pinned revision URLs only",
+  "files": {
+    "README.md": {
+      "bytes": 9189,
+      "path": "model/README.md",
+      "sha256": "254dadf6bd989cdd82d250a21142105a4a9d35eeffe41f3caf7bf335e1038cae",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/README.md"
+    },
+    "added_tokens.json": {
+      "bytes": 23,
+      "path": "model/added_tokens.json",
+      "sha256": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/added_tokens.json"
+    },
+    "config.json": {
+      "bytes": 1024,
+      "path": "model/config.json",
+      "sha256": "eb50437557973a82ac1093cc586e48a6ec261b90eed0255a1ae2368d0d9bdadd",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/config.json"
+    },
+    "pytorch_model.bin": {
+      "bytes": 737761269,
+      "path": "model/pytorch_model.bin",
+      "sha256": "eb3789996c599ab27a5506005f03229a0a4600fe3634d121c48731ae95cde40e",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/pytorch_model.bin"
+    },
+    "special_tokens_map.json": {
+      "bytes": 173,
+      "path": "model/special_tokens_map.json",
+      "sha256": "311de3f4eed9d76a43bf0d71f10e62e086ca65ccce9f15d5da0d2098bf519ecc",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/special_tokens_map.json"
+    },
+    "spm.model": {
+      "bytes": 2464616,
+      "path": "model/spm.model",
+      "sha256": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/spm.model"
+    },
+    "tokenizer.json": {
+      "bytes": 8649044,
+      "path": "model/tokenizer.json",
+      "sha256": "42a7e0840d69aa62813e4b65ba46fe03ca450f90179851ce52406bad34254eff",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/tokenizer.json"
+    },
+    "tokenizer_config.json": {
+      "bytes": 575,
+      "path": "model/tokenizer_config.json",
+      "sha256": "cde0782b998b5b7eac96ad2d0b92e8eba78db4bbdaf17167e204f63ec70f6bfc",
+      "url": "https://huggingface.co/vectara/hallucination_evaluation_model/resolve/58383384656cbaec2949a75a41f20e891e90a73b/tokenizer_config.json"
+    }
+  },
+  "historical_name": "hhem-1.0-open",
+  "historical_transform_evidence": "README.md Usage with Transformers AutoModel: scores = 1 / (1 + np.exp(-logits)).flatten()",
+  "model_id": "vectara/hallucination_evaluation_model",
+  "outputs": 1,
+  "remote_code": false,
+  "revision": "58383384656cbaec2949a75a41f20e891e90a73b",
+  "score": "sigmoid(raw output logit), once; high means supported",
+  "training_claims_source": "pinned model card",
+  "weight_sha256_matches_hub_linked_etag": true
+}

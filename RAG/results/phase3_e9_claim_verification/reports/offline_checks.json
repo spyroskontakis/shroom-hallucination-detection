@@ -1,0 +1,15 @@
+{
+  "status": "PASS_OFFLINE_PREPARATION",
+  "offline_tests": 11,
+  "offline_tests_passed": 11,
+  "python_syntax": "PASS",
+  "baseline_reverification": "PASS",
+  "tracked_diff_empty": true,
+  "staged_diff_empty": true,
+  "branch": "phase3-e9-claim-verification",
+  "git_status_short": "?? RAG/results/phase3_e9_claim_verification/",
+  "claims_features_oof_ignore_checks": "PASS",
+  "live_smoke": "NOT_RUN",
+  "runtime_e9_leakage_checks": "PENDING",
+  "official_test_accessed": false
+}

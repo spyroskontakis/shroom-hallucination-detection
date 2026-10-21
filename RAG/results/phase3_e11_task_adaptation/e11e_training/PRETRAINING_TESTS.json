@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "total_tests": 111,
+  "passed": 110,
+  "skipped": 1,
+  "suites": [
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation",
+      "pattern": "test_*.py",
+      "exit_code": 0,
+      "tests": 34,
+      "skipped": 0,
+      "log_sha256": "98c54ea8aef02b382767ac11c382ec1189880cf61481f0dff39c592de587ab52"
+    },
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation\\e11c",
+      "pattern": "test_e11c*.py",
+      "exit_code": 0,
+      "tests": 40,
+      "skipped": 0,
+      "log_sha256": "2d01d0b1ec05c8d99cca48171382ce2f5e5744a25af47708efe22d9d5f1a90ca"
+    },
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation\\e11c_training",
+      "pattern": "test_*.py",
+      "exit_code": 0,
+      "tests": 5,
+      "skipped": 0,
+      "log_sha256": "fda16a123aaa373bb6a5c36a90d1b6080628e40660234ba518eeadc524ac5ca1"
+    },
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation\\e11d_training",
+      "pattern": "test_*.py",
+      "exit_code": 0,
+      "tests": 15,
+      "skipped": 0,
+      "log_sha256": "d0589024bf1a6a0e27b81af565bdedcbf62616c919e0b1d6225f288435f9e298"
+    },
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation\\e11e_training",
+      "pattern": "test_*.py",
+      "exit_code": 0,
+      "tests": 17,
+      "skipped": 1,
+      "log_sha256": "01d5bba30878aa7b445e825d3a72328dafdb6ed9ec5a793911f28784c81b89ab"
+    }
+  ]
+}

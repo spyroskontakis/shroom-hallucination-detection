@@ -1,0 +1,17 @@
+{
+  "status": "FAIL_BLOCKED_BILLING",
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "files_sha256": {
+    "E11C_RESCUE_ATTEMPT_AUDIT.json": "eed192881753b11ba2107538962138b75c3557ffae3791cfa97c9eed8e51d302",
+    "E11C_RESCUE_ATTEMPT_AUDIT.md": "d0f178ef7981245f049dc1df6414000a65de0aa60e4b32fd7f37eb5d8040f99e",
+    "E11C_RESCUE_PREFLIGHT.json": "c9db73a5fa286331142b05ddd974c8a894eb3878ae67ed97778c7ed0f7e2588b",
+    "E11C_RESCUE_PRESERVATION_BASELINE.json": "3d3dc84ddd73c7596c83515dec5e955ecf3c355984fb911740cbde4a9b2134f8",
+    "rescue_e11c_retry.py": "6295b8eb5f0a058d095e0369515387e812ee14c0d33b9b9429cadd793aef0585",
+    "private\\production_11700\\round_2\\batch_001\\rescue_creation_intent.json": "4e1da49a44d607a8045c2e6cc8a59e6fa871ffbe8ded9ee127c48b5d68d6a6cc",
+    "private\\production_11700\\round_2\\batch_001\\rescue_model_metadata.json": "4d7ee81e6ab947788a82b8fe85a0a40b5b5bde926a56454d6253a1918ab55f86",
+    "private\\production_11700\\round_2\\batch_001\\rescue_remote_reconciliation.json": "cc61d7347903071991486828f657337c597e49a226a86f8efc7a086b14e39dc7",
+    "private\\production_11700\\round_2\\batch_001\\rescue_submission_failure.json": "3fdc8f4e6e10430f31547c92bc15346c40496620f50451c3e59d57d6850fd39a",
+    "private\\production_11700\\round_2\\batch_001\\rescue_uploaded_file.json": "26be72863e8c090e7dcab134fe027278618ec8c3aae1e208647634366559dc26",
+    "private\\production_11700\\round_2\\batch_001\\rescue_upload_intent.json": "be2306299741ef56b3f1b45f4c29d1dcdfcb85e4b0f1f85269d873ce1dcccfd7"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "candidate_rows": 12000,
+  "unique_keys": 12000,
+  "task_counts": {
+    "DM": 4000,
+    "MT": 4000,
+    "PG": 4000
+  },
+  "master_membership": "PASS",
+  "reference_policy": "PASS",
+  "teacher_payload_allowlist": "PASS",
+  "prompt_schema_model": "PASS",
+  "batch_shards": 24,
+  "batch_requests": 12000,
+  "forbidden_dataset_path_scan": "PASS",
+  "prior_artifacts_unchanged": 147,
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "candidate_manifest_sha256": "72dbde0eebea322e55f9427eb2792adceb726e6f191ae03c377369f505109990",
+  "candidate_jsonl_sha256": "602109ec15e8b296442ad6a8b7d537fcc50422e1db5d35f7bff2cf24e7cb0847",
+  "batch_jsonl_sha256": "da3e459c679b1c22e7830909293069c541c080295bcb92b07bef0be74bb6e3e1",
+  "live_api_model_metadata": "NOT_QUERIED_PER_NO_API_INSTRUCTION",
+  "no_label_generation": true,
+  "no_student_training": true,
+  "python": "3.12.10"
+}

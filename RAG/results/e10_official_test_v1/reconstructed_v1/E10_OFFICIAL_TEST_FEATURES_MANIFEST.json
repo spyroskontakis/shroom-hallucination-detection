@@ -1,0 +1,104 @@
+{
+  "status": "PASS_FROZEN_BEFORE_TEST_GOLD",
+  "rows": 1500,
+  "ordered_features": [
+    "src_ent",
+    "src_neu",
+    "src_con",
+    "tgt_ent",
+    "tgt_neu",
+    "tgt_con",
+    "sim_src_hyp",
+    "sim_tgt_hyp",
+    "sim_src_tgt",
+    "sim_max",
+    "sim_min",
+    "sim_mean",
+    "sim_gap_tgt_src",
+    "sim_hyp_distance_from_truth",
+    "rag_evidence_available",
+    "rag_sense_count",
+    "rag_retrieval_top1_cosine",
+    "rag_target_definition_max_cosine",
+    "rag_target_definition_max_entailment",
+    "rag_target_definition_max_contradiction",
+    "rag_target_definition_max_lexical_overlap",
+    "rag_definition_hyp_cosine",
+    "rag_definition_hyp_entailment",
+    "rag_definition_hyp_neutral",
+    "rag_definition_hyp_contradiction",
+    "nli2_ref_hyp_entailment",
+    "nli2_ref_hyp_neutral",
+    "nli2_ref_hyp_contradiction",
+    "nli2_hyp_ref_entailment",
+    "nli2_hyp_ref_neutral",
+    "nli2_hyp_ref_contradiction",
+    "nli2_definition_hyp_entailment",
+    "nli2_definition_hyp_neutral",
+    "nli2_definition_hyp_contradiction",
+    "hhem_ref_hyp_consistency",
+    "hhem_definition_hyp_consistency",
+    "factcg_support_probability"
+  ],
+  "task_counts": {
+    "MT": 562,
+    "DM": 563,
+    "PG": 375
+  },
+  "test_inputs_sha256": "bd6ffcb25d9ef4fc36bfffcc93ebd54614e93ec11dd5036616c1091afc1b1f2a",
+  "features_sha256": "404c252580877534f52bb164fbee53320417426fc81730d69da16552b15922e7",
+  "stage_sha256": {
+    "base14.csv": "e8305cd85f14db74468acf65a25e2ca28eae1045261739c96e60d125f1ed6cba",
+    "rag11.csv": "e6b5afec062d34afa929fbe54bf550d21e617193a971d6562b6f830a1ac5e13d",
+    "nli2.csv": "f0bffc298bf7c5d62b82025601819b6c545164ae6ad8ec3dff99e8a84202f91b",
+    "hhem.csv": "b7b40937fa649c3ccf480be2eea4c09f791f6042e1d5cc20ede8f25a06fa1450"
+  },
+  "factcg_return_sha256": "17fe66d1d6a5947c3cecb1c2966d29d27e446fc336194dff0c43f73d3464c69b",
+  "unexpected_missing_values": 0,
+  "feature_failures": 0,
+  "definition_zero_rows": 965,
+  "models": {
+    "NLI1": {
+      "model": "microsoft/deberta-large-mnli",
+      "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e"
+    },
+    "MPNet": {
+      "model": "sentence-transformers/all-mpnet-base-v2",
+      "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130"
+    },
+    "NLI2": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7"
+    },
+    "HHEM": {
+      "model": "vectara/hallucination_evaluation_model",
+      "revision": "58383384656cbaec2949a75a41f20e891e90a73b"
+    },
+    "FactCG": {
+      "model": "yaxili96/FactCG-DeBERTa-v3-Large",
+      "revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80",
+      "settings": {
+        "device": "cuda:0",
+        "dtype": "float32",
+        "use_safetensors": true,
+        "use_fast": true,
+        "max_length": 2048,
+        "truncation": "only_first",
+        "padding": "longest",
+        "pad_token": "eos_token",
+        "reference_chunk_words": 550,
+        "batch_size": 1,
+        "hypothesis_split": false,
+        "support_class_index": 1,
+        "activation": "softmax",
+        "reference_aggregation": "max",
+        "temperature_scaling": null,
+        "quantization": null,
+        "autocast": false,
+        "matmul_allow_tf32": false,
+        "seed": 42
+      }
+    }
+  },
+  "cache_policy": "Reused frozen 561-row training feature matrix. Historical test feature files lack verified complete matching pinned E10 provenance; no such cache substituted. Stage checkpoints verified by input identity."
+}

@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "model_fits": 0,
+  "baselines": {
+    "E11-A": {
+      "n": 561,
+      "correct": 460,
+      "accuracy": 0.8199643493761141,
+      "spearman": 0.7172565081322899,
+      "confusion_matrix": [
+        [
+          261,
+          46
+        ],
+        [
+          55,
+          199
+        ]
+      ],
+      "precision": 0.8122448979591836,
+      "recall": 0.7834645669291339,
+      "f1": 0.7975951903807615,
+      "results_sha256": "be5cc0cf9300284684e19904691c5d79e24ef76885c4ad47ba59b2ebd04228ca",
+      "oof_sha256": "07d3ad0ab0549b1dec0a32ca43ad194dbb4a6d32cba1519f7b4d56a490c87e16"
+    },
+    "E11-C": {
+      "n": 561,
+      "correct": 466,
+      "accuracy": 0.8306595365418895,
+      "spearman": 0.7270182116026076,
+      "confusion_matrix": [
+        [
+          262,
+          45
+        ],
+        [
+          50,
+          204
+        ]
+      ],
+      "precision": 0.8192771084337349,
+      "recall": 0.8031496062992126,
+      "f1": 0.8111332007952287,
+      "results_sha256": "76c6e888a69464d87221e528fc1f14145f71ebc839db2837241070f608aa48be",
+      "oof_sha256": "178814906d6666229a5e2a9a33d14e90b6d712bec4e415036a42bbc0827bed22"
+    },
+    "E11-D": {
+      "n": 561,
+      "correct": 459,
+      "accuracy": 0.8181818181818182,
+      "spearman": 0.7006748393613571,
+      "confusion_matrix": [
+        [
+          263,
+          44
+        ],
+        [
+          58,
+          196
+        ]
+      ],
+      "precision": 0.8166666666666667,
+      "recall": 0.7716535433070866,
+      "f1": 0.7935222672064778,
+      "results_sha256": "818fdd8fa9810f0932b95ab4dee608baa1de514b2f4d4c8b864b65cd931dd354",
+      "oof_sha256": "d10ba178ee3df120b6a87195310389d9effe6e3917a5d663543c3e9c6f710ed1"
+    },
+    "E10": {
+      "path": "RAG\\results\\phase3_e9_claim_verification\\evaluation\\E10\\E10_oof.csv",
+      "sha256": "6a9a20b32db79bc25ea325a804cb0abe75c9f7f5583bec9a4bad4addc0ddd871",
+      "correct": 475,
+      "accuracy": 0.8467023172905526,
+      "spearman": 0.7828092941190203
+    }
+  },
+  "synthetic_pool": 11887,
+  "teacher_model": "gpt-5.6-sol",
+  "uncertain_excluded": 109,
+  "Azure_rescue_excluded": 4,
+  "duplicate_input_exclusions": 82,
+  "duplicate_reasons": {
+    "duplicate_input": 76,
+    "conflicting_identical_input": 6
+  },
+  "conflicting_groups": 3,
+  "synthetic_rows_by_fold": [
+    11787,
+    11791,
+    11795,
+    11787,
+    11790
+  ],
+  "validation_overlap_exclusions": [
+    18,
+    14,
+    10,
+    18,
+    15
+  ],
+  "synthetic_export_sha256": "b071f6f01db297393cff6c64e7614ad9c241e8da28379a21740b0e5d3d50ccea",
+  "teacher_protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "synthetic_and_human_prepared_files_identical_to_C": true,
+  "loss_implementation_identical_to_D": true,
+  "tokenizer_masks_checked": 12366,
+  "minimum_retained_sequence_tokens": 6,
+  "folds_sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+  "evaluator_sha256": "485c64f96033c099d489b3f27dfef5d356f6fd59b05351d7da7cd36669ffc10d",
+  "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+  "official_test_access": false,
+  "teacher_calls": 0,
+  "leakage_limit": "Conservative exact normalized content/source matching; undocumented upstream semantic derivations cannot be proven absent. No cross-split upstream source IDs are supplied."
+}

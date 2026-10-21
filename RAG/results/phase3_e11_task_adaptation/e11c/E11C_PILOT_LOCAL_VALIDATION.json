@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "rows": 300,
+  "unique_keys": 300,
+  "tasks": {
+    "DM": 100,
+    "MT": 100,
+    "PG": 100
+  },
+  "membership": "PASS",
+  "reference_policy": "PASS",
+  "prompt_schema_model": "PASS",
+  "input_allowlist": "PASS",
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "requests_sha256": "54604c07739cb9b724782deac99440e3d0c4f94385237c318d7dd2433ab23702",
+  "request_bodies": "Identical to corresponding frozen full-pool requests",
+  "selection_manifest_sha256": "a601b685d4ce1eed0d458daeaf58996f287a67715e588fec239ce77fb126300d"
+}

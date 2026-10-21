@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "continuation": "module4_continuation_v1",
+  "status": "STOPPED",
+  "current_stage": "Stage C: Wiktionary acquisition and snapshot lock",
+  "verdict": "MODULE4_CONTINUATION_STOPPED_STAGE_C_WIKTIONARY_TLS_CERTIFICATE_EXPIRED",
+  "last_successful_stage": "Stage B: protocol and implementation lock",
+  "end_timestamp_utc": "2026-08-30T06:57:06.4895268Z",
+  "authorization": {
+    "continuation_authorized_after_disclosure": true,
+    "historical_premature_label_exposure": true,
+    "previously_reported_displayed_label_bearing_rows": 1,
+    "total_historical_records_read_by_underlying_commands": "UNKNOWN",
+    "fully_label_blind_project_history_claimed": false,
+    "new_mixed_e3_csv_content_accesses_before_rag7_lock": 0
+  },
+  "completed_stages": [
+    {"stage":"Stage A: safe preflight","status":"PASS","expected_hashes":"14/14 PASS","canonical_rows":561,"task_counts":{"DM":211,"MT":216,"PG":134},"rag_applicable":211,"unique_terms":206},
+    {"stage":"Stage B: protocol and implementation lock","status":"PASS","tests":"20/20 PASS","semantic_parser_changes":0}
+  ],
+  "blocker": {
+    "stage": "Stage C",
+    "reason": "Official English Wiktionary HTTPS endpoint certificate expired under normal TLS verification",
+    "term_accounting": "0/206 accepted",
+    "source_request_failed_zero_gate": "FAIL",
+    "downstream_stages_permitted": false,
+    "safe_next_step": "Owner review after correction of the official TLS path or an explicitly revised acquisition protocol; no bypass or substitute source."
+  },
+  "artifacts": [
+    {"path":"RAG/results/rag_module4/continuation_v1/CONTINUATION_AUTHORIZATION_AND_DEVIATION.md","size":5208,"sha256":"a0f4d6582eaac1c44ad8460bce860105a9c947756731cfcf65adaacb94e1524f"},
+    {"path":"RAG/results/rag_module4/continuation_v1/MODULE4_FEATURE_PREPARATION_SPEC.md","size":2080,"sha256":"958158a8c79145bbfdc1d4ceed91378174f19115be92aa1ad0e9a96ec52ffb33"},
+    {"path":"RAG/results/rag_module4/continuation_v1/scripts/module4_build_wiktionary_lexicon.py","size":13298,"sha256":"91c2c950e066ce613cca3dcdbda14fd83a7bf633fecbbeeb90d065c14e68d4e6"},
+    {"path":"RAG/results/rag_module4/continuation_v1/scripts/module4_build_rag_features.py","size":6955,"sha256":"dc539f308bfcc133a99121795dc435fbda32fe076b168905dbeed20197891507"},
+    {"path":"RAG/results/rag_module4/continuation_v1/tests/test_wiktionary_orchestration.py","size":2399,"sha256":"8957a94a3482bc80c869fee1103dc012d6e9818effa5f9b42027d6f9c2803288"},
+    {"path":"RAG/results/rag_module4/continuation_v1/tests/test_rag_features.py","size":3398,"sha256":"0831ef6bd19247981054f1a5fcd22b800d73a1233e94162d5fdb68522d4e193f"},
+    {"path":"RAG/results/rag_module4/continuation_v1/raw_sources/network_requests.jsonl","size":40079,"sha256":"7839ecd3b3e1ce62c35a8379e580a163e67f5ee77b86917875cdf600139fb09c"},
+    {"path":"RAG/results/rag_module4/continuation_v1/CONTINUATION_FINAL_REPORT.md","size":5530,"sha256":"ab69576e24fa705e333d09343d925964c840d31360dc8929a105218abcb19c9c"},
+    {"path":"RAG/results/rag_module4/continuation_v1/CONTINUATION_AUDIT.json","size":4465,"sha256":"397d1748286918a313162bcfc3335a4079cd244f380a0d759ee546d14e8a0cd3"},
+    {"path":"RAG/results/rag_module4/continuation_v1/scripts/__pycache__/module4_build_rag_features.cpython-312.pyc","size":15610,"sha256":"0122ea3b76b4a9cc5e8f9d037176e9ef665762f8858b5aac4534d235dcc2be54"},
+    {"path":"RAG/results/rag_module4/continuation_v1/scripts/__pycache__/module4_build_wiktionary_lexicon.cpython-312.pyc","size":18599,"sha256":"74ed3d4bc1b4861749230e7351c68176a27f3c4f70d1177f4e47303feb39afa4"}
+  ],
+  "network_accounting":{"historical_wordnet_attempts_linked":6,"new_wordnet_attempts":0,"wiktionary_attempts":55,"successful_responses":0,"accepted_bytes":0,"http_requests":0,"tls_bypasses":0,"unapproved_requests":0},
+  "execution_accounting":{"mpnet":0,"nli":0,"rag_feature_generation":0,"fusion":0,"rf_training":0,"predictions":0,"metrics":0}
+}

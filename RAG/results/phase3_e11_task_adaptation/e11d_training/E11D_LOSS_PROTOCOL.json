@@ -1,0 +1,228 @@
+{
+  "experiment": "E11-D",
+  "status": "FROZEN_BEFORE_TRAINING",
+  "classification": "Identical E11-A fold-weighted torch.nn.CrossEntropyLoss",
+  "formula": "mean_i[(1-y_i)*(1-cos(a_i,b_i)) + y_i*max(0,cos(a_i,b_i)-margin)]",
+  "total_loss": "weighted_CE + lambda * contrastive",
+  "lambda": 0.1,
+  "margin": 0.0,
+  "temperature": null,
+  "normalization": "cosine L2 normalization, eps=1e-8, float32",
+  "representation": "Final encoder layer; mean pool each paired sequence using fast-tokenizer sequence_ids; exclude special and padding tokens; include frozen textual prefixes.",
+  "contextualization": "Both representations are contextualized jointly by the original cross-encoder pair; no independent encoder passes.",
+  "positive": "label 0 not_hallucination: minimize 1-cos",
+  "negative": "label 1 hallucination: penalize cosine above zero",
+  "rationale": "Simple standard pairwise cosine embedding objective with modest fixed auxiliary weight; no projection head, mined pairs, alternatives or parameter selection.",
+  "e11a_protocol_sha256": "518c2df610a1483472b94e8baf3c0c4b277275f351e7448822e35d9dc871772d",
+  "fits": 5,
+  "seed": 42,
+  "data": {
+    "canonical_path": "codex/canonical_human_development_manifest.csv",
+    "canonical_sha256": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "rows": 561,
+    "unique_ids": 561,
+    "task_counts": {
+      "DM": 211,
+      "MT": 216,
+      "PG": 134
+    },
+    "label_column": "label_bin",
+    "label_mapping": {
+      "0": "Not Hallucination",
+      "1": "Hallucination"
+    },
+    "folds_path": "codex/canonical_fold_assignments.csv",
+    "folds_sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "fold_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "folds": [
+      {
+        "fold_id": 1,
+        "train_rows": 448,
+        "heldout_rows": 113,
+        "train_class_counts": {
+          "0": 246,
+          "1": 202
+        },
+        "class_weights": {
+          "0": 0.9105691056910569,
+          "1": 1.108910891089109
+        }
+      },
+      {
+        "fold_id": 2,
+        "train_rows": 449,
+        "heldout_rows": 112,
+        "train_class_counts": {
+          "0": 246,
+          "1": 203
+        },
+        "class_weights": {
+          "0": 0.9126016260162602,
+          "1": 1.1059113300492611
+        }
+      },
+      {
+        "fold_id": 3,
+        "train_rows": 449,
+        "heldout_rows": 112,
+        "train_class_counts": {
+          "0": 245,
+          "1": 204
+        },
+        "class_weights": {
+          "0": 0.9163265306122449,
+          "1": 1.1004901960784315
+        }
+      },
+      {
+        "fold_id": 4,
+        "train_rows": 449,
+        "heldout_rows": 112,
+        "train_class_counts": {
+          "0": 245,
+          "1": 204
+        },
+        "class_weights": {
+          "0": 0.9163265306122449,
+          "1": 1.1004901960784315
+        }
+      },
+      {
+        "fold_id": 5,
+        "train_rows": 449,
+        "heldout_rows": 112,
+        "train_class_counts": {
+          "0": 246,
+          "1": 203
+        },
+        "class_weights": {
+          "0": 0.9126016260162602,
+          "1": 1.1059113300492611
+        }
+      }
+    ],
+    "training_rule": "For fold k train on all canonical rows with locked fold_id != k; validate only on fold_id == k. No text purge or extra rows."
+  },
+  "model": {
+    "id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+    "local_mirror_dir": "RAG/results/rag_e6_v2/model",
+    "local_assets_sha256": {
+      "model.safetensors": "c03cd208bf920b4fbbb182a0535859a566e8acc3477d2b536bf87b769978524b",
+      "config.json": "7f9d420b616691c5b575bab8839719aefbddc656d8e1316519414b097ce43e3d",
+      "tokenizer.json": "7aa118770f066a74530d161c7d0b994d0629cc0ff3a0df213f184192773f960a",
+      "tokenizer_config.json": "556a192d83e3edb45a09a6207095dd9295c3b2279062e5cc430feac4cb7a0817",
+      "special_tokens_map.json": "fcfbeb4e25cd37fb5b8030406394253b245230fd3b552750092bab7d24d827da",
+      "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+      "added_tokens.json": "cd0141b19e809eb963a8f8244fad72530233f729e1f6960d281e1fbb3537b2fb"
+    },
+    "loading": "local_files_only=True; safetensors; reuse pinned pretrained encoder; replace mismatched 3-way NLI classifier head with a seeded 2-way head",
+    "num_labels": 2,
+    "id2label": {
+      "0": "not_hallucination",
+      "1": "hallucination"
+    },
+    "label2id": {
+      "not_hallucination": 0,
+      "hallucination": 1
+    },
+    "quantization": null
+  },
+  "input": {
+    "type": "tokenizer_text_pair",
+    "sequence_a_template": "TASK: {task}\nREFERENCE:\n{reference}",
+    "sequence_b_template": "HYPOTHESIS:\n{hyp}",
+    "reference_field_by_task": {
+      "DM": "tgt",
+      "MT": "tgt",
+      "PG": "src"
+    },
+    "claim": "Unchanged complete original hyp field",
+    "tokenization": {
+      "add_special_tokens": true,
+      "truncation": "longest_first",
+      "max_length": 512,
+      "batch_padding": "longest_in_batch"
+    },
+    "forbidden_text_fields": [
+      "label",
+      "label_bin",
+      "p_hallucination",
+      "model",
+      "detector_scores",
+      "RF_predictions",
+      "external_definitions"
+    ]
+  },
+  "reference_policy": {
+    "DM": "tgt",
+    "MT": "tgt",
+    "PG": "src"
+  },
+  "training": {
+    "optimizer": "torch.optim.AdamW",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "epochs": 5,
+    "train_batch_size": 8,
+    "evaluation_batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "effective_train_batch_size": 16,
+    "warmup_ratio": 0.1,
+    "warmup_steps_rule": "ceil(0.1 * total_optimizer_steps)",
+    "lr_schedule": "linear warmup then linear decay to zero by final optimizer step",
+    "gradient_clip_max_norm": 1.0,
+    "random_seed": 42,
+    "precision": "BF16 autocast on one A100-80GB",
+    "loss": "weighted torch.nn.CrossEntropyLoss",
+    "class_weight_formula": "weight_c = N_train / (2 * N_class_c), using only fold training labels",
+    "class_weight_values_by_fold": {
+      "1": {
+        "0": 0.9105691056910569,
+        "1": 1.108910891089109
+      },
+      "2": {
+        "0": 0.9126016260162602,
+        "1": 1.1059113300492611
+      },
+      "3": {
+        "0": 0.9163265306122449,
+        "1": 1.1004901960784315
+      },
+      "4": {
+        "0": 0.9163265306122449,
+        "1": 1.1004901960784315
+      },
+      "5": {
+        "0": 0.9126016260162602,
+        "1": 1.1059113300492611
+      }
+    },
+    "oversampling": false,
+    "early_stopping": false,
+    "checkpoint_selection": "final model after exactly five epochs; no held-out-based selection"
+  },
+  "output": {
+    "hallucination_class_id": 1,
+    "probability": "softmax(logits)[class_id=1] using explicit id2label/label2id assertion",
+    "classification_threshold": 0.5,
+    "prediction_rule": "predicted_class=1 if p(H)>=0.5 else 0",
+    "oof_fields": [
+      "sample_id",
+      "fold_id",
+      "task",
+      "gold_label",
+      "predicted_class",
+      "p_H"
+    ],
+    "oof_rule": "Five independent final checkpoints, one per locked fold; predict held-out fold only; concatenate to 561 unique IDs after all five runs."
+  },
+  "synthetic_rows": 0,
+  "hyperparameter_search": false
+}

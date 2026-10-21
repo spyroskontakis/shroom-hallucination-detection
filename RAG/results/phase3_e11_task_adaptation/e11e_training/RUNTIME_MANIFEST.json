@@ -1,0 +1,7 @@
+{
+  "train_stages.py": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+  "contrastive.py": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+  "E11E_TRAINING_PROTOCOL.json": "6ab54d310a79a29feaaa70f4497d3cbef0e1b5092d25cd4deaafc8e9c3c5e2fc",
+  "E11E_PRETRAINING_AUDIT.json": "f0e0cd478c716848021520a56e7277759761560a2c7f8aed6fc5228ce48cf941",
+  "modal_training.py": "ff682b45ade46f73b61cf57522fbdcdf289b9e87d984a8639f31fcb3aa8e8f8e"
+}

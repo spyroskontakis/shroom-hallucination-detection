@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "518c2df610a1483472b94e8baf3c0c4b277275f351e7448822e35d9dc871772d",
+  "canonical_sha256": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+  "folds_sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+  "folds": {
+    "1": {
+      "train_path": "e11a_prepared/fold_1/train.jsonl",
+      "train_sha256": "e0b37488f5008b0eccbed5c5cca904be90c22e23513042851c504aacf5850ed7",
+      "train_rows": 448,
+      "train_class_counts": {
+        "0": 246,
+        "1": 202
+      },
+      "heldout_path": "e11a_prepared/fold_1/heldout.jsonl",
+      "heldout_sha256": "cb525a485a0d784e6d90419854caa6968bad6000daec399cabb00a253889e84e",
+      "heldout_rows": 113,
+      "train_heldout_overlap": 0
+    },
+    "2": {
+      "train_path": "e11a_prepared/fold_2/train.jsonl",
+      "train_sha256": "cf9900870c34566313a247cee6f1496962a0a9c77cbd874efe831aabe596ef73",
+      "train_rows": 449,
+      "train_class_counts": {
+        "0": 246,
+        "1": 203
+      },
+      "heldout_path": "e11a_prepared/fold_2/heldout.jsonl",
+      "heldout_sha256": "04bac826ad3618a4f6d7bd560b07ea572ef184fd95ef22a77a12c4c69276ba3f",
+      "heldout_rows": 112,
+      "train_heldout_overlap": 0
+    },
+    "3": {
+      "train_path": "e11a_prepared/fold_3/train.jsonl",
+      "train_sha256": "deaae989155e6d6424d56083e9560fb811cdd62f6cabc53406cef536528bacf6",
+      "train_rows": 449,
+      "train_class_counts": {
+        "0": 245,
+        "1": 204
+      },
+      "heldout_path": "e11a_prepared/fold_3/heldout.jsonl",
+      "heldout_sha256": "cc68e546d654dff5d54531d3a9489aaf1382cbca409ce92cd73a16f2aba79caa",
+      "heldout_rows": 112,
+      "train_heldout_overlap": 0
+    },
+    "4": {
+      "train_path": "e11a_prepared/fold_4/train.jsonl",
+      "train_sha256": "7209bfa5c08e452cb9b8cafbe70c8746a8895c7c167671d30fe01565ec74bf56",
+      "train_rows": 449,
+      "train_class_counts": {
+        "0": 245,
+        "1": 204
+      },
+      "heldout_path": "e11a_prepared/fold_4/heldout.jsonl",
+      "heldout_sha256": "4574e4fa0da93159374900f0507a4b82b0f9830ce997ced55d257ed3eb5fc08a",
+      "heldout_rows": 112,
+      "train_heldout_overlap": 0
+    },
+    "5": {
+      "train_path": "e11a_prepared/fold_5/train.jsonl",
+      "train_sha256": "3e98dde7cac2a2e680e009c268eac06be954d145a7106399f7f54ee7f244a16a",
+      "train_rows": 449,
+      "train_class_counts": {
+        "0": 246,
+        "1": 203
+      },
+      "heldout_path": "e11a_prepared/fold_5/heldout.jsonl",
+      "heldout_sha256": "c6e077914aa412551bd2830fd64eada8f1d2a1cf68a02bd35cdc751ae90c9e7e",
+      "heldout_rows": 112,
+      "train_heldout_overlap": 0
+    }
+  }
+}

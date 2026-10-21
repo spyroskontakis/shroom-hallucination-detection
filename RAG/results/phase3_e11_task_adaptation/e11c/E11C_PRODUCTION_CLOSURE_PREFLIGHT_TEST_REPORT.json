@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "suites": [
+    {
+      "command": [
+        "external-artifacts/local-27d73a276c7f/python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "RAG\\results\\phase3_e11_task_adaptation\\e11c",
+        "-p",
+        "test_e11c*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "E11C_PRODUCTION_CLOSURE_PREFLIGHT_TEST_1.txt",
+      "sha256": "97ce3bfb703c6b1ca01fb3b53e91fa4b996bf576719aabe2dd78a25fab8996d7"
+    },
+    {
+      "command": [
+        "external-artifacts/local-27d73a276c7f/python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "RAG\\results\\phase3_e11_task_adaptation",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "E11C_PRODUCTION_CLOSURE_PREFLIGHT_TEST_2.txt",
+      "sha256": "91a01d54ecb47af4eb06b013ea497919d04ce2435cc5ee7530c30175dbfb1c13"
+    }
+  ]
+}

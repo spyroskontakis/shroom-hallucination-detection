@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "tests_passed": 78,
+  "suites": [
+    {
+      "suite": "teacher",
+      "exit_code": 0,
+      "log": "FINAL_TEST_teacher.txt"
+    },
+    {
+      "suite": "e11",
+      "exit_code": 0,
+      "log": "FINAL_TEST_e11.txt"
+    },
+    {
+      "suite": "training",
+      "exit_code": 0,
+      "log": "FINAL_TEST_training.txt"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+?? RAG/results/e10_official_test_v1/
+?? RAG/results/phase3_e11_task_adaptation/
+?? RAG/results/phase3_e9_claim_verification/
+?? modal_gpu_check.py

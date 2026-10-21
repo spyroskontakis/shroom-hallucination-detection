@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "replay_id": "replay_20260830T181436Z",
+  "purpose": "Authorized pinned offline artifact replay; no evaluation, training, prediction, acquisition, or metric computation.",
+  "verdict": "PINNED_ARTIFACT_REPLAY_IDENTICAL",
+  "historical_revision_status": "HISTORICAL_REVISION_UNPROVEN",
+  "runtime": {
+    "python_executable": "external-artifacts/local-21bb07554028/python.exe",
+    "python_version": "3.11.9",
+    "device": "cpu",
+    "dtype_policy": "model defaults; MPNet/NLI float32 CPU as frozen specification",
+    "packages": {
+      "numpy": "2.4.4",
+      "sentence-transformers": "5.4.1",
+      "torch_distribution": "2.11.0",
+      "torch_module": "2.11.0+cpu",
+      "transformers": "5.5.4"
+    },
+    "offline_flags": {
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "HF_DATASETS_OFFLINE": "1",
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  "models": {
+    "mpnet": {
+      "model_id": "sentence-transformers/all-mpnet-base-v2",
+      "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "observed_snapshot_path": "external-artifacts/local-54c26f7df1bd/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "key_files": {
+        "model.safetensors": {
+          "bytes": 437971872,
+          "sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658"
+        },
+        "config.json": {
+          "bytes": 571,
+          "sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0"
+        },
+        "modules.json": {
+          "bytes": 349,
+          "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+        },
+        "tokenizer.json": {
+          "bytes": 466021,
+          "sha256": "b8be2c30ba5dd723a6d5ee26d013da103d5408d92ddcb23747622f9e48f1d842"
+        },
+        "vocab.txt": {
+          "bytes": 231536,
+          "sha256": "dbd90cb94e2247bd4d4ccaecbf616d2290e66691d7d5e5bb81f063c2d0649ada"
+        },
+        "1_Pooling/config.json": {
+          "bytes": 190,
+          "sha256": "a37f83ada23e7887be6b88f4998927dbeac0038af301553c7cd5461413bf1a56"
+        }
+      }
+    },
+    "nli": {
+      "model_id": "microsoft/deberta-large-mnli",
+      "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+      "observed_snapshot_path": "external-artifacts/local-da623a571fc2/7296194b9009373def4f7c5dad292651e4b5cf4e",
+      "key_files": {
+        "pytorch_model.bin": {
+          "bytes": 1624928186,
+          "sha256": "3abd875c9e6dd137a689a1fa1a433f0c2d6bc7462afc42a0095878f88f23be87"
+        },
+        "config.json": {
+          "bytes": 729,
+          "sha256": "d9f6829f2e13bdb4743f97bd4c0866412b91129bfa0195cdd0414d836cc6f130"
+        },
+        "tokenizer_config.json": {
+          "bytes": 52,
+          "sha256": "052b1ce2b5b3bf119a72dee8cbb2de441dd4ff8f2255be61cd8aa63fb24d8149"
+        },
+        "merges.txt": {
+          "bytes": 456318,
+          "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+        },
+        "vocab.json": {
+          "bytes": 898825,
+          "sha256": "ef13b2af772bf95f74e5512265bbe22b786bf25861df22d9f19fde0b3937fdea"
+        }
+      }
+    }
+  },
+  "locked_inputs": {
+    "module4_dev_inputs_locked.csv": "3f92a0b398b97873716dda69d108467a4309fe28bd565be692a74e1af74523d5",
+    "module4_external_lexical_snapshot.jsonl": "7677937ace64644afa4f39d8745f54711640a578f1387d9e389008b1e0440d40"
+  },
+  "executions": {
+    "preflight": {
+      "duration_seconds": 2.836726,
+      "model_loads": 0,
+      "blocked_network_attempts": 0
+    },
+    "feature_generation": {
+      "duration_seconds": 229.251151,
+      "model_loads": {
+        "mpnet": 1,
+        "nli": 1
+      },
+      "blocked_network_attempts": 0
+    },
+    "exact_overlap_audit": {
+      "duration_seconds": 61.86224,
+      "model_loads": {
+        "mpnet": 1,
+        "nli": 0
+      },
+      "blocked_network_attempts": 0
+    }
+  },
+  "tests": {
+    "passed": 15,
+    "total": 15,
+    "model_loads": 0
+  },
+  "outputs": {
+    "module4_rag_features_pinned_replay.csv": {
+      "bytes": 38385,
+      "sha256": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160",
+      "accepted_artifact_byte_identical": true,
+      "rows": 561,
+      "columns": 8
+    },
+    "module4_exact_overlap_audit_pinned_replay.csv": {
+      "bytes": 16350,
+      "sha256": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a",
+      "accepted_artifact_byte_identical": true,
+      "rows": 561,
+      "exact_matches": 18
+    }
+  },
+  "accounting": {
+    "network_requests": 0,
+    "blocked_network_attempts": 0,
+    "model_loads": 3,
+    "feature_generations": 1,
+    "overlap_audits": 1,
+    "training_runs": 0,
+    "prediction_runs": 0,
+    "metric_runs": 0,
+    "source_acquisitions": 0,
+    "label_or_protected_accesses": 0,
+    "existing_artifacts_modified": 0,
+    "historical_incident_accounting_reset": false
+  }
+}

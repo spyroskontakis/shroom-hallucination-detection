@@ -1,0 +1,136 @@
+{
+  "publication_view_of": "config/smoke.json",
+  "original_sha256": "e8480468c8fd60f8d4103e7f73a7cf571660f4db1745313dc2640699f1978cce",
+  "omitted_fields": [
+    "runtime.executable",
+    "pairs (artificial smoke text; excluded conservatively)"
+  ],
+  "smoke": {
+    "accuracy_computed": false,
+    "acquisition_sha256": "465381b3195bfceecb99c055f1de6cb42891cc851e5d5154215b7648fa2365c4",
+    "attention_implementation": "eager",
+    "batch_size": 2,
+    "completed_utc": "2026-09-10T08:12:24.327773+00:00",
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "device": "cpu",
+    "dtype": "float32",
+    "id2label": {
+      "0": "entailment",
+      "1": "neutral",
+      "2": "contradiction"
+    },
+    "inference_seconds": 11.256001400062814,
+    "label2id": {
+      "contradiction": 2,
+      "entailment": 0,
+      "neutral": 1
+    },
+    "labels_accessed": false,
+    "model_class": "DebertaV2ForSequenceClassification",
+    "network_attempts": 0,
+    "pair_count": 4,
+    "parameter_dtypes": [
+      "torch.float32"
+    ],
+    "runtime": {
+      "packages": {
+        "numpy": "2.4.4",
+        "pandas": "3.0.2",
+        "safetensors": "0.7.0",
+        "scikit-learn": "1.8.0",
+        "scipy": "1.17.1",
+        "sentencepiece": "0.2.1",
+        "tokenizers": "0.22.2",
+        "torch": "2.11.0",
+        "transformers": "5.5.4"
+      },
+      "python": "3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]"
+    },
+    "scores": [
+      {
+        "canonical_id": "SMOKE0",
+        "contradiction": 0.0007614357746206224,
+        "entailment": 0.9840601682662964,
+        "group": "SMOKE",
+        "neutral": 0.01517843920737505,
+        "pair_id": "smoke0"
+      },
+      {
+        "canonical_id": "SMOKE1",
+        "contradiction": 0.000279490981483832,
+        "entailment": 0.002601868938654661,
+        "group": "SMOKE",
+        "neutral": 0.9971187114715576,
+        "pair_id": "smoke1"
+      },
+      {
+        "canonical_id": "SMOKE2",
+        "contradiction": 0.010410555638372898,
+        "entailment": 0.9203704595565796,
+        "group": "SMOKE",
+        "neutral": 0.06921891868114471,
+        "pair_id": "smoke2"
+      },
+      {
+        "canonical_id": "SMOKE3",
+        "contradiction": 0.0003043594479095191,
+        "entailment": 0.9946777820587158,
+        "group": "SMOKE",
+        "neutral": 0.005017871502786875,
+        "pair_id": "smoke3"
+      }
+    ],
+    "status": "PASS",
+    "tokenizer_class": "DebertaV2Tokenizer",
+    "tokenizer_fast": true,
+    "torch_interop_threads": 4,
+    "torch_threads": 4,
+    "truncation": [
+      {
+        "batch_padded_length": 14,
+        "canonical_id": "SMOKE0",
+        "encoded_tokens": 14,
+        "group": "SMOKE",
+        "hypothesis_tokens_removed": 0,
+        "original_tokens": 14,
+        "pair_id": "smoke0",
+        "premise_tokens_removed": 0,
+        "truncated": false
+      },
+      {
+        "batch_padded_length": 14,
+        "canonical_id": "SMOKE1",
+        "encoded_tokens": 14,
+        "group": "SMOKE",
+        "hypothesis_tokens_removed": 0,
+        "original_tokens": 14,
+        "pair_id": "smoke1",
+        "premise_tokens_removed": 0,
+        "truncated": false
+      },
+      {
+        "batch_padded_length": 512,
+        "canonical_id": "SMOKE2",
+        "encoded_tokens": 512,
+        "group": "SMOKE",
+        "hypothesis_tokens_removed": 396,
+        "original_tokens": 1403,
+        "pair_id": "smoke2",
+        "premise_tokens_removed": 495,
+        "truncated": true
+      },
+      {
+        "batch_padded_length": 512,
+        "canonical_id": "SMOKE3",
+        "encoded_tokens": 9,
+        "group": "SMOKE",
+        "hypothesis_tokens_removed": 0,
+        "original_tokens": 9,
+        "pair_id": "smoke3",
+        "premise_tokens_removed": 0,
+        "truncated": false
+      }
+    ]
+  }
+}

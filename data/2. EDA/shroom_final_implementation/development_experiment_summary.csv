@@ -1,0 +1,5 @@
+experiment,selection_eligible,overall_oof_accuracy,overall_oof_spearman
+E1_NLI_only,Yes,0.779559,0.690455
+E2_similarity_only,Yes,0.705411,0.561303
+E3_NLI_similarity,Yes,0.807615,0.738835
+E4_synthetic_diagnostic,No,0.7995991983967936,0.7186033959439171

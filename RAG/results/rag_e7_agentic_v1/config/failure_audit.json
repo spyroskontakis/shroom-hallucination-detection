@@ -1,0 +1,14 @@
+{
+  "operational_network_attempts": 0,
+  "head": "0a1ef3e792867796c412070087095274b0206849",
+  "status": "STOPPED_PREFLIGHT_SECURITY_FAILURE",
+  "blocked_write_attempts": 3,
+  "rf_fits": 0,
+  "protected_checked": 481,
+  "branch": "agentic-rag-e7",
+  "checked_utc": "2026-09-09T15:57:03.3694269Z",
+  "e7_evaluation_runs": 0,
+  "protected_changed": [],
+  "evaluation_started_marker_exists": false,
+  "protocol_hash_unchanged": true
+}

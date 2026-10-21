@@ -1,0 +1,9 @@
+Offline validation: PASS
+6 recovery audit tests passed (test_recovery.py).
+5 existing input-projector tests passed (test_audit_data.py).
+11 tests total.
+All new Python files passed AST syntax parsing.
+No training, inference, scoring, Modal or network retrieval executed.
+Commands:
+python -B -m unittest discover -s RAG/results/e10_official_test_v1/recovery_audit -p test_recovery.py -v
+python -B -m unittest discover -s RAG/results/e10_official_test_v1 -p test_audit_data.py -v

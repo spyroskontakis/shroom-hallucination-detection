@@ -1,0 +1,365 @@
+{
+  "phase": "4D",
+  "license_body_matches_standard_MIT": true,
+  "approved_copyright_line": "Copyright (c) 2026 Spyros Kontakis",
+  "third_party_files_hash_verified": 12,
+  "source_and_notebook_files_unchanged": 283,
+  "experiment_artifacts_unchanged": true,
+  "known_rights_conflicts": [],
+  "source_4c_checksum_sha256": "c3275a4cb66badd6d0901aa400162d19cbb87d7c94d409b09e9a9d666dd127a4",
+  "local_markdown_links": [
+    {
+      "path": "README.md",
+      "target": "docs/EXPERIMENTS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_metrics.json",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "RAG/results/phase3_e9_claim_verification/evaluation/E9-B_metrics.json",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "RAG/results/e10_official_test_v1/reconstructed_v1/E10_OFFICIAL_TEST_METRICS.json",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/KNOWN_LIMITATIONS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/ARCHITECTURE.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/EXPERIMENTS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/REPRODUCIBILITY.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "solution/QUICKSTART.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/ENVIRONMENTS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/DATA_ACCESS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/KNOWN_LIMITATIONS.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/REPRODUCIBILITY.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "LICENSE",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/LICENSE_PROPOSAL.md",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "target": "docs/THIRD_PARTY_NOTICES.md",
+      "verified": true
+    },
+    {
+      "path": "docs/KNOWN_LIMITATIONS.md",
+      "target": "LICENSE_PROPOSAL.md",
+      "verified": true
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "target": "../LICENSE",
+      "verified": true
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "target": "../manifests/license_inventory.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "target": "MIT_LICENSE_DRAFT.txt",
+      "verified": true
+    },
+    {
+      "path": "docs/LICENSE_PROPOSAL.md",
+      "target": "GIT_IDENTITY_SETUP.md",
+      "verified": true
+    },
+    {
+      "path": "docs/MANUAL_REVIEW.md",
+      "target": "LICENSE_PROPOSAL.md",
+      "verified": true
+    },
+    {
+      "path": "docs/PHASE3C1_REPORT.md",
+      "target": "PUBLIC_RELEASE_REVIEW.md",
+      "verified": true
+    },
+    {
+      "path": "docs/PHASE4C_REPORT.md",
+      "target": "PHASE4D_REPORT.md",
+      "verified": true
+    },
+    {
+      "path": "docs/PHASE4C_REPORT.md",
+      "target": "../manifests/public_release_checks.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PHASE4C_REPORT.md",
+      "target": "../manifests/file_inventory.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PHASE4C_REPORT.md",
+      "target": "../manifests/phase4c_changes.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PHASE4D_REPORT.md",
+      "target": "../LICENSE",
+      "verified": true
+    },
+    {
+      "path": "docs/PHASE4D_REPORT.md",
+      "target": "../manifests/phase4d_changes.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PRIVATE_INTEGRATION_STATUS.md",
+      "target": "PUBLIC_RELEASE_REVIEW.md",
+      "verified": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "PHASE4D_REPORT.md",
+      "verified": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "PHASE4C_REPORT.md",
+      "verified": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/public_release_transformations.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/public_release_provenance.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/file_inventory.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/public_release_checks.json",
+      "verified": true
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_REVIEW.md",
+      "target": "../manifests/license_inventory.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "target": "../manifests/canonical_fold_assignments.public.csv",
+      "verified": true
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "target": "DATA_ACCESS.md",
+      "verified": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../manifests/third_party_verification.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/LICENSE",
+      "verified": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../RAG/results/rag_e6_v4/packages/LICENSE.bert_score",
+      "verified": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../manifests/license_inventory.public.json",
+      "verified": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "LICENSE_PROPOSAL.md",
+      "verified": true
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "target": "../manifests/public_release_transformations.json",
+      "verified": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/config/run_config.json",
+      "verified": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/config/completion_manifest.json",
+      "verified": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/E6_PROTOCOL.md",
+      "verified": true
+    },
+    {
+      "path": "RAG/E6_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v1/E6_RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "RAG/E6_V3_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v3/E6_V3_RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "RAG/E6_V3_REPRODUCIBILITY.md",
+      "target": "results/rag_e6_v3/E6_V3_PROTOCOL.md",
+      "verified": true
+    },
+    {
+      "path": "RAG/README_MODULE1.md",
+      "target": "MODULE1_RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "solution/QUICKSTART.md",
+      "target": "README.md#historical-orchestration-example",
+      "verified": true
+    },
+    {
+      "path": "solution/QUICKSTART.md",
+      "target": "../docs/RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "solution/README.md",
+      "target": "../docs/EXPERIMENTS.md",
+      "verified": true
+    },
+    {
+      "path": "solution/README.md",
+      "target": "../docs/RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "solution/README.md",
+      "target": "../docs/RESULTS.md",
+      "verified": true
+    },
+    {
+      "path": "solution/SETUP_COMPLETE.md",
+      "target": "README.md#configuration",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../../../codex/canonical_fold_generation_metadata.json",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../../../codex/evaluation_protocol_decision.md",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../rag_e6_v2/scripts/nli_backend.py",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../rag_e6_v3/scripts/hhem_backend.py",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "target": "../rag_e6_v3/scripts/evaluate_v3.py",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e11_task_adaptation/E11_TEACHER_PROTOCOL.md",
+      "target": "E11_TEACHER_PROTOCOL.json",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/E9_PROTOCOL.md",
+      "target": "E9_PROTOCOL_AMENDMENT_01.md",
+      "verified": true
+    },
+    {
+      "path": "RAG/results/phase3_e9_claim_verification/modal_gpu/README_MODAL_RUN.md",
+      "target": "modal_phase3_gpu.py",
+      "verified": true
+    }
+  ],
+  "prior_static_checks": "manifests/public_release_checks.json is historical PHASE 4C evidence; unchanged code did not require rerunning experiment checks.",
+  "git_identity": "Exact public author name and GitHub noreply email require separate confirmation; no settings changed.",
+  "verdict": "LICENSE FINALIZED \u2014 PUBLICATION PENDING"
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.1",
+  "phase": "E5 Module 4 Phase 0D",
+  "status": "BLOCKED_DURING_APPROVED_TRANSPORT_RECOVERY",
+  "verdict": "MODULE4_WORDNET_TRANSPORT_RECOVERY_BLOCKED_BOTH_APPROVED_MIRRORS_UNAVAILABLE",
+  "frozen_phase0_plan": {
+    "path": "RAG/results/rag_module4/MODULE4_RAG_ASSISTED_FUSION_PLAN.md",
+    "size": 19363,
+    "sha256": "d27ef3f4965aa277bc1fda6c0e24670b63326c037e5e36ed63477b32c7f4bb7b",
+    "modified": false
+  },
+  "stage_a_lock": {
+    "tests_passed": 7,
+    "tests_total": 7,
+    "locked_before_network": true,
+    "artifacts": [
+      {"path": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_ADDENDUM.md", "size": 2243, "sha256": "bcb4e866ecd43e9072d98284421d6e194a16c8cc5c41e196d686cd285906de91"},
+      {"path": "RAG/results/rag_module4/static_protocol/MODULE4_EXTERNAL_PARSER_SPEC.md", "size": 3464, "sha256": "c7e5d9398c67bebc93dd5d418591da94afb34923fdf6b2a522a6e3579fe6405a"},
+      {"path": "RAG/scripts/module4_build_external_lexicon.py", "size": 17718, "sha256": "db6d3a8ffe595ca875d349b074041c7679328fc9f50df4499a943d129411021e"},
+      {"path": "RAG/tests/test_module4_external_lexicon.py", "size": 5802, "sha256": "ace643aab5b29fba7e1859241e81db342e8088a362ef6bd44477040d16b764fb"},
+      {"path": "RAG/requirements-module4-parser.txt", "size": 23, "sha256": "8ea52aa64e76c5e431833b80cb25b8fcd11e6bac3eda9ad36d31e737ca8fd799"}
+    ]
+  },
+  "canonical_rows": {
+    "rows": 561,
+    "unique_example_ids": 561,
+    "task_counts": {"DM": 211, "MT": 216, "PG": 134},
+    "rag_applicable_rows": 211,
+    "unique_dm_terms": 206,
+    "invented_non_dm_terms": 0,
+    "locked_csv": {"path": "RAG/results/rag_module4/static_protocol/module4_dev_inputs_locked.csv", "size": 96241, "sha256": "3f92a0b398b97873716dda69d108467a4309fe28bd565be692a74e1af74523d5"}
+  },
+  "wordnet_archive": {
+    "logical_source": "Princeton WordNet 3.1",
+    "filename": "wn3.1.dict.tar.gz",
+    "expected_size": 16358468,
+    "expected_sha256": "3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a",
+    "saved": false,
+    "verified": false,
+    "local_exact_file_found": false
+  },
+  "network": {
+    "original_failed_endpoint": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+    "original_failed_tls_transport_attempts": 4,
+    "approved_mirror_attempts": [
+      {
+        "transport_mirror": "FreeBSD distcache",
+        "url": "https://distcache.FreeBSD.org/ports-distfiles/wn3.1.dict.tar.gz",
+        "timestamp_utc": "2026-08-29T21:24:51.758850+00:00",
+        "http_status": null,
+        "tls_verification": "enabled",
+        "received_size": null,
+        "received_sha256": null,
+        "result": "TLS_CERTIFICATE_HOSTNAME_MISMATCH"
+      },
+      {
+        "transport_mirror": "OpenBSD content-addressed mirror",
+        "url": "https://ftpv6.lug.ro/pub/OpenBSD/distfiles/by_cipher/sha256/P3/P32L6O9uzHFn05sQ1mlU7HNCgLW9zVf32er%2BQp0Rwio%3D/wn3.1.dict.tar.gz",
+        "timestamp_utc": "2026-08-29T21:24:51.902612+00:00",
+        "http_status": null,
+        "tls_verification": "enabled",
+        "received_size": null,
+        "received_sha256": null,
+        "result": "DNS_NAME_RESOLUTION_FAILED"
+      }
+    ],
+    "total_transport_attempts": 6,
+    "successful_responses": 0,
+    "accepted_archive_bytes": 0,
+    "wiktionary_requests": 0,
+    "tls_verification_bypassed": false,
+    "http_used": false,
+    "unapproved_mirrors_used": false,
+    "log": {"path": "RAG/results/rag_module4/static_protocol/raw_sources/network_requests.jsonl", "size": 2226, "sha256": "ebb9a79eb9d0b87936e954bd406fb52f962868e750d88104a4a6d0523cc768c1"}
+  },
+  "snapshot_lock": {
+    "safe_extraction_performed": false,
+    "term_manifest_created": false,
+    "lexical_snapshot_created": false,
+    "offline_byte_identical_reconstruction_performed": false,
+    "wordnet_record_count": null,
+    "wiktionary_record_count": null,
+    "no_sense_found_count": null,
+    "total_unique_senses": null
+  },
+  "phase0d_artifacts": [
+    {"path": "RAG/results/rag_module4/static_protocol/MODULE4_WORDNET_TRANSPORT_RECOVERY_ADDENDUM.md", "size": 3114, "sha256": "09b809b0ce91bb184ac3d2e79840f443b63ebd75b8d988a7b4a45e27cab8e9d1"},
+    {"path": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_REPORT.md", "size": 3799, "sha256": "a53fc398e19cc62005e3ca2ae11a608f1bcfe37e804ea7cb44cdd1c00dc43e7d"}
+  ],
+  "execution_accounting": {
+    "mpnet_inference": 0,
+    "nli_inference": 0,
+    "retrieval_ranking": 0,
+    "rag_feature_generation": 0,
+    "classifier_training": 0,
+    "predictions": 0,
+    "performance_metrics": 0,
+    "official_test_accesses": 0,
+    "holdout_label_accesses": 0,
+    "ai_annotation_accesses": 0,
+    "protected_content_accesses": 0,
+    "quarantine_content_accesses": 0
+  }
+}

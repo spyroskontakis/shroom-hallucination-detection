@@ -1,0 +1,161 @@
+{
+  "status": "DEFINITION_VERIFIED_TEST_EXTRACTION_BLOCKED",
+  "feature_count": 37,
+  "ordered_features": [
+    "src_ent",
+    "src_neu",
+    "src_con",
+    "tgt_ent",
+    "tgt_neu",
+    "tgt_con",
+    "sim_src_hyp",
+    "sim_tgt_hyp",
+    "sim_src_tgt",
+    "sim_max",
+    "sim_min",
+    "sim_mean",
+    "sim_gap_tgt_src",
+    "sim_hyp_distance_from_truth",
+    "rag_evidence_available",
+    "rag_sense_count",
+    "rag_retrieval_top1_cosine",
+    "rag_target_definition_max_cosine",
+    "rag_target_definition_max_entailment",
+    "rag_target_definition_max_contradiction",
+    "rag_target_definition_max_lexical_overlap",
+    "rag_definition_hyp_cosine",
+    "rag_definition_hyp_entailment",
+    "rag_definition_hyp_neutral",
+    "rag_definition_hyp_contradiction",
+    "nli2_ref_hyp_entailment",
+    "nli2_ref_hyp_neutral",
+    "nli2_ref_hyp_contradiction",
+    "nli2_hyp_ref_entailment",
+    "nli2_hyp_ref_neutral",
+    "nli2_hyp_ref_contradiction",
+    "nli2_definition_hyp_entailment",
+    "nli2_definition_hyp_neutral",
+    "nli2_definition_hyp_contradiction",
+    "hhem_ref_hyp_consistency",
+    "hhem_definition_hyp_consistency",
+    "factcg_support_probability"
+  ],
+  "training_matrix_sha256": "3df72798ced45c5f0efeabd024765356afa4f57eba381c86a9ba7645ceb4f51a",
+  "baseline_36_numeric_identity": true,
+  "models": {
+    "NLI1": {
+      "model": "microsoft/deberta-large-mnli",
+      "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e"
+    },
+    "MPNet": {
+      "model": "sentence-transformers/all-mpnet-base-v2",
+      "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130"
+    },
+    "NLI2": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7"
+    },
+    "HHEM": {
+      "model": "vectara/hallucination_evaluation_model",
+      "revision": "58383384656cbaec2949a75a41f20e891e90a73b"
+    },
+    "FactCG": {
+      "model": "yaxili96/FactCG-DeBERTa-v3-Large",
+      "revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80",
+      "settings": {
+        "device": "cuda:0",
+        "dtype": "float32",
+        "use_safetensors": true,
+        "use_fast": true,
+        "max_length": 2048,
+        "truncation": "only_first",
+        "padding": "longest",
+        "pad_token": "eos_token",
+        "reference_chunk_words": 550,
+        "batch_size": 1,
+        "hypothesis_split": false,
+        "support_class_index": 1,
+        "activation": "softmax",
+        "reference_aggregation": "max",
+        "temperature_scaling": null,
+        "quantization": null,
+        "autocast": false,
+        "matmul_allow_tf32": false,
+        "seed": 42
+      }
+    }
+  },
+  "input_policy": {
+    "canonical_text": "NFC and whitespace normalization in canonical_evaluation_data_prep.py; feature extraction receives the frozen strings",
+    "base14": "Separate src-hyp and tgt-hyp NLI scores; normalized MPNet src-hyp, tgt-hyp, src-tgt cosines and exact derived formulas in canonical_feature_extraction.py",
+    "NLI1": "max_length=512, truncation=True, padding=True; contradiction=0, neutral=1, entailment=2; softmax",
+    "RAG": "English Wiktionary-only snapshot; exact NFKC/casefold term lookup; top 5 ranked with pinned MPNet using term + newline + src; deterministic score/source_entry_id/evidence_id ordering; no hypothesis or labels in ranking",
+    "RAG_target_features": "selected definitions compared to tgt; max cosine, entailment, contradiction, lexical Jaccard; candidate_definition compared without POS/context decoration",
+    "definition_hyp_features": "rank-1 candidate_definition vs hyp; pinned MPNet float64 renormalization/dot and NLI1 softmax",
+    "NLI2": "tgt for DM/MT, src for PG; reference->hyp, hyp->reference, selected definition->hyp; max_length512 longest_first; entailment/neutral/contradiction",
+    "HHEM": "reference->hyp and selected definition->hyp; max_length512 longest_first; sigmoid once on single logit",
+    "FactCG_reference": {
+      "DM": "tgt",
+      "MT": "tgt",
+      "PG": "src"
+    },
+    "missing_values": "No global imputation. Frozen zero fallback only for unavailable definition channels/non-applicable rows. Unacquired test-term evidence must not silently be treated as verified no-sense evidence."
+  },
+  "external_resource_gate": {
+    "test_DM_rows": 563,
+    "test_DM_distinct_terms": 559,
+    "frozen_lexical_acquisition_terms": 206,
+    "test_DM_rows_with_acquisition_record": 2,
+    "test_DM_rows_without_acquisition_record": 561,
+    "test_DM_terms_without_acquisition_record": 557
+  },
+  "rf_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 500,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "target": "p_hallucination",
+  "threshold": 0.5,
+  "clip": [
+    0,
+    1
+  ],
+  "spearman_rounding_decimals": 12,
+  "test_feature_rows_created": 0,
+  "source_sha256": {
+    "codex/canonical_evaluation_data_prep.py": "d98717c7b56c5f3298b8b99c89eac2687e70e83459f42100a017bacc56d5e8d5",
+    "codex/canonical_human_development_manifest.csv": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "codex/canonical_feature_extraction.py": "946dbdd11397056ff6d9257dca5bb0c9900fe3e73a9e6f28b5c093d08cedba24",
+    "codex/canonical_feature_outputs/canonical_feature_extraction_metadata.json": "a35217c423697064ac03b102ae7ab8983758355283081dc83d730203dbd2d446",
+    "RAG/results/rag_e6_v1/scripts/build_features.py": "fc0dd1677c81d7ed5a4b810cb45056720dd52e53d7f0c712f8a37465ca4fcde5",
+    "RAG/results/rag_e6_v2/scripts/nli_backend.py": "b2ab335aa8e856af65db64f6ba141c57090accc96642525cc2467f27e14f0702",
+    "RAG/results/rag_e6_v3/scripts/hhem_backend.py": "84a84df1a75563a57286291276abe91e6b490327a7ca662810c3c410ce0a6cb0",
+    "RAG/results/rag_e6_v3/config/run_config.json": "a9d661b533425bc8b9c5cd0583f7e9c49b5fe40c60727a4430548121cbe55acc",
+    "RAG/results/rag_e6_v3/features/e6_v3_36_features.csv": "1e6386fbd0b89a3a295828259ec8fea9b5b3fc03465d65f82e546687c32e7229",
+    "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py": "56ff9521c96cfc4d6a8793c86dc60194f4afac16e57aa922e0c9218c72eaf0de",
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_external_lexical_snapshot.jsonl": "7677937ace64644afa4f39d8745f54711640a578f1387d9e389008b1e0440d40",
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_dev_term_manifest.csv": "b5002d09df7ed8559aaea0ec60a8367dcd35edf36e22b11e0f59f0154aa4e062",
+    "RAG/scripts/module4_build_external_lexicon.py": "db6d3a8ffe595ca875d349b074041c7679328fc9f50df4499a943d129411021e",
+    "RAG/results/phase3_e9_claim_verification/factcg_gpu/GPU_RUN_MANIFEST.json": "357e2b011f9403dfe9fb28ae84ffc4cd3524eeb5e9f347d3d295f90dceb30d3f",
+    "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py": "1e72485f9458ffd87ff8503f7ccdbe4fdd19e05f2a3bd0283607f94fb0f4a36e",
+    "RAG/results/phase3_e9_claim_verification/features/e10_return/E10.csv": "3df72798ced45c5f0efeabd024765356afa4f57eba381c86a9ba7645ceb4f51a",
+    "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_oof.csv": "6a9a20b32db79bc25ea325a804cb0abe75c9f7f5583bec9a4bad4addc0ddd871",
+    "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_metrics.json": "3e37622ae225ea2e405d5ea55a1922f2ae15042c85991424c21b2eb750efdf68",
+    "RAG/results/phase3_e9_claim_verification/scripts/e9_common.py": "ab9c012e924e7611b0d8926bfd4b6e2125ff82996ada57fb691127a6d9fdb7d4"
+  }
+}

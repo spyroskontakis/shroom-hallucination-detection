@@ -1,0 +1,38 @@
+{
+  "third_party": [
+    {
+      "component": "FactCG",
+      "license": "MIT",
+      "source": "https://github.com/derenlei/FactCG/tree/41f185413312ed9b3904ec03963fe899693498e0",
+      "license_path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/upstream/LICENSE"
+    },
+    {
+      "component": "BERTScore 0.3.13",
+      "license": "MIT",
+      "source": "https://github.com/Tiiiger/bert_score/tree/v0.3.13",
+      "license_path": "RAG/results/rag_e6_v4/packages/LICENSE.bert_score",
+      "wheel_record_verified_files": [
+        "RAG/results/rag_e6_v4/packages/bert_score/__init__.py",
+        "RAG/results/rag_e6_v4/packages/bert_score/score.py",
+        "RAG/results/rag_e6_v4/packages/bert_score/scorer.py",
+        "RAG/results/rag_e6_v4/packages/bert_score/utils.py",
+        "RAG/results/rag_e6_v4/packages/bert_score_cli/__init__.py",
+        "RAG/results/rag_e6_v4/packages/bert_score_cli/score.py",
+        "RAG/results/rag_e6_v4/packages/bert_score_cli/visualize.py"
+      ]
+    }
+  ],
+  "withheld": [
+    "organizer participant kit including baseline notebook",
+    "local BeautifulSoup/SoupSieve copies without license notices",
+    "SHROOM development and trial organizer README documents: redistribution notice unconfirmed"
+  ],
+  "project_wide_license_created": true,
+  "public_release_review": {
+    "transformers_diagnostic_source_dumps": "Removed; versions, locations, hashes and upstream references retained.",
+    "project_license": "MIT finalized: Copyright (c) 2026 Spyros Kontakis",
+    "full_per_file_inventory": "manifests/license_inventory.public.json",
+    "rights_status": "Explicit owner confirmation for own code; upstream grants retained separately; no known unresolved conflict in reviewed distribution."
+  },
+  "project_license_scope": "Only project-owned material the owner is entitled to license; excludes third-party code, datasets and weights."
+}

@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "comparison": "E8 minus E6-v3",
+  "post_hoc_saved_OOF_only": true,
+  "new_fits": 0,
+  "new_experiment_evaluations": 0,
+  "metrics": {
+    "E6-v3": {
+      "accuracy": 0.8449197860962567,
+      "correct": 474,
+      "n": 561,
+      "spearman": 0.7816945786401444
+    },
+    "E8": {
+      "accuracy": 0.8057040998217468,
+      "correct": 452,
+      "n": 561,
+      "spearman": 0.7528866687040761
+    }
+  },
+  "paired": {
+    "corrected": 23,
+    "introduced_errors": 45,
+    "net_correct": -22,
+    "both_correct": 429,
+    "both_wrong": 64,
+    "mcnemar_exact_two_sided_p": 0.01033766119369546,
+    "bootstrap": {
+      "resamples": 10000,
+      "seed": 42,
+      "accuracy_difference": -0.0392156862745098,
+      "percentile_95_ci": [
+        -0.0677361853832442,
+        -0.0106951871657754
+      ],
+      "accuracy_difference_pp": -3.9215686274509802,
+      "percentile_95_ci_pp": [
+        -6.7736185383244205,
+        -1.06951871657754
+      ]
+    }
+  },
+  "diagnostics": {
+    "per_task": {
+      "DM": {
+        "E6-v3": {
+          "accuracy": 0.8009478672985783,
+          "correct": 169,
+          "n": 211,
+          "spearman": 0.6852178827409456
+        },
+        "E8": {
+          "accuracy": 0.7630331753554502,
+          "correct": 161,
+          "n": 211,
+          "spearman": 0.6542583924655255
+        }
+      },
+      "MT": {
+        "E6-v3": {
+          "accuracy": 0.8842592592592593,
+          "correct": 191,
+          "n": 216,
+          "spearman": 0.8327371480891061
+        },
+        "E8": {
+          "accuracy": 0.8657407407407407,
+          "correct": 187,
+          "n": 216,
+          "spearman": 0.8029352198002779
+        }
+      },
+      "PG": {
+        "E6-v3": {
+          "accuracy": 0.8507462686567164,
+          "correct": 114,
+          "n": 134,
+          "spearman": 0.7522106510632076
+        },
+        "E8": {
+          "accuracy": 0.7761194029850746,
+          "correct": 104,
+          "n": 134,
+          "spearman": 0.7109578997014281
+        }
+      }
+    },
+    "per_fold": {
+      "1": {
+        "E6-v3": {
+          "accuracy": 0.8849557522123894,
+          "correct": 100,
+          "n": 113,
+          "spearman": 0.8161783605172331
+        },
+        "E8": {
+          "accuracy": 0.8230088495575221,
+          "correct": 93,
+          "n": 113,
+          "spearman": 0.7753405271460819
+        }
+      },
+      "2": {
+        "E6-v3": {
+          "accuracy": 0.8125,
+          "correct": 91,
+          "n": 112,
+          "spearman": 0.7693547088943431
+        },
+        "E8": {
+          "accuracy": 0.7678571428571429,
+          "correct": 86,
+          "n": 112,
+          "spearman": 0.7508365517034163
+        }
+      },
+      "3": {
+        "E6-v3": {
+          "accuracy": 0.8303571428571429,
+          "correct": 93,
+          "n": 112,
+          "spearman": 0.7703346139229986
+        },
+        "E8": {
+          "accuracy": 0.8035714285714286,
+          "correct": 90,
+          "n": 112,
+          "spearman": 0.7567080296530341
+        }
+      },
+      "4": {
+        "E6-v3": {
+          "accuracy": 0.8214285714285714,
+          "correct": 92,
+          "n": 112,
+          "spearman": 0.7792654108639516
+        },
+        "E8": {
+          "accuracy": 0.7767857142857143,
+          "correct": 87,
+          "n": 112,
+          "spearman": 0.7343213343744751
+        }
+      },
+      "5": {
+        "E6-v3": {
+          "accuracy": 0.875,
+          "correct": 98,
+          "n": 112,
+          "spearman": 0.7840673179486594
+        },
+        "E8": {
+          "accuracy": 0.8571428571428571,
+          "correct": 96,
+          "n": 112,
+          "spearman": 0.7465907070179999
+        }
+      }
+    },
+    "by_evidence": {
+      "0": {
+        "E6-v3": {
+          "accuracy": 0.8614130434782609,
+          "correct": 317,
+          "n": 368,
+          "spearman": 0.8119705384036497
+        },
+        "E8": {
+          "accuracy": 0.8260869565217391,
+          "correct": 304,
+          "n": 368,
+          "spearman": 0.7808249323930847
+        }
+      },
+      "1": {
+        "E6-v3": {
+          "accuracy": 0.8134715025906736,
+          "correct": 157,
+          "n": 193,
+          "spearman": 0.6941425688979357
+        },
+        "E8": {
+          "accuracy": 0.7668393782383419,
+          "correct": 148,
+          "n": 193,
+          "spearman": 0.6606953631466148
+        }
+      }
+    }
+  },
+  "inputs_sha256": {
+    "codex/canonical_human_development_manifest.csv": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "codex/canonical_fold_assignments.csv": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "RAG/results/rag_e6_v3/evaluation/e6_v3_oof_predictions.csv": "a838f6d23e63adbb772d94ec82eadd8379a90e01d08d3426c386c354afacffa4",
+    "RAG/results/rag_e8_rf_tuning_v1/evaluation/e8_oof_predictions.csv": "68fff277dbbcf363f7e7f5679af42ea8cbdc56c225f79f5f4fadfeab50e2ce96"
+  },
+  "interpretation": "Exploratory negative accuracy result on reused development data; E8 uses 25 E6-v1 features, E6-v3 uses 36. This is not an isolated causal estimate of tuning. Fixed-OOF paired statistics are descriptive and omit refitting/selection uncertainty; no independent test."
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "path": "codex/canonical_fold_assignments.csv",
+    "reason": "row-level artifact withheld; public projection/access instructions supplied",
+    "original_sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d"
+  },
+  {
+    "path": "docs/E11_CHECKPOINT_RECOVERY.md",
+    "reason": "replaced by current public documentation",
+    "original_sha256": "02b3264bd84846d95986f4fd08beb17673627605f309cf191d96eeac47ca811c"
+  },
+  {
+    "path": "docs/EXTERNAL_ARTIFACTS.md",
+    "reason": "replaced by current public documentation",
+    "original_sha256": "4212e206850e7ef0f850f56c099c8b5337f400d158ba7c41840316f8dbe91297"
+  },
+  {
+    "path": "docs/MANUAL_REVIEW.md",
+    "reason": "replaced by current public documentation",
+    "original_sha256": "87f0674cb2452e6ba5abfd998b3e993d3a17d7fd6c3762e99e73d8f758cba592"
+  },
+  {
+    "path": "docs/PHASE3B_REPORT.md",
+    "reason": "replaced by current public documentation",
+    "original_sha256": "9e9c5d66dfb264db4ce0db6735acc143031581f156626105219a58e19fe068da"
+  },
+  {
+    "path": "Participant kit/participant_kit/check_output.py",
+    "reason": "organizer kit: redistribution permission not established in local delivery",
+    "original_sha256": "083531abfeeec435dfde59d3e8282da984fdd2034d6fc793649f99909b403f61"
+  },
+  {
+    "path": "Participant kit/participant_kit/README.md",
+    "reason": "organizer kit: redistribution permission not established in local delivery",
+    "original_sha256": "584f257ad927b0eb2e2173fd6949fdb97c9f1271aa961c2c436978be1a3c0210"
+  },
+  {
+    "path": "Participant kit/participant_kit/score.py",
+    "reason": "organizer kit: redistribution permission not established in local delivery",
+    "original_sha256": "63478cbab853c6c2397541c9149655aec4b6db3aa6914ff4120ce136eba5b481"
+  },
+  {
+    "path": "provenance/build_staging.py",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "a5182cc5e41e2786259fcb5f914ae43bcb48c83d8052ea7a298a423d079b9f0f"
+  },
+  {
+    "path": "provenance/build_summaries.py",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "51fe55a34be037a2994a0140fd38050faa8768ca7c54e3715057f3d81ca021b1"
+  },
+  {
+    "path": "provenance/construction_summary.json",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "409274e1654c1d3d74234a34f8a47ddaaeaa733d528b0eff32a05784df2aedaf"
+  },
+  {
+    "path": "provenance/fill_missing_hashes.py",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "0327d36acb2b2a7aed3fa3fed8ed019bda9dac5dd5efe3bd57794f7c604a3bc3"
+  },
+  {
+    "path": "provenance/historical_git_object_review.json",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "ce668847b403bfd8c961c8e08f267f40b3e95da7796855a3a1dc9fd232dbd5b2"
+  },
+  {
+    "path": "provenance/manual_review_summary.json",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "f8447c34ddf09e3e5ad8e4dd50e2907af3ff833c88631859d77b151b0ab4ad9b"
+  },
+  {
+    "path": "provenance/PACKAGE_SHA256.json",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "70379be336723da1e4a189e4edadc1750d57326c1a75b8b1e240e7fbaf3251cc"
+  },
+  {
+    "path": "provenance/refine_selection.py",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "0567b5dbbae14d239f4ebc0567715b86b130a6d2a0e85f1e00fc6d7f9f7670ce"
+  },
+  {
+    "path": "provenance/selected_files_by_experiment.json",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "1c9e0fed5b7e4e84129941b2aa2ab787df44dfbf4a7e7d7c9eaa7869ff8bad85"
+  },
+  {
+    "path": "provenance/source_selection_manifest.jsonl",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "7a6318f75811e61fda03c69054818971c904409f4438a44aadd475e8363ca795"
+  },
+  {
+    "path": "provenance/supplemental_hashing.json",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "4cd4074ee28caee4c8e262bfe3add3de3f47111e2195d1da937f6ba2e6ab28c4"
+  },
+  {
+    "path": "provenance/verification_report.json",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "29d97064c678146cd09807f45b96e585541453adb2779a5a8c6d77baf5170c4d"
+  },
+  {
+    "path": "provenance/verify_staging.py",
+    "reason": "private construction inventory replaced by public manifests",
+    "original_sha256": "f8c23f2ae50d1b8edf6189740d33f5ab6e1899ca7d38afa2ec0abb5894904258"
+  },
+  {
+    "path": "RAG/results/e10_official_test_v1/recovery_audit/WIKTIONARY_RECOVERY_TABLE.csv",
+    "reason": "row-level artifact withheld; public projection/access instructions supplied",
+    "original_sha256": "3f4cddd787e8c7a1465759146707ca243ed3b4a1260835c6e866e48ee626a35e"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_oof.csv",
+    "reason": "row-level OOF data withheld; aggregate metrics retained",
+    "original_sha256": "6a9a20b32db79bc25ea325a804cb0abe75c9f7f5583bec9a4bad4addc0ddd871"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/evaluation/E9-A_oof.csv",
+    "reason": "row-level OOF data withheld; aggregate metrics retained",
+    "original_sha256": "9b27b55ac6e31933e4995aac9fa0ebfd17db9ad6cc12ec49a810b2384c6e8ff5"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/evaluation/E9-B_oof.csv",
+    "reason": "row-level OOF data withheld; aggregate metrics retained",
+    "original_sha256": "82f3011ec736537081c6646163294b023af8e3968c47a51ed30e8e5d653bdbe9"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_inputs.jsonl",
+    "reason": "row-level input/prediction data withheld pending permissions",
+    "original_sha256": "10ecdbc5f25bd4b9c7c7d4c2d131194647a86c556591c75418dbcb436ba1753d"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/cpu_sun12/smoke_outputs.jsonl",
+    "reason": "row-level input/prediction data withheld pending permissions",
+    "original_sha256": "827f5564b1e454cc43f97af5076c11e6901bf0acdf33c9cd831bd81d74a33863"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/smoke_outputs.jsonl",
+    "reason": "row-level input/prediction data withheld pending permissions",
+    "original_sha256": "827f5564b1e454cc43f97af5076c11e6901bf0acdf33c9cd831bd81d74a33863"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/minicheck_inputs.jsonl",
+    "reason": "row-level input/prediction data withheld pending permissions",
+    "original_sha256": "e41506779d4798c0ad2476e8da38ca197ebda2960a100848890181b852f3080a"
+  }
+]

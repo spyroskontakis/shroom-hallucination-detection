@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "suites": [
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation",
+      "pattern": "test_*.py",
+      "exit_code": 0,
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 34 tests in 12.594s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation\\e11c",
+      "pattern": "test_e11c*.py",
+      "exit_code": 0,
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 40 tests in 82.984s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation\\e11c_training",
+      "pattern": "test_*.py",
+      "exit_code": 0,
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 5 tests in 3.009s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "directory": "RAG\\results\\phase3_e11_task_adaptation\\e11d_training",
+      "pattern": "test_*.py",
+      "exit_code": 0,
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 6 tests in 0.104s",
+        "",
+        "OK"
+      ]
+    }
+  ]
+}

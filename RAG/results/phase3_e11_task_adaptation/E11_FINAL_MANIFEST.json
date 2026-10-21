@@ -1,0 +1,337 @@
+{
+  "status": "PASS",
+  "suite": "E11-A/B/C/D/E",
+  "files_sha256": {
+    "E11_FINAL_SUMMARY.md": "0e64e016e86a6b511c1bbe4766944c0a23d96646bc19ddc62fe5cf94a33e8474",
+    "E11_FINAL_SUMMARY.json": "e56516a51cc4e935bb8e40774617df4f415f7f612bbba45f7acddb12c69edee3",
+    "E11_FINAL_TABLE.csv": "78464b64445d46b7db76de1360dbcb28350fbdc0924833bdc8e57a98d18c5a91"
+  },
+  "source_artifacts_sha256": {
+    "RAG/results/phase3_e11_task_adaptation/e11_finalization/private/PRIOR_SHA256.json": "8ef5618bcea2cd4e9a43da57f7f56532d101828823683e10ecb2398035b2f04c",
+    "RAG/results/phase3_e11_task_adaptation/e11_finalization/FINALIZATION_TESTS.json": "b52e58938e8c92918f11e644ea2d7534aa7ebb464f0c40d19b1e1cbcfce8b73d",
+    "RAG/results/phase3_e11_task_adaptation/E11A_TRAINING_PROTOCOL.json": "b4ec853e57b285846e9c59f0e07242be8fa424d031bcf0ee3e101fc89438995c",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/E11A_RESULTS.json": "be5cc0cf9300284684e19904691c5d79e24ef76885c4ad47ba59b2ebd04228ca",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/E11C_RESULTS.json": "76c6e888a69464d87221e528fc1f14145f71ebc839db2837241070f608aa48be",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/E11D_RESULTS.json": "818fdd8fa9810f0932b95ab4dee608baa1de514b2f4d4c8b864b65cd931dd354",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/E11E_RESULTS.json": "95e7857cbf154e08d20d416fd4d86dfe13544e475465a3cf1d7af14e0effe79c",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/E11C_MANIFEST.json": "653169d5165d351a46869d03eeae2d763b038af499a4f7487b91c074c7e44138",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/E11D_MANIFEST.json": "cea2e4b06b91c49d61206fd116d215b1729d91301684f8d5af0d664a10bf4bbc",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/E11E_MANIFEST.json": "e888104a91a27ea1b9ef758f34982cd93833876541bfcef8e3ef543b6038bdc3",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/E11A_OOF_PREDICTIONS.jsonl": "07d3ad0ab0549b1dec0a32ca43ad194dbb4a6d32cba1519f7b4d56a490c87e16",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/private/E11C_OOF_PREDICTIONS.jsonl": "178814906d6666229a5e2a9a33d14e90b6d712bec4e415036a42bbc0827bed22",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/private/E11D_OOF_PREDICTIONS.jsonl": "d10ba178ee3df120b6a87195310389d9effe6e3917a5d663543c3e9c6f710ed1",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/private/E11E_OOF_PREDICTIONS.jsonl": "44469d1212c52dc57319b7175362c6d3b4b86d5b03e5ece9369ad95b1d532c09",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/E11A_RESULTS_MANIFEST.json": "bae9ca0e1652460d518be7244c1138622a24454e71f049976d84c7c799928347",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_1/e11a-fold-001/FOLD_PASS.json": "19a757dc79a0b38c903e0220eba0fe6d98bf075c8631a9f8edfeddb5e2b616e5",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_2/e11a-fold-002/FOLD_PASS.json": "608cbb2956d3de73b383c15a47d96650f7cf33300be052e341302317ecdc4476",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_3/e11a-fold-003/FOLD_PASS.json": "e7608a6b987fe6aa6cd9d9d6f57a92df2d2b932959a3cb0923be0b167829da6d",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_4/e11a-fold-004/FOLD_PASS.json": "c3a45e7c365a0a68b70ca7cf581e56c30d91a1c00f3747adf4ac4d735c9316a7",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/fold_5/e11a-fold-005/FOLD_PASS.json": "27e582c467c8cd6f24ef34fbcae3dd205a881669dd7fdef326f9feebef748a5f",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/E11C_TRAINING_PROTOCOL.json": "36620e543aadd2f8ab359c48f8242a1db000a739201345bf41043eea8a2c4260",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/E11D_LOSS_PROTOCOL.json": "3c4959748cd5a6ce427324c3265dd6920354a82a8e18b608f64c0dfc7e79a26e",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/E11E_TRAINING_PROTOCOL.json": "6ab54d310a79a29feaaa70f4497d3cbef0e1b5092d25cd4deaafc8e9c3c5e2fc",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/E11C_TRAINING_AUDIT.json": "96230881832b13673b76e87a787b21bc5a644a32b5af50f3c788ff8223947d59",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/E11D_TRAINING_AUDIT.json": "296aa50ef219ddb2cfa5008e217e7aff653ae534c3a2081fc14adb0bb3e53f4d",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/E11E_TRAINING_AUDIT.json": "2444ec4c96fbcee7a19aba274c4a8c098d026e37471128cd8077fdcba427eafc",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/CHECKPOINT_VERIFICATION.json": "2ec8f91dc9c274d50c0ec345ea1a1fee3d93c6f13138d499290bdbb43c53c02e",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/private/returned/fold_1.json": "da14165540e505c3de0c3e1de94f114955a8c324c84555019279ceed51d553c7",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/private/returned/fold_2.json": "92874e159dc52f9b87b3fa3ab497c30010e061b8b42bfe4c6e92370c0fb16791",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/private/returned/fold_3.json": "1d0bf9761bae05ea6345647e285c55c53950981eb572b72397f38654672f8e1c",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/private/returned/fold_4.json": "963f0ae76b6d4091ee366e6a1484b53833632de3c73a6e9b2704955238bb4b30",
+    "RAG/results/phase3_e11_task_adaptation/e11c_training/private/returned/fold_5.json": "ab4e4a3f0b3ba596e49c793f5df619ac279597440c5912d63a057f0e15cc5b14",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/CHECKPOINT_VERIFICATION.json": "30e002f2e1d6a23b3a4b6ca0ce338f8d7a9896457c55a95461abfc3e4a23fce7",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/private/returned/fold_1.json": "e23c7013619b715ab631c809c3885e87348f6f9960d60e247de3a5acfc57aa68",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/private/returned/fold_2.json": "5098a233eb46524720034e8ec8f7c282e4c6dbdb386acdea7116dd36236a26f0",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/private/returned/fold_3.json": "849e23355785abb8aa2f13516c4c1ceb0bd054015a1e2f61cf4ed9ff7e2fb524",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/private/returned/fold_4.json": "28518092e5aa3ab745c03cbe8cf87e8efeb70fcd82d7439798334b54d5bb86c2",
+    "RAG/results/phase3_e11_task_adaptation/e11d_training/private/returned/fold_5.json": "7738a5dcecc5e839f88dd59d1abf71710e0c19520488b19d5e4adcd07ff99b94",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/CHECKPOINT_VERIFICATION.json": "52b42c09abeaf46b78041ed04ae34d814f919c133594e2120975481ee239098d",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/private/returned/fold_1.json": "a136f187656975b5b553cfab0706432354b555bb459b45af6a4c157a0bf030fd",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/private/returned/fold_2.json": "274c92d051cd9003705f12a509d564e4d2714745c27d153a7fc13d8852c8bd3d",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/private/returned/fold_3.json": "b8c1be5114bea7e82b5f70291dbfa914750b6524807803b47e79f4fbbe8cb6ff",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/private/returned/fold_4.json": "3a102d593308c8e7a5e6eb2575230949b5b0b9240aa1c0c43589f94c291fe10a",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/private/returned/fold_5.json": "d92e18835a5f7eaa158fe3a7586fc43d2b596c19bb2345384e033b53c86a527e",
+    "RAG/results/phase3_e11_task_adaptation/e11c/E11C_PRODUCTION_AUDIT.json": "c10f573df6c6040e7139167530e192b8fe90e8a2da4ef07a27e6cdf6c3c6ec53",
+    "RAG/results/phase3_e11_task_adaptation/e11c/E11C_ALTERNATE_MODEL_RESCUE_AUDIT.json": "c6638b4da6153acff7d65e26a4397a1b9585757846c47f2096a77bc12bfd800c",
+    "RAG/results/phase3_e11_task_adaptation/e11e_training/E11E_PRETRAINING_AUDIT.json": "f0e0cd478c716848021520a56e7277759761560a2c7f8aed6fc5228ce48cf941",
+    "RAG/results/phase3_e11_task_adaptation/E11_PSEUDOLABEL_MANIFEST.json": "1bbcf73c94193932bdcd15cf484de85c1cbeee4196b4ccfcece6b65ddbdf5095",
+    "RAG/results/phase3_e11_task_adaptation/e11c/E11C_LLM_LABEL_PROTOCOL.json": "7656dc2526d08cbd2fd3a8c05541c4a63e6d6c999f1d46501b566213c8b3c841",
+    "RAG/results/phase3_e11_task_adaptation/E11_PSEUDOLABEL_AUDIT.md": "2edd670ee3ba49a1898a66851bc4ca6859aca81e34eb85736802380fcf9d4a31",
+    "RAG/results/phase3_e11_task_adaptation/E11_TEACHER_PROTOCOL.json": "02bf948ec4a833588fe4f01a9bd745f9a409124538e704a34dffe53cf3348a7c",
+    "RAG/results/phase3_e11_task_adaptation/E11A_REQUIREMENTS.lock.txt": "28d6e3c646b425f1c8c1795b04337e1bb94f22a5fb9e49ae3aaf64d116fb40a5",
+    "RAG/results/phase3_e11_task_adaptation/e11a_results/assemble_e11a_results.py": "485c64f96033c099d489b3f27dfef5d356f6fd59b05351d7da7cd36669ffc10d",
+    ".gitignore": "758ec27003336c95f821125ed7e8e708127160a986e784619b9368bad58e4911"
+  },
+  "checkpoint_weights_sha256": {
+    "E11-A": {
+      "1": "84d3fc50bc2fa39f3c0e02e22459aa4dc5a88e4da79f7beab4a230e092097d9a",
+      "2": "45323835c8200b091d39a4be36f8451fa30d5654f2917b85983b8ac85c7e0b88",
+      "3": "ccb3fea339bd43c084892635046479f882fb9a2b68a1c309c8e4e1253ad8173b",
+      "4": "9b73aef9034a8486845fbe1e2ccfa2246fecdbb5f6e6014b812696cc39a89511",
+      "5": "ed7f6591b80cde866e89fae5d174b588f86a09afe031b0248322604d584bd555"
+    },
+    "E11-C": {
+      "1:1": "171983409a9eee000bac49b475df10edd5c6a194650a725f4429e344a4fb8645",
+      "1:2": "21f5f6cbb7e5e77693b75a1d8e10560bdb45ed6cccf001083148224861e3c9ec",
+      "2:1": "6204df670a27ff8a8ad9e71545c36c3e2c5e0b2553b026f60b664ebdb7f2ca68",
+      "2:2": "dbaf3ab2130389a3070cfc79858fe7b845efadec2efcf1602983066ee4ff751c",
+      "3:1": "f91dc888616cfb9c194d0acd505b9b13af90c890c42943e14d829da92d4ccdf5",
+      "3:2": "42e70f0ad6fe749cc255ef747b90a58aeb4c59f509396df3f28fe9ff65bd5f14",
+      "4:1": "e32eba621b405b729d3183638352670d9af16da676b02fea6a698c3a238b2e8c",
+      "4:2": "267756ede9c538186e9ee8f7b2c465c568b53a774923c60fb2943fb15d5b7586",
+      "5:1": "975844f406f7391604d762b8b6c758209e34def2ec789d1058db6e666f83ce73",
+      "5:2": "d4d17096ea50066d0cb6a1eead18d69bfb1138368e6dfde2b09dc3f1908d1f15"
+    },
+    "E11-D": {
+      "1": "959a93c8c9dfdca0b67ab2b70ebd375a8b136f40d572a802d4bbbc081084ddae",
+      "2": "8c2b82f95c95842c7a8023f0da99461cc3731ca7799fa6612ae116f6c44e864d",
+      "3": "994f162741d43b7909252732589b61f20e1f5585897ef430a9b1bb8151a6b673",
+      "4": "c5b438beb6dea9e32212f35b6782c42a6e3673674acc381146349080d0dda661",
+      "5": "396615fa90f8e45846f4d350009193544a70b1a5633964965b022c493bfea9b7"
+    },
+    "E11-E": {
+      "1:1": "7314bf4acda3c43654c709368190fd8bb919ded0b63b7bc58ed853853e496e02",
+      "1:2": "ccbe5dece4da62d66ef532a58eb7250b9a5be759718257b2cef8caa0d45db2b6",
+      "2:1": "8fc81d5df1ab0434396911410e1a1bafa5740810dbcfa66d9add4c39f6b12d36",
+      "2:2": "29821109cd0b34c3321291057b7a4a0c68ea32a854572d09813becd6c28294ca",
+      "3:1": "c8f4ace6130b0507c0e95c1f40c765e0789fc6a258b9314b3cf256bab238240d",
+      "3:2": "dc2c53b5c0c5f81443b86bad454938e0dd6bf50fbd9d10a0fddbe15efcb21a8c",
+      "4:1": "6223725d4bf07cb46ec585cd1f7f7c4b3d110a4770c1d30f21212d6f96f7ed70",
+      "4:2": "73e8f7d6b0946af96a823aecb73bac4b5127f3ac47528e7060ad3d3de1cfb468",
+      "5:1": "f49dcdb9e4f8adf9ea879bd19f32592bfd7038524880b8899cf922521af9ae3b",
+      "5:2": "27829deb7ea8d6eb5a552cf905fec7cea0df7a0487f01a6ae4a0d43b97868170"
+    }
+  },
+  "finalization_tests": {
+    "status": "PASS",
+    "tests": 111,
+    "skipped": 0,
+    "suites": [
+      {
+        "suite": "RAG\\results\\phase3_e11_task_adaptation",
+        "tests": 34,
+        "skipped": 0,
+        "exit_code": 0
+      },
+      {
+        "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11c",
+        "tests": 40,
+        "skipped": 0,
+        "exit_code": 0
+      },
+      {
+        "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11c_training",
+        "tests": 5,
+        "skipped": 0,
+        "exit_code": 0
+      },
+      {
+        "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11d_training",
+        "tests": 15,
+        "skipped": 0,
+        "exit_code": 0
+      },
+      {
+        "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11e_training",
+        "tests": 17,
+        "skipped": 0,
+        "exit_code": 0
+      }
+    ]
+  },
+  "verification_checks": [
+    {
+      "name": "Offline regression suites",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "tests": 111,
+        "skipped": 0,
+        "suites": [
+          {
+            "suite": "RAG\\results\\phase3_e11_task_adaptation",
+            "tests": 34,
+            "skipped": 0,
+            "exit_code": 0
+          },
+          {
+            "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11c",
+            "tests": 40,
+            "skipped": 0,
+            "exit_code": 0
+          },
+          {
+            "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11c_training",
+            "tests": 5,
+            "skipped": 0,
+            "exit_code": 0
+          },
+          {
+            "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11d_training",
+            "tests": 15,
+            "skipped": 0,
+            "exit_code": 0
+          },
+          {
+            "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11e_training",
+            "tests": 17,
+            "skipped": 0,
+            "exit_code": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "E11C_MANIFEST.json all declared hashes",
+      "status": "PASS",
+      "details": 29
+    },
+    {
+      "name": "E11D_MANIFEST.json all declared hashes",
+      "status": "PASS",
+      "details": 31
+    },
+    {
+      "name": "E11E_MANIFEST.json all declared hashes",
+      "status": "PASS",
+      "details": 54
+    },
+    {
+      "name": "E11-A 561-row existing OOF identity and metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-A task metric replay",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-C 561-row existing OOF identity and metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-C task metric replay",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-D 561-row existing OOF identity and metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-D task metric replay",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-E 561-row existing OOF identity and metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-E task metric replay",
+      "status": "PASS"
+    },
+    {
+      "name": "E10 authoritative existing OOF replay",
+      "status": "PASS"
+    },
+    {
+      "name": "Requested authoritative values match repository",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-A complete manifest and five local checkpoint hashes",
+      "status": "PASS",
+      "details": 21
+    },
+    {
+      "name": "C/E exact data and stage settings",
+      "status": "PASS"
+    },
+    {
+      "name": "D/E frozen loss implementation and configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "E11C_TRAINING_PROTOCOL.json canonical content hash",
+      "status": "PASS"
+    },
+    {
+      "name": "E11E_TRAINING_PROTOCOL.json canonical content hash",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-C checkpoint evidence, local returns and chains",
+      "status": "PASS",
+      "details": 10
+    },
+    {
+      "name": "E11-D checkpoint evidence, local returns and chains",
+      "status": "PASS",
+      "details": 5
+    },
+    {
+      "name": "E11-E checkpoint evidence, local returns and chains",
+      "status": "PASS",
+      "details": 10
+    },
+    {
+      "name": "Original homogeneous teacher outcome counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Azure rescue aggregate and separation",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact synthetic sizes and validation exclusions",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate/conflict exclusions",
+      "status": "PASS"
+    },
+    {
+      "name": "All C/E fold bytes and Azure exclusion",
+      "status": "PASS",
+      "details": 20
+    },
+    {
+      "name": "E11-B zero balanced set and no student result",
+      "status": "PASS"
+    },
+    {
+      "name": "E11-B 25 teacher-stage artifact hashes",
+      "status": "PASS",
+      "details": 25
+    },
+    {
+      "name": "Independent E11-B teacher-stage validator",
+      "status": "PASS",
+      "details": "verify_teacher_stage.py: PASS; no fits"
+    },
+    {
+      "name": "Independent E11-B full detector-output validator",
+      "status": "PASS",
+      "details": "validate_scoring_outputs.py --scope full: PASS for four times 28,649 unlabeled scores and 561 human MiniCheck scores"
+    },
+    {
+      "name": "Best E11 descriptive ranking",
+      "status": "PASS"
+    },
+    {
+      "name": "E10 remains ahead on both metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "MT strongest accuracy and PG weakest Spearman in C/D/E",
+      "status": "PASS"
+    },
+    {
+      "name": "All protected prior files unchanged",
+      "status": "PASS",
+      "details": 686
+    }
+  ],
+  "prior_artifacts_unchanged": true,
+  "protected_files": 686,
+  "preservation_snapshot_sha256": "8ef5618bcea2cd4e9a43da57f7f56532d101828823683e10ecb2398035b2f04c",
+  "finalizer_sha256": "7228c2bdecfdd887759b7ad921cc8c09b9e3a0fa6a2767092346d9a461bd89c1"
+}

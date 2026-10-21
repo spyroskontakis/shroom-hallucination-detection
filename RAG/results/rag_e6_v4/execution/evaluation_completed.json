@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-09-11T09:10:13.780163+00:00",
+  "RF_fits": 5,
+  "OOF_evaluations": 1,
+  "rows": 561,
+  "network_attempts": 0
+}

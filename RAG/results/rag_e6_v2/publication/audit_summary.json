@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "metrics": {
+    "accuracy": 0.8431372549019608,
+    "correct": 473,
+    "n": 561,
+    "spearman": 0.7775058304756869
+  },
+  "feature_count": 34,
+  "historical_rf_fits": 5,
+  "historical_oof_evaluations": 1,
+  "new_fits": 0,
+  "new_experiment_evaluations": 0,
+  "protected_unchanged": 608,
+  "completion_files_verified": 718,
+  "protocol_sha256": "a9a8b44e45ae21d91368a90228a7bb422c5879d7222912b0e99878a7be2be81c",
+  "configuration_sha256": "a8f75273bfb0026da2b6eeacf3f50740ba4ee7a9ccbb9f60b3293fcd787d4d74",
+  "historical_network_attempts_after_acquisition": 0,
+  "official_test_access": "None according to frozen reports and guarded code/logs; not an OS-level proof. No official-test files opened during this audit.",
+  "inventory_counts": {
+    "A": 22,
+    "B": 666,
+    "C": 31
+  },
+  "secret_findings": [],
+  "absolute_path_files": [
+    "config/run_config.json",
+    "config/smoke.json"
+  ],
+  "large_files": [
+    "model/model.safetensors"
+  ],
+  "integrity": {
+    "additional_baseline_fits": 0,
+    "authorized_model_download": true,
+    "inference_evaluation_network_attempts": 0,
+    "new_features": 9,
+    "nli_pairs": 1315,
+    "no_router_or_rf_tuning": true,
+    "old_features_unchanged": 25,
+    "pair_scores_reassembled": true,
+    "paired_statistics_recomputed": true,
+    "prediction_rows": 561,
+    "protected_unchanged": 608,
+    "rf_fits": 5,
+    "status": "PASS",
+    "train_target_validation_array_hashes_verified": 15,
+    "truncation_audit_pairs": 1315,
+    "verified_utc": "2026-09-10T12:59:34.134777+00:00"
+  },
+  "publication_date": "2026-09-12",
+  "read_only_audit_date": "2026-09-11",
+  "historical_model_download": "Authorized pinned model acquisition before zero-network inference/evaluation.",
+  "publication_string_review": {
+    "A_safe_source_config_references": "src/hyp are field names or artificial contract fixtures, not real SHROOM text. external-artifacts/local-0fb664776e02/Windows in e8_common.py is the operating-system default allowlist root, not a private path.",
+    "B_withheld_personal_paths": [
+      "config/run_config.json",
+      "config/smoke.json"
+    ],
+    "C_withheld_row_content": "Original metrics with correction/error IDs, predictions, feature matrices, split ID lists, fit ID lists, raw NLI pairs and external text remain local.",
+    "D_historical_documentation": "INITIAL_NAMING_DRAFT.md records the earlier naming/clarification state; it is historical and is superseded by the frozen protocol.",
+    "sample_identifiers_in_approved_originals": 0
+  }
+}

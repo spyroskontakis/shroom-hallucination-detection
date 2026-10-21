@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "rows": 561,
+  "features": 43,
+  "old_features_exact": true,
+  "ordered_ids_exact": true,
+  "no_labels_or_predictions_in_extraction_inputs": true,
+  "nonfinite": 0,
+  "missing_values": 0,
+  "invalid_values": 0,
+  "reference_truncated": 0,
+  "hyp_truncated": 0,
+  "empty_references": 0,
+  "empty_hyp": 0,
+  "seconds_total": 295.18833140000015,
+  "model_load_seconds": 9.490094300000237,
+  "network_attempts": 0,
+  "runtime": {
+    "python": "3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]",
+    "executable": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Scripts\\python.exe",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "safetensors": "0.7.0",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1",
+      "sentencepiece": "0.2.1",
+      "tokenizers": "0.13.3",
+      "torch": "2.11.0",
+      "transformers": "4.30.2",
+      "huggingface-hub": "0.25.2",
+      "bert-score": "0.3.13"
+    }
+  },
+  "statistics": {
+    "bertscore_ref_hyp_precision": {
+      "min": 0.30543938279151917,
+      "max": 1.0,
+      "mean": 0.7280997421970979
+    },
+    "bertscore_ref_hyp_recall": {
+      "min": 0.344404399394989,
+      "max": 1.0000001192092896,
+      "mean": 0.7329606282094796
+    },
+    "bertscore_ref_hyp_f1": {
+      "min": 0.36667051911354065,
+      "max": 1.0000001192092896,
+      "mean": 0.727202547637749
+    },
+    "structure_length_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.7093755255487458
+    },
+    "structure_number_presence_mismatch": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.008912655971479501
+    },
+    "structure_number_set_mismatch": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.008912655971479501
+    },
+    "structure_negation_mismatch": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.06951871657754011
+    }
+  },
+  "integrity": {
+    "protected_files": 1784,
+    "old_v4_files": 108,
+    "diagnosis_files": 1518
+  }
+}

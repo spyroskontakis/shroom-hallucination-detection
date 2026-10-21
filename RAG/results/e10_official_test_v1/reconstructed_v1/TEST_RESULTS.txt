@@ -1,0 +1,8 @@
+PRE-EXECUTION OFFLINE VALIDATION: PASS
+8 reconstructed pipeline tests passed.
+5 existing label-free projection tests passed.
+13 tests total; no model fit, inference or scoring in these tests.
+Parser replay: 206 terms / 462 senses; byte-identical to original frozen snapshot.
+NLI2/HHEM local model hashes and original environment verified.
+15 MPNet/NLI1 model files verified.
+All adapter Python files parsed successfully.

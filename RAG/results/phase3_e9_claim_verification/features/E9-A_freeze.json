@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "samples": 561,
+  "feature_count": 44,
+  "claims_scored": 575,
+  "features_sha256": "26fcaaab5b10c1710984c2f9a923c98df1f922284622299dc4baae8a4dc846b0",
+  "audit_sha256": "2734587a37a09902ed30b2782f373fe16298ec723efe33acb682e3fc7aa228c6",
+  "claims_sha256": "da0426cae48478f8cb8ba8473f37a80008057e86d89a328bd5d002d3fd48190e",
+  "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7"
+}

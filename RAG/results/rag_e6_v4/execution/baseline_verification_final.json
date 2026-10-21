@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "metrics": {
+    "accuracy": 0.8449197860962567,
+    "correct": 474,
+    "n": 561,
+    "spearman": 0.7816945786401444
+  },
+  "IDs_folds_labels_predictions_exact": true,
+  "baseline_fits": 0
+}

@@ -1,0 +1,37 @@
+test_balance_minority_cap_and_order (test_e11c.OfflineTests.test_balance_minority_cap_and_order) ... ok
+test_completed_missing_rejected (test_e11c.OfflineTests.test_completed_missing_rejected) ... ok
+test_duplicate_body_id_rejected (test_e11c.OfflineTests.test_duplicate_body_id_rejected) ... ok
+test_duplicate_response_rejected (test_e11c.OfflineTests.test_duplicate_response_rejected) ... ok
+test_execution_guards (test_e11c.OfflineTests.test_execution_guards) ... ok
+test_expired_retry_three_attempt_cap (test_e11c.OfflineTests.test_expired_retry_three_attempt_cap) ... ok
+test_foreign_response_rejected (test_e11c.OfflineTests.test_foreign_response_rejected) ... ok
+test_http_failures (test_e11c.OfflineTests.test_http_failures) ... ok
+test_invalid_schema_retry (test_e11c.OfflineTests.test_invalid_schema_retry) ... ok
+test_labels_final_including_uncertain (test_e11c.OfflineTests.test_labels_final_including_uncertain) ... ok
+test_malformed_output_retry (test_e11c.OfflineTests.test_malformed_output_retry) ... ok
+test_normalization_case_sensitive (test_e11c.OfflineTests.test_normalization_case_sensitive) ... ok
+test_parse_shuffled_complete (test_e11c.OfflineTests.test_parse_shuffled_complete) ... ok
+test_payload_all_tasks (test_e11c.OfflineTests.test_payload_all_tasks) ... ok
+test_prompt_injection_remains_data (test_e11c.OfflineTests.test_prompt_injection_remains_data) ... ok
+test_protocol_tamper (test_e11c.OfflineTests.test_protocol_tamper) ... ok
+test_provenance_and_empty_rejected (test_e11c.OfflineTests.test_provenance_and_empty_rejected) ... ok
+test_purge_three_rules_text_only (test_e11c.OfflineTests.test_purge_three_rules_text_only) ... ok
+test_real_pool_deterministic_and_quotas (test_e11c.OfflineTests.test_real_pool_deterministic_and_quotas) ... ok
+test_refusal_final (test_e11c.OfflineTests.test_refusal_final) ... ok
+test_retry_cap (test_e11c.OfflineTests.test_retry_cap) ... ok
+test_wrong_model_quarantined (test_e11c.OfflineTests.test_wrong_model_quarantined) ... ok
+test_api_guard_before_network (test_e11c_pilot.PilotTests.test_api_guard_before_network) ... ok
+test_audit_usage_cost_and_uncertain_provenance (test_e11c_pilot.PilotTests.test_audit_usage_cost_and_uncertain_provenance) ... ok
+test_pilot_shard_and_no_full_shard (test_e11c_pilot.PilotTests.test_pilot_shard_and_no_full_shard) ... ok
+test_scope_restores_on_failure (test_e11c_pilot.PilotTests.test_scope_restores_on_failure) ... ok
+test_selection_and_frozen_request_equality (test_e11c_pilot.PilotTests.test_selection_and_frozen_request_equality) ... ok
+test_wrong_protocol_fails (test_e11c_pilot.PilotTests.test_wrong_protocol_fails) ... ok
+test_frozen_files_and_private_ignore (test_e11c_production.ProductionTests.test_frozen_files_and_private_ignore) ... ok
+test_partition_and_exact_frozen_requests (test_e11c_production.ProductionTests.test_partition_and_exact_frozen_requests) ... ok
+test_pilot_uncertain_terminal_and_binary_exclusion (test_e11c_production.ProductionTests.test_pilot_uncertain_terminal_and_binary_exclusion) ... ok
+test_scoped_population_and_api_guard (test_e11c_production.ProductionTests.test_scoped_population_and_api_guard) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 39.899s
+
+OK

@@ -1,0 +1,29 @@
+[
+  {
+    "split": "trial",
+    "url": "https://drive.google.com/uc?export=download&id=12DquaVHbnAAlNzLhiQZOG5Fw1h4JyNIm",
+    "zip_sha256": "d94fc96ec73efdaa2c94b589877ec4b348624f63209d320bf468f76888ab82ac",
+    "member": "SHROOM_trial-v1.1/trial-v1.json",
+    "official_sha256": "8000998423f8beebe2646f4ba0d76eac8f269f32a9a4440b009f153ed39b429a",
+    "local_sha256": "8000998423f8beebe2646f4ba0d76eac8f269f32a9a4440b009f153ed39b429a",
+    "identical": true
+  },
+  {
+    "split": "dev",
+    "url": "https://drive.google.com/uc?export=download&id=1gwanWbGl5s6VEDw2ZoRqx5M6WBmvWcGy",
+    "zip_sha256": "6c4405fc83e10111b822addb7f8a32e484c5720ac3958b08cc004f1e8370fb39",
+    "member": "SHROOM_dev-v2/val.model-agnostic.json",
+    "official_sha256": "5ca9b6400b6dc1a86d69e1b8fa0d121275650f836fdba87fb23784d1d61ce611",
+    "local_sha256": "5ca9b6400b6dc1a86d69e1b8fa0d121275650f836fdba87fb23784d1d61ce611",
+    "identical": true
+  },
+  {
+    "split": "test",
+    "url": "https://drive.google.com/uc?export=download&id=15NLbjDouwRaWt79oYCgXhjzQqilel8i9",
+    "zip_sha256": "e09e03e22cd1d4a2dbd43c264d80bef1734be6bf860ecd37e925b0f9beafd29f",
+    "member": "SHROOM_test-labeled/test.model-agnostic.json",
+    "official_sha256": "c5c5fe0ce9c402186990b0dde05c0274ac90d10906b169f28d2f2c0cf669f299",
+    "local_sha256": "c5c5fe0ce9c402186990b0dde05c0274ac90d10906b169f28d2f2c0cf669f299",
+    "identical": true
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-09-09T13:45:24.781386+00:00",
+  "e5_predictor_arrays_equal": true,
+  "ids_and_folds": "561 one-to-one matches in canonical order",
+  "metrics": {
+    "E3": {
+      "accuracy": 0.7932263814616756,
+      "correct": 445,
+      "n": 561,
+      "spearman": 0.7390395612811848
+    },
+    "E5": {
+      "accuracy": 0.7950089126559715,
+      "correct": 446,
+      "n": 561,
+      "spearman": 0.7421719692110536
+    }
+  },
+  "retrained_baselines": false,
+  "runtime_matches_documented_canonical": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "sentence-transformers": "5.4.1",
+    "torch": "2.11.0",
+    "transformers": "5.5.4"
+  },
+  "status": "PASS"
+}

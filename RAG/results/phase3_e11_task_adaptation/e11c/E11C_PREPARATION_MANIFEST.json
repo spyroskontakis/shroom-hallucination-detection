@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "files_sha256": {
+    ".gitignore": "fbba822714f936cdacf0228b7aaa0678b44b1d4607b655cbaa1f00a59af5b3ba",
+    "build_e11c_folds.py": "ab78a110a064d93b1698c6b9af44c143e14a86a683b9723b651a4c0d333dc034",
+    "build_e11c_requests.py": "7f014ad03530bc61d9c06335471bac992f085d9aaabb958aae5e93a006eea633",
+    "e11c_batch.py": "5bb42de422ef04d762818e3ddc68a054425781b2121fe976b45beb8503102c04",
+    "E11C_CANDIDATE_MANIFEST.json": "72dbde0eebea322e55f9427eb2792adceb726e6f191ae03c377369f505109990",
+    "e11c_common.py": "514c881c3077e1779c7403dbe8cb444c7c5d021df02f0fdf3888c86a5ff8e141",
+    "E11C_COST_ESTIMATE.json": "cb4ba5a2e566b4a07ea7f7013f309f3ff42b9c73707547f238ecee26bb9b59c3",
+    "E11C_LLM_LABEL_PROTOCOL.json": "7656dc2526d08cbd2fd3a8c05541c4a63e6d6c999f1d46501b566213c8b3c841",
+    "E11C_LLM_LABEL_PROTOCOL.md": "939d6938d4c6c3b49254924f7e81c2d32dbad806503d77a3db741016a0f7211e",
+    "E11C_LOCAL_VALIDATION.json": "414821ef6a011083aa0da9ddc86f18d4a61a6aa39373c54b491eb2d010714fcf",
+    "E11C_PRIOR_ARTIFACT_HASHES.json": "67505c3159a3bdd36206d4d01ce105f718291f6f9c449759c6e6c679930e00a7",
+    "E11C_PROTOCOL_SHA256.txt": "e583e6f747745c640d1eeb10101a5c5b61b43b4184ae66f7e542818c532f87be",
+    "E11C_TEST_REPORT.json": "831c64ff5a5e3ed234548db19d9fc72324f34e4d3c756f2c9c503835348bb866",
+    "E11C_TEXT_PURGE_AUDIT.json": "7bb51f4517181c918a5e6ca45dc6691482b8b0795fa2a2855b69c27a9c478488",
+    "estimate_e11c_cost.py": "f49be0e260d23e5148352381b65ad64e2b5df25056887a1182427891e16c0645",
+    "parse_e11c_results.py": "c805d98bd0c02ae30c3e1e619446b65354419329a2bea4326c484f8e7b7195f7",
+    "prepare_e11c.py": "195d4400f0b8f346adf9fa3db148756cd30516d7ebf0050789058346c50b83d9",
+    "test_e11c.py": "ea7240f148d56e0bf61fa0b694e43487e7dc889d099a6c5df26cb4a28d2b318c",
+    "validate_e11c.py": "735e90d5aae2404bd0ba92f8271d5b972e4bacf31b5085b3743a8afbb4fc6a77"
+  },
+  "git_status": [
+    "?? RAG/results/phase3_e11_task_adaptation/",
+    "?? RAG/results/phase3_e9_claim_verification/",
+    "?? modal_gpu_check.py"
+  ],
+  "private_candidates_git_ignored": true,
+  "private_batch_requests_git_ignored": true,
+  "api_calls": 0,
+  "shroom_labels_generated": 0,
+  "student_training_runs": 0,
+  "official_test_access": false,
+  "commit": false,
+  "push": false,
+  "prior_E11_files_unchanged": 147
+}

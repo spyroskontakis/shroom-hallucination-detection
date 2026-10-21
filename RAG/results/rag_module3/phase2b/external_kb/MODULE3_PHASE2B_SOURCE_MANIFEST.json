@@ -1,0 +1,408 @@
+{
+  "candidate_accounting": {
+    "external_exact_duplicate_exclusions": 0,
+    "external_snapshot_records": 44,
+    "per_term": [
+      {
+        "eligible_after_dedup": 3,
+        "example_id": "EX-590A0B447A17",
+        "external_exact_duplicate_exclusions": 0,
+        "previous_annotation_duplicate_exclusions": 2,
+        "rank_limit_exclusions": 0,
+        "retrieval_method": "all_exact_lexical_senses_no_padding",
+        "selected_total": 3,
+        "selected_wiktionary": 2,
+        "selected_wordnet": 1,
+        "term": "preciosity",
+        "wiktionary_senses_extracted": 4,
+        "wordnet_senses_extracted": 1
+      },
+      {
+        "eligible_after_dedup": 1,
+        "example_id": "EX-1AA2C1DAFB9C",
+        "external_exact_duplicate_exclusions": 0,
+        "previous_annotation_duplicate_exclusions": 0,
+        "rank_limit_exclusions": 0,
+        "retrieval_method": "all_exact_lexical_senses_no_padding",
+        "selected_total": 1,
+        "selected_wiktionary": 1,
+        "selected_wordnet": 0,
+        "term": "bandslash",
+        "wiktionary_senses_extracted": 1,
+        "wordnet_senses_extracted": 0
+      },
+      {
+        "eligible_after_dedup": 1,
+        "example_id": "EX-7565997D951E",
+        "external_exact_duplicate_exclusions": 0,
+        "previous_annotation_duplicate_exclusions": 0,
+        "rank_limit_exclusions": 0,
+        "retrieval_method": "all_exact_lexical_senses_no_padding",
+        "selected_total": 1,
+        "selected_wiktionary": 1,
+        "selected_wordnet": 0,
+        "term": "nonentertainment",
+        "wiktionary_senses_extracted": 1,
+        "wordnet_senses_extracted": 0
+      },
+      {
+        "eligible_after_dedup": 7,
+        "example_id": "EX-D4E131D57443",
+        "external_exact_duplicate_exclusions": 0,
+        "previous_annotation_duplicate_exclusions": 1,
+        "rank_limit_exclusions": 2,
+        "retrieval_method": "mpnet_term_src_cosine_top5",
+        "selected_total": 5,
+        "selected_wiktionary": 3,
+        "selected_wordnet": 2,
+        "term": "continuous",
+        "wiktionary_senses_extracted": 6,
+        "wordnet_senses_extracted": 2
+      },
+      {
+        "eligible_after_dedup": 7,
+        "example_id": "EX-C47370FB429F",
+        "external_exact_duplicate_exclusions": 0,
+        "previous_annotation_duplicate_exclusions": 0,
+        "rank_limit_exclusions": 2,
+        "retrieval_method": "mpnet_term_src_cosine_top5",
+        "selected_total": 5,
+        "selected_wiktionary": 3,
+        "selected_wordnet": 2,
+        "term": "foreboding",
+        "wiktionary_senses_extracted": 4,
+        "wordnet_senses_extracted": 3
+      },
+      {
+        "eligible_after_dedup": 1,
+        "example_id": "EX-1E6E8BDB9874",
+        "external_exact_duplicate_exclusions": 0,
+        "previous_annotation_duplicate_exclusions": 0,
+        "rank_limit_exclusions": 0,
+        "retrieval_method": "all_exact_lexical_senses_no_padding",
+        "selected_total": 1,
+        "selected_wiktionary": 1,
+        "selected_wordnet": 0,
+        "term": "tetaniform",
+        "wiktionary_senses_extracted": 1,
+        "wordnet_senses_extracted": 0
+      },
+      {
+        "eligible_after_dedup": 21,
+        "example_id": "EX-6681F3007742",
+        "external_exact_duplicate_exclusions": 0,
+        "previous_annotation_duplicate_exclusions": 0,
+        "rank_limit_exclusions": 16,
+        "retrieval_method": "mpnet_term_src_cosine_top5",
+        "selected_total": 5,
+        "selected_wiktionary": 5,
+        "selected_wordnet": 0,
+        "term": "keen",
+        "wiktionary_senses_extracted": 14,
+        "wordnet_senses_extracted": 7
+      }
+    ],
+    "previous_annotation_duplicate_exclusions": 3,
+    "provenance_records": 44,
+    "rank_limit_exclusions": 20,
+    "selected_candidates": 21
+  },
+  "configuration": {
+    "candidate_sources": [
+      "Princeton WordNet 3.1",
+      "English Wiktionary exact pages"
+    ],
+    "configuration_id": "exact-lemma-wn31+wikt|term+src|mpnet-top5-if-needed|seed42",
+    "deduplication": "NFKC+casefold+whitespace normalized term, definition, usage example all identical",
+    "development_examples": 7,
+    "maximum_candidates_per_example": 5,
+    "padding": false,
+    "previous_annotation_duplicate_check": "example_id + normalized candidate_term + normalized candidate_definition",
+    "query_fields": [
+      "term",
+      "src"
+    ],
+    "ranking_if_more_than_five": "sentence-transformers/all-mpnet-base-v2 cosine",
+    "source_priority": [
+      "wordnet_3_1",
+      "english_wiktionary"
+    ],
+    "terms_in_order": [
+      "preciosity",
+      "bandslash",
+      "nonentertainment",
+      "continuous",
+      "foreboding",
+      "tetaniform",
+      "keen"
+    ],
+    "tgt_used_for_selection": false,
+    "tie_break": [
+      "source_priority",
+      "original_sense_order",
+      "stable_evidence_id"
+    ]
+  },
+  "created_at": "2026-08-27",
+  "experiment": "SHROOM RAG E5 Module 3 Phase 2B preparation",
+  "generated_artifacts_before_manifest": [
+    {
+      "bytes": 39483,
+      "path": "RAG/results/rag_module3/phase2b/external_kb/module3_phase2b_external_kb_snapshot.jsonl",
+      "sha256": "87356e9c2d6ae8893767c55c66901ce9449f15605d5eb8b5c7c25b687ddd4825"
+    },
+    {
+      "bytes": 9576,
+      "path": "RAG/results/rag_module3/phase2b/annotation/module3_phase2b_external_kb_blinded.csv",
+      "sha256": "5601166860ca7d37872720b0188f590ac3684b71e84003bced1f654d796c05fe"
+    },
+    {
+      "bytes": 50886,
+      "path": "RAG/results/rag_module3/phase2b/annotation/module3_phase2b_external_kb_provenance.jsonl",
+      "sha256": "8b34a6805f0f8f73b8d9cd86b730d175e7617fd4f0e9a8badb2408abdfad4a4d"
+    }
+  ],
+  "input_artifacts": [
+    {
+      "bytes": 3244,
+      "path": "RAG/AGENTS.md",
+      "sha256": "8dc147df8c11ef967ccc5b9af44f68b9c76ac2c43b67186c021bb78523c83594"
+    },
+    {
+      "bytes": 14619,
+      "path": "RAG/MODULE2_FINAL_RESULTS.md",
+      "sha256": "574a75f7e0a2bef4ad2ac1b4c68e2892e8356fd9134a885293549e2773c82d92"
+    },
+    {
+      "bytes": 20996,
+      "path": "RAG/results/rag_module3/MODULE3_PHASE0_FAILURE_AUDIT.md",
+      "sha256": "cee0c89916639020710a917483da82e531522d00d771f08deae2c3fb0b8c6d3f"
+    },
+    {
+      "bytes": 11781,
+      "path": "RAG/results/rag_module3/MODULE3_PHASE1_RESULTS.md",
+      "sha256": "00e8ae47d5ee6ddc98c568afe8fce6278a31244cc75c73bf7ebc37510c9f17bd"
+    },
+    {
+      "bytes": 13563,
+      "path": "RAG/results/rag_module3/phase2/MODULE3_PHASE2A_PLAN.md",
+      "sha256": "619c0d0848b87894832e13c90dc23c27cfad97e3a4d45a9d5eb16a444ead4be2"
+    },
+    {
+      "bytes": 14680,
+      "path": "RAG/results/rag_module3/phase2/MODULE3_PHASE2A_RESULTS.md",
+      "sha256": "b8bcfee1b093e776e8cbfd3fbee6a2e5b6fae9dd5eb733b277a31b98ec6c2d30"
+    },
+    {
+      "bytes": 18328,
+      "path": "RAG/results/rag_module3/phase2/annotation/module3_phase2a_kb_coverage_blinded.csv",
+      "sha256": "23a4668a4777d6afa42ff7c059008b878a9359ba1e3dc70d29af8cafcdd75ff2"
+    },
+    {
+      "bytes": 44770,
+      "path": "RAG/results/rag_module2/annotation/module2_annotation_dev_human_completed.csv",
+      "sha256": "3f1f0a6d3eb9a75de69344f6e1df13b88745e464c98f94e1ce87997302669ed5"
+    },
+    {
+      "bytes": 23356,
+      "path": "RAG/results/rag_module3/annotation/module3_phase1_top5_extension_blinded_human_completed.csv",
+      "sha256": "955996793820c71d12be63ee801d3342d62b42265f2cb2683825d8a9d4f7ab99"
+    },
+    {
+      "bytes": 18866,
+      "path": "RAG/results/rag_module3/phase2/annotation/module3_phase2a_kb_coverage_blinded_human_completed.csv",
+      "sha256": "4007aaad4bb34bf999d1aa2b52158e07e9ac4f75dad7531d52f6ca97f17d4de4"
+    },
+    {
+      "bytes": 20944,
+      "path": "RAG/tools/relevance_annotation_ui.html",
+      "sha256": "0a997deebc1c78948f1099cfe84c3d127f5146f43bf4e105dd0a242ccbd31670"
+    }
+  ],
+  "integrity": {
+    "ai_annotations_opened_or_used": 0,
+    "annotation_labels_created": 0,
+    "gemini_or_llm_calls": 0,
+    "general_web_searches": 0,
+    "human_metrics_computed": 0,
+    "official_test_accesses": 0,
+    "package_changes": 0,
+    "phase2b_decision_computed": 0
+  },
+  "licenses": [
+    {
+      "license": "WordNet License",
+      "reference": "https://wordnet.princeton.edu/license-and-commercial-use",
+      "source": "Princeton WordNet 3.1"
+    },
+    {
+      "license": "CC BY-SA 4.0 and GFDL",
+      "reference": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights",
+      "source": "English Wiktionary"
+    }
+  ],
+  "model_accounting": {
+    "candidate_texts_encoded": 70,
+    "device": "cpu",
+    "encode_calls": 4,
+    "final_frozen_run_candidate_texts_encoded": 35,
+    "final_frozen_run_encode_calls": 2,
+    "final_frozen_run_model_loads": 1,
+    "final_frozen_run_query_texts_encoded": 3,
+    "first_pass_disposition": "discarded before project output after offline parser QA",
+    "local_files_only": true,
+    "max_seq_length": 256,
+    "model": "sentence-transformers/all-mpnet-base-v2",
+    "model_loads": 2,
+    "query_texts_encoded": 6,
+    "selection_pipeline_executions": 2,
+    "snapshot_commit": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "snapshot_path": "external-artifacts/local-54c26f7df1bd/e8c3b32edf5434bc2275fc9bab85f82640a19130"
+  },
+  "schema_version": "1.0",
+  "selection_lock": {
+    "selection_input_sha256": "c44b5ec9c73bed5f5d8682b82c907e2472e34464c0769d03b316e1ef0eafa593",
+    "selection_locked_before_tgt_materialization": true,
+    "selection_sha256": "13b2b66d5cfc52896fadda0c5381d21c8c9bfd6019073e679af68c53853a00c3",
+    "tgt_fields_materialized_before_selection_lock": 0
+  },
+  "sources": {
+    "network": {
+      "general_web_search_requests": 0,
+      "http_get_requests": 8,
+      "http_redirects": 0,
+      "other_network_requests": 0,
+      "wiktionary_requests": 7,
+      "wordnet_requests": 1
+    },
+    "wiktionary": {
+      "edition": "English Wiktionary",
+      "endpoint": "official MediaWiki API",
+      "http_redirects_total": 0,
+      "http_status_per_request": 200,
+      "license": "CC BY-SA 4.0 and GFDL",
+      "license_reference": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights",
+      "pages": [
+        {
+          "api_url": "https://en.wiktionary.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&redirects=1&titles=preciosity",
+          "english_senses_extracted": 4,
+          "mediawiki_normalized_titles": [],
+          "mediawiki_redirects": [],
+          "page_id": 639893,
+          "page_title": "preciosity",
+          "parent_revision_id": 89980665,
+          "raw_response_bytes": 7307,
+          "raw_response_sha256": "75a3105b1bbfa1de4d3b96a211e56c24f79a19edfaba6f556ce0f349de19c0f5",
+          "requested_term": "preciosity",
+          "revision_id": 92192861,
+          "revision_timestamp": "2026-08-24T04:42:49Z",
+          "source_url": "https://en.wiktionary.org/wiki/preciosity"
+        },
+        {
+          "api_url": "https://en.wiktionary.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&redirects=1&titles=bandslash",
+          "english_senses_extracted": 1,
+          "mediawiki_normalized_titles": [],
+          "mediawiki_redirects": [],
+          "page_id": 4079032,
+          "page_title": "bandslash",
+          "parent_revision_id": 72804068,
+          "raw_response_bytes": 2026,
+          "raw_response_sha256": "097a108a50d3633e52fa4d15e63a31a8130d7492431f7b88e84463ca10937544",
+          "requested_term": "bandslash",
+          "revision_id": 81279567,
+          "revision_timestamp": "2024-08-19T03:40:44Z",
+          "source_url": "https://en.wiktionary.org/wiki/bandslash"
+        },
+        {
+          "api_url": "https://en.wiktionary.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&redirects=1&titles=nonentertainment",
+          "english_senses_extracted": 1,
+          "mediawiki_normalized_titles": [],
+          "mediawiki_redirects": [],
+          "page_id": 2472071,
+          "page_title": "nonentertainment",
+          "parent_revision_id": 54388970,
+          "raw_response_bytes": 1026,
+          "raw_response_sha256": "ab334c6ecff63ccfd4ba03736c90086d36a30f197ed4bb0ae1c5dc1b9270ad19",
+          "requested_term": "nonentertainment",
+          "revision_id": 81109404,
+          "revision_timestamp": "2024-08-18T23:11:54Z",
+          "source_url": "https://en.wiktionary.org/wiki/nonentertainment"
+        },
+        {
+          "api_url": "https://en.wiktionary.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&redirects=1&titles=continuous",
+          "english_senses_extracted": 6,
+          "mediawiki_normalized_titles": [],
+          "mediawiki_redirects": [],
+          "page_id": 8891,
+          "page_title": "continuous",
+          "parent_revision_id": 91568737,
+          "raw_response_bytes": 12020,
+          "raw_response_sha256": "7efd37de0f03721292862952498d352e67afc69c9bd40efd6465730d55990c69",
+          "requested_term": "continuous",
+          "revision_id": 92174256,
+          "revision_timestamp": "2026-08-24T01:13:06Z",
+          "source_url": "https://en.wiktionary.org/wiki/continuous"
+        },
+        {
+          "api_url": "https://en.wiktionary.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&redirects=1&titles=foreboding",
+          "english_senses_extracted": 4,
+          "mediawiki_normalized_titles": [],
+          "mediawiki_redirects": [],
+          "page_id": 67999,
+          "page_title": "foreboding",
+          "parent_revision_id": 90509387,
+          "raw_response_bytes": 4031,
+          "raw_response_sha256": "f728651f7485adbdac121ed00213dca19632102a3087ea87d1bc8549c40ea198",
+          "requested_term": "foreboding",
+          "revision_id": 92124742,
+          "revision_timestamp": "2026-08-23T00:44:26Z",
+          "source_url": "https://en.wiktionary.org/wiki/foreboding"
+        },
+        {
+          "api_url": "https://en.wiktionary.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&redirects=1&titles=tetaniform",
+          "english_senses_extracted": 1,
+          "mediawiki_normalized_titles": [],
+          "mediawiki_redirects": [],
+          "page_id": 4216675,
+          "page_title": "tetaniform",
+          "parent_revision_id": 69054690,
+          "raw_response_bytes": 412,
+          "raw_response_sha256": "ffb3507c31b8aa1476237ff151e4f2cf20fe3e72d46e045051bf5b798cb58f3f",
+          "requested_term": "tetaniform",
+          "revision_id": 82053369,
+          "revision_timestamp": "2024-09-28T04:33:30Z",
+          "source_url": "https://en.wiktionary.org/wiki/tetaniform"
+        },
+        {
+          "api_url": "https://en.wiktionary.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&redirects=1&titles=keen",
+          "english_senses_extracted": 14,
+          "mediawiki_normalized_titles": [],
+          "mediawiki_redirects": [],
+          "page_id": 38950,
+          "page_title": "keen",
+          "parent_revision_id": 92202683,
+          "raw_response_bytes": 20616,
+          "raw_response_sha256": "016ab4694299c13c78fb3e059a15e932ac879fca077f1e04936f0dc24c166190",
+          "requested_term": "keen",
+          "revision_id": 92333256,
+          "revision_timestamp": "2026-08-26T10:05:26Z",
+          "source_url": "https://en.wiktionary.org/wiki/keen"
+        }
+      ]
+    },
+    "wordnet": {
+      "acquired_at_utc": "2026-08-27T16:15:55.408810+00:00",
+      "archive_bytes": 16358468,
+      "archive_sha256": "3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a",
+      "effective_url": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "http_redirects": 0,
+      "http_status": 200,
+      "license": "WordNet License",
+      "license_reference": "https://wordnet.princeton.edu/license-and-commercial-use",
+      "local_wordnet_3_0_rejected": true,
+      "requested_url": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+      "version": "3.1"
+    }
+  },
+  "status": "PREPARED_FOR_HUMAN_ANNOTATION"
+}

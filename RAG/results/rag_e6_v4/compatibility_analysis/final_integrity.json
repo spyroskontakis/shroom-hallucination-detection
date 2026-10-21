@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-11T08:52:02.535605+00:00",
+  "protected_unchanged": 1784,
+  "preexisting_v4_manifest_files_unchanged": 108,
+  "protocol_configuration_unchanged": true,
+  "baseline": {
+    "accuracy": 0.8449197860962567,
+    "correct": 474,
+    "n": 561,
+    "spearman": 0.7816945786401444
+  },
+  "branch": "agentic-rag-e7",
+  "git_status": "?? \"Augmentation Pipeline.txt\"\n?? RAG/results/rag_e6_v2/\n?? RAG/results/rag_e6_v3/\n?? RAG/results/rag_e6_v4/\n?? RAG/results/rag_e7_agentic_v1/\n?? RAG/results/rag_e8_rf_tuning_v1/\n",
+  "real_features_extracted": 0,
+  "rf_fits": 0,
+  "e6_v4_evaluations": 0,
+  "synthetic_official_score_calls": 1,
+  "synthetic_scored_pairs": 2,
+  "official_package_record_checks": {
+    "huggingface_hub-0.25.2.dist-info": 119,
+    "tokenizers-0.13.3.dist-info": 30,
+    "transformers-4.30.2.dist-info": 1343
+  }
+}

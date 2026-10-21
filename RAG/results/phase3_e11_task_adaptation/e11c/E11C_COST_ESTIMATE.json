@@ -1,0 +1,59 @@
+{
+  "status": "ESTIMATE_NOT_API_TOKEN_COUNT",
+  "requests": 12000,
+  "method": "chars/4 + 32/request for prompt, serialized user JSON and schema; sensitivity chars/5..chars/3; not calibrated to exact model tokenizer",
+  "estimated_input_tokens": 5606330,
+  "input_sensitivity_range": [
+    4562913,
+    7344827
+  ],
+  "conservative_input_byte_proxy": 22407552,
+  "output_tokens_per_request_ceiling": 2048,
+  "first_pass_output_token_ceiling": 24576000,
+  "output_ceiling_includes_hidden_reasoning": true,
+  "output_scenarios": {
+    "256": {
+      "output_tokens": 3072000,
+      "standard_usd": 83.8653,
+      "batch_usd": 41.9327
+    },
+    "512": {
+      "output_tokens": 6144000,
+      "standard_usd": 145.3053,
+      "batch_usd": 72.6527
+    },
+    "1024": {
+      "output_tokens": 12288000,
+      "standard_usd": 268.1853,
+      "batch_usd": 134.0927
+    },
+    "2048": {
+      "output_tokens": 24576000,
+      "standard_usd": 513.9453,
+      "batch_usd": 256.9727
+    }
+  },
+  "first_pass_cost_at_output_ceiling": {
+    "standard_usd": 513.9453,
+    "batch_usd": 256.9727
+  },
+  "three_attempts_cost_at_output_ceiling": {
+    "standard_usd": 1541.836,
+    "batch_usd": 770.918
+  },
+  "conservative_byte_proxy_cost_at_output_ceiling": {
+    "standard_usd": 581.1502,
+    "batch_usd": 290.5751
+  },
+  "note": "Output use is unknown before labeling; no yield/average-output guarantee. No prompt caching discount, taxes or regional uplift assumed. Byte proxy is a planning allowance, not a proven model-specific bound.",
+  "pricing": {
+    "currency": "USD",
+    "date": "2026-09-29",
+    "standard_input_per_million": 4.0,
+    "standard_output_per_million": 20.0,
+    "batch_discount": 0.5,
+    "no_cache_discount_assumed": true,
+    "note": "Promotional price documented through at least 2026-11-21; estimates exclude taxes and assume short-context requests. Recheck rates before paid execution."
+  },
+  "python": "3.12.10"
+}

@@ -1,0 +1,20 @@
+{
+  "app": "shroom-e11e-fixed-two-stage-contrastive",
+  "volume": "shroom-e11e-fixed-two-stage-contrastive-results",
+  "run_id": "e11e-fixed-001",
+  "fold_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "stages_per_fold": [
+    1,
+    2
+  ],
+  "expected_fits": 10,
+  "automatic_retries": 0,
+  "runtime_manifest_sha256": "1c5bd82e332e0cc57fab7ea817c31528d58534db928d3ddf801043480a685e04",
+  "teacher_calls": 0
+}

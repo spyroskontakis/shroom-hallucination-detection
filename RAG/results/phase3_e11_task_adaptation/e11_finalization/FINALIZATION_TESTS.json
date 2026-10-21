@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "tests": 111,
+  "skipped": 0,
+  "suites": [
+    {
+      "suite": "RAG\\results\\phase3_e11_task_adaptation",
+      "tests": 34,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11c",
+      "tests": 40,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11c_training",
+      "tests": 5,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11d_training",
+      "tests": 15,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    {
+      "suite": "RAG\\results\\phase3_e11_task_adaptation\\e11e_training",
+      "tests": 17,
+      "skipped": 0,
+      "exit_code": 0
+    }
+  ]
+}

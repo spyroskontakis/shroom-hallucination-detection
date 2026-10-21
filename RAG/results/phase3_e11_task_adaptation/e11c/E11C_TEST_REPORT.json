@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tests_run": 22,
+  "failures": 0,
+  "errors": 0,
+  "command": "python -m unittest discover -s RAG/results/phase3_e11_task_adaptation/e11c -p test_e11c.py -v",
+  "network_blocked_in_tests": true,
+  "test_data": "Fabricated temporary fixtures only; no real SHROOM labels generated",
+  "python": "3.12.10"
+}

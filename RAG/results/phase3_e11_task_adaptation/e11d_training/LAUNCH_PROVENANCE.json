@@ -1,0 +1,16 @@
+{
+  "app": "shroom-e11d-human-contrastive",
+  "volume": "shroom-e11d-human-contrastive-results",
+  "run_id": "e11d-fixed-001",
+  "requested_fold_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "automatic_retries": 0,
+  "runtime_manifest_sha256": "7c36bef1d4c5943dd519529a7952c7d897d7414066566be06a094eb6a52eba47",
+  "teacher_calls": 0,
+  "synthetic_rows": 0
+}

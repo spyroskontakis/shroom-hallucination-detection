@@ -1,0 +1,49 @@
+{
+  "development_examples": 10,
+  "holdout_gate_frozen": true,
+  "human_annotation_sha256": "3f1f0a6d3eb9a75de69344f6e1df13b88745e464c98f94e1ce87997302669ed5",
+  "limitations": [
+    "Only 10 retrieval-development examples.",
+    "Only 3 candidate rows are strict relevant.",
+    "Q_SRC_TGT is reference-assisted.",
+    "Selection is preliminary and must not be interpreted as external validation."
+  ],
+  "phase": "Module 2 Phase B preliminary development selection",
+  "query_variant_note": {
+    "Q_SRC": "term plus bounded source context",
+    "Q_SRC_TGT": "reference-assisted; not independent external validation"
+  },
+  "random_state": 42,
+  "selected_configuration": {
+    "abstention_rate": 0.5,
+    "accepted_count": 5,
+    "all_abstain": false,
+    "configuration_id": "Q_SRC_TGT|bm25|score=q25|margin=none|agree=2|exact=0|dedup=1",
+    "evidence_coverage": 0.5,
+    "lenient_usable_coverage": 0.5,
+    "min_method_agreement": 2,
+    "pareto_frontier": true,
+    "query_variant": "Q_SRC_TGT",
+    "reference_assisted": true,
+    "reject_duplicates": true,
+    "relative_margin_threshold": null,
+    "relative_margin_threshold_rule": "none",
+    "require_exact_match": false,
+    "retrieval_method": "bm25",
+    "score_threshold": 42.555018684798945,
+    "score_threshold_rule": "q25",
+    "selected": true,
+    "strict_usable_coverage": 0.1,
+    "uncertain_accepted_count": 0,
+    "unsafe_count": 0,
+    "unsafe_evidence_rate_accepted": 0.0,
+    "unsafe_evidence_rate_all": 0.0
+  },
+  "selection_rule": {
+    "maximum_unsafe_evidence_rate_accepted": 0.1,
+    "minimum_accepted_count": 2,
+    "minimum_lenient_usable_coverage": 0.2,
+    "tie_break": "unsafe accepted asc, lenient usable desc, unsafe all asc, strict usable desc, evidence coverage asc, configuration_id asc"
+  },
+  "status": "PRELIMINARY_DEVELOPMENT_SELECTION"
+}

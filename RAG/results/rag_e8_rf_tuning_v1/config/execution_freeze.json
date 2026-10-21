@@ -1,0 +1,27 @@
+{
+  "additional_baseline_fits": 0,
+  "continued_partial_preparation": true,
+  "e8_fits_before_freeze": 0,
+  "expected_inner_fits": 90,
+  "expected_outer_fits": 5,
+  "files": {
+    "E8_PROTOCOL.md": "80e90226cd5cc323d6b649767c615f5d34861637a16af6872bfb8d4ae6f39feb",
+    "config/baseline_verification.json": "e8f26ef393c679b561b143efa119c7fcc1db397b2bd790f7fccda0713554414c",
+    "config/configurations.json": "32a04c03616186388640ff7e9b4e3cf70ad9e2af2401e38dec5a8ea83c3f255e",
+    "config/contracts.json": "96d393355c4dc4e7586b66d6c80b6512b1a1465fbbc9ce12edcd26852e776603",
+    "config/protocol_freeze.json": "c0d1385c9cc30de305056f06f672fb18197039948a3d4288e7bc004fca2bdf56",
+    "scripts/e8_common.py": "f4ba9ed4773c8cff631ee3938f972f5e7cc2d0f955419267dc67df9f78fbd52b",
+    "scripts/e8_data.py": "7f2540e66bc6497208a44f3790d64109c52a85ba95a83e9d49d3ca8e51a4206e",
+    "scripts/evaluate_e8.py": "d5bfb9941e93a77bd8f608593a3c7ebabb5d84d52e6742726d9a1f715c6a2d4e",
+    "scripts/nested_rf.py": "8c6b8ecde3bb44717e7a63cb4e7d93a09ec4fb7928b19a758198b67ffb4ec7ec",
+    "scripts/prepare_e8.py": "0b99a30c9243d2a2f64e54e0741dff2438c7284010a92c66a84a1701b74400c2",
+    "scripts/report_e8.py": "7699f5dbc0d383994028ae7ebbc5ba38bf828ca1befb2341f4049e5eba13675a",
+    "splits/inner_assignments.csv": "9c2a07fc236cf7677f46943f9cc9cfa916c4a5ce2fd64b4d278de1028aaa2a05",
+    "splits/nested_splits.json": "2fece5e1aeae2ba54333da167b368c0ed65fc01fa0b7d6f6b91d9b5cf4dca83c",
+    "splits/outer_assignments.csv": "db0ca9626baed45e39550728e855a90d23ce663a5484a3fb49033df01573256b",
+    "tests/test_e8.py": "d83898ec3941a8bbb475369a1ad11f8b5a844b80cdea88eaa371bfcae450b154"
+  },
+  "frozen_utc": "2026-09-10T07:18:39.333674+00:00",
+  "protected_count": 557,
+  "status": "READY_BEFORE_ANY_E8_FIT"
+}

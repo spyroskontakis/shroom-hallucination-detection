@@ -1,0 +1,510 @@
+{
+  "status": "PASS",
+  "stage": "E11-B_fold_specific_pseudo_labels",
+  "protocol_sha256": "c0645ef01f885ef22b7abaf5634f8a62d66a3e7174cb0d07aa2a47fba425a5ac",
+  "raw_run_id": "e11-full-001",
+  "raw_score_integrity": {
+    "status": "PASS",
+    "scope": "full",
+    "detectors": {
+      "factcg": {
+        "detector": "factcg",
+        "stored": 28649,
+        "requested": 28649,
+        "missing": 0,
+        "status": "PASS"
+      },
+      "minicheck": {
+        "detector": "minicheck",
+        "stored": 28649,
+        "requested": 28649,
+        "missing": 0,
+        "status": "PASS"
+      },
+      "hhem": {
+        "detector": "hhem",
+        "stored": 28649,
+        "requested": 28649,
+        "missing": 0,
+        "status": "PASS"
+      },
+      "nli": {
+        "detector": "nli",
+        "stored": 28649,
+        "requested": 28649,
+        "missing": 0,
+        "status": "PASS"
+      },
+      "human_minicheck": {
+        "detector": "minicheck",
+        "stored": 561,
+        "requested": 561,
+        "missing": 0,
+        "status": "PASS"
+      }
+    },
+    "teacher_or_pseudo_labels_generated": false
+  },
+  "human_feature_coverage": 561,
+  "unlabeled_feature_coverage": 28649,
+  "feature_order": [
+    "factcg_support_probability",
+    "minicheck_support_probability",
+    "hhem_ref_hyp_consistency",
+    "nli_ref_hyp_entailment",
+    "nli_ref_hyp_neutral",
+    "nli_ref_hyp_contradiction",
+    "task_DM",
+    "task_MT",
+    "task_PG"
+  ],
+  "teacher_fit_count": 5,
+  "thresholds": {
+    "hallucination_min_inclusive": 0.95,
+    "not_hallucination_max_inclusive": 0.05
+  },
+  "folds": {
+    "1": {
+      "heldout_rows": 113,
+      "human_training_rows": 445,
+      "human_class_counts": {
+        "0": 246,
+        "1": 199
+      },
+      "eligible_unlabeled": 28575,
+      "removed_by_leakage_purge": 74,
+      "per_task": {
+        "DM": {
+          "eligible": 9962,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "MT": {
+          "eligible": 8615,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "PG": {
+          "eligible": 9998,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        }
+      },
+      "accepted_before_balancing": 0,
+      "retained_after_balancing": 0,
+      "uncertain_discarded": 28575,
+      "accepted_removed_by_balancing": 0,
+      "retained_p_H_H": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "retained_p_H_NH": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "teacher_converged": true,
+      "teacher_n_iter": [
+        19
+      ],
+      "teacher_warning_types": [
+        "FutureWarning"
+      ]
+    },
+    "2": {
+      "heldout_rows": 112,
+      "human_training_rows": 448,
+      "human_class_counts": {
+        "0": 246,
+        "1": 202
+      },
+      "eligible_unlabeled": 28623,
+      "removed_by_leakage_purge": 26,
+      "per_task": {
+        "DM": {
+          "eligible": 9988,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "MT": {
+          "eligible": 8635,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "PG": {
+          "eligible": 10000,
+          "accepted_H": 0,
+          "accepted_NH": 50,
+          "retained_H": 0,
+          "retained_NH": 0
+        }
+      },
+      "accepted_before_balancing": 50,
+      "retained_after_balancing": 0,
+      "uncertain_discarded": 28573,
+      "accepted_removed_by_balancing": 50,
+      "retained_p_H_H": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "retained_p_H_NH": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "teacher_converged": true,
+      "teacher_n_iter": [
+        19
+      ],
+      "teacher_warning_types": [
+        "FutureWarning"
+      ]
+    },
+    "3": {
+      "heldout_rows": 112,
+      "human_training_rows": 449,
+      "human_class_counts": {
+        "0": 245,
+        "1": 204
+      },
+      "eligible_unlabeled": 28627,
+      "removed_by_leakage_purge": 22,
+      "per_task": {
+        "DM": {
+          "eligible": 9992,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "MT": {
+          "eligible": 8635,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "PG": {
+          "eligible": 10000,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        }
+      },
+      "accepted_before_balancing": 0,
+      "retained_after_balancing": 0,
+      "uncertain_discarded": 28627,
+      "accepted_removed_by_balancing": 0,
+      "retained_p_H_H": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "retained_p_H_NH": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "teacher_converged": true,
+      "teacher_n_iter": [
+        19
+      ],
+      "teacher_warning_types": [
+        "FutureWarning"
+      ]
+    },
+    "4": {
+      "heldout_rows": 112,
+      "human_training_rows": 448,
+      "human_class_counts": {
+        "0": 244,
+        "1": 204
+      },
+      "eligible_unlabeled": 28611,
+      "removed_by_leakage_purge": 38,
+      "per_task": {
+        "DM": {
+          "eligible": 9988,
+          "accepted_H": 0,
+          "accepted_NH": 2,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "MT": {
+          "eligible": 8624,
+          "accepted_H": 11,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "PG": {
+          "eligible": 9999,
+          "accepted_H": 0,
+          "accepted_NH": 31,
+          "retained_H": 0,
+          "retained_NH": 0
+        }
+      },
+      "accepted_before_balancing": 44,
+      "retained_after_balancing": 0,
+      "uncertain_discarded": 28567,
+      "accepted_removed_by_balancing": 44,
+      "retained_p_H_H": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "retained_p_H_NH": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "teacher_converged": true,
+      "teacher_n_iter": [
+        18
+      ],
+      "teacher_warning_types": [
+        "FutureWarning"
+      ]
+    },
+    "5": {
+      "heldout_rows": 112,
+      "human_training_rows": 445,
+      "human_class_counts": {
+        "0": 245,
+        "1": 200
+      },
+      "eligible_unlabeled": 28615,
+      "removed_by_leakage_purge": 34,
+      "per_task": {
+        "DM": {
+          "eligible": 9992,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "MT": {
+          "eligible": 8624,
+          "accepted_H": 41,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        },
+        "PG": {
+          "eligible": 9999,
+          "accepted_H": 0,
+          "accepted_NH": 0,
+          "retained_H": 0,
+          "retained_NH": 0
+        }
+      },
+      "accepted_before_balancing": 41,
+      "retained_after_balancing": 0,
+      "uncertain_discarded": 28574,
+      "accepted_removed_by_balancing": 41,
+      "retained_p_H_H": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "retained_p_H_NH": {
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "teacher_converged": true,
+      "teacher_n_iter": [
+        20
+      ],
+      "teacher_warning_types": [
+        "FutureWarning"
+      ]
+    }
+  },
+  "cross_fold_diagnostics": {
+    "sample_keys": 28649,
+    "high_confidence_conflict_keys": 0,
+    "accepted_H_fold_assignments": 52,
+    "accepted_NH_fold_assignments": 83,
+    "uncertain_fold_assignments": 142916,
+    "eligible_fold_count_distribution": {
+      "4": 194,
+      "5": 28455
+    }
+  },
+  "source_sha256": {
+    "frozen_protocol_file": "02bf948ec4a833588fe4f01a9bd745f9a409124538e704a34dffe53cf3348a7c",
+    "scoring_manifest": "e2ab7d71d3596700e4a9b2f0e5a59560cb2d4faee2102749e8e0e3d4f37fc293",
+    "canonical_human": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "locked_folds": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "human_teacher_inputs": "138e48986c611f911928792be9dba8f353d6bd724f8c23f1663ce6393ffafd14",
+    "human_factcg_e10": "c89ab73a68238f42820a85faf06d9e013e128bdb8cf5d26ba24faa9078105716",
+    "human_nli_hhem_e6_v3": "1e6386fbd0b89a3a295828259ec8fea9b5b3fc03465d65f82e546687c32e7229",
+    "unlabeled_master": "a2fc726c44e4f245052fb0b7901a41758c584feea2af10e5c74ec20aa6ef9a2d",
+    "raw_complete": "1299d531f58c486508c9d9229322dc833f0d4ff97e0a4c9927c0bcc5d869ecfb",
+    "raw_factcg": "edb8073f0b66034f75f0065e3e6a4b2dad88f20a869da688acd8758373c434c3",
+    "raw_minicheck": "75fd64b9c5658156148481b21531b326cbc35f130a69301bfaf5d610fe875311",
+    "raw_hhem": "e2b9de6eb79b9f9d41957646fed09555a1d8ea1a6de2e3dcbe6454e69bdd17e5",
+    "raw_nli": "025f17829049586ef708e59ea65ee46652310eedec6e227e256c4e9e518adf9e",
+    "raw_human_minicheck": "3a16310bad1c3874955e3aa66e2859601855e4e953fc1e9c6d559cfd9ae26d9b"
+  },
+  "fold_artifacts": {
+    "1": {
+      "teacher_parameters.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_1\\teacher_parameters.json",
+        "sha256": "0221859ad8afc8c07c5c1869f3cac5d841efc8a384add9fe55cf3347aecf9bf3",
+        "bytes": 1079
+      },
+      "teacher_metadata.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_1\\teacher_metadata.json",
+        "sha256": "0edf149f1e2ff94b65e4d3d6ae458e5f37367ef1d6e30a68c009da3020aff475",
+        "bytes": 1282
+      },
+      "eligible_unlabeled_manifest.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_1\\eligible_unlabeled_manifest.jsonl",
+        "sha256": "ebe04d67d8fea8042f5831978bf7d578e8825f932a572e32b750a67699bbcca5",
+        "bytes": 3028950
+      },
+      "eligible_teacher_scores.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_1\\eligible_teacher_scores.jsonl",
+        "sha256": "9ddd8f1fc41baf6656aff127b861aac4e611ce6f9ddb2339bc75233b381f886b",
+        "bytes": 4698417
+      },
+      "retained_pseudo_labels.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_1\\retained_pseudo_labels.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "2": {
+      "teacher_parameters.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_2\\teacher_parameters.json",
+        "sha256": "98ed6f589731f976fb7abdad8a146915c4cdbecd9439a75de20ea3d8641d9ce3",
+        "bytes": 1083
+      },
+      "teacher_metadata.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_2\\teacher_metadata.json",
+        "sha256": "89660543d811db5a7a3063c8c2f950c9d7a7504c38e1c537455d0d1c152a3993",
+        "bytes": 1286
+      },
+      "eligible_unlabeled_manifest.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_2\\eligible_unlabeled_manifest.jsonl",
+        "sha256": "7aa309b0970a6cc970cd35558545c83595e8515d7dfb004f16519257d97450dc",
+        "bytes": 3034038
+      },
+      "eligible_teacher_scores.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_2\\eligible_teacher_scores.jsonl",
+        "sha256": "a39e5944e3458556d2390aed399bb545b9b2331ecce9ff7baedb1e4bc449241d",
+        "bytes": 4706893
+      },
+      "retained_pseudo_labels.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_2\\retained_pseudo_labels.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "3": {
+      "teacher_parameters.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_3\\teacher_parameters.json",
+        "sha256": "2f384751d13f6a17552c0e3d56f9a0802b82846e82e615d1c6387662cea4ffdc",
+        "bytes": 1079
+      },
+      "teacher_metadata.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_3\\teacher_metadata.json",
+        "sha256": "8550459eaeb8397787c8e976c2348b8c88087927696dee5296868d1aa43eb325",
+        "bytes": 1283
+      },
+      "eligible_unlabeled_manifest.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_3\\eligible_unlabeled_manifest.jsonl",
+        "sha256": "91f2c640b55d1b570814816844ab39acb375d343b974fba4982df268c4015b79",
+        "bytes": 3034462
+      },
+      "eligible_teacher_scores.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_3\\eligible_teacher_scores.jsonl",
+        "sha256": "1c851a54258a064d58815ba229cf9d5de15ac5392a94c84d2f48580c8fbd0437",
+        "bytes": 4707249
+      },
+      "retained_pseudo_labels.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_3\\retained_pseudo_labels.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "4": {
+      "teacher_parameters.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_4\\teacher_parameters.json",
+        "sha256": "cb72ff3c1dcf9baf2305df650238abac5c1b8249850b236bb33bd54bf9ab6f64",
+        "bytes": 1078
+      },
+      "teacher_metadata.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_4\\teacher_metadata.json",
+        "sha256": "66fd5c96983e3992a84fc2cf14de41fba3193d80ab72dc44da0305e75024dcad",
+        "bytes": 1286
+      },
+      "eligible_unlabeled_manifest.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_4\\eligible_unlabeled_manifest.jsonl",
+        "sha256": "42da284ebbc27d9fda85ac314bea57dc645cdaa739cc96d2535e59d7adc96791",
+        "bytes": 3032766
+      },
+      "eligible_teacher_scores.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_4\\eligible_teacher_scores.jsonl",
+        "sha256": "95a1ab1310ff9077d01cd06ea771f58fc07ebdf5f549d04a4e892570fd949c28",
+        "bytes": 4704945
+      },
+      "retained_pseudo_labels.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_4\\retained_pseudo_labels.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "5": {
+      "teacher_parameters.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_5\\teacher_parameters.json",
+        "sha256": "366524e6ae71bafb4c744159d91c33bdaabead22e755d727a8128d5cc5e4fdbf",
+        "bytes": 1080
+      },
+      "teacher_metadata.json": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_5\\teacher_metadata.json",
+        "sha256": "bc6ee777efe40f8bc92f9d145c4c7d710c601f5aee6fb0e141da12f91b70dc75",
+        "bytes": 1285
+      },
+      "eligible_unlabeled_manifest.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_5\\eligible_unlabeled_manifest.jsonl",
+        "sha256": "8fc8a8590810a489ddcf272cbaad79f37544db656187bc8031434e5f7b5fb651",
+        "bytes": 3033190
+      },
+      "eligible_teacher_scores.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_5\\eligible_teacher_scores.jsonl",
+        "sha256": "1f84c9edcbf25a5fd6f4c004e5f1f45f2120eeebbded61c41c0b37ceb9e37160",
+        "bytes": 4704468
+      },
+      "retained_pseudo_labels.jsonl": {
+        "path": "RAG\\results\\phase3_e11_task_adaptation\\teacher_stage\\fold_5\\retained_pseudo_labels.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  },
+  "software": {
+    "python": "3.12.10",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.8.0"
+  },
+  "student_trained": false,
+  "official_test_accessed": false,
+  "gpu_inference_run": false
+}

@@ -1,0 +1,37 @@
+{
+  "finished_utc": "2026-09-09T16:25:33.302730+00:00",
+  "operational_network_attempts": 0,
+  "operational_violations": [
+    {
+      "attempted_absolute_path": "\\\\.\\NUL\\",
+      "event": "open",
+      "flags": 130,
+      "mode": null,
+      "operation": "open",
+      "reason": "E7 write outside output directory forbidden",
+      "utc": "2026-09-09T16:25:30.049722+00:00"
+    },
+    {
+      "attempted_absolute_path": "\\\\.\\NUL\\",
+      "event": "open",
+      "flags": 130,
+      "mode": null,
+      "operation": "open",
+      "reason": "E7 write outside output directory forbidden",
+      "utc": "2026-09-09T16:25:30.051733+00:00"
+    },
+    {
+      "attempted_absolute_path": "\\\\.\\NUL\\",
+      "event": "open",
+      "flags": 130,
+      "mode": null,
+      "operation": "open",
+      "reason": "E7 write outside output directory forbidden",
+      "utc": "2026-09-09T16:25:30.054733+00:00"
+    }
+  ],
+  "phase": "import_diagnostic",
+  "repository_reads": [],
+  "scope": "Python audit hook; explicitly allowlisted files and libraries; not OS sandbox",
+  "synthetic_probes": []
+}

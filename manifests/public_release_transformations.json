@@ -1,0 +1,117 @@
+[
+  {
+    "path": "RAG/results/rag_e6_v4/compatibility_analysis/minimal_current.json",
+    "original_sha256": "5792cbea9444ca124671a43ee8aeb8732fd724f789548bc599a4a8547c901b89",
+    "new_sha256": "29d91c9141af73dfaf6a667c1e59deb536834efe0ea2ca59b00ce50c42dcf2dd",
+    "removed": [
+      {
+        "json_pointer": "/sources/sent_encode/source",
+        "utf8_bytes": 2205,
+        "sha256": "dd59a162f062c599587e153fccfac6ffdaf69e4fbcc5e4840dfa2207868d160b",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/utils.py"
+      },
+      {
+        "json_pointer": "/sources/get_tokenizer/source",
+        "utf8_bytes": 457,
+        "sha256": "037b8af02d2ecf2f07289dae6ca16db6107cddc240f8902e4e1c98bf4ecae776",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/utils.py"
+      },
+      {
+        "json_pointer": "/sources/tokenizer_class/source",
+        "utf8_bytes": 6740,
+        "sha256": "53e09e8267ce5317bd35b36fbedf19e56c32a9df68886b4e5feb1a5f52e04350",
+        "upstream_source": "https://github.com/huggingface/transformers/blob/v5.5.4/src/transformers/models/deberta/tokenization_deberta.py"
+      },
+      {
+        "json_pointer": "/sources/encode/source",
+        "utf8_bytes": 2419,
+        "sha256": "d6d59e5876c1b923829d7edd2f1b73f2eff8753c4625023491ab20b2a26cccbe",
+        "upstream_source": "https://github.com/huggingface/transformers/blob/v5.5.4/src/transformers/tokenization_utils_base.py"
+      },
+      {
+        "json_pointer": "/sources/scorer_init/source",
+        "utf8_bytes": 3725,
+        "sha256": "e56984220cb6b1cae179723a68026813e805e3d3c3db6e2fa3ad9c86162c548d",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/scorer.py"
+      },
+      {
+        "json_pointer": "/sources/scorer_score/source",
+        "utf8_bytes": 2594,
+        "sha256": "c234b7c4b2e13acd25a58adac364a2902de81280dfc1ccab6586ae2b17cfb7e7",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/scorer.py"
+      },
+      {
+        "json_pointer": "/traceback",
+        "change": "Remove code/caret excerpts; retain frame locations and exception text."
+      },
+      {
+        "json_pointer": "/frames/0/source",
+        "sha256": "7fbe8897cbbee55325a70b43bdd6959d969b90dac1a19cfaed4a0c433610ca05",
+        "utf8_bytes": 24
+      },
+      {
+        "json_pointer": "/frames/1/source",
+        "sha256": "689317197342c17ff9dab799209681c87c60b7e65a58143d4340cc24441ef770",
+        "utf8_bytes": 24
+      },
+      {
+        "json_pointer": "/frames/2/source",
+        "sha256": "e86c7896458b0bab83cd2af4edaffed1ee1e11ca08cf783f285318bbaecfc9de",
+        "utf8_bytes": 35
+      },
+      {
+        "json_pointer": "/frames/3/source",
+        "sha256": "f835f45eedfb0d428de501b949f79446796c3bccba7d2b7bc314464c359d90e6",
+        "utf8_bytes": 32
+      },
+      {
+        "json_pointer": "/frames/4/source",
+        "sha256": "097a6709908ce63b84e11b05012d85ac9f4618f2f93cb0446555345ca193597f",
+        "utf8_bytes": 43
+      }
+    ]
+  },
+  {
+    "path": "RAG/results/rag_e6_v4/compatibility_analysis/minimal_pinned.json",
+    "original_sha256": "57c973774bf64d5ad57028cf7e2359b9d39947129416be6ce22fbf558aaec16e",
+    "new_sha256": "9227cc8b7b0896965d39329f60189cc284460d52eb62d63365b6438fd9bc467e",
+    "removed": [
+      {
+        "json_pointer": "/sources/sent_encode/source",
+        "utf8_bytes": 2205,
+        "sha256": "dd59a162f062c599587e153fccfac6ffdaf69e4fbcc5e4840dfa2207868d160b",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/utils.py"
+      },
+      {
+        "json_pointer": "/sources/get_tokenizer/source",
+        "utf8_bytes": 457,
+        "sha256": "037b8af02d2ecf2f07289dae6ca16db6107cddc240f8902e4e1c98bf4ecae776",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/utils.py"
+      },
+      {
+        "json_pointer": "/sources/tokenizer_class/source",
+        "utf8_bytes": 15392,
+        "sha256": "07d4fb5c9eae1861a91deee8ead1bebd420fe377e6c9296be7aee251b4eba661",
+        "upstream_source": "https://github.com/huggingface/transformers/blob/v4.30.2/src/transformers/models/deberta/tokenization_deberta.py"
+      },
+      {
+        "json_pointer": "/sources/encode/source",
+        "utf8_bytes": 2054,
+        "sha256": "2650853d3d5774af4dd5f8160718a4185e03c7edc4020a3d7bc4ed3f3e07baee",
+        "upstream_source": "https://github.com/huggingface/transformers/blob/v4.30.2/src/transformers/tokenization_utils_base.py"
+      },
+      {
+        "json_pointer": "/sources/scorer_init/source",
+        "utf8_bytes": 3725,
+        "sha256": "e56984220cb6b1cae179723a68026813e805e3d3c3db6e2fa3ad9c86162c548d",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/scorer.py"
+      },
+      {
+        "json_pointer": "/sources/scorer_score/source",
+        "utf8_bytes": 2594,
+        "sha256": "c234b7c4b2e13acd25a58adac364a2902de81280dfc1ccab6586ae2b17cfb7e7",
+        "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/scorer.py"
+      }
+    ]
+  }
+]

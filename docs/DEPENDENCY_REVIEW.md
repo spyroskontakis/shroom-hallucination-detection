@@ -1,0 +1,8 @@
+# Static dependency review
+Original experiment and solution relative layouts are retained. No project module was imported during preparation.
+Dynamic imports, Path(__file__) ancestry and frozen source hashes remain significant; source snapshots under historical_versions are documentary and not standalone runnable environments.
+The E10 parser adds a local vendor directory to sys.path. Its local copies without a verified accompanying redistribution notice are withheld. The installed environment must provide beautifulsoup4 4.14.3 and soupsieve 2.8.1; the separate parser requirements record these observed versions. No packages were installed.
+The recovered thesis_writing/chapter9_phase1/verify_sources.py independently recomputes saved metrics and source hashes. It is retained at its original path and requires the private draft, OOF rows and complete canonical manifests supplied separately. It was not run.
+Canonical source/evaluation scripts require full row-level input schemas, not the public ID/fold projection. Sanitized frozen configuration documents retain the original scientific settings but may have different hashes; reproducibility must use the documented original-artifact checks.
+Historical environment_freeze files record observed package origins; sanitized external-artifact aliases are not installable URLs. Use the experiment-specific requirements/lock files and environment documentation.
+An existing syntax error at line 138 of the historical E8 report_e8.py remains unchanged; its hash and limitation are recorded. No automatic source repair was authorized by this phase.

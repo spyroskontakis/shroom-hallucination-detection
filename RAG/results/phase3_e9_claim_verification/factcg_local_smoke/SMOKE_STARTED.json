@@ -1,0 +1,11 @@
+{
+  "model": "yaxili96/FactCG-DeBERTa-v3-Large",
+  "revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80",
+  "selected_per_task": 4,
+  "device": "cpu",
+  "precision": "float32",
+  "batch_size": 1,
+  "orientation_minimum_gap": 0.25,
+  "selection": "First four canonical IDs sorted independently within each task",
+  "recommendation_rule": "LOCAL_FULL_RUN if projected warm-cache total <=1800 seconds and minimum available RAM >=1 GiB; otherwise GPU_FULL_RUN"
+}

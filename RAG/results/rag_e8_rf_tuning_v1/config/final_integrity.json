@@ -1,0 +1,17 @@
+{
+  "baseline_verification_fits": 0,
+  "contracts_passed": 10,
+  "fits_completed": 95,
+  "fits_started": 95,
+  "inner_fits": 90,
+  "inner_metrics_recomputed": 30,
+  "operational_guard_violations": 0,
+  "outer_fits": 5,
+  "outer_rows": 561,
+  "paired_statistics_recomputed": true,
+  "protected_files_unchanged": 557,
+  "selected_configurations_verified": 5,
+  "status": "PASS",
+  "train_target_prediction_array_hashes_verified": 285,
+  "verified_utc": "2026-09-10T07:21:46.903712+00:00"
+}

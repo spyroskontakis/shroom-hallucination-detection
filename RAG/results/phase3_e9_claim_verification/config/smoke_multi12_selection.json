@@ -1,0 +1,41 @@
+{
+  "purpose": "Twelve-sample label-blind multi-proposition smoke only",
+  "selection": "Four highest-scoring hypotheses per task within canonical development_model_agnostic; ties by hypothesis text, then canonical ID",
+  "score": "word_count + 12*conjunctions + 20*sentence_boundaries + 16*semicolons + 8*relative_markers",
+  "conjunctions": [
+    "and",
+    "but",
+    "or",
+    "yet",
+    "while",
+    "whereas",
+    "although",
+    "because"
+  ],
+  "relative_markers": [
+    "which",
+    "who",
+    "that",
+    "whose",
+    "where"
+  ],
+  "sample_data_columns_read": [
+    "canonical_id",
+    "source_split",
+    "task",
+    "hyp"
+  ],
+  "model_input_fields": [
+    "hyp",
+    "task"
+  ],
+  "maximum_attempts_per_sample": 3,
+  "sample_count": 12,
+  "full_run_authorized": false,
+  "frozen_sha256": {
+    "scripts/decomposer.py": "a78bde2644eff93db90230e671b90d97a93b476ded589f920bbd69b469846dc9",
+    "E9_PROTOCOL_AMENDMENT_01.md": "c49625d4e6ff8f57db8da15032251b9771cfbe3006cedaf88c5942ea755f0c8b",
+    "config/decomposition_prompt.json": "c79038d6c40b09a8e10b9aaf59e74d1cf9cb51454b42f302d8435e05f70e38b5",
+    "config/run_config.json": "daeb1c21fbf47bcb818a85c497e01e27ff4d7efe6a05f058243f7835dd904134"
+  }
+}

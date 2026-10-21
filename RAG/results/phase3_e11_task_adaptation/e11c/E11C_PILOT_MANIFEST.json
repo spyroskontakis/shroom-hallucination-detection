@@ -1,0 +1,14 @@
+{
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "selection_manifest_sha256": "a601b685d4ce1eed0d458daeaf58996f287a67715e588fec239ce77fb126300d",
+  "candidate_list_sha256": "d1d7e18fc9a536b4a7996fde03a1502327bdded9d96d6d8fff61b131021a05db",
+  "request_files": {
+    "private\\pilot_300\\round_1\\requests.jsonl": "54604c07739cb9b724782deac99440e3d0c4f94385237c318d7dd2433ab23702"
+  },
+  "raw_response_files": {
+    "private\\pilot_300\\round_1\\batch_001\\output_file.jsonl": "de40b8e9aed86ddb50ef70df8b6679ca32142da278dcfca3623607fd985a0e23"
+  },
+  "parsed_labels_sha256": "f814498298eefa7c907f5a5858abde810f3afc9449c407076bb486b5f54a0217",
+  "audit_sha256": "19faf0dcfa5ea89acd28477aab1c956762105a20fb93729fd0bc1a5baced7cbe",
+  "reuse": "Import this validated pilot ledger into eventual full-pool results; exclude terminal semantic answers from future submissions."
+}

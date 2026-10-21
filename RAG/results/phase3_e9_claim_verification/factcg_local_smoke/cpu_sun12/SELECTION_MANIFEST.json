@@ -1,0 +1,67 @@
+{
+  "input_sha256": "10ecdbc5f25bd4b9c7c7d4c2d131194647a86c556591c75418dbcb436ba1753d",
+  "selected_input_digest": "938ed6320509f29d5ced576768323e4b929f3b22e494d84f39f3aa678138a9e5",
+  "selection": "First four canonical IDs sorted independently within each task; no labels read",
+  "samples": [
+    {
+      "canonical_id": "HDEV_0001_e3a6ae1bd526",
+      "task": "DM",
+      "input_row_sha256": "cdaccd878e9a24e5fcb4adaa3c7fe5ef86165ed865875f132fda79ee6222c7da"
+    },
+    {
+      "canonical_id": "HDEV_0002_3d51bbb57230",
+      "task": "DM",
+      "input_row_sha256": "6ee0f9195b9ff3f97cf7d704354b8406a4fc7a55269f4647e6d7eaecd895a795"
+    },
+    {
+      "canonical_id": "HDEV_0003_530e1aebd9d8",
+      "task": "DM",
+      "input_row_sha256": "54f3f75563e7615b50751d4b031e58102784f73fe557571dd8193f749eb48787"
+    },
+    {
+      "canonical_id": "HDEV_0004_e249137cb532",
+      "task": "DM",
+      "input_row_sha256": "f8e51a5bc4bfb80976d931fa9c48796aaf93f9f0e329dc670afbeccbd07d57d1"
+    },
+    {
+      "canonical_id": "HDEV_0313_309fe2c60a90",
+      "task": "MT",
+      "input_row_sha256": "074c0bb7e972882861e3d6687605b0c1d44de836c5b1ddf0bcd9c682ff6e648b"
+    },
+    {
+      "canonical_id": "HDEV_0314_cc66f0011ead",
+      "task": "MT",
+      "input_row_sha256": "9dc11714b111526a2ba7020f4dfd2f700950a0f40752e6fc1c4f7ce2919673e1"
+    },
+    {
+      "canonical_id": "HDEV_0315_a999432d4765",
+      "task": "MT",
+      "input_row_sha256": "3a0c3216712f0fc44eaf7a4650e573eb7ca498eec27e0a46f2a418a1f85ef1e7"
+    },
+    {
+      "canonical_id": "HDEV_0316_b50d3005456c",
+      "task": "MT",
+      "input_row_sha256": "35cdc71deeed8c9af68470ed91536a2b758d82b43f6680e2788d6d5128c390ab"
+    },
+    {
+      "canonical_id": "HDEV_0188_10b0356acc52",
+      "task": "PG",
+      "input_row_sha256": "054a4df470df8d36f0657fa1ad57637227c226b3736be16b29c2f51691a99b03"
+    },
+    {
+      "canonical_id": "HDEV_0189_059ce4f91dea",
+      "task": "PG",
+      "input_row_sha256": "6a82470d9f4dbcbf1ffbbce71a93c44fb1090e8a71d78dedba2018b5b312f245"
+    },
+    {
+      "canonical_id": "HDEV_0190_5d6ecaa6eba3",
+      "task": "PG",
+      "input_row_sha256": "d4227f0af548fd1fd71fd9af8e2b54adb2d3c5e19a4077650ef51aa9482b2151"
+    },
+    {
+      "canonical_id": "HDEV_0191_75d66ca83425",
+      "task": "PG",
+      "input_row_sha256": "c5deb760a70720efad3b5ae06fe5253ee457b601e984849cb0101b3c1134ed98"
+    }
+  ]
+}

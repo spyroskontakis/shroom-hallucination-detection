@@ -1,0 +1,213 @@
+{
+  "exact_full_example_overlap": 0,
+  "source_pair_overlap_training_rows": 14,
+  "source_pair_overlap_test_rows": 14,
+  "source_pair_overlap_tasks": {
+    "MT": 14
+  },
+  "groups": [
+    {
+      "canonical_id": "HDEV_0318_b7b68e48521d",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 317,
+      "task": "MT",
+      "source_pair_key": "188eba1da5df9fb87df6f6c54519b1ccbe2f4d4408496d15362cf17071311374",
+      "test_ids": [
+        175
+      ],
+      "test_indices": [
+        96
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0333_697ef5a72a77",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 332,
+      "task": "MT",
+      "source_pair_key": "e48b4e5cf096b393314ce96fe9cf9bda3ebb37e285bbb4cb6e00491c567dafc3",
+      "test_ids": [
+        1370
+      ],
+      "test_indices": [
+        702
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0363_34fdff732038",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 363,
+      "task": "MT",
+      "source_pair_key": "d90556fcd11c20ae9baeb0857666093bc3a8feacb7d5dfa2c9c76441e992efa6",
+      "test_ids": [
+        505
+      ],
+      "test_indices": [
+        267
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0366_20aed6bd704a",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 366,
+      "task": "MT",
+      "source_pair_key": "7b947e45c74ca831dfe968868ff5e1c9f75f2100f0cdd0dcb6451bfe12775a77",
+      "test_ids": [
+        383
+      ],
+      "test_indices": [
+        207
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0369_214ad3377267",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 369,
+      "task": "MT",
+      "source_pair_key": "ffa45e20bfa51c4621e9a2bfc81bfe762be17a9e9f94637489d6212b1d47f9ed",
+      "test_ids": [
+        1364
+      ],
+      "test_indices": [
+        699
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0378_706d26208e3b",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 379,
+      "task": "MT",
+      "source_pair_key": "d60d0a051a3954c3b0f1628131245258ff11d9df0ec80c11663663192e19d32f",
+      "test_ids": [
+        2565
+      ],
+      "test_indices": [
+        1278
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0384_2097b26cb26b",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 385,
+      "task": "MT",
+      "source_pair_key": "65b4451ade946fe55d4bbd1daa2717a67aaa9179aa2863400a8aeb6629855ad8",
+      "test_ids": [
+        2878
+      ],
+      "test_indices": [
+        1445
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0396_029188d4e168",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 397,
+      "task": "MT",
+      "source_pair_key": "e4c3ee561a49cceb84b244db1b896f60ab82bb2c48d3aa7c93b0f5950caf4c8a",
+      "test_ids": [
+        92
+      ],
+      "test_indices": [
+        50
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0413_ca10023a883f",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 414,
+      "task": "MT",
+      "source_pair_key": "91761bdc4976c1ad88767f3dd787206c56e560f89a4d657cd1532043b64748cc",
+      "test_ids": [
+        513
+      ],
+      "test_indices": [
+        273
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0416_cee0dc4d7a20",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 417,
+      "task": "MT",
+      "source_pair_key": "983406dfad9e2d463aec161789c1ada5fda18b548b1ea7840a4554ba701cb1a4",
+      "test_ids": [
+        1864
+      ],
+      "test_indices": [
+        962
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0441_ed51c218d54f",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 443,
+      "task": "MT",
+      "source_pair_key": "eb018df764e87048c602ff3f9c98dcd666195e2b43023b350a04b7789bcb9ab1",
+      "test_ids": [
+        1171
+      ],
+      "test_indices": [
+        604
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0463_f689e69a1247",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 467,
+      "task": "MT",
+      "source_pair_key": "354c2e1c719bbf59aa995ca03047adcabef9ee65bc79dd34df7be85b4f4a68b4",
+      "test_ids": [
+        836
+      ],
+      "test_indices": [
+        438
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0468_92dac8e11b38",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 472,
+      "task": "MT",
+      "source_pair_key": "503e9a6a156d45f3b3cf7781f0936dc5b9e6b1b87e5642253176fde501e2a8f9",
+      "test_ids": [
+        1454
+      ],
+      "test_indices": [
+        738
+      ],
+      "same_hypothesis": false
+    },
+    {
+      "canonical_id": "HDEV_0473_58171c0672e3",
+      "source_split": "development_model_agnostic",
+      "original_row_index": 477,
+      "task": "MT",
+      "source_pair_key": "5ff03b8cf26adfe3b7997de08ad046d7fe7fd17f63d07eead931f1f7d2910df6",
+      "test_ids": [
+        840
+      ],
+      "test_indices": [
+        439
+      ],
+      "same_hypothesis": false
+    }
+  ],
+  "test_DM_rows": 563,
+  "term_extraction_failures": 0,
+  "test_DM_distinct_terms": 559,
+  "frozen_lexical_acquisition_terms": 206,
+  "test_DM_rows_with_acquisition_record": 2,
+  "test_DM_rows_without_acquisition_record": 561,
+  "test_DM_terms_without_acquisition_record": 557
+}

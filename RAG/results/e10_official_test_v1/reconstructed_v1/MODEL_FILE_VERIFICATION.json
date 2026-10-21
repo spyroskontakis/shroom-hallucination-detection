@@ -1,0 +1,67 @@
+{
+  "MPNet_NLI1_files": [
+    {
+      "path": "external-artifacts/local-40caca502398/config.json",
+      "sha256": "a37f83ada23e7887be6b88f4998927dbeac0038af301553c7cd5461413bf1a56"
+    },
+    {
+      "path": "external-artifacts/local-232cd9e0872a/config.json",
+      "sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0"
+    },
+    {
+      "path": "external-artifacts/local-13283e6ccb33/config_sentence_transformers.json",
+      "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3"
+    },
+    {
+      "path": "external-artifacts/local-8634644369dd/model.safetensors",
+      "sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658"
+    },
+    {
+      "path": "external-artifacts/local-ef7146a944d9/modules.json",
+      "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+    },
+    {
+      "path": "external-artifacts/local-72dfbd81aa93/sentence_bert_config.json",
+      "sha256": "cabfacded9272091a06ff595a46ef027a76ddf4ac9e77d0fcf11c605748f1667"
+    },
+    {
+      "path": "external-artifacts/local-8ba5b724e7b6/special_tokens_map.json",
+      "sha256": "9ef40e9c160511bf3f46ceb71f1471dafa1e9473d5120bb816c36b2efa75f8ba"
+    },
+    {
+      "path": "external-artifacts/local-c6f6dc0100e4/tokenizer.json",
+      "sha256": "b8be2c30ba5dd723a6d5ee26d013da103d5408d92ddcb23747622f9e48f1d842"
+    },
+    {
+      "path": "external-artifacts/local-17a0d2e93f18/tokenizer_config.json",
+      "sha256": "67f2ff7e223518e729869bb3a70f0caf8368fe549383fc11cfe2dfb42fffc268"
+    },
+    {
+      "path": "external-artifacts/local-9cfbec293a32/vocab.txt",
+      "sha256": "dbd90cb94e2247bd4d4ccaecbf616d2290e66691d7d5e5bb81f063c2d0649ada"
+    },
+    {
+      "path": "external-artifacts/local-ba247bf9f1e2/config.json",
+      "sha256": "d9f6829f2e13bdb4743f97bd4c0866412b91129bfa0195cdd0414d836cc6f130"
+    },
+    {
+      "path": "external-artifacts/local-8b4aba2fb897/merges.txt",
+      "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+    },
+    {
+      "path": "external-artifacts/local-0614da5abc2f/pytorch_model.bin",
+      "sha256": "3abd875c9e6dd137a689a1fa1a433f0c2d6bc7462afc42a0095878f88f23be87"
+    },
+    {
+      "path": "external-artifacts/local-ab2ed7e881d6/tokenizer_config.json",
+      "sha256": "052b1ce2b5b3bf119a72dee8cbb2de441dd4ff8f2255be61cd8aa63fb24d8149"
+    },
+    {
+      "path": "external-artifacts/local-ead2e01dae1b/vocab.json",
+      "sha256": "ef13b2af772bf95f74e5512265bbe22b786bf25861df22d9f19fde0b3937fdea"
+    }
+  ],
+  "all_match": true,
+  "base14_MPNet_max_seq_length": 384,
+  "RAG_MPNet_max_seq_length": 256
+}

@@ -1,0 +1,29 @@
+feature,importance,experiment
+tgt_ent,0.45313386765475927,Trial only
+tgt_con,0.15085200742793162,Trial only
+sim_tgt_hyp,0.0734881805838654,Trial only
+sim_hyp_distance_from_truth,0.07000086060921426,Trial only
+sim_max,0.03793204839425324,Trial only
+src_ent,0.033809167297836736,Trial only
+src_con,0.03162274370850707,Trial only
+src_neu,0.028445973853635106,Trial only
+sim_src_tgt,0.025905222229317352,Trial only
+sim_gap_tgt_src,0.025629653114480597,Trial only
+sim_mean,0.02249472824770324,Trial only
+tgt_neu,0.020934093385862926,Trial only
+sim_min,0.015042567634173363,Trial only
+sim_src_hyp,0.010708885858459857,Trial only
+tgt_ent,0.41687017239004287,Trial + Synthetic
+src_ent,0.27399706915516175,Trial + Synthetic
+sim_max,0.08587230776268526,Trial + Synthetic
+sim_gap_tgt_src,0.03745349981876718,Trial + Synthetic
+src_con,0.027879143608893542,Trial + Synthetic
+sim_mean,0.02749571937002921,Trial + Synthetic
+sim_src_tgt,0.020545316448129715,Trial + Synthetic
+tgt_neu,0.018986435992517946,Trial + Synthetic
+tgt_con,0.018893433088168106,Trial + Synthetic
+src_neu,0.018562589189537224,Trial + Synthetic
+sim_hyp_distance_from_truth,0.015479432849841046,Trial + Synthetic
+sim_src_hyp,0.014420863165416105,Trial + Synthetic
+sim_tgt_hyp,0.013482097184446729,Trial + Synthetic
+sim_min,0.010061919976363354,Trial + Synthetic

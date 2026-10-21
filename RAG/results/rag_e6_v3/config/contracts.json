@@ -1,0 +1,6 @@
+{
+  "completed_utc": "2026-09-10T15:51:47.290964+00:00",
+  "output": "test_all_sources_compile (test_v3.Contracts.test_all_sources_compile) ... ok\ntest_assemble_missing_definition (test_v3.Contracts.test_assemble_missing_definition) ... ok\ntest_cache_corruption_and_identity (test_v3.Contracts.test_cache_corruption_and_identity) ... ok\ntest_exact_saved_projection (test_v3.Contracts.test_exact_saved_projection) ... ok\ntest_locked_fold_isolation (test_v3.Contracts.test_locked_fold_isolation) ... ok\ntest_metric_and_pairing (test_v3.Contracts.test_metric_and_pairing) ... ok\ntest_single_sigmoid_and_pair_masking (test_v3.Contracts.test_single_sigmoid_and_pair_masking) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 26.636s\n\nOK\n",
+  "status": "PASS",
+  "tests": 7
+}

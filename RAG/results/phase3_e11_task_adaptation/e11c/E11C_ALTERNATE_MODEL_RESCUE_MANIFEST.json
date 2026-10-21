@@ -1,0 +1,23 @@
+{
+  "files_sha256": {
+    "private\\azure_alternate_rescue\\preservation_baseline.json": "7efd9abfd3f66531763af2e5201673f5dc70d43ba12d2008a05f126f38b41f6e",
+    "private\\azure_alternate_rescue\\rescue_judgments.jsonl": "d0ad58d3bcb2f66d14cec5dfa7047e83e477ed4b46cebb70520e1de7e88c1180",
+    "private\\azure_alternate_rescue\\1f2a34940a94ab535d5fba86b8e0eee6b4426a1e81f33455ed3e38b338b74adc\\attempt_1.json": "ff2e8eb7190cd63685ab70ce546c961a21377dcb90805c8d68e4b79e1a4d5ae9",
+    "private\\azure_alternate_rescue\\1f2a34940a94ab535d5fba86b8e0eee6b4426a1e81f33455ed3e38b338b74adc\\intent_1.json": "f055901ac082564c2a4f58b707e041c5aeb791cdf6963b495e1112d5316266fc",
+    "private\\azure_alternate_rescue\\1f2a34940a94ab535d5fba86b8e0eee6b4426a1e81f33455ed3e38b338b74adc\\request.json": "895f905ee4f55f6b6338e109a8ba03dd62a8d519b694549cfdd12982a41c19e4",
+    "private\\azure_alternate_rescue\\24d9c782312eaaa9fca602f5688d43605af8470a8b6c83da8e81dd4c003f2382\\attempt_1.json": "664a9ac86f640466dd2d535fbbadc3884f493728d7748b0fe575571a7eecac1d",
+    "private\\azure_alternate_rescue\\24d9c782312eaaa9fca602f5688d43605af8470a8b6c83da8e81dd4c003f2382\\intent_1.json": "c5f6b34d5dbcd359140def79365df805c1f3660c5200acda45c20ec903f1ac0b",
+    "private\\azure_alternate_rescue\\24d9c782312eaaa9fca602f5688d43605af8470a8b6c83da8e81dd4c003f2382\\request.json": "012491691527ebd8c72409386680282dc36ab4f8a696de2c88ef2a1b193f4306",
+    "private\\azure_alternate_rescue\\baa5feb7b943ad163b7d3ad434ef3aaf27505092f4cc772fda2f59c956fdb833\\attempt_1.json": "1836a34807800e408acea86fb96fe6455497cf76bf616d424f00e81a01dced53",
+    "private\\azure_alternate_rescue\\baa5feb7b943ad163b7d3ad434ef3aaf27505092f4cc772fda2f59c956fdb833\\intent_1.json": "c28dbd7e05dcde252c7c009c36b4cdd5c63b010a1773327ebe5bb45552ec8f19",
+    "private\\azure_alternate_rescue\\baa5feb7b943ad163b7d3ad434ef3aaf27505092f4cc772fda2f59c956fdb833\\request.json": "5b35a5a47ff6f87dadd4e61e8dcca445596c11af1ba69e72fbe1c65c22c9c229",
+    "private\\azure_alternate_rescue\\f4fdbac32e85fe991167d007dee366f195f1ecab7808e9ebe3ac4eb7b3416e39\\attempt_1.json": "cb9aa712cb2fcd320e1a2d1b95ad1c435a1bc1baba4fd76c6ed2c854ad1da7ec",
+    "private\\azure_alternate_rescue\\f4fdbac32e85fe991167d007dee366f195f1ecab7808e9ebe3ac4eb7b3416e39\\intent_1.json": "b4bb40516fa28e4973bcb3fdc0020f7395161c4ac7765ca226175568002f8107",
+    "private\\azure_alternate_rescue\\f4fdbac32e85fe991167d007dee366f195f1ecab7808e9ebe3ac4eb7b3416e39\\request.json": "f865e3ba1721659b910d3be8ffd5ba84aa51c0dc26826f074f4b3ec397145385",
+    "E11C_ALTERNATE_MODEL_RESCUE_AUDIT.json": "c6638b4da6153acff7d65e26a4397a1b9585757846c47f2096a77bc12bfd800c",
+    "E11C_ALTERNATE_MODEL_RESCUE_AUDIT.md": "dedabb6206260e3b1279703fa96658ef6dd3927f2a45154f9f92f08a03c7346e",
+    "run_azure_alternate_rescue.py": "2560c733d0dee66539dee7a3fe30bf4cc71de225c6dcebf3de8c785516d081d6",
+    "test_e11c_azure_alternate.py": "a3f8df715375701c9f03b061eca33f302921b69bfb643ea92b51c819f24f5337"
+  },
+  "excluded_from_homogeneous_supervision": true
+}

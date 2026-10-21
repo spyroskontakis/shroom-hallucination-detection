@@ -1,0 +1,27 @@
+{
+  "e7_evaluations": 0,
+  "e7_scores_observed": 0,
+  "errors": 0,
+  "failure_details": [],
+  "failures": 0,
+  "finished_utc": "2026-09-09T18:14:07.712791+00:00",
+  "implementation_sha256": {
+    "scripts/diagnose_imports.py": "b91c8d723db3e7b6dffd74339a4b8c9dca3e3b024234744491b3d14c3fca7a37",
+    "scripts/e7_common.py": "e498ef2d09c15dd79463a60474ec64b61aa1bb8d5464a50707ed507c519cdc85",
+    "scripts/evaluate_e7.py": "d3eef103e38d2d30a1fda18eb751d76e52d0fdb032cb95479b392524968619a0",
+    "scripts/evaluation_common.py": "61ebd02866cf73813a308b6c895d889eb9d0036b3bf2036afef17c60a3dd4a2d",
+    "scripts/preflight.py": "915cd943284c7d2eb4ba4391e6dc605917a7535f5659bdee6de5ac69382cc525",
+    "scripts/prepare_evaluation.py": "f15fbbc7e7721be337d981fe2748f05e145abdd1ad8097d3e3b0c34a16df2c0c",
+    "scripts/report_e7.py": "cb24d46a4f746d932aeac6b6f617728abfa9f527f85142db166c79a32f5aa8da",
+    "scripts/router.py": "295bf2a78cc5a9cd394c077865f44d67c6309bc57dbd1ed11a6da88b9fadac44",
+    "tests/test_access_repair.py": "45f55683d7977c040be710b595cb618032dbf0f2928585adc6f238c846ec0cb7",
+    "tests/test_e7.py": "d47b83f25670e437cf6acaa3354b759cda2e11dcbbc3afb3b478c79bd2588235"
+  },
+  "operational_violations": 0,
+  "rf_fits": 0,
+  "scope": "Synthetic router/state-machine/access contracts, real label-free data alignment and zero-fit joblib threading smoke; no scoring",
+  "skipped": 0,
+  "status": "PASS",
+  "synthetic_guard_probes": 15,
+  "tests_run": 28
+}

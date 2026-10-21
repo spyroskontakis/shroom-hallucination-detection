@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "mode": "fold",
+  "run_id": "e11a-fold-002",
+  "fold_id": 2,
+  "protocol_sha256": "518c2df610a1483472b94e8baf3c0c4b277275f351e7448822e35d9dc871772d",
+  "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "bf16_supported": true,
+  "gpu_total_memory_bytes": 85094825984,
+  "peak_gpu_memory_bytes": 10943567360,
+  "training_rows_used": 449,
+  "fold_training_class_counts": {
+    "0": 246,
+    "1": 203
+  },
+  "representative_tokenized_tasks": [
+    "DM",
+    "MT",
+    "PG"
+  ],
+  "class_weights": {
+    "0": 0.9126016260162602,
+    "1": 1.1059113300492611
+  },
+  "optimizer_steps": 145,
+  "backward_passes": 285,
+  "first_loss": 0.5987755060195923,
+  "last_loss": 0.003128517186269164,
+  "loss_by_epoch": [
+    {
+      "epoch": 1,
+      "mean_loss": 0.5460581316759712,
+      "last_loss": 1.4837589263916016,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.2631055606823218,
+      "last_loss": 0.04138541966676712,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.15958648857971033,
+      "last_loss": 0.024536151438951492,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 0.09929579868912697,
+      "last_loss": 0.012904115952551365,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 0.07313902523744394,
+      "last_loss": 0.003128517186269164,
+      "optimizer_steps": 29
+    }
+  ],
+  "final_training_loss": 0.003128517186269164,
+  "losses_all_finite": true,
+  "checkpoint_sha256": "45323835c8200b091d39a4be36f8451fa30d5654f2917b85983b8ac85c7e0b88",
+  "checkpoint_path": "/results/e11a/folds/fold_2/e11a-fold-002/final_checkpoint",
+  "elapsed_seconds": 85.47342817999998,
+  "runtime": {
+    "python": "3.11.12",
+    "torch": "2.2.1+cu121"
+  },
+  "e11a_score_produced": true,
+  "heldout_predictions": 112,
+  "heldout_predictions_sha256": "67494de244af51e2f68ed5dbde49e412a5bf314c059f99ad0b34892608c190b1"
+}

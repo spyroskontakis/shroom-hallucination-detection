@@ -1,0 +1,2 @@
+# Preserve exact frozen bytes; recognize existing CRLF in whitespace checks.
+* -text whitespace=trailing-space,space-before-tab,cr-at-eol

@@ -1,0 +1,15 @@
+{
+  "experiment_artifact_checks": "PASS",
+  "E11_frozen_manifest_hashes_checked": 57,
+  "E10_matrix_and_OOF_hashes_unchanged": true,
+  "source_dataset_hashes_unchanged": true,
+  "thesis_docx_current_sha256": "2ab396df4e4077838b7363de8440dcd5478f27026e96f34cfedb397c34833efe",
+  "thesis_writes_by_this_task": 0,
+  "thesis_note": "Current SHA256 differs from the older writing-turn hash. No start-of-this-turn thesis hash was taken, so no before/after hash-preservation claim is made for DOCX. This task only hashed it; it was not edited.",
+  "unit_tests_passed": 5,
+  "test_gold_values_decoded": false,
+  "model_calls": 0,
+  "fits": 0,
+  "modal_launches": 0,
+  "test_scoring_runs": 0
+}

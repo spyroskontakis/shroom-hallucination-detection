@@ -1,0 +1,150 @@
+{
+  "1": {
+    "heldout_human": 113,
+    "tasks": {
+      "DM": {
+        "candidates": 4000,
+        "purged": 18,
+        "eligible": 3982,
+        "matching_rules_nonexclusive": {
+          "task_ref": 14,
+          "hyp": 4
+        }
+      },
+      "MT": {
+        "candidates": 4000,
+        "purged": 16,
+        "eligible": 3984,
+        "matching_rules_nonexclusive": {
+          "task_ref": 16
+        }
+      },
+      "PG": {
+        "candidates": 4000,
+        "purged": 2,
+        "eligible": 3998,
+        "matching_rules_nonexclusive": {
+          "task_ref": 1,
+          "hyp": 1
+        }
+      }
+    },
+    "purged_total": 36
+  },
+  "2": {
+    "heldout_human": 112,
+    "tasks": {
+      "DM": {
+        "candidates": 4000,
+        "purged": 8,
+        "eligible": 3992,
+        "matching_rules_nonexclusive": {
+          "hyp": 3,
+          "task_ref": 6
+        }
+      },
+      "MT": {
+        "candidates": 4000,
+        "purged": 6,
+        "eligible": 3994,
+        "matching_rules_nonexclusive": {
+          "task_ref": 6
+        }
+      },
+      "PG": {
+        "candidates": 4000,
+        "purged": 0,
+        "eligible": 4000,
+        "matching_rules_nonexclusive": {}
+      }
+    },
+    "purged_total": 14
+  },
+  "3": {
+    "heldout_human": 112,
+    "tasks": {
+      "DM": {
+        "candidates": 4000,
+        "purged": 2,
+        "eligible": 3998,
+        "matching_rules_nonexclusive": {
+          "hyp": 2,
+          "task_ref": 1
+        }
+      },
+      "MT": {
+        "candidates": 4000,
+        "purged": 8,
+        "eligible": 3992,
+        "matching_rules_nonexclusive": {
+          "task_ref": 8
+        }
+      },
+      "PG": {
+        "candidates": 4000,
+        "purged": 0,
+        "eligible": 4000,
+        "matching_rules_nonexclusive": {}
+      }
+    },
+    "purged_total": 10
+  },
+  "4": {
+    "heldout_human": 112,
+    "tasks": {
+      "DM": {
+        "candidates": 4000,
+        "purged": 7,
+        "eligible": 3993,
+        "matching_rules_nonexclusive": {
+          "hyp": 6,
+          "task_ref": 3
+        }
+      },
+      "MT": {
+        "candidates": 4000,
+        "purged": 11,
+        "eligible": 3989,
+        "matching_rules_nonexclusive": {
+          "task_ref": 11
+        }
+      },
+      "PG": {
+        "candidates": 4000,
+        "purged": 0,
+        "eligible": 4000,
+        "matching_rules_nonexclusive": {}
+      }
+    },
+    "purged_total": 18
+  },
+  "5": {
+    "heldout_human": 112,
+    "tasks": {
+      "DM": {
+        "candidates": 4000,
+        "purged": 3,
+        "eligible": 3997,
+        "matching_rules_nonexclusive": {
+          "hyp": 3,
+          "task_ref": 1
+        }
+      },
+      "MT": {
+        "candidates": 4000,
+        "purged": 11,
+        "eligible": 3989,
+        "matching_rules_nonexclusive": {
+          "task_ref": 11
+        }
+      },
+      "PG": {
+        "candidates": 4000,
+        "purged": 0,
+        "eligible": 4000,
+        "matching_rules_nonexclusive": {}
+      }
+    },
+    "purged_total": 14
+  }
+}

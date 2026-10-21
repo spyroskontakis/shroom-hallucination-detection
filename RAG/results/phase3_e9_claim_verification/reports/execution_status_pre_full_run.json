@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED_DECOMPOSER_API",
+  "reason": "OPENAI_API_KEY unavailable in process environment",
+  "utc": "2026-09-27T15:41:07.724406+00:00",
+  "baseline_verification": "PASS",
+  "e9_a": "NOT_RUN",
+  "e9_b": "NOT_STARTED_REQUIRES_E9_A",
+  "rf_fits": 0,
+  "llm_calls": 0,
+  "cache_hits": 0,
+  "fallbacks": 0,
+  "minicheck_inferences": 0,
+  "official_test_accessed": false,
+  "git_head": "6e3c702be45329ae0e3199def4091de61911621f"
+}

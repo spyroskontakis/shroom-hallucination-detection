@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "protocol_sha256": "c0645ef01f885ef22b7abaf5634f8a62d66a3e7174cb0d07aa2a47fba425a5ac",
+  "human": {
+    "rows": 561,
+    "tasks": {
+      "DM": 211,
+      "PG": 134,
+      "MT": 216
+    },
+    "factcg_human_scores_sha256": "c89ab73a68238f42820a85faf06d9e013e128bdb8cf5d26ba24faa9078105716",
+    "e6_v3_human_features_sha256": "1e6386fbd0b89a3a295828259ec8fea9b5b3fc03465d65f82e546687c32e7229",
+    "factcg_reused": 561,
+    "hhem_reused": 561,
+    "nli_reused": 561,
+    "whole_hyp_minicheck_pending": 561
+  },
+  "unlabeled": {
+    "raw_rows": 30000,
+    "unique_rows": 28649,
+    "master_task_counts": {
+      "PG": 10000,
+      "DM": 10000,
+      "MT": 8649
+    },
+    "pg_empty_target_rows": 10000
+  },
+  "benchmark": {
+    "rows": 600,
+    "task_counts": {
+      "DM": 200,
+      "MT": 200,
+      "PG": 200
+    }
+  },
+  "folds": {
+    "1": {
+      "heldout_human": 113,
+      "eligible": 28575,
+      "purged": 74,
+      "purge_reason_first_match": {
+        "hyp": 8,
+        "task_ref": 66
+      }
+    },
+    "2": {
+      "heldout_human": 112,
+      "eligible": 28623,
+      "purged": 26,
+      "purge_reason_first_match": {
+        "hyp": 3,
+        "task_ref": 23
+      }
+    },
+    "3": {
+      "heldout_human": 112,
+      "eligible": 28627,
+      "purged": 22,
+      "purge_reason_first_match": {
+        "task_ref": 15,
+        "hyp": 7
+      }
+    },
+    "4": {
+      "heldout_human": 112,
+      "eligible": 28611,
+      "purged": 38,
+      "purge_reason_first_match": {
+        "hyp": 10,
+        "task_ref": 28
+      }
+    },
+    "5": {
+      "heldout_human": 112,
+      "eligible": 28615,
+      "purged": 34,
+      "purge_reason_first_match": {
+        "hyp": 6,
+        "task_ref": 28
+      }
+    }
+  },
+  "prepared_sha256": {
+    "HUMAN_TEACHER_INPUTS.csv": "138e48986c611f911928792be9dba8f353d6bd724f8c23f1663ce6393ffafd14",
+    "human_whole_hyp_minicheck_inputs.jsonl": "38fb0ba5f3d4149b24f975be04784963a60954afc483bcaba05adab100124539",
+    "unlabeled_master.jsonl": "a2fc726c44e4f245052fb0b7901a41758c584feea2af10e5c74ec20aa6ef9a2d",
+    "benchmark_600.jsonl": "7f34efa45f358b268e8df281d979a025ff41a48929d1debca820ef6353a4201d",
+    "fold_1_eligibility.jsonl": "77f53ecd0bfb787edcd64d9e1677c3bd5ebd8ed0d30206a6e88c106ca46be0f0",
+    "fold_2_eligibility.jsonl": "e2728a48473d970c0a2a9d38eb05c4524b326a95984c30ddb97cb24893206e30",
+    "fold_3_eligibility.jsonl": "8a18d42257567a37586ee1c3d2e6518c48d9c67b7263d00f0853ae9ce9c0fe96",
+    "fold_4_eligibility.jsonl": "876d31efb1e7a544500e732c7a11e7cf183815aa73713f4c165c1cc20b82b785",
+    "fold_5_eligibility.jsonl": "8ed5b5fbe1a2b3b47dbcd07bc76b1cf4bf0badfa8cfb4b4e59460e8f94fc64b4"
+  },
+  "no_labels_in_detector_inputs": true,
+  "inference_or_teacher_fit_run": false
+}

@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-09T15:57:04.4385103Z",
+  "status": "STOPPED_PREFLIGHT_SECURITY_FAILURE",
+  "files": {
+    "config/failure_audit.json": {
+      "bytes": 444,
+      "sha256": "c42408d1d1bcfa456e2cc4dea43b9c96c75d5750280d678d5df9e320c63494ed"
+    },
+    "config/protocol_freeze.json": {
+      "bytes": 82174,
+      "sha256": "66e61af2400a1c06fcece20756f9b5511899976c1545c244203f98cb949a9787"
+    },
+    "E7_PROTOCOL.md": {
+      "bytes": 10679,
+      "sha256": "0491505c0f98a2a4d2a0896370adbbc3674c6fdf873b96a8a31833e587923002"
+    },
+    "E7_RESULTS.md": {
+      "bytes": 3775,
+      "sha256": "9265e4b02a4127d7654674c6b7deadef16060f668321dbf3ba334fb956014095"
+    },
+    "scripts/e7_common.py": {
+      "bytes": 11007,
+      "sha256": "1e0c503d1fc9539dda727d209aeaec53fb01ab45d7ce9fee21583288d12544e1"
+    },
+    "config/security_preflight.json": {
+      "bytes": 49186,
+      "sha256": "794abad545497a34865ad07aa07e12049d46eae28fc646acefb4e8ff65f7e1d0"
+    },
+    "scripts/preflight.py": {
+      "bytes": 465,
+      "sha256": "673410ce34a1647d637b2c9a78ae84e614817e698598a0d4c2a68a96f9340308"
+    }
+  },
+  "self_excluded": true
+}

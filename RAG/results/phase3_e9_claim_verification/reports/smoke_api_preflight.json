@@ -1,0 +1,31 @@
+{
+  "status": "BLOCKED_DECOMPOSER_API",
+  "checked_utc": "2026-09-27T16:30:31.227189+00:00",
+  "reason": "OPENAI_API_KEY absent from process, Windows User and Machine environments, and Python subprocess",
+  "requested_model": "gpt-4o-2024-08-06",
+  "temperature": 0,
+  "model_availability": "UNVERIFIED_NO_CREDENTIAL",
+  "authentication": "NOT_ATTEMPTED",
+  "api_calls": 0,
+  "successful_calls": 0,
+  "planned_calls": 3,
+  "samples_processed": 0,
+  "parsed_claim_counts": {
+    "DM": null,
+    "MT": null,
+    "PG": null
+  },
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "incurred_api_cost_usd": 0,
+  "estimated_three_call_cost_usd": null,
+  "projected_561_sample_cost_usd": null,
+  "cost_projection_reason": "No observed token usage; no average can be computed",
+  "returned_model_identifiers": [],
+  "prompt_leakage_review": "NOT_RUN",
+  "semantic_entailment_review": "NOT_RUN",
+  "data_sent_to_api": false,
+  "official_test_accessed": false,
+  "full_decomposition_started": false,
+  "nli_minicheck_rf_runs": 0
+}

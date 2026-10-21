@@ -1,0 +1,51 @@
+{
+  "all_trajectories_end": true,
+  "checked_utc": "2026-09-09T18:15:25.331070+00:00",
+  "e7_evaluation_suites": 1,
+  "evaluation_freeze_verified": true,
+  "implementation_hashes_verified": true,
+  "no_evidence_all_fallback": true,
+  "official_test_access": false,
+  "one_route_per_id": true,
+  "oof_rows": 561,
+  "operational_network_attempts": 0,
+  "outer_folds": 5,
+  "predictions_in_unit_interval": true,
+  "protected_files_unchanged": 481,
+  "protocol_sha256": "0491505c0f98a2a4d2a0896370adbbc3674c6fdf873b96a8a31833e587923002",
+  "reproduction": {
+    "E3": {
+      "binary_equal": true,
+      "max_absolute_prediction_difference": 2.220446049250313e-16,
+      "metrics": {
+        "accuracy": 0.7932263814616756,
+        "correct": 445,
+        "n": 561,
+        "spearman": 0.7390395612811848
+      },
+      "rounded_rank_equal": true,
+      "status": "PASS"
+    },
+    "E6": {
+      "binary_equal": true,
+      "max_absolute_prediction_difference": 3.3306690738754696e-16,
+      "metrics": {
+        "accuracy": 0.8074866310160428,
+        "correct": 453,
+        "n": 561,
+        "spearman": 0.744420539373989
+      },
+      "rounded_rank_equal": true,
+      "status": "PASS"
+    }
+  },
+  "rf_fits": 10,
+  "router_inputs": [
+    "evidence_available",
+    "top1_cosine"
+  ],
+  "routes_frozen_before_labels_and_fit": true,
+  "security_scope": "Python audit guard and explicit development inputs, not OS isolation",
+  "status": "PASS",
+  "unique_ids": 561
+}

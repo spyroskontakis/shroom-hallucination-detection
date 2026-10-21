@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-09-10T07:21:38.749459+00:00",
+  "scope": "report-rendering-only after evaluation",
+  "original_source": "scripts/report_e8.py",
+  "original_sha256": "7699f5dbc0d383994028ae7ebbc5ba38bf828ca1befb2341f4049e5eba13675a",
+  "corrected_source": "scripts/report_e8_render_fixed.py",
+  "corrected_sha256": "8aa83b8ffd63bbfd1f5c231bb8fc2ae84594f7f9ed80f24937fb79a1c11199a5",
+  "changes": [
+    "fix closing quote at display string line 138",
+    "append transparent repair disclosure"
+  ],
+  "scientific_code_changed": false,
+  "additional_fits": 0
+}

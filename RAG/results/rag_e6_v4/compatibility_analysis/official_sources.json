@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Official BERTScore v0.3.13 tokenization and model mapping",
+    "url": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/utils.py"
+  },
+  {
+    "title": "Transformers v4.30.2 DebertaTokenizer official 512 mapping",
+    "url": "https://github.com/huggingface/transformers/blob/v4.30.2/src/transformers/models/deberta/tokenization_deberta.py"
+  },
+  {
+    "title": "Transformers v4.30.2 pretrained maximum-length resolution",
+    "url": "https://github.com/huggingface/transformers/blob/v4.30.2/src/transformers/tokenization_utils_base.py"
+  },
+  {
+    "title": "Transformers v4.44.2 tokenizer source (mapping already absent)",
+    "url": "https://github.com/huggingface/transformers/blob/v4.44.2/src/transformers/models/deberta/tokenization_deberta.py"
+  }
+]

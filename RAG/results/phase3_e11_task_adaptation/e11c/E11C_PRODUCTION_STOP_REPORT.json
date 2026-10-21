@@ -1,0 +1,25 @@
+{
+  "status": "FAIL_BLOCKED_BILLING",
+  "artifact_sha256": {
+    "E11C_PRODUCTION_AUDIT.json": "c10f573df6c6040e7139167530e192b8fe90e8a2da4ef07a27e6cdf6c3c6ec53",
+    "E11C_PRODUCTION_AUDIT.md": "0f395414d044926a9690c6dcc71438f45dd8c23f9e39da0a9638dbb5e81a1fd5",
+    "E11C_PRODUCTION_MANIFEST.json": "d6b7d0f108c8eee23c3243fbc7544d8180ba646a0c79adc1412e2e1288da7cab",
+    "private\\production_11700\\round_2\\batch_001.jsonl": "f97823750fc46e0b7d22d7ea1aa695b778a72a0d12d259457d27180419ed47b5",
+    "private\\production_11700\\round_2\\requests.jsonl": "f97823750fc46e0b7d22d7ea1aa695b778a72a0d12d259457d27180419ed47b5",
+    "private\\production_11700\\round_2\\request_manifest.json": "cafe125950e51a8ff8382296a1f4f35812680298970b96c7b186455f51b5f802",
+    "private\\production_11700\\round_2\\batch_001\\model_metadata.json": "c721c6e331bb1cc311718a81fd2fa270ba17eab716786c53ec017e756533c2fb",
+    "private\\production_11700\\round_2\\batch_001\\reconciled_creation_error.json": "4643692c3535ebc1e8e0d15eebaf2bc1493ca17b2b2b2dacd8c65255058f864b",
+    "private\\production_11700\\round_2\\batch_001\\reconciled_creation_intent.json": "6b1b520883b16fde574b26982e50e83e117d76733f21d403999a5dc5f3060659",
+    "private\\production_11700\\round_2\\batch_001\\reconciliation.json": "f0c18e458bdb4012c0d33dba10af6553bfb5e648e214f09f48195b32a6a3cc0c",
+    "private\\production_11700\\round_2\\batch_001\\submission_failure.json": "94b29095116db4861d1ea71704848d16b273362735cc91db7b84b6e1dd02c026",
+    "private\\production_11700\\round_2\\batch_001\\submission_intent.json": "1488e188512ab0e1bfcbaa3f206e38bd734e4371ab8859064d007b93ab005416",
+    "private\\production_11700\\round_2\\batch_001\\uploaded_file.json": "e17e2a046847fd344687d0df8b157f431a5ea10b2b64fba5725b10225695e2f6",
+    "private\\production_11700\\round_2\\batch_001\\uploaded_file_reconciled.json": "e17e2a046847fd344687d0df8b157f431a5ea10b2b64fba5725b10225695e2f6"
+  },
+  "git_status_short": [
+    "?? RAG/results/phase3_e11_task_adaptation/",
+    "?? RAG/results/phase3_e9_claim_verification/",
+    "?? modal_gpu_check.py"
+  ],
+  "next_step": "Billing capacity must be restored before reconciling and submitting the existing four-request retry file. No original candidate should be resubmitted."
+}

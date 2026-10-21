@@ -1,0 +1,16 @@
+{
+  "training_app_id": "private-service-id-withheld",
+  "modal_volume": "shroom-e11c-fixed-two-stage-results",
+  "remote_output_root": "/results/e11c-fixed-001",
+  "planned_fits": 10,
+  "fold_jobs": 5,
+  "gpu_per_job": "A100-80GB",
+  "launch_encoding": "PYTHONIOENCODING=utf-8",
+  "initial_launch_failure": {
+    "reason": "Windows console charmap failed to encode Modal status symbol",
+    "tasks": 0,
+    "fits": 0,
+    "stopped": true
+  },
+  "teacher_api_calls": 0
+}

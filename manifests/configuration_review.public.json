@@ -1,0 +1,128 @@
+[
+  {
+    "path": "codex/canonical_human_development_manifest.csv",
+    "experiment": "E1-E4",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "codex/canonical_synthetic_diagnostic_manifest.csv",
+    "experiment": "E1-E4",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "codex/prompt6_development_eda_outputs/development_schema_and_missing.csv",
+    "experiment": "project/support",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "presentation_inspiration/.build/source_manifest.json",
+    "experiment": "project/support",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "RAG/results/phase3_e11_task_adaptation/e11c/E11C_CANDIDATE_MANIFEST.json",
+    "experiment": "E11",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/features/E9-A_freeze.json",
+    "experiment": "E9",
+    "decision": "PUBLIC_CONFIGURATION",
+    "reason": "critical configuration/freeze retained"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/features/E9-B_freeze.json",
+    "experiment": "E9",
+    "decision": "PUBLIC_CONFIGURATION",
+    "reason": "critical configuration/freeze retained"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/features/e10_return/E10_freeze.json",
+    "experiment": "E9",
+    "decision": "PUBLIC_CONFIGURATION",
+    "reason": "critical configuration/freeze retained"
+  },
+  {
+    "path": "RAG/results/phase3_e9_claim_verification/features/minicheck_return/E9-B_freeze.json",
+    "experiment": "E9",
+    "decision": "PUBLIC_CONFIGURATION",
+    "reason": "critical configuration/freeze retained"
+  },
+  {
+    "path": "RAG/results/rag_e6_v2/config/run_config.json",
+    "experiment": "E6",
+    "decision": "PUBLIC_CONFIGURATION",
+    "reason": "critical configuration/freeze retained"
+  },
+  {
+    "path": "RAG/results/rag_e6_v2/model/config.json",
+    "experiment": "E6",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "RAG/results/rag_e6_v2/model/tokenizer_config.json",
+    "experiment": "E6",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "RAG/results/rag_e6_v3/model/config.json",
+    "experiment": "E6",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "RAG/results/rag_e6_v3/model/tokenizer_config.json",
+    "experiment": "E6",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "RAG/results/rag_e8_rf_tuning_v1/config/configurations.json",
+    "experiment": "E8",
+    "decision": "PUBLIC_CONFIGURATION",
+    "reason": "critical configuration/freeze retained"
+  },
+  {
+    "path": "RAG/results/rag_e8_rf_tuning_v1/evaluation/selected_configurations.json",
+    "experiment": "E8",
+    "decision": "PUBLIC_CONFIGURATION",
+    "reason": "critical configuration/freeze retained"
+  },
+  {
+    "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_dev_term_manifest.csv",
+    "experiment": "E5/Module4",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "thesis_writing/AUDIT_SOURCE_MANIFEST.json",
+    "experiment": "project/support",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "thesis_writing/chapter9_e10/DELIVERY_MANIFEST.json",
+    "experiment": "project/support",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "thesis_writing/chapter9_phase1/DELIVERY_MANIFEST.json",
+    "experiment": "project/support",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  },
+  {
+    "path": "thesis_writing/references_qa_work/before_manifest.json",
+    "experiment": "project/support",
+    "decision": "EXTERNAL_OR_PRIVATE_ARTIFACT",
+    "reason": "row-level data, downloaded-model metadata or document-production ledger; preserved in originals/backup and supplied separately where permitted"
+  }
+]

@@ -1,0 +1,913 @@
+{
+  "status": "PASS",
+  "stages": {
+    "1:1": {
+      "summary": {
+        "initial_model_weights_sha256": "c03cd208bf920b4fbbb182a0535859a566e8acc3477d2b536bf87b769978524b",
+        "status": "PASS",
+        "stage": 1,
+        "run_id": "e11e-fold-001-stage-1",
+        "fold_id": 1,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 12410309120,
+        "training_rows_used": 11787,
+        "fold_training_class_counts": {
+          "0": 6699,
+          "1": 5088
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.8797581728616212,
+          "1": 1.158313679245283
+        },
+        "optimizer_steps": 737,
+        "backward_passes": 1474,
+        "first_loss": 0.8014580011367798,
+        "last_loss": 0.22345951199531555,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.35454471833154744,
+            "mean_classification_loss": 0.31254281583930815,
+            "mean_contrastive_loss": 0.420019021983103,
+            "last_loss": 0.22345951199531555,
+            "optimizer_steps": 737
+          }
+        ],
+        "final_training_loss": 0.22345951199531555,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "7314bf4acda3c43654c709368190fd8bb919ded0b63b7bc58ed853853e496e02",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_1/stage_1/final_checkpoint",
+        "elapsed_seconds": 241.43175116299997,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": false
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "5a5ed58ba8735646f0156718a90b6a0bdf52182e3ae61ede0eb0de9ff643807c",
+        "model.safetensors": "7314bf4acda3c43654c709368190fd8bb919ded0b63b7bc58ed853853e496e02",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "c418c1a8fae04d738d04aefcc22793f8d5fb577325233885d9f51103a1808ea7"
+    },
+    "1:2": {
+      "summary": {
+        "initial_model_weights_sha256": "7314bf4acda3c43654c709368190fd8bb919ded0b63b7bc58ed853853e496e02",
+        "status": "PASS",
+        "stage": 2,
+        "run_id": "e11e-fold-001-stage-2",
+        "fold_id": 1,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 16247166464,
+        "training_rows_used": 448,
+        "fold_training_class_counts": {
+          "0": 246,
+          "1": 202
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.9105691056910569,
+          "1": 1.108910891089109
+        },
+        "optimizer_steps": 140,
+        "backward_passes": 280,
+        "first_loss": 0.8421338796615601,
+        "last_loss": 0.022063711658120155,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.4532132066254105,
+            "mean_classification_loss": 0.41096274674470934,
+            "mean_contrastive_loss": 0.4225046012018408,
+            "last_loss": 0.5209075808525085,
+            "optimizer_steps": 28
+          },
+          {
+            "epoch": 2,
+            "mean_loss": 0.21203899589766348,
+            "mean_classification_loss": 0.17175275962134556,
+            "mean_contrastive_loss": 0.40286235364952255,
+            "last_loss": 0.055423811078071594,
+            "optimizer_steps": 28
+          },
+          {
+            "epoch": 3,
+            "mean_loss": 0.08153849969884115,
+            "mean_classification_loss": 0.04429546631373731,
+            "mean_contrastive_loss": 0.3724303249535816,
+            "last_loss": 0.024903414770960808,
+            "optimizer_steps": 28
+          },
+          {
+            "epoch": 4,
+            "mean_loss": 0.05436920928436199,
+            "mean_classification_loss": 0.02244471462992286,
+            "mean_contrastive_loss": 0.319244935842497,
+            "last_loss": 0.031666725873947144,
+            "optimizer_steps": 28
+          },
+          {
+            "epoch": 5,
+            "mean_loss": 0.04033585025795868,
+            "mean_classification_loss": 0.016461804654682055,
+            "mean_contrastive_loss": 0.23874045203306846,
+            "last_loss": 0.022063711658120155,
+            "optimizer_steps": 28
+          }
+        ],
+        "final_training_loss": 0.022063711658120155,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "ccbe5dece4da62d66ef532a58eb7250b9a5be759718257b2cef8caa0d45db2b6",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_1/stage_2/final_checkpoint",
+        "elapsed_seconds": 51.05300311100001,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": true,
+        "heldout_predictions": 113,
+        "heldout_predictions_sha256": "63dec9e258952eaf348d8685dd807183a84925ca02809fe382cf00a2090f19b6"
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "6cd1f2ba18c358c41df54169b665a6a35e4684df554e3776e68035929b0056f6",
+        "model.safetensors": "ccbe5dece4da62d66ef532a58eb7250b9a5be759718257b2cef8caa0d45db2b6",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "0fe3ec898b52fa2686813e52519c5bf0fd57a9ec108eb19b5c51c748c562c41b",
+      "predictions_sha256": "63dec9e258952eaf348d8685dd807183a84925ca02809fe382cf00a2090f19b6"
+    },
+    "2:1": {
+      "summary": {
+        "initial_model_weights_sha256": "c03cd208bf920b4fbbb182a0535859a566e8acc3477d2b536bf87b769978524b",
+        "status": "PASS",
+        "stage": 1,
+        "run_id": "e11e-fold-002-stage-1",
+        "fold_id": 2,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 12399784448,
+        "training_rows_used": 11791,
+        "fold_training_class_counts": {
+          "0": 6703,
+          "1": 5088
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.8795315530359541,
+          "1": 1.1587067610062893
+        },
+        "optimizer_steps": 737,
+        "backward_passes": 1474,
+        "first_loss": 0.790928304195404,
+        "last_loss": 0.2522481679916382,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.3527476527858298,
+            "mean_classification_loss": 0.3108580141142516,
+            "mean_contrastive_loss": 0.4188963813325605,
+            "last_loss": 0.2522481679916382,
+            "optimizer_steps": 737
+          }
+        ],
+        "final_training_loss": 0.2522481679916382,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "8fc81d5df1ab0434396911410e1a1bafa5740810dbcfa66d9add4c39f6b12d36",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_2/stage_1/final_checkpoint",
+        "elapsed_seconds": 424.455445367,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": false
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "5a5ed58ba8735646f0156718a90b6a0bdf52182e3ae61ede0eb0de9ff643807c",
+        "model.safetensors": "8fc81d5df1ab0434396911410e1a1bafa5740810dbcfa66d9add4c39f6b12d36",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "08ff640c35816486b6963d45ced445ca71e2dbe1799382a3300389843bf9748a"
+    },
+    "2:2": {
+      "summary": {
+        "initial_model_weights_sha256": "8fc81d5df1ab0434396911410e1a1bafa5740810dbcfa66d9add4c39f6b12d36",
+        "status": "PASS",
+        "stage": 2,
+        "run_id": "e11e-fold-002-stage-2",
+        "fold_id": 2,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 16237103104,
+        "training_rows_used": 449,
+        "fold_training_class_counts": {
+          "0": 246,
+          "1": 203
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.9126016260162602,
+          "1": 1.1059113300492611
+        },
+        "optimizer_steps": 145,
+        "backward_passes": 285,
+        "first_loss": 0.20948036015033722,
+        "last_loss": 0.0057031395845115185,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.5526170128008776,
+            "mean_classification_loss": 0.5104899448914486,
+            "mean_contrastive_loss": 0.4212706728201163,
+            "last_loss": 1.815294861793518,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 2,
+            "mean_loss": 0.25764842331409454,
+            "mean_classification_loss": 0.216559477656949,
+            "mean_contrastive_loss": 0.41088944974175673,
+            "last_loss": 0.2017662227153778,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 3,
+            "mean_loss": 0.11518887551338003,
+            "mean_classification_loss": 0.07947267022539388,
+            "mean_contrastive_loss": 0.35716205116426736,
+            "last_loss": 0.010739612393081188,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 4,
+            "mean_loss": 0.060067626402566306,
+            "mean_classification_loss": 0.03615038115286121,
+            "mean_contrastive_loss": 0.2391724487145742,
+            "last_loss": 0.04324280098080635,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 5,
+            "mean_loss": 0.040081082598159186,
+            "mean_classification_loss": 0.031218864877397817,
+            "mean_contrastive_loss": 0.0886221737519168,
+            "last_loss": 0.0057031395845115185,
+            "optimizer_steps": 29
+          }
+        ],
+        "final_training_loss": 0.0057031395845115185,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "29821109cd0b34c3321291057b7a4a0c68ea32a854572d09813becd6c28294ca",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_2/stage_2/final_checkpoint",
+        "elapsed_seconds": 91.50972869900005,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": true,
+        "heldout_predictions": 112,
+        "heldout_predictions_sha256": "dab25f64e56220b5e86c1a451d3ced76442e8532fced464f7d5e8c7bbd32887a"
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "57070bcd94ecce146560536084161567ae98c7d76a4f568c15760a159c5b2d96",
+        "model.safetensors": "29821109cd0b34c3321291057b7a4a0c68ea32a854572d09813becd6c28294ca",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "63e813ecd0e79d70ca75119a8a9e0790831cc5cd2e4cbbe344b5e6fa0cb2c214",
+      "predictions_sha256": "dab25f64e56220b5e86c1a451d3ced76442e8532fced464f7d5e8c7bbd32887a"
+    },
+    "3:1": {
+      "summary": {
+        "initial_model_weights_sha256": "c03cd208bf920b4fbbb182a0535859a566e8acc3477d2b536bf87b769978524b",
+        "status": "PASS",
+        "stage": 1,
+        "run_id": "e11e-fold-003-stage-1",
+        "fold_id": 3,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 10815686656,
+        "training_rows_used": 11795,
+        "fold_training_class_counts": {
+          "0": 6698,
+          "1": 5097
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.880486712451478,
+          "1": 1.157053168530508
+        },
+        "optimizer_steps": 738,
+        "backward_passes": 1475,
+        "first_loss": 0.6392233371734619,
+        "last_loss": 0.12183443456888199,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.3512644502646842,
+            "mean_classification_loss": 0.3102138966397714,
+            "mean_contrastive_loss": 0.4105055316221916,
+            "last_loss": 0.12183443456888199,
+            "optimizer_steps": 738
+          }
+        ],
+        "final_training_loss": 0.12183443456888199,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "c8f4ace6130b0507c0e95c1f40c765e0789fc6a258b9314b3cf256bab238240d",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_3/stage_1/final_checkpoint",
+        "elapsed_seconds": 239.599570535,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": false
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "5a5ed58ba8735646f0156718a90b6a0bdf52182e3ae61ede0eb0de9ff643807c",
+        "model.safetensors": "c8f4ace6130b0507c0e95c1f40c765e0789fc6a258b9314b3cf256bab238240d",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "4e6527dd22a9b4ebbebca6a64a39ce2c78a6c1e0e29ce73fffb8634f1e8b345a"
+    },
+    "3:2": {
+      "summary": {
+        "initial_model_weights_sha256": "c8f4ace6130b0507c0e95c1f40c765e0789fc6a258b9314b3cf256bab238240d",
+        "status": "PASS",
+        "stage": 2,
+        "run_id": "e11e-fold-003-stage-2",
+        "fold_id": 3,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 16254811136,
+        "training_rows_used": 449,
+        "fold_training_class_counts": {
+          "0": 245,
+          "1": 204
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.9163265306122449,
+          "1": 1.1004901960784315
+        },
+        "optimizer_steps": 145,
+        "backward_passes": 285,
+        "first_loss": 0.37385469675064087,
+        "last_loss": 0.0038275846745818853,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.4971188680644621,
+            "mean_classification_loss": 0.4556313262958276,
+            "mean_contrastive_loss": 0.4148754406916468,
+            "last_loss": 0.21471214294433594,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 2,
+            "mean_loss": 0.25107873597165997,
+            "mean_classification_loss": 0.2138984098769071,
+            "mean_contrastive_loss": 0.37180324709206297,
+            "last_loss": 0.23681141436100006,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 3,
+            "mean_loss": 0.09913337328716328,
+            "mean_classification_loss": 0.06984782072699122,
+            "mean_contrastive_loss": 0.2928555283630103,
+            "last_loss": 0.10912622511386871,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 4,
+            "mean_loss": 0.03918110513079323,
+            "mean_classification_loss": 0.028433084230575906,
+            "mean_contrastive_loss": 0.10748020438640787,
+            "last_loss": 0.00554291345179081,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 5,
+            "mean_loss": 0.022725684866472556,
+            "mean_classification_loss": 0.0191667533414275,
+            "mean_contrastive_loss": 0.035589312154211496,
+            "last_loss": 0.0038275846745818853,
+            "optimizer_steps": 29
+          }
+        ],
+        "final_training_loss": 0.0038275846745818853,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "dc2c53b5c0c5f81443b86bad454938e0dd6bf50fbd9d10a0fddbe15efcb21a8c",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_3/stage_2/final_checkpoint",
+        "elapsed_seconds": 52.08976233100003,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": true,
+        "heldout_predictions": 112,
+        "heldout_predictions_sha256": "5ee04b4b6ccbd0dd1c45ed723880b4aff8df5ffd20844963ca7406ac7aa58dcf"
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "c75152ec526265189449000bd95b3fd8a4571421bd7c12a253e86d67b548a649",
+        "model.safetensors": "dc2c53b5c0c5f81443b86bad454938e0dd6bf50fbd9d10a0fddbe15efcb21a8c",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "ca1861bd78419e7f07d217e37b6f20be5464f417fabe2cd0e9231374a783cfdd",
+      "predictions_sha256": "5ee04b4b6ccbd0dd1c45ed723880b4aff8df5ffd20844963ca7406ac7aa58dcf"
+    },
+    "4:1": {
+      "summary": {
+        "initial_model_weights_sha256": "c03cd208bf920b4fbbb182a0535859a566e8acc3477d2b536bf87b769978524b",
+        "status": "PASS",
+        "stage": 1,
+        "run_id": "e11e-fold-004-stage-1",
+        "fold_id": 4,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 10838024704,
+        "training_rows_used": 11787,
+        "fold_training_class_counts": {
+          "0": 6698,
+          "1": 5089
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.8798895192594804,
+          "1": 1.158086067989782
+        },
+        "optimizer_steps": 737,
+        "backward_passes": 1474,
+        "first_loss": 0.6355173587799072,
+        "last_loss": 0.06601685285568237,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.3557487025685113,
+            "mean_classification_loss": 0.314118008674571,
+            "mean_contrastive_loss": 0.41630693179336625,
+            "last_loss": 0.06601685285568237,
+            "optimizer_steps": 737
+          }
+        ],
+        "final_training_loss": 0.06601685285568237,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "6223725d4bf07cb46ec585cd1f7f7c4b3d110a4770c1d30f21212d6f96f7ed70",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_4/stage_1/final_checkpoint",
+        "elapsed_seconds": 246.75188616399998,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": false
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "5a5ed58ba8735646f0156718a90b6a0bdf52182e3ae61ede0eb0de9ff643807c",
+        "model.safetensors": "6223725d4bf07cb46ec585cd1f7f7c4b3d110a4770c1d30f21212d6f96f7ed70",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "85d8616e5ed900cda329d1c68515e0319fe305c62ed71da82adb3a58244c21cd"
+    },
+    "4:2": {
+      "summary": {
+        "initial_model_weights_sha256": "6223725d4bf07cb46ec585cd1f7f7c4b3d110a4770c1d30f21212d6f96f7ed70",
+        "status": "PASS",
+        "stage": 2,
+        "run_id": "e11e-fold-004-stage-2",
+        "fold_id": 4,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 15108363776,
+        "training_rows_used": 449,
+        "fold_training_class_counts": {
+          "0": 245,
+          "1": 204
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.9163265306122449,
+          "1": 1.1004901960784315
+        },
+        "optimizer_steps": 145,
+        "backward_passes": 285,
+        "first_loss": 0.2855606973171234,
+        "last_loss": 0.0037192609161138535,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.5145332435505432,
+            "mean_classification_loss": 0.47261109294598563,
+            "mean_contrastive_loss": 0.4192215034313369,
+            "last_loss": 1.9679646492004395,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 2,
+            "mean_loss": 0.20601943422827804,
+            "mean_classification_loss": 0.1664031498428238,
+            "mean_contrastive_loss": 0.39616284767786664,
+            "last_loss": 0.3088182508945465,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 3,
+            "mean_loss": 0.09901761714565127,
+            "mean_classification_loss": 0.0667136718453676,
+            "mean_contrastive_loss": 0.32303944805212187,
+            "last_loss": 0.012345252558588982,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 4,
+            "mean_loss": 0.06733205561575137,
+            "mean_classification_loss": 0.04933471806151302,
+            "mean_contrastive_loss": 0.17997338443079539,
+            "last_loss": 0.0238703191280365,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 5,
+            "mean_loss": 0.03729712305459799,
+            "mean_classification_loss": 0.03181540162155503,
+            "mean_contrastive_loss": 0.054817210637817256,
+            "last_loss": 0.0037192609161138535,
+            "optimizer_steps": 29
+          }
+        ],
+        "final_training_loss": 0.0037192609161138535,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "73e8f7d6b0946af96a823aecb73bac4b5127f3ac47528e7060ad3d3de1cfb468",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_4/stage_2/final_checkpoint",
+        "elapsed_seconds": 51.712895196000034,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": true,
+        "heldout_predictions": 112,
+        "heldout_predictions_sha256": "052440502ad2e5492d1ee5d379cedf43d23621b3d19f6f761b217776ccf16d32"
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "4c2cc9e5d2021a5f320080ee1ff5e5790fb91bf1086ec5d2bb1e0dcecf032ddf",
+        "model.safetensors": "73e8f7d6b0946af96a823aecb73bac4b5127f3ac47528e7060ad3d3de1cfb468",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "d17bbd7071087d59515464b2b82ccb6dcd447f4bb9fe19d776649d5a1c064333",
+      "predictions_sha256": "052440502ad2e5492d1ee5d379cedf43d23621b3d19f6f761b217776ccf16d32"
+    },
+    "5:1": {
+      "summary": {
+        "initial_model_weights_sha256": "c03cd208bf920b4fbbb182a0535859a566e8acc3477d2b536bf87b769978524b",
+        "status": "PASS",
+        "stage": 1,
+        "run_id": "e11e-fold-005-stage-1",
+        "fold_id": 5,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 10830109696,
+        "training_rows_used": 11790,
+        "fold_training_class_counts": {
+          "0": 6699,
+          "1": 5091
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.8799820868786385,
+          "1": 1.1579257513258692
+        },
+        "optimizer_steps": 737,
+        "backward_passes": 1474,
+        "first_loss": 0.6546463370323181,
+        "last_loss": 0.33788490295410156,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.3554323710213078,
+            "mean_classification_loss": 0.3145176458142172,
+            "mean_contrastive_loss": 0.40914724883465464,
+            "last_loss": 0.33788490295410156,
+            "optimizer_steps": 737
+          }
+        ],
+        "final_training_loss": 0.33788490295410156,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "f49dcdb9e4f8adf9ea879bd19f32592bfd7038524880b8899cf922521af9ae3b",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_5/stage_1/final_checkpoint",
+        "elapsed_seconds": 495.069067062,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": false
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "5a5ed58ba8735646f0156718a90b6a0bdf52182e3ae61ede0eb0de9ff643807c",
+        "model.safetensors": "f49dcdb9e4f8adf9ea879bd19f32592bfd7038524880b8899cf922521af9ae3b",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "08851a2db2a4b9a7fe32ae65e0f2d2891771bcdcd603b0e5c965e192d004dceb"
+    },
+    "5:2": {
+      "summary": {
+        "initial_model_weights_sha256": "f49dcdb9e4f8adf9ea879bd19f32592bfd7038524880b8899cf922521af9ae3b",
+        "status": "PASS",
+        "stage": 2,
+        "run_id": "e11e-fold-005-stage-2",
+        "fold_id": 5,
+        "protocol_sha256": "8b8ffb75aadb46ee70a373ca84b823f2b984d1da6071ee112e6b9c56e7f2f087",
+        "trainer_sha256": "9555ee0c40b1a0378b63e483e2bdcb4b6c178c8a7c46c7794bff1b74b883d41e",
+        "contrastive_sha256": "62f8f95a535ab6667a75f49e28986cb3fc9457fa72ede7cd09496bae117d1b67",
+        "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+        "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "bf16_supported": true,
+        "gpu_total_memory_bytes": 85094825984,
+        "peak_gpu_memory_bytes": 16296302592,
+        "training_rows_used": 449,
+        "fold_training_class_counts": {
+          "0": 246,
+          "1": 203
+        },
+        "representative_tokenized_tasks": [
+          "DM",
+          "MT",
+          "PG"
+        ],
+        "class_weights": {
+          "0": 0.9126016260162602,
+          "1": 1.1059113300492611
+        },
+        "optimizer_steps": 145,
+        "backward_passes": 285,
+        "first_loss": 0.8263285756111145,
+        "last_loss": 0.0065963249653577805,
+        "loss_by_epoch": [
+          {
+            "epoch": 1,
+            "mean_loss": 0.507915115539442,
+            "mean_classification_loss": 0.4674245958919065,
+            "mean_contrastive_loss": 0.40490518196632985,
+            "last_loss": 0.44740229845046997,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 2,
+            "mean_loss": 0.25008882204756927,
+            "mean_classification_loss": 0.21379336419008804,
+            "mean_contrastive_loss": 0.3629545731502667,
+            "last_loss": 0.015606646426022053,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 3,
+            "mean_loss": 0.11694971818411559,
+            "mean_classification_loss": 0.08819757432987292,
+            "mean_contrastive_loss": 0.28752143955544424,
+            "last_loss": 0.02880777418613434,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 4,
+            "mean_loss": 0.05859030257060863,
+            "mean_classification_loss": 0.044471659444337876,
+            "mean_contrastive_loss": 0.14118642389382186,
+            "last_loss": 0.003772525116801262,
+            "optimizer_steps": 29
+          },
+          {
+            "epoch": 5,
+            "mean_loss": 0.04077923048712444,
+            "mean_classification_loss": 0.03604618417867051,
+            "mean_contrastive_loss": 0.04733046974267876,
+            "last_loss": 0.0065963249653577805,
+            "optimizer_steps": 29
+          }
+        ],
+        "final_training_loss": 0.0065963249653577805,
+        "losses_all_finite": true,
+        "checkpoint_sha256": "27829deb7ea8d6eb5a552cf905fec7cea0df7a0487f01a6ae4a0d43b97868170",
+        "checkpoint_path": "/results/e11e-fixed-001/fold_5/stage_2/final_checkpoint",
+        "elapsed_seconds": 104.651913046,
+        "runtime": {
+          "python": "3.11.12",
+          "torch": "2.2.1+cu121",
+          "cuda": "12.1",
+          "packages": {
+            "transformers": "4.38.1",
+            "tokenizers": "0.15.2",
+            "numpy": "1.26.4",
+            "safetensors": "0.4.5"
+          }
+        },
+        "e11e_score_produced": true,
+        "heldout_predictions": 112,
+        "heldout_predictions_sha256": "4f801374735fb1b27b4d69bc027e1113d72e7305e3648c6b2eb431702882e9fc"
+      },
+      "checkpoint_files_sha256": {
+        "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+        "config.json": "f24c4c9c3188c2befd56c53fa40ae3118c7a8ec1b7be0cebd92d54c88b1047c0",
+        "model.safetensors": "27829deb7ea8d6eb5a552cf905fec7cea0df7a0487f01a6ae4a0d43b97868170",
+        "special_tokens_map.json": "63cd5b53789b3b5ae2c3d7aa377bcba1557ff0b41dc69ce07b94350ea32291c2",
+        "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+        "tokenizer.json": "499f10bf4be7943e0bc616e2b47e26806634c621150b03097bbca76ac5b528f1",
+        "tokenizer_config.json": "0dee91b44d1b3f42f9c3e936217f0bf71112bc8cdbdcb431d2def717b2036a0f"
+      },
+      "status_sha256": "d2dbd9362903265b2431ffece03031c0c31308069a49a38afcaa3602ee14f54f",
+      "predictions_sha256": "4f801374735fb1b27b4d69bc027e1113d72e7305e3648c6b2eb431702882e9fc"
+    }
+  },
+  "saved_stage1_fits": 5,
+  "saved_stage2_fits": 5,
+  "fits_started_by_verifier": 0
+}

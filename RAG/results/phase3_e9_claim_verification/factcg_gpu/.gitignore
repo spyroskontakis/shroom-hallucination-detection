@@ -1,0 +1,13 @@
+factcg_inputs.jsonl
+*.zip
+local_preflight/
+gpu_run*/
+returned*/
+__pycache__/
+.venv/
+
+# PHASE 3D: exact reviewed publication-inventory exceptions only.
+!/local_preflight/
+!/local_preflight/FACTCG_GPU_REPORT.json
+!/local_preflight/FACTCG_GPU_REPORT.md
+!/local_preflight/environment_freeze.txt

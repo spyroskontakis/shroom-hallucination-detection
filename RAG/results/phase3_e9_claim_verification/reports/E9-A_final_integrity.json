@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "canonical_rows": 561,
+  "claim_count": 575,
+  "features": 44,
+  "baseline_features_numeric_order": "PASS",
+  "locked_folds": "PASS",
+  "hyp_task_only_payloads": "PASS",
+  "reference_policy_direction": "PASS",
+  "claim_aggregation": "PASS",
+  "training_only_targets": "PASS",
+  "rf_fits": 5,
+  "oof_predictions": 561,
+  "official_test_accessed": false,
+  "nli_truncated_pairs": 0,
+  "baseline": {
+    "n": 561,
+    "correct": 474,
+    "accuracy": 0.8449197860962567,
+    "spearman": 0.7816945786401444
+  },
+  "semantic_limitations": "Accepted frozen smoke limitations; no semantic retuning"
+}

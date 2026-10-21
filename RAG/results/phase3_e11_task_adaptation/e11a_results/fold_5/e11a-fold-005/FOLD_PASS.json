@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "mode": "fold",
+  "run_id": "e11a-fold-005",
+  "fold_id": 5,
+  "protocol_sha256": "518c2df610a1483472b94e8baf3c0c4b277275f351e7448822e35d9dc871772d",
+  "base_model_id": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "base_revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "bf16_supported": true,
+  "gpu_total_memory_bytes": 85094825984,
+  "peak_gpu_memory_bytes": 10968635904,
+  "training_rows_used": 449,
+  "fold_training_class_counts": {
+    "0": 246,
+    "1": 203
+  },
+  "representative_tokenized_tasks": [
+    "DM",
+    "MT",
+    "PG"
+  ],
+  "class_weights": {
+    "0": 0.9126016260162602,
+    "1": 1.1059113300492611
+  },
+  "optimizer_steps": 145,
+  "backward_passes": 285,
+  "first_loss": 0.769382894039154,
+  "last_loss": 0.00661161495372653,
+  "loss_by_epoch": [
+    {
+      "epoch": 1,
+      "mean_loss": 0.5629685983846062,
+      "last_loss": 2.321978807449341,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.29639201558995665,
+      "last_loss": 0.05700725317001343,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.17209698236955887,
+      "last_loss": 0.05657599866390228,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 0.08728876948487341,
+      "last_loss": 0.019160425290465355,
+      "optimizer_steps": 29
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 0.05550996071185198,
+      "last_loss": 0.00661161495372653,
+      "optimizer_steps": 29
+    }
+  ],
+  "final_training_loss": 0.00661161495372653,
+  "losses_all_finite": true,
+  "checkpoint_sha256": "ed7f6591b80cde866e89fae5d174b588f86a09afe031b0248322604d584bd555",
+  "checkpoint_path": "/results/e11a/folds/fold_5/e11a-fold-005/final_checkpoint",
+  "elapsed_seconds": 79.213605568,
+  "runtime": {
+    "python": "3.11.12",
+    "torch": "2.2.1+cu121"
+  },
+  "e11a_score_produced": true,
+  "heldout_predictions": 112,
+  "heldout_predictions_sha256": "ef8c130671b582a5bc09d0f21fa2396c643191caca41cb62b5e98f25d367539c"
+}

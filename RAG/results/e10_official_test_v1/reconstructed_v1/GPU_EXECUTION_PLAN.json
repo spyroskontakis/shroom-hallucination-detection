@@ -1,0 +1,62 @@
+{
+  "gpu": "A100-80GB",
+  "gpu_count": 1,
+  "command": "python -m modal run --detach RAG\\results\\e10_official_test_v1\\reconstructed_v1\\modal_factcg.py",
+  "models": {
+    "NLI1": {
+      "model": "microsoft/deberta-large-mnli",
+      "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e"
+    },
+    "MPNet": {
+      "model": "sentence-transformers/all-mpnet-base-v2",
+      "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130"
+    },
+    "NLI2": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "revision": "b3546ea6b0346eb6f8d5d68b13c7dc6d0376b3d7"
+    },
+    "HHEM": {
+      "model": "vectara/hallucination_evaluation_model",
+      "revision": "58383384656cbaec2949a75a41f20e891e90a73b"
+    },
+    "FactCG": {
+      "model": "yaxili96/FactCG-DeBERTa-v3-Large",
+      "revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80",
+      "settings": {
+        "device": "cuda:0",
+        "dtype": "float32",
+        "use_safetensors": true,
+        "use_fast": true,
+        "max_length": 2048,
+        "truncation": "only_first",
+        "padding": "longest",
+        "pad_token": "eos_token",
+        "reference_chunk_words": 550,
+        "batch_size": 1,
+        "hypothesis_split": false,
+        "support_class_index": 1,
+        "activation": "softmax",
+        "reference_aggregation": "max",
+        "temperature_scaling": null,
+        "quantization": null,
+        "autocast": false,
+        "matmul_allow_tf32": false,
+        "seed": 42
+      }
+    }
+  },
+  "evaluator_examples": {
+    "NLI1_base": 1500,
+    "MPNet_base": 1500,
+    "RAG_definition_DM": 535,
+    "NLI2_examples": 1500,
+    "NLI2_pairs": 3535,
+    "HHEM_examples": 1500,
+    "HHEM_pairs": 2035,
+    "FactCG": 1500
+  },
+  "output": "factcg_return.json",
+  "CPU_output_directory": "cpu_features",
+  "volume": "shroom-e10-retrospective-v1",
+  "automatic_retries": 0
+}

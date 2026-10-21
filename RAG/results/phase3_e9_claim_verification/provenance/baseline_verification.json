@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "population": 561,
+  "composition": {
+    "development_model_agnostic": 493,
+    "trial": 68
+  },
+  "fold_counts": {
+    "1": 113,
+    "2": 112,
+    "3": 112,
+    "4": 112,
+    "5": 112
+  },
+  "feature_count": 36,
+  "numeric_and_order_identity": true,
+  "metrics": {
+    "overall": {
+      "n": 561,
+      "correct": 474,
+      "accuracy": 0.8449197860962567,
+      "spearman": 0.7816945786401444
+    },
+    "per_fold": {
+      "1": {
+        "n": 113,
+        "correct": 100,
+        "accuracy": 0.8849557522123894,
+        "spearman": 0.8161783605172331
+      },
+      "2": {
+        "n": 112,
+        "correct": 91,
+        "accuracy": 0.8125,
+        "spearman": 0.7693547088943431
+      },
+      "3": {
+        "n": 112,
+        "correct": 93,
+        "accuracy": 0.8303571428571429,
+        "spearman": 0.7703346139229986
+      },
+      "4": {
+        "n": 112,
+        "correct": 92,
+        "accuracy": 0.8214285714285714,
+        "spearman": 0.7792654108639516
+      },
+      "5": {
+        "n": 112,
+        "correct": 98,
+        "accuracy": 0.875,
+        "spearman": 0.7840673179486594
+      }
+    },
+    "per_task": {
+      "DM": {
+        "n": 211,
+        "correct": 169,
+        "accuracy": 0.8009478672985783,
+        "spearman": 0.6852178827409456
+      },
+      "MT": {
+        "n": 216,
+        "correct": 191,
+        "accuracy": 0.8842592592592593,
+        "spearman": 0.8327371480891061
+      },
+      "PG": {
+        "n": 134,
+        "correct": 114,
+        "accuracy": 0.8507462686567164,
+        "spearman": 0.7522106510632076
+      }
+    }
+  },
+  "rf_fits": 0,
+  "official_test_accessed": false,
+  "input_sha256": {
+    "codex/canonical_human_development_manifest.csv": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "codex/canonical_fold_assignments.csv": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "RAG/results/rag_e6_v3/features/e6_v3_36_features.csv": "1e6386fbd0b89a3a295828259ec8fea9b5b3fc03465d65f82e546687c32e7229",
+    "RAG/results/rag_e6_v3/features/e6_v3_added_2_features.csv": "237568eed7d7a9ec4041e2e19cf23d72e16f497bebe55a40ba9ea4da88182c0c",
+    "RAG/results/rag_e6_v2/features/e6_v2_34_features.csv": "9d130665cd48ece1a75ca313c2f1220012fd9e935f1df678cb082bdf65811531",
+    "RAG/results/rag_e6_v3/evaluation/e6_v3_oof_predictions.csv": "a838f6d23e63adbb772d94ec82eadd8379a90e01d08d3426c386c354afacffa4",
+    "RAG/results/rag_e6_v3/inputs/locked_outer_folds.csv": "db0ca9626baed45e39550728e855a90d23ce663a5484a3fb49033df01573256b",
+    "codex/canonical_feature_outputs/canonical_human_14_features.csv": "3038bd8752a94064e05389e03b063484a1191f9e9a6164f06d11b40688a6828b",
+    "RAG/results/rag_e6_v3/config/run_config.json": "a9d661b533425bc8b9c5cd0583f7e9c49b5fe40c60727a4430548121cbe55acc",
+    "RAG/results/rag_e6_v3/config/feature_freeze.json": "dd3a7506ff375757ec072644503197fb691f5ed6003599d4d2acd30d89069b94",
+    "RAG/results/rag_e6_v3/config/input_manifest.json": "36cd7e8c201084fa51098853839da03311290e37a375ca0566333fd9872a3fad",
+    "RAG/results/rag_e6_v3/evaluation/e6_v3_metrics.json": "248685734a96b7cbbc636d05cb1ed100034619147f7f75e0f23d9535bef1c62c"
+  },
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "safetensors": "0.7.0",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "sentencepiece": "0.2.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.11.0",
+    "transformers": "5.5.4"
+  }
+}

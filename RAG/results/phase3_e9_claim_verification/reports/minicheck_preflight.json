@@ -1,0 +1,29 @@
+{
+  "status": "BLOCKED_MINICHECK",
+  "model": "bespokelabs/Bespoke-MiniCheck-7B",
+  "timestamp_utc": "2026-09-27T21:09:45.037057+00:00",
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.11.0+cpu",
+    "cuda_built": null,
+    "cuda_available": false,
+    "gpu_count": 0,
+    "ram_total_bytes": 16907886592,
+    "ram_available_bytes": 4340334592
+  },
+  "dependencies": {
+    "minicheck": false,
+    "vllm": false,
+    "flash_attn": false
+  },
+  "reason": "Native Windows with CPU-only PyTorch and no CUDA device; minicheck and vllm are absent. The authors document the exact 7B MiniCheck/vLLM interface as Linux-only. Available RAM is insufficient even for an unquantized 7B two-byte-per-parameter weights estimate (14 GB), before runtime overhead. The frozen protocol prohibits quantization, substitution or OOM redesign.",
+  "model_loaded": false,
+  "model_downloaded": false,
+  "rf_fits": 0,
+  "official_test_accessed": false,
+  "sources": [
+    "https://github.com/Liyan06/MiniCheck#installation",
+    "https://huggingface.co/bespokelabs/Bespoke-MiniCheck-7B"
+  ],
+  "memory_estimate_note": "14 GB is a conservative weights-only estimate, not a vendor minimum; the published 48 GB benchmark is not a minimum requirement."
+}

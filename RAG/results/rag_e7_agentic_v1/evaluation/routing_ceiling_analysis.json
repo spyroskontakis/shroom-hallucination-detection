@@ -1,0 +1,21 @@
+{
+  "e3_correct_e6_wrong_no_evidence": 1,
+  "e3_correct_e6_wrong_total": 2,
+  "e3_correct_e6_wrong_with_evidence": 1,
+  "e3_wrong_e6_correct_no_evidence": 3,
+  "forced_no_evidence_net_change": -2,
+  "frozen_e6_correct": 453,
+  "gain_ids_total": [
+    "HDEV_0164_52163d361dec",
+    "HDEV_0488_4e4b5d4aa6b0"
+  ],
+  "gain_ids_with_evidence": [
+    "HDEV_0164_52163d361dec"
+  ],
+  "loose_upper_bound_correct": 453,
+  "no_evidence_e3_correct": 302,
+  "no_evidence_e6_correct": 304,
+  "scope": "Post-hoc descriptive ceiling on these fixed OOF binary predictions only; not a trained router",
+  "tight_oracle_upper_bound_accuracy": 0.8057040998217468,
+  "tight_oracle_upper_bound_correct": 452
+}

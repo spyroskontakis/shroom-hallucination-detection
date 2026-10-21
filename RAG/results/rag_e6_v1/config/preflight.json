@@ -1,0 +1,170 @@
+{
+  "checked_utc": "2026-09-09T13:28:48.158738+00:00",
+  "status": "INPUT_HASHES_IDS_FOLDS_PASS_RANKING_MISSING",
+  "release": {
+    "schema_version": "module4-release-manifest-v1",
+    "mode": "local-artifacts",
+    "status": "PASS",
+    "scope": "Source package and allowlisted local experimental artifacts verified.",
+    "checked_count": 19,
+    "passed_count": 19,
+    "failed_count": 0,
+    "external_artifacts_not_checked": false,
+    "skipped_local_artifact_count": 0,
+    "checks": [
+      {
+        "path": "RAG/module4_release_v1/verify_module4.py",
+        "status": "PASS",
+        "size": 10972,
+        "sha256": "74676563cace86438c4487f2135bb65fb234307e2ff894341d50e38e7b26d638"
+      },
+      {
+        "path": "RAG/module4_release_v1/tests/test_verify_module4.py",
+        "status": "PASS",
+        "size": 7225,
+        "sha256": "aff6a2bf128ac094c4372c787025740825c029cec223f3235f85e68a000497e4"
+      },
+      {
+        "path": "RAG/module4_release_v1/README.md",
+        "status": "PASS",
+        "size": 10119,
+        "sha256": "5198fde85146f5815311f006710f65424c61bc431787a64bc8707d98383b8bbd"
+      },
+      {
+        "path": "RAG/module4_release_v1/THESIS_MODULE4.md",
+        "status": "PASS",
+        "size": 13834,
+        "sha256": "6dddd8c3c5a6fcb00f404a601ead3762d4dda4934a9a6b8c1891521f43124e85"
+      },
+      {
+        "path": "RAG/module4_release_v1/HANDOFF.md",
+        "status": "PASS",
+        "size": 4619,
+        "sha256": "fd0051704e7418812d19a789ff0166580794c50ff561990e2a85e1f4620ccf54"
+      },
+      {
+        "path": "RAG/results/rag_module4/MODULE4_RAG_ASSISTED_FUSION_PLAN.md",
+        "status": "PASS",
+        "size": 19363,
+        "sha256": "d27ef3f4965aa277bc1fda6c0e24670b63326c037e5e36ed63477b32c7f4bb7b"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/MODULE4_FEATURE_PREPARATION_SPEC.md",
+        "status": "PASS",
+        "size": 2080,
+        "sha256": "958158a8c79145bbfdc1d4ceed91378174f19115be92aa1ad0e9a96ec52ffb33"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/CONTINUATION_AUTHORIZATION_AND_DEVIATION.md",
+        "status": "PASS",
+        "size": 5208,
+        "sha256": "a0f4d6582eaac1c44ad8460bce860105a9c947756731cfcf65adaacb94e1524f"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/SCHANNEL_CONTINUATION_FINAL_REPORT.md",
+        "status": "PASS",
+        "size": 11714,
+        "sha256": "b895c0e089c437077a401f54815ca7f435924a475e7960b3a1cfd2efa009b5bc"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/SCHANNEL_STATE.json",
+        "status": "PASS",
+        "size": 3924,
+        "sha256": "c21ff07e95495c9cd756be3b4d1008685a32f295419e9de98cc6ba8cd2269ec0"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/PRE_RUN_MANIFEST.json",
+        "status": "PASS",
+        "size": 2742,
+        "sha256": "0841cb16eb010dd36d5c0cf9bd41557010386b97f2ea97d5020e3d00d0a2f339"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/PINNED_REPLAY_REPORT.md",
+        "status": "PASS",
+        "size": 5801,
+        "sha256": "0dcfd36870ddd1afeb590c00148e97e30cffd83f8cf5eba1157a259f059da5e6"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/RUNTIME_PROVENANCE_MANIFEST.json",
+        "status": "PASS",
+        "size": 4534,
+        "sha256": "2c110059ff1b27ac2a14beb973f4ad10f2749798663a0afd247c0943149dc772"
+      },
+      {
+        "path": "RAG/results/rag_module4/static_protocol/module4_dev_inputs_locked.csv",
+        "status": "PASS",
+        "size": 96241,
+        "sha256": "3f92a0b398b97873716dda69d108467a4309fe28bd565be692a74e1af74523d5"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_external_lexical_snapshot.jsonl",
+        "status": "PASS",
+        "size": 381385,
+        "sha256": "7677937ace64644afa4f39d8745f54711640a578f1387d9e389008b1e0440d40"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_rag_features.csv",
+        "status": "PASS",
+        "size": 38385,
+        "sha256": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_exact_overlap_audit.csv",
+        "status": "PASS",
+        "size": 16350,
+        "sha256": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/outputs/module4_rag_features_pinned_replay.csv",
+        "status": "PASS",
+        "size": 38385,
+        "sha256": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160"
+      },
+      {
+        "path": "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/replay_20260830T181436Z/outputs/module4_exact_overlap_audit_pinned_replay.csv",
+        "status": "PASS",
+        "size": 16350,
+        "sha256": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a"
+      }
+    ],
+    "errors": []
+  },
+  "input_sha256": {
+    "codex/canonical_human_development_manifest.csv": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "codex/canonical_fold_assignments.csv": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "codex/canonical_feature_outputs/canonical_human_14_features.csv": "3038bd8752a94064e05389e03b063484a1191f9e9a6164f06d11b40688a6828b",
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_rag_features.csv": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160"
+  },
+  "oof_sha256": {
+    "RAG\\results\\rag_module4\\continuation_v1\\schannel_run_v1\\evaluation\\module4_e3_oof_predictions.csv": "942d4c5d69411d7b496286d108f3347192f69224535938e335d94b7f67e237f1",
+    "RAG\\results\\rag_module4\\continuation_v1\\schannel_run_v1\\evaluation\\module4_e5_oof_predictions.csv": "6532425e38d66391e579c414e4ec07482f100f2dee7b4ce0531d502d034e6ea5"
+  },
+  "protocol_sha256": "55b64cb63f10108e53d56f38be646a8c71d9a94ec50a7d611c85e3b7d00c8454",
+  "script_sha256": "9a3479d8ba599bcced56a405fa1eb9155f4bcd9e64eaee5fd971a7d6a6f00466",
+  "rows": 561,
+  "fold_sizes": {
+    "1": 113,
+    "2": 112,
+    "3": 112,
+    "4": 112,
+    "5": 112
+  },
+  "evidence_rows": 193,
+  "saved_baseline_metrics": {
+    "E3": {
+      "accuracy": 0.7932263814616756,
+      "n": 561,
+      "spearman": 0.7390395612811848
+    },
+    "E5": {
+      "accuracy": 0.7950089126559715,
+      "n": 561,
+      "spearman": 0.7421719692110536
+    }
+  },
+  "baseline_metrics_check": "Saved metrics checked; recomputation against labels deferred until feature freeze.",
+  "ranking_issue": "No persisted Module 4 ordered evidence list found. Snapshot order is not retrieval order. No reranking performed.",
+  "model_inference_calls": 0,
+  "training_runs": 0,
+  "network_calls": 0
+}

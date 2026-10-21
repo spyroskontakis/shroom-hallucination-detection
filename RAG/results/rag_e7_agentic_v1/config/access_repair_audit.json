@@ -1,0 +1,28 @@
+{
+  "head": "0a1ef3e792867796c412070087095274b0206849",
+  "evaluation_directory_empty": true,
+  "checked_utc": "2026-09-09T16:29:13.4770677Z",
+  "source_fix": "Process-local platform._syscmd_ver defaults adapter; native getwindowsversion fallback; no permission relaxation",
+  "contract_operational_violations": 0,
+  "environment_redirects_added": [],
+  "contract_synthetic_probes": 12,
+  "diagnostic_reproduction_blocked_writes": 3,
+  "protocol_hash_after": "0491505c0f98a2a4d2a0896370adbbc3674c6fdf873b96a8a31833e587923002",
+  "attempted_paths": [
+    "\\\\.\\NUL\\",
+    "\\\\.\\NUL\\",
+    "\\\\.\\NUL\\"
+  ],
+  "blocked_writes_after_fix": 0,
+  "access_contract_tests": 7,
+  "protected_unchanged": 481,
+  "status": "PASS",
+  "e7_evaluations": 0,
+  "rf_fits": 0,
+  "protocol_hash_before": "0491505c0f98a2a4d2a0896370adbbc3674c6fdf873b96a8a31833e587923002",
+  "network_attempts_after_fix": 0,
+  "preflight_status": "PASS",
+  "branch": "agentic-rag-e7",
+  "e7_scores_observed": 0,
+  "access_contract_status": "PASS"
+}

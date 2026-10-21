@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "samples": 561,
+  "features": 44,
+  "baseline_columns": "exact numeric and order identity",
+  "reference_policy": "PASS",
+  "aggregations_reconstructed": "PASS",
+  "rf_fits_at_audit": 0
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "configuration": "C0",
+    "order": 0,
+    "n": 448,
+    "correct": 353,
+    "accuracy": 0.7879464285714286,
+    "spearman": 0.7272404812982822,
+    "outer_fold": 1
+  },
+  {
+    "configuration": "C1",
+    "order": 1,
+    "n": 448,
+    "correct": 354,
+    "accuracy": 0.7901785714285714,
+    "spearman": 0.7316384099375598,
+    "outer_fold": 1
+  },
+  {
+    "configuration": "C2",
+    "order": 2,
+    "n": 448,
+    "correct": 356,
+    "accuracy": 0.7946428571428571,
+    "spearman": 0.7351418202487269,
+    "outer_fold": 1
+  },
+  {
+    "configuration": "C3",
+    "order": 3,
+    "n": 448,
+    "correct": 354,
+    "accuracy": 0.7901785714285714,
+    "spearman": 0.7355842890878248,
+    "outer_fold": 1
+  },
+  {
+    "configuration": "C4",
+    "order": 4,
+    "n": 448,
+    "correct": 358,
+    "accuracy": 0.7991071428571429,
+    "spearman": 0.7410620969299924,
+    "outer_fold": 1
+  },
+  {
+    "configuration": "C5",
+    "order": 5,
+    "n": 448,
+    "correct": 357,
+    "accuracy": 0.796875,
+    "spearman": 0.7438462219219162,
+    "outer_fold": 1
+  },
+  {
+    "configuration": "C0",
+    "order": 0,
+    "n": 449,
+    "correct": 369,
+    "accuracy": 0.821826280623608,
+    "spearman": 0.7524423231192666,
+    "outer_fold": 2
+  },
+  {
+    "configuration": "C1",
+    "order": 1,
+    "n": 449,
+    "correct": 370,
+    "accuracy": 0.8240534521158129,
+    "spearman": 0.7579885342492992,
+    "outer_fold": 2
+  },
+  {
+    "configuration": "C2",
+    "order": 2,
+    "n": 449,
+    "correct": 366,
+    "accuracy": 0.8151447661469933,
+    "spearman": 0.7585641613259394,
+    "outer_fold": 2
+  },
+  {
+    "configuration": "C3",
+    "order": 3,
+    "n": 449,
+    "correct": 369,
+    "accuracy": 0.821826280623608,
+    "spearman": 0.7636662990395763,
+    "outer_fold": 2
+  },
+  {
+    "configuration": "C4",
+    "order": 4,
+    "n": 449,
+    "correct": 374,
+    "accuracy": 0.8329621380846325,
+    "spearman": 0.7686933942029193,
+    "outer_fold": 2
+  },
+  {
+    "configuration": "C5",
+    "order": 5,
+    "n": 449,
+    "correct": 372,
+    "accuracy": 0.8285077951002228,
+    "spearman": 0.7669556101802457,
+    "outer_fold": 2
+  },
+  {
+    "configuration": "C0",
+    "order": 0,
+    "n": 449,
+    "correct": 363,
+    "accuracy": 0.8084632516703786,
+    "spearman": 0.7292186977335526,
+    "outer_fold": 3
+  },
+  {
+    "configuration": "C1",
+    "order": 1,
+    "n": 449,
+    "correct": 357,
+    "accuracy": 0.7951002227171492,
+    "spearman": 0.7330781083376925,
+    "outer_fold": 3
+  },
+  {
+    "configuration": "C2",
+    "order": 2,
+    "n": 449,
+    "correct": 357,
+    "accuracy": 0.7951002227171492,
+    "spearman": 0.7372689056060691,
+    "outer_fold": 3
+  },
+  {
+    "configuration": "C3",
+    "order": 3,
+    "n": 449,
+    "correct": 361,
+    "accuracy": 0.8040089086859689,
+    "spearman": 0.7341412793337678,
+    "outer_fold": 3
+  },
+  {
+    "configuration": "C4",
+    "order": 4,
+    "n": 449,
+    "correct": 360,
+    "accuracy": 0.8017817371937639,
+    "spearman": 0.738618230112632,
+    "outer_fold": 3
+  },
+  {
+    "configuration": "C5",
+    "order": 5,
+    "n": 449,
+    "correct": 362,
+    "accuracy": 0.8062360801781737,
+    "spearman": 0.7435053183837969,
+    "outer_fold": 3
+  },
+  {
+    "configuration": "C0",
+    "order": 0,
+    "n": 449,
+    "correct": 359,
+    "accuracy": 0.799554565701559,
+    "spearman": 0.7325726171748291,
+    "outer_fold": 4
+  },
+  {
+    "configuration": "C1",
+    "order": 1,
+    "n": 449,
+    "correct": 358,
+    "accuracy": 0.7973273942093542,
+    "spearman": 0.7367408166836493,
+    "outer_fold": 4
+  },
+  {
+    "configuration": "C2",
+    "order": 2,
+    "n": 449,
+    "correct": 359,
+    "accuracy": 0.799554565701559,
+    "spearman": 0.7387265983862761,
+    "outer_fold": 4
+  },
+  {
+    "configuration": "C3",
+    "order": 3,
+    "n": 449,
+    "correct": 359,
+    "accuracy": 0.799554565701559,
+    "spearman": 0.7459640829214144,
+    "outer_fold": 4
+  },
+  {
+    "configuration": "C4",
+    "order": 4,
+    "n": 449,
+    "correct": 357,
+    "accuracy": 0.7951002227171492,
+    "spearman": 0.7488968863795533,
+    "outer_fold": 4
+  },
+  {
+    "configuration": "C5",
+    "order": 5,
+    "n": 449,
+    "correct": 359,
+    "accuracy": 0.799554565701559,
+    "spearman": 0.7534910998898977,
+    "outer_fold": 4
+  },
+  {
+    "configuration": "C0",
+    "order": 0,
+    "n": 449,
+    "correct": 357,
+    "accuracy": 0.7951002227171492,
+    "spearman": 0.7513871728842014,
+    "outer_fold": 5
+  },
+  {
+    "configuration": "C1",
+    "order": 1,
+    "n": 449,
+    "correct": 358,
+    "accuracy": 0.7973273942093542,
+    "spearman": 0.7514455752573258,
+    "outer_fold": 5
+  },
+  {
+    "configuration": "C2",
+    "order": 2,
+    "n": 449,
+    "correct": 357,
+    "accuracy": 0.7951002227171492,
+    "spearman": 0.7527279974257679,
+    "outer_fold": 5
+  },
+  {
+    "configuration": "C3",
+    "order": 3,
+    "n": 449,
+    "correct": 358,
+    "accuracy": 0.7973273942093542,
+    "spearman": 0.7514565686556911,
+    "outer_fold": 5
+  },
+  {
+    "configuration": "C4",
+    "order": 4,
+    "n": 449,
+    "correct": 360,
+    "accuracy": 0.8017817371937639,
+    "spearman": 0.7544875608258909,
+    "outer_fold": 5
+  },
+  {
+    "configuration": "C5",
+    "order": 5,
+    "n": 449,
+    "correct": 357,
+    "accuracy": 0.7951002227171492,
+    "spearman": 0.755611496494708,
+    "outer_fold": 5
+  }
+]

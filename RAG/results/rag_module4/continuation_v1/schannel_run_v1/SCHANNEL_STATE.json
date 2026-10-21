@@ -1,0 +1,96 @@
+{
+  "schema_version": "module4-schannel-state-v1",
+  "stage": "complete",
+  "transport": {
+    "executable": "external-artifacts/local-0dd4264ef6a3/curl.exe",
+    "curl_sha256": "73d24149ff289afc49ec41f08918ef9faa727d39ad993e929757dc2ddafab805",
+    "tls_backend": "Schannel",
+    "certificate_verification": "required"
+  },
+  "frozen_inputs": {
+    "module4_dev_inputs_locked_sha256": "3f92a0b398b97873716dda69d108467a4309fe28bd565be692a74e1af74523d5",
+    "parser_version": "module4-external-parser-v1",
+    "wiktionary_orchestration_sha256": "91c2c950e066ce613cca3dcdbda14fd83a7bf633fecbbeeb90d065c14e68d4e6",
+    "rag_feature_pipeline_sha256": "dc539f308bfcc133a99121795dc435fbda32fe076b168905dbeed20197891507",
+    "rag_feature_spec_sha256": "958158a8c79145bbfdc1d4ceed91378174f19115be92aa1ad0e9a96ec52ffb33"
+  },
+  "current_adapter": {
+    "sha256": "f44171f65ce18528ce51eef13bbc6285fb273fe139f75e9ede4ab112224fbe89",
+    "synthetic_tests": "21/21 PASS"
+  },
+  "preflight": {
+    "attempted": true,
+    "result": "PASS",
+    "http_status": 200,
+    "curl_exit_code": 0,
+    "ssl_verify_result": 0,
+    "response_size_bytes": 3102,
+    "response_sha256": "ad95053cd8af58f48431ca819f3fd0e227cc0d3145cc13e4a80dca11c4c8b685",
+    "response_date_utc": "2026-08-30T07:27:45Z",
+    "local_completion_utc": "2026-08-30T07:27:47.961074Z",
+    "clock_consistency": "PASS"
+  },
+  "acquisition": {
+    "result": "PASS",
+    "terms": 206,
+    "accepted_requests_including_preflight": 395,
+    "transient_failed_attempts": 39,
+    "tls_failures": 0,
+    "failed_terms": 0
+  },
+  "offline_snapshot_lock": {
+    "result": "PASS",
+    "two_builds_byte_identical": true,
+    "terms": 206,
+    "senses_found_terms": 188,
+    "no_sense_found_terms": 18,
+    "source_request_failed_terms": 0,
+    "unique_senses": 462,
+    "snapshot_sha256": "7677937ace64644afa4f39d8745f54711640a578f1387d9e389008b1e0440d40",
+    "term_manifest_sha256": "b5002d09df7ed8559aaea0ec60a8367dcd35edf36e22b11e0f59f0154aa4e062"
+  },
+  "feature_lock": {
+    "declaration": "RAG_7_FEATURES_LOCKED_BEFORE_ANY_NEW_DEVELOPMENT_LABEL_ACCESS",
+    "rows": 561,
+    "identity_columns": 1,
+    "rag_feature_columns": 7,
+    "unique_example_ids": 561,
+    "nonfinite_values": 0,
+    "non_dm_zero_feature_rows": 350,
+    "evidence_available_rows": 193,
+    "two_reconstructions_byte_identical": true,
+    "sha256": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160",
+    "new_development_label_accesses_before_lock": 0
+  },
+  "runtime_incidents": [
+    {
+      "stage": "feature_inference",
+      "accepted_artifact_created": false,
+      "description": "Default Python stopped on torch/NumPy ABI mismatch before output. Existing shroom_ensemble environment was used without package changes. A transformers background safetensors-conversion helper attempted hub resolution despite local_files_only; the run was interrupted before output and rerun with HF_HUB_OFFLINE and TRANSFORMERS_OFFLINE locks."
+    }
+  ],
+  "authorized_e3_access": {
+    "occurred_after_feature_lock": true,
+    "new_mixed_e3_csv_content_accesses_before_lock": 0,
+    "historical_label_exposure_incident_retained": true
+  },
+  "development_oof_evaluation": {
+    "e3_reproduction": "PASS",
+    "e3_accuracy": 0.7932263814616756,
+    "e3_spearman": 0.7390395612811848,
+    "e5_accuracy": 0.7950089126559715,
+    "e5_spearman": 0.7421719692110536,
+    "paired_accuracy_net_correct": 1,
+    "exact_overlap_rows": 18,
+    "decision": "E5_RAG_IMPROVES_DEVELOPMENT_SCORE",
+    "metrics_sha256": "4fca6c5c72e79a9da593e97fc4f4612e51aa89509626ae10e12a0aec915ed712"
+  },
+  "final": {
+    "verdict": "MODULE4_SCHANNEL_CONTINUATION_COMPLETE_DEVELOPMENT_OOF_EVALUATED_WITH_DISCLOSED_DEVIATION",
+    "report_size_bytes": 11714,
+    "report_sha256": "b895c0e089c437077a401f54815ca7f435924a475e7960b3a1cfd2efa009b5bc",
+    "official_test_accesses": 0,
+    "holdout_label_accesses": 0,
+    "package_changes": 0
+  }
+}

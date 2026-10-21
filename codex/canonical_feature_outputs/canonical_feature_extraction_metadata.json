@@ -1,0 +1,160 @@
+{
+  "timestamp_start": "2026-07-19T13:14:16",
+  "interpreter": "external-artifacts/local-21bb07554028/python.exe",
+  "python_version": "3.11.9",
+  "torch_version": "2.11.0+cpu",
+  "transformers_version": "5.5.4",
+  "sentence_transformers_version": "5.4.1",
+  "numpy_version": "2.4.4",
+  "pandas_version": "3.0.2",
+  "cuda_available": false,
+  "cuda_version": null,
+  "device": "cpu",
+  "cuda_device_name": null,
+  "cuda_memory_free_bytes_start": null,
+  "cuda_memory_total_bytes": null,
+  "human_manifest_sha256": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+  "synthetic_manifest_sha256": "a131a7b2fde22cd65b90729baee1251c501093467039b3fcd92cff75ac63cf90",
+  "fold_file_sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+  "model_names": {
+    "nli": "microsoft/deberta-large-mnli",
+    "similarity": "sentence-transformers/all-mpnet-base-v2"
+  },
+  "model_cached_artifacts": {
+    "nli": {
+      "config.json": "external-artifacts/local-ba247bf9f1e2/config.json",
+      "tokenizer_config.json": "external-artifacts/local-ab2ed7e881d6/tokenizer_config.json"
+    },
+    "similarity": {
+      "config.json": "external-artifacts/local-232cd9e0872a/config.json",
+      "modules.json": "external-artifacts/local-ef7146a944d9/modules.json"
+    }
+  },
+  "model_config_hashes": {
+    "nli_config": "d9f6829f2e13bdb4743f97bd4c0866412b91129bfa0195cdd0414d836cc6f130",
+    "similarity_config": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0"
+  },
+  "nli_label_mapping": {
+    "0": "CONTRADICTION",
+    "1": "NEUTRAL",
+    "2": "ENTAILMENT"
+  },
+  "nli_truncation": true,
+  "nli_max_length": 512,
+  "nli_batch_size": 2,
+  "similarity_batch_size": 64,
+  "similarity_normalize_embeddings": true,
+  "quality_tolerance": 1e-05,
+  "similarity_formulas": {
+    "sim_src_hyp": "dot(normalized_src_embedding, normalized_hyp_embedding)",
+    "sim_tgt_hyp": "dot(normalized_tgt_embedding, normalized_hyp_embedding)",
+    "sim_src_tgt": "dot(normalized_src_embedding, normalized_tgt_embedding)",
+    "sim_max": "max(sim_src_hyp, sim_tgt_hyp)",
+    "sim_min": "min(sim_src_hyp, sim_tgt_hyp)",
+    "sim_mean": "(sim_src_hyp + sim_tgt_hyp) / 2",
+    "sim_gap_tgt_src": "sim_tgt_hyp - sim_src_hyp",
+    "sim_hyp_distance_from_truth": "1.0 - sim_tgt_hyp"
+  },
+  "smoke_test": {
+    "sample_ids": [
+      "HDEV_0001_e3a6ae1bd526",
+      "HDEV_0313_309fe2c60a90",
+      "HDEV_0188_10b0356acc52"
+    ],
+    "tasks": [
+      "DM",
+      "MT",
+      "PG"
+    ],
+    "passed": true,
+    "checks": [
+      {
+        "check": "src_nli_sum_close_to_1",
+        "passed": true,
+        "max_abs_error": 7.59027898311615e-08
+      },
+      {
+        "check": "tgt_nli_sum_close_to_1",
+        "passed": true,
+        "max_abs_error": 1.1408701316995007e-08
+      },
+      {
+        "check": "nli_scores_in_0_1",
+        "passed": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "check": "canonical_id_unique",
+        "passed": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "check": "base_similarity_in_minus1_1",
+        "passed": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "check": "sim_max_ge_sim_min",
+        "passed": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "check": "sim_mean_formula",
+        "passed": true,
+        "max_abs_error": 2.4999999959085528e-08
+      },
+      {
+        "check": "sim_gap_tgt_src_formula",
+        "passed": true,
+        "max_abs_error": 1.3999999992631018e-08
+      },
+      {
+        "check": "sim_hyp_distance_from_truth_formula",
+        "passed": true,
+        "max_abs_error": 1.9999999989472883e-08
+      },
+      {
+        "check": "canonical_id_unique",
+        "passed": true,
+        "max_abs_error": 0.0
+      }
+    ]
+  },
+  "output_sha256": {
+    "canonical_human_nli_features.csv": "10d96e0d1941fa9e284a09b9eda79fc0670c247b6b60789c95c9a394286a4366",
+    "canonical_human_similarity_features.csv": "90fdab43830d7e4a792bd0c042ad7b9abf5cc423e54400fa7dcff3e5e820bd0b",
+    "canonical_human_14_features.csv": "3038bd8752a94064e05389e03b063484a1191f9e9a6164f06d11b40688a6828b",
+    "canonical_synthetic_nli_features.csv": "b755ff52b6012ea214e2c54f758752b18b77dce6bd2da2fc5d4aacdb53887c1e",
+    "canonical_synthetic_similarity_features.csv": "fe39b8fc9ec65a2cdbc3455b04cd406eb1dcab08e30c42c524abad47b15f2665",
+    "canonical_synthetic_14_features.csv": "3ba57e611df885a0afe9fd6a12f962d49590938c740afef48665a1d0a72fd462",
+    "canonical_feature_quality_audit.csv": "87db0e56e522fdf960d650d0f1af1b903d74260b4ee197093fa91e9f8b4db6b7",
+    "canonical_feature_compatibility_audit.csv": "243ccdbb668f279425e57ca77e3e72d6c087df4e43592d5daacace7ca2058fac"
+  },
+  "runtime_seconds_by_stage": {
+    "smoke_test_seconds_final_resume": 0.055,
+    "human_nli_wall_clock_from_log_seconds": 1149,
+    "synthetic_nli_wall_clock_from_log_seconds": 771,
+    "human_similarity_wall_clock_from_log_seconds": 121,
+    "synthetic_similarity_wall_clock_estimated_seconds": 122,
+    "note": "NLI was executed over multiple resumable CPU runs. Wall-clock values are reconstructed from canonical_feature_extraction.log; the final resume run reused complete checkpoints."
+  },
+  "rows_completed": {
+    "human": 561,
+    "synthetic": 505,
+    "human_nli": 561,
+    "synthetic_nli": 505,
+    "human_similarity": 561,
+    "synthetic_similarity": 505
+  },
+  "resumptions_or_retries": 11,
+  "compute_limitations": [
+    "CUDA unavailable; all inference ran on CPU.",
+    "NLI batch size was 2 for CPU safety.",
+    "The first model-load attempt logged Hugging Face HTTP metadata requests despite local_files_only=True; the script was then patched to set TRANSFORMERS_OFFLINE=1 and HF_HUB_OFFLINE=1 for subsequent runs.",
+    "Three timed-out wrapper calls initially left background Python extraction processes; they were detected and stopped before continuing. The checkpoint was verified as readable and duplicate-free before resuming.",
+    "A final compatibility-audit bug was fixed after feature CSVs had been produced; the bug concerned audit matching text fields and did not alter feature values."
+  ],
+  "execution_notes": "Prompt 7D was completed through 11 resumptions/retries on a CPU-only environment. Some timed-out wrapper calls initially left background Python processes; these were detected, stopped, and the resumable checkpoints were verified as readable and duplicate-free before continuing. The first model-load attempt logged Hugging Face HTTP metadata requests despite local_files_only=True; after that, the script was locked with TRANSFORMERS_OFFLINE=1 and HF_HUB_OFFLINE=1. No Gemini/API inference call was performed.",
+  "timestamp_end": "2026-07-19T13:14:20",
+  "total_runtime_seconds": 4.883
+}

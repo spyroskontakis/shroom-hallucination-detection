@@ -1,0 +1,116 @@
+{
+  "parent_audit_hashes": {
+    "audit_data.py": true,
+    "dev_official_release.zip": true,
+    "E10_DEVELOPMENT_REPLAY.json": true,
+    "E10_OFFICIAL_TEST_DATA_AUDIT.md": true,
+    "E10_OFFICIAL_TEST_FEATURE_MANIFEST.json": true,
+    "E10_OFFICIAL_TEST_PROTOCOL.md": true,
+    "E10_OFFICIAL_TEST_RESULTS.md": true,
+    "E10_OFFICIAL_TEST_TRAIN_MANIFEST.json": true,
+    "OFFICIAL_RELEASE_CHECK.json": true,
+    "OVERLAP_AND_RESOURCE_CHECKS.json": true,
+    "PHASE0_DATA_CHECKS.json": true,
+    "PRESERVATION_AND_CHECKS.json": true,
+    "test_audit_data.py": true,
+    "test_official_release.zip": true,
+    "trial_official_release.zip": true
+  },
+  "frozen_source_hashes": {
+    "codex/canonical_evaluation_data_prep.py": true,
+    "codex/canonical_human_development_manifest.csv": true,
+    "codex/canonical_feature_extraction.py": true,
+    "codex/canonical_feature_outputs/canonical_feature_extraction_metadata.json": true,
+    "RAG/results/rag_e6_v1/scripts/build_features.py": true,
+    "RAG/results/rag_e6_v2/scripts/nli_backend.py": true,
+    "RAG/results/rag_e6_v3/scripts/hhem_backend.py": true,
+    "RAG/results/rag_e6_v3/config/run_config.json": true,
+    "RAG/results/rag_e6_v3/features/e6_v3_36_features.csv": true,
+    "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py": true,
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_external_lexical_snapshot.jsonl": true,
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_dev_term_manifest.csv": true,
+    "RAG/scripts/module4_build_external_lexicon.py": true,
+    "RAG/results/phase3_e9_claim_verification/factcg_gpu/GPU_RUN_MANIFEST.json": true,
+    "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py": true,
+    "RAG/results/phase3_e9_claim_verification/features/e10_return/E10.csv": true,
+    "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_oof.csv": true,
+    "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_metrics.json": true,
+    "RAG/results/phase3_e9_claim_verification/scripts/e9_common.py": true
+  },
+  "existing_file_metadata_changes": [],
+  "known_raw_content": [
+    {
+      "term": "marrow",
+      "kind": "revision",
+      "sha256": "ed8452e167d4a281aee43c061e3f0da70bc93b30fd2e93069f63a39d0be390e0",
+      "matching_paths": [
+        "RAG\\results\\rag_module4\\continuation_v1\\schannel_run_v1\\raw_sources\\0021_e574bf06a7a9_revision.json"
+      ],
+      "test_ids": [
+        423
+      ]
+    },
+    {
+      "term": "marrow",
+      "kind": "parse",
+      "sha256": "4bc284a3fce0d0a907b0fcdbed9358eaf7295496a685ac753826203e38b8d166",
+      "matching_paths": [
+        "RAG\\results\\rag_module4\\continuation_v1\\schannel_run_v1\\raw_sources\\0021_e574bf06a7a9_parse.json"
+      ],
+      "test_ids": [
+        423
+      ]
+    },
+    {
+      "term": "bountiful",
+      "kind": "revision",
+      "sha256": "8c9477528d6205e8617192bdd3de620a06eaee1c84df88b0c4cd871a762d42a9",
+      "matching_paths": [
+        "RAG\\results\\rag_module4\\continuation_v1\\schannel_run_v1\\raw_sources\\0160_6ea553e5dda8_revision.json"
+      ],
+      "test_ids": [
+        1511
+      ]
+    },
+    {
+      "term": "bountiful",
+      "kind": "parse",
+      "sha256": "e196d7e31b3ccaa4fe9efdc15b134c79307ca0ee26243e0760ac3cb715ad53aa",
+      "matching_paths": [
+        "RAG\\results\\rag_module4\\continuation_v1\\schannel_run_v1\\raw_sources\\0160_6ea553e5dda8_parse.json"
+      ],
+      "test_ids": [
+        1511
+      ]
+    }
+  ],
+  "historical_test_input_identity": {
+    "rows": 1500,
+    "text_multiset_equal": true,
+    "id_set_equal": true,
+    "gold_values_compared": false,
+    "source_sha256": "eaffe4889fabb18f9bd6f9f0ebe6c341fd47fab493071c4414b70d0df1f3d9f2"
+  },
+  "historical_timestamps": {
+    "codex/data/shroom_ensemble.ipynb": {
+      "sha256": "e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7",
+      "filesystem_mtime_utc": "2026-05-05T15:54:56.143536+00:00",
+      "not_authenticated_execution_time": true
+    },
+    "codex/data/7. Ablation Synthetic Data/4.nli_similarity_features_dataset.csv": {
+      "sha256": "eaffe4889fabb18f9bd6f9f0ebe6c341fd47fab493071c4414b70d0df1f3d9f2",
+      "filesystem_mtime_utc": "2026-05-05T13:13:44.054770+00:00",
+      "not_authenticated_execution_time": true
+    },
+    "codex/data/7. Ablation Synthetic Data/ablation_synthetic_ratio_results.csv": {
+      "sha256": "5964c230c3872ad972f64a0a9236131b1048a957d09e3e554cb50a2945108837",
+      "filesystem_mtime_utc": "2026-06-06T10:07:01.553929+00:00",
+      "not_authenticated_execution_time": true
+    },
+    "codex/data/7. Ablation Synthetic Data/ablation_synthetic_weight_results.csv": {
+      "sha256": "b543903bf3eb3cc29ee94f7867eec3c4c649e36328e5fba27833d74fc972dde3",
+      "filesystem_mtime_utc": "2026-06-06T10:07:09.161844+00:00",
+      "not_authenticated_execution_time": true
+    }
+  }
+}

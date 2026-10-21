@@ -1,0 +1,16 @@
+{
+  "model_id": "yaxili96/FactCG-DeBERTa-v3-Large",
+  "revision": "0430e3509dbd28d2dff7a117c0eae25359ff3e80",
+  "file": {
+    "type": "file",
+    "oid": "ee390a3d08a1e14fb8d981467a6b4889bd042044",
+    "size": 1740304440,
+    "lfs": {
+      "oid": "379a343d1ca25c9dfe24ae149f76cc958ea4f09c00dae88bd49bbbf58c749d5e",
+      "size": 1740304440,
+      "pointerSize": 135
+    },
+    "xetHash": "58d2c946f2c836ae18fbd5962499b46d991960dfffae2dc4c014a3025b41bce2",
+    "path": "model.safetensors"
+  }
+}

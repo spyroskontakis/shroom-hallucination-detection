@@ -1,0 +1,11 @@
+{
+  "e7_evaluations": 0,
+  "e7_scores_observed": 0,
+  "errors": 0,
+  "failures": 0,
+  "operational_violations": 0,
+  "rf_fits": 0,
+  "scope": "Diagnostic/access-control contracts; not full E7 router contract suite",
+  "status": "PASS",
+  "tests_run": 7
+}

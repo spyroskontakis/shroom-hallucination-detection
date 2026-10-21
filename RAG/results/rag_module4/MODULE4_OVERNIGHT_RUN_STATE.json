@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "run_status": "STOPPED",
+  "stage_name": "Stage 0: Integrity verification",
+  "stage_status": "STOPPED_MANDATORY_BOUNDARY_VIOLATION",
+  "start_timestamp_utc": "2026-08-30T06:30:00Z",
+  "end_timestamp_utc": "2026-08-30T06:34:51.7277692Z",
+  "verdict": "MODULE4_OVERNIGHT_STOPPED_STAGE0_PREMATURE_DEVELOPMENT_LABEL_ACCESS",
+  "completed_validations": [
+    "10/10 requested Phase 0D and Stage A artifact hashes matched",
+    "canonical inputs 561/561",
+    "task counts DM 211, MT 216, PG 134",
+    "RAG-applicable DM rows 211",
+    "unique normalized DM terms 206",
+    "invented MT/PG terms 0/350",
+    "historical transport records 6 with successful responses 0"
+  ],
+  "blocker": {
+    "exact_reason": "The first data row of canonical_human_14_features.csv exposed development label, label_bin, and p_hallucination before FEATURE_MATRIX_FROZEN_BEFORE_LABEL_ACCESS.",
+    "labels_used_for_any_design_or_metric": false,
+    "downstream_execution_permitted": false,
+    "safe_next_step": "Owner review and explicit authorization of a fresh independently isolated run; this run cannot restore a zero pre-lock access count."
+  },
+  "artifacts": [
+    {
+      "path": "RAG/results/rag_module4/MODULE4_FINAL_RESULTS.md",
+      "size": 3044,
+      "sha256": "58b37f56302d47204a8202963c217931e8fdad8c6134d91bc5ae36349ddcfb74",
+      "operation": "created"
+    },
+    {
+      "path": "RAG/results/rag_module4/MODULE4_OVERNIGHT_AUDIT_MANIFEST.json",
+      "size": 3175,
+      "sha256": "50304eccda12be54d3d5227f4b5fc841367aac47412043873949416380a03f51",
+      "operation": "created"
+    }
+  ],
+  "network_accounting": {
+    "historical_transport_attempts_preserved": 6,
+    "new_requests": 0,
+    "tls_bypasses": 0,
+    "http_requests": 0,
+    "unapproved_requests": 0
+  },
+  "model_and_evaluation_accounting": {
+    "mpnet_executions": 0,
+    "nli_executions": 0,
+    "feature_generation_executions": 0,
+    "rf_training_executions": 0,
+    "prediction_executions": 0,
+    "metric_executions": 0
+  }
+}

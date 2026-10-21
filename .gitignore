@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Models and outputs
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+output*/
+checkpoints*/
+
+# Credentials and local settings
+.env
+.env.*
+*credential*
+*secret*
+*.pem
+*.pfx
+
+# Generated dependencies and caches
+node_modules/
+.cache/
+.pytest_cache/
+.mypy_cache/
+# Additional local credentials and machine settings
+*.key
+*.p12
+*service-account*.json
+*service_account*.json
+/.vscode/
+/.idea/
+/.modal.toml
+
+# Private inputs and row-level products (keep code and public metadata visible)
+/solution/data/raw/
+/solution/data/processed/
+/solution/data/pseudo/
+/solution/models/
+/solution/logs/
+/solution/training_logs/
+/data/Dev/**/*.json
+/data/Trial/**/*.json
+/data/Labeled test/**/*.json
+/data/Unlabeled train/**/*.json
+**/predictions*.jsonl
+**/predictions*.csv
+**/predictions*.parquet
+**/row_level_outputs/
+
+# Model payloads and generated checkpoint folders
+*.gguf
+*.h5
+*.hdf5
+**/checkpoint-*/
+
+# Environments, downloaded caches and notebook checkpoints
+.conda/
+.tox/
+.nox/
+.ruff_cache/
+.ipynb_checkpoints/
+huggingface/
+**/dense_cache/*.npy
+**/dense_cache/*.npz
+**/dense_cache/*.faiss
+
+# Local scratch and private audit material
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+/.codex_tmp_*/
+/private_audit/
+/.private_audit/

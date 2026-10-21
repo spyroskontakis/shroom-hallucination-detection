@@ -1,0 +1,188 @@
+{
+  "timestamp": "2026-07-19T12:14:00",
+  "interpreter_path": "external-artifacts/local-21bb07554028/python.exe",
+  "python_version": "3.11.9",
+  "sklearn_version": "1.8.0",
+  "pandas_version": "3.0.2",
+  "input_filename": "codex\\canonical_human_development_manifest.csv",
+  "input_sha256": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+  "output_filename": "codex\\canonical_fold_assignments.csv",
+  "output_sha256": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+  "splitter": "sklearn.model_selection.StratifiedKFold",
+  "n_splits": 5,
+  "shuffle": true,
+  "random_state": 42,
+  "sorting_key": "canonical_id",
+  "total_samples": 561,
+  "fold_sizes": {
+    "1": 113,
+    "2": 112,
+    "3": 112,
+    "4": 112,
+    "5": 112
+  },
+  "stratum_counts": {
+    "DM__0": 104,
+    "DM__1": 107,
+    "MT__0": 119,
+    "MT__1": 97,
+    "PG__0": 84,
+    "PG__1": 50
+  },
+  "stratum_counts_by_fold": [
+    {
+      "fold_id": 1,
+      "stratum": "DM__0",
+      "samples": 21
+    },
+    {
+      "fold_id": 1,
+      "stratum": "DM__1",
+      "samples": 22
+    },
+    {
+      "fold_id": 1,
+      "stratum": "MT__0",
+      "samples": 24
+    },
+    {
+      "fold_id": 1,
+      "stratum": "MT__1",
+      "samples": 20
+    },
+    {
+      "fold_id": 1,
+      "stratum": "PG__0",
+      "samples": 16
+    },
+    {
+      "fold_id": 1,
+      "stratum": "PG__1",
+      "samples": 10
+    },
+    {
+      "fold_id": 2,
+      "stratum": "DM__0",
+      "samples": 21
+    },
+    {
+      "fold_id": 2,
+      "stratum": "DM__1",
+      "samples": 21
+    },
+    {
+      "fold_id": 2,
+      "stratum": "MT__0",
+      "samples": 23
+    },
+    {
+      "fold_id": 2,
+      "stratum": "MT__1",
+      "samples": 20
+    },
+    {
+      "fold_id": 2,
+      "stratum": "PG__0",
+      "samples": 17
+    },
+    {
+      "fold_id": 2,
+      "stratum": "PG__1",
+      "samples": 10
+    },
+    {
+      "fold_id": 3,
+      "stratum": "DM__0",
+      "samples": 21
+    },
+    {
+      "fold_id": 3,
+      "stratum": "DM__1",
+      "samples": 21
+    },
+    {
+      "fold_id": 3,
+      "stratum": "MT__0",
+      "samples": 24
+    },
+    {
+      "fold_id": 3,
+      "stratum": "MT__1",
+      "samples": 19
+    },
+    {
+      "fold_id": 3,
+      "stratum": "PG__0",
+      "samples": 17
+    },
+    {
+      "fold_id": 3,
+      "stratum": "PG__1",
+      "samples": 10
+    },
+    {
+      "fold_id": 4,
+      "stratum": "DM__0",
+      "samples": 21
+    },
+    {
+      "fold_id": 4,
+      "stratum": "DM__1",
+      "samples": 21
+    },
+    {
+      "fold_id": 4,
+      "stratum": "MT__0",
+      "samples": 24
+    },
+    {
+      "fold_id": 4,
+      "stratum": "MT__1",
+      "samples": 19
+    },
+    {
+      "fold_id": 4,
+      "stratum": "PG__0",
+      "samples": 17
+    },
+    {
+      "fold_id": 4,
+      "stratum": "PG__1",
+      "samples": 10
+    },
+    {
+      "fold_id": 5,
+      "stratum": "DM__0",
+      "samples": 20
+    },
+    {
+      "fold_id": 5,
+      "stratum": "DM__1",
+      "samples": 22
+    },
+    {
+      "fold_id": 5,
+      "stratum": "MT__0",
+      "samples": 24
+    },
+    {
+      "fold_id": 5,
+      "stratum": "MT__1",
+      "samples": 19
+    },
+    {
+      "fold_id": 5,
+      "stratum": "PG__0",
+      "samples": 17
+    },
+    {
+      "fold_id": 5,
+      "stratum": "PG__1",
+      "samples": 10
+    }
+  ],
+  "task_reference_audit": {
+    "task_reference_keys_with_multiple_samples": 5,
+    "repeated_task_reference_keys_spanning_multiple_folds": 3
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "additional_baseline_fits": 0,
+  "all_subgroup_metrics_recomputed": true,
+  "authorized_model_download": true,
+  "cache_reassembly_exact": true,
+  "hhem_pairs": 754,
+  "inference_evaluation_network_attempts": 0,
+  "new_features": 2,
+  "no_router_or_rf_tuning": true,
+  "old_features_unchanged": 34,
+  "pair_text_reuse_exact": true,
+  "paired_statistics_recomputed": true,
+  "prediction_rows": 561,
+  "protected_unchanged": 1327,
+  "rf_fits": 5,
+  "status": "PASS",
+  "train_target_validation_array_hashes_verified": 15,
+  "verified_batches": 377,
+  "verified_utc": "2026-09-10T15:57:09.835522+00:00"
+}

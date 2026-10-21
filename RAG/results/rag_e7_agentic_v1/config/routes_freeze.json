@@ -1,0 +1,15 @@
+{
+  "files": {
+    "config/fold_thresholds.json": "870dd1a3da3bc8403c6acd736401f76fe1c60630ee45c962b1c786d2b66b9784",
+    "routing/router_inputs.csv": "dfc584c7f2bad8a553b19f90e51318d66ceac1512172fc0fc916af9471b343d1",
+    "routing/routes.csv": "2ef40dc7bd395c1cfa571e5235ab81cc4ceb4d9fa5745c6117cc2b2f01913ece"
+  },
+  "frozen_utc": "2026-09-09T18:14:21.720402+00:00",
+  "labels_loaded": false,
+  "router_inputs": [
+    "evidence_available",
+    "top1_cosine"
+  ],
+  "rows": 561,
+  "saved_predictions_loaded": false
+}

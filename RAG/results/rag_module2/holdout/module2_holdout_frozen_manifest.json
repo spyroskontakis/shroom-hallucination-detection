@@ -1,0 +1,296 @@
+{
+  "blinded_csv": {
+    "annotation_columns_blank": true,
+    "columns": [
+      "annotation_id",
+      "example_id",
+      "term",
+      "src",
+      "tgt",
+      "evidence_id",
+      "candidate_term",
+      "candidate_definition",
+      "candidate_context",
+      "relevance_category",
+      "annotation_confidence",
+      "annotation_notes"
+    ],
+    "contains_ai_suggestions": false,
+    "contains_development_annotations": false,
+    "contains_gate_or_retrieval_diagnostics": false,
+    "contains_hallucination_labels_or_probabilities": false,
+    "path": "RAG\\results\\rag_module2\\annotation\\module2_annotation_holdout_blinded.csv",
+    "rows": 10,
+    "sha256": "283be261ddfe126b28016f7155db75f8742ca04d9e17530727413f84cb9b03c2",
+    "utf8_bom": true
+  },
+  "created_offline_date": "2026-08-26",
+  "frozen_configuration": {
+    "bm25_score_minimum": 42.555018684798945,
+    "bm25_threshold_rule": "frozen development q25",
+    "configuration_changes_after_holdout_annotation_allowed": false,
+    "configuration_id": "Q_SRC_TGT|bm25|score=q25|margin=none|agree=2|exact=0|dedup=1",
+    "duplicate_rejection": true,
+    "exact_match_required": false,
+    "minimum_method_agreement": 2,
+    "query_variant": "Q_SRC_TGT",
+    "query_variant_is_reference_assisted": true,
+    "relative_margin_gate": null,
+    "retriever": "bm25"
+  },
+  "frozen_input_hashes": {
+    "annotation_guide_sha256": "b26441828507dcb7dab2dae530a48a22db1bab1f1b0b0b2d4a29782d1f23b64f",
+    "development_human_annotations_sha256": "3f1f0a6d3eb9a75de69344f6e1df13b88745e464c98f94e1ce87997302669ed5",
+    "phase_a_candidates_sha256": "480ce705b5afb06d4e9efe03f2a1083f45ae8d8e74a52ad8b3f8e6ad46931107",
+    "phase_b_decisions_sha256": "32d51e21c03ea5ff9564628d3e340269b7443abd6af9b3c7d2a11fb05ace477f",
+    "phase_b_evaluation_notebook_sha256": "03d0d1b5303d2802b70fe789c029e7638432a851afd79855a43eb39d89f365ae",
+    "phase_b_gate_sensitivity_sha256": "b9c092c07d82571b001deb505a63e8dca3fede815f56f629d45ec1547f534470",
+    "phase_b_metrics_sha256": "1b0d29b882105282ed3ba42c2b35294ee92ab409800f53f86cf9948535c0c2dd",
+    "phase_b_results_sha256": "16e5e95c00a7ca252e810fe2a387a7658c459076f25e016ade01b950876ef5d5",
+    "pre_annotation_split_manifest_sha256": "0244938b34ae37ddf09c365ed775316ed23b0fdcbf589ea010d82b682c1aa873",
+    "selected_retrieval_config_sha256": "f9e8b35417222a97a29c17cd4d27b3140c9658f1c1ef84068eb61b72d63f572c",
+    "source_96_row_blank_holdout_pool_sha256": "e8725495e84e042350242ca1b68a7c54f75d38fb14ebccd825e1cb0bb31fce7b"
+  },
+  "holdout_examples": [
+    {
+      "abstention_reasons": [
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-5086FF5EF5B3FB02",
+      "bm25_score": 46.675292552494284,
+      "development_index": 15,
+      "duplicate_detected": false,
+      "evidence_id": 15159,
+      "example_id": "EX-29B49ECADF0E",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 1,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "abstention_reasons": [
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-15817E67093A99C0",
+      "bm25_score": 54.37521724745752,
+      "development_index": 16,
+      "duplicate_detected": false,
+      "evidence_id": 16992,
+      "example_id": "EX-848D77197FC6",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 2,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "abstention_reasons": [
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-91AAEC323C57F669",
+      "bm25_score": 70.88799018128887,
+      "development_index": 19,
+      "duplicate_detected": false,
+      "evidence_id": 16748,
+      "example_id": "EX-FD4516FD5D69",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 3,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "abstention_reasons": [],
+      "annotation_id": "ANN-83C675B1B8FE31D4",
+      "bm25_score": 107.44716349111789,
+      "development_index": 51,
+      "duplicate_detected": false,
+      "evidence_id": 17193,
+      "example_id": "EX-133BB24FA00C",
+      "frozen_gate_decision": "accept",
+      "method_agreement": 2,
+      "order": 4,
+      "retrieval_methods": [
+        "bm25",
+        "dense"
+      ]
+    },
+    {
+      "abstention_reasons": [
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-C5B7455BACBDBEF5",
+      "bm25_score": 54.15781227920265,
+      "development_index": 75,
+      "duplicate_detected": false,
+      "evidence_id": 11770,
+      "example_id": "EX-60821273D109",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 5,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "abstention_reasons": [
+        "bm25_score_below_frozen_development_q25",
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-2E3874B838C988C3",
+      "bm25_score": 42.528928146738785,
+      "development_index": 85,
+      "duplicate_detected": false,
+      "evidence_id": 18816,
+      "example_id": "EX-53FF70AA6E47",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 6,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "abstention_reasons": [
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-6053DE29D8DAD001",
+      "bm25_score": 69.48319779232443,
+      "development_index": 137,
+      "duplicate_detected": false,
+      "evidence_id": 10209,
+      "example_id": "EX-1A72DCB4A6B7",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 7,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "abstention_reasons": [],
+      "annotation_id": "ANN-21BDFDB0D77800F6",
+      "bm25_score": 46.422439947464085,
+      "development_index": 165,
+      "duplicate_detected": false,
+      "evidence_id": 16742,
+      "example_id": "EX-B8FF7E00774C",
+      "frozen_gate_decision": "accept",
+      "method_agreement": 2,
+      "order": 8,
+      "retrieval_methods": [
+        "bm25",
+        "dense"
+      ]
+    },
+    {
+      "abstention_reasons": [
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-70BD77881299C73F",
+      "bm25_score": 43.91285591592901,
+      "development_index": 166,
+      "duplicate_detected": false,
+      "evidence_id": 12192,
+      "example_id": "EX-8A5948F3803C",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 9,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "abstention_reasons": [
+        "method_agreement_below_2"
+      ],
+      "annotation_id": "ANN-E734D1BBC0B679E5",
+      "bm25_score": 42.74577017788631,
+      "development_index": 177,
+      "duplicate_detected": false,
+      "evidence_id": 13755,
+      "example_id": "EX-5BAF9965A4F1",
+      "frozen_gate_decision": "abstain",
+      "method_agreement": 1,
+      "order": 10,
+      "retrieval_methods": [
+        "bm25"
+      ]
+    }
+  ],
+  "operations": {
+    "api_or_network_calls": 0,
+    "downloads_or_installations": 0,
+    "holdout_annotations_read_or_created": 0,
+    "holdout_metrics_computed": 0,
+    "official_test": 0,
+    "retrieval_or_dense_executions": 0
+  },
+  "ordered_annotation_ids": [
+    "ANN-5086FF5EF5B3FB02",
+    "ANN-15817E67093A99C0",
+    "ANN-91AAEC323C57F669",
+    "ANN-83C675B1B8FE31D4",
+    "ANN-C5B7455BACBDBEF5",
+    "ANN-2E3874B838C988C3",
+    "ANN-6053DE29D8DAD001",
+    "ANN-21BDFDB0D77800F6",
+    "ANN-70BD77881299C73F",
+    "ANN-E734D1BBC0B679E5"
+  ],
+  "ordered_holdout_example_ids": [
+    "EX-29B49ECADF0E",
+    "EX-848D77197FC6",
+    "EX-FD4516FD5D69",
+    "EX-133BB24FA00C",
+    "EX-60821273D109",
+    "EX-53FF70AA6E47",
+    "EX-1A72DCB4A6B7",
+    "EX-B8FF7E00774C",
+    "EX-8A5948F3803C",
+    "EX-5BAF9965A4F1"
+  ],
+  "phase": "SHROOM RAG E5 Module 2: Blinded Holdout Evaluation Preparation",
+  "predeclared_holdout_criteria": {
+    "abstain_all_configuration": "FAIL",
+    "descriptive_small_holdout_thresholds_not_external_test": true,
+    "gemini_blocked_while_mandatory_strict_regression_cases_fail": true,
+    "lenient_accepted_usable_coverage_minimum": 0.3,
+    "primary_safety_accepted_unsafe_evidence_rate_maximum": 0.0,
+    "strict_accepted_usable_coverage_minimum": 0.2
+  },
+  "split_lock": {
+    "development_holdout_disjoint": true,
+    "development_indices": [
+      30,
+      42,
+      55,
+      78,
+      122,
+      154,
+      158,
+      161,
+      175,
+      185
+    ],
+    "holdout_indices": [
+      15,
+      16,
+      19,
+      51,
+      75,
+      85,
+      137,
+      165,
+      166,
+      177
+    ],
+    "performed_before_annotations": true,
+    "source": "module2_annotation_pool_manifest.json"
+  },
+  "status": "PREPARED_NOT_ANNOTATED_NOT_EVALUATED"
+}

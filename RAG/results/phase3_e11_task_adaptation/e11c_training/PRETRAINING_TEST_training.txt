@@ -1,0 +1,9 @@
+test_exact_e11a_training_loop_and_schedule (test_training.TrainingTests.test_exact_e11a_training_loop_and_schedule) ... ok
+test_fixed_stage2_and_split_integrity (test_training.TrainingTests.test_fixed_stage2_and_split_integrity) ... ok
+test_leakage_ignores_labels_and_catches_source (test_training.TrainingTests.test_leakage_ignores_labels_and_catches_source) ... ok
+test_no_heldout_leakage_and_homogeneous_pool (test_training.TrainingTests.test_no_heldout_leakage_and_homogeneous_pool) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.805s
+
+OK

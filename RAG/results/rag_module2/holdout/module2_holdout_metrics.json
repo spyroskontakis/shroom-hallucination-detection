@@ -1,0 +1,314 @@
+{
+  "development_regression_blocker": {
+    "failed_count": 3,
+    "failed_strict_cases": [
+      "preciosity",
+      "weary",
+      "inconsistent"
+    ],
+    "gemini_blocked_independently": true
+  },
+  "final_decision": "NO_GO_FOR_GEMINI",
+  "frozen_configuration": {
+    "bm25_score_minimum": 42.555018684798945,
+    "duplicate_rejection": true,
+    "minimum_method_agreement": 2,
+    "query_variant": "Q_SRC_TGT",
+    "reference_assisted": true,
+    "retriever": "bm25",
+    "retuning_or_comparison_performed": false
+  },
+  "frozen_decision_counts": {
+    "abstained": 8,
+    "accepted": 2
+  },
+  "frozen_gate": {
+    "abstained_relevance_distribution": {
+      "different_sense": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0.0
+      },
+      "irrelevant": {
+        "count": 7,
+        "denominator": 8,
+        "rate": 0.875
+      },
+      "partially_relevant": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0.0
+      },
+      "relevant_same_sense": {
+        "count": 1,
+        "denominator": 8,
+        "rate": 0.125
+      },
+      "uncertain_review": {
+        "count": 0,
+        "denominator": 8,
+        "rate": 0.0
+      }
+    },
+    "abstention_rate": {
+      "count": 8,
+      "denominator": 10,
+      "rate": 0.8
+    },
+    "accepted_coverage": {
+      "count": 2,
+      "denominator": 10,
+      "rate": 0.2
+    },
+    "accepted_relevance_distribution": {
+      "different_sense": {
+        "count": 0,
+        "denominator": 2,
+        "rate": 0.0
+      },
+      "irrelevant": {
+        "count": 0,
+        "denominator": 2,
+        "rate": 0.0
+      },
+      "partially_relevant": {
+        "count": 1,
+        "denominator": 2,
+        "rate": 0.5
+      },
+      "relevant_same_sense": {
+        "count": 1,
+        "denominator": 2,
+        "rate": 0.5
+      },
+      "uncertain_review": {
+        "count": 0,
+        "denominator": 2,
+        "rate": 0.0
+      }
+    },
+    "lenient_accepted_usable_coverage": {
+      "count": 2,
+      "denominator": 10,
+      "rate": 0.2
+    },
+    "lenient_false_abstentions": {
+      "count": 1,
+      "rate_among_abstained": {
+        "count": 1,
+        "denominator": 8,
+        "rate": 0.125
+      },
+      "rate_total": {
+        "count": 1,
+        "denominator": 10,
+        "rate": 0.1
+      }
+    },
+    "lenient_precision_among_accepted": {
+      "count": 2,
+      "denominator": 2,
+      "rate": 1.0
+    },
+    "strict_accepted_usable_coverage": {
+      "count": 1,
+      "denominator": 10,
+      "rate": 0.1
+    },
+    "strict_false_abstentions": {
+      "count": 1,
+      "rate_among_abstained": {
+        "count": 1,
+        "denominator": 8,
+        "rate": 0.125
+      },
+      "rate_total": {
+        "count": 1,
+        "denominator": 10,
+        "rate": 0.1
+      }
+    },
+    "strict_precision_among_accepted": {
+      "count": 1,
+      "denominator": 2,
+      "rate": 0.5
+    },
+    "unsafe_accepted_evidence_rate_total": {
+      "count": 0,
+      "denominator": 10,
+      "rate": 0.0
+    },
+    "unsafe_proportion_among_accepted": {
+      "count": 0,
+      "denominator": 2,
+      "rate": 0.0
+    }
+  },
+  "holdout_criteria_pass": false,
+  "input_hashes": {
+    "blinded": "283be261ddfe126b28016f7155db75f8742ca04d9e17530727413f84cb9b03c2",
+    "config": "f9e8b35417222a97a29c17cd4d27b3140c9658f1c1ef84068eb61b72d63f572c",
+    "human": "7519ae4988cf2bd5d0678d83523b884936beb6b257b0bff249f0de893531a93e",
+    "manifest": "f7356c17dbf04e37f6125c13e1484a174490c3e8598596ba253010b846106c22",
+    "preparation_report": "6399bda978a48b27cf6de04773858406c5d4b41df22cc69d56dc7d8dc1eab0d6"
+  },
+  "operations": {
+    "annotation_changes": 0,
+    "configuration_changes": 0,
+    "downloads_or_installations": 0,
+    "gemini_api_or_network": 0,
+    "official_test": 0,
+    "retrieval_or_dense_runs": 0
+  },
+  "phase": "SHROOM RAG E5 Module 2 frozen holdout evaluation",
+  "predeclared_criteria": {
+    "accepted_unsafe_evidence_zero": {
+      "actual": {
+        "count": 0,
+        "denominator": 2,
+        "rate": 0.0
+      },
+      "passed": true,
+      "required_rate_maximum": 0.0
+    },
+    "configuration_unchanged": {
+      "passed": true,
+      "selected_config_sha256": "f9e8b35417222a97a29c17cd4d27b3140c9658f1c1ef84068eb61b72d63f572c"
+    },
+    "lenient_accepted_usable_coverage_at_least_30_percent": {
+      "actual": {
+        "count": 2,
+        "denominator": 10,
+        "rate": 0.2
+      },
+      "passed": false,
+      "required_rate_minimum": 0.3
+    },
+    "not_abstain_all": {
+      "actual_accepted": {
+        "count": 2,
+        "denominator": 10,
+        "rate": 0.2
+      },
+      "passed": true
+    },
+    "strict_accepted_usable_coverage_at_least_20_percent": {
+      "actual": {
+        "count": 1,
+        "denominator": 10,
+        "rate": 0.1
+      },
+      "passed": false,
+      "required_rate_minimum": 0.2
+    }
+  },
+  "sample_size": 10,
+  "scientific_scope": "Small predeclared reference-assisted holdout; not an external test set.",
+  "tests": {
+    "details": [
+      {
+        "name": "ratio count/denominator",
+        "passed": true
+      },
+      {
+        "name": "strict synthetic count",
+        "passed": true
+      },
+      {
+        "name": "lenient synthetic count",
+        "passed": true
+      },
+      {
+        "name": "unsafe synthetic count",
+        "passed": true
+      },
+      {
+        "name": "distribution denominator",
+        "passed": true
+      },
+      {
+        "name": "input hashes frozen",
+        "passed": true
+      },
+      {
+        "name": "10/10 full join",
+        "passed": true
+      },
+      {
+        "name": "no missing IDs",
+        "passed": true
+      },
+      {
+        "name": "no duplicate annotation IDs",
+        "passed": true
+      },
+      {
+        "name": "no duplicate example IDs",
+        "passed": true
+      },
+      {
+        "name": "no duplicate evidence IDs",
+        "passed": true
+      },
+      {
+        "name": "frozen decisions unchanged",
+        "passed": true
+      },
+      {
+        "name": "accepted/abstained fixed 2/8",
+        "passed": true
+      },
+      {
+        "name": "frozen configuration exact",
+        "passed": true
+      },
+      {
+        "name": "annotations complete",
+        "passed": true
+      },
+      {
+        "name": "decision deterministic",
+        "passed": true
+      }
+    ],
+    "passed": 16,
+    "total": 16
+  },
+  "ungated_frozen_retriever_top1": {
+    "different_sense_rate": {
+      "count": 0,
+      "denominator": 10,
+      "rate": 0.0
+    },
+    "irrelevant_rate": {
+      "count": 7,
+      "denominator": 10,
+      "rate": 0.7
+    },
+    "lenient_relevant_at_1": {
+      "count": 3,
+      "denominator": 10,
+      "rate": 0.3
+    },
+    "partially_relevant_rate": {
+      "count": 1,
+      "denominator": 10,
+      "rate": 0.1
+    },
+    "strict_relevant_at_1": {
+      "count": 2,
+      "denominator": 10,
+      "rate": 0.2
+    },
+    "uncertain_review_rate": {
+      "count": 0,
+      "denominator": 10,
+      "rate": 0.0
+    },
+    "unsafe_top1_rate": {
+      "count": 7,
+      "denominator": 10,
+      "rate": 0.7
+    }
+  }
+}

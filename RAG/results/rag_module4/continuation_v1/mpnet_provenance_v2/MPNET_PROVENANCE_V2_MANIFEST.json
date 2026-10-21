@@ -1,0 +1,117 @@
+{
+  "schema_version": "module4-mpnet-provenance-v2",
+  "date": "2026-08-30",
+  "verdict": "MPNET_PROVENANCE_V2_REPRODUCTION_BYTE_IDENTICAL",
+  "scope": "label-free explicitly pinned reproduction only; no evaluation",
+  "model": {
+    "id": "sentence-transformers/all-mpnet-base-v2",
+    "intended_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "explicitly_used_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "resolved_local_snapshot": "external-artifacts/local-54c26f7df1bd/e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "verified_files": {
+      "model.safetensors": {
+        "bytes": 437971872,
+        "sha256": "78c0197b6159d92658e319bc1d72e4c73a9a03dd03815e70e555c5ef05615658"
+      },
+      "config.json": {
+        "bytes": 571,
+        "sha256": "d46a3e04ded82bba22528424480697d394eeda6a27484e08c5bb2bdf5906cfa0"
+      },
+      "modules.json": {
+        "bytes": 349,
+        "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+      },
+      "tokenizer.json": {
+        "bytes": 466021,
+        "sha256": "b8be2c30ba5dd723a6d5ee26d013da103d5408d92ddcb23747622f9e48f1d842"
+      },
+      "vocab.txt": {
+        "bytes": 231536,
+        "sha256": "dbd90cb94e2247bd4d4ccaecbf616d2290e66691d7d5e5bb81f063c2d0649ada"
+      },
+      "1_Pooling/config.json": {
+        "bytes": 190,
+        "sha256": "a37f83ada23e7887be6b88f4998927dbeac0038af301553c7cd5461413bf1a56"
+      }
+    }
+  },
+  "runtime": {
+    "interpreter": "external-artifacts/local-21bb07554028/python.exe",
+    "python": "3.11.9",
+    "torch": "2.11.0+cpu",
+    "transformers": "5.5.4",
+    "sentence_transformers": "5.4.1",
+    "numpy": "2.4.4",
+    "device": "cpu",
+    "offline_flags": {
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "HF_DATASETS_OFFLINE": "1",
+      "HF_HUB_DISABLE_TELEMETRY": "1"
+    },
+    "nli_model": "microsoft/deberta-large-mnli",
+    "nli_revision": "7296194b9009373def4f7c5dad292651e4b5cf4e"
+  },
+  "frozen_inputs": {
+    "RAG/results/rag_module4/static_protocol/module4_dev_inputs_locked.csv": "3f92a0b398b97873716dda69d108467a4309fe28bd565be692a74e1af74523d5",
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_external_lexical_snapshot.jsonl": "7677937ace64644afa4f39d8745f54711640a578f1387d9e389008b1e0440d40",
+    "RAG/results/rag_module4/continuation_v1/scripts/module4_build_rag_features.py": "dc539f308bfcc133a99121795dc435fbda32fe076b168905dbeed20197891507",
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_rag_features.csv": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160",
+    "RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_exact_overlap_audit.csv": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a"
+  },
+  "new_artifacts": {
+    "scripts/module4_build_rag_features_pinned.py": {
+      "bytes": 6979,
+      "sha256": "56ff9521c96cfc4d6a8793c86dc60194f4afac16e57aa922e0c9218c72eaf0de",
+      "semantic_diff": "one line: explicit revision=MPNET_REVISION"
+    },
+    "scripts/module4_exact_overlap_audit_pinned.py": {
+      "bytes": 2269,
+      "sha256": "ab055f5873b3500adf2f64e41f69d655ebe0bedef365c35cdab22c70e2942f15",
+      "semantic_diff": "one line: explicit revision=frozen.MPNET_REVISION"
+    },
+    "features/module4_rag_features_pinned.csv": {
+      "bytes": 38385,
+      "sha256": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160",
+      "byte_identical_to_accepted": true,
+      "rows": 561,
+      "columns": 8
+    },
+    "features/module4_exact_overlap_audit_pinned.csv": {
+      "bytes": 16350,
+      "sha256": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a",
+      "byte_identical_to_accepted": true,
+      "rows": 561,
+      "columns": 4
+    },
+    "MPNET_PROVENANCE_V2_REPORT.md": {
+      "bytes": 4308,
+      "sha256": "89bdd975b78f5cf78ecf3328c6ace900591a36252d86e713ae9ca17772b83b39"
+    }
+  },
+  "historical_accepted_run": {
+    "revision_status": "CURRENT_CACHE_COMPATIBLE_HISTORY_UNPROVEN",
+    "retroactive_revision_proof_claimed": false,
+    "historical_label_exposure_incident_retained": true
+  },
+  "execution_accounting": {
+    "network_requests": 0,
+    "model_executions": {
+      "total": 3,
+      "mpnet": 2,
+      "nli": 1
+    },
+    "feature_generations": 1,
+    "training_executions": 0,
+    "prediction_executions": 0,
+    "metric_executions": 0,
+    "development_label_accesses": 0,
+    "holdout_accesses": 0,
+    "official_test_accesses": 0,
+    "annotation_accesses": 0,
+    "protected_accesses": 0,
+    "quarantine_accesses": 0,
+    "files_created": 6,
+    "pre_existing_files_modified": 0
+  }
+}

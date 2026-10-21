@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "runtime": {
+    "python": "3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]",
+    "executable": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Scripts\\python.exe",
+    "packages": {
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "safetensors": "0.7.0",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1",
+      "sentencepiece": "0.2.1",
+      "tokenizers": "0.13.3",
+      "torch": "2.11.0",
+      "transformers": "4.30.2",
+      "huggingface-hub": "0.25.2",
+      "bert-score": "0.3.13"
+    }
+  },
+  "model": "microsoft/deberta-large-mnli",
+  "revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+  "num_layers": 18,
+  "hash_string": "microsoft/deberta-large-mnli_L18_no-idf_version=0.3.12(hug_trans=4.30.2)",
+  "tokenizer_class": "DebertaTokenizer",
+  "model_max_length": 512,
+  "manual_override": false,
+  "device": "cpu",
+  "dtype": "float32",
+  "cuda_available": false,
+  "torch_cuda_build": null,
+  "seconds": 13.072947900000145,
+  "real_samples": 0,
+  "network_attempts": 0,
+  "structure_contracts": "PASS",
+  "samples": [
+    {
+      "kind": "identical",
+      "reference": "A red cat sleeps.",
+      "hyp": "A red cat sleeps.",
+      "P": 1.0000001192092896,
+      "R": 1.0000001192092896,
+      "F1": 1.0000001192092896,
+      "structure": {
+        "structure_length_ratio": 1.0,
+        "structure_number_presence_mismatch": 0,
+        "structure_number_set_mismatch": 0,
+        "structure_negation_mismatch": 0
+      }
+    },
+    {
+      "kind": "omission",
+      "reference": "A red cat sleeps and a blue dog runs.",
+      "hyp": "A red cat sleeps.",
+      "P": 0.8314774036407471,
+      "R": 0.7136749029159546,
+      "F1": 0.7680854797363281,
+      "structure": {
+        "structure_length_ratio": 0.4444444444444444,
+        "structure_number_presence_mismatch": 0,
+        "structure_number_set_mismatch": 0,
+        "structure_negation_mismatch": 0
+      }
+    },
+    {
+      "kind": "addition",
+      "reference": "A red cat sleeps.",
+      "hyp": "A red cat sleeps and a blue dog runs.",
+      "P": 0.7136749029159546,
+      "R": 0.8314774036407471,
+      "F1": 0.7680854797363281,
+      "structure": {
+        "structure_length_ratio": 0.4444444444444444,
+        "structure_number_presence_mismatch": 0,
+        "structure_number_set_mismatch": 0,
+        "structure_negation_mismatch": 0
+      }
+    },
+    {
+      "kind": "number_change",
+      "reference": "There are 12 apples.",
+      "hyp": "There are 13 apples.",
+      "P": 0.9841832518577576,
+      "R": 0.9841832518577576,
+      "F1": 0.9841832518577576,
+      "structure": {
+        "structure_length_ratio": 1.0,
+        "structure_number_presence_mismatch": 0,
+        "structure_number_set_mismatch": 1,
+        "structure_negation_mismatch": 0
+      }
+    },
+    {
+      "kind": "negation_added",
+      "reference": "The train is running.",
+      "hyp": "The train is not running.",
+      "P": 0.8338470458984375,
+      "R": 0.8875150680541992,
+      "F1": 0.859844446182251,
+      "structure": {
+        "structure_length_ratio": 0.8,
+        "structure_number_presence_mismatch": 0,
+        "structure_number_set_mismatch": 0,
+        "structure_negation_mismatch": 1
+      }
+    },
+    {
+      "kind": "negation_removed",
+      "reference": "The train is not running.",
+      "hyp": "The train is running.",
+      "P": 0.8875150680541992,
+      "R": 0.8338470458984375,
+      "F1": 0.859844446182251,
+      "structure": {
+        "structure_length_ratio": 0.8,
+        "structure_number_presence_mismatch": 0,
+        "structure_number_set_mismatch": 0,
+        "structure_negation_mismatch": 1
+      }
+    }
+  ]
+}

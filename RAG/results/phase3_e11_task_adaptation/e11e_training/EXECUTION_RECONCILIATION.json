@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "original_five_jobs_completed": true,
+  "stage1_fits": 5,
+  "stage2_fits": 5,
+  "reruns": [],
+  "tracebacks": 0,
+  "completed_stages": [
+    {
+      "fold": 3,
+      "stage": 1,
+      "rows": 11795
+    },
+    {
+      "fold": 1,
+      "stage": 1,
+      "rows": 11787
+    },
+    {
+      "fold": 4,
+      "stage": 1,
+      "rows": 11787
+    },
+    {
+      "fold": 3,
+      "stage": 2,
+      "rows": 449
+    },
+    {
+      "fold": 1,
+      "stage": 2,
+      "rows": 448
+    },
+    {
+      "fold": 4,
+      "stage": 2,
+      "rows": 449
+    },
+    {
+      "fold": 2,
+      "stage": 1,
+      "rows": 11791
+    },
+    {
+      "fold": 5,
+      "stage": 1,
+      "rows": 11790
+    },
+    {
+      "fold": 2,
+      "stage": 2,
+      "rows": 449
+    },
+    {
+      "fold": 5,
+      "stage": 2,
+      "rows": 449
+    }
+  ],
+  "log_sha256": "3448a156fee41fc4dd53c120dc286ea06780939d91f0011c5315c75eb35f2cca"
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "model": "gpt-5.6-sol",
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "pilot_samples": 300,
+  "attempted_requests": 300,
+  "successful_schema_valid_samples": 300,
+  "failed_samples": 0,
+  "retries": 0,
+  "schema_failures": 0,
+  "labels": {
+    "hallucination": 123,
+    "not_hallucination": 175,
+    "uncertain": 2
+  },
+  "by_task": {
+    "DM": {
+      "hallucination": 61,
+      "not_hallucination": 39,
+      "uncertain": 0
+    },
+    "MT": {
+      "hallucination": 27,
+      "not_hallucination": 73,
+      "uncertain": 0
+    },
+    "PG": {
+      "hallucination": 35,
+      "not_hallucination": 63,
+      "uncertain": 2
+    }
+  },
+  "uncertain_percent": 0.6666666666666666,
+  "usage_records": 300,
+  "missing_usage_records": 0,
+  "input_tokens": 96675,
+  "output_tokens": 21038,
+  "reasoning_tokens": 9351,
+  "cached_input_tokens": 0,
+  "input_mean_per_attempt": 322.25,
+  "input_median_reported_requests": 319.0,
+  "output_mean_per_attempt": 70.12666666666667,
+  "output_median_reported_requests": 43.5,
+  "output_max_reported_requests": 337,
+  "pilot_batch_cost_estimate_usd": 0.40373,
+  "full_12000_batch_extrapolation_usd": 16.1492,
+  "cost_basis": "Returned usage; frozen $4/M input, $20/M output, Batch 50%; no cache discount; not invoice verified. Extrapolation includes observed retries, not guaranteed.",
+  "timings": [
+    {
+      "id": "private-service-id-withheld",
+      "status": "completed",
+      "created_at": 1790663902,
+      "in_progress_at": 1790663964,
+      "finalizing_at": 1790664055,
+      "completed_at": 1790664067,
+      "expired_at": null,
+      "cancelled_at": null,
+      "request_counts": {
+        "total": 300,
+        "completed": 300,
+        "failed": 0
+      }
+    }
+  ],
+  "per_request_latency": "Not exposed by Batch; batch lifecycle timestamps recorded",
+  "protocol_tuned": false,
+  "training": false,
+  "development_evaluation": false,
+  "official_test_access": false,
+  "commit": false,
+  "push": false
+}

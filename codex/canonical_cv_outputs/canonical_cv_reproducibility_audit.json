@@ -1,0 +1,54 @@
+{
+  "selected_experiment_run1": "E3_NLI_similarity",
+  "selected_experiment_run2": "E3_NLI_similarity",
+  "row_counts": {
+    "run1_predictions": 2244,
+    "run2_predictions": 2244,
+    "merged_predictions": 2244
+  },
+  "binary_predictions_identical": true,
+  "maximum_absolute_difference_raw_predictions": 3.3306690738754696e-16,
+  "maximum_absolute_difference_clipped_predictions": 3.3306690738754696e-16,
+  "metrics_identical": true,
+  "metric_differences": {
+    "canonical_cv_fold_metrics.csv": [],
+    "canonical_cv_overall_metrics.csv": [],
+    "canonical_cv_per_task_metrics.csv": [],
+    "canonical_cv_model_selection.csv": [],
+    "canonical_cv_selection_decision.json": []
+  },
+  "hashes": {
+    "canonical_cv_fold_metrics.csv": {
+      "run1": "5a620d0472e69042f8a57772976daeab7db81d3195a2b063befe9b1cc6d954f3",
+      "run2": "5a620d0472e69042f8a57772976daeab7db81d3195a2b063befe9b1cc6d954f3",
+      "identical": true
+    },
+    "canonical_cv_overall_metrics.csv": {
+      "run1": "3f20f975a9051aba712787173d926a1c2e0971ab2708453d9cb78e8580641852",
+      "run2": "3f20f975a9051aba712787173d926a1c2e0971ab2708453d9cb78e8580641852",
+      "identical": true
+    },
+    "canonical_cv_per_task_metrics.csv": {
+      "run1": "e102c2dd31baaf7d3009e72a5453e33a14379f922cf155e36ef1c0af7bb9425f",
+      "run2": "e102c2dd31baaf7d3009e72a5453e33a14379f922cf155e36ef1c0af7bb9425f",
+      "identical": true
+    },
+    "canonical_cv_confusion_matrices.csv": {
+      "run1": "6ee0b9eadf7c95510e76cf4731898b4a882b258b1a2461f3d458b918d9031f98",
+      "run2": "6ee0b9eadf7c95510e76cf4731898b4a882b258b1a2461f3d458b918d9031f98",
+      "identical": true
+    },
+    "canonical_cv_model_selection.csv": {
+      "run1": "598907d29203950414f5285732e98fb80f0751baae7c00fcd0c7b2c5de3ea597",
+      "run2": "598907d29203950414f5285732e98fb80f0751baae7c00fcd0c7b2c5de3ea597",
+      "identical": true
+    },
+    "canonical_cv_selection_decision.json": {
+      "run1": "a7e54fd892cfe037b847f979a03b9c88a408040ea477c8a2909b017a2350ad01",
+      "run2": "a7e54fd892cfe037b847f979a03b9c88a408040ea477c8a2909b017a2350ad01",
+      "identical": true
+    }
+  },
+  "numeric_tolerance_for_continuous_predictions": 1e-12,
+  "passed": true
+}

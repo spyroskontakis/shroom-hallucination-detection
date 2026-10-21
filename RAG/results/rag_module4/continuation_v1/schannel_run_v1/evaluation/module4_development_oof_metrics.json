@@ -1,0 +1,249 @@
+{
+  "decision": "E5_RAG_IMPROVES_DEVELOPMENT_SCORE",
+  "diagnostics": {
+    "all_rows": {
+      "E3": {
+        "accuracy": 0.7932263814616756,
+        "n": 561,
+        "spearman": 0.7390395612811848
+      },
+      "E5": {
+        "accuracy": 0.7950089126559715,
+        "n": 561,
+        "spearman": 0.7421719692110536
+      }
+    },
+    "evidence_rows": {
+      "E3": {
+        "accuracy": 0.7409326424870466,
+        "n": 193,
+        "spearman": 0.6486587710458642
+      },
+      "E5": {
+        "accuracy": 0.7512953367875648,
+        "n": 193,
+        "spearman": 0.6534407272984374
+      }
+    },
+    "fallback_rows": {
+      "E3": {
+        "accuracy": 0.8206521739130435,
+        "n": 368,
+        "spearman": 0.7662242801012442
+      },
+      "E5": {
+        "accuracy": 0.8179347826086957,
+        "n": 368,
+        "spearman": 0.769266167567882
+      }
+    },
+    "per_task": {
+      "DM": {
+        "E3": {
+          "accuracy": 0.7345971563981043,
+          "n": 211,
+          "spearman": 0.6400104693203633
+        },
+        "E5": {
+          "accuracy": 0.7440758293838863,
+          "n": 211,
+          "spearman": 0.6427316314595176
+        }
+      },
+      "MT": {
+        "E3": {
+          "accuracy": 0.8564814814814815,
+          "n": 216,
+          "spearman": 0.7960447808578653
+        },
+        "E5": {
+          "accuracy": 0.8564814814814815,
+          "n": 216,
+          "spearman": 0.7972150618313084
+        }
+      },
+      "PG": {
+        "E3": {
+          "accuracy": 0.7835820895522388,
+          "n": 134,
+          "spearman": 0.6961810928616705
+        },
+        "E5": {
+          "accuracy": 0.7761194029850746,
+          "n": 134,
+          "spearman": 0.6949901407977161
+        }
+      }
+    }
+  },
+  "e3_features": [
+    "src_ent",
+    "src_neu",
+    "src_con",
+    "tgt_ent",
+    "tgt_neu",
+    "tgt_con",
+    "sim_src_hyp",
+    "sim_tgt_hyp",
+    "sim_src_tgt",
+    "sim_max",
+    "sim_min",
+    "sim_mean",
+    "sim_gap_tgt_src",
+    "sim_hyp_distance_from_truth"
+  ],
+  "e3_reproduction": {
+    "expected": {
+      "accuracy": 0.7932263814616756,
+      "spearman": 0.7390395612811848
+    },
+    "observed": {
+      "accuracy": 0.7932263814616756,
+      "n": 561,
+      "spearman": 0.7390395612811848
+    },
+    "result": "PASS"
+  },
+  "e5": {
+    "accuracy": 0.7950089126559715,
+    "n": 561,
+    "spearman": 0.7421719692110536
+  },
+  "fold_diagnostics": {
+    "1": {
+      "E3": {
+        "accuracy": 0.8141592920353983,
+        "n": 113,
+        "spearman": 0.7630731774066716
+      },
+      "E5": {
+        "accuracy": 0.8141592920353983,
+        "n": 113,
+        "spearman": 0.7579977625213876
+      }
+    },
+    "2": {
+      "E3": {
+        "accuracy": 0.7321428571428571,
+        "n": 112,
+        "spearman": 0.7233380915063953
+      },
+      "E5": {
+        "accuracy": 0.7589285714285714,
+        "n": 112,
+        "spearman": 0.7286450852030377
+      }
+    },
+    "3": {
+      "E3": {
+        "accuracy": 0.7946428571428571,
+        "n": 112,
+        "spearman": 0.7449954235874761
+      },
+      "E5": {
+        "accuracy": 0.7946428571428571,
+        "n": 112,
+        "spearman": 0.7501339329651263
+      }
+    },
+    "4": {
+      "E3": {
+        "accuracy": 0.7767857142857143,
+        "n": 112,
+        "spearman": 0.7276457794805015
+      },
+      "E5": {
+        "accuracy": 0.7678571428571429,
+        "n": 112,
+        "spearman": 0.7284446030443833
+      }
+    },
+    "5": {
+      "E3": {
+        "accuracy": 0.8482142857142857,
+        "n": 112,
+        "spearman": 0.7319648696561513
+      },
+      "E5": {
+        "accuracy": 0.8392857142857143,
+        "n": 112,
+        "spearman": 0.7366216282196576
+      }
+    }
+  },
+  "folds": 5,
+  "input_sha256": {
+    "RAG\\results\\rag_module4\\continuation_v1\\schannel_run_v1\\features\\module4_rag_features.csv": "708483b831430d876135d1484ad841bf6ba0d9c9a2d0a5f22df6280535fe3160",
+    "codex\\canonical_feature_outputs\\canonical_human_14_features.csv": "3038bd8752a94064e05389e03b063484a1191f9e9a6164f06d11b40688a6828b",
+    "codex\\canonical_fold_assignments.csv": "f5a5964923806a23dd34a8bcc137f3cf489437e033d645e9d0845bf40792eb5d",
+    "exact_overlap_audit": "0fab92f6907da36ae1be609d26230f8b7db054b42bff1f02b578b8719bba714a"
+  },
+  "output_sha256": {
+    "e3_oof_predictions": "942d4c5d69411d7b496286d108f3347192f69224535938e335d94b7f67e237f1",
+    "e5_oof_predictions": "6532425e38d66391e579c414e4ec07482f100f2dee7b4ce0531d502d034e6ea5",
+    "fused_21_features": "402e28b19239779980bce50db80f06bf726f6a07967b313e39ce07289d93cfd3"
+  },
+  "overlap_audit": {
+    "all_exact_match_instances": 18,
+    "corrected_by_e5_exact_rows": 0,
+    "corrected_by_e5_nonexact_rows": 5,
+    "exact_normalized_definition_tgt_match_rows": 18,
+    "exact_rows": {
+      "E3": {
+        "accuracy": 0.7222222222222222,
+        "n": 18,
+        "spearman": 0.6902362428504994
+      },
+      "E5": {
+        "accuracy": 0.7222222222222222,
+        "n": 18,
+        "spearman": 0.6923567843031891
+      }
+    },
+    "excluding_exact_rows": {
+      "E3": {
+        "accuracy": 0.7955801104972375,
+        "n": 543,
+        "spearman": 0.7398237523319171
+      },
+      "E5": {
+        "accuracy": 0.7974217311233885,
+        "n": 543,
+        "spearman": 0.7433186588576353
+      }
+    },
+    "introduced_errors_exact_rows": 0,
+    "introduced_errors_nonexact_rows": 4
+  },
+  "paired_diagnostics": {
+    "e3_correct_e5_wrong": 4,
+    "e3_wrong_e5_correct": 5,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "net_correct_predictions": 1,
+    "paired_bootstrap_accuracy_difference_e5_minus_e3": {
+      "observed": 0.0017825311942959,
+      "percentile_95_ci": [
+        -0.008912655971479501,
+        0.012477718360071301
+      ],
+      "replicates": 10000,
+      "seed": 42
+    }
+  },
+  "rag_features": [
+    "rag_evidence_available",
+    "rag_sense_count",
+    "rag_retrieval_top1_cosine",
+    "rag_target_definition_max_cosine",
+    "rag_target_definition_max_entailment",
+    "rag_target_definition_max_contradiction",
+    "rag_target_definition_max_lexical_overlap"
+  ],
+  "random_forest": {
+    "n_estimators": 500,
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "rows": 561,
+  "schema_version": "module4-development-oof-v1"
+}

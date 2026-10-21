@@ -1,0 +1,16 @@
+{
+  "atol": 1e-12,
+  "availability_equal": true,
+  "evidence_rows": 193,
+  "frozen_utc": "2026-09-09T13:42:07.502946+00:00",
+  "historical_ranking_available": false,
+  "limitation": "Aggregate agreement checks consistency but does not prove the complete historical ordering.",
+  "ranking_sha256": "abf81867dacc2c7d067cd8c762e7c7ee915c9d7643a55c1c365b5c8eff3c635c",
+  "rows": 561,
+  "rtol": 0,
+  "seconds": 128.65315659996122,
+  "sense_count_equal": true,
+  "status": "PASS",
+  "top1_cosine_bitwise_numeric_equal": false,
+  "top1_cosine_max_absolute_difference": 5.551115123125783e-17
+}

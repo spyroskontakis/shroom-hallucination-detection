@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "samples": 561,
+  "feature_count": 49,
+  "claims": 575,
+  "features_sha256": "2b425d706d7345a8d381fa9324b1dc80e072dc1a45c52d5c93f1bcfcda75fa8e",
+  "gpu_output_sha256": "8063e4b267cac071a5863f222ee4f24298759e0d3d1733cd034f5678e3b9b69a",
+  "e9_a_sha256": "26fcaaab5b10c1710984c2f9a923c98df1f922284622299dc4baae8a4dc846b0",
+  "rf_fits": 0,
+  "threshold": 0.5,
+  "std_ddof": 0,
+  "e9_a_cells_preserved": true
+}

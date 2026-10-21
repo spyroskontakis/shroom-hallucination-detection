@@ -1,0 +1,167 @@
+{
+  "model_type": "microsoft/deberta-large-mnli",
+  "checkpoint_revision": "7296194b9009373def4f7c5dad292651e4b5cf4e",
+  "tokenizer_class": "DebertaTokenizer",
+  "tokenizer_module": "transformers.models.deberta.tokenization_deberta",
+  "tokenizer_mro": [
+    "DebertaTokenizer",
+    "PreTrainedTokenizer",
+    "PreTrainedTokenizerBase",
+    "SpecialTokensMixin",
+    "PushToHubMixin",
+    "object"
+  ],
+  "model_max_length": 512,
+  "python": "3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]",
+  "python_executable": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Scripts\\python.exe",
+  "versions": {
+    "bert-score": "0.3.13",
+    "transformers": "4.30.2",
+    "tokenizers": "0.13.3",
+    "torch": "2.11.0",
+    "huggingface-hub": "0.25.2"
+  },
+  "bert_score_internal_version": "0.3.12",
+  "input": "a",
+  "input_characters": 1,
+  "input_utf8_bytes": 1,
+  "real_samples_read": 0,
+  "real_features_extracted": 0,
+  "rf_fits": 0,
+  "evaluations": 0,
+  "status": "NO_EXCEPTION",
+  "ids": [
+    1,
+    102,
+    2
+  ],
+  "observed_calls": [
+    {
+      "file": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Lib\\site-packages\\transformers\\tokenization_utils_base.py",
+      "line": 2295,
+      "function": "encode",
+      "args": {
+        "text": "a",
+        "text_pair": null,
+        "add_special_tokens": true,
+        "padding": false,
+        "truncation": true,
+        "max_length": 512,
+        "stride": 0
+      }
+    },
+    {
+      "file": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Lib\\site-packages\\transformers\\tokenization_utils.py",
+      "line": 593,
+      "function": "_encode_plus",
+      "args": {
+        "text": "a",
+        "text_pair": null,
+        "add_special_tokens": true,
+        "padding_strategy": "PaddingStrategy.DO_NOT_PAD",
+        "truncation_strategy": "TruncationStrategy.LONGEST_FIRST",
+        "max_length": 512,
+        "stride": 0
+      }
+    }
+  ],
+  "controls": [
+    {
+      "padding": false,
+      "truncation": true,
+      "max_length": 512,
+      "status": "PASS",
+      "ids": [
+        1,
+        102,
+        2
+      ],
+      "token_count_with_special": 3
+    },
+    {
+      "padding": true,
+      "truncation": true,
+      "max_length": 512,
+      "status": "PASS",
+      "ids": [
+        1,
+        102,
+        2
+      ],
+      "token_count_with_special": 3
+    },
+    {
+      "padding": false,
+      "truncation": false,
+      "max_length": 512,
+      "status": "PASS",
+      "ids": [
+        1,
+        102,
+        2
+      ],
+      "token_count_with_special": 3
+    }
+  ],
+  "model_max_length_mutated": false,
+  "sources": {
+    "sent_encode": {
+      "path": "RAG\\results\\rag_e6_v4\\packages\\bert_score\\utils.py",
+      "start_line": 188,
+      "sha256": "e6126c5697aaa8f075fd30cdf907c38f8892668d20c086d5cd56995216438798",
+      "source_text_sha256": "dd59a162f062c599587e153fccfac6ffdaf69e4fbcc5e4840dfa2207868d160b",
+      "source_text_bytes": 2205,
+      "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/utils.py",
+      "source_omitted_reason": "Retain version, location and hashes instead of embedded third-party source."
+    },
+    "get_tokenizer": {
+      "path": "RAG\\results\\rag_e6_v4\\packages\\bert_score\\utils.py",
+      "start_line": 324,
+      "sha256": "e6126c5697aaa8f075fd30cdf907c38f8892668d20c086d5cd56995216438798",
+      "source_text_sha256": "037b8af02d2ecf2f07289dae6ca16db6107cddc240f8902e4e1c98bf4ecae776",
+      "source_text_bytes": 457,
+      "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/utils.py",
+      "source_omitted_reason": "Retain version, location and hashes instead of embedded third-party source."
+    },
+    "tokenizer_class": {
+      "path": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Lib\\site-packages\\transformers\\models\\deberta\\tokenization_deberta.py",
+      "start_line": 112,
+      "sha256": "8942271710262e00556b53e5c2babdd6d24a4117c8deb082bd3dd742dec5c7d6",
+      "source_text_sha256": "07d4fb5c9eae1861a91deee8ead1bebd420fe377e6c9296be7aee251b4eba661",
+      "source_text_bytes": 15392,
+      "upstream_source": "https://github.com/huggingface/transformers/blob/v4.30.2/src/transformers/models/deberta/tokenization_deberta.py",
+      "source_omitted_reason": "Retain version, location and hashes instead of embedded third-party source."
+    },
+    "encode": {
+      "path": "RAG\\results\\rag_e6_v4\\compatibility_analysis\\env\\Lib\\site-packages\\transformers\\tokenization_utils_base.py",
+      "start_line": 2295,
+      "sha256": "c7125cda5b54289acd2f569646bf5e049c3b20cdc9dc12782c8cdd7c79dc5052",
+      "source_text_sha256": "2650853d3d5774af4dd5f8160718a4185e03c7edc4020a3d7bc4ed3f3e07baee",
+      "source_text_bytes": 2054,
+      "upstream_source": "https://github.com/huggingface/transformers/blob/v4.30.2/src/transformers/tokenization_utils_base.py",
+      "source_omitted_reason": "Retain version, location and hashes instead of embedded third-party source."
+    },
+    "scorer_init": {
+      "path": "RAG\\results\\rag_e6_v4\\packages\\bert_score\\scorer.py",
+      "start_line": 25,
+      "sha256": "80c3682b8e0b426a48a8c74bbab10ae065132272e0fc294e977fc9d51df90abc",
+      "source_text_sha256": "e56984220cb6b1cae179723a68026813e805e3d3c3db6e2fa3ad9c86162c548d",
+      "source_text_bytes": 3725,
+      "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/scorer.py",
+      "source_omitted_reason": "Retain version, location and hashes instead of embedded third-party source."
+    },
+    "scorer_score": {
+      "path": "RAG\\results\\rag_e6_v4\\packages\\bert_score\\scorer.py",
+      "start_line": 182,
+      "sha256": "80c3682b8e0b426a48a8c74bbab10ae065132272e0fc294e977fc9d51df90abc",
+      "source_text_sha256": "c234b7c4b2e13acd25a58adac364a2902de81280dfc1ccab6586ae2b17cfb7e7",
+      "source_text_bytes": 2594,
+      "upstream_source": "https://github.com/Tiiiger/bert_score/blob/v0.3.13/bert_score/scorer.py",
+      "source_omitted_reason": "Retain version, location and hashes instead of embedded third-party source."
+    }
+  },
+  "public_release_transform": {
+    "description": "Source excerpts replaced with upstream references. Existing sha256 fields remain historical hashes, not hashes of this derivative.",
+    "original_file_sha256": "57c973774bf64d5ad57028cf7e2359b9d39947129416be6ce22fbf558aaec16e"
+  }
+}

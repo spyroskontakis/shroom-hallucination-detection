@@ -1,0 +1,159 @@
+{
+  "phase": "Module 2 Phase A: Offline Candidate Retrieval",
+  "rag_type": "unlabeled-training-corpus RAG",
+  "random_state": 42,
+  "dataset_paths": {
+    "unlabeled_train": "data\\Unlabeled train\\SHROOM_unlabeled-training-data-v2\\train.model-agnostic.json",
+    "development_inputs": "data\\Dev\\SHROOM_dev-v2\\val.model-agnostic.json"
+  },
+  "input_hashes": {
+    "unlabeled_train_file_sha256": "DEAD22EB9B11BBD5BF8E895D01E11AB517A7A7DCEBE82F82C6349A3F235D86A3",
+    "development_file_sha256": "5CA9B6400B6DC1A86D69E1B8FA0D121275650F836FDBA87FB23784D1D61CE611",
+    "dm_knowledge_base_sha256": "7C6146106BBE465A57A6D5A497AA53DE49E5467D0AD7C489892D4D2566839AF2",
+    "prototype_sample_sha256": "4852D256518E6C7C1D5AC4A1A982AE8D0A49688E459940BA649B0B17E1E3AD36"
+  },
+  "locked_module1_hashes": {
+    "trial_notebook_sha256": "A7E0455A11EFFB7C195EFFB1CACB542DD82992FCCE027FB0D297BE598557D20B",
+    "cache_sha256": "A942A0CC228DEF64B61389BCF7B7A5CB0A93BBCC7B0AA1D726826A9993B14CA5"
+  },
+  "sample_indices": [
+    15,
+    16,
+    19,
+    30,
+    42,
+    51,
+    55,
+    75,
+    78,
+    85,
+    122,
+    137,
+    154,
+    158,
+    161,
+    165,
+    166,
+    175,
+    177,
+    185
+  ],
+  "knowledge_base_rows": 9577,
+  "query_variants": [
+    "Q_SRC",
+    "Q_SRC_TGT"
+  ],
+  "query_variant_note": {
+    "Q_SRC": "term plus bounded source context",
+    "Q_SRC_TGT": "reference-assisted: term plus bounded source context and primary reference"
+  },
+  "retrieval_configuration": {
+    "top_k": 5,
+    "annotation_top_k": 3,
+    "rrf_constant": 60,
+    "fusion_weights_tuned": false,
+    "relevance_thresholds_defined": false
+  },
+  "packages": {
+    "python": "3.11.9",
+    "rank-bm25": "0.2.2",
+    "sentence-transformers": "5.4.1",
+    "transformers": "5.5.4",
+    "torch": "2.11.0",
+    "numpy": "2.4.4",
+    "scikit-learn": "1.8.0"
+  },
+  "embedding": {
+    "model_identifier": "sentence-transformers/all-mpnet-base-v2",
+    "local_files_only": true,
+    "available": true,
+    "dimension": 768,
+    "normalize_embeddings": true,
+    "device": "cpu",
+    "deterministic_algorithms": true,
+    "dense_text_version": "term_definition_context_window_v1",
+    "max_seq_length": 256,
+    "selected_batch_size": 16,
+    "chunk_size": 256,
+    "dtype": "float32",
+    "candidate_token_diagnostics": {
+      "rows": 9577,
+      "unbounded_token_lengths": {
+        "p50": 68.0,
+        "p90": 104.0,
+        "p95": 120.0,
+        "p99": 166.0,
+        "max": 540
+      },
+      "bounded_token_lengths": {
+        "p50": 68.0,
+        "p90": 104.0,
+        "p95": 120.0,
+        "p99": 166.0,
+        "max": 256
+      },
+      "context_only_truncated_count": 7,
+      "context_only_truncated_percent": 0.07309178239532213,
+      "definition_truncated_count": 0,
+      "reference_truncated_count": 0,
+      "context_fallback_counts": {
+        "marker": 9577,
+        "term": 0,
+        "initial": 0
+      },
+      "all_bounded_at_most_256": true
+    },
+    "query_token_diagnostics": {
+      "rows": 40,
+      "unbounded_token_lengths": {
+        "p50": 57.0,
+        "p90": 99.0,
+        "p95": 104.64999999999996,
+        "p99": 121.88,
+        "max": 125
+      },
+      "bounded_token_lengths": {
+        "p50": 57.0,
+        "p90": 99.0,
+        "p95": 104.64999999999996,
+        "p99": 121.88,
+        "max": 125
+      },
+      "context_only_truncated_count": 0,
+      "context_only_truncated_percent": 0.0,
+      "definition_truncated_count": 0,
+      "reference_truncated_count": 0,
+      "context_fallback_counts": {
+        "marker": 40,
+        "term": 0,
+        "initial": 0
+      },
+      "all_bounded_at_most_256": true
+    },
+    "cache_manifest": "RAG\\results\\rag_module2\\dense_cache\\dense_cache_manifest.json",
+    "cache_builder_launches": 1,
+    "cache_resumptions": 0,
+    "cache_chunks": 38,
+    "total_chunk_encoding_seconds": 1413.2921313000843,
+    "benchmark_results": [
+      {
+        "batch_size": 8,
+        "seconds": 22.786534400074743,
+        "completed": true,
+        "error_type": null
+      },
+      {
+        "batch_size": 16,
+        "seconds": 19.639924600021914,
+        "completed": true,
+        "error_type": null
+      },
+      {
+        "batch_size": 32,
+        "seconds": 24.82961990009062,
+        "completed": true,
+        "error_type": null
+      }
+    ]
+  }
+}

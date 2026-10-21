@@ -1,0 +1,311 @@
+{
+  "e7_evaluations": 1,
+  "files": {
+    "scripts/router.py": {
+      "sha256": "295bf2a78cc5a9cd394c077865f44d67c6309bc57dbd1ed11a6da88b9fadac44",
+      "bytes": 4375
+    },
+    "evaluation/paired_row_diagnostics.csv": {
+      "sha256": "53a472c490f702ecb6b6513c73637236e3ad794a3c3ab86fa04f79050de1a94c",
+      "bytes": 118618
+    },
+    "evaluation/e3_fresh_oof_predictions.csv": {
+      "sha256": "d8ffe139955d00266265e3a1066b74f3f60caff5bc60de6044e1ed6d1808cdba",
+      "bytes": 24818
+    },
+    "config/security_access_contracts_repaired_v1.json": {
+      "sha256": "74325c963df77229b94310314d1ac7e67d3412fb5e54f97c7e2e0afa17f4dae6",
+      "bytes": 49801
+    },
+    "config/access_repair_manifest.json": {
+      "sha256": "b80202ec41d5d387cae2e8c2502e2c9022b44c5435dccb4aaf48cf5b2d7b8e59",
+      "bytes": 3299
+    },
+    "config/write_guard_diagnostics_evaluate_e7_v1.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "evaluation/fits/E3_fold5_started.json": {
+      "sha256": "7cfcf9b917724e61b4945ee0f55b0f72053cec83972e08b2061aad8a9da22355",
+      "bytes": 17362
+    },
+    "E7_PROTOCOL.md": {
+      "sha256": "0491505c0f98a2a4d2a0896370adbbc3674c6fdf873b96a8a31833e587923002",
+      "bytes": 10679
+    },
+    "scripts/report_e7.py": {
+      "sha256": "cb24d46a4f746d932aeac6b6f617728abfa9f527f85142db166c79a32f5aa8da",
+      "bytes": 17699
+    },
+    "scripts/evaluate_e7.py": {
+      "sha256": "d3eef103e38d2d30a1fda18eb751d76e52d0fdb032cb95479b392524968619a0",
+      "bytes": 8362
+    },
+    "config/security_preflight_repaired_v1.json": {
+      "sha256": "b02f7236a11e031eb90aae40c63c8b3d66ce8531b467332249b43d58b574bd02",
+      "bytes": 48755
+    },
+    "evaluation/fits/E3_fold2_completed.json": {
+      "sha256": "e067f57e5edac4fbb38f8a4ff1c46c0d565bfe012bd05c4986a15c61d67f22a2",
+      "bytes": 190
+    },
+    "ACCESS_REPAIR_REPORT.md": {
+      "sha256": "c08b83ce480ed77c5fd7f3131e71d09fbc2c3aadf1afe115d8eb91a7a2367342",
+      "bytes": 5401
+    },
+    "config/security_import_diagnostic.json": {
+      "sha256": "3a2c5c36641a4e80b08861f01f441cff00c80483f287f88b63e416b337065fb8",
+      "bytes": 48388
+    },
+    "config/write_guard_diagnostics_preflight_repaired_v1.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "evaluation/fits/E6_fold2_started.json": {
+      "sha256": "011f3136cf36813304964861b69693ee2e9baeaddcaa9c3165f06439c45c635f",
+      "bytes": 17772
+    },
+    "evaluation/fits/E3_fold2_started.json": {
+      "sha256": "d0750860526db39caf1d83161a11e14427da6ba28fe2ffd4f5f26d32fa211b92",
+      "bytes": 17362
+    },
+    "config/write_guard_diagnostics_report_e7_v1.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "evaluation/fits/E3_fold3_completed.json": {
+      "sha256": "30974c174f1e23789dd110f41ab32d2f9f3d1585d6c03e441fa1b9a0b21909d7",
+      "bytes": 190
+    },
+    "config/protocol_freeze.json": {
+      "sha256": "66e61af2400a1c06fcece20756f9b5511899976c1545c244203f98cb949a9787",
+      "bytes": 82174
+    },
+    "config/security_report_e7_v1.json": {
+      "sha256": "40b21bf13a64a1e38bbf61cba2f95ae0489a309145984117510bcde15e17baf0",
+      "bytes": 48746
+    },
+    "history/INITIAL_PREFLIGHT_FAILURE.md": {
+      "sha256": "9265e4b02a4127d7654674c6b7deadef16060f668321dbf3ba334fb956014095",
+      "bytes": 3775
+    },
+    "scripts/e7_common.py": {
+      "sha256": "e498ef2d09c15dd79463a60474ec64b61aa1bb8d5464a50707ed507c519cdc85",
+      "bytes": 13629
+    },
+    "routing/router_inputs.csv": {
+      "sha256": "dfc584c7f2bad8a553b19f90e51318d66ceac1512172fc0fc916af9471b343d1",
+      "bytes": 24393
+    },
+    "tests/test_e7.py": {
+      "sha256": "d47b83f25670e437cf6acaa3354b759cda2e11dcbbc3afb3b478c79bd2588235",
+      "bytes": 16744
+    },
+    "config/fold_thresholds.json": {
+      "sha256": "870dd1a3da3bc8403c6acd736401f76fe1c60630ee45c962b1c786d2b66b9784",
+      "bytes": 115387
+    },
+    "config/security_prepare_evaluation_v1.json": {
+      "sha256": "fa5cd8d90e5bf061657a78cb0b1fc6eb44be1ee101a00b22a8caa1df370b9a23",
+      "bytes": 48755
+    },
+    "evaluation/fits/E3_fold3_started.json": {
+      "sha256": "3c2d6a78b63e515f6f4462f0ac7d3b2b8356b7ca02f98d0e9d60d365317e7b05",
+      "bytes": 17362
+    },
+    "evaluation/fits/E6_fold5_started.json": {
+      "sha256": "d69459fc282381e51088102e2adb2a8e551552b0d80683aee9731d6281ed368c",
+      "bytes": 17772
+    },
+    "evaluation/routing_ceiling_analysis.json": {
+      "sha256": "fd258db36170ba51a318be312039fd2882be464d36d7e775b7292c6a1f8aaf25",
+      "bytes": 688
+    },
+    "evaluation/fits/E3_fold5_completed.json": {
+      "sha256": "fe0fd4c4a8850f4ce969aecdd0cd0567e7e45d4db1653d242194cd94d00b3ad4",
+      "bytes": 190
+    },
+    "evaluation/e7_metrics.json": {
+      "sha256": "c18b123f486b3e37faf1f72e037e921ff3b37a908456a13b606667d0fbbecc04",
+      "bytes": 6616
+    },
+    "scripts/prepare_evaluation.py": {
+      "sha256": "f15fbbc7e7721be337d981fe2748f05e145abdd1ad8097d3e3b0c34a16df2c0c",
+      "bytes": 3800
+    },
+    "config/security_e7_contracts_v1.json": {
+      "sha256": "2e32b23da1a161bf1fdcd022e3e38f24dace1327e279b8c7e49fce98b74f9ddd",
+      "bytes": 50089
+    },
+    "routing/routes.csv": {
+      "sha256": "2ef40dc7bd395c1cfa571e5235ab81cc4ceb4d9fa5745c6117cc2b2f01913ece",
+      "bytes": 42757
+    },
+    "config/write_guard_diagnostics_e7_contracts_v1.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "evaluation/fits/E6_fold3_started.json": {
+      "sha256": "3342571d694d39d475be5832d7e942b7a5fac7875d111191aff0865b55aebad1",
+      "bytes": 17772
+    },
+    "evaluation/fits/E3_fold4_completed.json": {
+      "sha256": "fa5439514fbcf7c988720af1bbb6e69a2b5129d9d6a81ec9430b7eb978eb9df4",
+      "bytes": 190
+    },
+    "evaluation/fits/E6_fold4_completed.json": {
+      "sha256": "927cc5dca0b1b5af6d23b46bbc7dc80bf623f58e1711e42ecb1f5e461d93b932",
+      "bytes": 190
+    },
+    "evaluation/evaluation_started.json": {
+      "sha256": "ca6be4743abe543ed9ec4d3df7b08c0f4fdad1d55a9dda0db83c53b3d61e3d5a",
+      "bytes": 332
+    },
+    "config/write_guard_diagnostics_access_contracts_repaired_v1.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "config/evaluation_freeze.json": {
+      "sha256": "d30bf8372baac2ccc941b57561539a490e899bc25637c223cf5cc40e2576cd14",
+      "bytes": 85578
+    },
+    "evaluation/fits/E3_fold1_completed.json": {
+      "sha256": "6198faadefe6dc527b5efeb793ccd85813b191eba865d36b617cb20700de94f0",
+      "bytes": 190
+    },
+    "evaluation/fits/E6_fold1_started.json": {
+      "sha256": "fd79b715c48e8be8d4f5e073373ec38c41816029bb59412f471b9461d1044f76",
+      "bytes": 17772
+    },
+    "evaluation/e6_fresh_oof_predictions.csv": {
+      "sha256": "084d030c603cb9156b2824de3d766f3fc7c22bca8284e3e18929676465a029d3",
+      "bytes": 24852
+    },
+    "config/security_evaluate_e7_v1.json": {
+      "sha256": "b36201af1e9ea9936de93426f9d24625e8f36e3113248e240a60379ba5e2bcd1",
+      "bytes": 48748
+    },
+    "config/output_manifest.json": {
+      "sha256": "a2aa3afa29cf5718d3955570a81d8c47c8b546b3fbc705875e55df744bbc339f",
+      "bytes": 1175
+    },
+    "config/routes_freeze.json": {
+      "sha256": "11f20e40b58952282eef7bbaf1f4f55e9e83f7a95834347d01f5c3d3da87d775",
+      "bytes": 518
+    },
+    "evaluation/agent_trajectories.json": {
+      "sha256": "5b153a7427b22d79e96e1f074ec1e0f41e3f15e0a7193cefb32abf1c517514ec",
+      "bytes": 171615
+    },
+    "evaluation/fits/E6_fold1_completed.json": {
+      "sha256": "c284d1aaab6d25d36a2ab67119c883aeb460af0bd174021031337420a1ef6fbc",
+      "bytes": 190
+    },
+    "evaluation/fits/E6_fold5_completed.json": {
+      "sha256": "216728a1dd3cd8fcf2244f5aaf15fc4709764d7de6e20af7ffea31d053bbc010",
+      "bytes": 190
+    },
+    "config/write_guard_diagnostics_import_diagnostic.jsonl": {
+      "sha256": "2ad34c08d269d8c61eb3fcac058b5f43bdf191d3ba8f05441e69400d174c6390",
+      "bytes": 33069
+    },
+    "evaluation/e7_oof_predictions.csv": {
+      "sha256": "04affadf0e99a61fc7881d0369b0c6f4c20ba097c6d80fcba6d115a9577c3370",
+      "bytes": 34842
+    },
+    "config/access_contracts_repaired_v1.json": {
+      "sha256": "17e6ce585809fc3e7400c00c3937212edaae92be7b98de95810cca91d2b35ce5",
+      "bytes": 255
+    },
+    "config/write_guard_diagnostics_prepare_evaluation_v1.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "evaluation/baseline_verification.json": {
+      "sha256": "334c62e2a4f9361972482676fe739555f754bf8203ad54efa330a5b9180c3438",
+      "bytes": 633
+    },
+    "scripts/diagnose_imports.py": {
+      "sha256": "b91c8d723db3e7b6dffd74339a4b8c9dca3e3b024234744491b3d14c3fca7a37",
+      "bytes": 649
+    },
+    "E7_RESULTS.md": {
+      "sha256": "34b199c8fba4ad78102cdcc61fbe4f8b2da00bfad057bff445ec10d6ce18034f",
+      "bytes": 9182
+    },
+    "config/final_integrity_audit.json": {
+      "sha256": "ae888ba02277f2a9ef2647b506ba5b61e82e0a0226b83698912abda45eb0ca14",
+      "bytes": 1466
+    },
+    "history/COMPLETION_BEFORE_REPORT_FORMATTING.json": {
+      "sha256": "9671f078367f3fcce5a3c847cbe4ca38c6eb43aa492b5df4adba72e765aa0879",
+      "bytes": 11591
+    },
+    "config/failure_audit.json": {
+      "sha256": "c42408d1d1bcfa456e2cc4dea43b9c96c75d5750280d678d5df9e320c63494ed",
+      "bytes": 444
+    },
+    "evaluation/fits/E6_fold4_started.json": {
+      "sha256": "39a7a491d23f279de95724d9766bcdf7cf11e024b61f58ed323caa7e2c782b3c",
+      "bytes": 17772
+    },
+    "config/pre_evaluation_preflight.json": {
+      "sha256": "08eb2d804be09161352158fc8ff99c489202f5f7efb0fc1840646f8a4547fd5b",
+      "bytes": 2111
+    },
+    "evaluation/fits/E3_fold4_started.json": {
+      "sha256": "f3579d13cefec6bab725cd8d0c30bb248988556555ecd3a5884cfe35dd0fa964",
+      "bytes": 17362
+    },
+    "config/e7_contracts.json": {
+      "sha256": "ca09f963f2544554285b44157a3a057fe3fa905baa44a5cd4be402b6d7c82912",
+      "bytes": 1459
+    },
+    "config/security_preflight.json": {
+      "sha256": "794abad545497a34865ad07aa07e12049d46eae28fc646acefb4e8ff65f7e1d0",
+      "bytes": 49186
+    },
+    "evaluation/fits/E3_fold1_started.json": {
+      "sha256": "b0efce8bf9082a4c3eabbaba9466dd489f3eee8494503ee6ecc1023cb4be4f25",
+      "bytes": 17362
+    },
+    "tests/test_access_repair.py": {
+      "sha256": "45f55683d7977c040be710b595cb618032dbf0f2928585adc6f238c846ec0cb7",
+      "bytes": 3152
+    },
+    "scripts/preflight.py": {
+      "sha256": "915cd943284c7d2eb4ba4391e6dc605917a7535f5659bdee6de5ac69382cc525",
+      "bytes": 477
+    },
+    "scripts/evaluation_common.py": {
+      "sha256": "61ebd02866cf73813a308b6c895d889eb9d0036b3bf2036afef17c60a3dd4a2d",
+      "bytes": 5600
+    },
+    "config/access_repair_audit.json": {
+      "sha256": "8ece283ccd0c32d71e21b2140c7807fcaea1306a3cb0a92341d6706e5d193e43",
+      "bytes": 1045
+    },
+    "evaluation/fits/E6_fold2_completed.json": {
+      "sha256": "b54ba5890050ab5d421ca00fc049985ead0199f0e4cb2b4ec319ed18930feb51",
+      "bytes": 190
+    },
+    "evaluation/fits/E6_fold3_completed.json": {
+      "sha256": "43db9e832120182075534df2eea0a39e407ead62b23d6258858104552aba20d3",
+      "bytes": 190
+    },
+    "config/preflight.json": {
+      "sha256": "f5da6888c234886b659526cf191848dca257be55d68d551a4804675d61c3efd1",
+      "bytes": 2111
+    }
+  },
+  "protocol_sha256": "0491505c0f98a2a4d2a0896370adbbc3674c6fdf873b96a8a31833e587923002",
+  "rf_fits": 10,
+  "self_excluded": true,
+  "status": "COMPLETED",
+  "verified_utc": "2026-09-09T18:16:56.5958514Z",
+  "report_finalization": {
+    "change": "Removed blank lines between adjacent Markdown table rows only; no implementation/configuration or numeric changes",
+    "previous_completion_manifest_sha256": "9671f078367f3fcce5a3c847cbe4ca38c6eb43aa492b5df4adba72e765aa0879",
+    "previous_completion_manifest_copy": "history/COMPLETION_BEFORE_REPORT_FORMATTING.json"
+  }
+}

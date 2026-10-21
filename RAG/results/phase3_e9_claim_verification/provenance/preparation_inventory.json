@@ -1,0 +1,25 @@
+{
+  "scope": "Preparation files; inventory excludes itself and FILES_CREATED.md to avoid recursive hashes",
+  "sha256": {
+    ".gitignore": "9d1c3e206096d490f5d4a259fd8a6206484a97926169a571c1ab76878c17b064",
+    "config/decomposition_prompt.json": "f33a935b5d3546cebf88dd87e842752a0b042cfdcbb84359c1620d73b895be00",
+    "config/run_config.json": "be83331bd156b223bc2ad5024e8c3ae2db8b2d558602475e28ef4c107130d79f",
+    "E9_INTEGRITY_CHECKS.md": "a497a646e35373367052a3712d0a8bd2f02bc2a623e6efad5c9ba70e48623b1f",
+    "E9_PROTOCOL.md": "7129387b17ed37b9e7ca016d5c173d846f270be577b08c801a2a8c8a43a86f7a",
+    "E9_PROVENANCE.md": "fc9f41526fc6e2000a53c3a1663009370a14ab1ed62dd866782d0378a8211963",
+    "E9_RESULTS.md": "a9e3d4e24322b4c0b254e3c50851d665739b1d50a89b7b8eafbcd533c37726e8",
+    "evaluation/baseline_metrics.json": "46daa15b757fc5b50bca0cfd407b21f4b35fbf54ea31444536f7bfc86a43c4d0",
+    "provenance/baseline_verification.json": "7d00bff2ef5aa3b602f9789f1abc8f0ce396e7436beac732e48907b8b66c11ff",
+    "reports/execution_status.json": "b0227cbb3b6601c9e01ea6c34865688c1ade4ab5653a8415779e8ff31c5ffce4",
+    "reports/offline_checks.json": "2086bd52e24ebabc11fe7e467ff073782f758e45679562cdd1e176bd16f54c69",
+    "scripts/aggregates.py": "83a385fadf14ea1955223f426f70d9a154b9f328539df7c26800f8a563340ae8",
+    "scripts/claim_runner.py": "27ca10d1b52047c78e5a47649571b28a91553226146b11d324cee835501e5060",
+    "scripts/decomposer.py": "641c0c0b94a54a8f600b553a72c53273d7fc343cade0de46abbb359764ccc160",
+    "scripts/e9_common.py": "ab9c012e924e7611b0d8926bfd4b6e2125ff82996ada57fb691127a6d9fdb7d4",
+    "scripts/evaluate.py": "680d24f2e2c6095bcc2ae192dfe7912601ac6021817b98e06fe51ac8527c8521",
+    "scripts/nli_features.py": "b2378a57251f1a6d71c2138d13bb265b5487006d10ecae4cd152928d07236c64",
+    "scripts/prepare.py": "da37fd3c84e6094da119cba3dbce978e2e634730a5dbe275c4f7886607f6e165",
+    "scripts/verify_baseline.py": "60fe2f00845ebfaeeaa62590628d9e7433758021189fbce2d94eb2c43b3fbb51",
+    "tests/test_e9.py": "4722890b1ca84fa66834de4ae5ada87ce1c41e02c9262daca7abc7e8d74b5455"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "FAIL_BLOCKED_BILLING",
+  "protocol_sha256": "792bbe4ef1d0752e606c81dc511684f7bb0a051b2a5c24a937c49d7cb928f818",
+  "files_sha256": {
+    "E11C_CLOSURE_ATTEMPT_AUDIT.json": "563c718fadb9ff3fc7faaeb472a34c839ef1ec98ae36dd62eb862831a6971a3d",
+    "E11C_CLOSURE_ATTEMPT_AUDIT.md": "9dead68f00134a5706f903a67edc5301410233b97f70d545cb704317a6106818",
+    "E11C_CLOSURE_PREFLIGHT.json": "caeacfcf6c7637fe450212b393a90ea747d971e7c42ae2ee526cbd7800476961",
+    "E11C_CLOSURE_PRESERVATION_BASELINE.json": "8cecda251fca3d167f367b712dfdb0e90ccca05f3e15fd4e6ef13384a12df091",
+    "close_e11c_retry.py": "6f65e08bd007c57ba95645c87ca5e66f965de983d1ebd900c4b9f22d653fc3fa",
+    "test_e11c_closure.py": "0b49edc218a2e49e6b547091433dc20107c11b33a5db3566d1b49a6d651dd6a6",
+    "private\\production_11700\\round_2\\batch_001\\closure_creation_error.json": "4643692c3535ebc1e8e0d15eebaf2bc1493ca17b2b2b2dacd8c65255058f864b",
+    "private\\production_11700\\round_2\\batch_001\\closure_creation_intent.json": "d45b367cfa4df53ed016c8c8efb311f7c96d314c31ab8ab6d8d1f3af93b372d5",
+    "private\\production_11700\\round_2\\batch_001\\closure_model_metadata.json": "c721c6e331bb1cc311718a81fd2fa270ba17eab716786c53ec017e756533c2fb",
+    "private\\production_11700\\round_2\\batch_001\\closure_pending_identity.json": "79a2d5fad709fc23eaec500d1d27adae25d09875ae08af84c4fecdf4804cba37",
+    "private\\production_11700\\round_2\\batch_001\\closure_remote_reconciliation.json": "4aa387bb5fabf71eb571b2a47557098f36e43510baccf3fe418424b067fa1593"
+  },
+  "original_production_manifest_sha256": "d6b7d0f108c8eee23c3243fbc7544d8180ba646a0c79adc1412e2e1288da7cab"
+}

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "metrics": {
+    "accuracy": 0.8057040998217468,
+    "correct": 452,
+    "n": 561,
+    "spearman": 0.7528866687040761
+  },
+  "feature_count": 25,
+  "historical_rf_fits": 95,
+  "historical_oof_evaluations": 1,
+  "new_fits": 0,
+  "new_experiment_evaluations": 0,
+  "protected_unchanged": 557,
+  "completion_files_verified": 50,
+  "protocol_sha256": "80e90226cd5cc323d6b649767c615f5d34861637a16af6872bfb8d4ae6f39feb",
+  "configuration_sha256": "32a04c03616186388640ff7e9b4e3cf70ad9e2af2401e38dec5a8ea83c3f255e",
+  "historical_network_attempts_after_acquisition": 0,
+  "official_test_access": "None according to frozen reports and guarded code/logs; not an OS-level proof. No official-test files opened during this audit.",
+  "inventory_counts": {
+    "A": 18,
+    "B": 0,
+    "C": 33
+  },
+  "secret_findings": [],
+  "absolute_path_files": [
+    "config/configurations.json",
+    "scripts/e8_common.py"
+  ],
+  "large_files": [],
+  "integrity": {
+    "baseline_verification_fits": 0,
+    "contracts_passed": 10,
+    "fits_completed": 95,
+    "fits_started": 95,
+    "inner_fits": 90,
+    "inner_metrics_recomputed": 30,
+    "operational_guard_violations": 0,
+    "outer_fits": 5,
+    "outer_rows": 561,
+    "paired_statistics_recomputed": true,
+    "protected_files_unchanged": 557,
+    "selected_configurations_verified": 5,
+    "status": "PASS",
+    "train_target_prediction_array_hashes_verified": 285,
+    "verified_utc": "2026-09-10T07:21:46.903712+00:00"
+  },
+  "selected_configurations": {
+    "1": "C4",
+    "2": "C4",
+    "3": "C0",
+    "4": "C5",
+    "5": "C4"
+  },
+  "selection_frequency": {
+    "C4": 3,
+    "C0": 1,
+    "C5": 1
+  },
+  "nested_checks": {
+    "partitions": 15,
+    "pooled_metrics": 30,
+    "selections": 5,
+    "array_hashes": 285,
+    "new_fits": 0
+  },
+  "publication_date": "2026-09-12",
+  "read_only_audit_date": "2026-09-11",
+  "historical_model_download": "No model acquisition, extraction or network attempts during E8.",
+  "publication_string_review": {
+    "A_safe_source_config_references": "src/hyp are field names or artificial contract fixtures, not real SHROOM text. external-artifacts/local-0fb664776e02/Windows in e8_common.py is the operating-system default allowlist root, not a private path.",
+    "B_withheld_personal_paths": [
+      "config/configurations.json"
+    ],
+    "C_withheld_row_content": "Original metrics with correction/error IDs, predictions, feature matrices, split ID lists, fit ID lists, raw NLI pairs and external text remain local.",
+    "D_historical_documentation": "Original report-render parse failure and narrow repair remain documented; no experiment rerun.",
+    "sample_identifiers_in_approved_originals": 0
+  }
+}

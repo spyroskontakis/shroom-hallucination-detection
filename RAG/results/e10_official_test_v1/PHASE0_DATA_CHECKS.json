@@ -1,0 +1,110 @@
+{
+  "status": "PASS_SOURCE_MAPPING_AND_EXACT_DISJOINTNESS",
+  "canonical_rows": 561,
+  "canonical_sources": {
+    "development_model_agnostic": 493,
+    "trial": 68
+  },
+  "source_rows": {
+    "trial": 80,
+    "development_model_agnostic": 499
+  },
+  "omitted_source_indices_zero_based": {
+    "trial": [
+      0,
+      3,
+      5,
+      6,
+      9,
+      11,
+      14,
+      16,
+      20,
+      26,
+      27,
+      35
+    ],
+    "development_model_agnostic": [
+      355,
+      374,
+      418,
+      452,
+      458,
+      483
+    ]
+  },
+  "canonical_tasks": {
+    "DM": 211,
+    "PG": 134,
+    "MT": 216
+  },
+  "source_labels_match": true,
+  "canonical_test_exact_overlap_ids": [],
+  "canonical_test_source_pair_overlap_ids": [
+    "HDEV_0318_b7b68e48521d",
+    "HDEV_0333_697ef5a72a77",
+    "HDEV_0363_34fdff732038",
+    "HDEV_0366_20aed6bd704a",
+    "HDEV_0369_214ad3377267",
+    "HDEV_0378_706d26208e3b",
+    "HDEV_0384_2097b26cb26b",
+    "HDEV_0396_029188d4e168",
+    "HDEV_0413_ca10023a883f",
+    "HDEV_0416_cee0dc4d7a20",
+    "HDEV_0441_ed51c218d54f",
+    "HDEV_0463_f689e69a1247",
+    "HDEV_0468_92dac8e11b38",
+    "HDEV_0473_58171c0672e3"
+  ],
+  "raw_dev_test_exact_overlap_indices": [
+    355,
+    374,
+    458,
+    483
+  ],
+  "test_rows": 1500,
+  "test_tasks": {
+    "MT": 562,
+    "DM": 563,
+    "PG": 375
+  },
+  "test_id_count": 1500,
+  "test_unique_ids": 1500,
+  "test_unique_full_text_keys": 1491,
+  "test_empty_fields_by_task": {
+    "DM": {
+      "src": 0,
+      "tgt": 0,
+      "hyp": 0
+    },
+    "MT": {
+      "src": 0,
+      "tgt": 0,
+      "hyp": 0
+    },
+    "PG": {
+      "src": 0,
+      "tgt": 0,
+      "hyp": 0
+    }
+  },
+  "test_schema_field_sets": [
+    [
+      "hyp",
+      "id",
+      "label",
+      "labels",
+      "p(Hallucination)",
+      "src",
+      "task",
+      "tgt"
+    ]
+  ],
+  "gold_value_policy": "Test gold fields lexically skipped, not JSON-decoded, inspected, logged, or scored. Schema key names only checked. Gold value validation deferred until frozen predictions exist.",
+  "files_sha256": {
+    "codex\\canonical_human_development_manifest.csv": "754b66c6c4eca2e92902d0408db4854e922d7dfb396953a0cc043c5477bd6a9b",
+    "codex\\data\\Trial\\SHROOM_trial-v1.1\\trial-v1.json": "8000998423f8beebe2646f4ba0d76eac8f269f32a9a4440b009f153ed39b429a",
+    "Dev\\SHROOM_dev-v2\\val.model-agnostic.json": "5ca9b6400b6dc1a86d69e1b8fa0d121275650f836fdba87fb23784d1d61ce611",
+    "Labeled test\\SHROOM_test-labeled\\test.model-agnostic.json": "c5c5fe0ce9c402186990b0dde05c0274ac90d10906b169f28d2f2c0cf669f299"
+  }
+}
