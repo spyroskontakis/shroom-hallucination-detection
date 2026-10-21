@@ -111,3 +111,9 @@ See [known limitations](docs/KNOWN_LIMITATIONS.md) and [reproducibility](docs/RE
 ## Licensing
 
 Project-owned material that Spyros Kontakis is entitled to license is available under the [MIT License](LICENSE), copyright (c) 2026 Spyros Kontakis. Third-party code retains its own licenses and copyright notices; datasets and model weights are excluded from this grant. See [licensing scope](docs/LICENSE_PROPOSAL.md) and [third-party notices](docs/THIRD_PARTY_NOTICES.md).
+
+## Thesis & Presentation
+
+- [Thesis (PDF)](thesis/Thesis.pdf)
+- [Thesis (Word)](thesis/Thesis.docx)
+- [Thesis Presentation (PowerPoint)](presentation/Thesis_Presentation.pptx)
