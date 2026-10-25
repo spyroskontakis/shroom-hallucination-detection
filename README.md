@@ -1,119 +1,214 @@
 # SHROOM Hallucination Detection
 
-A thesis implementation studying how natural-language inference, semantic similarity, retrieved evidence and task adaptation can identify hallucinations in generated text. The work uses the SemEval 2024 SHROOM setting across definition modeling, machine translation and paraphrase generation.
+This repository contains the implementation and results of my diploma thesis on **hallucination detection in natural language generation**, developed in the context of **SemEval-2024 Task 6 (SHROOM)**.
 
-The project covers **E1-E11**, including unsuccessful variants, with implementation code, protocols and recorded evaluation evidence. Exact replay requires separately obtained datasets, model weights and frozen artifacts.
+The research focuses on the **model-agnostic track**, where generated text is evaluated using the available source and reference texts, without access to the model that produced it.
 
-## Technical work represented here
+The study covers three natural language generation tasks:
 
-- Canonical preprocessing, fixed development folds, feature checks and out-of-fold evaluation.
-- A 14-feature NLI/similarity Random Forest baseline and controlled evidence-feature extensions.
-- RAG Modules 1-4: exact and hybrid retrieval, external lexical evidence, leakage controls and provenance checks.
-- NLI, BERTScore and HHEM evaluators; claim decomposition with MiniCheck and FactCG integrations.
-- MPNet artifact/provenance verification and static regression tests.
-- Task-adapted DeBERTa, teacher-label feasibility analysis and contrastive variants, including failed attempts.
+- **Definition Modeling (DM):** Generating definitions of words or expressions.
+- **Machine Translation (MT):** Translating text between languages.
+- **Paraphrase Generation (PG):** Rewriting text while preserving its meaning.
 
-These are capabilities represented in the repository, not a claim that upstream models, libraries or every line of code were authored by one person.
+The goal is to detect fluent and plausible generated text whose meaning is not supported by the appropriate reference.
 
-**Stack:** Python, PyTorch, Hugging Face Transformers/tokenizers, scikit-learn, NumPy/pandas/SciPy, notebooks and experiment-specific runtime specifications. Historical remote experiment scripts use Modal; release preparation does not launch compute.
+The project includes experiments **E1-E11**, investigating different approaches based on semantic analysis, external knowledge retrieval and machine learning.
 
 ## Methodology
 
-| Stage | Research focus |
+The initial approach combines two types of semantic information:
+
+- **Natural Language Inference (NLI):** Estimates whether a reference supports, contradicts or neither supports nor contradicts the generated text.
+- **Semantic Similarity:** Uses sentence embeddings to compare the source, reference and generated texts.
+
+The combined baseline uses six NLI features and eight semantic similarity features. These are provided to a **Random Forest Regressor**, which predicts a continuous hallucination score. The score is converted into a binary label using a threshold of 0.5.
+
+The approach was progressively extended with external dictionary definitions, additional semantic verification methods and alternative training strategies.
+
+The main extensions include:
+
+- Retrieval and selection of relevant definitions using lexical and semantic search.
+- Additional semantic checks using HHEM, BERTScore, MiniCheck and FactCG.
+- Verification of individual claims within generated text.
+- Selective use of external information through rule-based routing.
+- Different Random Forest configurations.
+- Transformer fine-tuning with additional supervision and contrastive learning.
+
+These methods were investigated through separate experiments and do not all form part of a single final model.
+
+## Experiments
+
+The experimental work was organized into three phases:
+
+- **Phase 1 (E1-E4):** Development of the initial detection approach and investigation of synthetic training data.
+- **Phase 2 (E5-E8):** External knowledge retrieval, additional features and alternative model configurations.
+- **Phase 3 (E9-E11):** Claim verification and alternative transformer training strategies.
+
+| Experiment | Description |
 |---|---|
-| E1-E3 | NLI, semantic similarity and their combined Random Forest baseline |
-| E4 | Synthetic-data augmentation and ablation diagnostics |
-| E5 | RAG Modules 1-4 and evidence acquisition/evaluation |
-| E6 v1-v4 | Direct evidence features and model/runtime compatibility |
-| E7 | Selective agentic routing |
-| E8 | Nested Random Forest tuning |
-| E9 | Claim-level verification and feature combinations |
-| E10 | Selected FactCG combination; separate retrospective test reconstruction |
-| E11 A-E | Task adaptation, teacher supervision feasibility and contrastive training |
+| E1 | Hallucination detection using NLI features |
+| E2 | Hallucination detection using semantic similarity features |
+| E3 | Combination of NLI and semantic similarity using Random Forest |
+| E4 | Investigation of synthetic training data |
+| E5 | Retrieval and evaluation of external dictionary definitions, followed by their use as additional features |
+| E6 | Additional semantic and structural features, including a second NLI evaluator, HHEM and BERTScore |
+| E7 | Rule-based selection between the baseline and an evidence-enhanced model |
+| E8 | Random Forest configuration selection using nested cross-validation |
+| E9 | Verification of individual claims using NLI and MiniCheck |
+| E10 | Additional verification of the complete generated text using FactCG |
+| E11 | DeBERTa fine-tuning with human labels, additional automatic supervision and contrastive learning |
 
-See the [experiment index](docs/EXPERIMENTS.md) and protocols beside each implementation. E11-B produced no final student model or final metrics. Historical variants remain available as research evidence.
+E6 includes four successive versions (E6-v1 to E6-v4). E9 and E11 also investigate different configurations.
 
-## Development results
+E7 examines a simple rule-based routing approach, referred to in the thesis as Agentic RAG. It selects between existing model predictions based on the availability and relevance of retrieved information, without using an autonomous LLM agent.
 
-These results use the **561-example canonical development evaluation**, not the official test set. The earlier 499-example notebook evaluation is a different population.
+E11 includes variants A-E. E11-B investigated the feasibility of automatically generated labels but did not produce a final trained transformer or evaluation metrics.
 
-| Experiment | Correct / N | Accuracy | Spearman |
+Detailed experiment descriptions are available in the [experiment documentation](docs/EXPERIMENTS.md).
+
+## Evaluation
+
+The main experimental comparisons use a shared development dataset of **561 human-labeled examples**, assembled from the SHROOM development and trial sets after removing duplicates and exact example overlaps with the official test set.
+
+The evaluation uses **stratified 5-fold cross-validation with out-of-fold (OOF) predictions**.
+
+The examples are divided into five groups while preserving the distribution of tasks and hallucination labels. In each iteration, a model is trained on four groups and evaluated on the remaining group. Every example receives one prediction from a model that was not trained on that example.
+
+The same predefined splits are used across the main comparisons. Experiment E8 additionally uses internal 3-fold cross-validation to select Random Forest configurations within each outer training split.
+
+Two main evaluation metrics are used:
+
+- **Accuracy:** The percentage of correctly classified examples.
+- **Spearman correlation:** How closely the predicted scores rank examples in the same order as the human hallucination scores.
+
+Accuracy is the primary comparison criterion, with Spearman correlation used as a secondary criterion.
+
+The earlier E1-E4 notebook evaluation used 499 examples. Its results should not be directly compared with the later 561-example evaluation.
+
+Because successive configurations were developed and compared on the same development set, the reported results primarily support comparisons between experimental approaches rather than independent confirmation of generalization.
+
+## Results
+
+The following table presents selected results from the shared 561-example development evaluation.
+
+| Experiment | Correct predictions | Accuracy | Spearman |
 |---|---:|---:|---:|
-| E3 canonical baseline | 445/561 | 0.793226 | 0.739040 |
-| E6-v3 | 474/561 | 0.844920 | 0.781695 |
-| E9-B | 468/561 | 0.834225 | 0.788580 |
-| E10 | 475/561 | 0.846702 | 0.782809 |
-| E11-C | 466/561 | 0.830660 | 0.727018 |
+| E3 (re-evaluated baseline) | 445/561 | 79.32% | 0.7390 |
+| E5 | 446/561 | 79.50% | 0.7422 |
+| E6-v3 | 474/561 | 84.49% | 0.7817 |
+| E9-B | 468/561 | 83.42% | 0.7886 |
+| E10 | 475/561 | 84.67% | 0.7828 |
+| E11-C | 466/561 | 83.07% | 0.7270 |
 
-E10 was selected under the recorded accuracy-first rule; E9-B has higher Spearman correlation. E10 adds one correct decision over E6-v3. The recorded paired comparison has McNemar p=1.0 and a bootstrap accuracy-difference interval spanning zero; this is not a statistically established improvement.
+Among the configurations evaluated on the shared development set:
 
-Sources: [E10 metrics](RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_metrics.json), [E9-B metrics](RAG/results/phase3_e9_claim_verification/evaluation/E9-B_metrics.json) and [full results](docs/RESULTS.md).
+- **E10 achieved the highest accuracy**, with 475 correct predictions out of 561 examples (84.67%).
+- **E9-B achieved the highest Spearman correlation**, with a value of 0.7886.
 
-## Retrospective official-test reconstruction
+E10 classified one more example correctly than E6-v3. However, the paired comparison did not establish a statistically significant improvement (McNemar p = 1.0).
 
-A separate retrospective reconstruction on the labeled official test set records **1,234/1,500 correct**, **accuracy 0.8227** and **Spearman 0.7501**. This was not an official SemEval submission or competition ranking. It must not be described as prospective held-out validation of the entire research process.
+Overall, the experiments show that additional features and more complex training strategies do not necessarily lead to better results.
 
-See the [recorded test metrics](RAG/results/e10_official_test_v1/reconstructed_v1/E10_OFFICIAL_TEST_METRICS.json) and [limitations](docs/KNOWN_LIMITATIONS.md).
+The complete results are available in [Results](docs/RESULTS.md).
 
-## Architecture
+### Retrospective Evaluation on the Official Test Set
 
-```mermaid
-flowchart LR
-    A[Authorized external data] --> B[Canonical preparation and fixed folds]
-    B --> C[NLI and similarity features]
-    B --> D[Retrieval and claim evidence]
-    C --> E[Feature combination and Random Forest]
-    D --> E
-    B --> F[Task-adapted DeBERTa variants]
-    E --> G[OOF evaluation and aggregate reports]
-    F --> G
-```
+E10 was also evaluated retrospectively on the official SHROOM model-agnostic test set of 1,500 examples.
 
-## Repository map
+| Metric | Result |
+|---|---:|
+| Correct predictions | 1,234/1,500 |
+| Accuracy | 82.27% |
+| Spearman correlation | 0.7501 |
 
-- `codex/`: canonical preprocessing, feature extraction, fixed folds and aggregate evaluation evidence.
-- `RAG/`: original notebooks, RAG Modules 1-4 and experiments E6-E11.
-- `solution/`: independent baseline/training implementation, kept at its original relative path and without its internal `.git` directory.
-- `docs/`: experiment index, architecture, results, reproducibility and limitations.
-- `data/`: selected historical notebooks and aggregate summaries, not a dataset distribution.
-- `historical_versions/`: reviewed source snapshots, not standalone runnable checkouts.
-- `manifests/`: file hashes, external-artifact inventory, historical decisions and transformations.
+This evaluation was performed after the official labels had been released and required reconstruction of part of the external dictionary evidence.
 
-Paths are intentionally preserved because scripts use relative paths and frozen source hashes. Start with [architecture](docs/ARCHITECTURE.md), [experiments](docs/EXPERIMENTS.md), [results](docs/RESULTS.md) and [reproducibility](docs/REPRODUCIBILITY.md). Historical audit documents are retained for traceability but are not the primary project guide.
+Earlier exploratory work had also used the official test set. Additionally, the final training pool retained 14 MT examples sharing source and reference pairs with test examples, although their generated hypotheses were different.
 
-## Quickstart: choose an implementation
+Therefore, these results should not be interpreted as an independent, untouched test evaluation or as an official SemEval competition submission.
 
-No universal environment reproduces every experiment. The independent `solution/` CLI provides an example entry point; it is **not** an end-to-end reproduction of the canonical thesis results. From an obtained source checkout, using Bash:
+Further details are available in [Known Limitations](docs/KNOWN_LIMITATIONS.md).
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-cd solution
-python -m pip install -r requirements.txt
-python -m src.main --help
-```
+## Technical Implementation
 
-Installation requires network access and compatible Python/PyTorch packages. Requirements are broad rather than a validated universal lockfile. These are documented usage commands, not a setup executed during release preparation. On Windows, use the appropriate PowerShell virtual-environment activation command.
+Beyond the experimental comparisons, the project includes:
 
-Continue with the [solution quickstart](solution/QUICKSTART.md) for synthetic example data and CLI usage. Training and evaluation require models and may download weights; tiny examples do not establish SHROOM performance. For research runs, use the [environment matrix](docs/ENVIRONMENTS.md), experiment-specific protocols and [data access](docs/DATA_ACCESS.md).
+- Data preparation, feature extraction and evaluation pipelines using consistent data splits.
+- Retrieval and semantic verification methods for evaluating generated text.
+- Transformer fine-tuning experiments with different training strategies.
+- Reproducibility checks, recorded configurations and tests for verifying experimental artifacts.
 
-## Reproducibility limitations
+The implementation uses the following technologies:
 
-- Full datasets, checkpoints, environments, caches and row-level outputs are external.
-- The public fold-ID projection does not replace the full canonical input schema.
-- Frozen features, retrieval snapshots and model revisions are required for exact replay.
-- Module 3 closed as a diagnostic stage; a standalone final gated-RAG implementation was not located.
-- An original E8 report script retains a documented syntax defect; its separately named corrected renderer is included.
-- Historical scripts are not a supported turnkey deployment or production service.
+**Python**, **PyTorch**, **Hugging Face Transformers**, **Sentence Transformers**, **scikit-learn**, **NumPy**, **pandas**, **SciPy** and **Jupyter Notebooks**.
 
-See [known limitations](docs/KNOWN_LIMITATIONS.md) and [reproducibility](docs/REPRODUCIBILITY.md).
+Selected experiments also used **Modal** for remote execution.
 
-## Licensing
+## Repository Structure
 
-Project-owned material that Spyros Kontakis is entitled to license is available under the [MIT License](LICENSE), copyright (c) 2026 Spyros Kontakis. Third-party code retains its own licenses and copyright notices; datasets and model weights are excluded from this grant. See [licensing scope](docs/LICENSE_PROPOSAL.md) and [third-party notices](docs/THIRD_PARTY_NOTICES.md).
+| Directory | Contents |
+|---|---|
+| `codex/` | Data preparation, feature extraction and evaluation procedures |
+| `RAG/` | Baseline notebooks, RAG development and experiments E5-E11 |
+| `solution/` | Separate baseline implementation and command-line tools |
+| `data/` | Selected notebooks and experimental summaries |
+| `docs/` | Methodology, results and reproducibility documentation |
+| `thesis/` | Complete thesis in PDF and Word formats |
+| `presentation/` | Thesis presentation in PowerPoint format |
+| `manifests/` | Records for verifying files and experimental artifacts |
+| `historical_versions/` | Preserved source snapshots from earlier development stages |
 
-## Thesis & Presentation
+The original directory structure was retained where necessary to preserve references between scripts and experimental files.
+
+## Getting Started
+
+This repository contains research implementations rather than a single ready-to-run application.
+
+For an example of the available command-line functionality, see the [solution quickstart](solution/QUICKSTART.md). This is a separate implementation and does not reproduce the complete thesis results.
+
+To explore a specific experiment, start with the [experiment documentation](docs/EXPERIMENTS.md) and consult its corresponding scripts and evaluation protocol.
+
+Additional technical documentation:
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [Results](docs/RESULTS.md)
+- [Reproducibility](docs/REPRODUCIBILITY.md)
+- [Environment Requirements](docs/ENVIRONMENTS.md)
+- [Data Access](docs/DATA_ACCESS.md)
+- [Known Limitations](docs/KNOWN_LIMITATIONS.md)
+
+### Reproducibility
+
+The repository includes source code, experimental configurations, evaluation protocols and recorded results.
+
+However, full datasets, pretrained model weights, intermediate features and some saved experimental artifacts are not distributed here.
+
+Exact reproduction may require the original inputs, recorded model versions, saved features, retrieval artifacts and experiment-specific environments. Public fold assignments alone are not sufficient.
+
+Some historical scripts and external dependencies may also require additional setup or access to previously used services and model versions.
+
+## Thesis and Presentation
+
+**Thesis:** *Ανίχνευση hallucinations σε συστήματα παραγωγής φυσικής γλώσσας: πειραματική μελέτη στο πλαίσιο του διαγωνισμού SHROOM*
+
+**Author:** Spyros Kontakis
+
+**Institution:** University of Ioannina, Department of Computer Science and Engineering
+
+**Supervisor:** Konstantinos Skianis
+
+**Date:** October 2026
+
+The complete thesis and presentation are available below:
 
 - [Thesis (PDF)](thesis/Thesis.pdf)
 - [Thesis (Word)](thesis/Thesis.docx)
 - [Thesis Presentation (PowerPoint)](presentation/Thesis_Presentation.pptx)
+
+## License
+
+Original project material that the author is entitled to license is provided under the [MIT License](LICENSE).
+
+Third-party code and components retain their respective licenses and copyright notices. Datasets and pretrained model weights are not covered by the project's MIT license.
+
+For details, see the [licensing information](docs/LICENSE_PROPOSAL.md) and [third-party notices](docs/THIRD_PARTY_NOTICES.md).
