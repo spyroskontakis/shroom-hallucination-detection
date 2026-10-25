@@ -34,7 +34,7 @@ An entailment-based system for detecting hallucinations in NLP model outputs usi
 
 Run the examples from `solution/` (`cd solution` from the repository root).
 Commands below use Bash continuation syntax. Data and model files are external
-inputs, not included in this repository. These examples are not E1–E11 results;
+inputs, not included in this repository. These examples are not E1-E11 results;
 see the [experiment index](../docs/EXPERIMENTS.md) and [results](../docs/RESULTS.md).
 
 ```bash
@@ -208,7 +208,7 @@ If you use this project, please cite:
 
 `train_best_pipeline.py` orchestrates NLI pre-training, multiple independent
 SHROOM training runs and meta-classifier training. It is retained as historical
-code, not as a validated reproduction of E1–E11.
+code, not as a validated reproduction of E1-E11.
 
 ```bash
 python train_best_pipeline.py \

@@ -2,13 +2,13 @@
 
 A thesis implementation studying how natural-language inference, semantic similarity, retrieved evidence and task adaptation can identify hallucinations in generated text. The work uses the SemEval 2024 SHROOM setting across definition modeling, machine translation and paraphrase generation.
 
-The project covers **E1–E11**, including unsuccessful variants, with implementation code, protocols and recorded evaluation evidence. Exact replay requires separately obtained datasets, model weights and frozen artifacts.
+The project covers **E1-E11**, including unsuccessful variants, with implementation code, protocols and recorded evaluation evidence. Exact replay requires separately obtained datasets, model weights and frozen artifacts.
 
 ## Technical work represented here
 
 - Canonical preprocessing, fixed development folds, feature checks and out-of-fold evaluation.
 - A 14-feature NLI/similarity Random Forest baseline and controlled evidence-feature extensions.
-- RAG Modules 1–4: exact and hybrid retrieval, external lexical evidence, leakage controls and provenance checks.
+- RAG Modules 1-4: exact and hybrid retrieval, external lexical evidence, leakage controls and provenance checks.
 - NLI, BERTScore and HHEM evaluators; claim decomposition with MiniCheck and FactCG integrations.
 - MPNet artifact/provenance verification and static regression tests.
 - Task-adapted DeBERTa, teacher-label feasibility analysis and contrastive variants, including failed attempts.
@@ -21,15 +21,15 @@ These are capabilities represented in the repository, not a claim that upstream 
 
 | Stage | Research focus |
 |---|---|
-| E1–E3 | NLI, semantic similarity and their combined Random Forest baseline |
+| E1-E3 | NLI, semantic similarity and their combined Random Forest baseline |
 | E4 | Synthetic-data augmentation and ablation diagnostics |
-| E5 | RAG Modules 1–4 and evidence acquisition/evaluation |
-| E6 v1–v4 | Direct evidence features and model/runtime compatibility |
+| E5 | RAG Modules 1-4 and evidence acquisition/evaluation |
+| E6 v1-v4 | Direct evidence features and model/runtime compatibility |
 | E7 | Selective agentic routing |
 | E8 | Nested Random Forest tuning |
 | E9 | Claim-level verification and feature combinations |
 | E10 | Selected FactCG combination; separate retrospective test reconstruction |
-| E11 A–E | Task adaptation, teacher supervision feasibility and contrastive training |
+| E11 A-E | Task adaptation, teacher supervision feasibility and contrastive training |
 
 See the [experiment index](docs/EXPERIMENTS.md) and protocols beside each implementation. E11-B produced no final student model or final metrics. Historical variants remain available as research evidence.
 
@@ -72,7 +72,7 @@ flowchart LR
 ## Repository map
 
 - `codex/`: canonical preprocessing, feature extraction, fixed folds and aggregate evaluation evidence.
-- `RAG/`: original notebooks, RAG Modules 1–4 and experiments E6–E11.
+- `RAG/`: original notebooks, RAG Modules 1-4 and experiments E6-E11.
 - `solution/`: independent baseline/training implementation, kept at its original relative path and without its internal `.git` directory.
 - `docs/`: experiment index, architecture, results, reproducibility and limitations.
 - `data/`: selected historical notebooks and aggregate summaries, not a dataset distribution.

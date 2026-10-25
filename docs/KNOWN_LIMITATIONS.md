@@ -1,7 +1,7 @@
 # Known limitations
 
 - The repository is not self-contained for exact replay because datasets, model weights, caches and row-level research artifacts are external.
-- The original 499-example E1–E4 evaluation and the locked 561-example canonical evaluation are different populations.
+- The original 499-example E1-E4 evaluation and the locked 561-example canonical evaluation are different populations.
 - Module 3 closed as a diagnostic stage; no standalone final gated-RAG executable was located.
 - The full historical retrieval ranking before the E6 reconstruction is unavailable.
 - The MPNet replay verifies current cached artifacts but cannot prove the exact historical runtime revision.

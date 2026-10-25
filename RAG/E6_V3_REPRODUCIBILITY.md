@@ -1,4 +1,4 @@
-# E6-v3 — frozen development milestone and publication scope
+# E6-v3 - frozen development milestone and publication scope
 
 E6-v3 is the 36-feature extension of E6-v2 with two frozen HHEM consistency scores. Its completed result is **474/561**, accuracy **0.8449197860962567**, Spearman **0.7816945786401444**. It is the best verified accuracy among the completed E6 versions discussed here, on a reused development pool; it is not an independent test result. This publication adds no experiment, training, inference, evaluation suite or tuning.
 

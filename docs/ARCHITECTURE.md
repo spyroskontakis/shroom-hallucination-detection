@@ -3,8 +3,8 @@
 The project evolved through four related layers:
 
 1. Dataset preparation and canonical fold assignment under `codex/`.
-2. NLI, semantic-similarity and Random Forest baseline experiments E1–E4.
-3. Retrieval and external-evidence modules under `RAG/`, followed by E6–E10 feature and routing experiments.
+2. NLI, semantic-similarity and Random Forest baseline experiments E1-E4.
+3. Retrieval and external-evidence modules under `RAG/`, followed by E6-E10 feature and routing experiments.
 4. DeBERTa task adaptation and contrastive objectives in E11.
 
 Many scripts intentionally resolve files relative to their own experiment directory. The staging process therefore preserves the original `RAG/`, `codex/` and `solution/` paths. No import, path or source-hash refactoring was applied.

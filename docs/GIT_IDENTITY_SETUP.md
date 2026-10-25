@@ -1,4 +1,4 @@
-# Future public Git identity — instructions only
+# Future public Git identity - instructions only
 
 Before any commit, obtain explicit confirmation of both the public Git author name and the exact noreply email copied from the owner's GitHub email settings. Do not derive an address from a username or account ID. The copyright holder approval does not select the commit identity.
 
