@@ -79,3 +79,85 @@ Thumbs.db
 /.codex_tmp_*/
 /private_audit/
 /.private_audit/
+
+# Phase 14: known row-level outputs, full inputs and model/cache payloads.
+# Aggregate metrics, protocols, source and provenance remain visible.
+**/*_oof_predictions.csv
+**/*_oof_predictions.jsonl
+**/*_OOF_PREDICTIONS.jsonl
+**/*_oof.csv
+**/ablation_predictions.csv
+**/errors_fixed_by_synthetic.csv
+**/errors_introduced_by_synthetic.csv
+
+# Full canonical input tables and feature matrices (not public projections/audits).
+**/canonical_human_development_manifest.csv
+**/canonical_synthetic_diagnostic_manifest.csv
+**/canonical_fold_assignments.csv
+**/duplicate_group_audit.csv
+**/excluded_human_test_overlaps.csv
+**/excluded_synthetic_overlap_rows.csv
+**/canonical_*_14_features.csv
+**/canonical_*_nli_features.csv
+**/canonical_*_similarity_features.csv
+**/*_features_dataset.csv
+
+# Known synthetic-data products, not aggregate experiment results.
+**/synthetic_raw_data.csv
+**/synthetic_failed_generation.csv
+**/filtered_synthetic_data.csv
+**/filtered_synthetic_data.jsonl
+**/filtered_synthetic_data_balanced.csv
+**/filtered_synthetic_data_balanced.jsonl
+**/augmented_training_data.csv
+**/e4_synthetic_clean.csv
+
+# Original SHROOM dataset filenames in their versioned dataset directories.
+**/SHROOM_dev-v2/val.model-agnostic.json
+**/SHROOM_dev-v2/val.model-aware.v2.json
+**/SHROOM_trial-v1.1/trial-v1.json
+**/SHROOM_test-labeled/test.model-agnostic.json
+**/SHROOM_test-labeled/test.model-aware.json
+**/SHROOM_unlabeled-training-data-v2/train.model-agnostic.json
+
+# Hugging Face binary weights/cache trees and actual E11 checkpoint output name.
+**/pytorch_model*.bin
+**/models--*/
+**/final_checkpoint/
+
+# E10 reconstructed row-level/model outputs; keep manifests and reports visible.
+/RAG/results/e10_official_test_v1/reconstructed_v1/test_inputs_label_free.json
+/RAG/results/e10_official_test_v1/reconstructed_v1/E10_OFFICIAL_TEST_FEATURES.csv
+/RAG/results/e10_official_test_v1/reconstructed_v1/E10_OFFICIAL_TEST_PREDICTIONS.json
+/RAG/results/e10_official_test_v1/reconstructed_v1/E10_FINAL_RF.joblib
+/RAG/results/e10_official_test_v1/reconstructed_v1/factcg_return.json
+/RAG/results/e10_official_test_v1/reconstructed_v1/cpu_features/*.csv
+/RAG/results/e10_official_test_v1/reconstructed_v1/cpu_features/rankings.json
+/RAG/results/e10_official_test_v1/reconstructed_v1/cpu_features/rag_chunks/
+/RAG/results/e10_official_test_v1/reconstructed_v1/WIKTIONARY_RECONSTRUCTED_RAW/
+/RAG/results/e10_official_test_v1/reconstructed_v1/WIKTIONARY_RECONSTRUCTED_PROCESSED/
+
+# E5/Module 4 row-level retrieval payloads and E6-v1 feature/ranking products.
+**/module1_gemini_cache.jsonl
+/RAG/results/rag_module2/module2_candidates_top5.jsonl
+/RAG/results/rag_module2/module2_relevance_annotations.csv
+/RAG/results/rag_module4/static_protocol/module4_dev_inputs_locked.csv
+/RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_external_lexical_snapshot.jsonl
+/RAG/results/rag_module4/continuation_v1/schannel_run_v1/module4_dev_term_manifest.csv
+/RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_rag_features.csv
+/RAG/results/rag_module4/continuation_v1/schannel_run_v1/features/module4_fused_21_features.csv
+/RAG/results/rag_module4/continuation_v1/schannel_run_v1/raw_sources/
+/RAG/results/rag_e6_v1/features/e6_added_4_features.csv
+/RAG/results/rag_e6_v1/features/e6_25_features.csv
+/RAG/results/rag_e6_v1/features/hyp_inputs_label_free.csv
+/RAG/results/rag_e6_v1/ranking/reconstructed_top5.jsonl
+/RAG/results/rag_e6_v1/ranking/reconstructed_aggregates.csv
+
+# Module 2/3 historical row annotations and decisions; retain plans and metrics.
+/RAG/results/rag_module2/annotation/module2_annotation_*.csv
+/RAG/results/rag_module2/annotation/module2_annotation_provenance.jsonl
+/RAG/results/rag_module2/evaluation/module2_dev_decisions.jsonl
+/RAG/results/rag_module2/holdout/module2_holdout_decisions_unblinded.csv
+/RAG/results/rag_module3/**/module3_*_blinded*.csv
+/RAG/results/rag_module3/**/module3_*_provenance.jsonl
+/RAG/results/rag_module3/**/module3_*_snapshot.jsonl

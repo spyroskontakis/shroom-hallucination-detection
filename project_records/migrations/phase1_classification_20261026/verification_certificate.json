@@ -1,0 +1,15 @@
+{
+  "verdict": "CLASSIFICATION COMPLETE; NO MOVES",
+  "scope": "54 primary files plus one fold projection; classification/static checks only",
+  "classification_sha256": "2bc541efe2d31bf3538fb6ec1cf77d44023c8c25e06e6b838c56da2f7041f35f",
+  "file_mapping_sha256": "4d6e2ccf0df6ab41d178286a24fd34a4735c4a5ad15d758f78208d1f8581517b",
+  "report_sha256": "4917803678c20082a3f554aec4da065536678ed7abb1ae6d808883366ff5d494",
+  "verification_results_sha256": "de87c00a50d5433367fed13808b67942558735df8996d776a454697071fe72f2",
+  "migration_sequence_sha256": "4bd58435a25ff01099981759a2a340a5d75a807221287d43200727b82fb3c914",
+  "prior_worktree_files_unchanged": 963,
+  "main_files_unchanged": 915,
+  "main_clean": true,
+  "head": "d854478ca4be1df8676ac0423458eb04996e8af8",
+  "staged_files": 0,
+  "runtime": "NOT VERIFIED"
+}

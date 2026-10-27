@@ -1,0 +1,152 @@
+{
+  "verdict": "VERIFIED",
+  "scope": "Phase 10 five byte-identical archival development-499 CSV moves; runtime/replay/output isolation NOT VERIFIED.",
+  "files": [
+    {
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e1_nli_dev_cv_results.csv",
+      "sha256": "9af364f9d52911046f8944725063f9f8006624b84e935a9e4d468094c4ff59ef",
+      "bytes": 173,
+      "rows": 5,
+      "header": [
+        "fold",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e2_similarity_dev_cv_results.csv",
+      "sha256": "b5f499c81b8b70190c690932959968cac210e32fd45e7100005fab0c35dfa2e1",
+      "bytes": 173,
+      "rows": 5,
+      "header": [
+        "fold",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e3_nli_similarity_dev_cv_results.csv",
+      "sha256": "78e4ae0ff5c2314d88c5af3f1858bb38ef1a6e80bc6dc877b826e1ed167ae3ac",
+      "bytes": 171,
+      "rows": 5,
+      "header": [
+        "fold",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/results/development_499/e4_synthetic_dev_cv_results.csv",
+      "sha256": "f035eb0bc97fb7e2ea47d415b11274d07f6e4b694e4872bd24fbd039f45eab57",
+      "bytes": 344,
+      "rows": 5,
+      "header": [
+        "fold",
+        "human_training_samples",
+        "synthetic_training_samples",
+        "total_training_samples",
+        "validation_samples",
+        "accuracy",
+        "spearman"
+      ]
+    },
+    {
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/results/development_499/e4_synthetic_dev_task_results.csv",
+      "sha256": "9f1bcdab0438538f280c9750da21f721628887ea3737bcedfca18d6ed1b4ec7d",
+      "bytes": 156,
+      "rows": 3,
+      "header": [
+        "task",
+        "samples",
+        "accuracy",
+        "spearman"
+      ]
+    }
+  ],
+  "bytes": 1017,
+  "prior_inventory_matches": 1000,
+  "main_inventory_matches": 915,
+  "staged_files": 0,
+  "unstaged_original_path_deletions": 64,
+  "main_clean": true,
+  "index_unchanged": true,
+  "report_sha256": "39a6f47ea4ad1407f6ab6955e3847117bf3e50387ee7a978139fbabacacc0b6e",
+  "manifest_sha256": "7097df0878ad3c5b4ae2e46d070737ee19cea42ef073f5e2c036ffc5ac6958f2",
+  "evidence": [
+    {
+      "path": "audit_batch2.py",
+      "bytes": 22115,
+      "sha256": "2f165f5b2340d795c736152b6be72cc8c7786a71f073624f7034ef93d4dff6ab"
+    },
+    {
+      "path": "candidate_recheck.json",
+      "bytes": 3964858,
+      "sha256": "09baed06ccc6818b797b94896670d2582a057b01285555db15c79a604fc1b1f8"
+    },
+    {
+      "path": "migration_manifest.json",
+      "bytes": 2511,
+      "sha256": "7097df0878ad3c5b4ae2e46d070737ee19cea42ef073f5e2c036ffc5ac6958f2"
+    },
+    {
+      "path": "OUTPUT_SAFETY.md",
+      "bytes": 3059,
+      "sha256": "70e5eeacc8251ea0ed51b425549da309288afd212ad440a1cbd225f6422b8fe3"
+    },
+    {
+      "path": "preflight.json",
+      "bytes": 431933,
+      "sha256": "30463d5da363380fc6a7be91fd107e806de7e05ea725cef3b710fdfdcce2a0ef"
+    },
+    {
+      "path": "producer_review.json",
+      "bytes": 15159,
+      "sha256": "85628898dd7af9aed8df01ca9259331cfbfcf9f5a67810ccf5c63bf04b1fd606"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 13891,
+      "sha256": "39a6f47ea4ad1407f6ab6955e3847117bf3e50387ee7a978139fbabacacc0b6e"
+    },
+    {
+      "path": "step_01.json",
+      "bytes": 18733,
+      "sha256": "d5242f1023310e1144a0db43cbf3939c8085bf431e1b1ac6959da0680cf0891c"
+    },
+    {
+      "path": "step_02.json",
+      "bytes": 19020,
+      "sha256": "a25e4e2c270e24ed1b1f338509f37e358e0e589ec03c0235db3e35b60992732c"
+    },
+    {
+      "path": "step_03.json",
+      "bytes": 19309,
+      "sha256": "94024dfdf9661970182e3e67e9f8c53e46380aa5791c5da6214a96ba91d794bc"
+    },
+    {
+      "path": "step_04.json",
+      "bytes": 19690,
+      "sha256": "50718d32be9a9fca32927fe14aeee1b9c949f89996331a70fd21b3ed7a4faa5c"
+    },
+    {
+      "path": "step_05.json",
+      "bytes": 19864,
+      "sha256": "624eac7ca98812887253c117070fc114e78e78a452673618b926c00772ce938a"
+    },
+    {
+      "path": "supplementary_review.json",
+      "bytes": 3106,
+      "sha256": "19e1fbd499fb449a115d9cb754db6cb541f7d4ac9a648cfe20e30ceb63c3e756"
+    },
+    {
+      "path": "supplementary_review.py",
+      "bytes": 3939,
+      "sha256": "a976f6abe23825e6566f39e094eeff94c7c4ff4d4f296fb9ee747ce796f3c33e"
+    },
+    {
+      "path": "verification_results.json",
+      "bytes": 24454,
+      "sha256": "87b27ccfe3ef158882f573e5a5b9b89c5c1bf29653bfdbc9bad3d7e6b39cff51"
+    }
+  ]
+}

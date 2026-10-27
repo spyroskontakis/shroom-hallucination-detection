@@ -60,3 +60,7 @@ huggingface/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Keep private inputs and model directories excluded after relocation.
+/data/raw/
+/models/

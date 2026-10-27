@@ -1,0 +1,17 @@
+{
+  "verdict": "VERIFIED",
+  "scope": "Independent archival path/hash verification; no experiment execution",
+  "historical_files": 24,
+  "bytes": 210291,
+  "hash_matches_before_after_and_main": 24,
+  "prior_worktree_files_preserved": 931,
+  "prototype_files_preserved": 25,
+  "main_files_unchanged": 915,
+  "main_head": "d854478ca4be1df8676ac0423458eb04996e8af8",
+  "main_clean": true,
+  "staged_files": 0,
+  "migration_manifest_sha256": "739c27ced5244ece43a25a2c9d257a59a56106bbadde2dd9f324dcdb2d673c27",
+  "report_sha256": "f68d44a93561c514d6ad6881b19039325a6ee6ed8a27816506ed6bc457fc5dbd",
+  "report_json_and_python_syntax": "PASS",
+  "no_new_broken_links": true
+}

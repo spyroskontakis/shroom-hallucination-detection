@@ -1,0 +1,156 @@
+{
+  "verdict": "VERIFIED",
+  "scope": "Seven immutable archival moves; static and byte preservation. Runtime/replay/output isolation NOT VERIFIED.",
+  "files": [
+    {
+      "old_path": "codex/chapter6_audit.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/chapter6_audit.md",
+      "bytes": 12765,
+      "sha256": "d9d90221eb3df8e86129663c97ba0edd453442fbf660fd354db2597d866fd50e"
+    },
+    {
+      "old_path": "codex/chapter6_conflict_report.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/chapter6_conflict_report.md",
+      "bytes": 5803,
+      "sha256": "7161135591207ec1c65a547449ee953d1fbac66907fc1da7ca8bf715fdbbd0e4"
+    },
+    {
+      "old_path": "codex/source_map.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/source_map.md",
+      "bytes": 5535,
+      "sha256": "3a5c823d478e19c6b534a786f7c9dbc6015392b02af6092bf73a91ea0b16acfb"
+    },
+    {
+      "old_path": "codex/thesis_integrity_audit.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/thesis_integrity_audit.md",
+      "bytes": 9163,
+      "sha256": "6c0c501bbc969056a6a5a775fe0be26901896568894fc1af0e3e3a3c6d7daf5f"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/development_experiment_summary.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/development_experiment_summary.csv",
+      "bytes": 257,
+      "sha256": "e8d837e12a48ba40f387ad54a2e3fc07d10b15f397e2e79428375dbbcb9ca624"
+    },
+    {
+      "old_path": "data/7. Ablation Synthetic Data/ablation_synthetic_ratio_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_synthetic_ratio_results.csv",
+      "bytes": 540,
+      "sha256": "5964c230c3872ad972f64a0a9236131b1048a957d09e3e554cb50a2945108837"
+    },
+    {
+      "old_path": "data/7. Ablation Synthetic Data/ablation_synthetic_weight_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_synthetic_weight_results.csv",
+      "bytes": 536,
+      "sha256": "b543903bf3eb3cc29ee94f7867eec3c4c649e36328e5fba27833d74fc972dde3"
+    }
+  ],
+  "batch_bytes": 34599,
+  "previous_worktree_files_preserved": 1017,
+  "main_original_files_verified": 915,
+  "main_clean": true,
+  "staged_files": 0,
+  "index_byte_identical": true,
+  "unstaged_original_path_deletions": 71,
+  "phase1_original_MOVE": 17,
+  "phase1_moved": 17,
+  "phase1_remaining": 0,
+  "phase1_bytes": 37800,
+  "ADAPT_KEEP_BLOCKED_files_unchanged": 38,
+  "inline_citations_recorded": 133,
+  "previously_existing_contextual_citation_targets_preserved": 39,
+  "report_sha256": "f6a653273ad80547b1f3b69fa67b692d28bd2e867bdddb0c83b02ea146af2334",
+  "manifest_sha256": "d491f300cdb5d8acad6767702c7c6336d1b12e6121b5559708aac35dc99e1b0b",
+  "evidence": [
+    {
+      "path": "audit_final.py",
+      "bytes": 20770,
+      "sha256": "63bcd4989e2cac8e3d4c9fa31517eefd31e3c773ef098a607dccf5656aa14dd2"
+    },
+    {
+      "path": "candidate_recheck.json",
+      "bytes": 8663408,
+      "sha256": "9b51a785faed194a56de76ac661a3fe7ff17368563441a23e46445a3f8febfd9"
+    },
+    {
+      "path": "HISTORICAL_CONTEXT.md",
+      "bytes": 6366,
+      "sha256": "d0b463a09bd3cf81f1ea172273b72ba22c191c8abc7c2ec0c52b041f4208259f"
+    },
+    {
+      "path": "inline_reference_resolution.json",
+      "bytes": 153141,
+      "sha256": "cfa315c36254e0013e5eb772f79d92e42a63f7161de44738f5825d2d11d931cb"
+    },
+    {
+      "path": "migration_manifest.json",
+      "bytes": 3114,
+      "sha256": "d491f300cdb5d8acad6767702c7c6336d1b12e6121b5559708aac35dc99e1b0b"
+    },
+    {
+      "path": "phase1_all_moves.json",
+      "bytes": 7667,
+      "sha256": "092c01626d2e13b472fc6baea87078e4a95b5a4f1f5829b422a777176d7b8f37"
+    },
+    {
+      "path": "preflight.json",
+      "bytes": 441230,
+      "sha256": "ab640155a9ddf00f62cffe110fd40e62fdf705fc373f84a73d2b43b7bfae7564"
+    },
+    {
+      "path": "producer_and_namespace_review.json",
+      "bytes": 9170,
+      "sha256": "76c611f382329116ff5849019bbc67b32949f03bec48ef21290e595420da2d4d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 15296,
+      "sha256": "f6a653273ad80547b1f3b69fa67b692d28bd2e867bdddb0c83b02ea146af2334"
+    },
+    {
+      "path": "review_decisions.json",
+      "bytes": 3600,
+      "sha256": "54a3b3f1e516d76acaa0b0d5ea01b861dcc521f8e3a4312fd93a949f8197bcc5"
+    },
+    {
+      "path": "step_01.json",
+      "bytes": 20981,
+      "sha256": "157b3ce264d804de7246e6f5f6d593943bc9d63c805bc311d180ce1333f4341f"
+    },
+    {
+      "path": "step_02.json",
+      "bytes": 21206,
+      "sha256": "fd4d86379ad08020c5a98351bfe7bba8dd3f7792bf3bae0d0cc7346f501bc027"
+    },
+    {
+      "path": "step_03.json",
+      "bytes": 21356,
+      "sha256": "f247f5e0cf683a1e0ee0cc961e7293effdf301ec98c4fc8ebd1ae59c7605cf7c"
+    },
+    {
+      "path": "step_04.json",
+      "bytes": 21582,
+      "sha256": "ea125730e3fcec8f7da9305005369a15d63ec01c90a6c221a50960f1d6600460"
+    },
+    {
+      "path": "step_05.json",
+      "bytes": 22014,
+      "sha256": "9525c105e5ba31f37f7d137b17c23b7c3bfbec05c8d89c7879f452d82e25ad9d"
+    },
+    {
+      "path": "step_06.json",
+      "bytes": 22307,
+      "sha256": "ae386ef3cb1cf2d56a1db15faaf9171bc7640ab1b86d9b89540b59ae3660af23"
+    },
+    {
+      "path": "step_07.json",
+      "bytes": 22566,
+      "sha256": "2412f3f2aff6a52ea3e8922ad4ef0b92e97de33be9ce796f3d57ccdb9eaa51e4"
+    },
+    {
+      "path": "verification_results.json",
+      "bytes": 23888,
+      "sha256": "eb9df29aafd4dbe7f78983d2992497e08f767e71d04fa207d757317d20e83397"
+    }
+  ]
+}

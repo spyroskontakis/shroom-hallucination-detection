@@ -1,0 +1,21 @@
+{
+  "verdict": "VERIFIED",
+  "scope": "Five historical aggregate fixed-test ablation records; offline archival migration only",
+  "candidates_rechecked": 17,
+  "files_moved": 5,
+  "bytes": 2184,
+  "sha256_matches": 5,
+  "per_move_checks_passed": 5,
+  "unselected_candidates_unchanged": 12,
+  "prior_worktree_files_preserved": 983,
+  "main_files_unchanged": 915,
+  "main_clean": true,
+  "main_head": "d854478ca4be1df8676ac0423458eb04996e8af8",
+  "staged_files": 0,
+  "new_broken_links": 0,
+  "runtime": "NOT VERIFIED; no notebook/model execution",
+  "migration_manifest_sha256": "c8e254ec769a1cd00fe81246e0a53f92709f48e713be766bcc844e14f59c520c",
+  "verification_results_sha256": "702febd3cffd6cbe9c552627827851f4f5cc69465116eaa8cf6c243f93dbfa10",
+  "report_sha256": "f37000fc241a5d5eb6040712d3bafd218f23b185e74cdff55c59d6d2c1f593ef",
+  "harness_issue": "Post-step-1 progress-print error corrected only in audit helper; prior evidence intact, resume verified."
+}

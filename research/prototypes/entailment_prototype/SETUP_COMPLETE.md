@@ -2,7 +2,7 @@
 
 ## ✅ Complete Project Structure Created
 
-Source files are under `solution/`. The data/output directories below are runtime
+Source files are under `research/prototypes/entailment_prototype/`. The data/output directories below are runtime
 locations, not a claim that datasets or checkpoints are included. Commands use Bash syntax.
 
 ### Directory Tree
@@ -91,7 +91,7 @@ locations, not a claim that datasets or checkpoints are included. Commands use B
 
 ### Step 1: Install dependencies (from the repository root)
 ```bash
-cd solution
+cd research/prototypes/entailment_prototype
 pip install -r requirements.txt
 ```
 

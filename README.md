@@ -173,19 +173,18 @@ Selected experiments used Modal for remote execution.
 
 | Directory | Description |
 |---|---|
-| `codex/` | Data preparation, semantic feature extraction and cross-validation procedures |
-| `data/` | Exploratory analysis notebooks and early experiment summaries |
+| `research/` | Research navigation, archived Phase 1 result tables and the separate entailment prototype |
+| `codex/` | Canonical data preparation, semantic feature extraction, evaluation and retained historical notebooks |
+| `data/` | Retained early notebooks; archived result tables are indexed under `research/` |
 | `RAG/` | Retrieval modules, additional verification methods and experiments E5-E11 |
-| `solution/` | Separate Python implementation with training, evaluation and CLI utilities |
+| `project_records/` | Historical source snapshots, thesis verification records, release tools, runtime probes and migration reports |
 | `docs/` | Technical documentation, experimental results and reproducibility information |
 | `thesis/` | Complete thesis in PDF and Word formats |
 | `presentation/` | Thesis presentation in PowerPoint format |
 | `manifests/` | File verification records and public release documentation |
-| `historical_versions/` | Preserved historical source snapshots, not standalone runnable versions |
 | `thesis_writing/` | Supporting script for verifying research results used during thesis writing |
-| `tools/` | Scripts for checking and preparing the public repository release |
 
-The original directory structure was preserved where necessary to maintain compatibility with existing research scripts and recorded experimental files.
+Canonical research code remains in its historical `codex/` and `RAG/` paths to preserve compatibility and provenance. The indexes in `research/` link to those implementations; they do not indicate that the pipelines were moved.
 
 ## Getting Started
 
@@ -193,7 +192,9 @@ This repository documents a series of research experiments rather than a single 
 
 To explore the work, start with the [experiment index](docs/EXPERIMENTS.md), which connects each experiment to its corresponding implementation.
 
-The [solution quickstart](solution/QUICKSTART.md) provides an example of the separate command-line implementation. It does not reproduce the complete thesis results.
+For navigation by pipeline and research phase, see the [research guide](research/README.md).
+
+The [prototype quickstart](research/prototypes/entailment_prototype/QUICKSTART.md) provides an example of the separate command-line implementation. It does not reproduce the complete thesis results.
 
 Additional documentation is available in:
 
@@ -209,6 +210,8 @@ Additional documentation is available in:
 The repository includes implementation code, experiment configurations, evaluation protocols and recorded results.
 
 Full datasets, model weights, intermediate features and some saved experimental artifacts are not distributed here. Exact reproduction may require separately obtained data, recorded model versions and experiment-specific environments.
+
+Full reproduction of the experiments using only this public repository has not been verified. File migration checks are not new experiment runs or independent confirmation of the reported metrics.
 
 ## Thesis and Presentation
 

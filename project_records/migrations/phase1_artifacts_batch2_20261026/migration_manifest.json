@@ -1,0 +1,48 @@
+{
+  "verdict": "VERIFIED",
+  "count": 5,
+  "bytes": 1017,
+  "files": [
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e1_nli_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e1_nli_dev_cv_results.csv",
+      "bytes": 173,
+      "before_sha256": "9af364f9d52911046f8944725063f9f8006624b84e935a9e4d468094c4ff59ef",
+      "after_sha256": "9af364f9d52911046f8944725063f9f8006624b84e935a9e4d468094c4ff59ef",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e2_similarity_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e2_similarity_dev_cv_results.csv",
+      "bytes": 173,
+      "before_sha256": "b5f499c81b8b70190c690932959968cac210e32fd45e7100005fab0c35dfa2e1",
+      "after_sha256": "b5f499c81b8b70190c690932959968cac210e32fd45e7100005fab0c35dfa2e1",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e3_nli_similarity_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e3_nli_similarity_dev_cv_results.csv",
+      "bytes": 171,
+      "before_sha256": "78e4ae0ff5c2314d88c5af3f1858bb38ef1a6e80bc6dc877b826e1ed167ae3ac",
+      "after_sha256": "78e4ae0ff5c2314d88c5af3f1858bb38ef1a6e80bc6dc877b826e1ed167ae3ac",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e4_synthetic_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/results/development_499/e4_synthetic_dev_cv_results.csv",
+      "bytes": 344,
+      "before_sha256": "f035eb0bc97fb7e2ea47d415b11274d07f6e4b694e4872bd24fbd039f45eab57",
+      "after_sha256": "f035eb0bc97fb7e2ea47d415b11274d07f6e4b694e4872bd24fbd039f45eab57",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e4_synthetic_dev_task_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/results/development_499/e4_synthetic_dev_task_results.csv",
+      "bytes": 156,
+      "before_sha256": "9f1bcdab0438538f280c9750da21f721628887ea3737bcedfca18d6ed1b4ec7d",
+      "after_sha256": "9f1bcdab0438538f280c9750da21f721628887ea3737bcedfca18d6ed1b4ec7d",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Immutable historical development-499 aggregate archives; static and byte integrity only; no notebook execution."
+}
