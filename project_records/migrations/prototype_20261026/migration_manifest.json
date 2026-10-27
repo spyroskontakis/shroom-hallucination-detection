@@ -1,0 +1,177 @@
+[
+  {
+    "old_path": "solution/.gitignore",
+    "new_path": "research/prototypes/entailment_prototype/.gitignore",
+    "before_sha256": "b9bcede4e906d4735da30a6f558fd39042115550a62edd5a18e289304ea1c300",
+    "after_sha256": "d728ceeb5ed111ffe6e926655d4d1c1df71aa48eee3706de9f18549a35e234ef",
+    "byte_preserving": false
+  },
+  {
+    "old_path": "solution/QUICKSTART.md",
+    "new_path": "research/prototypes/entailment_prototype/QUICKSTART.md",
+    "before_sha256": "3bd41458ac9cfba0b802cb9e4be12058705ef7b4932541e36a5c0f40c56c478c",
+    "after_sha256": "b0557fe03236bcda95360c737eb035d705ae47184f59518bf9d0f656b7e3a5a0",
+    "byte_preserving": false
+  },
+  {
+    "old_path": "solution/README.md",
+    "new_path": "research/prototypes/entailment_prototype/README.md",
+    "before_sha256": "cc13c727597c366423185e071d775343b850aa86dd3d6bf12453303f4ee7756c",
+    "after_sha256": "da7346120d6707027c1198cb3f7c7c8f9e11a15d6042a306de6bb0ee1b6f3eb3",
+    "byte_preserving": false
+  },
+  {
+    "old_path": "solution/SETUP_COMPLETE.md",
+    "new_path": "research/prototypes/entailment_prototype/SETUP_COMPLETE.md",
+    "before_sha256": "1fc5657f910587c92ab102d3196fcb72469bdb4ef16bdccb320573f50e75e362",
+    "after_sha256": "82652948dff3a054235ff6d7f2a9e8b40d2c8a080dc4d7d1e52b15dc358fd65a",
+    "byte_preserving": false
+  },
+  {
+    "old_path": "solution/configs/base.yaml",
+    "new_path": "research/prototypes/entailment_prototype/configs/base.yaml",
+    "before_sha256": "eeaf3636d99698e5d5774f7cd88eb358a0554441ff745c2fbf67ee4991a024ce",
+    "after_sha256": "eeaf3636d99698e5d5774f7cd88eb358a0554441ff745c2fbf67ee4991a024ce",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/create_example_data.py",
+    "new_path": "research/prototypes/entailment_prototype/create_example_data.py",
+    "before_sha256": "f262c0527d20c0f8dd1286ca0176f9d84dc9809aae3a4f9967c6841c630078ef",
+    "after_sha256": "f262c0527d20c0f8dd1286ca0176f9d84dc9809aae3a4f9967c6841c630078ef",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/requirements.txt",
+    "new_path": "research/prototypes/entailment_prototype/requirements.txt",
+    "before_sha256": "d68de281766516bfd1a60b6db29dce19ba3ba03a3d72fd81287450e6e675fe22",
+    "after_sha256": "d68de281766516bfd1a60b6db29dce19ba3ba03a3d72fd81287450e6e675fe22",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/__init__.py",
+    "new_path": "research/prototypes/entailment_prototype/src/__init__.py",
+    "before_sha256": "8d7016f8435b7a5f4a20dcfab7c13e5ed6229eab68b768b04043c44237709ce4",
+    "after_sha256": "8d7016f8435b7a5f4a20dcfab7c13e5ed6229eab68b768b04043c44237709ce4",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/data/__init__.py",
+    "new_path": "research/prototypes/entailment_prototype/src/data/__init__.py",
+    "before_sha256": "93f786005fd516a2d502e6d06a3ce27a36a365de50892fe34af1c32f8158fb4c",
+    "after_sha256": "93f786005fd516a2d502e6d06a3ce27a36a365de50892fe34af1c32f8158fb4c",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/data/loader.py",
+    "new_path": "research/prototypes/entailment_prototype/src/data/loader.py",
+    "before_sha256": "f1cc36c6e456c434fc02281610af19eb01518ef582a2907ba23024bf30af6639",
+    "after_sha256": "f1cc36c6e456c434fc02281610af19eb01518ef582a2907ba23024bf30af6639",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/data/nli_loader.py",
+    "new_path": "research/prototypes/entailment_prototype/src/data/nli_loader.py",
+    "before_sha256": "ce1b6ace29ffc54b85158f531c98b500dc9d7b69e40b1a543d8199703409b05c",
+    "after_sha256": "ce1b6ace29ffc54b85158f531c98b500dc9d7b69e40b1a543d8199703409b05c",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/data/preprocess.py",
+    "new_path": "research/prototypes/entailment_prototype/src/data/preprocess.py",
+    "before_sha256": "7dfcb2b854f30a1d9d950b1ce03a6c93713ad51e0ba86e2c49b2a511fd8cf550",
+    "after_sha256": "7dfcb2b854f30a1d9d950b1ce03a6c93713ad51e0ba86e2c49b2a511fd8cf550",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/main.py",
+    "new_path": "research/prototypes/entailment_prototype/src/main.py",
+    "before_sha256": "1e8caad6f9e18acc721cec6f4b83011b026454e129d5b9b78e1d028cc8eacfd7",
+    "after_sha256": "1e8caad6f9e18acc721cec6f4b83011b026454e129d5b9b78e1d028cc8eacfd7",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/models/__init__.py",
+    "new_path": "research/prototypes/entailment_prototype/src/models/__init__.py",
+    "before_sha256": "f51dac879098ae1f23cdfce729737469898b63534a84d750b36fbefc5eb0ba62",
+    "after_sha256": "f51dac879098ae1f23cdfce729737469898b63534a84d750b36fbefc5eb0ba62",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/models/entailment_model.py",
+    "new_path": "research/prototypes/entailment_prototype/src/models/entailment_model.py",
+    "before_sha256": "59adda85357ec050663dc21dd964dcf979caf73f166be113340aac440fcd9fc3",
+    "after_sha256": "59adda85357ec050663dc21dd964dcf979caf73f166be113340aac440fcd9fc3",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/training/__init__.py",
+    "new_path": "research/prototypes/entailment_prototype/src/training/__init__.py",
+    "before_sha256": "06d4f00fa9d41f74d96cd10555af32d2185182e602257c1c454cdfe18a19052c",
+    "after_sha256": "06d4f00fa9d41f74d96cd10555af32d2185182e602257c1c454cdfe18a19052c",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/training/ensemble_meta_train.py",
+    "new_path": "research/prototypes/entailment_prototype/src/training/ensemble_meta_train.py",
+    "before_sha256": "5f3df3137566b267892b5e0ca6866f60f61df41e75c804cf5894bd21c2f94995",
+    "after_sha256": "5f3df3137566b267892b5e0ca6866f60f61df41e75c804cf5894bd21c2f94995",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/training/evaluate.py",
+    "new_path": "research/prototypes/entailment_prototype/src/training/evaluate.py",
+    "before_sha256": "502d27c4485b9c930ffebdc68e12376b98ab12eda8f41dc315f0ba3464104e09",
+    "after_sha256": "502d27c4485b9c930ffebdc68e12376b98ab12eda8f41dc315f0ba3464104e09",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/training/pseudo_label.py",
+    "new_path": "research/prototypes/entailment_prototype/src/training/pseudo_label.py",
+    "before_sha256": "c04a0b112da737ab1dd71a9365bc20d7d594ee54a8c1a3bd04124c054e9250c2",
+    "after_sha256": "c04a0b112da737ab1dd71a9365bc20d7d594ee54a8c1a3bd04124c054e9250c2",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/training/train.py",
+    "new_path": "research/prototypes/entailment_prototype/src/training/train.py",
+    "before_sha256": "9b15f12d07d16163d0e6c644fae58223c5b68e413264a4eb2ec9ff04bf958a91",
+    "after_sha256": "9b15f12d07d16163d0e6c644fae58223c5b68e413264a4eb2ec9ff04bf958a91",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/utils/__init__.py",
+    "new_path": "research/prototypes/entailment_prototype/src/utils/__init__.py",
+    "before_sha256": "7c87e75a1a3d234d8bd2c994677f1a656725869e1db1386a5081889080c79719",
+    "after_sha256": "7c87e75a1a3d234d8bd2c994677f1a656725869e1db1386a5081889080c79719",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/utils/metrics.py",
+    "new_path": "research/prototypes/entailment_prototype/src/utils/metrics.py",
+    "before_sha256": "cce5fb83fe9a27fd47e45cf35d6f274eb5cb18e97680fe73685c5a833486ba5f",
+    "after_sha256": "cce5fb83fe9a27fd47e45cf35d6f274eb5cb18e97680fe73685c5a833486ba5f",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/src/utils/seed.py",
+    "new_path": "research/prototypes/entailment_prototype/src/utils/seed.py",
+    "before_sha256": "e1b92e12675fe42661966c677f510c46c5a77f063cd4f052a28ef7c95c0ca126",
+    "after_sha256": "e1b92e12675fe42661966c677f510c46c5a77f063cd4f052a28ef7c95c0ca126",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/train_best_pipeline.py",
+    "new_path": "research/prototypes/entailment_prototype/train_best_pipeline.py",
+    "before_sha256": "5616db39b07664acd10536ad60e4d435c565ac432bd4ad044995ef45246bcce0",
+    "after_sha256": "5616db39b07664acd10536ad60e4d435c565ac432bd4ad044995ef45246bcce0",
+    "byte_preserving": true
+  },
+  {
+    "old_path": "solution/train_best_pipeline.sh",
+    "new_path": "research/prototypes/entailment_prototype/train_best_pipeline.sh",
+    "before_sha256": "add67fd5d6896a9348fdce86692e59bb7087e9577e2953d4aa880f1fda73d624",
+    "after_sha256": "add67fd5d6896a9348fdce86692e59bb7087e9577e2953d4aa880f1fda73d624",
+    "byte_preserving": true
+  }
+]

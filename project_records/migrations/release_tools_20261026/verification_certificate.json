@@ -1,0 +1,21 @@
+{
+  "verdict": "PARTIALLY VERIFIED",
+  "archival_move": "VERIFIED",
+  "operational_release_functionality": "NOT VERIFIED",
+  "files": 3,
+  "bytes": 19384,
+  "sha256_matches": 3,
+  "static_root_parity": 3,
+  "prior_worktree_files_preserved": 943,
+  "prototype_preserved": 25,
+  "historical_versions_preserved": 24,
+  "prior_runtime_evidence_preserved": 9,
+  "main_files_unchanged": 915,
+  "main_clean": true,
+  "main_head": "d854478ca4be1df8676ac0423458eb04996e8af8",
+  "staged_files": 0,
+  "release_scripts_executed": 0,
+  "new_broken_links": 0,
+  "migration_manifest_sha256": "b11decaa0e28d59e49d0f5f3046a783652908eae82c96d9ee40cba95fbe78b1d",
+  "report_sha256": "29ffcd172933a030dd814635759cd98f14964e5c469489cf86172399d54d6ea2"
+}

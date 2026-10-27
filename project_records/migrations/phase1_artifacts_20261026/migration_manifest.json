@@ -1,0 +1,49 @@
+{
+  "count": 5,
+  "bytes": 2184,
+  "files": [
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/fixed_errors_by_task_and_type.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/fixed_errors_by_task_and_type.csv",
+      "bytes": 63,
+      "before_sha256": "416a75065915546b93460733325316ac52339853b131eeae3db75efe93a93502",
+      "after_sha256": "416a75065915546b93460733325316ac52339853b131eeae3db75efe93a93502"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/introduced_errors_by_task_and_type.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/introduced_errors_by_task_and_type.csv",
+      "bytes": 64,
+      "before_sha256": "4a8bcb1c142ce12c5d55db05724d681500f884be659f5beaf938af541c88a1b7",
+      "after_sha256": "4a8bcb1c142ce12c5d55db05724d681500f884be659f5beaf938af541c88a1b7"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/ablation_summary_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_summary_results.csv",
+      "bytes": 196,
+      "before_sha256": "93723fffb26a3dacaac9ad9e483d3627f28fead2c7bf93078ef482e31f18bea1",
+      "after_sha256": "93723fffb26a3dacaac9ad9e483d3627f28fead2c7bf93078ef482e31f18bea1"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/ablation_per_task_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_per_task_results.csv",
+      "bytes": 515,
+      "before_sha256": "9fc174f25bcbeec71c680a627772d567b7b496c622a07e01d417fcdc47c69251",
+      "after_sha256": "9fc174f25bcbeec71c680a627772d567b7b496c622a07e01d417fcdc47c69251"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/ablation_feature_importance.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_feature_importance.csv",
+      "bytes": 1346,
+      "before_sha256": "5dbca5833cc0a8aff7e6925be2f4c54a845a06013aec73a392aee7ad3eb55f79",
+      "after_sha256": "5dbca5833cc0a8aff7e6925be2f4c54a845a06013aec73a392aee7ad3eb55f79"
+    }
+  ],
+  "scope": "Byte-preserving archival aggregate-result migration. No notebook/model execution or output rerouting.",
+  "verdict": "VERIFIED",
+  "staged_files": 0
+}

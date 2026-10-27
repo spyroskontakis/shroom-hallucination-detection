@@ -2,7 +2,7 @@
 
 ## Example setup
 
-From the repository root, run `cd solution` first. Examples use Bash syntax.
+From the repository root, run `cd research/prototypes/entailment_prototype` first. Examples use Bash syntax.
 Dependencies, datasets and model downloads must be provided separately.
 These commands are usage examples, not measured thesis experiments.
 
@@ -117,5 +117,5 @@ The historical `train_best_pipeline.py` script is not a validated end-to-end
 reproduction: it does not use its NLI checkpoint for subsequent SHROOM training,
 and its required `test_data` argument is unused. Its printed performance estimates
 are not measurements. See [README](README.md#historical-orchestration-example)
-for the supported invocation and limitations, and [thesis results](../docs/RESULTS.md)
+for the supported invocation and limitations, and [thesis results](../../../docs/RESULTS.md)
 for documented experiments.

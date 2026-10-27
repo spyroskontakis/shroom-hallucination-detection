@@ -1,0 +1,30 @@
+{
+  "verdict": "PARTIALLY VERIFIED",
+  "head": "d854478ca4be1df8676ac0423458eb04996e8af8",
+  "moved": 25,
+  "byte_preserving": 21,
+  "modified": [
+    "research/prototypes/entailment_prototype/.gitignore",
+    "research/prototypes/entailment_prototype/QUICKSTART.md",
+    "research/prototypes/entailment_prototype/README.md",
+    "research/prototypes/entailment_prototype/SETUP_COMPLETE.md"
+  ],
+  "other_890_files_unchanged": true,
+  "main_all_915_files_unchanged": true,
+  "main_clean": true,
+  "prior_reports_preserved": 8,
+  "source_config_requirements_and_shell_byte_identical": true,
+  "before_after_check_statuses_identical": true,
+  "synthetic_results_identical": true,
+  "main_cli_baseline_failure_unchanged": true,
+  "local_links_checked": 6,
+  "static_import_references": 35,
+  "deferred_broken_incoming_links": [
+    {
+      "document": "README.md",
+      "target": "solution/QUICKSTART.md",
+      "reason": "Outside prototype scope; root README update explicitly deferred by user."
+    }
+  ],
+  "no_staging_commits_push_or_remote_calls": true
+}

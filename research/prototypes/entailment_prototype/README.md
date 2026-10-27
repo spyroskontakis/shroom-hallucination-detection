@@ -32,10 +32,10 @@ An entailment-based system for detecting hallucinations in NLP model outputs usi
 
 ## Installation
 
-Run the examples from `solution/` (`cd solution` from the repository root).
+Run the examples from `research/prototypes/entailment_prototype/` (`cd research/prototypes/entailment_prototype` from the repository root).
 Commands below use Bash continuation syntax. Data and model files are external
 inputs, not included in this repository. These examples are not E1-E11 results;
-see the [experiment index](../docs/EXPERIMENTS.md) and [results](../docs/RESULTS.md).
+see the [experiment index](../../../docs/EXPERIMENTS.md) and [results](../../../docs/RESULTS.md).
 
 ```bash
 pip install -r requirements.txt
@@ -272,4 +272,4 @@ python -m src.main ensemble_meta \
 
 ---
 
-For measured thesis results and their evaluation scope, see [RESULTS](../docs/RESULTS.md).
+For measured thesis results and their evaluation scope, see [RESULTS](../../../docs/RESULTS.md).

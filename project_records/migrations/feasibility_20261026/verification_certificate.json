@@ -1,0 +1,28 @@
+{
+  "base_head": "d854478ca4be1df8676ac0423458eb04996e8af8",
+  "main_clean": true,
+  "branch": "codex/reorganization-feasibility",
+  "tracked_unchanged": 915,
+  "baseline_bytes": 18862177,
+  "protected_documents": {
+    "thesis/Thesis.pdf": "bde4fddf9000da65a98f3041800529e0740ef0031de510580eb3dfdb00633cec",
+    "thesis/Thesis.docx": "86e773f3f1d754e946270c546ab77823cfa834cdbac18c718fa1ed237c570b3c",
+    "presentation/Thesis_Presentation.pptx": "0670b9bc2a88be15197db9e622c4823dab4fc6445ce0d17ceb8bcea0a867e433"
+  },
+  "tracked_diff_check": "PASS",
+  "harness_syntax": "PASS",
+  "scratch_files": 396,
+  "scratch_bytes": 5231295,
+  "report_sha256": {
+    "audit_feasibility.py": "5aa844602a22654b341462992289e01c382e2df5c149313b734d3cd5e61e1697",
+    "baseline_inventory.json": "e360d6df73bc2209a25b757d28a8d7ec7ef51d31a358346e25c46a78a59592f8",
+    "feasibility_results.json": "a6c9be84653f92535c9524b9355c86f5de2d2d9361459a745abcfe564074c2cb",
+    "historical_difference_followup.json": "9663280e1544def624c95f558b379bd1b2d44a02071ed35673fb52d52ad58171",
+    "provenance_crosscheck.json": "e71325d8128dce74d3d37babfd4c069ab7b9da52493c2e7eaf5915cf6cd4d675",
+    "REPORT.md": "f2acc6f81f7ec15b1ac696e148f52926f862588fb73d72be4f4c3eab2c0aeb4a",
+    "scratch_inventory.json": "7b3f5c70e058c64bc8e7450608a8ae10605d155e7cb638b99570bd18e2fa26ec"
+  },
+  "commits_created": 0,
+  "network_calls": 0,
+  "note": "No claim of full E7/E8 reproducibility; see blockers in REPORT.md."
+}

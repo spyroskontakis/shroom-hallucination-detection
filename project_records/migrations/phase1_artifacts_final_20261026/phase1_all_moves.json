@@ -1,0 +1,144 @@
+{
+  "count": 17,
+  "bytes": 37800,
+  "files": [
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/fixed_errors_by_task_and_type.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/fixed_errors_by_task_and_type.csv",
+      "bytes": 63,
+      "before_sha256": "416a75065915546b93460733325316ac52339853b131eeae3db75efe93a93502",
+      "after_sha256": "416a75065915546b93460733325316ac52339853b131eeae3db75efe93a93502"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/introduced_errors_by_task_and_type.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/introduced_errors_by_task_and_type.csv",
+      "bytes": 64,
+      "before_sha256": "4a8bcb1c142ce12c5d55db05724d681500f884be659f5beaf938af541c88a1b7",
+      "after_sha256": "4a8bcb1c142ce12c5d55db05724d681500f884be659f5beaf938af541c88a1b7"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/ablation_summary_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_summary_results.csv",
+      "bytes": 196,
+      "before_sha256": "93723fffb26a3dacaac9ad9e483d3627f28fead2c7bf93078ef482e31f18bea1",
+      "after_sha256": "93723fffb26a3dacaac9ad9e483d3627f28fead2c7bf93078ef482e31f18bea1"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/ablation_per_task_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_per_task_results.csv",
+      "bytes": 515,
+      "before_sha256": "9fc174f25bcbeec71c680a627772d567b7b496c622a07e01d417fcdc47c69251",
+      "after_sha256": "9fc174f25bcbeec71c680a627772d567b7b496c622a07e01d417fcdc47c69251"
+    },
+    {
+      "status": "PASS",
+      "old_path": "data/7. Ablation Synthetic Data/ablation_feature_importance.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_feature_importance.csv",
+      "bytes": 1346,
+      "before_sha256": "5dbca5833cc0a8aff7e6925be2f4c54a845a06013aec73a392aee7ad3eb55f79",
+      "after_sha256": "5dbca5833cc0a8aff7e6925be2f4c54a845a06013aec73a392aee7ad3eb55f79"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e1_nli_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e1_nli_dev_cv_results.csv",
+      "bytes": 173,
+      "before_sha256": "9af364f9d52911046f8944725063f9f8006624b84e935a9e4d468094c4ff59ef",
+      "after_sha256": "9af364f9d52911046f8944725063f9f8006624b84e935a9e4d468094c4ff59ef",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e2_similarity_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e2_similarity_dev_cv_results.csv",
+      "bytes": 173,
+      "before_sha256": "b5f499c81b8b70190c690932959968cac210e32fd45e7100005fab0c35dfa2e1",
+      "after_sha256": "b5f499c81b8b70190c690932959968cac210e32fd45e7100005fab0c35dfa2e1",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e3_nli_similarity_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/e3_nli_similarity_dev_cv_results.csv",
+      "bytes": 171,
+      "before_sha256": "78e4ae0ff5c2314d88c5af3f1858bb38ef1a6e80bc6dc877b826e1ed167ae3ac",
+      "after_sha256": "78e4ae0ff5c2314d88c5af3f1858bb38ef1a6e80bc6dc877b826e1ed167ae3ac",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e4_synthetic_dev_cv_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/results/development_499/e4_synthetic_dev_cv_results.csv",
+      "bytes": 344,
+      "before_sha256": "f035eb0bc97fb7e2ea47d415b11274d07f6e4b694e4872bd24fbd039f45eab57",
+      "after_sha256": "f035eb0bc97fb7e2ea47d415b11274d07f6e4b694e4872bd24fbd039f45eab57",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/e4_synthetic_dev_task_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/results/development_499/e4_synthetic_dev_task_results.csv",
+      "bytes": 156,
+      "before_sha256": "9f1bcdab0438538f280c9750da21f721628887ea3737bcedfca18d6ed1b4ec7d",
+      "after_sha256": "9f1bcdab0438538f280c9750da21f721628887ea3737bcedfca18d6ed1b4ec7d",
+      "status": "PASS"
+    },
+    {
+      "old_path": "codex/chapter6_audit.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/chapter6_audit.md",
+      "bytes": 12765,
+      "before_sha256": "d9d90221eb3df8e86129663c97ba0edd453442fbf660fd354db2597d866fd50e",
+      "after_sha256": "d9d90221eb3df8e86129663c97ba0edd453442fbf660fd354db2597d866fd50e",
+      "status": "PASS"
+    },
+    {
+      "old_path": "codex/chapter6_conflict_report.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/chapter6_conflict_report.md",
+      "bytes": 5803,
+      "before_sha256": "7161135591207ec1c65a547449ee953d1fbac66907fc1da7ca8bf715fdbbd0e4",
+      "after_sha256": "7161135591207ec1c65a547449ee953d1fbac66907fc1da7ca8bf715fdbbd0e4",
+      "status": "PASS"
+    },
+    {
+      "old_path": "codex/source_map.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/source_map.md",
+      "bytes": 5535,
+      "before_sha256": "3a5c823d478e19c6b534a786f7c9dbc6015392b02af6092bf73a91ea0b16acfb",
+      "after_sha256": "3a5c823d478e19c6b534a786f7c9dbc6015392b02af6092bf73a91ea0b16acfb",
+      "status": "PASS"
+    },
+    {
+      "old_path": "codex/thesis_integrity_audit.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/thesis_integrity_audit.md",
+      "bytes": 9163,
+      "before_sha256": "6c0c501bbc969056a6a5a775fe0be26901896568894fc1af0e3e3a3c6d7daf5f",
+      "after_sha256": "6c0c501bbc969056a6a5a775fe0be26901896568894fc1af0e3e3a3c6d7daf5f",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/development_experiment_summary.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/development_experiment_summary.csv",
+      "bytes": 257,
+      "before_sha256": "e8d837e12a48ba40f387ad54a2e3fc07d10b15f397e2e79428375dbbcb9ca624",
+      "after_sha256": "e8d837e12a48ba40f387ad54a2e3fc07d10b15f397e2e79428375dbbcb9ca624",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/7. Ablation Synthetic Data/ablation_synthetic_ratio_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_synthetic_ratio_results.csv",
+      "bytes": 540,
+      "before_sha256": "5964c230c3872ad972f64a0a9236131b1048a957d09e3e554cb50a2945108837",
+      "after_sha256": "5964c230c3872ad972f64a0a9236131b1048a957d09e3e554cb50a2945108837",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/7. Ablation Synthetic Data/ablation_synthetic_weight_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_synthetic_weight_results.csv",
+      "bytes": 536,
+      "before_sha256": "b543903bf3eb3cc29ee94f7867eec3c4c649e36328e5fba27833d74fc972dde3",
+      "after_sha256": "b543903bf3eb3cc29ee94f7867eec3c4c649e36328e5fba27833d74fc972dde3",
+      "status": "PASS"
+    }
+  ],
+  "remaining": 0,
+  "runtime_reproducibility": "NOT VERIFIED; archives only; ADAPT/KEEP/BLOCKED untouched."
+}

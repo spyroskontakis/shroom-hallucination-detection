@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "old_path": "tools/public_release/audit_candidate.py",
+      "new_path": "project_records/release_tools/audit_candidate.py",
+      "bytes": 8642,
+      "before_sha256": "7f62fec535f9da1e8e7e4bf0d9090fdffd31fd54565f2036da13a99097e43a30",
+      "after_sha256": "7f62fec535f9da1e8e7e4bf0d9090fdffd31fd54565f2036da13a99097e43a30",
+      "byte_identical": true,
+      "syntax": "PASS",
+      "static_root_parity": "PASS",
+      "static_imports_and_paths": "PASS",
+      "runtime_execution": "NOT VERIFIED"
+    },
+    {
+      "old_path": "tools/public_release/finalize_manifests.py",
+      "new_path": "project_records/release_tools/finalize_manifests.py",
+      "bytes": 7416,
+      "before_sha256": "975054573fcf48446c86fbea24a570ecb2386a18eec50d7a911711448b44b0a6",
+      "after_sha256": "975054573fcf48446c86fbea24a570ecb2386a18eec50d7a911711448b44b0a6",
+      "byte_identical": true,
+      "syntax": "PASS",
+      "static_root_parity": "PASS",
+      "static_imports_and_paths": "PASS",
+      "runtime_execution": "NOT VERIFIED"
+    },
+    {
+      "old_path": "tools/public_release/transform_diagnostics.py",
+      "new_path": "project_records/release_tools/transform_diagnostics.py",
+      "bytes": 3326,
+      "before_sha256": "885b928a27ac407146cbcb36508d934b67ebab994b12e83469ee237bb3a452b6",
+      "after_sha256": "885b928a27ac407146cbcb36508d934b67ebab994b12e83469ee237bb3a452b6",
+      "byte_identical": true,
+      "syntax": "PASS",
+      "static_root_parity": "PASS",
+      "static_imports_and_paths": "PASS",
+      "runtime_execution": "NOT VERIFIED"
+    }
+  ],
+  "count": 3,
+  "bytes": 19384,
+  "sha256_matches": 3,
+  "archival_move": "VERIFIED",
+  "functional_execution": "NOT VERIFIED"
+}

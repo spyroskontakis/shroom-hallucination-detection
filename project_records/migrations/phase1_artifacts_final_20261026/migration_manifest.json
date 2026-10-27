@@ -1,0 +1,64 @@
+{
+  "verdict": "VERIFIED",
+  "count": 7,
+  "bytes": 34599,
+  "files": [
+    {
+      "old_path": "codex/chapter6_audit.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/chapter6_audit.md",
+      "bytes": 12765,
+      "before_sha256": "d9d90221eb3df8e86129663c97ba0edd453442fbf660fd354db2597d866fd50e",
+      "after_sha256": "d9d90221eb3df8e86129663c97ba0edd453442fbf660fd354db2597d866fd50e",
+      "status": "PASS"
+    },
+    {
+      "old_path": "codex/chapter6_conflict_report.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/chapter6_conflict_report.md",
+      "bytes": 5803,
+      "before_sha256": "7161135591207ec1c65a547449ee953d1fbac66907fc1da7ca8bf715fdbbd0e4",
+      "after_sha256": "7161135591207ec1c65a547449ee953d1fbac66907fc1da7ca8bf715fdbbd0e4",
+      "status": "PASS"
+    },
+    {
+      "old_path": "codex/source_map.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/source_map.md",
+      "bytes": 5535,
+      "before_sha256": "3a5c823d478e19c6b534a786f7c9dbc6015392b02af6092bf73a91ea0b16acfb",
+      "after_sha256": "3a5c823d478e19c6b534a786f7c9dbc6015392b02af6092bf73a91ea0b16acfb",
+      "status": "PASS"
+    },
+    {
+      "old_path": "codex/thesis_integrity_audit.md",
+      "new_path": "project_records/thesis_verification/phase1_protocol_history/thesis_integrity_audit.md",
+      "bytes": 9163,
+      "before_sha256": "6c0c501bbc969056a6a5a775fe0be26901896568894fc1af0e3e3a3c6d7daf5f",
+      "after_sha256": "6c0c501bbc969056a6a5a775fe0be26901896568894fc1af0e3e3a3c6d7daf5f",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/2. EDA/shroom_final_implementation/development_experiment_summary.csv",
+      "new_path": "research/experiments/phase1_baselines/e1_e3_baselines/results/development_499/development_experiment_summary.csv",
+      "bytes": 257,
+      "before_sha256": "e8d837e12a48ba40f387ad54a2e3fc07d10b15f397e2e79428375dbbcb9ca624",
+      "after_sha256": "e8d837e12a48ba40f387ad54a2e3fc07d10b15f397e2e79428375dbbcb9ca624",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/7. Ablation Synthetic Data/ablation_synthetic_ratio_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_synthetic_ratio_results.csv",
+      "bytes": 540,
+      "before_sha256": "5964c230c3872ad972f64a0a9236131b1048a957d09e3e554cb50a2945108837",
+      "after_sha256": "5964c230c3872ad972f64a0a9236131b1048a957d09e3e554cb50a2945108837",
+      "status": "PASS"
+    },
+    {
+      "old_path": "data/7. Ablation Synthetic Data/ablation_synthetic_weight_results.csv",
+      "new_path": "research/experiments/phase1_baselines/e4_augmentation/historical_ablation/ablation_synthetic_weight_results.csv",
+      "bytes": 536,
+      "before_sha256": "b543903bf3eb3cc29ee94f7867eec3c4c649e36328e5fba27833d74fc972dde3",
+      "after_sha256": "b543903bf3eb3cc29ee94f7867eec3c4c649e36328e5fba27833d74fc972dde3",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Historical archival relocation only; no scientific/runtime reproduction claim."
+}

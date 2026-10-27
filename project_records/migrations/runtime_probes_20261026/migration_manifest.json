@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "old_path": "modal_gpu_check.py",
+      "new_path": "project_records/runtime_probes/modal_gpu_check.py",
+      "bytes": 555,
+      "before_sha256": "1ebb5d5dabf4b0ac8636dd0b8ff227d4e7e6133ee4820420dc25f8cab0f187a1",
+      "after_sha256": "1ebb5d5dabf4b0ac8636dd0b8ff227d4e7e6133ee4820420dc25f8cab0f187a1",
+      "byte_identical": true,
+      "python_syntax": "PASS",
+      "execution": "NOT VERIFIED: forbidden"
+    },
+    {
+      "old_path": "data/llm_reasoning.py",
+      "new_path": "project_records/runtime_probes/llm_reasoning.py",
+      "bytes": 505,
+      "before_sha256": "2d0dcb88d8405e6a0113073bca7f0e7680335eb45671b416484a56d2979a57b9",
+      "after_sha256": "2d0dcb88d8405e6a0113073bca7f0e7680335eb45671b416484a56d2979a57b9",
+      "byte_identical": true,
+      "python_syntax": "PASS",
+      "execution": "NOT VERIFIED: forbidden"
+    }
+  ],
+  "count": 2,
+  "bytes": 1060,
+  "sha256_matches": 2,
+  "scope": "Archival move with static verification only; no probe imported or executed."
+}

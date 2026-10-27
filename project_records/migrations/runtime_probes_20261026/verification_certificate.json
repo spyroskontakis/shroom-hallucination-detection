@@ -1,0 +1,21 @@
+{
+  "verdict": "VERIFIED",
+  "scope": "Archival migration and offline static checks only",
+  "probe_runtime": "NOT VERIFIED",
+  "files": 2,
+  "bytes": 1060,
+  "sha256_matches": 2,
+  "ast_only_checks": 2,
+  "probe_imports_or_executions": 0,
+  "prior_worktree_files_preserved": 953,
+  "prototype_preserved": 25,
+  "historical_versions_preserved": 24,
+  "release_tools_preserved": 3,
+  "main_files_unchanged": 915,
+  "main_clean": true,
+  "main_head": "d854478ca4be1df8676ac0423458eb04996e8af8",
+  "staged_files": 0,
+  "new_broken_links": 0,
+  "migration_manifest_sha256": "bd7e917ed137ea9cb25fe32e17e312f5fd3729f95668273330677957d98b0367",
+  "report_sha256": "494953556504e068757306b722c07b3806e2f6102f75321d932f60d3a69e96ec"
+}
