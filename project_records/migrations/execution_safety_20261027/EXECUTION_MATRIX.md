@@ -549,7 +549,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/shroom_rag_e5_module1.ipynb](<../../../RAG/shroom_rag_e5_module1.ipynb>)
+- [RAG/shroom_rag_e5_module1.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module1.ipynb>)
 
 **Required inputs:** `Original unlabeled/prototype rows and cache`.
 
@@ -579,7 +579,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/shroom_rag_e5_module1_gemini_trial.ipynb](<../../../RAG/shroom_rag_e5_module1_gemini_trial.ipynb>)
+- [RAG/shroom_rag_e5_module1_gemini_trial.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module1_gemini_trial.ipynb>)
 
 **Required inputs:** `Original unlabeled/prototype rows and cache`.
 
@@ -1975,7 +1975,7 @@ beautifulsoup4==4.14.3
 
 ### RAG/requirements-rag-module1.txt
 
-[RAG/requirements-rag-module1.txt](<../../../RAG/requirements-rag-module1.txt>)
+[RAG/requirements-rag-module1.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/requirements-rag-module1.txt>)
 
 SHA-256: `33c7977e6f877d1add74ca8f515de7e99e4e19ac248f74e848d79fed30f37624`.
 
