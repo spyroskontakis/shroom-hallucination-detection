@@ -1,5 +1,9 @@
 """Regenerate canonical SHROOM fold assignments with scikit-learn.
 
+Explicit input and fresh external run paths are required. Importing this module
+only initializes the standard-library bootstrap; analysis dependencies are deferred.
+Full generation needs a separately approved isolated runtime and original input.
+
 Prompt 7C-A scope:
 - read only canonical_human_development_manifest.csv as input;
 - use sklearn.model_selection.StratifiedKFold exactly;
@@ -9,25 +13,23 @@ Prompt 7C-A scope:
 
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
+import os
 import platform
+import stat
 import sys
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
-import pandas as pd
-import sklearn
-from sklearn.model_selection import StratifiedKFold
-
-
-ROOT = Path(__file__).resolve().parent
-INPUT_MANIFEST = ROOT / "canonical_human_development_manifest.csv"
-OUTPUT_FOLDS = ROOT / "canonical_fold_assignments.csv"
-METADATA_JSON = ROOT / "canonical_fold_generation_metadata.json"
-BALANCE_AUDIT_CSV = ROOT / "canonical_fold_balance_audit.csv"
+# Bound only by explicit command-line execution, never during import.
+INPUT_MANIFEST = None
+OUTPUT_FOLDS = None
+METADATA_JSON = None
+BALANCE_AUDIT_CSV = None
 
 
 def sha256_file(path: Path) -> str:
@@ -67,7 +69,7 @@ def validate_input(frame: pd.DataFrame) -> None:
         raise ValueError(f"Missing values in required columns: {missing_required}")
 
 
-def main() -> None:
+def _generate_folds() -> None:
     input_hash = sha256_file(INPUT_MANIFEST)
     frame = pd.read_csv(INPUT_MANIFEST, dtype={"label_bin": "int64"})
     validate_input(frame)
@@ -210,5 +212,123 @@ def main() -> None:
     )
 
 
+def _checked_path(value: Path) -> Path:
+    """Normalize a path without intentionally following symlink/reparse ancestors."""
+    path = Path(os.path.abspath(value.expanduser()))
+    for candidate in reversed((path, *path.parents)):
+        try:
+            info = candidate.lstat()
+        except FileNotFoundError:
+            continue
+        if stat.S_ISLNK(info.st_mode) or getattr(info, "st_file_attributes", 0) & 0x400:
+            raise ValueError(f"Symlink/reparse-point path is not accepted: {candidate}")
+    return path
+
+
+def _validated_paths(input_manifest: Path, run_dir: Path) -> tuple[Path, Path]:
+    output = _checked_path(run_dir)
+    for parent in (output, *output.parents):
+        try:
+            (parent / ".git").lstat()
+        except FileNotFoundError:
+            continue
+        raise ValueError("The run directory must be outside Git repositories.")
+    if output.exists():
+        raise ValueError("The run directory already exists; choose a new path.")
+    if not output.parent.is_dir():
+        raise ValueError("The run parent must already be an existing directory.")
+
+    manifest = _checked_path(input_manifest)
+    if not manifest.is_file():
+        raise ValueError("The input manifest must already be a regular file.")
+    if output.is_relative_to(manifest.parent) or manifest.is_relative_to(output):
+        raise ValueError("The run directory must not overlap the input directory.")
+    return manifest, output
+
+
+def _validate_input_header(path: Path) -> None:
+    """Check columns used by the unchanged body before allowing output creation."""
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        fields = csv.DictReader(handle).fieldnames or []
+    required = ["canonical_id", "task", "label_bin", "exact_text_key",
+                "task_reference_key"]
+    missing = [column for column in required if column not in fields]
+    if missing:
+        raise ValueError(f"Missing required input columns: {missing}")
+
+
+def _load_runtime_dependencies() -> None:
+    global pd, sklearn, StratifiedKFold
+    import pandas as pd
+    import sklearn
+    from sklearn.model_selection import StratifiedKFold
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="Recorded sklearn canonical fold-generation procedure.",
+        epilog=(
+            "--check-paths reads no CSV content and creates no directories. "
+            "--generate is a scientific execution requiring separate approval, "
+            "original input and isolated dependency/cache/temp settings."
+        ),
+    )
+    parser.add_argument(
+        "--input-manifest", type=Path, required=True,
+        help="Existing full canonical human manifest; no public-projection fallback.",
+    )
+    parser.add_argument(
+        "--run-dir", type=Path, required=True,
+        help="Fresh external output directory; its parent must already exist.",
+    )
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument(
+        "--check-paths", action="store_true",
+        help="Read-only existence/location plan; no imports, CSV reads or generation.",
+    )
+    mode.add_argument(
+        "--generate", action="store_true",
+        help="Explicit generation into the new run directory; never historical outputs.",
+    )
+    args = parser.parse_args(argv)
+    try:
+        manifest, run_dir = _validated_paths(args.input_manifest, args.run_dir)
+    except (OSError, ValueError) as exc:
+        parser.error(str(exc))
+
+    outputs = {
+        "folds": run_dir / "canonical_fold_assignments.csv",
+        "balance_audit": run_dir / "canonical_fold_balance_audit.csv",
+        "metadata": run_dir / "canonical_fold_generation_metadata.json",
+    }
+    if args.check_paths:
+        print(json.dumps({
+            "validation": "path_existence_only",
+            "input_manifest": str(manifest),
+            "outputs": {key: str(path) for key, path in outputs.items()},
+            "input_contents_checked": False,
+            "generation_executed": False,
+        }, indent=2))
+        return 0
+
+    try:
+        _validate_input_header(manifest)
+    except (OSError, ValueError, csv.Error) as exc:
+        parser.error(str(exc))
+    _load_runtime_dependencies()
+
+    global INPUT_MANIFEST, OUTPUT_FOLDS, METADATA_JSON, BALANCE_AUDIT_CSV
+    INPUT_MANIFEST = manifest
+    OUTPUT_FOLDS = outputs["folds"]
+    METADATA_JSON = outputs["metadata"]
+    BALANCE_AUDIT_CSV = outputs["balance_audit"]
+    try:
+        run_dir.mkdir(exist_ok=False)
+    except OSError as exc:
+        parser.error(str(exc))
+    _generate_folds()
+    return 0
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

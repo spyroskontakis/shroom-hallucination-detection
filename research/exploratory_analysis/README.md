@@ -1,8 +1,8 @@
 # Exploratory Data Analysis
 
-This page distinguishes descriptive analysis from notebooks that also contain model evaluation or synthetic-data generation. The original files remain in `codex/`, `data/` and `RAG/`; they have not been moved into this directory.
+This page distinguishes descriptive analysis from notebooks that also contain model evaluation or synthetic-data generation. The descriptive EDA script is under `research/analysis/`. The historical notebooks remain in `codex/`, `data/` and `RAG/`.
 
-The [development EDA script](../../codex/prompt6_development_eda.py) describes the model-agnostic and model-aware development data. Its broader descriptive scope does not change the model-agnostic focus of the evaluated detector.
+The [development EDA script](../analysis/development_eda/prompt6_development_eda.py) describes the model-agnostic and model-aware development data. Its broader descriptive scope does not change the model-agnostic focus of the evaluated detector.
 
 ## Historical notebook versions
 

@@ -1,34 +1,27 @@
 """Descriptive EDA for the SHROOM development splits.
 
-This script is intentionally non-destructive. It reads the two labeled development
-JSON files, reproduces the inspection logic used by the project notebook, and writes
-only descriptive tables and figures to ``prompt6_development_eda_outputs``.
+Reads the two labeled development JSON files and writes descriptive tables and
+figures into an explicitly supplied new output directory outside Git repositories.
+Importing this module does not create directories or load analysis libraries.
+Full analysis still needs original data, a cached tokenizer and an isolated runtime.
 It does not train a model, select features, tune thresholds, or read test labels.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
+import os
+import stat
 from pathlib import Path
 
-import matplotlib
 
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-from transformers import AutoTokenizer
-
-
-HERE = Path(__file__).resolve().parent
-PROJECT_ROOT = HERE.parent
-DEV_DIR = PROJECT_ROOT / "Dev" / "SHROOM_dev-v2"
-OUTPUT_DIR = HERE / "prompt6_development_eda_outputs"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-INPUTS = {
-    "model-agnostic": DEV_DIR / "val.model-agnostic.json",
-    "model-aware": DEV_DIR / "val.model-aware.v2.json",
+# Populated only by the explicit command-line execution path.
+INPUTS = {}
+OUTPUT_DIR = None
+INPUT_FILENAMES = {
+    "model-agnostic": "val.model-agnostic.json",
+    "model-aware": "val.model-aware.v2.json",
 }
 EXPECTED_ROWS = {"model-agnostic": 499, "model-aware": 501}
 TOKENIZER_NAME = "microsoft/deberta-v3-large"
@@ -318,7 +311,7 @@ def plot_multivariate(data: pd.DataFrame) -> None:
     save_figure(fig, "development_p_hallucination_by_task_and_track.png")
 
 
-def main() -> None:
+def _run_analysis() -> None:
     frames = {track: load_split(track, path) for track, path in INPUTS.items()}
     tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_NAME, local_files_only=True)
     enriched = [add_token_lengths(frame, tokenizer) for frame in frames.values()]
@@ -345,5 +338,106 @@ def main() -> None:
     print(f"Wrote development EDA outputs to {OUTPUT_DIR}")
 
 
+
+def _checked_path(value: Path) -> Path:
+    """Normalize a path without traversing symlink/reparse-point ancestors."""
+    path = Path(os.path.abspath(value.expanduser()))
+    for candidate in reversed((path, *path.parents)):
+        try:
+            info = candidate.lstat()
+        except FileNotFoundError:
+            continue
+        if stat.S_ISLNK(info.st_mode) or getattr(info, "st_file_attributes", 0) & 0x400:
+            raise ValueError(f"Symlink/reparse-point path is not accepted: {candidate}")
+    return path
+
+
+def _validated_paths(input_dir: Path, output_dir: Path) -> tuple[dict[str, Path], Path]:
+    output = _checked_path(output_dir)
+    for parent in (output, *output.parents):
+        try:
+            (parent / ".git").lstat()
+        except FileNotFoundError:
+            continue
+        raise ValueError("The output directory must be outside Git repositories.")
+    if output.exists():
+        raise ValueError("The output directory already exists; choose a new path.")
+    if not output.parent.is_dir():
+        raise ValueError("The output parent must already be an existing directory.")
+
+    inputs_root = _checked_path(input_dir)
+    if not inputs_root.is_dir():
+        raise ValueError("The input directory must already exist.")
+    if output.is_relative_to(inputs_root) or inputs_root.is_relative_to(output):
+        raise ValueError("Input and output directories must not overlap.")
+    inputs = {
+        track: _checked_path(inputs_root / name)
+        for track, name in INPUT_FILENAMES.items()
+    }
+    for path in inputs.values():
+        if not path.is_file():
+            raise ValueError(f"Required development input is missing: {path.name}")
+    return inputs, output
+
+
+def _load_runtime_dependencies() -> None:
+    """Defer third-party initialization until explicit path checks have passed."""
+    global matplotlib, plt, np, pd, AutoTokenizer
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import pandas as pd
+    from transformers import AutoTokenizer
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="Descriptive EDA of the two original SHROOM development splits.",
+        epilog=(
+            "Full analysis needs compatible libraries, a cached local tokenizer and "
+            "separately isolated cache/temp/network settings. --check-paths does not "
+            "load datasets, initialize libraries or validate analysis results."
+        ),
+    )
+    parser.add_argument(
+        "--input-dir", type=Path, required=True,
+        help="Existing directory containing the two original development JSON files.",
+    )
+    parser.add_argument(
+        "--output-dir", type=Path, required=True,
+        help="New directory outside Git and the inputs; its parent must exist.",
+    )
+    parser.add_argument(
+        "--check-paths", action="store_true",
+        help="Read-only path validation; no directory creation or analysis.",
+    )
+    args = parser.parse_args(argv)
+    try:
+        inputs, output = _validated_paths(args.input_dir, args.output_dir)
+    except (OSError, ValueError) as exc:
+        parser.error(str(exc))
+    if args.check_paths:
+        print(json.dumps({
+            "validation": "path_existence_only",
+            "inputs": {track: str(path) for track, path in inputs.items()},
+            "output": str(output),
+            "input_contents_checked": False,
+            "analysis_executed": False,
+        }, indent=2))
+        return 0
+
+    global INPUTS, OUTPUT_DIR
+    INPUTS, OUTPUT_DIR = inputs, output
+    try:
+        OUTPUT_DIR.mkdir(exist_ok=False)
+    except OSError as exc:
+        parser.error(str(exc))
+    _load_runtime_dependencies()
+    _run_analysis()
+    return 0
+
+
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
