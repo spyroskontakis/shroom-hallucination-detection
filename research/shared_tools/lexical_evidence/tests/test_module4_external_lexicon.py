@@ -6,7 +6,14 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPT = Path(__file__).parents[1] / "scripts" / "module4_build_external_lexicon.py"
+SCRIPT = next((
+    parent / "RAG/scripts/module4_build_external_lexicon.py"
+    for parent in Path(__file__).resolve().parents
+    if (parent / "research/README.md").is_file()
+    and (parent / "RAG/scripts/module4_build_external_lexicon.py").is_file()
+), None)
+if SCRIPT is None:
+    raise RuntimeError("Historical Module 4 source root was not found")
 spec = importlib.util.spec_from_file_location("m4lex", SCRIPT)
 m4 = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(m4)

@@ -5,7 +5,7 @@ Most research utilities remain beside their original consumers; the adapted Modu
 | Purpose | Source and related tests |
 |---|---|
 | Module 2 dense cache | [Cache utility](../experiments/phase2_rag_features/e5_rag/modules/module2/scripts/module2_dense_cache.py) |
-| Module 4 external lexical evidence | [Lexicon builder](../../RAG/scripts/module4_build_external_lexicon.py) and [tests](../../RAG/tests/test_module4_external_lexicon.py) |
+| Module 4 external lexical evidence | [Lexicon builder](../../RAG/scripts/module4_build_external_lexicon.py) and [tests](lexical_evidence/tests/test_module4_external_lexicon.py) |
 | Module 4 release verification | [Verifier](../../RAG/module4_release_v1/verify_module4.py) and [tests](../../RAG/module4_release_v1/tests/test_verify_module4.py) |
 | E6-v3 feature/evaluation helpers | [v3_common.py](../../RAG/results/rag_e6_v3/scripts/v3_common.py) and [tests](../../RAG/results/rag_e6_v3/tests/test_v3.py) |
 | E9 evaluation helpers | [e9_common.py](../../RAG/results/phase3_e9_claim_verification/scripts/e9_common.py) and [tests](../../RAG/results/phase3_e9_claim_verification/tests/test_e9.py) |

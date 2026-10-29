@@ -2,7 +2,14 @@ import ast
 import unittest
 from pathlib import Path
 
-SCRIPT=Path(__file__).resolve().parents[1]/"scripts"/"module4_build_rag_features_pinned.py"
+SCRIPT = next((
+    parent / "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py"
+    for parent in Path(__file__).resolve().parents
+    if (parent / "research/README.md").is_file()
+    and (parent / "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py").is_file()
+), None)
+if SCRIPT is None:
+    raise RuntimeError("Historical Module 4 source root was not found")
 EXPECTED_REVISION="e8c3b32edf5434bc2275fc9bab85f82640a19130"
 
 def parse_script():
