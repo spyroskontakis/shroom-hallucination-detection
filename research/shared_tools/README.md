@@ -1,10 +1,10 @@
 # Shared Utilities and Tests
 
-The research utilities remain beside their original consumers. This page is an index, not a new shared Python package. Fixed paths, local imports and source-hash checks still apply.
+Most research utilities remain beside their original consumers; the adapted Module 2 helper is linked at its new location. This page is an index, not a new shared Python package. Fixed paths, local imports and source-hash checks still apply.
 
 | Purpose | Source and related tests |
 |---|---|
-| Module 2 dense cache | [Cache utility](../../RAG/scripts/module2_dense_cache.py) |
+| Module 2 dense cache | [Cache utility](../experiments/phase2_rag_features/e5_rag/modules/module2/scripts/module2_dense_cache.py) |
 | Module 4 external lexical evidence | [Lexicon builder](../../RAG/scripts/module4_build_external_lexicon.py) and [tests](../../RAG/tests/test_module4_external_lexicon.py) |
 | Module 4 release verification | [Verifier](../../RAG/module4_release_v1/verify_module4.py) and [tests](../../RAG/module4_release_v1/tests/test_verify_module4.py) |
 | E6-v3 feature/evaluation helpers | [v3_common.py](../../RAG/results/rag_e6_v3/scripts/v3_common.py) and [tests](../../RAG/results/rag_e6_v3/tests/test_v3.py) |
@@ -17,3 +17,38 @@ The [core pipeline](../core_pipeline/README.md) is shared across baseline evalua
 Use the [environment matrix](../../docs/ENVIRONMENTS.md) and [reproducibility notes](../../docs/REPRODUCIBILITY.md) to identify the required context.
 
 [Back to the research guide](../README.md)
+
+## Module 2: adapted execution context
+
+The helper and three notebooks are adapted implementations under `research/experiments/phase2_rag_features/e5_rag/modules/module2/`. Original versions remain at Git checkpoint `67fb57f4fe311ce96dcf2d7556b133ae0328d214`. Saved outputs and execution counts still describe historical runs.
+
+For a separately approved run, declare absolute local paths:
+- `SHROOM_MODULE2_CODE_ROOT`: the current Module 2 directory.
+- `SHROOM_MODULE2_HELPER_SHA256`: independently reviewed helper digest `7c0d0b79b83fb902459b59a47238d3f0dac4a180eefbc123680170a42db5f1ae`.
+- `SHROOM_MODULE2_INPUT_ROOT`: input tree with the original `data/` layout.
+- `SHROOM_MODULE2_EVIDENCE_ROOT`: immutable historical snapshot with original `RAG/` source/artifact layout and bytes required by frozen guards.
+- `SHROOM_MODULE2_RUN_DIR`: new external run directory, existing parent, outside Git and read-only roots.
+- `SHROOM_MODULE2_CACHE_DIR`: explicit external complete dense cache for retrieval.
+- `SHROOM_MODULE2_LIBRARY_CACHE`: dedicated prepared offline library cache, outside Git and all other roots. It must already contain required local model files. Use an approved disposable copy, not protected originals.
+
+Use a fresh kernel for each notebook and disable Python bytecode writing. Imports verify the helper pin and reject stale modules. Phase B and holdout do not initialize ML libraries or dense/model caches; they still require historical inputs.
+
+The helper CLI requires `--input-root`, `--evidence-root`, `--run-dir`, `--cache-dir` and exactly one of `--check-paths` or `--build-cache`. Path-check mode creates no files and loads no ML libraries. Cache building requires separate approval, Python 3.11.9 and an adapted-owned writable cache. Unknown/historical caches cannot be adopted for writing by fabricating an ownership marker.
+
+Run outputs cannot replace existing files. Only a manifest in an adapted-owned dense cache can be updated for resume; existing chunks remain immutable. Historical input/source hashes remain unchanged. Missing originals or public-safe bytes differing from original hashes must fail, not fall back or receive refreshed hashes. The ten public H1 records are now in the [Module 2 historical archive](../experiments/phase2_rag_features/e5_rag/modules/module2/historical_records/). The [Module 2 requirements](../experiments/phase2_rag_features/e5_rag/modules/module2/configs/requirements-rag-module2.txt) are now at their planned location. This completes the 21-file Module 2 physical relocation. Historical exception R1 permits retaining the old requirements link for local reorganization only; the literal link remains broken and publication is still pending. Original H0 runtime evidence still requires a separately authenticated snapshot.
+
+Static and isolated helper/path/writer tests passed. The notebooks were not run; actual retrieval, cache/model compatibility, evaluation and full reproduction remain NOT VERIFIED. Third-party library writes need a separately audited isolated run; offline flags are not an OS sandbox. See [safe execution](../../docs/SAFE_EXECUTION.md).
+
+## Module 2 current files and historical originals
+
+These current files are available in this working layout. The baseline links identify the original public snapshot at commit `11822d92070cd29360445cb4dacd8d110c655248`; relocated/adapted files must not be treated as original frozen runtime evidence.
+
+| File | Current location | Original baseline |
+|---|---|---|
+| Retrieval notebook | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_retrieval.ipynb) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module2_retrieval.ipynb) |
+| Phase-B notebook | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_phase_b_evaluation.ipynb) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb) |
+| Holdout notebook | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_holdout_evaluation.ipynb) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb) |
+| Cache helper | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/scripts/module2_dense_cache.py) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/scripts/module2_dense_cache.py) |
+| BM25 dependency spec | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/configs/requirements-rag-module2.txt) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/requirements-rag-module2.txt) |
+
+These alternatives do not repair literal old-path links inside protected historical reports. Their publication treatment remains OPEN. The BM25 pin is not a complete runtime environment; full notebook and scientific reproduction remain NOT VERIFIED.

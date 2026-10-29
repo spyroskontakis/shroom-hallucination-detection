@@ -21,17 +21,7 @@ from importlib.metadata import version
 from pathlib import Path
 from typing import Any, Callable
 
-# These settings are applied before importing Hugging Face libraries.
-os.environ["HF_HUB_OFFLINE"] = "1"
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-os.environ["HF_DATASETS_OFFLINE"] = "1"
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
-
-import numpy as np
-import pandas as pd
-import torch
-from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer
+# ML libraries and environment setup are deferred until explicit runtime setup.
 
 
 RANDOM_STATE = 42
@@ -160,6 +150,7 @@ def load_module2_kb(project_root: Path) -> tuple[pd.DataFrame, dict[str, str]]:
         / "SHROOM_unlabeled-training-data-v2"
         / "train.model-agnostic.json"
     )
+    _physical_path(train_path)
     with train_path.open("r", encoding="utf-8") as stream:
         train_df = pd.DataFrame(json.load(stream))
     assert len(train_df) == 30000
@@ -598,14 +589,10 @@ def benchmark_batch_sizes(
 
 
 def atomic_write_json(path: Path, value: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_name(f"{path.name}.{os.getpid()}.tmp")
-    with temporary.open("w", encoding="utf-8") as stream:
-        json.dump(value, stream, ensure_ascii=False, indent=2)
-        stream.write("\n")
-        stream.flush()
-        os.fsync(stream.fileno())
-    os.replace(temporary, path)
+    if _ACTIVE_CONTEXT is None:
+        raise RuntimeError("Explicit output ownership is required.")
+    data = (json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+    _ACTIVE_CONTEXT.publish(path, lambda stream: stream.write(data), mutable_manifest=True)
 
 
 def chunk_path(cache_dir: Path, start: int, end: int) -> Path:
@@ -619,9 +606,9 @@ def atomic_write_chunk(
     start: int,
     end: int,
 ) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = path.with_name(f"{path.name}.{os.getpid()}.tmp")
-    with temporary.open("wb") as stream:
+    if _ACTIVE_CONTEXT is None:
+        raise RuntimeError("Explicit output ownership is required.")
+    def write_payload(stream):
         np.savez(
             stream,
             embeddings=embeddings,
@@ -629,9 +616,7 @@ def atomic_write_chunk(
             start=np.asarray(start, dtype=np.int64),
             end=np.asarray(end, dtype=np.int64),
         )
-        stream.flush()
-        os.fsync(stream.fileno())
-    os.replace(temporary, path)
+    _ACTIVE_CONTEXT.publish(path, write_payload)
 
 
 def validate_chunk(
@@ -640,6 +625,7 @@ def validate_chunk(
     start: int,
     end: int,
 ) -> np.ndarray:
+    _physical_path(path)
     with np.load(path, allow_pickle=False) as payload:
         stored_start = int(payload["start"])
         stored_end = int(payload["end"])
@@ -705,7 +691,7 @@ def _range_records(ranges: list[tuple[int, int]]) -> list[dict[str, int]]:
 
 
 def load_manifest(cache_dir: Path) -> dict[str, Any]:
-    manifest_path = cache_dir / "dense_cache_manifest.json"
+    manifest_path = _physical_path(cache_dir / "dense_cache_manifest.json")
     with manifest_path.open("r", encoding="utf-8") as stream:
         return json.load(stream)
 
@@ -736,7 +722,10 @@ def verify_locked_module1(project_root: Path) -> None:
     assert sha256_file(cache) == EXPECTED_MODULE1_CACHE_SHA256
 
 
-def build_or_resume_cache(project_root: Path) -> dict[str, Any]:
+def build_or_resume_cache(context: Module2Context) -> dict[str, Any]:
+    configure_context(context)
+    if not context.write_cache:
+        raise ValueError("Builder requires an explicitly owned writable cache.")
     if sys.version.split()[0] != "3.11.9":
         raise RuntimeError("Module 2 cache builder requires Python 3.11.9.")
     if torch.cuda.is_available():
@@ -745,14 +734,14 @@ def build_or_resume_cache(project_root: Path) -> dict[str, Any]:
     np.random.seed(RANDOM_STATE)
     torch.manual_seed(RANDOM_STATE)
     torch.use_deterministic_algorithms(True, warn_only=True)
-    verify_locked_module1(project_root)
+    verify_locked_module1(context.evidence_root)
 
-    cache_dir = project_root / "RAG" / "results" / "rag_module2" / "dense_cache"
-    cache_dir.mkdir(parents=True, exist_ok=True)
+    cache_dir = context.cache_dir
+    context._ensure_cache()
     manifest_path = cache_dir / "dense_cache_manifest.json"
 
     print("CACHE_BUILDER_PRECHECKS=PASS", flush=True)
-    kb, kb_hashes = load_module2_kb(project_root)
+    kb, kb_hashes = load_module2_kb(context.input_root)
     tokenizer = load_local_tokenizer()
     candidate_records = build_candidate_dense_records(tokenizer, kb)
     candidate_texts = [record.text for record in candidate_records]
@@ -902,15 +891,252 @@ def validate_and_load_complete_cache_if_ready(
     return _assert_embeddings(np.concatenate(chunks, axis=0), len(evidence_ids)), manifest
 
 
+# Adapted Module 2 IO context. Historical hashes above remain authoritative.
+_ACTIVE_CONTEXT = None
+
+
+def _physical_path(value: str | Path) -> Path:
+    path = Path(value)
+    if not path.is_absolute() or ".." in path.parts or str(path).startswith("\\\\"):
+        raise ValueError("An absolute local path without traversal is required.")
+    reserved = {"con", "prn", "aux", "nul", *(f"com{i}" for i in range(1, 10)),
+                *(f"lpt{i}" for i in range(1, 10))}
+    for name in path.parts[1:]:
+        if ":" in name or name.endswith((".", " ")) or name.split(".")[0].lower() in reserved:
+            raise ValueError("Ambiguous/device/alternate-stream path is not accepted.")
+    for part in (path, *path.parents):
+        try:
+            info = part.lstat()
+        except FileNotFoundError:
+            continue
+        if part.is_symlink() or getattr(info, "st_file_attributes", 0) & 0x400:
+            raise ValueError("Symlink/reparse paths are not accepted.")
+    return path
+
+
+def _overlap(a: Path, b: Path) -> bool:
+    return a == b or a.is_relative_to(b) or b.is_relative_to(a)
+
+
+def _outside_git(path: Path) -> None:
+    for parent in (path, *path.parents):
+        if (parent / ".git").exists() or ((parent / "HEAD").is_file()
+                                         and (parent / "objects").is_dir()):
+            raise ValueError("Writable paths must be outside Git repositories.")
+
+
+class Module2Context:
+    """Explicit read-only input/evidence roots and exclusively owned output roots.
+
+    Constructing/importing the context creates no files. Original frozen guards
+    read evidence_root, never a substituted current adapted source.
+    """
+
+    def __init__(self, input_root, evidence_root, run_dir, cache_dir=None,
+                 write_cache=False):
+        self.input_root = _physical_path(input_root)
+        self.evidence_root = _physical_path(evidence_root)
+        self.run_dir = _physical_path(run_dir)
+        self.cache_dir = _physical_path(cache_dir) if cache_dir is not None else None
+        self.write_cache = bool(write_cache)
+        self._run_created = False
+        self._cache_owned = False
+        source = _physical_path(Path(__file__).absolute()).parent.parent
+        for root in (self.input_root, self.evidence_root):
+            if not root.is_dir():
+                raise ValueError("Declared read-only input/evidence root is missing.")
+        if self.run_dir.exists() or not self.run_dir.parent.is_dir():
+            raise ValueError("Run path must be new and have an existing parent.")
+        for dest in (self.run_dir, self.cache_dir):
+            if dest is None:
+                continue
+            _outside_git(dest)
+            if any(_overlap(dest, src) for src in
+                   (self.input_root, self.evidence_root, source)):
+                raise ValueError("Read-only and writable/cache roots overlap.")
+        if self.cache_dir is not None:
+            if _overlap(self.run_dir, self.cache_dir):
+                raise ValueError("Run and dense-cache roots must be distinct.")
+            if not self.cache_dir.parent.is_dir():
+                raise ValueError("Cache parent must exist.")
+            if not self.write_cache and not self.cache_dir.is_dir():
+                raise ValueError("Read-only dense cache is missing.")
+        self._cache_identity = {
+            "schema": "module2-adapted-cache-owner-v1",
+            "input_root": str(self.input_root),
+            "evidence_root": str(self.evidence_root),
+            "adapted_helper_sha256": sha256_file(Path(__file__)),
+        }
+        if self.write_cache and self.cache_dir is None:
+            raise ValueError("A writable cache must be explicitly declared.")
+        if self.write_cache and self.cache_dir.exists():
+            self._verify_cache_owner()
+
+    def evidence(self, relative: str) -> Path:
+        rel = Path(relative)
+        if rel.is_absolute() or ".." in rel.parts or ":" in relative or "\\" in relative:
+            raise ValueError("Unsafe historical logical path.")
+        path = _physical_path(self.evidence_root / rel)
+        if not path.is_relative_to(self.evidence_root):
+            raise ValueError("Historical path escaped its declared root.")
+        return path
+
+    def read_input(self, relative: str) -> Path:
+        rel = Path(relative)
+        if rel.is_absolute() or ".." in rel.parts or ":" in relative or "\\" in relative:
+            raise ValueError("Unsafe input logical path.")
+        return _physical_path(self.input_root / rel)
+
+    def _verify_cache_owner(self):
+        marker = _physical_path(self.cache_dir / ".module2-cache-owner.json")
+        if not marker.is_file() or json.loads(marker.read_text()) != self._cache_identity:
+            raise ValueError("Existing cache has no matching adapted ownership record.")
+        self._cache_owned = True
+
+    def _ensure_run(self):
+        _physical_path(self.run_dir)
+        _outside_git(self.run_dir)
+        if not self._run_created:
+            self.run_dir.mkdir(exist_ok=False)
+            self._run_created = True
+
+    def _ensure_cache(self):
+        if not self.write_cache:
+            raise ValueError("The dense cache is read-only.")
+        _physical_path(self.cache_dir)
+        _outside_git(self.cache_dir)
+        if not self._cache_owned:
+            self.cache_dir.mkdir(exist_ok=False)
+            marker = self.cache_dir / ".module2-cache-owner.json"
+            with marker.open("x", encoding="utf-8") as handle:
+                json.dump(self._cache_identity, handle, sort_keys=True)
+            self._cache_owned = True
+        self._verify_cache_owner()
+
+    def publish(self, path: Path, writer, mutable_manifest=False):
+        """Atomic no-clobber output; only an owned cache manifest may be updated."""
+        import tempfile
+        path = _physical_path(path)
+        cache = self.cache_dir is not None and path.is_relative_to(self.cache_dir)
+        if cache:
+            self._ensure_cache()
+        elif path.is_relative_to(self.run_dir):
+            self._ensure_run()
+        else:
+            raise ValueError("Output is outside the declared writable roots.")
+        root = self.cache_dir if cache else self.run_dir
+        if path == root:
+            raise ValueError("An output file is required.")
+        allowed_replace = (mutable_manifest and cache
+                           and path == self.cache_dir / "dense_cache_manifest.json")
+        if mutable_manifest and not allowed_replace:
+            raise ValueError("Only the owned dense-cache manifest is mutable.")
+        if path.exists() and not allowed_replace:
+            raise FileExistsError("Completed/incomplete output already exists.")
+        old_hash = sha256_file(path) if path.exists() else None
+        _physical_path(path.parent)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        _physical_path(path)
+        with tempfile.NamedTemporaryFile(mode="wb", prefix=".INCOMPLETE-",
+                                         dir=path.parent, delete=False) as handle:
+            temporary = Path(handle.name)
+            writer(handle)
+            handle.flush()
+            os.fsync(handle.fileno())
+        if old_hash is not None:
+            self._verify_cache_owner()
+            if sha256_file(path) != old_hash:
+                raise ValueError("Cache manifest changed concurrently; stopped.")
+            os.replace(temporary, path)
+        else:
+            os.link(temporary, path)  # atomic publication fails if destination exists
+            temporary.unlink()      # only this call's newly created temporary file
+        return path
+
+    def write_text(self, path, text, encoding="utf-8"):
+        data = text.encode(encoding)
+        return self.publish(Path(path), lambda stream: stream.write(data))
+
+    def runtime_environment(self):
+        """Explicit setup; a dedicated, pre-populated local library cache is required."""
+        configured = os.environ.get("SHROOM_MODULE2_LIBRARY_CACHE")
+        if not configured:
+            raise ValueError("Declare a dedicated prepared SHROOM_MODULE2_LIBRARY_CACHE.")
+        library = _physical_path(configured)
+        _outside_git(library)
+        source = _physical_path(Path(__file__).absolute()).parent.parent
+        protected = [self.input_root, self.evidence_root, source, self.run_dir]
+        if self.cache_dir is not None:
+            protected.append(self.cache_dir)
+        if not library.is_dir() or any(_overlap(library, p) for p in protected):
+            raise ValueError("Library cache must exist, outside Git and other roots.")
+        for name in ("hub", "torch", "datasets"):
+            _physical_path(library / name)
+        self._ensure_run()
+        temporary = _physical_path(self.run_dir / ".temporary")
+        temporary.mkdir(exist_ok=True)
+        for key in ("TEMP", "TMP", "TMPDIR"):
+            os.environ[key] = str(temporary)
+        os.environ["HF_HOME"] = str(library)
+        for key in ("HF_HUB_CACHE", "HUGGINGFACE_HUB_CACHE", "TRANSFORMERS_CACHE"):
+            os.environ[key] = str(library / "hub")
+        os.environ["HF_DATASETS_CACHE"] = str(library / "datasets")
+        os.environ["TORCH_HOME"] = str(library / "torch")
+        os.environ["XDG_CACHE_HOME"] = str(library)
+        for key in ("HF_HUB_OFFLINE", "TRANSFORMERS_OFFLINE", "HF_DATASETS_OFFLINE"):
+            os.environ[key] = "1"
+        os.environ["CUDA_VISIBLE_DEVICES"] = ""
+
+
+def configure_context(context: Module2Context) -> Module2Context:
+    global _ACTIVE_CONTEXT
+    if not isinstance(context, Module2Context):
+        raise TypeError("A validated Module2Context is required.")
+    _ACTIVE_CONTEXT = context
+    return context
+
+
+def context_from_environment(require_cache=False) -> Module2Context:
+    cache = os.environ.get("SHROOM_MODULE2_CACHE_DIR") if require_cache else None
+    if require_cache and not cache:
+        raise ValueError("SHROOM_MODULE2_CACHE_DIR is required.")
+    return configure_context(Module2Context(
+        os.environ["SHROOM_MODULE2_INPUT_ROOT"],
+        os.environ["SHROOM_MODULE2_EVIDENCE_ROOT"],
+        os.environ["SHROOM_MODULE2_RUN_DIR"], cache))
+
+
+def _load_runtime_dependencies() -> None:
+    global np, pd, torch, SentenceTransformer, AutoTokenizer
+    if _ACTIVE_CONTEXT is None:
+        raise RuntimeError("Explicit output context is required before ML initialization.")
+    _ACTIVE_CONTEXT.runtime_environment()
+    import numpy as np
+    import pandas as pd
+    import torch
+    from sentence_transformers import SentenceTransformer
+    from transformers import AutoTokenizer
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--project-root",
-        type=Path,
-        default=Path((__import__('os').environ.get('SHROOM_PROJECT_ROOT', '.') + '')),
-    )
+    parser = argparse.ArgumentParser(description="Adapted Module 2, explicit isolated roots.")
+    for option in ("input-root", "evidence-root", "run-dir", "cache-dir"):
+        parser.add_argument("--" + option, type=Path, required=True)
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--check-paths", action="store_true")
+    mode.add_argument("--build-cache", action="store_true")
     args = parser.parse_args()
-    build_or_resume_cache(args.project_root.resolve())
+    context = configure_context(Module2Context(
+        args.input_root, args.evidence_root, args.run_dir, args.cache_dir,
+        write_cache=True))
+    if args.check_paths:
+        print(json.dumps({"path_plan": "PASS", "files_created": False,
+                          "runtime_status": "NOT VERIFIED"}))
+        return 0
+    if sys.version.split()[0] != "3.11.9":
+        raise RuntimeError("Module 2 cache builder requires Python 3.11.9.")
+    _load_runtime_dependencies()
+    build_or_resume_cache(context)
     return 0
 
 

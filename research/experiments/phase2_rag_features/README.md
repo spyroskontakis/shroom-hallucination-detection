@@ -1,6 +1,6 @@
 # Phase 2: External Knowledge and Additional Features
 
-E5-E8 explore retrieval evidence, extra semantic features, selective routing and Random Forest tuning. The implementations remain under `RAG/`; this directory provides navigation only.
+E5-E8 explore retrieval evidence, extra semantic features, selective routing and Random Forest tuning. Most implementations remain under `RAG/`. Module 2's adapted helper and notebooks are under the Module 2 directory linked below.
 
 ## E5: RAG Modules 1-4
 
@@ -9,11 +9,13 @@ The modules record successive retrieval and evaluation stages. They are not four
 | Module | Available implementation and documentation |
 |---|---|
 | Module 1: exact retrieval prototype | [Notebook](../../../RAG/shroom_rag_e5_module1.ipynb), [Gemini trial variant](../../../RAG/shroom_rag_e5_module1_gemini_trial.ipynb) and [guide](../../../RAG/README_MODULE1.md) |
-| Module 2: retrieval and evaluation | [Retrieval notebook](../../../RAG/shroom_rag_e5_module2_retrieval.ipynb), [phase-B evaluation](../../../RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb), [holdout evaluation](../../../RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb) and [results](e5_rag/modules/module2/protocols/MODULE2_FINAL_RESULTS.md) |
+| Module 2: retrieval and evaluation | [Retrieval notebook](e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_retrieval.ipynb), [phase-B evaluation](e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_phase_b_evaluation.ipynb), [holdout evaluation](e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_holdout_evaluation.ipynb) and [results](e5_rag/modules/module2/protocols/MODULE2_FINAL_RESULTS.md) |
 | Module 3: diagnostic investigation | [Final diagnostic report](e5_rag/modules/module3/records/MODULE3_FINAL_RESULTS.md) and [initial failure audit](e5_rag/modules/module3/records/MODULE3_PHASE0_FAILURE_AUDIT.md) |
 | Module 4: external lexical evidence and feature fusion | [Static protocol report](../../../RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_REPORT.md), [lexicon builder](../../../RAG/scripts/module4_build_external_lexicon.py), [pinned feature builder](../../../RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py), [fusion evaluator](../../../RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py) and [results](../../../RAG/results/rag_module4/MODULE4_FINAL_RESULTS.md) |
 
 Module 3 closed as a diagnostic stage; no standalone final gated-RAG evaluation implementation was located. The original reports are retained without presenting that stage as a completed executable pipeline.
+
+Module 2 now uses explicit input, historical-evidence and external output roots. Saved results are historical; the adapted notebooks have not been rerun. See the [adapted execution notes](../../shared_tools/README.md#module-2-adapted-execution-context).
 
 ## E6: feature extensions
 
