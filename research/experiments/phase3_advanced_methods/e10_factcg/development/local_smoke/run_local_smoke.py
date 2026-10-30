@@ -15,7 +15,12 @@ import sys
 import threading
 import time
 
-HERE = Path(__file__).resolve().parent
+# Keep the original frozen inputs and run gates outside this source folder.
+# Unknown layouts fail before importing the package or entering main().
+HERE = next(parent / "RAG/results/phase3_e9_claim_verification/factcg_local_smoke"
+            for parent in Path(__file__).resolve().parents
+            if (parent / "research/shared_tools/canonical_execution_context.py").is_file()
+            and (parent / "project_records/current_layout/canonical_relocation_v1.json").is_file())
 GPU = HERE.parent / 'factcg_gpu'
 sys.path.insert(0, str(GPU))
 from factcg_common import MODEL, REVISION, require, sha, write, validate_inputs, digest

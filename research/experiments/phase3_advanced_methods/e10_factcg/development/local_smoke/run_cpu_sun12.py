@@ -15,7 +15,14 @@ import sys
 import threading
 import time
 
-HERE = Path(__file__).resolve().parent
+# Keep the original frozen inputs and run gates outside this source folder.
+# Unknown layouts fail before importing the package or entering main().
+HERE = next(parent / "RAG/results/phase3_e9_claim_verification/factcg_local_smoke"
+            for parent in Path(__file__).resolve().parents
+            if (parent / "research/shared_tools/canonical_execution_context.py").is_file()
+            and (parent / "project_records/current_layout/canonical_relocation_v1.json").is_file())
+# Only these read-only records follow the relocated source; cache/run gates do not.
+RECORDS = Path(__file__).resolve().parent
 GPU = HERE.parent / 'factcg_gpu'
 OUT = HERE / 'cpu_sun12'
 sys.path.insert(0, str(GPU))
@@ -35,7 +42,7 @@ def main():
     phase = 'input validation'
     try:
         m, rows = validate_inputs()
-        selection = json.loads((HERE / 'SELECTION_MANIFEST.json').read_text())
+        selection = json.loads((RECORDS / 'SELECTION_MANIFEST.json').read_text())
         require(selection['input_sha256'] == sha(GPU / 'factcg_inputs.jsonl'), 'selection input hash')
         by_id = {r['canonical_id']: r for r in rows}
         selected = [by_id[r['canonical_id']] for r in selection['samples']]
@@ -56,7 +63,7 @@ def main():
         report['leakage_status'] = 'PASS'
         report['leakage_justification'] = 'Existing label-blind 12-ID manifest and four-field hash-validated portable input only; no labels, p(Hallucination), previous predictions/correctness, folds, or official test data accessed.'
         report['reference_policy'] = m['reference_policy']
-        report['selection_manifest_sha256'] = sha(HERE / 'SELECTION_MANIFEST.json')
+        report['selection_manifest_sha256'] = sha(RECORDS / 'SELECTION_MANIFEST.json')
         import psutil
         proc = psutil.Process()
         available = psutil.virtual_memory()
@@ -97,7 +104,7 @@ def main():
         snapshot = Path(snapshot_download(repo_id=MODEL, revision=REVISION, cache_dir=str(cache),
                                           allow_patterns=names, max_workers=2))
         require(snapshot.name == REVISION, 'snapshot revision')
-        release = json.loads((HERE / 'CHECKPOINT_RELEASE_METADATA.json').read_text())
+        release = json.loads((RECORDS / 'CHECKPOINT_RELEASE_METADATA.json').read_text())
         require(release['revision'] == REVISION and release['model_id'] == MODEL, 'release metadata')
         require(sha(snapshot / 'model.safetensors') == release['file']['lfs']['oid'], 'safetensors SHA256')
         report['weights_sha256'] = release['file']['lfs']['oid']

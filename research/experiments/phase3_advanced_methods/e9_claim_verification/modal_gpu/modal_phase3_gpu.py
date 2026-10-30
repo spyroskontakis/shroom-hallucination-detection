@@ -15,7 +15,14 @@ import zipfile
 
 import modal
 
-HERE = Path(__file__).resolve().parent
+# Resolve the unchanged local assets independently of this relocated source.
+# In a Modal container without the checkout markers, preserve the original
+# __file__ fallback and the frozen REMOTE_PACKAGE_ROOT behavior.
+HERE = next((parent / "RAG/results/phase3_e9_claim_verification/modal_gpu"
+             for parent in Path(__file__).resolve().parents
+             if (parent / "research/shared_tools/canonical_execution_context.py").is_file()
+             and (parent / "project_records/current_layout/canonical_relocation_v1.json").is_file()),
+            Path(__file__).resolve().parent)
 REMOTE_PACKAGE_ROOT = "/opt/SHROOM/SHROOM2024/RAG/results/phase3_e9_claim_verification"
 SOURCE = (HERE.parent if (HERE.parent / "minicheck_gpu/minicheck_gpu_portable.zip").is_file()
           else Path(REMOTE_PACKAGE_ROOT))

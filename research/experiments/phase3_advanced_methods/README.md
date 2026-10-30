@@ -35,6 +35,8 @@ The sources depend on the [canonical pipeline](../../core_pipeline/README.md), o
 
 ## Current organization and checks
 
+The [Modal launcher](e9_claim_verification/modal_gpu/modal_phase3_gpu.py) and the FactCG [local smoke source](e10_factcg/development/local_smoke/run_local_smoke.py) and [CPU smoke source](e10_factcg/development/local_smoke/run_cpu_sun12.py) now live here. Their source-root bindings were adapted. The CPU smoke source also reads byte-identical [selection](e10_factcg/development/local_smoke/SELECTION_MANIFEST.json) and [checkpoint metadata](e10_factcg/development/local_smoke/CHECKPOINT_RELEASE_METADATA.json) records from its new folder. Scientific calculations, model/data asset locations, cache locations and existing run gates are unchanged. The [current source catalog](../../../project_records/current_layout/repository_sources_v3.json) records separate historical and adapted identities. These relocations do not isolate a new model run or authorize execution. The smoke imports and run gates were checked with isolated tests; no model or cloud job was run.
+
 Relocated records retain their original contents, results and historical paths. They document earlier runs; they are not live execution manifests. E9-A/E9-B, E10 development evaluation and retrospective official-test reconstruction, and the E11 variants remain separate.
 
 The [synthetic E10 input-audit tests](e10_factcg/retrospective_official_test/test_audit_data.py) load the single unchanged [audit implementation](../../../RAG/results/e10_official_test_v1/audit_data.py) using its reviewed public source identity and the existing H2-P0 path validator. Only the test loader was adapted. These tests use synthetic inputs and do not score the official test set.
