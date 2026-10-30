@@ -33,3 +33,7 @@ See [data access](DATA_ACCESS.md), [environments](ENVIRONMENTS.md) and [safe exe
 ## Node diagnostic-table authoring
 
 The [current Node source](../research/experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/build_csv.mjs) has explicit input, package-entry/hash and fresh external output arguments. It does no work at import. Its original CSV rendering fragment is retained; the saved authoring-check JSON remains historical evidence. No original row-level diagnostic data is included. Unit interface fixtures are not a native Workbook verification. The installed package required a native addon, which was denied by the strict offline probe. Do not relax native/process/worker permissions or claim a reproduced table from these checks. A future full authoring test needs separately reviewed package/native isolation and authentic inputs.
+
+## Relocated checksum evidence
+
+Two D/E checksum lists retain their exact original public bytes at their current research paths. The compatibility layer's read-only Catalog.checksum_evidence() requires a fully authenticated H1 snapshot for original neighboring paths. It reports source identity separately from the checksum comparisons: three public-safe JSON files still fail the recorded H0 hashes. Private preservation ledgers and missing inputs remain required for actual frozen replay. Observing an unchanged public-H1 metadata inventory is not a reconstruction or certification of those original ledgers.

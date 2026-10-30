@@ -18,7 +18,7 @@ import types
 
 VERSION = "shroom-repository-compatibility-v1"
 CATALOG = "project_records/current_layout/repository_compatibility_v1.json"
-CATALOG_SHA256 = "9bb962af545765121e1dad55709b48e309d5881e3c478e09369683b60dc9a8ef"
+CATALOG_SHA256 = "615e13463172f6898696d2c29dea271bd53fd38049250e2245de25bb6f17c092"
 SHARED = "research/shared_tools/canonical_execution_context.py"
 SHARED_SHA256 = "c668cce4282d6865373f50525fc78fb5a87b5be14463cc4fef3e93284b326247"
 CROSS = "research/shared_tools/cross_experiment_context_v1.py"
@@ -275,6 +275,53 @@ class Catalog:
                 bound.verify_sources()
                 for group in api.GROUPS: bound.expected_originals(group)
         return api, Bound()
+
+
+    def checksum_evidence(self, logical, *, historical):
+        """Read authenticated PUBLIC-H1 checksum evidence, never an H0 replay.
+
+        The exact raw lists are current-location artifacts, not active validators.
+        Required private ledgers and original inputs are not manufactured here.
+        Failed original checks remain explicit failures, with no current fallback.
+        """
+        allowed = {
+            "RAG/results/phase3_e11_task_adaptation/e11d_training/SHA256SUMS.txt":
+                "e340ee9154880d7191fa373bb3e69a453f0b3f7f4007bca5a99b54a3201ba027",
+            "RAG/results/phase3_e11_task_adaptation/e11e_training/SHA256SUMS.txt":
+                "8bbafb4bc099625c87469a0cab97bf5ec2bbd21ca2ec2a101e26ff42105b1a75",
+        }
+        if logical not in allowed:
+            raise ValueError("UNDECLARED_CHECKSUM_EVIDENCE")
+        if not isinstance(historical, Snapshot) or historical.catalog is not self or historical.name != "H1":
+            raise ValueError("EXPLICIT_AUTHENTICATED_H1_CONTEXT_REQUIRED")
+        raw = self.current(logical).read_bytes()
+        original = historical.source(logical).read_bytes()
+        if digest(raw) != allowed[logical] or raw != original:
+            raise ValueError("CHECKSUM_SOURCE_NOT_BYTE_IDENTICAL")
+        rows = []
+        names = set()
+        for line in raw.decode("utf-8").splitlines():
+            expected, name = line.split(None, 1)
+            self.shared.digest(expected)
+            name = self.shared.logical_path(name.strip())
+            if name in names:
+                raise ValueError("DUPLICATE_CHECKSUM_ENTRY")
+            names.add(name)
+            target = logical.rsplit("/", 1)[0] + "/" + name
+            # Never use a relocated/sanitized file as a missing H0 original.
+            path = historical.source(target)
+            actual = digest(path.read_bytes())
+            rows.append({"historical_target": target, "expected_h0_sha256": expected,
+                         "observed_public_h1_sha256": actual,
+                         "status": "PASS" if actual == expected else "FAIL"})
+        if not rows:
+            raise ValueError("EMPTY_CHECKSUM_EVIDENCE")
+        return {"mode": "CURRENT_EVIDENCE_FROM_AUTHENTICATED_H1",
+                "source_identity": "PASS", "current_path": self.entries[logical]["current"],
+                "historical_path": logical, "record_sha256": allowed[logical],
+                "historical_input_checks": "FAIL" if any(x["status"] != "PASS" for x in rows) else "PASS",
+                "checks": rows, "required_private_preservation_ledger": "NOT PROVIDED",
+                "runtime": "NOT VERIFIED", "scientific_execution": False}
 
 
 class Snapshot:

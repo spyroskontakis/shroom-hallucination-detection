@@ -216,6 +216,122 @@ class IdentityTests(unittest.TestCase):
             self.c.entries[old]["sha256"] = previous
 
 
+    def checksum(self, which="D"):
+        old = "RAG/results/phase3_e11_task_adaptation/e11"+which.lower()+"_training/SHA256SUMS.txt"
+        return self.c.checksum_evidence(old, historical=snapshot())
+
+    def test_D_checksum_source_identity_with_real_H0_failure(self):
+        result = self.checksum("D")
+        self.assertEqual(result["source_identity"], "PASS")
+        self.assertEqual(result["historical_input_checks"], "FAIL")
+        self.assertEqual([x["status"] for x in result["checks"]].count("FAIL"), 1)
+
+    def test_E_checksum_source_identity_with_real_H0_failures(self):
+        result = self.checksum("E")
+        self.assertEqual(result["source_identity"], "PASS")
+        self.assertEqual(result["historical_input_checks"], "FAIL")
+        self.assertEqual([x["status"] for x in result["checks"]].count("FAIL"), 2)
+
+    def test_checksum_current_location_is_explicit(self):
+        result = self.checksum("D")
+        self.assertEqual(ROOT/result["current_path"], self.c.current(result["historical_path"]))
+
+    def test_checksum_unknown_record_rejected(self):
+        with self.assertRaisesRegex(ValueError, "UNDECLARED_CHECKSUM_EVIDENCE"):
+            self.c.checksum_evidence("manifests/unknown.txt", historical=snapshot())
+
+    def test_checksum_prior_current_context_is_not_H1(self):
+        with self.assertRaisesRegex(ValueError, "EXPLICIT_AUTHENTICATED_H1_CONTEXT_REQUIRED"):
+            self.c.checksum_evidence("RAG/results/phase3_e11_task_adaptation/e11d_training/SHA256SUMS.txt",
+                                    historical=snapshot("P26"))
+
+    def test_checksum_wrong_catalog_snapshot_rejected(self):
+        other = API.Catalog(ROOT)
+        with self.assertRaisesRegex(ValueError, "EXPLICIT_AUTHENTICATED_H1_CONTEXT_REQUIRED"):
+            other.checksum_evidence("RAG/results/phase3_e11_task_adaptation/e11d_training/SHA256SUMS.txt",
+                                    historical=snapshot())
+
+    def test_checksum_current_record_tamper_rejected(self):
+        old = "RAG/results/phase3_e11_task_adaptation/e11d_training/SHA256SUMS.txt"
+        path = self.c.current(old)
+        read = Path.read_bytes
+        with patch.object(Path, "read_bytes", lambda p: b"changed" if p == path else read(p)):
+            with self.assertRaisesRegex(ValueError, "CURRENT_SOURCE_IDENTITY_MISMATCH"):
+                self.checksum()
+
+    def test_checksum_historical_neighbor_tamper_rejected(self):
+        path = snapshot().root/"RAG/results/phase3_e11_task_adaptation/e11d_training/E11D_RESULTS.json"
+        read = Path.read_bytes
+        with patch.object(Path, "read_bytes", lambda p: b"changed" if p == path else read(p)):
+            with self.assertRaisesRegex(ValueError, "HISTORICAL_SOURCE_IDENTITY_MISMATCH"):
+                self.checksum()
+
+    def test_checksum_missing_historical_neighbor_never_current_fallback(self):
+        original = API.Snapshot.source
+        def missing(obj, logical):
+            if logical.endswith("/E11D_RESULTS.json"):
+                raise FileNotFoundError("MISSING_REQUIRED_HISTORICAL_SOURCE")
+            return original(obj, logical)
+        with patch.object(API.Snapshot, "source", missing):
+            with self.assertRaisesRegex(FileNotFoundError, "MISSING_REQUIRED_HISTORICAL_SOURCE"):
+                self.checksum()
+
+    def test_checksum_private_preservation_is_not_synthesized(self):
+        with self.assertRaisesRegex(ValueError, "UNDECLARED_HISTORICAL_SOURCE"):
+            snapshot().source("RAG/results/phase3_e11_task_adaptation/e11d_training/private/PRESERVED_SHA256.json")
+
+    def test_checksum_evidence_has_no_execution_or_runtime_pass(self):
+        result = self.checksum()
+        self.assertFalse(result["scientific_execution"])
+        self.assertEqual(result["runtime"], "NOT VERIFIED")
+        self.assertEqual(result["required_private_preservation_ledger"], "NOT PROVIDED")
+
+    def frozen_inventory(self, which):
+        h = snapshot()
+        relative = "RAG/results/phase3_e11_task_adaptation/"+("e11d_training/prepare.py" if which == "D" else "e11e_training/e11e_common.py")
+        source = h.source(relative)
+        fn = next(n for n in ast.parse(source.read_bytes()).body
+                  if isinstance(n, ast.FunctionDef) and n.name == "protected_files")
+        e11 = h.root/"RAG/results/phase3_e11_task_adaptation"
+        helpers = h.source("RAG/results/phase3_e11_task_adaptation/scoring_common.py")
+        original_functions = [n for n in ast.parse(helpers.read_bytes()).body
+                              if isinstance(n, ast.FunctionDef)
+                              and n.name in ("sha_file", "find_local_repo_root")]
+        self.assertEqual(len(original_functions), 2)
+        ns = {"Path": Path, "hashlib": hashlib}
+        exec(compile(ast.Module(body=original_functions, type_ignores=[]), str(helpers), "exec"), ns)
+        actual_root = ns["find_local_repo_root"](e11)
+        self.assertEqual(actual_root, h.root)
+        ns.update(ROOT=actual_root, E11=e11, C=e11/"e11c_training", D=e11/"e11d_training")
+        exec(compile(ast.Module(body=[fn], type_ignores=[]), str(source), "exec"), ns)
+        return ns["protected_files"]()
+
+    def test_actual_D_frozen_reader_H1_namespace_fingerprint(self):
+        values = self.frozen_inventory("D")
+        self.assertEqual(len(values), 168)
+        self.assertEqual(digest(json.dumps(values, sort_keys=True).encode()),
+                         "c0c5b4607777f9eb49c2a6f47dd411e87bbab46a2e885a7c358b007923dee612")
+
+    def test_actual_E_frozen_reader_still_sees_D_original_list(self):
+        values = self.frozen_inventory("E")
+        self.assertEqual(len(values), 194)
+        self.assertEqual(values["RAG/results/phase3_e11_task_adaptation/e11d_training/SHA256SUMS.txt"],
+                         self.checksum("D")["record_sha256"])
+        self.assertEqual(digest(json.dumps(values, sort_keys=True).encode()),
+                         "2ae50853449fccf7332aec040861489bd51278f87ec5025f465bad173bdc233e")
+
+    def test_actual_historical_finalization_run_marker_stays_closed(self):
+        h = snapshot()
+        source = h.source("RAG/results/phase3_e11_task_adaptation/e11_finalization/finalize.py")
+        main = next(n for n in ast.parse(source.read_bytes()).body
+                    if isinstance(n, ast.FunctionDef) and n.name == "main")
+        def require(ok, message):
+            if not ok: raise ValueError(message)
+        ns = {"E11": h.root/"RAG/results/phase3_e11_task_adaptation", "require": require}
+        with self.assertRaisesRegex(ValueError, "final artifacts already exist"):
+            exec(compile(ast.Module(body=main.body[:2], type_ignores=[]), str(source), "exec"), ns)
+
+
 class LibraryCases:
     def setUp(self):
         self.c = catalog()

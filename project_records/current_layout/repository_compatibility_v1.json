@@ -15537,12 +15537,12 @@
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11d_training/SHA256SUMS.txt",
-      "current": "RAG/results/phase3_e11_task_adaptation/e11d_training/SHA256SUMS.txt",
+      "current": "research/experiments/phase3_advanced_methods/e11_transformer_finetuning/e11d_training/SHA256SUMS.txt",
       "h1_sha256": "e340ee9154880d7191fa373bb3e69a453f0b3f7f4007bca5a99b54a3201ba027",
       "h1_blob": "e9ce242bbf8ed21dbf9c7f0513d9c9d395785285",
       "sha256": "e340ee9154880d7191fa373bb3e69a453f0b3f7f4007bca5a99b54a3201ba027",
       "bytes": 436,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11d_training/contrastive.py",
@@ -15789,12 +15789,12 @@
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11e_training/SHA256SUMS.txt",
-      "current": "RAG/results/phase3_e11_task_adaptation/e11e_training/SHA256SUMS.txt",
+      "current": "research/experiments/phase3_advanced_methods/e11_transformer_finetuning/e11e_training/SHA256SUMS.txt",
       "h1_sha256": "8bbafb4bc099625c87469a0cab97bf5ec2bbd21ca2ec2a101e26ff42105b1a75",
       "h1_blob": "68c1192020d95f8380709f86eb912e0bbcff5b1a",
       "sha256": "8bbafb4bc099625c87469a0cab97bf5ec2bbd21ca2ec2a101e26ff42105b1a75",
       "bytes": 525,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11e_training/contrastive.py",
