@@ -19,7 +19,7 @@ Module 1 is physically organized under its module directory. The two notebooks a
 
 Module 2 now uses explicit input, historical-evidence and external output roots. Saved results are historical; the adapted notebooks have not been rerun. See the [adapted execution notes](../../shared_tools/README.md#module-2-adapted-execution-context).
 
-Some Module 4 protocol records and publication-safe aggregate records from E6, E7 and E8 have been relocated under this research hierarchy. The frozen executable pipelines and their required runtime metadata remain at their existing RAG paths. The relocated inventories retain historical paths and hashes; they are not current execution manifests. The [E6-v3 publication guide](../../../docs/reproducibility/e6/E6_V3_REPRODUCIBILITY.md) and [MPNet source-provenance tests](e5_rag/modules/module4/variants/continuation_v1/mpnet_provenance_v2/tests/test_mpnet_provenance_static.py) are available at their current locations. Do not rerun historical writers to recreate files at old paths. These moves do not establish full runtime reproducibility.
+Some Module 4 protocol records and publication-safe aggregate records from E6, E7 and E8 have been relocated under this research hierarchy. The other frozen executable pipelines and their required runtime metadata remain at their existing RAG paths. E6-v4 has a separate current-layout context described below. The relocated inventories retain historical paths and hashes; they are not current execution manifests. The [E6-v3 publication guide](../../../docs/reproducibility/e6/E6_V3_REPRODUCIBILITY.md) and [MPNet source-provenance tests](e5_rag/modules/module4/variants/continuation_v1/mpnet_provenance_v2/tests/test_mpnet_provenance_static.py) are available at their current locations. Do not rerun historical writers to recreate files at old paths. These moves do not establish full runtime reproducibility.
 
 ## E6: feature extensions
 
@@ -28,7 +28,17 @@ Some Module 4 protocol records and publication-safe aggregate records from E6, E
 | E6-v1 | Additional comparisons with retrieved definitions | [Protocol](../../../RAG/results/rag_e6_v1/E6_PROTOCOL.md), [results](../../../RAG/results/rag_e6_v1/E6_RESULTS.md) |
 | E6-v2 | A second NLI evaluator | [Protocol](../../../RAG/results/rag_e6_v2/E6_V2_PROTOCOL.md), [results](../../../RAG/results/rag_e6_v2/E6_V2_RESULTS.md) |
 | E6-v3 | HHEM consistency features | [Protocol](../../../RAG/results/rag_e6_v3/E6_V3_PROTOCOL.md), [results](../../../RAG/results/rag_e6_v3/E6_V3_RESULTS.md), [implementation helpers](../../../RAG/results/rag_e6_v3/scripts/v3_common.py) |
-| E6-v4 | BERTScore and structural features | [Protocol](../../../RAG/results/rag_e6_v4/E6_V4_PROTOCOL.md), [compatibility amendment](../../../RAG/results/rag_e6_v4/E6_V4_PROTOCOL_AMENDMENT_01.md), [results](../../../RAG/results/rag_e6_v4/E6_V4_RESULTS.md) |
+| E6-v4 | BERTScore and structural features | [Protocol](e6_feature_extensions/v4/protocols/E6_V4_PROTOCOL.md), [compatibility amendment](e6_feature_extensions/v4/protocols/E6_V4_PROTOCOL_AMENDMENT_01.md), [results](e6_feature_extensions/v4/results/reports/E6_V4_RESULTS.md) |
+
+### E6-v4: current layout and historical execution
+
+E6-v4 sources, protocols and records are now partly organized under this version's research directory. Six historical CLI sources and the vendored BERTScore package remain at their original paths to preserve protected links and external consumers. Their content has not changed.
+
+The [versioned H2 adapter](e6_feature_extensions/v4/verification/h2_adapter_v1.py) and [source contract](e6_feature_extensions/v4/configs/current_layout_h2_v1.json) provide an explicit current-layout context. The adapter derives reviewed IO/root/import views in memory from the exact raw sources; it does not replace the historical sources or their frozen hashes. The contract records both raw and derived identities. Use the adapter's default plan mode with an independently verified contract SHA-256 for source checks. Direct historical commands are not validated instructions for the new layout.
+
+The [offline tests](e6_feature_extensions/v4/tests/test_h2_context.py) cover source lineage, path resolution, library imports and synthetic IO, including failure cases. Real execution needs separately approved, hash-verified original evidence, model assets and external run/temp roots. Missing or changed originals must fail before model loading or writes. Historical records are not inputs that may silently substitute for a fresh run's missing outputs.
+
+The [original Git snapshot](https://github.com/spyroskontakis/shroom-hallucination-detection/tree/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v4) remains the reference for historical locations. No model execution or numerical reproduction was performed for this migration. Full runtime reproducibility remains NOT VERIFIED.
 
 ## E7 and E8
 
