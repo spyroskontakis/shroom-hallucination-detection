@@ -1,6 +1,6 @@
 # Research Guide
 
-This guide connects the thesis methodology to the code, protocols and recorded results. Most research code remains in `codex/` and `RAG/` to preserve existing paths and experimental provenance. The pages below are navigation indexes, not relocated pipelines.
+This guide connects the thesis methodology to code, protocols and recorded results. The repository combines relocated implementations under research/ with protected historical paths under codex/ and RAG/. Each page distinguishes current entry points, unchanged historical sources and records; a source link alone does not certify runtime reproduction.
 
 | Area | What to explore |
 |---|---|

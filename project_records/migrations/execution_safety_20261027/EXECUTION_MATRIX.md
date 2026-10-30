@@ -89,7 +89,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/canonical_evaluation_data_prep.py](<../../../codex/canonical_evaluation_data_prep.py>)
+- [codex/canonical_evaluation_data_prep.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/canonical_evaluation_data_prep.py>)
 
 **Required inputs:** `codex/data/Trial/SHROOM_trial-v1.1/trial-v1.json`; `Dev/SHROOM_dev-v2/val.model-agnostic.json`; `codex/data/Labeled test/SHROOM_test-labeled/test.model-agnostic.json`; `codex/data/Unlabeled train/SHROOM_unlabeled-training-data-v2/train.model-agnostic.json`; `codex/data/6. Feature Extraction on Augmented Training Data/filtered_synthetic_data_balanced.csv`.
 
@@ -121,7 +121,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/canonical_feature_extraction.py](<../../../codex/canonical_feature_extraction.py>)
+- [codex/canonical_feature_extraction.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/canonical_feature_extraction.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_synthetic_diagnostic_manifest.csv`; `Original trial-feature compatibility input`.
 
@@ -153,7 +153,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/canonical_development_cv.py](<../../../codex/canonical_development_cv.py>)
+- [codex/canonical_development_cv.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/canonical_development_cv.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_feature_outputs/canonical_human_14_features.csv`; `codex/canonical_feature_outputs/canonical_synthetic_14_features.csv`; `Feature metadata and original compatibility rows`.
 
@@ -185,7 +185,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/regenerate_canonical_folds_sklearn.py](<../../../codex/regenerate_canonical_folds_sklearn.py>)
+- [codex/regenerate_canonical_folds_sklearn.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/regenerate_canonical_folds_sklearn.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`.
 
@@ -217,7 +217,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/prompt6_development_eda.py](<../../../codex/prompt6_development_eda.py>)
+- [codex/prompt6_development_eda.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/prompt6_development_eda.py>)
 
 **Required inputs:** `Original agnostic and aware development JSONs`.
 
@@ -247,7 +247,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/shroom_ensemble.ipynb](<../../../RAG/shroom_ensemble.ipynb>)
+- [RAG/shroom_ensemble.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_ensemble.ipynb>)
 
 **Required inputs:** `Historical development/features and prior in-memory cells; Colab variant needs supplied feature CSV`.
 
@@ -307,7 +307,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb](<../../../codex/data/2.%20EDA/shroom_final_implementation/shroom_ensemble.ipynb>)
+- [codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/data/2.%20EDA/shroom_final_implementation/shroom_ensemble.ipynb>)
 
 **Required inputs:** `Historical development/features and prior in-memory cells; Colab variant needs supplied feature CSV`.
 
@@ -337,7 +337,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb](<../../../codex/data/2.%20EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb>)
+- [codex/data/2. EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/data/2.%20EDA/shroom_final_implementation/shroom_ensemble_colab.ipynb>)
 
 **Required inputs:** `Historical development/features and prior in-memory cells; Colab variant needs supplied feature CSV`.
 
@@ -367,7 +367,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/data/shroom_ensemble.ipynb](<../../../codex/data/shroom_ensemble.ipynb>)
+- [codex/data/shroom_ensemble.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/data/shroom_ensemble.ipynb>)
 
 **Required inputs:** `Historical development/features and prior in-memory cells; Colab variant needs supplied feature CSV`.
 
@@ -397,7 +397,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<../../../codex/data/5.%20Augmentation/5%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
+- [codex/data/5. Augmentation/5 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/data/5.%20Augmentation/5%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
 
 **Required inputs:** `Original data/features and prior notebook state`.
 
@@ -427,7 +427,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<../../../codex/data/5.%20Augmentation/20%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
+- [codex/data/5. Augmentation/20 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/data/5.%20Augmentation/20%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
 
 **Required inputs:** `Original data/features and prior notebook state`.
 
@@ -457,7 +457,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<../../../codex/data/5.%20Augmentation/50%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
+- [codex/data/5. Augmentation/50 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/data/5.%20Augmentation/50%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
 
 **Required inputs:** `Original data/features and prior notebook state`.
 
@@ -487,7 +487,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<../../../codex/data/5.%20Augmentation/200%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
+- [codex/data/5. Augmentation/200 samples - augmentation_outputs_vertex/shroom_ensemble.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/data/5.%20Augmentation/200%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb>)
 
 **Required inputs:** `Original data/features and prior notebook state`.
 
@@ -609,7 +609,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/shroom_rag_e5_module2_retrieval.ipynb](<../../../RAG/shroom_rag_e5_module2_retrieval.ipynb>)
+- [RAG/shroom_rag_e5_module2_retrieval.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module2_retrieval.ipynb>)
 
 **Required inputs:** `Original source pool, Module1 cache, frozen ranking/dense cache and stage-appropriate human annotations`.
 
@@ -639,7 +639,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb](<../../../RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb>)
+- [RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb>)
 
 **Required inputs:** `Original source pool, Module1 cache, frozen ranking/dense cache and stage-appropriate human annotations`.
 
@@ -669,7 +669,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb](<../../../RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb>)
+- [RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb>)
 
 **Required inputs:** `Original source pool, Module1 cache, frozen ranking/dense cache and stage-appropriate human annotations`.
 
@@ -726,7 +726,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/scripts/module4_build_external_lexicon.py](<../../../RAG/scripts/module4_build_external_lexicon.py>)
+- [RAG/scripts/module4_build_external_lexicon.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/scripts/module4_build_external_lexicon.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Original raw WordNet/Wiktionary assets for offline build`.
 
@@ -758,7 +758,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/scripts/module4_build_external_lexicon.py](<../../../RAG/scripts/module4_build_external_lexicon.py>)
+- [RAG/scripts/module4_build_external_lexicon.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/scripts/module4_build_external_lexicon.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Original raw WordNet/Wiktionary assets for offline build`.
 
@@ -790,7 +790,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/scripts/module4_build_external_lexicon.py](<../../../RAG/scripts/module4_build_external_lexicon.py>)
+- [RAG/scripts/module4_build_external_lexicon.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/scripts/module4_build_external_lexicon.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Original raw WordNet/Wiktionary assets for offline build`.
 
@@ -822,7 +822,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_schannel_acquire.py](<../../../RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_schannel_acquire.py>)
+- [RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_schannel_acquire.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_schannel_acquire.py>)
 
 **Required inputs:** `Locked term manifest/raw inputs`.
 
@@ -854,8 +854,8 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py](<../../../RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py>)
-- [RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py](<../../../RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py>)
+- [RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py>)
+- [RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_feature_outputs/canonical_human_14_features.csv`; `codex/canonical_feature_outputs/canonical_synthetic_14_features.csv`; `Original lexical snapshot/ranking/pinned inputs`.
 
@@ -890,7 +890,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** CANDIDATE_FOR_FUTURE_TEST; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/module4_release_v1/verify_module4.py](<../../../RAG/module4_release_v1/verify_module4.py>)
+- [RAG/module4_release_v1/verify_module4.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/module4_release_v1/verify_module4.py>)
 
 **Required inputs:** `RELEASE_MANIFEST.json and selected public sources`.
 
@@ -920,11 +920,11 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e6_v1/scripts/preflight.py](<../../../RAG/results/rag_e6_v1/scripts/preflight.py>)
-- [RAG/results/rag_e6_v1/scripts/prepare_run.py](<../../../RAG/results/rag_e6_v1/scripts/prepare_run.py>)
-- [RAG/results/rag_e6_v1/scripts/build_features.py](<../../../RAG/results/rag_e6_v1/scripts/build_features.py>)
-- [RAG/results/rag_e6_v1/scripts/evaluate_e6.py](<../../../RAG/results/rag_e6_v1/scripts/evaluate_e6.py>)
-- [RAG/results/rag_e6_v1/scripts/report_e6.py](<../../../RAG/results/rag_e6_v1/scripts/report_e6.py>)
+- [RAG/results/rag_e6_v1/scripts/preflight.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v1/scripts/preflight.py>)
+- [RAG/results/rag_e6_v1/scripts/prepare_run.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v1/scripts/prepare_run.py>)
+- [RAG/results/rag_e6_v1/scripts/build_features.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v1/scripts/build_features.py>)
+- [RAG/results/rag_e6_v1/scripts/evaluate_e6.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v1/scripts/evaluate_e6.py>)
+- [RAG/results/rag_e6_v1/scripts/report_e6.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v1/scripts/report_e6.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_feature_outputs/canonical_human_14_features.csv`; `codex/canonical_feature_outputs/canonical_synthetic_14_features.csv`; `Module4 artifacts and preceding-version matrices/OOF as applicable`.
 
@@ -968,10 +968,10 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e6_v2/scripts/prepare_inputs.py](<../../../RAG/results/rag_e6_v2/scripts/prepare_inputs.py>)
-- [RAG/results/rag_e6_v2/scripts/extract_features.py](<../../../RAG/results/rag_e6_v2/scripts/extract_features.py>)
-- [RAG/results/rag_e6_v2/scripts/evaluate_v2.py](<../../../RAG/results/rag_e6_v2/scripts/evaluate_v2.py>)
-- [RAG/results/rag_e6_v2/scripts/report_v2.py](<../../../RAG/results/rag_e6_v2/scripts/report_v2.py>)
+- [RAG/results/rag_e6_v2/scripts/prepare_inputs.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v2/scripts/prepare_inputs.py>)
+- [RAG/results/rag_e6_v2/scripts/extract_features.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v2/scripts/extract_features.py>)
+- [RAG/results/rag_e6_v2/scripts/evaluate_v2.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v2/scripts/evaluate_v2.py>)
+- [RAG/results/rag_e6_v2/scripts/report_v2.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v2/scripts/report_v2.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_feature_outputs/canonical_human_14_features.csv`; `codex/canonical_feature_outputs/canonical_synthetic_14_features.csv`; `Module4 artifacts and preceding-version matrices/OOF as applicable`.
 
@@ -1012,10 +1012,10 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e6_v3/scripts/prepare_inputs.py](<../../../RAG/results/rag_e6_v3/scripts/prepare_inputs.py>)
-- [RAG/results/rag_e6_v3/scripts/extract_features.py](<../../../RAG/results/rag_e6_v3/scripts/extract_features.py>)
-- [RAG/results/rag_e6_v3/scripts/evaluate_v3.py](<../../../RAG/results/rag_e6_v3/scripts/evaluate_v3.py>)
-- [RAG/results/rag_e6_v3/scripts/report_v3.py](<../../../RAG/results/rag_e6_v3/scripts/report_v3.py>)
+- [RAG/results/rag_e6_v3/scripts/prepare_inputs.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v3/scripts/prepare_inputs.py>)
+- [RAG/results/rag_e6_v3/scripts/extract_features.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v3/scripts/extract_features.py>)
+- [RAG/results/rag_e6_v3/scripts/evaluate_v3.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v3/scripts/evaluate_v3.py>)
+- [RAG/results/rag_e6_v3/scripts/report_v3.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v3/scripts/report_v3.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_feature_outputs/canonical_human_14_features.csv`; `codex/canonical_feature_outputs/canonical_synthetic_14_features.csv`; `Module4 artifacts and preceding-version matrices/OOF as applicable`.
 
@@ -1056,9 +1056,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e6_v2/scripts/acquire_model.py](<../../../RAG/results/rag_e6_v2/scripts/acquire_model.py>)
-- [RAG/results/rag_e6_v3/scripts/bootstrap_sources.py](<../../../RAG/results/rag_e6_v3/scripts/bootstrap_sources.py>)
-- [RAG/results/rag_e6_v3/scripts/record_acquisition.py](<../../../RAG/results/rag_e6_v3/scripts/record_acquisition.py>)
+- [RAG/results/rag_e6_v2/scripts/acquire_model.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v2/scripts/acquire_model.py>)
+- [RAG/results/rag_e6_v3/scripts/bootstrap_sources.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v3/scripts/bootstrap_sources.py>)
+- [RAG/results/rag_e6_v3/scripts/record_acquisition.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v3/scripts/record_acquisition.py>)
 
 **Required inputs:** `Pinned upstream identities/acquisition prerequisites`.
 
@@ -1096,8 +1096,8 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e6_v4/compatibility_analysis/reproduce_minimal.py](<../../../RAG/results/rag_e6_v4/compatibility_analysis/reproduce_minimal.py>)
-- [RAG/results/rag_e6_v4/scripts/check_compatibility.py](<../../../RAG/results/rag_e6_v4/scripts/check_compatibility.py>)
+- [RAG/results/rag_e6_v4/compatibility_analysis/reproduce_minimal.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v4/compatibility_analysis/reproduce_minimal.py>)
+- [RAG/results/rag_e6_v4/scripts/check_compatibility.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v4/scripts/check_compatibility.py>)
 
 **Required inputs:** `Historical compatibility assets and original diagnostics`.
 
@@ -1130,10 +1130,10 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e6_v4/execution/extract.py](<../../../RAG/results/rag_e6_v4/execution/extract.py>)
-- [RAG/results/rag_e6_v4/execution/evaluate.py](<../../../RAG/results/rag_e6_v4/execution/evaluate.py>)
-- [RAG/results/rag_e6_v4/execution/freeze.py](<../../../RAG/results/rag_e6_v4/execution/freeze.py>)
-- [RAG/results/rag_e6_v4/execution/report.py](<../../../RAG/results/rag_e6_v4/execution/report.py>)
+- [RAG/results/rag_e6_v4/execution/extract.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v4/execution/extract.py>)
+- [RAG/results/rag_e6_v4/execution/evaluate.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v4/execution/evaluate.py>)
+- [RAG/results/rag_e6_v4/execution/freeze.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v4/execution/freeze.py>)
+- [RAG/results/rag_e6_v4/execution/report.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e6_v4/execution/report.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `E6-v3 matrix/OOF, original compatibility/model/freeze inputs`.
 
@@ -1174,10 +1174,10 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e7_agentic_v1/scripts/preflight.py](<../../../RAG/results/rag_e7_agentic_v1/scripts/preflight.py>)
-- [RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py](<../../../RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py>)
-- [RAG/results/rag_e7_agentic_v1/scripts/evaluate_e7.py](<../../../RAG/results/rag_e7_agentic_v1/scripts/evaluate_e7.py>)
-- [RAG/results/rag_e7_agentic_v1/scripts/report_e7.py](<../../../RAG/results/rag_e7_agentic_v1/scripts/report_e7.py>)
+- [RAG/results/rag_e7_agentic_v1/scripts/preflight.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e7_agentic_v1/scripts/preflight.py>)
+- [RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e7_agentic_v1/scripts/prepare_evaluation.py>)
+- [RAG/results/rag_e7_agentic_v1/scripts/evaluate_e7.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e7_agentic_v1/scripts/evaluate_e7.py>)
+- [RAG/results/rag_e7_agentic_v1/scripts/report_e7.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e7_agentic_v1/scripts/report_e7.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_feature_outputs/canonical_human_14_features.csv`; `codex/canonical_feature_outputs/canonical_synthetic_14_features.csv`; `E6-v1 matrix/ranking and Module4 artifacts`.
 
@@ -1218,10 +1218,10 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e8_rf_tuning_v1/scripts/prepare_e8.py](<../../../RAG/results/rag_e8_rf_tuning_v1/scripts/prepare_e8.py>)
-- [RAG/results/rag_e8_rf_tuning_v1/scripts/evaluate_e8.py](<../../../RAG/results/rag_e8_rf_tuning_v1/scripts/evaluate_e8.py>)
-- [RAG/results/rag_e8_rf_tuning_v1/scripts/nested_rf.py](<../../../RAG/results/rag_e8_rf_tuning_v1/scripts/nested_rf.py>)
-- [RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8_render_fixed.py](<../../../RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8_render_fixed.py>)
+- [RAG/results/rag_e8_rf_tuning_v1/scripts/prepare_e8.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e8_rf_tuning_v1/scripts/prepare_e8.py>)
+- [RAG/results/rag_e8_rf_tuning_v1/scripts/evaluate_e8.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e8_rf_tuning_v1/scripts/evaluate_e8.py>)
+- [RAG/results/rag_e8_rf_tuning_v1/scripts/nested_rf.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e8_rf_tuning_v1/scripts/nested_rf.py>)
+- [RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8_render_fixed.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8_render_fixed.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `codex/canonical_feature_outputs/canonical_human_14_features.csv`; `codex/canonical_feature_outputs/canonical_synthetic_14_features.csv`; `E6-v1 matrix/ranking and Module4 artifacts`.
 
@@ -1261,7 +1261,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8.py](<../../../RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8.py>)
+- [RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/rag_e8_rf_tuning_v1/scripts/report_e8.py>)
 
 **Required inputs:** `Original report inputs`.
 
@@ -1289,8 +1289,8 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e9_claim_verification/scripts/verify_baseline.py](<../../../RAG/results/phase3_e9_claim_verification/scripts/verify_baseline.py>)
-- [RAG/results/phase3_e9_claim_verification/scripts/prepare.py](<../../../RAG/results/phase3_e9_claim_verification/scripts/prepare.py>)
+- [RAG/results/phase3_e9_claim_verification/scripts/verify_baseline.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/scripts/verify_baseline.py>)
+- [RAG/results/phase3_e9_claim_verification/scripts/prepare.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/scripts/prepare.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `E6-v2/v3 matrices, OOF/baseline provenance`.
 
@@ -1325,8 +1325,8 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py](<../../../RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py>)
-- [RAG/results/phase3_e9_claim_verification/scripts/decomposer.py](<../../../RAG/results/phase3_e9_claim_verification/scripts/decomposer.py>)
+- [RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/scripts/run_decomposition.py>)
+- [RAG/results/phase3_e9_claim_verification/scripts/decomposer.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/scripts/decomposer.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Frozen hyp-only prompt/input selection`.
 
@@ -1361,9 +1361,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e9_claim_verification/scripts/nli_features.py](<../../../RAG/results/phase3_e9_claim_verification/scripts/nli_features.py>)
-- [RAG/results/phase3_e9_claim_verification/scripts/evaluate.py](<../../../RAG/results/phase3_e9_claim_verification/scripts/evaluate.py>)
-- [RAG/results/phase3_e9_claim_verification/scripts/report_completed.py](<../../../RAG/results/phase3_e9_claim_verification/scripts/report_completed.py>)
+- [RAG/results/phase3_e9_claim_verification/scripts/nli_features.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/scripts/nli_features.py>)
+- [RAG/results/phase3_e9_claim_verification/scripts/evaluate.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/scripts/evaluate.py>)
+- [RAG/results/phase3_e9_claim_verification/scripts/report_completed.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/scripts/report_completed.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Original claims/scores and E6 baselines`.
 
@@ -1401,9 +1401,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py](<../../../RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py>)
-- [RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py](<../../../RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py>)
-- [RAG/results/phase3_e9_claim_verification/minicheck_gpu/return_to_local.py](<../../../RAG/results/phase3_e9_claim_verification/minicheck_gpu/return_to_local.py>)
+- [RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py>)
+- [RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/minicheck_gpu/prepare_gpu_inputs.py>)
+- [RAG/results/phase3_e9_claim_verification/minicheck_gpu/return_to_local.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/minicheck_gpu/return_to_local.py>)
 
 **Required inputs:** `Original claim/reference bundle, model and returned-score manifests`.
 
@@ -1439,9 +1439,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e9_claim_verification/factcg_gpu/run_factcg_gpu.py](<../../../RAG/results/phase3_e9_claim_verification/factcg_gpu/run_factcg_gpu.py>)
-- [RAG/results/phase3_e9_claim_verification/factcg_gpu/return_to_local.py](<../../../RAG/results/phase3_e9_claim_verification/factcg_gpu/return_to_local.py>)
-- [RAG/results/phase3_e9_claim_verification/factcg_gpu/evaluate_e10.py](<../../../RAG/results/phase3_e9_claim_verification/factcg_gpu/evaluate_e10.py>)
+- [RAG/results/phase3_e9_claim_verification/factcg_gpu/run_factcg_gpu.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/factcg_gpu/run_factcg_gpu.py>)
+- [RAG/results/phase3_e9_claim_verification/factcg_gpu/return_to_local.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/factcg_gpu/return_to_local.py>)
+- [RAG/results/phase3_e9_claim_verification/factcg_gpu/evaluate_e10.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/factcg_gpu/evaluate_e10.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Whole-hypothesis/reference rows, frozen36 baseline, original FactCG returns`.
 
@@ -1479,9 +1479,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/e10_official_test_v1/reconstructed_v1/reconstruct.py](<../../../RAG/results/e10_official_test_v1/reconstructed_v1/reconstruct.py>)
-- [RAG/results/e10_official_test_v1/reconstructed_v1/extract_cpu.py](<../../../RAG/results/e10_official_test_v1/reconstructed_v1/extract_cpu.py>)
-- [RAG/results/e10_official_test_v1/reconstructed_v1/predict_and_score.py](<../../../RAG/results/e10_official_test_v1/reconstructed_v1/predict_and_score.py>)
+- [RAG/results/e10_official_test_v1/reconstructed_v1/reconstruct.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/e10_official_test_v1/reconstructed_v1/reconstruct.py>)
+- [RAG/results/e10_official_test_v1/reconstructed_v1/extract_cpu.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/e10_official_test_v1/reconstructed_v1/extract_cpu.py>)
+- [RAG/results/e10_official_test_v1/reconstructed_v1/predict_and_score.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/e10_official_test_v1/reconstructed_v1/predict_and_score.py>)
 
 **Required inputs:** `Original official test rows, canonical/E6-v3 training artifacts, original/reconstructed lexical payloads and staged returns`.
 
@@ -1517,8 +1517,8 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/e11a_prepare_data.py](<../../../RAG/results/phase3_e11_task_adaptation/e11a_prepare_data.py>)
-- [RAG/results/phase3_e11_task_adaptation/validate_e11a_protocol.py](<../../../RAG/results/phase3_e11_task_adaptation/validate_e11a_protocol.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11a_prepare_data.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11a_prepare_data.py>)
+- [RAG/results/phase3_e11_task_adaptation/validate_e11a_protocol.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/validate_e11a_protocol.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `E11A_TRAINING_PROTOCOL.json`.
 
@@ -1553,7 +1553,7 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py](<../../../RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11a_train_fold.py>)
 
 **Required inputs:** `Original prepared bundle, local pinned encoder and protocol`.
 
@@ -1583,10 +1583,10 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py](<../../../RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py>)
-- [RAG/results/phase3_e11_task_adaptation/prepare_scoring_inputs.py](<../../../RAG/results/phase3_e11_task_adaptation/prepare_scoring_inputs.py>)
-- [RAG/results/phase3_e11_task_adaptation/run_detector.py](<../../../RAG/results/phase3_e11_task_adaptation/run_detector.py>)
-- [RAG/results/phase3_e11_task_adaptation/run_teacher_stage.py](<../../../RAG/results/phase3_e11_task_adaptation/run_teacher_stage.py>)
+- [RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/validate_teacher_protocol.py>)
+- [RAG/results/phase3_e11_task_adaptation/prepare_scoring_inputs.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/prepare_scoring_inputs.py>)
+- [RAG/results/phase3_e11_task_adaptation/run_detector.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/run_detector.py>)
+- [RAG/results/phase3_e11_task_adaptation/run_teacher_stage.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/run_teacher_stage.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Unlabeled rows, original detector assets and scoring returns`.
 
@@ -1627,9 +1627,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/e11c/e11c_production.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c/e11c_production.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11c/e11c_batch.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c/e11c_batch.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11c/run_azure_alternate_rescue.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c/run_azure_alternate_rescue.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c/e11c_production.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c/e11c_production.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c/e11c_batch.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c/e11c_batch.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c/run_azure_alternate_rescue.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c/run_azure_alternate_rescue.py>)
 
 **Required inputs:** `Original master rows, protocol, request/batch ledgers and separately approved credentials`.
 
@@ -1665,9 +1665,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/e11c_training/prepare_training.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c_training/prepare_training.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11c_training/train_stages.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c_training/train_stages.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c_training/prepare_training.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c_training/prepare_training.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c_training/train_stages.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c_training/train_stages.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c_training/evaluate_training.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Original private bundles, authoritative labels/stage subsets, model and returned prediction/checkpoint data`.
 
@@ -1705,9 +1705,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/e11d_training/prepare.py](<../../../RAG/results/phase3_e11_task_adaptation/e11d_training/prepare.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11d_training/train_fold.py](<../../../RAG/results/phase3_e11_task_adaptation/e11d_training/train_fold.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11d_training/evaluate.py](<../../../RAG/results/phase3_e11_task_adaptation/e11d_training/evaluate.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11d_training/prepare.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11d_training/prepare.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11d_training/train_fold.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11d_training/train_fold.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11d_training/evaluate.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11d_training/evaluate.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Original private bundles, authoritative labels/stage subsets, model and returned prediction/checkpoint data`.
 
@@ -1745,9 +1745,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/e11e_training/prepare.py](<../../../RAG/results/phase3_e11_task_adaptation/e11e_training/prepare.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11e_training/train_stages.py](<../../../RAG/results/phase3_e11_task_adaptation/e11e_training/train_stages.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11e_training/evaluate.py](<../../../RAG/results/phase3_e11_task_adaptation/e11e_training/evaluate.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11e_training/prepare.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11e_training/prepare.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11e_training/train_stages.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11e_training/train_stages.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11e_training/evaluate.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11e_training/evaluate.py>)
 
 **Required inputs:** `codex/canonical_human_development_manifest.csv`; `codex/canonical_fold_assignments.csv`; `Original private bundles, authoritative labels/stage subsets, model and returned prediction/checkpoint data`.
 
@@ -1785,16 +1785,16 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** STATIC_ONLY; BLOCKED_PROVENANCE; BLOCKED_MISSING_INPUTS. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/results/phase3_e11_task_adaptation/download_scoring_outputs.py](<../../../RAG/results/phase3_e11_task_adaptation/download_scoring_outputs.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11a_modal.py](<../../../RAG/results/phase3_e11_task_adaptation/e11a_modal.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11_modal.py](<../../../RAG/results/phase3_e11_task_adaptation/e11_modal.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11a_results/download_checkpoint_blocks.py](<../../../RAG/results/phase3_e11_task_adaptation/e11a_results/download_checkpoint_blocks.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11c_training/modal_training.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c_training/modal_training.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11c_training/verify_saved_checkpoints.py](<../../../RAG/results/phase3_e11_task_adaptation/e11c_training/verify_saved_checkpoints.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11d_training/modal_training.py](<../../../RAG/results/phase3_e11_task_adaptation/e11d_training/modal_training.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11d_training/verify_saved_checkpoints.py](<../../../RAG/results/phase3_e11_task_adaptation/e11d_training/verify_saved_checkpoints.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11e_training/modal_training.py](<../../../RAG/results/phase3_e11_task_adaptation/e11e_training/modal_training.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11e_training/verify_saved_checkpoints.py](<../../../RAG/results/phase3_e11_task_adaptation/e11e_training/verify_saved_checkpoints.py>)
+- [RAG/results/phase3_e11_task_adaptation/download_scoring_outputs.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/download_scoring_outputs.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11a_modal.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11a_modal.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11_modal.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11_modal.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11a_results/download_checkpoint_blocks.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11a_results/download_checkpoint_blocks.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c_training/modal_training.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c_training/modal_training.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11c_training/verify_saved_checkpoints.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11c_training/verify_saved_checkpoints.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11d_training/modal_training.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11d_training/modal_training.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11d_training/verify_saved_checkpoints.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11d_training/verify_saved_checkpoints.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11e_training/modal_training.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11e_training/modal_training.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11e_training/verify_saved_checkpoints.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11e_training/verify_saved_checkpoints.py>)
 
 **Required inputs:** `Original remote state/runtime bundles/returns; not queried`.
 
@@ -1885,9 +1885,9 @@ Categories are cumulative. A primary category is used only for counting. “No m
 **Categories:** CANDIDATE_FOR_FUTURE_TEST; REQUIRES_ISOLATION. **Runtime: NOT VERIFIED in Phase 15.**
 
 **Actual entry points / selected modes:**
-- [RAG/scripts/module4_build_external_lexicon.py](<../../../RAG/scripts/module4_build_external_lexicon.py>)
-- [RAG/results/phase3_e11_task_adaptation/scoring_common.py](<../../../RAG/results/phase3_e11_task_adaptation/scoring_common.py>)
-- [RAG/results/phase3_e11_task_adaptation/e11d_training/contrastive.py](<../../../RAG/results/phase3_e11_task_adaptation/e11d_training/contrastive.py>)
+- [RAG/scripts/module4_build_external_lexicon.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/scripts/module4_build_external_lexicon.py>)
+- [RAG/results/phase3_e11_task_adaptation/scoring_common.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/scoring_common.py>)
+- [RAG/results/phase3_e11_task_adaptation/e11d_training/contrastive.py](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/e11d_training/contrastive.py>)
 
 **Required inputs:** `Fresh synthetic strings/schema/tensors only after separate approval`.
 
@@ -1965,7 +1965,7 @@ These files were read as text only. Their presence does not establish an install
 
 ### RAG/requirements-module4-parser.txt
 
-[RAG/requirements-module4-parser.txt](<../../../RAG/requirements-module4-parser.txt>)
+[RAG/requirements-module4-parser.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/requirements-module4-parser.txt>)
 
 SHA-256: `8ea52aa64e76c5e431833b80cb25b8fcd11e6bac3eda9ad36d31e737ca8fd799`.
 
@@ -1993,7 +1993,7 @@ nbformat
 
 ### RAG/requirements-rag-module2.txt
 
-[RAG/requirements-rag-module2.txt](<../../../RAG/requirements-rag-module2.txt>)
+[RAG/requirements-rag-module2.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/requirements-rag-module2.txt>)
 
 SHA-256: `48cebb1f4722c48a681fc49927e45dfb9ddf66737a617531d0b10f6c7e2f0de2`.
 
@@ -2003,7 +2003,7 @@ rank-bm25==0.2.2
 
 ### RAG/results/e10_official_test_v1/reconstructed_v1/requirements_parser.public.txt
 
-[RAG/results/e10_official_test_v1/reconstructed_v1/requirements_parser.public.txt](<../../../RAG/results/e10_official_test_v1/reconstructed_v1/requirements_parser.public.txt>)
+[RAG/results/e10_official_test_v1/reconstructed_v1/requirements_parser.public.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/e10_official_test_v1/reconstructed_v1/requirements_parser.public.txt>)
 
 SHA-256: `fecd94cac4f6c265e133201bb2c0d8aebc02d169c12ae3a1aa5087df59d32b8b`.
 
@@ -2014,7 +2014,7 @@ soupsieve==2.8.1
 
 ### RAG/results/phase3_e11_task_adaptation/E11A_REQUIREMENTS.lock.txt
 
-[RAG/results/phase3_e11_task_adaptation/E11A_REQUIREMENTS.lock.txt](<../../../RAG/results/phase3_e11_task_adaptation/E11A_REQUIREMENTS.lock.txt>)
+[RAG/results/phase3_e11_task_adaptation/E11A_REQUIREMENTS.lock.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/E11A_REQUIREMENTS.lock.txt>)
 
 SHA-256: `28d6e3c646b425f1c8c1795b04337e1bb94f22a5fb9e49ae3aaf64d116fb40a5`.
 
@@ -2065,7 +2065,7 @@ urllib3==2.2.3
 
 ### RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.lock.txt
 
-[RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.lock.txt](<../../../RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.lock.txt>)
+[RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.lock.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.lock.txt>)
 
 SHA-256: `28d6e3c646b425f1c8c1795b04337e1bb94f22a5fb9e49ae3aaf64d116fb40a5`.
 
@@ -2116,7 +2116,7 @@ urllib3==2.2.3
 
 ### RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.txt
 
-[RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.txt](<../../../RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.txt>)
+[RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/factcg_gpu/requirements_gpu.txt>)
 
 SHA-256: `44fbc99f5f007541734ab2ee375a1cb26cafcb396076e1034c18e4903fdb7b2f`.
 
@@ -2136,7 +2136,7 @@ psutil==6.1.0
 
 ### RAG/results/phase3_e9_claim_verification/factcg_local_smoke/requirements_local.txt
 
-[RAG/results/phase3_e9_claim_verification/factcg_local_smoke/requirements_local.txt](<../../../RAG/results/phase3_e9_claim_verification/factcg_local_smoke/requirements_local.txt>)
+[RAG/results/phase3_e9_claim_verification/factcg_local_smoke/requirements_local.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/factcg_local_smoke/requirements_local.txt>)
 
 SHA-256: `32fd11b97ea7f2ea9e7c35058e94c6367b395f4c84d48573cf57c09b0e10c268`.
 
@@ -2156,7 +2156,7 @@ accelerate==0.28.0
 
 ### RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.lock.txt
 
-[RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.lock.txt](<../../../RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.lock.txt>)
+[RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.lock.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.lock.txt>)
 
 SHA-256: `d73d4b68822ac24ba380dc640ea753dcd97e12ad8695e0a03861fd3dcb130501`.
 
@@ -2281,7 +2281,7 @@ zipp==3.21.0
 
 ### RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.txt
 
-[RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.txt](<../../../RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.txt>)
+[RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.txt](<https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/minicheck_gpu/requirements_gpu.txt>)
 
 SHA-256: `4212a2d7633d0f1c3d6394fcf06aec9afb6998866d04dcb4cbc20dc4b732def8`.
 

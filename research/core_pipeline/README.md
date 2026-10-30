@@ -1,13 +1,13 @@
 # Core Pipeline and Canonical Evaluation
 
-The shared preparation, feature and CV code remains in `codex/`. The recorded fold-generation script is under `research/data_and_evaluation/canonical/scripts/`. Other experiment paths and frozen records are unchanged.
+Preparation and feature extraction remain in `codex/` because frozen consumers require those paths. The shared CV implementation and recorded fold-generation script are under `research/data_and_evaluation/canonical/scripts/`. Historical records and source hashes are preserved.
 
 | Step | Implementation or record |
 |---|---|
 | Data preparation and normalization | [canonical_evaluation_data_prep.py](../../codex/canonical_evaluation_data_prep.py) |
 | NLI and semantic-similarity features | [canonical_feature_extraction.py](../../codex/canonical_feature_extraction.py) |
 | Recorded fold-generation procedure | [regenerate_canonical_folds_sklearn.py](../data_and_evaluation/canonical/scripts/regenerate_canonical_folds_sklearn.py) |
-| Shared E1-E4 cross-validation | [canonical_development_cv.py](../../codex/canonical_development_cv.py) |
+| Shared E1-E4 cross-validation | [canonical_development_cv.py](../data_and_evaluation/canonical/scripts/canonical_development_cv.py) |
 | Evaluation decisions | [Protocol](../data_and_evaluation/canonical/protocols/evaluation_protocol_decision.md) and [data description](../data_and_evaluation/canonical/protocols/evaluation_data_manifest.md) |
 | Component ownership and methodology | [Methodology manifest](../data_and_evaluation/canonical/protocols/methodology_component_manifest.md) |
 
@@ -41,4 +41,4 @@ The protocol is now linked above at its new location. Its [original version at t
 
 The feature producer still writes the two CSVs at their legacy paths. Do not run it in the repository; a future run requires separately approved output isolation and dependency adaptation. These archival moves do not verify experiment reproduction.
 
-The unchanged CV producer still defaults to legacy output paths and has import-time output-directory creation. Do not import or execute it directly in the checkout. Future execution requires explicit external output isolation, including every CSV/JSON/log writer and compatibility-row output. Moving the records does not certify a new run or make the missing original features and datasets available.
+The adapted CV producer no longer creates an output directory at import. Its entry point requires a new absolute CANONICAL_CV_OUTPUT_DIR and an existing absolute CANONICAL_CV_TEMP_DIR outside Git and input roots. CANONICAL_CV_INPUT_ROOT can select an explicit canonical input directory; its default remains the legacy codex input location. The existing shared IO validator checks all required input paths and rejects output reuse or overlap before any run directory is created. The compatibility-row CSV now goes to the isolated output directory. Algorithms, settings, folds and metrics were not changed. Import and synthetic path checks do not certify a new CV run or provide the missing original inputs.

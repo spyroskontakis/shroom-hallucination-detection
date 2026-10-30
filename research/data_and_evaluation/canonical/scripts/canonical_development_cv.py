@@ -12,6 +12,7 @@ does not perform feature extraction, and does not modify notebooks or DOCX files
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 import logging
 import os
@@ -38,11 +39,14 @@ from sklearn.metrics import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
+REPOSITORY_ROOT = next(parent for parent in Path(__file__).resolve().parents
+                       if (parent / "research/shared_tools/canonical_execution_context.py").is_file()
+                       and (parent / "research/README.md").is_file())
+ROOT = Path(os.environ.get("CANONICAL_CV_INPUT_ROOT", str(REPOSITORY_ROOT / "codex")))
 FEATURE_DIR = ROOT / "canonical_feature_outputs"
-OUTPUT_DIR = Path(os.environ.get("CANONICAL_CV_OUTPUT_DIR", ROOT / "canonical_cv_outputs"))
-OUTPUT_DIR.mkdir(exist_ok=True)
-LOG_PATH = OUTPUT_DIR / "canonical_cv_execution.log"
+# Writers stay unavailable until the explicit isolated run is validated.
+OUTPUT_DIR = None
+LOG_PATH = None
 
 HUMAN_FEATURES = FEATURE_DIR / "canonical_human_14_features.csv"
 SYNTHETIC_FEATURES = FEATURE_DIR / "canonical_synthetic_14_features.csv"
@@ -55,7 +59,7 @@ OLD_TRIAL_FEATURES = (
     / "nli_similarity_features_dataset.csv"
 )
 FEATURE_METADATA = FEATURE_DIR / "canonical_feature_extraction_metadata.json"
-UNMATCHED_COMPATIBILITY_ROWS = FEATURE_DIR / "canonical_feature_compatibility_unmatched_rows.csv"
+UNMATCHED_COMPATIBILITY_ROWS = None
 
 NLI_FEATURES = ["src_ent", "src_neu", "src_con", "tgt_ent", "tgt_neu", "tgt_con"]
 SIM_FEATURES = [
@@ -89,6 +93,45 @@ SELECTION_RULE = OrderedDict(
         ("e4_policy", "diagnostic-only; not selection eligible"),
     ]
 )
+
+
+
+def _prepare_output_directory() -> None:
+    """Validate explicit immutable inputs and isolated outputs before any writer."""
+    global OUTPUT_DIR, LOG_PATH, UNMATCHED_COMPATIBILITY_ROWS
+    requested = os.environ.get("CANONICAL_CV_OUTPUT_DIR")
+    temporary = os.environ.get("CANONICAL_CV_TEMP_DIR")
+    if not requested or not temporary:
+        raise ValueError("Explicit CANONICAL_CV_OUTPUT_DIR and CANONICAL_CV_TEMP_DIR required")
+    helper = REPOSITORY_ROOT / "research/shared_tools/canonical_execution_context.py"
+    raw = helper.read_bytes()
+    if hashlib.sha256(raw).hexdigest() != "c668cce4282d6865373f50525fc78fb5a87b5be14463cc4fef3e93284b326247":
+        raise ValueError("Canonical IO validator identity mismatch")
+    spec = importlib.util.spec_from_file_location("_canonical_cv_io_context", helper)
+    checked = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = checked
+    exec(compile(raw, str(helper), "exec"), checked.__dict__)
+    inputs = [HUMAN_FEATURES, SYNTHETIC_FEATURES, FOLD_ASSIGNMENTS,
+              HUMAN_MANIFEST, OLD_TRIAL_FEATURES, FEATURE_METADATA]
+    run = checked.reject_links(Path(requested))
+    temp = checked.reject_links(Path(temporary))
+    if not temp.is_dir() or any((p / ".git").exists() for p in (temp, *temp.parents)):
+        raise ValueError("Prepared temporary directory outside Git required")
+    for source in [REPOSITORY_ROOT, ROOT, run]:
+        if temp.is_relative_to(source) or source.is_relative_to(temp):
+            raise ValueError("Temporary/source/input/run overlap")
+    checked.plan_run(run, source_roots=[REPOSITORY_ROOT, ROOT],
+                     input_paths=inputs, output_names=["canonical_cv_metadata.json",
+                     "canonical_feature_compatibility_unmatched_rows.csv"])
+    # No directory, cache, log or CSV is created before the checks above.
+    run.mkdir(exist_ok=False)
+    for key in ("TEMP", "TMP", "TMPDIR", "JOBLIB_TEMP_FOLDER", "NUMBA_CACHE_DIR"):
+        os.environ[key] = str(temp)
+    import tempfile
+    tempfile.tempdir = str(temp)
+    OUTPUT_DIR = run
+    LOG_PATH = run / "canonical_cv_execution.log"
+    UNMATCHED_COMPATIBILITY_ROWS = run / "canonical_feature_compatibility_unmatched_rows.csv"
 
 
 def setup_logging() -> None:
@@ -598,6 +641,7 @@ def write_results_summary(summary: pd.DataFrame, per_task: pd.DataFrame, diagnos
 
 
 def main() -> None:
+    _prepare_output_directory()
     start = time.time()
     setup_logging()
     started_at = datetime.now().isoformat(timespec="seconds")

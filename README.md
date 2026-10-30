@@ -173,10 +173,10 @@ Selected experiments used Modal for remote execution.
 
 | Directory | Description |
 |---|---|
-| `research/` | Research navigation, archived Phase 1 result tables and the separate entailment prototype |
-| `codex/` | Canonical data preparation, semantic feature extraction, evaluation and retained historical notebooks |
+| `research/` | Relocated research implementations, canonical CV, E6-v4, shared tools, historical sources/results and the entailment prototype |
+| `codex/` | Protected canonical preparation, feature extraction, metadata and one retained historical notebook |
 | `data/` | Retained early notebooks; archived result tables are indexed under `research/` |
-| `RAG/` | Retrieval modules, additional verification methods and experiments E5-E11 |
+| `RAG/` | Remaining frozen E5-E11 sources, verification methods and required historical metadata |
 | `project_records/` | Historical source snapshots, thesis verification records, release tools, runtime probes and migration reports |
 | `docs/` | Technical documentation, experimental results and reproducibility information |
 | `thesis/` | Complete thesis in PDF and Word formats |
@@ -184,7 +184,7 @@ Selected experiments used Modal for remote execution.
 | `manifests/` | File verification records and public release documentation |
 | `thesis_writing/` | Supporting script for verifying research results used during thesis writing |
 
-Canonical research code remains in its historical `codex/` and `RAG/` paths to preserve compatibility and provenance. The indexes in `research/` link to those implementations; they do not indicate that the pipelines were moved.
+The repository combines physically relocated implementations with protected historical paths. Canonical CV, E6-v4 and independent source groups are under `research/`; frozen consumers still require the remaining `codex/` and `RAG/` paths. Navigation distinguishes current adapted entry points from unchanged historical sources. Original source hashes and scientific results are preserved.
 
 ## Getting Started
 
