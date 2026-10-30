@@ -1,4 +1,6 @@
 """Hash prior artifacts and project exact saved A/C pairs without evaluation labels."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import shutil
 import numpy as np
 import pandas as pd

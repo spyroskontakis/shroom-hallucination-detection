@@ -1,4 +1,6 @@
 """Verify saved E6-v2 artifacts and report; no model loading or training."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import json
 import numpy as np
 import pandas as pd

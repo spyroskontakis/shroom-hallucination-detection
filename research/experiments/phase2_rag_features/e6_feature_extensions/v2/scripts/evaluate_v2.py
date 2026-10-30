@@ -1,4 +1,6 @@
 """One fixed five-fold E6-v2 RF evaluation against saved E6-v1 predictions."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import numpy as np
 import pandas as pd
 from scipy.stats import spearmanr,binomtest

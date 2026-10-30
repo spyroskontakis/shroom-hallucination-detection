@@ -1,4 +1,6 @@
 """Pre-extraction contracts: direction, masking, score semantics, cache and folds."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import sys, unittest, copy
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))

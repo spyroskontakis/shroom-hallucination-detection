@@ -1,4 +1,6 @@
 """Frozen HHEM inference with verified, atomic per-batch checkpoints."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import json, time, os, uuid
 import numpy as np
 import pandas as pd

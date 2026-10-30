@@ -1,4 +1,6 @@
 """Freeze the smoke-tested E6-v2 before any bulk inference or RF fit."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import io,unittest
 import v2_common as c
 

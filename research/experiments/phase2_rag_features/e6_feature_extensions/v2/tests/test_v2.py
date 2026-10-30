@@ -1,4 +1,6 @@
 """Focused E6-v2 feature-direction, fallback and metric contracts; no real fits."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import unittest
 import numpy as np
 import pandas as pd

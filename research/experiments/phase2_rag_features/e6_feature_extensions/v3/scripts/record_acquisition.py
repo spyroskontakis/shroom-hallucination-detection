@@ -1,4 +1,6 @@
 """Verify authorized pinned download; record exact sources and content hashes."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import v3_common as c
 
 def main():

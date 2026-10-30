@@ -7,7 +7,7 @@ Most research utilities remain beside their original consumers; the adapted Modu
 | Module 2 dense cache | [Cache utility](../experiments/phase2_rag_features/e5_rag/modules/module2/scripts/module2_dense_cache.py) |
 | Module 4 external lexical evidence | [Lexicon builder](../../RAG/scripts/module4_build_external_lexicon.py) and [tests](lexical_evidence/tests/test_module4_external_lexicon.py) |
 | Module 4 release verification | [Verifier](../../RAG/module4_release_v1/verify_module4.py) and [tests](../../RAG/module4_release_v1/tests/test_verify_module4.py) |
-| E6-v3 feature/evaluation helpers | [v3_common.py](../../RAG/results/rag_e6_v3/scripts/v3_common.py) and [tests](../../RAG/results/rag_e6_v3/tests/test_v3.py) |
+| E6-v3 feature/evaluation helpers | [v3_common.py](../../RAG/results/rag_e6_v3/scripts/v3_common.py) and [tests](../experiments/phase2_rag_features/e6_feature_extensions/v3/tests/test_v3.py) |
 | E9 evaluation helpers | [e9_common.py](../../RAG/results/phase3_e9_claim_verification/scripts/e9_common.py) and [tests](../../RAG/results/phase3_e9_claim_verification/tests/test_e9.py) |
 | E11 scoring contracts | [scoring_common.py](../../RAG/results/phase3_e11_task_adaptation/scoring_common.py) and [tests](../../RAG/results/phase3_e11_task_adaptation/test_scoring.py) |
 | Verification of thesis result sources | [verify_sources.py](../../thesis_writing/chapter9_phase1/verify_sources.py) |
@@ -64,3 +64,15 @@ The [saved E6-v3 analysis context](saved_analysis_context_v1.py) provides isolat
 Only offline synthetic context, path and I/O checks were performed. Future execution requires the [safe execution procedure](../../docs/SAFE_EXECUTION.md), the independently verified contract digest and separately approved inputs. Historical frozen contracts, AccessGuards and E10/E11 consumers are unchanged.
 
 The final E11 summary, table and manifest are now at their [current location](../experiments/phase3_advanced_methods/e11_transformer_finetuning/). Their bytes and historical metrics are unchanged. The original E11 checksum list stays in its historical directory and keeps the original finalization entry guard closed. Current source verification is not a rerun of the E11 experiments.
+
+## Cross-experiment E6-v2/v3 binding
+
+The [shared execution/source binding](cross_experiment_context_v1.py), [independently pinned contract](../../project_records/current_layout/e6_cross_experiment_h2_v1.json) and [offline tests](tests/test_cross_experiment_context_v1.py) integrate the relocated E6-v2/v3 consumers. The original common helpers remain at their historical paths for protected E10/E11 readers; the binding derives separate current IO/import views without editing those originals or their frozen checks.
+
+A read-only source plan uses only the standard library and creates no run files:
+
+    python research/shared_tools/cross_experiment_context_v1.py --expected-sha256 CONTRACT_PIN --group v2
+
+Replace CONTRACT_PIN with the independently reviewed digest: d8660a9e9757d9fe2cf30a4e3222fca1355a9b7f11e08085b085abf84781fac7. Group v3 is also supported. Plan mode validates current sources, historical record schemas and model identity declarations; it does not prove that original datasets or model assets are available.
+
+Preflight requires SHROOM_CROSS_ORIGINAL_ROOT, SHROOM_CROSS_RUN_ROOT, SHROOM_CROSS_TEMP_ROOT and SHROOM_CROSS_CACHE_ROOT. The cache must be a prepared child of the external temporary root. Scientific execution requires separate approval and authentic original evidence. Current views never replace original-source checks; protected historical E9/E10/E11 consumers are unchanged. See the [Phase 2 guide](../experiments/phase2_rag_features/README.md#e6-v2v3-current-binding-and-retained-historical-consumers) for the retained paths and static-only entries.

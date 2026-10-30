@@ -1,13 +1,15 @@
 """Label-free technical smoke; select CPU float32 batch=2 before feature freeze."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import time
-import v2_common as c
+import v3_common as c
 
 
 def main():
     log=c.offline('smoke')
     c.verify_inputs();acq=c.verify_models();runtime=c.versions()
     import torch
-    from nli_backend import load_backend,infer_batch
+    from hhem_backend import load_backend,infer_batch
     # Execution choice based on available hardware, not labels or task accuracy.
     device='cpu';dtype='float32';batch_size=2
     tokenizer,model=load_backend()

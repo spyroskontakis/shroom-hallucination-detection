@@ -1,4 +1,6 @@
 """Run pre-bulk contracts, write protocol and freeze all choices and code."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import io,sys,unittest,json
 import v3_common as c
 

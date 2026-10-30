@@ -1,4 +1,6 @@
 """Prepare label-free text pairs from E6-v1's already selected definition."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 import json
 import numpy as np
 import pandas as pd

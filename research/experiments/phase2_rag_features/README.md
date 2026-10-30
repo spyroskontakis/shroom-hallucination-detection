@@ -26,9 +26,20 @@ Some Module 4 protocol records and publication-safe aggregate records from E6, E
 | Version | Focus | Protocol and recorded results |
 |---|---|---|
 | E6-v1 | Additional comparisons with retrieved definitions | [Protocol](../../../RAG/results/rag_e6_v1/E6_PROTOCOL.md), [results](../../../RAG/results/rag_e6_v1/E6_RESULTS.md) |
-| E6-v2 | A second NLI evaluator | [Protocol](../../../RAG/results/rag_e6_v2/E6_V2_PROTOCOL.md), [results](../../../RAG/results/rag_e6_v2/E6_V2_RESULTS.md) |
+| E6-v2 | A second NLI evaluator | [Protocol](e6_feature_extensions/v2/protocols/E6_V2_PROTOCOL.md), [results](e6_feature_extensions/v2/results/reports/E6_V2_RESULTS.md) |
 | E6-v3 | HHEM consistency features | [Protocol](../../../RAG/results/rag_e6_v3/E6_V3_PROTOCOL.md), [results](e6_feature_extensions/v3/results/reports/E6_V3_RESULTS.md), [implementation helpers](../../../RAG/results/rag_e6_v3/scripts/v3_common.py) |
 | E6-v4 | BERTScore and structural features | [Protocol](e6_feature_extensions/v4/protocols/E6_V4_PROTOCOL.md), [compatibility amendment](e6_feature_extensions/v4/protocols/E6_V4_PROTOCOL_AMENDMENT_01.md), [results](e6_feature_extensions/v4/results/reports/E6_V4_RESULTS.md) |
+
+
+### E6-v2/v3: current binding and retained historical consumers
+
+A [shared current-layout binding](../../shared_tools/cross_experiment_context_v1.py) now covers the E6-v2/v3 source and record group. Its [execution/source contract](../../../project_records/current_layout/e6_cross_experiment_h2_v1.json) records original public bytes separately from current and derived source identities. Relocated Python files reject direct execution or import; use the explicit binding rather than a historical command at a new path.
+
+The binding reuses the existing pinned H2 safety engine. Original expected hashes are checked only against a separately authenticated original input tree. Current sources are validated independently; an adapted source cannot stand in for an original. Explicit outside-Git original/run/temporary roots and a prepared cache below the temporary root are required before execution. Missing inputs, model assets or schema identities fail before run creation or model loading. Existing runs cannot be adopted, and original evaluation markers are not removed or bypassed.
+
+Some sources and records remain under RAG because unchanged E9/E10/E11 consumers require their exact paths. These include the original common helpers, model backends, acquisition records and E6-v3 baseline metadata. The pinned E6-v3 publication guide and its protocol target also remain unchanged. Source-generation, model-acquisition and freeze-authoring entries are static-only in this binding; it is not a verified end-to-end replay workflow.
+
+Only offline synthetic context/import/guard tests were executed. They do not repeat the experiments or independently verify their metrics. Full historical runtime reproducibility remains NOT VERIFIED.
 
 ### E6-v4: current layout and historical execution
 

@@ -1,4 +1,6 @@
 """Pre-freeze adaptation of the accepted local E6-v2 implementation; never edits it."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 from pathlib import Path
 out=Path(__file__).resolve().parent
 old=out.parent.parent/'rag_e6_v2/scripts'

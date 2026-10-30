@@ -260,7 +260,7 @@ class Phase24Tests(unittest.TestCase):
         self.assertTrue((ROOT / "RAG/results/rag_e6_v3/config/final_integrity.json").is_file())
 
     def test_report_guard_precedes_transported_outputs(self):
-        source = ROOT / "RAG/results/rag_e6_v3/scripts/report_v3.py"
+        source = ROOT / "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/report_v3.py"
         tree = ast.parse(source.read_bytes())
         main = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "main")
         guarded = [n for n in main.body if isinstance(n, ast.Expr) and isinstance(n.value, ast.Call) and ast.unparse(n.value.func) == "c.write_json"]

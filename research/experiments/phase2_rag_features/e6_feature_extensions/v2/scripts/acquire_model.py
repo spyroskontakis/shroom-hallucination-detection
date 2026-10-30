@@ -1,4 +1,6 @@
 """Download only explicitly authorized files of the immutable second-NLI revision."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Historical source: use the pinned cross-experiment context; direct execution/import is disabled")
 from pathlib import Path
 from datetime import datetime, timezone
 import hashlib, json, subprocess, time
