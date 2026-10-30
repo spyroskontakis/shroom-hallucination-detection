@@ -29,3 +29,7 @@ Run from the repository root after reviewing the script. Replace CATALOG_PIN wit
 - Keep downloads, API/cloud access, training and inference disabled without separate approval. Stop on missing authentic inputs, path mismatch, unisolated writes or unexpected access.
 
 See [data access](DATA_ACCESS.md), [environments](ENVIRONMENTS.md) and [safe execution](SAFE_EXECUTION.md). These notes authorize no model run.
+
+## Node diagnostic-table authoring
+
+The [current Node source](../research/experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/build_csv.mjs) has explicit input, package-entry/hash and fresh external output arguments. It does no work at import. Its original CSV rendering fragment is retained; the saved authoring-check JSON remains historical evidence. No original row-level diagnostic data is included. Unit interface fixtures are not a native Workbook verification. The installed package required a native addon, which was denied by the strict offline probe. Do not relax native/process/worker permissions or claim a reproduced table from these checks. A future full authoring test needs separately reviewed package/native isolation and authentic inputs.

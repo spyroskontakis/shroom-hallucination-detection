@@ -18066,12 +18066,12 @@
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/build_csv.mjs",
-      "current": "RAG/results/rag_e6_v3/error_analysis/build_csv.mjs",
+      "current": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/build_csv.mjs",
       "h1_sha256": "e2063e11e3fcf8fe798fe1609a647bf83c45e25488c1436f62f3bedd38b22080",
       "h1_blob": "d689e23088b195160f98eb57ae0e83aedb6702e1",
-      "sha256": "e2063e11e3fcf8fe798fe1609a647bf83c45e25488c1436f62f3bedd38b22080",
-      "bytes": 2299,
-      "status": "BLOCKED_FROZEN"
+      "sha256": "05370a91c975d6318d16236960e8fe5364b712222112432ac40b6f38770365d6",
+      "bytes": 6703,
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/build_report.py",
@@ -18084,12 +18084,12 @@
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/csv_authoring_check.json",
-      "current": "RAG/results/rag_e6_v3/error_analysis/csv_authoring_check.json",
+      "current": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/csv_authoring_check.json",
       "h1_sha256": "64de42ebd9da7dd5ad512a23dc8ae517cf94333a78cda3c9a894aaf8b80129f9",
       "h1_blob": "b29366676f14626097c9820446b1301e354df511",
       "sha256": "64de42ebd9da7dd5ad512a23dc8ae517cf94333a78cda3c9a894aaf8b80129f9",
       "bytes": 317,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/input_verification.json",

@@ -44,3 +44,9 @@ The [synthetic E10 input-audit tests](e10_factcg/retrospective_official_test/tes
 No experiments were rerun. Protected source locks, protocols and historical checks are unchanged. Full runtime reproduction remains NOT VERIFIED. Follow the [safe execution contract](../../../docs/SAFE_EXECUTION.md); historical producers may still write to legacy paths and must not be launched directly in the checkout.
 
 [Back to the research guide](../../README.md)
+
+## Retained immutable E11 audit reference
+
+The [retained E11 audit](../../../RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md) still contains a broken historical protocol link at line67. Its whole-file identity is protected; the link has not been repaired.
+
+Use the [current protocol](../../data_and_evaluation/canonical/protocols/evaluation_protocol_decision.md) or its [exact original Git version](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/evaluation_protocol_decision.md) for navigation. These additional working references do not resolve the protected original URL or certify runtime reproduction.

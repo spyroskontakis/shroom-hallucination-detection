@@ -18,7 +18,7 @@ import types
 
 VERSION = "shroom-repository-compatibility-v1"
 CATALOG = "project_records/current_layout/repository_compatibility_v1.json"
-CATALOG_SHA256 = "e4ec7dc02356c831f5dc698a10daabcfaeddb9aa2233478af379ccbd47596b0b"
+CATALOG_SHA256 = "9bb962af545765121e1dad55709b48e309d5881e3c478e09369683b60dc9a8ef"
 SHARED = "research/shared_tools/canonical_execution_context.py"
 SHARED_SHA256 = "c668cce4282d6865373f50525fc78fb5a87b5be14463cc4fef3e93284b326247"
 CROSS = "research/shared_tools/cross_experiment_context_v1.py"
@@ -39,6 +39,28 @@ OWNERS = {
 
 def digest(raw):
     return hashlib.sha256(raw).hexdigest()
+
+
+NODE_AUTHOR = "RAG/results/rag_e6_v3/error_analysis/build_csv.mjs"
+NODE_H1_SHA256 = "e2063e11e3fcf8fe798fe1609a647bf83c45e25488c1436f62f3bedd38b22080"
+NODE_RENDER_SHA256 = "b40a38439cbedb7a98f693397153c791c0f4700aafa26b1e8503ce2c8ba7bb53"
+
+
+def validate_node_counterpart(raw):
+    text = raw.decode("utf-8").replace("\r\n", "\n")
+    begin = "const {columns,rows}=data;"
+    end = " return {csv,columns:columns.length};"
+    if text.count(begin) != 1 or text.count(end) != 1:
+        raise ValueError("NODE_RENDER_BOUNDARY_MISMATCH")
+    fragment = text[text.index(begin):text.index(end)]
+    if digest(fragment.encode()) != NODE_RENDER_SHA256:
+        raise ValueError("NODE_SCIENTIFIC_RENDER_CHANGED")
+    if "export const MODE='CURRENT_ADAPTED';" not in text or (
+            "export const HISTORICAL_SOURCE_SHA256='"+NODE_H1_SHA256+"';") not in text:
+        raise ValueError("NODE_CURRENT_IDENTITY_REQUIRED")
+    if "export const ORIGINAL_INPUT_SHA256='7004fe8a1bc070d8a6508bba9f1eaa5241a7d6fbee150c9f1fb30773448bf472';" not in text:
+        raise ValueError("NODE_ORIGINAL_INPUT_PIN_CHANGED")
+    return True
 
 
 def root_of(origin=__file__):
@@ -239,7 +261,14 @@ class Catalog:
                     old = item["historical_path"]
                     current = self.entries[old]
                     if current["sha256"] != item["current_sha256"]:
-                        raise ValueError("CROSS_SCIENTIFIC_SOURCE_CHANGED")
+                        # A single reviewed non-Python IO-envelope adaptation.
+                        # The original contract/h1 identities are never updated.
+                        if old != NODE_AUTHOR or item["h1"]["sha256"] != NODE_H1_SHA256:
+                            raise ValueError("CROSS_SCIENTIFIC_SOURCE_CHANGED")
+                        validate_node_counterpart(self.current(old).read_bytes())
+                        item["current_sha256"] = current["sha256"]
+                        item["derived_sha256"] = current["sha256"]
+                        item["role"] = "CURRENT_ADAPTED"
                     item["current_path"] = current["current"]
                     bound.artifacts[old] = item
                 bound.source_paths = frozenset(self.root/i["current_path"] for i in bound.artifacts.values())

@@ -172,6 +172,50 @@ class IdentityTests(unittest.TestCase):
             with self.assertRaises(ValueError): API.main(["--expected-sha256", "0"*64, "--mode", "CURRENT"])
 
 
+    def test_node_current_role_keeps_historical_hash(self):
+        api, bound = self.c.cross()
+        item = bound.artifacts[API.NODE_AUTHOR]
+        self.assertEqual(item["h1"]["sha256"], API.NODE_H1_SHA256)
+        self.assertEqual(item["role"], "CURRENT_ADAPTED")
+        self.assertNotEqual(item["current_sha256"], item["h1"]["sha256"])
+        self.assertEqual(bound.source(API.NODE_AUTHOR), self.c.current(API.NODE_AUTHOR))
+
+    def test_node_render_algorithm_mutation_rejected(self):
+        raw = self.c.current(API.NODE_AUTHOR).read_bytes()
+        with self.assertRaisesRegex(ValueError, "NODE_SCIENTIFIC_RENDER_CHANGED"):
+            API.validate_node_counterpart(raw.replace(b"Number(r[k])", b"Number(r[k])+1"))
+
+    def test_node_current_identity_cannot_masquerade_as_original(self):
+        raw = self.c.current(API.NODE_AUTHOR).read_bytes()
+        with self.assertRaisesRegex(ValueError, "NODE_CURRENT_IDENTITY_REQUIRED"):
+            API.validate_node_counterpart(raw.replace(b"MODE='CURRENT_ADAPTED'", b"MODE='HISTORICAL_ORIGINAL'"))
+
+    def test_adapted_node_cannot_satisfy_historical_original(self):
+        api, bound = self.c.cross()
+        old = API.NODE_AUTHOR
+        dest = self.work / old
+        dest.parent.mkdir(parents=True)
+        dest.write_bytes(self.c.current(old).read_bytes())
+        with self.assertRaisesRegex(ValueError, "Historical original identity mismatch"):
+            bound.historical_source(old, self.work)
+
+
+    def test_node_original_input_pin_not_refreshed(self):
+        raw = self.c.current(API.NODE_AUTHOR).read_bytes()
+        with self.assertRaisesRegex(ValueError, "NODE_ORIGINAL_INPUT_PIN_CHANGED"):
+            API.validate_node_counterpart(raw.replace(b"7004fe8a1bc070d8a6508bba9f1eaa5241a7d6fbee150c9f1fb30773448bf472", b"0"*64))
+
+    def test_unrelated_cross_record_hash_change_remains_rejected(self):
+        old = "RAG/results/rag_e6_v2/.gitignore"
+        previous = self.c.entries[old]["sha256"]
+        try:
+            self.c.entries[old]["sha256"] = "0"*64
+            with self.assertRaisesRegex(ValueError, "CROSS_SCIENTIFIC_SOURCE_CHANGED"):
+                self.c.cross()
+        finally:
+            self.c.entries[old]["sha256"] = previous
+
+
 class LibraryCases:
     def setUp(self):
         self.c = catalog()
