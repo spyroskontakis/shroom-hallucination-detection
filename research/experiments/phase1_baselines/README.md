@@ -12,7 +12,7 @@ Read the [canonical results summary](../../data_and_evaluation/canonical/results
 
 The [integrated baseline notebook](../../data_and_evaluation/historical_baselines/notebooks/rag_baseline/shroom_ensemble.ipynb) retains the earlier E1-E3 evaluation and development E4 work. Other distinct source versions are indexed under [exploratory analysis](../../exploratory_analysis/README.md).
 
-The following aggregate CSVs are archived in this directory. Most historical producer notebooks are now under research/data_and_evaluation/historical_baselines/notebooks/; their code and saved outputs are unchanged. The codex/data historical notebook remains at its old path because an immutable E10 audit reads it there.
+The following aggregate CSVs are archived in this directory. The relocated historical notebooks are organized under research/data_and_evaluation/historical_baselines/notebooks/ and research/experiments/phase1_baselines/e4_synthetic_data/notebooks/; their code and saved outputs are unchanged. The codex/data historical notebook remains at its old path because an immutable E10 audit reads it there.
 
 | Record | Available table |
 |---|---|

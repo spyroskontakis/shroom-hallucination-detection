@@ -1,6 +1,6 @@
 # Exploratory Data Analysis
 
-This page distinguishes descriptive analysis from notebooks that also contain model evaluation or synthetic-data generation. The descriptive EDA script is under `research/analysis/`. Seven historical notebooks are now under research/data_and_evaluation/historical_baselines/notebooks/. Two other historical sources remain under data/ and codex/data/; the latter is required at its old path by an E10 audit.
+This page distinguishes descriptive analysis from notebooks that also contain model evaluation or synthetic-data generation. The descriptive EDA script is under `research/analysis/`. Three relocated baseline/EDA variants are under research/data_and_evaluation/historical_baselines/notebooks/; four augmentation variants are under research/experiments/phase1_baselines/e4_synthetic_data/notebooks/. Other historical notebooks remain under data/ and codex/data/; the codex/data source is required at its old path by an E10 audit.
 
 The [development EDA script](../analysis/development_eda/prompt6_development_eda.py) describes the model-agnostic and model-aware development data. Its broader descriptive scope does not change the model-agnostic focus of the evaluated detector.
 
