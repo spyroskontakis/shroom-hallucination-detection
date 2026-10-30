@@ -4,7 +4,46 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-import audit_data as audit
+# Current-layout test loader. H1 source identity is distinct from H0 data replay.
+import hashlib
+import importlib.util
+import sys
+
+
+def _load_audit_source(origin=__file__):
+    root = next((p for p in Path(origin).resolve().parents
+                 if (p / ".git").exists()
+                 and (p / "research/shared_tools/canonical_execution_context.py").is_file()), None)
+    if root is None:
+        raise RuntimeError("Reviewed checkout root not found")
+    def load(name, path, expected):
+        raw = path.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != expected:
+            raise RuntimeError("Reviewed source identity mismatch")
+        if name in sys.modules:
+            module = sys.modules[name]
+            if Path(module.__file__).resolve() != path.resolve():
+                raise RuntimeError("Ambiguous preloaded source")
+            return module
+        spec = importlib.util.spec_from_file_location(name, path)
+        module = importlib.util.module_from_spec(spec)
+        sys.modules[name] = module
+        try:
+            exec(compile(raw, str(path), "exec"), module.__dict__)
+        except BaseException:
+            sys.modules.pop(name, None)
+            raise
+        return module
+    support_path = root / "research/shared_tools/canonical_execution_context.py"
+    support = load("canonical_execution_context", support_path,
+                   "c668cce4282d6865373f50525fc78fb5a87b5be14463cc4fef3e93284b326247")
+    support.confined(root, "research/shared_tools/canonical_execution_context.py")
+    path = support.confined(root, "RAG/results/e10_official_test_v1/audit_data.py")
+    return load("audit_data", path, "a55837297bb51463e2a372cbe8486aca37609226271dc51311328be8a7803d71")
+
+
+audit = _load_audit_source()
+
 
 
 class ProjectionTests(unittest.TestCase):

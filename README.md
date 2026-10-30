@@ -149,7 +149,7 @@ The official test set had also been used in earlier exploratory work. In additio
 
 These results therefore represent a **retrospective evaluation**, not an official SemEval submission or an independent untouched test.
 
-See the [test-use audit](RAG/results/e10_official_test_v1/recovery_audit/PRIOR_TEST_USE_AUDIT.md), [MT overlap audit](RAG/results/e10_official_test_v1/recovery_audit/E10_OFFICIAL_TEST_MT_OVERLAP_AUDIT.md) and [full results](docs/RESULTS.md).
+See the [test-use audit](research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/PRIOR_TEST_USE_AUDIT.md), [MT overlap audit](research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/E10_OFFICIAL_TEST_MT_OVERLAP_AUDIT.md) and [full results](docs/RESULTS.md).
 
 ## Key Findings
 
