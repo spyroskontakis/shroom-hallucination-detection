@@ -52,3 +52,13 @@ These current files are available in this working layout. The baseline links ide
 | BM25 dependency spec | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/configs/requirements-rag-module2.txt) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/requirements-rag-module2.txt) |
 
 These alternatives do not repair literal old-path links inside protected historical reports. Their publication treatment remains OPEN. The BM25 pin is not a complete runtime environment; full notebook and scientific reproduction remain NOT VERIFIED.
+
+## Read-only source contexts
+
+The [repository source context](repository_source_context_v1.py) uses the existing H2-P0 validator and an independently pinned [source catalog](../../project_records/current_layout/repository_sources_v1.json). It separates original public Git bytes (H1), reviewed current files (H2), and original experiment inputs (H0). It does not launch experiments. An unimplemented H2 entry or a missing H0 input is not replaced with another context.
+
+For a read-only source check, supply the absolute checkout root, the original logical path and either `H1_SNAPSHOT` or `H2_CURRENT` to the validator's CLI. H1 reads only the fixed public baseline commit. H2 checks the measured current path and digest. A source check does not verify the reported scientific results.
+
+The [saved E6-v3 analysis context](saved_analysis_context_v1.py) provides isolated I/O bindings for the relocated [analysis sources](../experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/). Its [separate contract](../../project_records/current_layout/e6_v3_saved_analysis_h2_v1.json) retains the original input hashes. The four adapted Python files reject direct execution. Context construction requires authentic original inputs and separate, new run/cache/temporary roots before any output creation or module loading. Full saved-result analysis has not been rerun. The original Node CSV authoring script remains in its historical location; this is not a complete replacement of that authoring workflow.
+
+Only offline synthetic context, path and I/O checks were performed. Future execution requires the [safe execution procedure](../../docs/SAFE_EXECUTION.md), the independently verified contract digest and separately approved inputs. Historical frozen contracts, AccessGuards and E10/E11 consumers are unchanged.

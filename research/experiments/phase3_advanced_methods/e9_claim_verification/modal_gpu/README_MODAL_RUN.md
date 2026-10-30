@@ -1,6 +1,6 @@
 # Modal: frozen E9-B → E10 στην ίδια A100-80GB
 
-Το [Modal wrapper](modal_phase3_gpu.py) διαβάζει μόνο τα δύο ήδη παγωμένα ZIP:
+Το [Modal wrapper](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py) διαβάζει μόνο τα δύο ήδη παγωμένα ZIP:
 `../minicheck_gpu/minicheck_gpu_portable.zip` και
 `../factcg_gpu/factcg_gpu_portable.zip`. Δεν μεταφέρει το checkout ή άλλα δεδομένα.
 Πρώτα τρέχει τον υπάρχοντα MiniCheck runner και validator, μετά τον υπάρχοντα

@@ -1,21 +1,24 @@
 """Read-only diagnostics of frozen OOF results. No model imports, fits or inference."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Use the verified saved-analysis context; direct execution is disabled")
+_H2_CTX.source_gate(__file__)
 from pathlib import Path
 import csv,json,hashlib,math,statistics,socket
 from collections import Counter,defaultdict
 from datetime import datetime,timezone
-OUT=Path(__file__).resolve().parent
-ROOT=OUT.parents[3]
-V2=OUT.parent.parent/'rag_e6_v2';V3=OUT.parent
+OUT=_H2_CTX.binding('OUT', 'scripts')
+ROOT=_H2_CTX.binding('ROOT', 'scripts')
+V2=_H2_CTX.binding('V2', 'analysis');V3=_H2_CTX.binding('V3', 'analysis')
 def sha(p):
     h=hashlib.sha256()
-    with Path(p).open('rb') as f:
+    with _H2_CTX.io_path(Path(p), 'rb').open('rb') as f:
         for b in iter(lambda:f.read(1<<20),b''):h.update(b)
     return h.hexdigest()
-def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
+def read(p):return json.loads(_H2_CTX.io_path(Path(p), 'r').read_text(encoding='utf-8'))
 def write(name,data):
-    with (OUT/name).open('x',encoding='utf-8') as f:json.dump(data,f,ensure_ascii=False,indent=2,allow_nan=False)
+    with (_H2_CTX.io_path(OUT/name, 'x')).open('x',encoding='utf-8') as f:json.dump(data,f,ensure_ascii=False,indent=2,allow_nan=False)
 def csvrows(p):
-    with Path(p).open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
+    with _H2_CTX.io_path(Path(p), 'r').open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def index(rows):
     d={r['canonical_id']:r for r in rows};assert len(d)==len(rows)==561;return d
 def blocked(*a,**k):raise RuntimeError('Network forbidden for saved-artifact analysis')
@@ -119,7 +122,7 @@ def main():
     write('input_verification.json',{'utc':datetime.now(timezone.utc).isoformat(),'status':'PASS','protected_sha256':protected,
           'counts':dict(counts),'rows':561,'labels_votes_alignment':'PASS','training_fits':0,'inference_pairs':0,'network_calls':0})
     selected=[r for r in rows if r['correctness_group']!='both_correct']
-    with (OUT/'review_cases.txt').open('x',encoding='utf-8') as f:
+    with (_H2_CTX.io_path(OUT/'review_cases.txt', 'x')).open('x',encoding='utf-8') as f:
         for i,r in enumerate(selected,1):
             f.write(f"\nCASE {i} | {r['canonical_id']} | {r['task']} | {r['correctness_group']} | human={r['p_hallucination']} label={r['frozen_binary_label']} | v2={float(r['v2_oof']):.6f} v3={float(r['v3_oof']):.6f}\n")
             for k in ['src','tgt','hyp','selected_external_definition']:f.write(f'{k}: {r[k]}\n')

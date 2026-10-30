@@ -1,10 +1,13 @@
 """Summarize saved rows and the explicit 97-case qualitative review, without fitting."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Use the verified saved-analysis context; direct execution is disabled")
+_H2_CTX.source_gate(__file__)
 from pathlib import Path
 import json,statistics,collections,csv,hashlib
-OUT=Path(__file__).resolve().parent
-def read(n):return json.loads((OUT/n).read_text(encoding='utf-8'))
+OUT=_H2_CTX.binding('OUT', 'scripts')
+def read(n):return json.loads((_H2_CTX.io_path(OUT/n, 'r')).read_text(encoding='utf-8'))
 def put(n,v):
-    with (OUT/n).open('x',encoding='utf-8') as f:json.dump(v,f,ensure_ascii=False,indent=2,allow_nan=False)
+    with (_H2_CTX.io_path(OUT/n, 'x')).open('x',encoding='utf-8') as f:json.dump(v,f,ensure_ascii=False,indent=2,allow_nan=False)
 def esc(s):return str(s).replace('|','\\|').replace('\n',' ')
 def main():
     rows=read('diagnostics_intermediate.json');q=read('quantitative_summary.json');a=read('input_verification.json')
@@ -199,7 +202,7 @@ def main():
     for t,n in sorted(tags.items()):lines.append(f'| {t} | {n} | {common[t]} |')
     lines+=['','Οι παραπάνω συχνότητες είναι counts του review set, όχι error rates ή εκτιμήσεις επιπολασμού σε όλα τα 561 δείγματα. '
             'Δεν χρησιμοποιήθηκαν για δημιουργία/επιλογή νέων features στην παρούσα εργασία.','']
-    with (OUT/'E6_ERROR_ANALYSIS.md').open('x',encoding='utf-8',newline='\n') as f:f.write('\n'.join(lines))
+    with (_H2_CTX.io_path(OUT/'E6_ERROR_ANALYSIS.md', 'x')).open('x',encoding='utf-8',newline='\n') as f:f.write('\n'.join(lines))
     print(json.dumps(signals,ensure_ascii=False,indent=2))
 
 if __name__=='__main__':main()

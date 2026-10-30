@@ -1,17 +1,20 @@
 """Validate final CSV cell values, quantitative denominators and preserved artifacts."""
+if "_H2_CTX" not in globals():
+    raise RuntimeError("Use the verified saved-analysis context; direct execution is disabled")
+_H2_CTX.source_gate(__file__)
 from pathlib import Path
 import csv,json,hashlib,collections,math
 from datetime import datetime,timezone
-OUT=Path(__file__).resolve().parent;ROOT=OUT.parents[3]
-def read(n):return json.loads((OUT/n).read_text(encoding='utf-8'))
+OUT=_H2_CTX.binding('OUT', 'scripts');ROOT=_H2_CTX.binding('ROOT', 'scripts')
+def read(n):return json.loads((_H2_CTX.io_path(OUT/n, 'r')).read_text(encoding='utf-8'))
 def sha(p):
     h=hashlib.sha256()
-    with p.open('rb') as f:
+    with _H2_CTX.io_path(p, 'rb').open('rb') as f:
         for b in iter(lambda:f.read(1<<20),b''):h.update(b)
     return h.hexdigest()
 def main():
     data=read('diagnostic_table.json');columns=data['columns'];expected=data['rows']
-    with (OUT/'E6_DIAGNOSTIC_TABLE.csv').open(encoding='utf-8',newline='') as f:
+    with (_H2_CTX.io_path(OUT/'E6_DIAGNOSTIC_TABLE.csv', 'r')).open(encoding='utf-8',newline='') as f:
         reader=csv.DictReader(f);assert reader.fieldnames==columns;rows=list(reader)
     assert len(rows)==len(expected)==561 and len(columns)==67
     texts={'canonical_id','task','src','tgt','hyp','selected_external_definition','selected_evidence_id','reference_field',
@@ -45,7 +48,7 @@ def main():
     assert sum(r['qualitative_reviewed']=='1' for r in rows)==97
     ids={r['canonical_id'] for r in rows};review=read('qualitative_review_by_id.json')
     assert set(review)=={r['canonical_id'] for r in rows if r['correctness_group']!='both_correct'}
-    report=(OUT/'E6_ERROR_ANALYSIS.md').read_text(encoding='utf-8')
+    report=(_H2_CTX.io_path(OUT/'E6_ERROR_ANALYSIS.md', 'r')).read_text(encoding='utf-8')
     for cid in review:assert cid in report
     # Check near-duplicate observation from saved columns only.
     byid={r['canonical_id']:r for r in rows}
@@ -63,8 +66,8 @@ def main():
             'all_report_case_ids_validated':True,'quantitative_denominators_verified':True,'previous_files_unchanged':len(protected),
             'new_training_fits':0,'new_inference_pairs':0,'retrieval_or_network_calls':0,
             'analysis_runtime':'bundled Python stdlib for diagnostics; Artifact Tool for CSV, no model runtime',
-            'files':{p.name:sha(p) for p in OUT.iterdir() if p.is_file() and p.name!='analysis_completion_manifest.json'}}
-    with (OUT/'analysis_completion_manifest.json').open('x',encoding='utf-8') as f:json.dump(result,f,indent=2)
+            'files':{p.name:sha(p) for p in _H2_CTX.inventory(OUT, '*', 'iterdir') if p.is_file() and p.name!='analysis_completion_manifest.json'}}
+    with (_H2_CTX.io_path(OUT/'analysis_completion_manifest.json', 'x')).open('x',encoding='utf-8') as f:json.dump(result,f,indent=2)
     print({k:v for k,v in result.items() if k!='files'})
 
 if __name__=='__main__':main()
