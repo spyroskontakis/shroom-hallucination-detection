@@ -44,3 +44,7 @@ A future synthetic helper test or source-only check may be feasible after its im
 Compare complete file inventories before and after any approved test, including ignored and untracked files, together with Git refs, index state and protected input hashes. A clean `git status` and `.gitignore` rules alone cannot prove that no protected or ignored file was changed.
 
 For the code locations, see the [research index](../research/README.md). The detailed static review is in the [historical execution matrix](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/project_records/migrations/execution_safety_20261027/EXECUTION_MATRIX.md) and [output-path risk review](../project_records/migrations/execution_safety_20261027/OUTPUT_PATH_RISKS.md). These documents describe prerequisites; they do not authorize execution.
+
+## Source modes after physical relocation
+
+Select an authenticated historical snapshot or a supported current binding explicitly; see [source modes](REPRODUCIBILITY.md). Raw relocated frozen files retain their old paths and writers internally. Do not run them directly in the checkout. The compatibility layer covers selected libraries and E6 bindings only, not a complete runner. Public snapshots do not supply missing original data, weights, markers or timestamps.

@@ -1,6 +1,6 @@
 # Shared Utilities and Tests
 
-Most research utilities remain beside their original consumers; the adapted Module 2 helper is linked at its new location. This page is an index, not a new shared Python package. Fixed paths, local imports and source-hash checks still apply.
+Shared tools and experiment-specific helpers are linked at their actual current locations. This page is an index, not a new shared Python package. Fixed paths, local imports and source-hash checks still apply.
 
 | Purpose | Source and related tests |
 |---|---|
@@ -8,8 +8,8 @@ Most research utilities remain beside their original consumers; the adapted Modu
 | Module 4 external lexical evidence | [Lexicon builder](lexical_evidence/module4_build_external_lexicon.py) and [tests](lexical_evidence/tests/test_module4_external_lexicon.py) |
 | Module 4 release verification | [Verifier](../experiments/phase2_rag_features/e5_rag/modules/module4/historical_release_v1/verify_module4.py) and [tests](../experiments/phase2_rag_features/e5_rag/modules/module4/historical_release_v1/tests/test_verify_module4.py) |
 | E6-v3 feature/evaluation helpers | [v3_common.py](../experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/v3_common.py) and [tests](../experiments/phase2_rag_features/e6_feature_extensions/v3/tests/test_v3.py) |
-| E9 evaluation helpers | [e9_common.py](../../RAG/results/phase3_e9_claim_verification/scripts/e9_common.py) and [tests](../../RAG/results/phase3_e9_claim_verification/tests/test_e9.py) |
-| E11 scoring contracts | [scoring_common.py](../../RAG/results/phase3_e11_task_adaptation/scoring_common.py) and [tests](../../RAG/results/phase3_e11_task_adaptation/test_scoring.py) |
+| E9 evaluation helpers | [e9_common.py](../experiments/phase3_advanced_methods/e9_claim_verification/scripts/e9_common.py) and [tests](../experiments/phase3_advanced_methods/e9_claim_verification/tests/test_e9.py) |
+| E11 scoring contracts | [scoring_common.py](../experiments/phase3_advanced_methods/e11_transformer_finetuning/scoring_common.py) and [tests](../experiments/phase3_advanced_methods/e11_transformer_finetuning/test_scoring.py) |
 | Verification of thesis result sources | [verify_sources.py](../../thesis_writing/chapter9_phase1/verify_sources.py) |
 
 The [core pipeline](../core_pipeline/README.md) is shared across baseline evaluation and later experiments. Experiment-specific helpers are not interchangeable: some load other modules or expect full frozen artifacts. The links above do not imply that every test can run from a clean clone or that a test suite was executed during repository organization.
@@ -35,7 +35,7 @@ Use a fresh kernel for each notebook and disable Python bytecode writing. Import
 
 The helper CLI requires `--input-root`, `--evidence-root`, `--run-dir`, `--cache-dir` and exactly one of `--check-paths` or `--build-cache`. Path-check mode creates no files and loads no ML libraries. Cache building requires separate approval, Python 3.11.9 and an adapted-owned writable cache. Unknown/historical caches cannot be adopted for writing by fabricating an ownership marker.
 
-Run outputs cannot replace existing files. Only a manifest in an adapted-owned dense cache can be updated for resume; existing chunks remain immutable. Historical input/source hashes remain unchanged. Missing originals or public-safe bytes differing from original hashes must fail, not fall back or receive refreshed hashes. The ten public H1 records are now in the [Module 2 historical archive](../experiments/phase2_rag_features/e5_rag/modules/module2/historical_records/). The [Module 2 requirements](../experiments/phase2_rag_features/e5_rag/modules/module2/configs/requirements-rag-module2.txt) are now at their planned location. This completes the 21-file Module 2 physical relocation. Historical exception R1 permits retaining the old requirements link for local reorganization only; the literal link remains broken and publication is still pending. Original H0 runtime evidence still requires a separately authenticated snapshot.
+Run outputs cannot replace existing files. Only a manifest in an adapted-owned dense cache can be updated for resume; existing chunks remain immutable. Historical input/source hashes remain unchanged. Missing originals or public-safe bytes differing from original hashes must fail, not fall back or receive refreshed hashes. The ten public H1 records are now in the [Module 2 historical archive](../experiments/phase2_rag_features/e5_rag/modules/module2/historical_records/). The [Module 2 requirements](../experiments/phase2_rag_features/e5_rag/modules/module2/configs/requirements-rag-module2.txt) are now at their planned location. This completes the 21-file Module 2 physical relocation. The old requirements link was repaired with an exact historical Git permalink; that repair is preserved. Original H0 runtime evidence still requires a separately authenticated snapshot.
 
 Static and isolated helper/path/writer tests passed. The notebooks were not run; actual retrieval, cache/model compatibility, evaluation and full reproduction remain NOT VERIFIED. Third-party library writes need a separately audited isolated run; offline flags are not an OS sandbox. See [safe execution](../../docs/SAFE_EXECUTION.md).
 
@@ -51,7 +51,7 @@ These current files are available in this working layout. The baseline links ide
 | Cache helper | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/scripts/module2_dense_cache.py) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/scripts/module2_dense_cache.py) |
 | BM25 dependency spec | [Current](../experiments/phase2_rag_features/e5_rag/modules/module2/configs/requirements-rag-module2.txt) | [Historical](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/requirements-rag-module2.txt) |
 
-These alternatives do not repair literal old-path links inside protected historical reports. Their publication treatment remains OPEN. The BM25 pin is not a complete runtime environment; full notebook and scientific reproduction remain NOT VERIFIED.
+Six earlier broken historical links were repaired with exact baseline permalinks. One hash-locked E11 audit link remains open; these alternatives do not repair it. The BM25 pin is not a complete runtime environment; full notebook and scientific reproduction remain NOT VERIFIED.
 
 ## Read-only source contexts
 
@@ -63,16 +63,12 @@ The [saved E6-v3 analysis context](saved_analysis_context_v1.py) provides isolat
 
 Only offline synthetic context, path and I/O checks were performed. Future execution requires the [safe execution procedure](../../docs/SAFE_EXECUTION.md), the independently verified contract digest and separately approved inputs. Historical frozen contracts, AccessGuards and E10/E11 consumers are unchanged.
 
-The final E11 summary, table and manifest are now at their [current location](../experiments/phase3_advanced_methods/e11_transformer_finetuning/). Their bytes and historical metrics are unchanged. The original E11 checksum list stays in its historical directory and keeps the original finalization entry guard closed. Current source verification is not a rerun of the E11 experiments.
+The final E11 summary, table and manifest are now at their [current location](../experiments/phase3_advanced_methods/e11_transformer_finetuning/). Their bytes and historical metrics are unchanged. Relocated E11 checksum lists retain their historical contents. Two D/E checksum lists stay at their old locations because their external finalization context is unverified. No original finalization or runtime gate was bypassed. Current source verification is not a rerun of the E11 experiments.
 
 ## Cross-experiment E6-v2/v3 binding
 
-The [shared execution/source binding](cross_experiment_context_v1.py), [independently pinned contract](../../project_records/current_layout/e6_cross_experiment_h2_v1.json) and [offline tests](tests/test_cross_experiment_context_v1.py) integrate the relocated E6-v2/v3 consumers. The original common helpers remain at their historical paths for protected E10/E11 readers; the binding derives separate current IO/import views without editing those originals or their frozen checks.
+The [compatibility layer](repository_compatibility.py) composes the unchanged cross-experiment API with the master catalog's current paths. Use Catalog.cross() for the supported current E6-v2/v3 integrations. Old cross and source-context v1/v2/v3 catalogs remain pinned milestone contexts; validate them against the authenticated Phase 26 snapshot, not the later working tree.
 
-A read-only source plan uses only the standard library and creates no run files:
+The layer also provides separately hashed current library views for E7, E8, FactCG and E11 scoring. It preserves AccessGuard class bodies and original-input hashes. Tests use isolated synthetic inputs and selected read-only public configuration checks. They do not launch full experimental pipelines.
 
-    python research/shared_tools/cross_experiment_context_v1.py --expected-sha256 CONTRACT_PIN --group v2
-
-Replace CONTRACT_PIN with the independently reviewed digest: d8660a9e9757d9fe2cf30a4e3222fca1355a9b7f11e08085b085abf84781fac7. Group v3 is also supported. Plan mode validates current sources, historical record schemas and model identity declarations; it does not prove that original datasets or model assets are available.
-
-Preflight requires SHROOM_CROSS_ORIGINAL_ROOT, SHROOM_CROSS_RUN_ROOT, SHROOM_CROSS_TEMP_ROOT and SHROOM_CROSS_CACHE_ROOT. The cache must be a prepared child of the external temporary root. Scientific execution requires separate approval and authentic original evidence. Current views never replace original-source checks; protected historical E9/E10/E11 consumers are unchanged. See the [Phase 2 guide](../experiments/phase2_rag_features/README.md#e6-v2v3-current-binding-and-retained-historical-consumers) for the retained paths and static-only entries.
+For modes, scope and the source-only CLI, read [reproducibility](../../docs/REPRODUCIBILITY.md). No historical source or public-safe record replaces a missing authentic original input.

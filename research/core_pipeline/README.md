@@ -1,11 +1,11 @@
 # Core Pipeline and Canonical Evaluation
 
-Preparation and feature extraction remain in `codex/` because frozen consumers require those paths. The shared CV implementation and recorded fold-generation script are under `research/data_and_evaluation/canonical/scripts/`. Historical records and source hashes are preserved.
+Preparation, feature extraction, shared CV and the recorded fold-generation source are under research/data_and_evaluation/canonical/. The two newly relocated preparation/feature sources keep their exact historical bytes; they are not newly adapted runnable entry points. Historical replay requires the validated original layout and authentic inputs. One canonical metadata file remains in codex/ because the immutable E11 audit links to it.
 
 | Step | Implementation or record |
 |---|---|
-| Data preparation and normalization | [canonical_evaluation_data_prep.py](../../codex/canonical_evaluation_data_prep.py) |
-| NLI and semantic-similarity features | [canonical_feature_extraction.py](../../codex/canonical_feature_extraction.py) |
+| Data preparation and normalization | [canonical_evaluation_data_prep.py](../data_and_evaluation/canonical/scripts/canonical_evaluation_data_prep.py) |
+| NLI and semantic-similarity features | [canonical_feature_extraction.py](../data_and_evaluation/canonical/scripts/canonical_feature_extraction.py) |
 | Recorded fold-generation procedure | [regenerate_canonical_folds_sklearn.py](../data_and_evaluation/canonical/scripts/regenerate_canonical_folds_sklearn.py) |
 | Shared E1-E4 cross-validation | [canonical_development_cv.py](../data_and_evaluation/canonical/scripts/canonical_development_cv.py) |
 | Evaluation decisions | [Protocol](../data_and_evaluation/canonical/protocols/evaluation_protocol_decision.md) and [data description](../data_and_evaluation/canonical/protocols/evaluation_data_manifest.md) |

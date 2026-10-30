@@ -18,7 +18,7 @@ import types
 
 VERSION = "shroom-repository-compatibility-v1"
 CATALOG = "project_records/current_layout/repository_compatibility_v1.json"
-CATALOG_SHA256 = "8162aeba9c31b1454e87f5024e14dc9a5ec40cff8b919d847139d80cd2f2f5ba"
+CATALOG_SHA256 = "e4ec7dc02356c831f5dc698a10daabcfaeddb9aa2233478af379ccbd47596b0b"
 SHARED = "research/shared_tools/canonical_execution_context.py"
 SHARED_SHA256 = "c668cce4282d6865373f50525fc78fb5a87b5be14463cc4fef3e93284b326247"
 CROSS = "research/shared_tools/cross_experiment_context_v1.py"

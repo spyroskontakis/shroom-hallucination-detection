@@ -1,6 +1,6 @@
 # Phase 2: External Knowledge and Additional Features
 
-E5-E8 explore retrieval evidence, extra semantic features, selective routing and Random Forest tuning. Most implementations remain under `RAG/`. Module 2's adapted helper and notebooks are under the Module 2 directory linked below.
+E5-E8 explore retrieval evidence, extra semantic features, selective routing and Random Forest tuning. Most implementations and records are now under this research hierarchy. Module 2's adapted helper and notebooks are under the Module 2 directory linked below.
 
 ## E5: RAG Modules 1-4
 
@@ -19,7 +19,7 @@ Module 1 is physically organized under its module directory. The two notebooks a
 
 Module 2 now uses explicit input, historical-evidence and external output roots. Saved results are historical; the adapted notebooks have not been rerun. See the [adapted execution notes](../../shared_tools/README.md#module-2-adapted-execution-context).
 
-Some Module 4 protocol records and publication-safe aggregate records from E6, E7 and E8 have been relocated under this research hierarchy. The other frozen executable pipelines and their required runtime metadata remain at their existing RAG paths. E6-v4 has a separate current-layout context described below. The relocated inventories retain historical paths and hashes; they are not current execution manifests. The [E6-v3 publication guide](../../../docs/reproducibility/e6/E6_V3_REPRODUCIBILITY.md) and [MPNet source-provenance tests](e5_rag/modules/module4/variants/continuation_v1/mpnet_provenance_v2/tests/test_mpnet_provenance_static.py) are available at their current locations. Do not rerun historical writers to recreate files at old paths. These moves do not establish full runtime reproducibility.
+Some Module 4 protocol records and publication-safe aggregate records from E6, E7 and E8 have been relocated under this research hierarchy. Their historical source bytes are retained at the new paths; direct execution there is not verified. Explicit original-layout snapshots preserve historical source resolution. E6-v4 has a separate current-layout context described below. The relocated inventories retain historical paths and hashes; they are not current execution manifests. The [E6-v3 publication guide](../../../docs/reproducibility/e6/E6_V3_REPRODUCIBILITY.md) and [MPNet source-provenance tests](e5_rag/modules/module4/variants/continuation_v1/mpnet_provenance_v2/tests/test_mpnet_provenance_static.py) are available at their current locations. Do not rerun historical writers to recreate files at old paths. These moves do not establish full runtime reproducibility.
 
 ## E6: feature extensions
 
@@ -33,11 +33,11 @@ Some Module 4 protocol records and publication-safe aggregate records from E6, E
 
 ### E6-v2/v3: current binding and retained historical consumers
 
-A [shared current-layout binding](../../shared_tools/cross_experiment_context_v1.py) now covers the E6-v2/v3 source and record group. Its [execution/source contract](../../../project_records/current_layout/e6_cross_experiment_h2_v1.json) records original public bytes separately from current and derived source identities. Relocated Python files reject direct execution or import; use the explicit binding rather than a historical command at a new path.
+The [compatibility layer](../../shared_tools/repository_compatibility.py) binds the existing [cross-experiment API](../../shared_tools/cross_experiment_context_v1.py) to current E6-v2/v3 paths through Catalog.cross(). Its [execution/source contract](../../../project_records/current_layout/e6_cross_experiment_h2_v1.json) records original public bytes separately from current and derived source identities. Relocated Python files reject direct execution or import; use the explicit binding rather than a historical command at a new path.
 
 The binding reuses the existing pinned H2 safety engine. Original expected hashes are checked only against a separately authenticated original input tree. Current sources are validated independently; an adapted source cannot stand in for an original. Explicit outside-Git original/run/temporary roots and a prepared cache below the temporary root are required before execution. Missing inputs, model assets or schema identities fail before run creation or model loading. Existing runs cannot be adopted, and original evaluation markers are not removed or bypassed.
 
-Some sources and records remain under RAG because unchanged E9/E10/E11 consumers require their exact paths. These include the original common helpers, model backends, acquisition records and E6-v3 baseline metadata. The pinned E6-v3 publication guide and its protocol target also remain unchanged. Source-generation, model-acquisition and freeze-authoring entries are static-only in this binding; it is not a verified end-to-end replay workflow.
+The prior cross contract retains its exact Phase 26 layout and hashes; validate it in its authenticated Phase 26 snapshot. The new master catalog independently identifies current paths. The NLI backend and selected E6-v3 files remain at RAG paths because immutable Markdown links or the native Node authoring workflow still need resolution. Source-generation, model-acquisition and freeze-authoring entries are static-only in this binding; it is not a verified end-to-end replay workflow.
 
 Only offline synthetic context/import/guard tests were executed. They do not repeat the experiments or independently verify their metrics. Full historical runtime reproducibility remains NOT VERIFIED.
 
@@ -56,6 +56,6 @@ The [original Git snapshot](https://github.com/spyroskontakis/shroom-hallucinati
 - **E7 - selective routing:** a fixed rule selects between E3 and E6-v1 predictions. See the [protocol](e7_selective_rag/protocols/E7_PROTOCOL.md), [implementation helpers](e7_selective_rag/scripts/e7_common.py) and [results](e7_selective_rag/results/reports/E7_RESULTS.md). This is not an autonomous LLM agent.
 - **E8 - Random Forest tuning:** nested cross-validation tests RF configurations without adding predictor features. See the [protocol](e8_rf_tuning/protocols/E8_PROTOCOL.md), [implementation helpers](e8_rf_tuning/scripts/e8_common.py) and [results](e8_rf_tuning/results/reports/E8_RESULTS.md).
 
-These experiments depend on the [canonical pipeline](../../core_pipeline/README.md), full frozen artifacts and experiment-specific environments. Their current paths and integrity checks are retained. Some historical configurations in the public package are documented public-safe versions rather than byte-identical original runtime files. Full historical replay is not established by a source link or a migration hash check; read [environment requirements](../../../docs/ENVIRONMENTS.md) and [reproducibility](../../../docs/REPRODUCIBILITY.md).
+These experiments depend on the [canonical pipeline](../../core_pipeline/README.md), full frozen artifacts and experiment-specific environments. Their original source bytes and integrity-check logic are retained. The compatibility layer provides separately identified E7/E8 library views with explicit original-input and new run roots; this is not a full routing/tuning entry-point integration. Some historical configurations in the public package are documented public-safe versions rather than byte-identical original runtime files. Full historical replay is not established by a source link or a migration hash check; read [environment requirements](../../../docs/ENVIRONMENTS.md) and [reproducibility](../../../docs/REPRODUCIBILITY.md).
 
 [Back to the research guide](../../README.md)

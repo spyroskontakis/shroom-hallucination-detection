@@ -38,7 +38,7 @@ def _load_audit_source(origin=__file__):
     support = load("canonical_execution_context", support_path,
                    "c668cce4282d6865373f50525fc78fb5a87b5be14463cc4fef3e93284b326247")
     support.confined(root, "research/shared_tools/canonical_execution_context.py")
-    path = support.confined(root, "RAG/results/e10_official_test_v1/audit_data.py")
+    path = support.confined(root, "research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/audit_data.py")
     return load("audit_data", path, "a55837297bb51463e2a372cbe8486aca37609226271dc51311328be8a7803d71")
 
 

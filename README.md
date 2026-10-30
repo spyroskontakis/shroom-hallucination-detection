@@ -174,9 +174,9 @@ Selected experiments used Modal for remote execution.
 | Directory | Description |
 |---|---|
 | `research/` | Relocated research implementations, canonical CV, E6-v4, shared tools, historical sources/results and the entailment prototype |
-| `codex/` | Protected canonical preparation, feature extraction, metadata and one retained historical notebook |
+| `codex/` | Retained canonical metadata and a historical notebook with unresolved provenance requirements |
 | `data/` | Retained early notebooks; archived result tables are indexed under `research/` |
-| `RAG/` | Remaining frozen E5-E11 sources, verification methods and required historical metadata |
+| `RAG/` | Historical documentation and files whose migration still requires verified context or provenance work |
 | `project_records/` | Historical source snapshots, thesis verification records, release tools, runtime probes and migration reports |
 | `docs/` | Technical documentation, experimental results and reproducibility information |
 | `thesis/` | Complete thesis in PDF and Word formats |
@@ -184,7 +184,7 @@ Selected experiments used Modal for remote execution.
 | `manifests/` | File verification records and public release documentation |
 | `thesis_writing/` | Supporting script for verifying research results used during thesis writing |
 
-The repository combines physically relocated implementations with protected historical paths. Canonical CV, E6-v4 and independent source groups are under `research/`; frozen consumers still require the remaining `codex/` and `RAG/` paths. Navigation distinguishes current adapted entry points from unchanged historical sources. Original source hashes and scientific results are preserved.
+Most implementations and records are now under research/, alongside a small retained set in codex/ and RAG/. Historical source files keep their original bytes even when relocated. Their old commands and relative paths are not automatically valid at the new location. The [source-mode guide](docs/REPRODUCIBILITY.md) distinguishes authenticated historical snapshots from supported current integrations. Original source hashes and scientific results are preserved.
 
 ## Getting Started
 

@@ -1,12 +1,12 @@
 # Research Guide
 
-This guide connects the thesis methodology to code, protocols and recorded results. The repository combines relocated implementations under research/ with protected historical paths under codex/ and RAG/. Each page distinguishes current entry points, unchanged historical sources and records; a source link alone does not certify runtime reproduction.
+This guide connects the thesis methodology to code, protocols and recorded results. Most implementations are physically organized under research/; a small set remains under codex/ and RAG/ for documented compatibility and provenance requirements. Each page distinguishes current entry points, unchanged historical sources and records; a source link alone does not certify runtime reproduction.
 
 | Area | What to explore |
 |---|---|
 | [Core pipeline](core_pipeline/README.md) | Canonical data preparation, semantic features, fixed folds and shared evaluation |
 | [Exploratory analysis](exploratory_analysis/README.md) | Descriptive EDA and the different historical notebook versions |
-| [Shared tools and tests](shared_tools/README.md) | Utilities and tests at their original locations |
+| [Shared tools and tests](shared_tools/README.md) | Shared utilities, source-mode validation and experiment-specific tests |
 | [Phase 1: E1-E4](experiments/phase1_baselines/README.md) | NLI, similarity, their combination and synthetic-data diagnostics |
 | [Phase 2: E5-E8](experiments/phase2_rag_features/README.md) | RAG Modules 1-4, additional features, routing and Random Forest tuning |
 | [Phase 3: E9-E11](experiments/phase3_advanced_methods/README.md) | Claim verification, FactCG and transformer fine-tuning |
