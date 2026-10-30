@@ -19,7 +19,7 @@ The official-test reconstruction was retrospective, after label release and earl
 
 ## E11: task adaptation and contrastive training
 
-The [E11 summary](../../../RAG/results/phase3_e11_task_adaptation/E11_FINAL_SUMMARY.md) connects the variants. Unlike the feature-based Random Forest experiments, these variants investigate direct transformer fine-tuning.
+The [E11 summary](e11_transformer_finetuning/E11_FINAL_SUMMARY.md) connects the variants. Unlike the feature-based Random Forest experiments, these variants investigate direct transformer fine-tuning.
 
 | Variant | Available source and records |
 |---|---|
