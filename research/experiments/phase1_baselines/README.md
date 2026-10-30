@@ -6,7 +6,7 @@ E1-E3 compare NLI, semantic similarity and their combination. E4 investigates sy
 
 The [core pipeline guide](../../core_pipeline/README.md) links to the canonical code, fixed-fold records and evaluation decisions in `codex/`. The [shared CV implementation](../../../codex/canonical_development_cv.py) evaluates E1-E4 on the later 561-example human development pool. Canonical E4 is diagnostic-only and adds synthetic rows only to training folds.
 
-Read the [canonical results summary](../../../codex/canonical_cv_outputs/canonical_cv_results_summary.md) for that evaluation. It is separate from the older settings below.
+Read the [canonical results summary](../../data_and_evaluation/canonical/results/canonical_561/canonical_cv_results_summary.md) for that evaluation. It is separate from the older settings below.
 
 ## Historical development experiments: 499 examples
 
