@@ -11,7 +11,7 @@ The modules record successive retrieval and evaluation stages. They are not four
 | Module 1: exact retrieval prototype | [Notebook](e5_rag/modules/module1/notebooks/shroom_rag_e5_module1.ipynb), [Gemini trial variant](e5_rag/modules/module1/notebooks/shroom_rag_e5_module1_gemini_trial.ipynb) and [guide](e5_rag/modules/module1/protocols/README_MODULE1.md) |
 | Module 2: retrieval and evaluation | [Retrieval notebook](e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_retrieval.ipynb), [phase-B evaluation](e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_phase_b_evaluation.ipynb), [holdout evaluation](e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_holdout_evaluation.ipynb) and [results](e5_rag/modules/module2/protocols/MODULE2_FINAL_RESULTS.md) |
 | Module 3: diagnostic investigation | [Final diagnostic report](e5_rag/modules/module3/records/MODULE3_FINAL_RESULTS.md) and [initial failure audit](e5_rag/modules/module3/records/MODULE3_PHASE0_FAILURE_AUDIT.md) |
-| Module 4: external lexical evidence and feature fusion | [Static protocol report](e5_rag/modules/module4/protocols/static_protocol/MODULE4_STATIC_PROTOCOL_REPORT.md), [lexicon builder](../../../RAG/scripts/module4_build_external_lexicon.py), [pinned feature builder](../../../RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py), [fusion evaluator](../../../RAG/results/rag_module4/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py) and [results](e5_rag/modules/module4/results/reports/MODULE4_FINAL_RESULTS.md) |
+| Module 4: external lexical evidence and feature fusion | [Static protocol report](e5_rag/modules/module4/protocols/static_protocol/MODULE4_STATIC_PROTOCOL_REPORT.md), [lexicon builder](../../shared_tools/lexical_evidence/module4_build_external_lexicon.py), [pinned feature builder](e5_rag/modules/module4/variants/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py), [fusion evaluator](e5_rag/modules/module4/variants/continuation_v1/schannel_run_v1/scripts/module4_evaluate_fusion.py) and [results](e5_rag/modules/module4/results/reports/MODULE4_FINAL_RESULTS.md) |
 
 Module 3 closed as a diagnostic stage; no standalone final gated-RAG evaluation implementation was located. The original reports are retained without presenting that stage as a completed executable pipeline.
 
@@ -27,7 +27,7 @@ Some Module 4 protocol records and publication-safe aggregate records from E6, E
 |---|---|---|
 | E6-v1 | Additional comparisons with retrieved definitions | [Protocol](../../../RAG/results/rag_e6_v1/E6_PROTOCOL.md), [results](../../../RAG/results/rag_e6_v1/E6_RESULTS.md) |
 | E6-v2 | A second NLI evaluator | [Protocol](e6_feature_extensions/v2/protocols/E6_V2_PROTOCOL.md), [results](e6_feature_extensions/v2/results/reports/E6_V2_RESULTS.md) |
-| E6-v3 | HHEM consistency features | [Protocol](../../../RAG/results/rag_e6_v3/E6_V3_PROTOCOL.md), [results](e6_feature_extensions/v3/results/reports/E6_V3_RESULTS.md), [implementation helpers](../../../RAG/results/rag_e6_v3/scripts/v3_common.py) |
+| E6-v3 | HHEM consistency features | [Protocol](e6_feature_extensions/v3/protocols/E6_V3_PROTOCOL.md), [results](e6_feature_extensions/v3/results/reports/E6_V3_RESULTS.md), [implementation helpers](e6_feature_extensions/v3/scripts/v3_common.py) |
 | E6-v4 | BERTScore and structural features | [Protocol](e6_feature_extensions/v4/protocols/E6_V4_PROTOCOL.md), [compatibility amendment](e6_feature_extensions/v4/protocols/E6_V4_PROTOCOL_AMENDMENT_01.md), [results](e6_feature_extensions/v4/results/reports/E6_V4_RESULTS.md) |
 
 
@@ -53,8 +53,8 @@ The [original Git snapshot](https://github.com/spyroskontakis/shroom-hallucinati
 
 ## E7 and E8
 
-- **E7 - selective routing:** a fixed rule selects between E3 and E6-v1 predictions. See the [protocol](../../../RAG/results/rag_e7_agentic_v1/E7_PROTOCOL.md), [implementation helpers](../../../RAG/results/rag_e7_agentic_v1/scripts/e7_common.py) and [results](../../../RAG/results/rag_e7_agentic_v1/E7_RESULTS.md). This is not an autonomous LLM agent.
-- **E8 - Random Forest tuning:** nested cross-validation tests RF configurations without adding predictor features. See the [protocol](../../../RAG/results/rag_e8_rf_tuning_v1/E8_PROTOCOL.md), [implementation helpers](../../../RAG/results/rag_e8_rf_tuning_v1/scripts/e8_common.py) and [results](../../../RAG/results/rag_e8_rf_tuning_v1/E8_RESULTS.md).
+- **E7 - selective routing:** a fixed rule selects between E3 and E6-v1 predictions. See the [protocol](e7_selective_rag/protocols/E7_PROTOCOL.md), [implementation helpers](e7_selective_rag/scripts/e7_common.py) and [results](e7_selective_rag/results/reports/E7_RESULTS.md). This is not an autonomous LLM agent.
+- **E8 - Random Forest tuning:** nested cross-validation tests RF configurations without adding predictor features. See the [protocol](e8_rf_tuning/protocols/E8_PROTOCOL.md), [implementation helpers](e8_rf_tuning/scripts/e8_common.py) and [results](e8_rf_tuning/results/reports/E8_RESULTS.md).
 
 These experiments depend on the [canonical pipeline](../../core_pipeline/README.md), full frozen artifacts and experiment-specific environments. Their current paths and integrity checks are retained. Some historical configurations in the public package are documented public-safe versions rather than byte-identical original runtime files. Full historical replay is not established by a source link or a migration hash check; read [environment requirements](../../../docs/ENVIRONMENTS.md) and [reproducibility](../../../docs/REPRODUCIBILITY.md).
 

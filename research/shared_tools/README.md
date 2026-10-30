@@ -5,9 +5,9 @@ Most research utilities remain beside their original consumers; the adapted Modu
 | Purpose | Source and related tests |
 |---|---|
 | Module 2 dense cache | [Cache utility](../experiments/phase2_rag_features/e5_rag/modules/module2/scripts/module2_dense_cache.py) |
-| Module 4 external lexical evidence | [Lexicon builder](../../RAG/scripts/module4_build_external_lexicon.py) and [tests](lexical_evidence/tests/test_module4_external_lexicon.py) |
-| Module 4 release verification | [Verifier](../../RAG/module4_release_v1/verify_module4.py) and [tests](../../RAG/module4_release_v1/tests/test_verify_module4.py) |
-| E6-v3 feature/evaluation helpers | [v3_common.py](../../RAG/results/rag_e6_v3/scripts/v3_common.py) and [tests](../experiments/phase2_rag_features/e6_feature_extensions/v3/tests/test_v3.py) |
+| Module 4 external lexical evidence | [Lexicon builder](lexical_evidence/module4_build_external_lexicon.py) and [tests](lexical_evidence/tests/test_module4_external_lexicon.py) |
+| Module 4 release verification | [Verifier](../experiments/phase2_rag_features/e5_rag/modules/module4/historical_release_v1/verify_module4.py) and [tests](../experiments/phase2_rag_features/e5_rag/modules/module4/historical_release_v1/tests/test_verify_module4.py) |
+| E6-v3 feature/evaluation helpers | [v3_common.py](../experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/v3_common.py) and [tests](../experiments/phase2_rag_features/e6_feature_extensions/v3/tests/test_v3.py) |
 | E9 evaluation helpers | [e9_common.py](../../RAG/results/phase3_e9_claim_verification/scripts/e9_common.py) and [tests](../../RAG/results/phase3_e9_claim_verification/tests/test_e9.py) |
 | E11 scoring contracts | [scoring_common.py](../../RAG/results/phase3_e11_task_adaptation/scoring_common.py) and [tests](../../RAG/results/phase3_e11_task_adaptation/test_scoring.py) |
 | Verification of thesis result sources | [verify_sources.py](../../thesis_writing/chapter9_phase1/verify_sources.py) |

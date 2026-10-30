@@ -7,10 +7,10 @@ import unittest
 from pathlib import Path
 
 SCRIPT = next((
-    parent / "RAG/scripts/module4_build_external_lexicon.py"
+    parent / "research/shared_tools/lexical_evidence/module4_build_external_lexicon.py"
     for parent in Path(__file__).resolve().parents
     if (parent / "research/README.md").is_file()
-    and (parent / "RAG/scripts/module4_build_external_lexicon.py").is_file()
+    and (parent / "research/shared_tools/lexical_evidence/module4_build_external_lexicon.py").is_file()
 ), None)
 if SCRIPT is None:
     raise RuntimeError("Historical Module 4 source root was not found")

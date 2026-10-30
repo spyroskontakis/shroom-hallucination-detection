@@ -3,10 +3,10 @@ import unittest
 from pathlib import Path
 
 SCRIPT = next((
-    parent / "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py"
+    parent / "research/experiments/phase2_rag_features/e5_rag/modules/module4/variants/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py"
     for parent in Path(__file__).resolve().parents
     if (parent / "research/README.md").is_file()
-    and (parent / "RAG/results/rag_module4/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py").is_file()
+    and (parent / "research/experiments/phase2_rag_features/e5_rag/modules/module4/variants/continuation_v1/mpnet_provenance_v2/scripts/module4_build_rag_features_pinned.py").is_file()
 ), None)
 if SCRIPT is None:
     raise RuntimeError("Historical Module 4 source root was not found")
