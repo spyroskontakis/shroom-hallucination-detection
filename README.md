@@ -221,7 +221,7 @@ Run the offline source and structure checks with Python 3.12:
 python -I -S -B research/shared_tools/verify_repository.py
 ~~~
 
-The [verification guide](docs/VERIFICATION.md) explains the checks, optional isolated tests and exit codes. Historical originals and current adapted bindings are verified separately. A frozen E11 link and three historical checksum failures are reported explicitly. The checksum differences are documented public-safe projections that predate this reorganization; they still fail the original replay checks. These checks do not rerun E1-E11 or reproduce their metrics.
+The [verification guide](docs/VERIFICATION.md) explains the checks, optional isolated tests and exit codes. Historical originals and current adapted bindings are verified separately. A frozen E11 link and three historical checksum failures are reported explicitly. The checksum differences are documented public-safe projections that predate this reorganization; they still fail the original replay checks. These checks do not rerun E1-E11 or reproduce their metrics. The [documented-exception policy](docs/HISTORICAL_EXCEPTIONS.md) defines which historical limitations may be accepted for a source release while their original checks remain failed or unverified.
 
 ## Thesis and Presentation
 

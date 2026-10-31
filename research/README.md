@@ -28,4 +28,6 @@ The repository contains research code, protocols, documentation and recorded res
 
 Read [data access](../docs/DATA_ACCESS.md), [environment requirements](../docs/ENVIRONMENTS.md) and [reproducibility limitations](../docs/REPRODUCIBILITY.md) before considering execution. Historical notebooks can write to old input/output locations or call external services; this guide does not provide a verified Run All procedure.
 
+The [documented-exception policy](../docs/HISTORICAL_EXCEPTIONS.md) records the13 retained sources, original checksum failures, immutable E11 reference and runtime limitations. Acceptance preserves the actual failed/unverified outcomes; it is not permission to run experiments or publish changes.
+
 [Back to the project README](../README.md)

@@ -34,5 +34,4 @@ This is not evidence that migration changed the results, and it does not establi
 numerical equivalence to unavailable originals.
 
 The [strict offline verifier](VERIFICATION.md) reports these failures with a nonzero exit.
-Publication with a documented historical exception requires an explicit release-policy decision;
-a working alternative link or a successful synthetic test is not that approval.
+The [versioned exception policy](HISTORICAL_EXCEPTIONS.md) conditionally accepts these bounded historical limitations for a research-source release when mandatory gates pass. The original checks remain failed or unverified; a working alternative link is not a repair. Public push, PR or merge still requires separate authorization.

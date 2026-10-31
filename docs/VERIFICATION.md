@@ -46,7 +46,7 @@ record explains these three files as public-safe derivatives; that explanation d
 not convert their historical hash checks into PASS. These are reported
 openly, so a nonzero result is expected until the underlying issues receive an
 approved resolution. The preserved E8 report syntax error is identified by its
-exact source hash. These exceptions do not certify publication readiness.
+exact source hash. These exceptions do not certify publication readiness. The [versioned release policy](HISTORICAL_EXCEPTIONS.md) separately defines bounded acceptance conditions. Strict exit1 remains unchanged; a release review must match exact exception identities and pass all other mandatory gates. Any required external zero-failure or exact-reproduction rule takes precedence.
 
 ## Optional isolated tests
 
