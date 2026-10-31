@@ -184,7 +184,7 @@ Selected experiments used Modal for remote execution.
 | `manifests/` | File verification records and public release documentation |
 | `thesis_writing/` | Supporting script for verifying research results used during thesis writing |
 
-Most implementations and records are now under research/, alongside a small retained set in codex/ and RAG/. Historical source files keep their original bytes even when relocated. Their old commands and relative paths are not automatically valid at the new location. The [source-mode guide](docs/REPRODUCIBILITY.md) distinguishes authenticated historical snapshots from supported current integrations. Original source hashes and scientific results are preserved.
+Most implementations and records are now under research/. Thirteen original files remain in codex/ and RAG/ to preserve immutable historical connections or await authentic notebook metadata. Relocated historical files preserve the published baseline bytes; public-safe derivatives remain distinct from the private originals required for replay. Their old commands and relative paths are not automatically valid at the new location. The [source-mode guide](docs/REPRODUCIBILITY.md) distinguishes authenticated historical snapshots from supported current integrations. Original source hashes and scientific results are preserved.
 
 ## Getting Started
 
@@ -221,7 +221,7 @@ Run the offline source and structure checks with Python 3.12:
 python -I -S -B research/shared_tools/verify_repository.py
 ~~~
 
-The [verification guide](docs/VERIFICATION.md) explains the checks, optional isolated tests and exit codes. Historical originals and current adapted bindings are verified separately. A frozen E11 link and three historical checksum failures remain open; the verifier reports them rather than returning a misleading all-clear. These checks do not rerun E1-E11 or reproduce their metrics.
+The [verification guide](docs/VERIFICATION.md) explains the checks, optional isolated tests and exit codes. Historical originals and current adapted bindings are verified separately. A frozen E11 link and three historical checksum failures are reported explicitly. The checksum differences are documented public-safe projections that predate this reorganization; they still fail the original replay checks. These checks do not rerun E1-E11 or reproduce their metrics.
 
 ## Thesis and Presentation
 

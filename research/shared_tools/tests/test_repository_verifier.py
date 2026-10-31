@@ -141,6 +141,94 @@ class VerifierTests(unittest.TestCase):
     def test_code_only_is_not_raw_dataset(self):
         self.assertEqual(V.privacy_findings("research/source.py",b"MODEL='model/id'"),[])
 
+    def test_changed_public_payload_fails_before_helper_import(self):
+        with patch.object(V,"load_compatibility",side_effect=AssertionError("unsafe import")):
+            result=V.verify(FILE.parents[2],{"protected_files":{}},{"README.md":{"sha256":"0"*64}},"FIXTURE")
+        self.assertEqual(V.status_code(result),1)
+        self.assertEqual(result["checks"][0]["reason"],"changed")
+
+    def test_missing_migration_source_fails_before_helper_import(self):
+        with patch.object(Path,"is_file",return_value=False), \
+             patch.object(V,"load_compatibility",side_effect=AssertionError("unsafe import")):
+            result=V.verify(FILE.parents[2],{"protected_files":{}},{"source.py":{"sha256":"0"*64}},"FIXTURE")
+        self.assertEqual(V.status_code(result),1)
+        self.assertEqual(result["checks"][0]["reason"],"missing")
+
+    def test_unsafe_path_fails_before_helper_import(self):
+        with patch.object(V,"reject_links",side_effect=ValueError("reparse")), \
+             patch.object(V,"load_compatibility",side_effect=AssertionError("unsafe import")):
+            result=V.verify(FILE.parents[2],{"protected_files":{}},{"source.py":{"sha256":"0"*64}},"FIXTURE")
+        self.assertEqual(V.status_code(result),1)
+        self.assertEqual(result["checks"][0]["reason"],"unsafe_or_unreadable")
+
+    def test_refreshed_snapshot_cannot_hide_changed_protected_source(self):
+        raw=(FILE.parents[2]/"README.md").read_bytes()
+        index={"protected_files":{"README.md":"0"*64}}
+        with patch.object(V,"load_compatibility",side_effect=AssertionError("unsafe import")):
+            result=V.verify(FILE.parents[2],index,{"README.md":{"sha256":V.digest(raw)}},"FIXTURE")
+        self.assertEqual(V.status_code(result),1)
+        self.assertEqual(result["checks"][0]["check"],"protected_file")
+
+    def test_protected_file_cannot_be_omitted_from_public_projection(self):
+        with patch.object(V,"load_compatibility",side_effect=AssertionError("unsafe import")):
+            result=V.verify(FILE.parents[2],{"protected_files":{"README.md":"0"*64}},{},"FIXTURE")
+        self.assertEqual(V.status_code(result),1)
+        self.assertEqual(result["checks"][0]["reason"],"missing_from_snapshot")
+
+    def test_missing_public_verification_authority_is_failure(self):
+        result=V.verify(FILE.parents[2],{"protected_files":{},"compatibility":{"path":"helper.py"}},{},"FIXTURE")
+        self.assertEqual(V.status_code(result),1)
+        self.assertEqual(result["checks"][0]["reason"],"compatibility_validator_not_in_public_snapshot")
+
+    def test_rejected_catalog_is_structured_failure(self):
+        raw=FILE.read_bytes()
+        inventory={"research/shared_tools/verify_repository.py":{"sha256":V.digest(raw)}}
+        index={"protected_files":{},"compatibility":{"path":"research/shared_tools/verify_repository.py"}}
+        with patch.object(V,"load_compatibility",side_effect=ValueError("pinned source mismatch")):
+            result=V.verify(FILE.parents[2],index,inventory,"FIXTURE")
+        self.assertEqual(V.status_code(result),1)
+        self.assertEqual(result["checks"][0]["check"],"source_contract")
+
+    def test_fenced_examples_keep_real_line_numbers(self):
+        fence=chr(96)*3
+        text="Heading\n"+fence+"python\n[fake](missing)\n"+fence+"\n[real](ok.md)\n"
+        rows=V.local_links("README.md",text,{"ok.md"})
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]["line"],5)
+        self.assertEqual(rows[0]["status"],"PASS")
+
+    def test_tilde_fenced_examples_are_not_links(self):
+        rows=V.local_links("README.md","~~~text\n[fake](missing)\n~~~\n[real](ok.md)\n",{"ok.md"})
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]["line"],4)
+
+    def test_missing_markdown_image_is_reported(self):
+        self.assertEqual(V.local_links("README.md","![plot](missing.png)",set())[0]["status"],"FAIL")
+
+    def test_documented_privacy_projection_keeps_original_requirement_failed(self):
+        records=[{"path":"record.json","original_sha256":"0"*64,"sha256":"1"*64,
+                  "verification_level":"PUBLIC_SAFE_DERIVATIVE_SHA256","changes":[{"change":"private fields removed"}]}]
+        result=V.derivative_evidence(records,"record.json","0"*64,"1"*64)
+        self.assertEqual(result["classification"],"DOCUMENTED_PUBLIC_SAFE_DERIVATIVE")
+        self.assertEqual(result["original_hash_requirement"],"FAIL")
+        self.assertEqual(result["scientific_value_equivalence"],"NOT_INDEPENDENTLY_VERIFIED")
+
+    def test_wrong_original_hash_is_not_explained_by_projection_record(self):
+        records=[{"path":"record.json","original_sha256":"2"*64,"sha256":"1"*64,
+                  "verification_level":"PUBLIC_SAFE_DERIVATIVE_SHA256"}]
+        result=V.derivative_evidence(records,"record.json","0"*64,"1"*64)
+        self.assertEqual(result["classification"],"UNEXPLAINED_HISTORICAL_MISMATCH")
+
+    def test_invalid_authority_has_json_exit_three(self):
+        import io
+        from contextlib import redirect_stdout
+        output=io.StringIO()
+        with patch.object(V,"root_of",side_effect=ValueError("invalid authority")), redirect_stdout(output):
+            self.assertEqual(V.main(["--json"]),3)
+        result=json.loads(output.getvalue())
+        self.assertEqual(result["exit"],3)
+        self.assertEqual(result["checks"][0]["status"],"NOT_VERIFIED")
+
     def test_read_only_verification_source_avoids_add_commit_push(self):
         tree=ast.parse(FILE.read_text())
         for node in ast.walk(tree):

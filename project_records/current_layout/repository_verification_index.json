@@ -3284,7 +3284,8 @@
         "numpy",
         "pandas",
         "scipy",
-        "scikit-learn; torch/transformers for extraction"
+        "scikit-learn; torch/transformers for extraction",
+        "sentence-transformers for historical feature extraction"
       ],
       "execution_scope": [
         "HISTORICAL_ORIGINAL",
@@ -3326,7 +3327,8 @@
       ],
       "configurations": [],
       "inputs": [
-        "Development JSON"
+        "Development JSON",
+        "Cached tokenizer; no download is performed by verification"
       ],
       "outputs": [
         "Explicit external output root"
@@ -3335,7 +3337,8 @@
         "pandas",
         "numpy",
         "matplotlib",
-        "seaborn"
+        "seaborn",
+        "transformers (cached microsoft/deberta-v3-large tokenizer)"
       ],
       "execution_scope": [
         "HISTORICAL_ORIGINAL",
@@ -5080,9 +5083,9 @@
     },
     {
       "name": "verifier_current",
-      "cases": 42,
+      "cases": 55,
       "path": "research/shared_tools/tests/test_repository_verifier.py",
-      "sha256": "d87cad448bbac364b3471d3c93a6349e415863db7fb1210f84e6fd0c78b6ee09",
+      "sha256": "43919b95eb330dd902ecce520c69a86d3c885e6e54726ba8a83e67a2d4bb70ea",
       "context": "CURRENT",
       "kind": "unittest"
     },
@@ -5155,5 +5158,85 @@
     "cases": 26,
     "author": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/build_csv.mjs",
     "historical_author": "RAG/results/rag_e6_v3/error_analysis/build_csv.mjs"
-  }
+  },
+  "retained_source_notes": [
+    {
+      "original": "RAG/E6_REPRODUCIBILITY.md",
+      "approved_v2_destination": "docs/reproducibility/e6/E6_REPRODUCIBILITY.md",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+      "approved_v2_destination": "research/experiments/phase3_advanced_methods/e11_transformer_finetuning/E11_DATA_AUDIT.md",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
+      "approved_v2_destination": "research/experiments/phase3_advanced_methods/e10_factcg/development/gpu/factcg_backend.py",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+      "approved_v2_destination": "research/experiments/phase3_advanced_methods/e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/rag_e6_v1/E6_PROTOCOL.md",
+      "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/protocols/E6_PROTOCOL.md",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/rag_e6_v1/E6_RESULTS.md",
+      "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/results/reports/E6_RESULTS.md",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/rag_e6_v1/config/completion_manifest.json",
+      "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/configs/completion_manifest.json",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/rag_e6_v1/config/run_config.json",
+      "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/configs/run_config.json",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/rag_e6_v2/scripts/nli_backend.py",
+      "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v2/scripts/nli_backend.py",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
+      "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/evaluate_v3.py",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "RAG/results/rag_e6_v3/scripts/hhem_backend.py",
+      "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/hhem_backend.py",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "codex/canonical_fold_generation_metadata.json",
+      "approved_v2_destination": "research/data_and_evaluation/canonical/historical_records/canonical_fold_generation_metadata.json",
+      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
+      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+    },
+    {
+      "original": "codex/data/shroom_ensemble.ipynb",
+      "approved_v2_destination": "research/data_and_evaluation/historical_baselines/notebooks/codex_data/shroom_ensemble.ipynb",
+      "disposition": "RETAINED_MISSING_HISTORICAL_METADATA",
+      "reason": "No authentic timestamp associated with this public notebook SHA; protected old-path reference remains."
+    }
+  ]
 }

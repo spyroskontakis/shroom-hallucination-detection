@@ -35,11 +35,15 @@ is explicitly labelled PROJECTED_LOCAL_SNAPSHOT.
 
 Exit 0 means all selected checks passed. Exit 1 means an actual failure,
 including the historical H0 checksum failures. Exit 2 means selected checks are
-incomplete without an actual failure. Exit 3 means the invocation, source
-identity or required Git evidence could not be validated.
+incomplete without an actual failure. Exit 3 means the invocation, verification-authority pin or required Git evidence
+could not be validated. Missing/changed public files and protected-source violations
+are structured FAIL findings with exit 1; helpers and test workers are not loaded
+after such an integrity failure. JSON mode also returns structured output for exit 3.
 
 The frozen E11 audit still contains a broken protocol link. Three H0 checksum
-comparisons also fail against the published H1 sources. These are reported
+comparisons also fail against the published H1 sources. The pinned source-provenance
+record explains these three files as public-safe derivatives; that explanation does
+not convert their historical hash checks into PASS. These are reported
 openly, so a nonzero result is expected until the underlying issues receive an
 approved resolution. The preserved E8 report syntax error is identified by its
 exact source hash. These exceptions do not certify publication readiness.

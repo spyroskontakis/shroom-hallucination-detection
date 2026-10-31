@@ -19,7 +19,7 @@ import sys
 import urllib.parse
 
 INDEX = "project_records/current_layout/repository_verification_index.json"
-INDEX_SHA256 = "d42349301df782f3b67fc82d2d6eb7008a387a16737296cdf2f3dd9407089c12"
+INDEX_SHA256 = "2777b3efccc2984560e5c00dc9154e0540865b48df423677435381073a917512"
 BASE = "11822d92070cd29360445cb4dacd8d110c655248"
 E11 = "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md"
 sys.dont_write_bytecode = True
@@ -141,9 +141,11 @@ def publication_inventory(root, projected=None, pin=None):
 def local_links(name, text, inventory):
     """GitHub relative file links. Historical failures remain actual failures."""
     rows = []
-    clean = re.sub(r"(?ms)^ *\x60{3}.*?^ *\x60{3}[^\n]*", "", text)
+    # Mask fenced examples without losing original source line numbers.
+    clean = re.sub(r"(?ms)^ {0,3}(\x60{3,}|~{3,})[^\n]*\n.*?^ {0,3}\1[ \t]*(?=\n|$)",
+                   lambda match: re.sub(r"[^\n]", " ", match.group()), text)
     patterns = [
-        r"(?<!!)\[[^\]\n]*\]\((<[^>]+>|[^)\s]+)(?:\s+[^)]*)?\)",
+        r"!?\[[^\]\n]*\]\((<[^>]+>|[^)\s]+)(?:\s+[^)]*)?\)",
         r"(?m)^\s*\[[^\]]+\]:\s*(<[^>]+>|\S+)"
     ]
     for pattern in patterns:
@@ -222,22 +224,64 @@ def privacy_findings(name, raw):
     return rows
 
 
+def derivative_evidence(records, target, expected, observed):
+    """Explain a documented privacy projection; never satisfy an original hash."""
+    matches = [(i, row) for i, row in enumerate(records)
+               if row.get("path") == target
+               and row.get("original_sha256") == expected
+               and row.get("sha256") == observed
+               and row.get("verification_level") == "PUBLIC_SAFE_DERIVATIVE_SHA256"]
+    if len(matches) != 1:
+        return {"classification": "UNEXPLAINED_HISTORICAL_MISMATCH"}
+    position, row = matches[0]
+    return {"classification": "DOCUMENTED_PUBLIC_SAFE_DERIVATIVE",
+            "record": "manifests/source_provenance.public.json",
+            "pointer": "/"+str(position), "changes": row.get("changes", []),
+            "original_hash_requirement": "FAIL",
+            "scientific_value_equivalence": "NOT_INDEPENDENTLY_VERIFIED"}
+
+
 def verify(root, index, inventory, scope):
     rows = []
     def add(check, status, **data):
         rows.append({"check": check, "status": status, **data})
-    module, catalog = load_compatibility(root, index)
     public = set(inventory)
     for name, item in inventory.items():
-        path = reject_links(root / logical(name))
-        if not path.is_file():
-            add("public_file", "FAIL", file=name, reason="missing")
+        try:
+            path = reject_links(root / logical(name))
+            if not path.is_file():
+                add("public_file", "FAIL", file=name, reason="missing")
+                continue
+            raw = path.read_bytes()
+        except (ValueError, OSError):
+            add("public_file", "FAIL", file=name, reason="unsafe_or_unreadable")
             continue
-        raw = path.read_bytes()
         oid = hashlib.sha1(b"blob "+str(len(raw)).encode()+b"\0"+raw).hexdigest()
         good = (digest(raw) == item["sha256"]) if "sha256" in item else oid == item["git_blob"]
         if not good:
             add("public_file", "FAIL", file=name, reason="changed")
+    for name, pin in index["protected_files"].items():
+        try:
+            valid = (name in public and
+                     digest(reject_links(root/logical(name)).read_bytes()) == pin)
+        except (ValueError, OSError):
+            valid = False
+        if not valid:
+            add("protected_file", "FAIL", file=name,
+                reason="missing_from_snapshot" if name not in public else "identity_or_path_changed")
+    # Do not import even a verification helper until the selected public payload
+    # and independently pinned protected sources have passed the integrity gate.
+    if any(row["status"] == "FAIL" for row in rows):
+        return {"scope": scope, "files": len(inventory), "checks": rows}
+    authority = index["compatibility"]
+    if authority["path"] not in public:
+        add("source_contract", "FAIL", reason="compatibility_validator_not_in_public_snapshot")
+        return {"scope": scope, "files": len(inventory), "checks": rows}
+    try:
+        module, catalog = load_compatibility(root, index)
+    except (ValueError, OSError, KeyError):
+        add("source_contract", "FAIL", reason="pinned_compatibility_source_or_catalog_rejected")
+        return {"scope": scope, "files": len(inventory), "checks": rows}
     originals = git_inventory(root, BASE)
     paths = [x["original"] for x in index["migration_destinations"]]
     data = git_blobs(root, [originals[p]["git_blob"] for p in paths])
@@ -258,10 +302,8 @@ def verify(root, index, inventory, scope):
             add("current_public_source", "FAIL", file=current)
         if old != current and (root/old).exists():
             add("duplicate_original", "FAIL", file=old)
-    add("migration_identity", "PASS", entries=len(paths), counts=dict(counts))
-    for name, pin in index["protected_files"].items():
-        if digest((root/name).read_bytes()) != pin:
-            add("protected_file", "FAIL", file=name)
+    add("migration_identity", "FAIL" if any(row["status"] == "FAIL" for row in rows) else "PASS",
+        entries=len(paths), counts=dict(counts))
     syntax = []
     links = []
     privacy = []
@@ -292,6 +334,7 @@ def verify(root, index, inventory, scope):
         experiments=architecture)
     # Read raw H0 checksum lists against authentic Git blobs, without generating a snapshot.
     h0 = []
+    provenance = json.loads((root/"manifests/source_provenance.public.json").read_bytes())
     for logical_list in index["historical_checksums"]:
         raw = catalog.current(logical_list).read_bytes()
         source = git_blobs(root, [originals[logical_list]["git_blob"]])[0]
@@ -304,7 +347,8 @@ def verify(root, index, inventory, scope):
             actual = digest(historical)
             if actual != expected:
                 h0.append({"target": target, "status": "FAIL", "expected_h0_sha256": expected,
-                           "observed_public_h1_sha256": actual})
+                           "observed_public_h1_sha256": actual,
+                           "provenance": derivative_evidence(provenance, target, expected, actual)})
     add("historical_h0_checksums", "KNOWN_HISTORICAL_EXCEPTION" if h0 else "PASS",
         historical_status="FAIL" if h0 else "PASS", failures=h0,
         runtime="HISTORICAL_RUNTIME_NOT_VERIFIED")
@@ -533,14 +577,20 @@ def main(argv=None):
         else:
             print("Scope:",result["scope"],"| Public files:",result["files"])
             for row in result["checks"]:
-                print(row["status"]+": "+row["check"])
+                print(("FAIL (KNOWN_HISTORICAL_EXCEPTION)" if row.get("historical_status")=="FAIL" else row["status"])+": "+row["check"])
             if result.get("tests"):
                 for row in result["tests"]:
                     print(row["status"]+": "+row["suite"]+" ("+str(row["expected"])+")")
             print("Exit",code,"| Source/unit verification is not historical runtime reproduction.")
         return code
     except (ValueError,OSError,KeyError) as error:
-        print("Verification blocked: "+str(error),file=sys.stderr)
+        if args.json:
+            print(json.dumps({"scope":"UNVERIFIED", "files":0,
+                "checks":[{"check":"verification_authority", "status":"NOT_VERIFIED",
+                           "reason":"INPUT_OR_AUTHORITY_REJECTED", "error_type":type(error).__name__}],
+                "exit":3},indent=2))
+        else:
+            print("Verification blocked: "+str(error),file=sys.stderr)
         return 3
 
 
