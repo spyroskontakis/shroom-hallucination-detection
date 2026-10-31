@@ -3167,7 +3167,7 @@
   ],
   "compatibility": {
     "path": "research/shared_tools/repository_compatibility.py",
-    "sha256": "320d3812e23bc0dc3b84a2806764df290b0027bbdf2d0c1f2844c4478e8d7d05"
+    "sha256": "443b93d5e6e5636c23d75f575d975af4fc4a6e7fb454460109f9a9fd319772a3"
   },
   "protected_files": {
     ".gitattributes": "f526c26d1b42eaa6bb1aa3b72cddb1abe9dd3c5b104e5617bbcfe5bc7f499f0e",
@@ -5150,6 +5150,14 @@
         "numpy",
         "pandas"
       ]
+    },
+    {
+      "name": "authenticated_source_current",
+      "cases": 91,
+      "path": "research/shared_tools/tests/test_authenticated_source_execution.py",
+      "sha256": "c3408b95c0c612f69e622e860edf5e824213ca328f87e91dba1d209c232c9d76",
+      "context": "CURRENT",
+      "kind": "unittest"
     }
   ],
   "node_test": {
@@ -5231,7 +5239,7 @@
   },
   "compatibility_catalog": {
     "path": "project_records/current_layout/repository_compatibility_root_archive_v1.json",
-    "sha256": "10b14606339cc202077c78566dc8b13c69e0cfa02aa838462c0930fe89601a2d"
+    "sha256": "668096fb27ce54e1870da234ee5c34e706746d05c8bc49875f087cc7e6527d64"
   },
   "historical_archive_notes": [
     {

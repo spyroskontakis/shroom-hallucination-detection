@@ -19,7 +19,7 @@ import sys
 import urllib.parse
 
 INDEX = "project_records/current_layout/repository_verification_index.json"
-INDEX_SHA256 = "bb722ec5682a1ba8394c6993afe2bd10f7533ddfccb40bdc587dbd102c2c6f23"
+INDEX_SHA256 = "37e9eafa1405f5bcb54e9679cc95f10288e8f226ae37548d7d9e7c3d58da7348"
 BASE = "11822d92070cd29360445cb4dacd8d110c655248"
 E11 = "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md"
 ARCHIVE_ROOT = "research/historical_sources/public_baseline_11822d9"
@@ -130,13 +130,29 @@ def load_index(root):
 def load_compatibility(root, index):
     item = index["compatibility"]
     path = reject_links(root / logical(item["path"]))
-    if digest(path.read_bytes()) != item["sha256"]:
+    raw = path.read_bytes()
+    if digest(raw) != item["sha256"]:
         raise ValueError("Compatibility validator identity mismatch")
     spec = importlib.util.spec_from_file_location("_shroom_repository_verification", path)
     module = importlib.util.module_from_spec(spec)
+    absent = object()
+    previous = sys.modules.get(spec.name, absent)
     sys.modules[spec.name] = module
-    spec.loader.exec_module(module)
-    return module, module.Catalog(root)
+    try:
+        # Compile the authenticated buffer, never the loader's cached bytecode.
+        exec(compile(raw, str(path), "exec"), module.__dict__)
+        if sys.modules.get(spec.name) is not module:
+            raise ValueError("Compatibility module identity changed during execution")
+        catalog = module.Catalog(root)
+        if sys.modules.get(spec.name) is not module:
+            raise ValueError("Compatibility module identity changed during initialization")
+    except BaseException:
+        if previous is absent:
+            sys.modules.pop(spec.name, None)
+        else:
+            sys.modules[spec.name] = previous
+        raise
+    return module, catalog
 
 
 def git_inventory(root, revision="HEAD"):
@@ -534,7 +550,8 @@ def run_tests(root, index, scratch, *, third_party_python=None, node=None):
         work = scratch/suite["name"]; work.mkdir()
         env = safe_environment(work)
         env.update(SHROOM_TEST_SCRATCH=str(work), SHROOM_SNAPSHOT_H1=str(snapshots["H1"]),
-                   SHROOM_SNAPSHOT_P26=str(snapshots["P26"]), SHROOM_H2_TEST_SCRATCH=str(work))
+                   SHROOM_SNAPSHOT_P26=str(snapshots["P26"]), SHROOM_H2_TEST_SCRATCH=str(work),
+                   SHROOM_TEST_SOURCE_SHA256=suite["sha256"])
         pinpaths = {"SUPPORT":"research/shared_tools/canonical_execution_context.py",
                     "CATALOG":"project_records/current_layout/canonical_relocation_v1.json",
                     "VERIFIER":"research/data_and_evaluation/canonical/verification/verify_e10_e11_lineage.py"}
@@ -561,13 +578,13 @@ def run_tests(root, index, scratch, *, third_party_python=None, node=None):
             sources = {str(root/p):digest((root/p).read_bytes()) for p in suite["sources"]}
             env.update(M1_TEST_SCRATCH=str(work), M1_NOTEBOOK_PINS=json.dumps(sources),
                        M1_REPARSE=env["SHROOM_H2_REPARSE_FIXTURE"])
-            cmd = [python,"-I","-S","-B",str(test)]
+            cmd = [python,"-I","-S","-B",str(worker),str(source_root),str(work),str(test),str(suite["cases"]),"--script"]
         elif suite["kind"]=="module2":
             helper=root/suite["helper"]
             env.update(MODULE2_TEST_ROOT=str(work), MODULE2_HELPER=str(helper),
                        MODULE2_HELPER_PIN=digest(helper.read_bytes()),
                        MODULE2_REPARSE=env["SHROOM_H2_REPARSE_FIXTURE"])
-            cmd = [python,"-I","-S","-B",str(test)]
+            cmd = [python,"-I","-S","-B",str(worker),str(source_root),str(work),str(test),str(suite["cases"]),"--script"]
         else:
             cmd = [python,"-I","-S","-B",str(worker),str(source_root),str(work),
                    str(test),str(suite["cases"])]
@@ -605,7 +622,7 @@ def run_tests(root, index, scratch, *, third_party_python=None, node=None):
     return results
 
 
-WORKER = 'import os,sys,json,unittest,importlib.util,io\nfrom pathlib import Path\nROOT=Path(sys.argv[1]).resolve()\nWORK=Path(sys.argv[2]).resolve()\nTEST=Path(sys.argv[3]).resolve()\nEXPECTED=int(sys.argv[4])\nsys.dont_write_bytecode=True\n_permitted_cli=[None]\nevents={"writes":0,"network_attempts":0,"subprocess_attempts":0,"outside_writes":0,"ml_import_attempts":0}\ndef local(p):\n if isinstance(p,int):return\n p=Path(os.fsdecode(p)).resolve()\n if not p.is_relative_to(WORK):\n  events["outside_writes"]+=1\n  raise PermissionError("Write outside isolated scratch rejected")\ndef audit(event,args):\n if event=="open":\n  p,mode,flags=args\n  if (isinstance(mode,str) and any(c in mode for c in "wax+")) or (isinstance(flags,int) and flags&(os.O_WRONLY|os.O_RDWR|os.O_CREAT|os.O_TRUNC|os.O_APPEND)):\n   local(p);events["writes"]+=1\n elif event in ("os.mkdir","os.remove","os.rmdir","os.chmod","os.utime","os.truncate","os.chown"):\n  local(args[0]);events["writes"]+=1\n elif event in ("os.rename","os.replace","os.link","os.symlink"):\n  local(args[0]);local(args[1]);events["writes"]+=1\n elif event.startswith("socket."):\n  events["network_attempts"]+=1;raise PermissionError("Offline tests")\n elif event in ("subprocess.Popen","os.system","os.exec","os.posix_spawn"):\n  events["subprocess_attempts"]+=1\n  argv=args[1] if event=="subprocess.Popen" else []\n  cwd=args[2] if event=="subprocess.Popen" else None\n  base="11822d92070cd29360445cb4dacd8d110c655248"\n  approved=(isinstance(argv,(list,tuple)) and list(argv[:2])==["git","--no-optional-locks"] and\n            ((len(argv)==4 and argv[2]=="rev-parse" and argv[3]==base+"^{tree}") or\n             (len(argv)==5 and list(argv[2:4])==["cat-file","blob"] and str(argv[4]).startswith(base+":"))) and\n            cwd is not None and Path(cwd).resolve()==ROOT)\n  approved_cli=(_permitted_cli[0] is not None and\n       (argv==_permitted_cli[0][0] or argv==_permitted_cli[0][1]) and\n       cwd is not None and Path(cwd).resolve().is_relative_to(WORK))\n  if not (approved or approved_cli):raise PermissionError("Only pinned read-only Git or audited Module4 fixture CLI allowed")\n elif event=="import" and args[0].split(".")[0] in {"torch","transformers","sentence_transformers","modal","vertexai","google","tensorflow","bert_score"}:\n  events["ml_import_attempts"]+=1;raise ImportError("Model/cloud imports disabled")\nsys.addaudithook(audit)\nif os.environ.get("SHROOM_EXTRA_SITE"):\n sys.path.append(os.environ["SHROOM_EXTRA_SITE"])\n\nif "--cli" in sys.argv[5:]:\n import runpy,hashlib\n if TEST != Path(os.environ["SHROOM_TEST_CLI"]) or hashlib.sha256(TEST.read_bytes()).hexdigest()!=os.environ["SHROOM_TEST_CLI_PIN"]:\n  raise ValueError("Module4 CLI identity mismatch")\n sys.argv=[str(TEST),*sys.argv[6:]]\n runpy.run_path(str(TEST),run_name="__main__")\n raise SystemExit(0)\nif os.environ.get("SHROOM_TEST_CLI"):\n import subprocess,hashlib\n original_run=subprocess.run\n cli=Path(os.environ["SHROOM_TEST_CLI"])\n if hashlib.sha256(cli.read_bytes()).hexdigest()!=os.environ["SHROOM_TEST_CLI_PIN"]:\n  raise ValueError("Module4 CLI source changed")\n def guarded_run(argv, *args, **kwargs):\n  if (not isinstance(argv,(list,tuple)) or len(argv)!=9 or\n      list(argv[:3])!=[sys.executable,str(cli),"--repo-root"] or\n      list(argv[4:])!=["--manifest","RAG/module4_release_v1/RELEASE_MANIFEST.json","--mode","source","--json"] or\n      not Path(argv[3]).resolve().is_relative_to(WORK) or\n      not Path(kwargs.get("cwd","")).resolve().is_relative_to(WORK)):\n   raise PermissionError("Unreviewed test subprocess")\n  command=[sys.executable,"-I","-S","-B",str(Path(__file__).resolve()),str(ROOT),str(WORK),str(cli),"0","--cli",*argv[2:]]\n  _permitted_cli[0]=(subprocess.list2cmdline(command),command)\n  try:return original_run(command,*args,**kwargs)\n  finally:_permitted_cli[0]=None\n subprocess.run=guarded_run\nspec=importlib.util.spec_from_file_location("phase25_resume_test",TEST)\nmod=importlib.util.module_from_spec(spec)\nsys.modules[spec.name]=mod\nspec.loader.exec_module(mod)\nsuite=unittest.defaultTestLoader.loadTestsFromModule(mod)\nstream=io.StringIO()\nresult=unittest.TextTestRunner(stream=stream,verbosity=1).run(suite)\nok=result.wasSuccessful() and result.testsRun==EXPECTED\nprint(json.dumps({"tests":result.testsRun,"expected":EXPECTED,"pass":ok,"failures":len(result.failures),"errors":len(result.errors),"skipped":len(result.skipped),"events":events,"output":stream.getvalue()}))\nraise SystemExit(0 if ok else 1)\n'
+WORKER = 'import os,sys,json,unittest,importlib.util,io,hashlib\nfrom pathlib import Path\nROOT=Path(sys.argv[1]).resolve()\nWORK=Path(sys.argv[2]).resolve()\nTEST=Path(sys.argv[3]).absolute()\nEXPECTED=int(sys.argv[4])\nsys.dont_write_bytecode=True\n# Nested source imports also bypass .pyc, without cache-path reads that\n# would violate the historical H2 IO guard\'s declared input roots.\nfrom importlib.machinery import SourceFileLoader\ndef source_only_code(self,fullname):\n path=self.get_filename(fullname)\n return compile(self.get_data(path),path,"exec",dont_inherit=True)\nSourceFileLoader.get_code=source_only_code\ndef authenticated_module(name,path,expected):\n path=Path(path).absolute()\n for part in (path,*path.parents):\n  if part.is_symlink() or (getattr(part.lstat(),"st_file_attributes",0)&0x400):\n   raise ValueError("Links/reparse points are not allowed")\n raw=path.read_bytes()\n if hashlib.sha256(raw).hexdigest()!=expected:\n  raise ValueError("Executable source identity mismatch")\n spec=importlib.util.spec_from_file_location(name,path)\n mod=importlib.util.module_from_spec(spec)\n absent=object()\n previous=sys.modules.get(name,absent)\n sys.modules[name]=mod\n try:\n  exec(compile(raw,str(path),"exec"),mod.__dict__)\n  if sys.modules.get(name) is not mod:\n   raise ValueError("Executed module identity changed")\n except BaseException:\n  if previous is absent:sys.modules.pop(name,None)\n  else:sys.modules[name]=previous\n  raise\n return mod\n_permitted_cli=[None]\nevents={"writes":0,"network_attempts":0,"subprocess_attempts":0,"outside_writes":0,"ml_import_attempts":0}\ndef local(p):\n if isinstance(p,int):return\n p=Path(os.fsdecode(p)).resolve()\n if not p.is_relative_to(WORK):\n  events["outside_writes"]+=1\n  raise PermissionError("Write outside isolated scratch rejected")\ndef audit(event,args):\n if event=="open":\n  p,mode,flags=args\n  if (isinstance(mode,str) and any(c in mode for c in "wax+")) or (isinstance(flags,int) and flags&(os.O_WRONLY|os.O_RDWR|os.O_CREAT|os.O_TRUNC|os.O_APPEND)):\n   local(p);events["writes"]+=1\n elif event in ("os.mkdir","os.remove","os.rmdir","os.chmod","os.utime","os.truncate","os.chown"):\n  local(args[0]);events["writes"]+=1\n elif event in ("os.rename","os.replace","os.link","os.symlink"):\n  local(args[0]);local(args[1]);events["writes"]+=1\n elif event.startswith("socket."):\n  events["network_attempts"]+=1;raise PermissionError("Offline tests")\n elif event in ("subprocess.Popen","os.system","os.exec","os.posix_spawn"):\n  events["subprocess_attempts"]+=1\n  argv=args[1] if event=="subprocess.Popen" else []\n  cwd=args[2] if event=="subprocess.Popen" else None\n  base="11822d92070cd29360445cb4dacd8d110c655248"\n  approved=(isinstance(argv,(list,tuple)) and list(argv[:2])==["git","--no-optional-locks"] and\n            ((len(argv)==4 and argv[2]=="rev-parse" and argv[3]==base+"^{tree}") or\n             (len(argv)==5 and list(argv[2:4])==["cat-file","blob"] and str(argv[4]).startswith(base+":"))) and\n            cwd is not None and Path(cwd).resolve()==ROOT)\n  approved_cli=(_permitted_cli[0] is not None and\n       (argv==_permitted_cli[0][0] or argv==_permitted_cli[0][1]) and\n       cwd is not None and Path(cwd).resolve().is_relative_to(WORK))\n  if not (approved or approved_cli):raise PermissionError("Only pinned read-only Git or audited Module4 fixture CLI allowed")\n elif event=="import" and args[0].split(".")[0] in {"torch","transformers","sentence_transformers","modal","vertexai","google","tensorflow","bert_score"}:\n  events["ml_import_attempts"]+=1;raise ImportError("Model/cloud imports disabled")\nsys.addaudithook(audit)\nif os.environ.get("SHROOM_EXTRA_SITE"):\n sys.path.append(os.environ["SHROOM_EXTRA_SITE"])\n\nif "--cli" in sys.argv[5:] or "--script" in sys.argv[5:]:\n if "--cli" in sys.argv[5:]:\n  if TEST != Path(os.environ["SHROOM_TEST_CLI"]):\n   raise ValueError("Module4 CLI identity mismatch")\n  expected_source=os.environ["SHROOM_TEST_CLI_PIN"]\n else:\n  expected_source=os.environ["SHROOM_TEST_SOURCE_SHA256"]\n sys.argv=[str(TEST),*sys.argv[6:]]\n previous_main=sys.modules.get("__main__")\n try:\n  authenticated_module("__main__",TEST,expected_source)\n finally:\n  if previous_main is None:sys.modules.pop("__main__",None)\n  else:sys.modules["__main__"]=previous_main\n raise SystemExit(0)\nif os.environ.get("SHROOM_TEST_CLI"):\n import subprocess,hashlib\n original_run=subprocess.run\n cli=Path(os.environ["SHROOM_TEST_CLI"])\n if hashlib.sha256(cli.read_bytes()).hexdigest()!=os.environ["SHROOM_TEST_CLI_PIN"]:\n  raise ValueError("Module4 CLI source changed")\n def guarded_run(argv, *args, **kwargs):\n  if (not isinstance(argv,(list,tuple)) or len(argv)!=9 or\n      list(argv[:3])!=[sys.executable,str(cli),"--repo-root"] or\n      list(argv[4:])!=["--manifest","RAG/module4_release_v1/RELEASE_MANIFEST.json","--mode","source","--json"] or\n      not Path(argv[3]).resolve().is_relative_to(WORK) or\n      not Path(kwargs.get("cwd","")).resolve().is_relative_to(WORK)):\n   raise PermissionError("Unreviewed test subprocess")\n  command=[sys.executable,"-I","-S","-B",str(Path(__file__).resolve()),str(ROOT),str(WORK),str(cli),"0","--cli",*argv[2:]]\n  _permitted_cli[0]=(subprocess.list2cmdline(command),command)\n  try:return original_run(command,*args,**kwargs)\n  finally:_permitted_cli[0]=None\n subprocess.run=guarded_run\nmod=authenticated_module("phase25_resume_test",TEST,os.environ["SHROOM_TEST_SOURCE_SHA256"])\nsuite=unittest.defaultTestLoader.loadTestsFromModule(mod)\nstream=io.StringIO()\nresult=unittest.TextTestRunner(stream=stream,verbosity=1).run(suite)\nok=result.wasSuccessful() and result.testsRun==EXPECTED\nprint(json.dumps({"tests":result.testsRun,"expected":EXPECTED,"pass":ok,"failures":len(result.failures),"errors":len(result.errors),"skipped":len(result.skipped),"events":events,"output":stream.getvalue()}))\nraise SystemExit(0 if ok else 1)\n'
 
 NODE_GUARD = "const mod = require('node:module');\r\nconst denied = () => { throw new Error('OFFLINE_NETWORK_REJECTED'); };\r\nfor (const name of ['node:net','node:tls','node:http','node:https','node:http2','node:dgram','node:dns']) {\r\n const m=require(name);\r\n for(const k of ['connect','createConnection','createServer','request','get','createSocket','resolve','resolve4','resolve6','lookup','lookupService']) if(typeof m[k]==='function')m[k]=denied;\r\n if(m.Socket) m.Socket.prototype.connect=denied;\r\n if(m.Server) m.Server.prototype.listen=denied;\r\n}\r\nglobalThis.fetch=denied; globalThis.WebSocket=class {constructor(){denied();}};\r\nmod.syncBuiltinESMExports();"
 

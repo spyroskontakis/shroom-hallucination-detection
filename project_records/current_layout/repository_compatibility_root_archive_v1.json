@@ -20193,8 +20193,8 @@
       "current": "research/experiments/phase2_rag_features/e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_holdout_evaluation.ipynb",
       "h1_sha256": "14105af14224f177be9e10a895c48fab17e48cc66e9fb53ededc942ea9ed2298",
       "h1_blob": "978236b1c4e77a1be5cbfdd358d156f04a627277",
-      "sha256": "486ace0cc857a12742f033953fe175ec24d996c4a5ba490f5828201dc2e37487",
-      "bytes": 34318,
+      "sha256": "fe30a8922578f3e749f2cb604edfd397e9742da7ef080d3f790be91bc71d4f1a",
+      "bytes": 34414,
       "status": "MIGRATED_ADAPTED"
     },
     {
@@ -20202,8 +20202,8 @@
       "current": "research/experiments/phase2_rag_features/e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_phase_b_evaluation.ipynb",
       "h1_sha256": "c5abdb31f21934959875a594cc7004b7cdcbc82d91d9c577cac0b6f7834b2315",
       "h1_blob": "b143430d1b919637d893aeaa8bcad11f223b9f50",
-      "sha256": "93a1ebda95f21d774de71ef31e71a65c1e5ad3322dd70d603d962e80453a80a2",
-      "bytes": 43753,
+      "sha256": "5e32361b5b2c6c3f6d30694713b44deabaa29dc88d2fd85a403fe5b947ab95f7",
+      "bytes": 43849,
       "status": "MIGRATED_ADAPTED"
     },
     {
@@ -20211,8 +20211,8 @@
       "current": "research/experiments/phase2_rag_features/e5_rag/modules/module2/notebooks/shroom_rag_e5_module2_retrieval.ipynb",
       "h1_sha256": "ee2eaefadb52b3fa4abda0ed11166c53438e2fd8e1e9a8f39fe1962ed8b7c82e",
       "h1_blob": "0c5a9ea4437c4f7211627512aa9558a0a731d6fb",
-      "sha256": "1b247899c204b37307391ff62f8b6a68b94017dc600f449ac5cd63756613d798",
-      "bytes": 67885,
+      "sha256": "367abcfa3acea40c1a52435ab67e17d7102e0dd72914abf936093c1d65474427",
+      "bytes": 67981,
       "status": "MIGRATED_ADAPTED"
     },
     {
