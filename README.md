@@ -1,6 +1,8 @@
 # SHROOM Hallucination Detection
 
-**Diploma Thesis | SemEval-2024 Task 6 (SHROOM) | Model-Agnostic Hallucination Detection**
+**Hallucination Detection in Natural Language Generation Systems**
+
+*An Experimental Study in the Context of the SHROOM Competition*
 
 This repository contains the research implementation, experimental protocols and recorded results of my diploma thesis on **hallucination detection in natural language generation**.
 
