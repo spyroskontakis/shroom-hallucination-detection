@@ -11,16 +11,17 @@
 - Historical scripts retain machine-specific input/output assumptions. They are not approved direct-execution instructions for the reorganized checkout.
 - Project-owned material is MIT-licensed within the [approved scope](LICENSE_PROPOSAL.md). Third-party rights remain separate; datasets and weights are not included in the grant. Git publication remains a separately approved action.
 
-## Retained historical sources and references
+## Archived historical sources and references
 
-Thirteen original files remain in legacy directories. Twelve preserve immutable historical
-Markdown/source-contract connections; one notebook lacks authentic preservation metadata
-associated with its exact published SHA. Their retention does not mean that all historical
-experiments require those paths in a new implementation. Authenticated Git snapshots preserve
+Thirteen original files are grouped in the selected public-baseline source archive.
+Their internal namespace preserves immutable historical Markdown/source connections;
+one notebook still lacks authentic preservation metadata associated with its exact
+published SHA. Archival relocation does not satisfy that missing historical evidence
+or establish a runnable original environment. Authenticated Git snapshots preserve
 public source identity and namespaces; they do not supply private inputs, original filesystem
 timestamps or the different H0 bytes expected by historical checks.
 
-The [immutable E11 audit](../RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md)
+The [immutable E11 audit](../research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md)
 still has an unresolved relative protocol link at line67. The
 [current protocol](../research/data_and_evaluation/canonical/protocols/evaluation_protocol_decision.md)
 and [original protocol at the baseline revision](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/evaluation_protocol_decision.md)

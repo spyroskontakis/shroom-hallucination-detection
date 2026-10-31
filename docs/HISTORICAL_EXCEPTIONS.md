@@ -2,7 +2,7 @@
 
 Policy ID: **SHROOM-PUBLICATION-EXCEPTIONS-v1**
 
-Version: **1.0 - 2026-10-31**
+Version: **1.1 - 2026-10-31**
 
 This policy accepts the bounded exceptions below for a research-source portfolio
 release only when the mandatory gates pass independently. It does not authorize
@@ -10,8 +10,11 @@ a push, PR, merge, tag or release. It does not certify historical numerical
 reproduction. A failed original check remains FAIL; unverified execution remains
 NOT_VERIFIED; a skipped test remains SKIPPED.
 
-The physical architecture is frozen at **777/790 original migration entries**.
-The remaining13 are intentional retained sources, not additional completed moves.
+All **790/790 original sources are physically relocated**: 777 at their prior
+V2 destinations and 13 byte-identical sources in a selected historical namespace.
+The original V2 plan and historical ledgers are unchanged. The additional 13
+archive placements are registered separately, not presented as V2 destinations
+or as recovered historical runtime evidence.
 The [verification index](../project_records/current_layout/repository_verification_index.json)
 lists actual current paths and proposed V2 destinations. Proposed destinations
 for retained files are not installed entry points. New documentation is not an
@@ -32,13 +35,16 @@ GitHub check must not be bypassed. The release assessment must recheck mutable
 remote rules, the public main baseline and the exact candidate tree before
 publication. New findings or changed exception identities invalidate acceptance.
 
-## A - Retained legacy compatibility inventory
+## A - Archived historical source inventory
 
-Actual outcome: **13 NOT MOVED** -12 preserve immutable historical connections and
-one notebook lacks authentic SHA-associated preservation metadata. Release
-classification: KNOWN_EXCEPTION. PublicH1 bytes below are unchanged.
+Actual outcome: **13 ARCHIVED BYTE-IDENTICAL**, with no old active copies.
+Current root for every original namespace suffix in the table:
+research/historical_sources/public_baseline_11822d9/.
+The nested RAG/ and codex/ names preserve ten immutable relative references;
+neither name remains at the repository root. This necessary internal namespace
+is not a second compatibility installation or a duplicate implementation.
 
-| ID | Exact retained source/current location | PublicH1/current SHA-256 | Binding connection or reason |
+| ID | Original namespace suffix | PublicH1/current SHA-256 | Preserved connection or unresolved evidence |
 |---|---|---|---|
 | A01 | `RAG/E6_REPRODUCIBILITY.md` | 6aaed1600d38cccfffa3d63e3cf82c0b1032e356f741f2c9003faf7bab710aaa | Immutable document and outgoing relative-link context |
 | A02 | `RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md` | 2767b8f0e286deafd6ca6f5467ac393c9bf3ec55c8400c75b2da10643b2c544c | Immutable document and outgoing relative-link context |
@@ -54,32 +60,39 @@ classification: KNOWN_EXCEPTION. PublicH1 bytes below are unchanged.
 | A12 | `codex/canonical_fold_generation_metadata.json` | bca7da770d1748028ffb4cb89c597b6aabedf5a9ff97a07e0f9f6827a0f0d6b1 | E11_DATA_AUDIT.md:16 |
 | A13 | `codex/data/shroom_ensemble.ipynb` | 53e60b98c7eba15aa3fde27559885bdae70bf936513dfff60fda5c6a01486d03 | SHA/timestamp evidence and protected execution-matrix reference |
 
-**Evidence and age.** These files existed at public baseline
-11822d92070cd29360445cb4dacd8d110c655248. The source identities and original/public
-metadata differences predate this release preparation. Retaining their old local
-paths is an explicit migration-design decision, not a claim that every historical
-scientific process needs those paths in a new implementation. Moving the unchanged
-document closure to the proposed V2 targets adds10 broken references.
+**Evidence and age.** All 13 publicH1 SHA-256 values and Git blobs match baseline
+11822d92070cd29360445cb4dacd8d110c655248. No content, notebook cell, saved output,
+configuration, source hash or historical result was changed during archival
+relocation. The two historical Markdown documents retain every original URL.
+The existing C01 URL remains genuinely broken, at the same original line67.
 
-**Current code and usability.** All actual locations remain available through the
-research guide and current index. Authenticated H1 snapshots preserve public byte
-identity and the original namespace. They do not supply different privateH0 bytes,
-datasets, run markers, model assets or original filesystem chronology. The
-historical commands are not verified direct commands for the new checkout.
+**Current layout.** The independently pinned current catalog and the bounded
+verification-index overlay name these actual archive locations. The original
+790-row V2 definitions, prior catalogs, original run markers and historical
+E7/E8/E10/E11 consumers are unchanged. The selected 13-file archive is not the
+full 944-file H1 snapshot. It must not be supplied to the authenticated Snapshot
+API or used as a standalone historical execution root.
 
-**Acceptance and prohibition.** Retention is acceptable for this source release;
-790/790 relocation is not mandatory under this policy. It would not be acceptable
-under a binding rule that forbids legacy locations, missing source identity or
-unsupported scientific claims. M1-M5 still apply.
+**Historical execution.** Full authenticated H1 snapshots preserve public bytes
+and the original namespace. They still do not supply different privateH0 bytes,
+datasets, model assets, run markers or authentic filesystem chronology. Raw
+historical consumers need their explicit original input context; no adapter may
+silently substitute a current/public derivative for an unavailable H0 original.
 
-**Future resolution.** Relocate only for a concrete verified dependency need,
-with authorization for any protected document/consumer change and preserved
-historical originals. For A13, obtain authentic metadata associated with the exact
-notebook SHA. Its publicSHA53e60b98c7eba15aa3fde27559885bdae70bf936513dfff60fda5c6a01486d03
-must not inherit the timestamp recorded for originalSHA
+**A13 evidence remains NOT_VERIFIED.** The notebook publicSHA
+53e60b98c7eba15aa3fde27559885bdae70bf936513dfff60fda5c6a01486d03 must not inherit
+the timestamp recorded for originalSHA
 e2b8e7737771ab7b50ccf9e9acf7d08977c6510179e22ff1ed667725c9dba7c7.
-Git commit dates are not original filesystem timestamps. Do not fabricate evidence
-or create duplicate active implementations to increase the migration count.
+Its baseline execution-matrix permalink was already valid before relocation;
+it was not an active local-path blocker. Moving unchanged public source bytes
+does not resolve the original SHA/timestamp discrepancy. Original E10 recovery
+remains blocked without authentic evidence.
+
+**Acceptance and prohibition.** A01-A12 no longer require top-level legacy
+locations, and A13 has a verified archival location with the same unverified
+historical metadata. All original private-hash and runtime requirements remain
+unchanged. No source check or historical FAIL is waived by this structural change.
+M1-M5 still apply.
 
 ## B - Three historical original-H0 checksum mismatches
 
@@ -116,8 +129,8 @@ frozen expected hash or manufacture a replacement historical artifact.
 
 ## C01 - Immutable E11 audit reference
 
-Exact document:
-[RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md](../RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md),
+Exact archived document (original namespace label):
+[RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md](../research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md),
 line67.
 
 Original URL: ../../../codex/evaluation_protocol_decision.md.

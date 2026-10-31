@@ -2,7 +2,7 @@
 
 The implementation is organized under research/data_and_evaluation/, research/experiments/phase1_baselines/, research/experiments/phase2_rag_features/ and research/experiments/phase3_advanced_methods/. Shared tools and the entailment prototype remain distinct components. The [research index](../research/README.md) links to actual files.
 
-A small codex/ and RAG/ set retains documented provenance, historical-link and missing-context constraints. Relocated historical source bytes and scientific results are unchanged. Frozen scripts can depend on their old layout, missing inputs or run markers; their new location is not a verified execution entry point.
+The final 13 historical files are in the [public-baseline source archive](../research/historical_sources/public_baseline_11822d9/README.md). The original namespace exists only inside that selected archive to preserve immutable references; no top-level codex/ or RAG/ directories remain. Relocated historical source bytes and scientific results are unchanged. Frozen scripts can depend on their old layout, missing inputs or run markers; their new location is not a verified execution entry point.
 
 The [compatibility layer](../research/shared_tools/repository_compatibility.py) separates authenticated immutable Git snapshots from independently identified current paths. It composes existing H2/cross-experiment infrastructure without replacing historical hashes. Its supported current integrations are E6-v2/v3 bindings and local E7/E8, FactCG and E11 scoring library views. E6-v4 retains its separately validated current binding. Other relocated workflows remain source-inspection or historical-context workflows; full execution is not certified.
 

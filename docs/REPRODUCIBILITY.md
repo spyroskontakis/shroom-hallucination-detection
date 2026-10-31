@@ -10,7 +10,7 @@ Original-input checks remain enforceable. Public-safe H1 bytes differing from an
 
 ## Current mode
 
-The [master catalog](../project_records/current_layout/repository_compatibility_v1.json) independently identifies all 790 original migration entries and their present paths. The compatibility layer composes the existing cross API for E6-v2/v3 and derives independently hashed local library views for E7, E8, FactCG and E11 scoring. AccessGuard class bodies, historical hashes, algorithms and results are preserved.
+The [current master catalog](../project_records/current_layout/repository_compatibility_root_archive_v1.json) independently identifies all 790 original migration entries and their present paths, including the selected historical archive. The [prior catalog](../project_records/current_layout/repository_compatibility_v1.json) is preserved unchanged as an earlier layout record, not the current physical file list. The compatibility layer composes the existing cross API for E6-v2/v3 and derives independently hashed local library views for E7, E8, FactCG and E11 scoring. AccessGuard class bodies, historical hashes, algorithms and results are preserved.
 
 This is a limited integration scope, not an E1-E11 runner. Do not execute unadapted frozen sources directly at their new paths. Earlier repository_sources_v1/v2/v3 and cross contracts remain pinned to prior milestone contexts; their snapshot checks are not current-tree checks. E6-v4, adapted Module 1/2 and canonical CV retain their own contracts and limits.
 

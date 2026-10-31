@@ -238,6 +238,59 @@ class VerifierTests(unittest.TestCase):
 
 
 
+class ArchiveLayoutTests(unittest.TestCase):
+    def setUp(self):
+        root = V.root_of(FILE)
+        self.index = json.loads((root / V.INDEX).read_bytes())
+        self.hashes = {x["original"]: x["public_h1_sha256"]
+                       for x in self.index["historical_archive_layout"]["entries"]}
+
+    def test_archive_extends_current_layout_without_rewriting_v2_plan(self):
+        original = json.dumps(self.index["migration_destinations"], sort_keys=True)
+        targets = V.approved_destinations(self.index, self.hashes)
+        self.assertEqual(len(targets), 790)
+        for old in V.ARCHIVE_ORIGINALS:
+            self.assertEqual(targets[old], V.ARCHIVE_ROOT+"/"+old)
+        self.assertEqual(json.dumps(self.index["migration_destinations"], sort_keys=True), original)
+
+    def test_unknown_archive_version_rejected(self):
+        self.index["historical_archive_layout"]["version"] = "unknown"
+        with self.assertRaises(ValueError): V.approved_destinations(self.index, self.hashes)
+
+    def test_missing_archive_source_rejected(self):
+        self.index["historical_archive_layout"]["entries"].pop()
+        with self.assertRaises(ValueError): V.approved_destinations(self.index, self.hashes)
+
+    def test_additional_archive_source_rejected(self):
+        self.index["historical_archive_layout"]["entries"].append({"original": "unapproved.py"})
+        with self.assertRaises(ValueError): V.approved_destinations(self.index, self.hashes)
+
+    def test_arbitrary_archive_destination_rejected(self):
+        self.index["historical_archive_layout"]["entries"][0]["destination"] = "research/elsewhere.py"
+        with self.assertRaises(ValueError): V.approved_destinations(self.index, self.hashes)
+
+    def test_extra_archive_binding_fields_rejected(self):
+        self.index["historical_archive_layout"]["entries"][0]["fallback"] = "old_path"
+        with self.assertRaises(ValueError): V.approved_destinations(self.index, self.hashes)
+
+    def test_archive_hash_must_match_independent_original_evidence(self):
+        self.index["historical_archive_layout"]["entries"][0]["public_h1_sha256"] = "0"*64
+        with self.assertRaises(ValueError): V.approved_destinations(self.index, self.hashes)
+
+    def test_missing_original_evidence_cannot_be_waived(self):
+        with self.assertRaises(ValueError): V.approved_destinations(self.index, {})
+
+    def test_current_catalog_cannot_be_hidden_outside_public_projection(self):
+        raw = FILE.read_bytes()
+        name = "research/shared_tools/verify_repository.py"
+        index = {"protected_files": {}, "compatibility": {"path": name},
+                 "compatibility_catalog": {"path": "hidden_catalog.json"}}
+        with patch.object(V, "load_compatibility", side_effect=AssertionError("unsafe helper import")):
+            result = V.verify(FILE.parents[2], index, {name: {"sha256": V.digest(raw)}}, "FIXTURE")
+        self.assertEqual(result["checks"][0]["reason"], "compatibility_catalog_not_in_public_snapshot")
+        self.assertEqual(V.status_code(result), 1)
+
+
 class SmokeImportCases:
     NAME = None
 

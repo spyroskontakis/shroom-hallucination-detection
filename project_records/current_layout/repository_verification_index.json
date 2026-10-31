@@ -3167,7 +3167,7 @@
   ],
   "compatibility": {
     "path": "research/shared_tools/repository_compatibility.py",
-    "sha256": "7acdb171f669e7db1a5b6c49f7c173b8452e1151e72292228f02b5fb642e065d"
+    "sha256": "320d3812e23bc0dc3b84a2806764df290b0027bbdf2d0c1f2844c4478e8d7d05"
   },
   "protected_files": {
     ".gitattributes": "f526c26d1b42eaa6bb1aa3b72cddb1abe9dd3c5b104e5617bbcfe5bc7f499f0e",
@@ -3272,7 +3272,7 @@
         "research/data_and_evaluation/canonical/results/canonical_561/canonical_cv_experiment_metadata.json",
         "research/data_and_evaluation/canonical/results/canonical_561/canonical_cv_metadata.json",
         "research/data_and_evaluation/canonical/historical_records/feature_extraction/canonical_feature_extraction_metadata.json",
-        "codex/canonical_fold_generation_metadata.json"
+        "research/historical_sources/public_baseline_11822d9/codex/canonical_fold_generation_metadata.json"
       ],
       "inputs": [
         "Canonical-561 examples/features/folds; original source metadata"
@@ -3364,7 +3364,7 @@
         "research/data_and_evaluation/historical_baselines/notebooks/rag_baseline/shroom_ensemble.ipynb",
         "research/data_and_evaluation/historical_baselines/notebooks/codex_final_implementation/shroom_ensemble.ipynb",
         "research/data_and_evaluation/historical_baselines/notebooks/codex_final_implementation/shroom_ensemble_colab.ipynb",
-        "codex/data/shroom_ensemble.ipynb"
+        "research/historical_sources/public_baseline_11822d9/codex/data/shroom_ensemble.ipynb"
       ],
       "configurations": [],
       "inputs": [
@@ -3405,7 +3405,7 @@
           "mode": "HISTORICAL_ORIGINAL"
         },
         {
-          "path": "codex/data/shroom_ensemble.ipynb",
+          "path": "research/historical_sources/public_baseline_11822d9/codex/data/shroom_ensemble.ipynb",
           "invocation": "Historical ordered notebook cells; no Run All verification",
           "mode": "HISTORICAL_ORIGINAL"
         }
@@ -3720,8 +3720,8 @@
         "research/experiments/phase2_rag_features/e6_feature_extensions/v1/configs/feature_freeze.json",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v1/configs/preflight.json",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v1/configs/ranking_consistency.json",
-        "RAG/results/rag_e6_v1/config/completion_manifest.json",
-        "RAG/results/rag_e6_v1/config/run_config.json"
+        "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/config/completion_manifest.json",
+        "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/config/run_config.json"
       ],
       "inputs": [
         "Canonical features/folds, E5 evidence, pinned model assets, original run markers"
@@ -3787,7 +3787,7 @@
         "research/experiments/phase2_rag_features/e6_feature_extensions/v2/scripts/report_v2.py",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v2/scripts/smoke_nli.py",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v2/scripts/v2_common.py",
-        "RAG/results/rag_e6_v2/scripts/nli_backend.py"
+        "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v2/scripts/nli_backend.py"
       ],
       "configurations": [
         "research/experiments/phase2_rag_features/e6_feature_extensions/v2/configs/completion_manifest.json",
@@ -3863,7 +3863,7 @@
       ],
       "helpers": [
         "research/experiments/phase2_rag_features/e6_feature_extensions/v2/scripts/v2_common.py",
-        "RAG/results/rag_e6_v2/scripts/nli_backend.py"
+        "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v2/scripts/nli_backend.py"
       ]
     },
     {
@@ -3882,8 +3882,8 @@
         "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/report_v3.py",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/smoke_hhem.py",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/v3_common.py",
-        "RAG/results/rag_e6_v3/scripts/hhem_backend.py",
-        "RAG/results/rag_e6_v3/scripts/evaluate_v3.py"
+        "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/hhem_backend.py",
+        "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/evaluate_v3.py"
       ],
       "configurations": [
         "research/experiments/phase2_rag_features/e6_feature_extensions/v3/configs/completion_manifest.json",
@@ -3966,7 +3966,7 @@
           "mode": "CURRENT_ADAPTED"
         },
         {
-          "path": "RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
+          "path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
           "invocation": "main guard exists; not an approved experiment run command",
           "mode": "HISTORICAL_ORIGINAL"
         }
@@ -3975,7 +3975,7 @@
         "research/experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/refine_review_wording.py",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/bootstrap_sources.py",
         "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/v3_common.py",
-        "RAG/results/rag_e6_v3/scripts/hhem_backend.py"
+        "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/hhem_backend.py"
       ]
     },
     {
@@ -4451,7 +4451,7 @@
         "research/experiments/phase3_advanced_methods/e10_factcg/development/gpu/validate_gpu_outputs.py",
         "research/experiments/phase3_advanced_methods/e10_factcg/development/local_smoke/run_cpu_sun12.py",
         "research/experiments/phase3_advanced_methods/e10_factcg/development/local_smoke/run_local_smoke.py",
-        "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py"
+        "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py"
       ],
       "configurations": [
         "research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/reconstructed_v1/requirements_parser.public.txt",
@@ -4558,7 +4558,7 @@
         "research/experiments/phase3_advanced_methods/e10_factcg/development/gpu/upstream/factcg/factcg_score.py",
         "research/experiments/phase3_advanced_methods/e10_factcg/development/gpu/upstream/factcg/inference.py",
         "research/experiments/phase3_advanced_methods/e10_factcg/development/gpu/upstream/factcg/utils.py",
-        "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py"
+        "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py"
       ]
     },
     {
@@ -4997,7 +4997,7 @@
       "name": "closures_current",
       "cases": 20,
       "path": "research/shared_tools/tests/test_phase25_closures.py",
-      "sha256": "4a1b3ba0adcac3662cd71f989f0ebfa6d7f95e2da97445a49335c9eafa218595",
+      "sha256": "84be4ae5be3129b376b7855a4d9481e71332be671d63182c168b7cf239cb7e59",
       "context": "CURRENT",
       "kind": "unittest"
     },
@@ -5083,9 +5083,9 @@
     },
     {
       "name": "verifier_current",
-      "cases": 55,
+      "cases": 64,
       "path": "research/shared_tools/tests/test_repository_verifier.py",
-      "sha256": "43919b95eb330dd902ecce520c69a86d3c885e6e54726ba8a83e67a2d4bb70ea",
+      "sha256": "3227f30850840b2b91ae703a62530cd7c2d94ebafa05d8d89410895e99c3cf88",
       "context": "CURRENT",
       "kind": "unittest"
     },
@@ -5159,84 +5159,171 @@
     "author": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/error_analysis/build_csv.mjs",
     "historical_author": "RAG/results/rag_e6_v3/error_analysis/build_csv.mjs"
   },
-  "retained_source_notes": [
+  "historical_archive_layout": {
+    "version": "public-baseline-archive-v1",
+    "entries": [
+      {
+        "original": "RAG/E6_REPRODUCIBILITY.md",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/E6_REPRODUCIBILITY.md",
+        "public_h1_sha256": "6aaed1600d38cccfffa3d63e3cf82c0b1032e356f741f2c9003faf7bab710aaa"
+      },
+      {
+        "original": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
+        "public_h1_sha256": "2767b8f0e286deafd6ca6f5467ac393c9bf3ec55c8400c75b2da10643b2c544c"
+      },
+      {
+        "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
+        "public_h1_sha256": "1e72485f9458ffd87ff8503f7ccdbe4fdd19e05f2a3bd0283607f94fb0f4a36e"
+      },
+      {
+        "original": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+        "public_h1_sha256": "cb140483019a2c9885a3d858ebbfaf8981f52d354f2c108542251d5847bed0ef"
+      },
+      {
+        "original": "RAG/results/rag_e6_v1/E6_PROTOCOL.md",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/E6_PROTOCOL.md",
+        "public_h1_sha256": "e921dc332d4038edaae3c964d8497c78ce7f1b1bda69ec4444d424de7d889e96"
+      },
+      {
+        "original": "RAG/results/rag_e6_v1/E6_RESULTS.md",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/E6_RESULTS.md",
+        "public_h1_sha256": "0f09eb299ce928ca62bccdeb423b4016728ca5029f56052fcfcbd1a336a4ddd0"
+      },
+      {
+        "original": "RAG/results/rag_e6_v1/config/completion_manifest.json",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/config/completion_manifest.json",
+        "public_h1_sha256": "b6dcb439b6a4791391afce55027831d746d4b007e1929043037816becdef566b"
+      },
+      {
+        "original": "RAG/results/rag_e6_v1/config/run_config.json",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/config/run_config.json",
+        "public_h1_sha256": "d50061c212e1166c13a757aff3840f059352b21b7fa91cab76db5fbc994dd5bc"
+      },
+      {
+        "original": "RAG/results/rag_e6_v2/scripts/nli_backend.py",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v2/scripts/nli_backend.py",
+        "public_h1_sha256": "b2ab335aa8e856af65db64f6ba141c57090accc96642525cc2467f27e14f0702"
+      },
+      {
+        "original": "RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
+        "public_h1_sha256": "fd6a041ac07201f702a0927628d01e58060ed4e5ed3d1ab5cc0b9d468a251893"
+      },
+      {
+        "original": "RAG/results/rag_e6_v3/scripts/hhem_backend.py",
+        "destination": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/hhem_backend.py",
+        "public_h1_sha256": "84a84df1a75563a57286291276abe91e6b490327a7ca662810c3c410ce0a6cb0"
+      },
+      {
+        "original": "codex/canonical_fold_generation_metadata.json",
+        "destination": "research/historical_sources/public_baseline_11822d9/codex/canonical_fold_generation_metadata.json",
+        "public_h1_sha256": "bca7da770d1748028ffb4cb89c597b6aabedf5a9ff97a07e0f9f6827a0f0d6b1"
+      },
+      {
+        "original": "codex/data/shroom_ensemble.ipynb",
+        "destination": "research/historical_sources/public_baseline_11822d9/codex/data/shroom_ensemble.ipynb",
+        "public_h1_sha256": "53e60b98c7eba15aa3fde27559885bdae70bf936513dfff60fda5c6a01486d03"
+      }
+    ]
+  },
+  "compatibility_catalog": {
+    "path": "project_records/current_layout/repository_compatibility_root_archive_v1.json",
+    "sha256": "10b14606339cc202077c78566dc8b13c69e0cfa02aa838462c0930fe89601a2d"
+  },
+  "historical_archive_notes": [
     {
       "original": "RAG/E6_REPRODUCIBILITY.md",
       "approved_v2_destination": "docs/reproducibility/e6/E6_REPRODUCIBILITY.md",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/E6_REPRODUCIBILITY.md"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md",
       "approved_v2_destination": "research/experiments/phase3_advanced_methods/e11_transformer_finetuning/E11_DATA_AUDIT.md",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
       "approved_v2_destination": "research/experiments/phase3_advanced_methods/e10_factcg/development/gpu/factcg_backend.py",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
       "approved_v2_destination": "research/experiments/phase3_advanced_methods/e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py"
     },
     {
       "original": "RAG/results/rag_e6_v1/E6_PROTOCOL.md",
       "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/protocols/E6_PROTOCOL.md",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/E6_PROTOCOL.md"
     },
     {
       "original": "RAG/results/rag_e6_v1/E6_RESULTS.md",
       "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/results/reports/E6_RESULTS.md",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/E6_RESULTS.md"
     },
     {
       "original": "RAG/results/rag_e6_v1/config/completion_manifest.json",
       "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/configs/completion_manifest.json",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/config/completion_manifest.json"
     },
     {
       "original": "RAG/results/rag_e6_v1/config/run_config.json",
       "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v1/configs/run_config.json",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v1/config/run_config.json"
     },
     {
       "original": "RAG/results/rag_e6_v2/scripts/nli_backend.py",
       "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v2/scripts/nli_backend.py",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v2/scripts/nli_backend.py"
     },
     {
       "original": "RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
       "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/evaluate_v3.py",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/evaluate_v3.py"
     },
     {
       "original": "RAG/results/rag_e6_v3/scripts/hhem_backend.py",
       "approved_v2_destination": "research/experiments/phase2_rag_features/e6_feature_extensions/v3/scripts/hhem_backend.py",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/RAG/results/rag_e6_v3/scripts/hhem_backend.py"
     },
     {
       "original": "codex/canonical_fold_generation_metadata.json",
       "approved_v2_destination": "research/data_and_evaluation/canonical/historical_records/canonical_fold_generation_metadata.json",
-      "disposition": "INTENTIONAL_LEGACY_COMPATIBILITY",
-      "reason": "Immutable historical Markdown/source contract dependency closure retained. H1 authenticates public baseline bytes, not missing H0 private originals."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; internal original namespace preserves immutable relative references. Historical runtime requires a separate authenticated original context.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/codex/canonical_fold_generation_metadata.json"
     },
     {
       "original": "codex/data/shroom_ensemble.ipynb",
       "approved_v2_destination": "research/data_and_evaluation/historical_baselines/notebooks/codex_data/shroom_ensemble.ipynb",
-      "disposition": "RETAINED_MISSING_HISTORICAL_METADATA",
-      "reason": "No authentic timestamp associated with this public notebook SHA; protected old-path reference remains."
+      "disposition": "ARCHIVED_PUBLIC_H1_BYTE_IDENTICAL",
+      "reason": "Single byte-identical archival source; authentic original SHA/timestamp evidence remains missing and E10 historical replay remains NOT_VERIFIED.",
+      "current_path": "research/historical_sources/public_baseline_11822d9/codex/data/shroom_ensemble.ipynb"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Core Pipeline and Canonical Evaluation
 
-Preparation, feature extraction, shared CV and the recorded fold-generation source are under research/data_and_evaluation/canonical/. The two newly relocated preparation/feature sources keep their exact historical bytes; they are not newly adapted runnable entry points. Historical replay requires the validated original layout and authentic inputs. One canonical metadata file remains in codex/ because the immutable E11 audit links to it.
+Preparation, feature extraction, shared CV and the recorded fold-generation source are under research/data_and_evaluation/canonical/. The two newly relocated preparation/feature sources keep their exact historical bytes; they are not newly adapted runnable entry points. Historical replay requires the validated original layout and authentic inputs. One canonical metadata file is in the selected public-baseline archive, beside the unchanged E11 audit namespace, so their original relative link still resolves.
 
 | Step | Implementation or record |
 |---|---|
@@ -37,7 +37,7 @@ The three protocol documents and these aggregate audits retain historical paths,
 - [Feature compatibility audit](../data_and_evaluation/canonical/historical_records/feature_extraction/canonical_feature_compatibility_audit.csv)
 - [Feature quality audit](../data_and_evaluation/canonical/historical_records/feature_extraction/canonical_feature_quality_audit.csv)
 
-The protocol is now linked above at its new location. Its [original version at the baseline commit](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/evaluation_protocol_decision.md) and the [E11 audit in that original layout](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md#L67) provide historical context. The unchanged local E11 audit retains its old relative protocol link (historical exception H1).
+The protocol is now linked above at its new location. Its [original version at the baseline commit](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/codex/evaluation_protocol_decision.md) and the [E11 audit in that original layout](https://github.com/spyroskontakis/shroom-hallucination-detection/blob/11822d92070cd29360445cb4dacd8d110c655248/RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md#L67) provide historical context. The unchanged archived E11 audit retains its old relative protocol link, which remains broken (historical exception H1).
 
 The feature producer still writes the two CSVs at their legacy paths. Do not run it in the repository; a future run requires separately approved output isolation and dependency adaptation. These archival moves do not verify experiment reproduction.
 

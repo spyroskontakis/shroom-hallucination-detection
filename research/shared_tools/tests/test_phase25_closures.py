@@ -225,7 +225,12 @@ class HistoricalDocumentationTests(unittest.TestCase):
         self.assertEqual(self.projection(path), "e4093dbb9f0c122f3189586b1db186d642640990becf8bfc5ec11af8e7562163")
 
     def test_hash_locked_e11_document_remains_unchanged(self):
-        raw = (ROOT / "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md").read_bytes()
+        spec = importlib.util.spec_from_file_location(
+            "_closure_current_source_binding", ROOT / "research/shared_tools/repository_compatibility.py")
+        api = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(api)
+        raw = api.Catalog(ROOT).current(
+            "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md").read_bytes()
         self.assertEqual(hashlib.sha256(raw).hexdigest(), "2767b8f0e286deafd6ca6f5467ac393c9bf3ec55c8400c75b2da10643b2c544c")
 
 

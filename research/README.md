@@ -1,6 +1,6 @@
 # Research Guide
 
-This guide connects the thesis methodology to code, protocols and recorded results. Most implementations are physically organized under research/; a small set remains under codex/ and RAG/ for documented compatibility and provenance requirements. Each page distinguishes current entry points, unchanged historical sources and records; a source link alone does not certify runtime reproduction.
+This guide connects the thesis methodology to code, protocols and recorded results. Research implementations and the final historical sources are physically organized under research/. The [public-baseline archive](historical_sources/public_baseline_11822d9/README.md) preserves the internal original namespace of 13 immutable files without top-level codex/ or RAG/ directories. Each page distinguishes current entry points, unchanged historical sources and records; a source link alone does not certify runtime reproduction.
 
 | Area | What to explore |
 |---|---|
@@ -28,6 +28,6 @@ The repository contains research code, protocols, documentation and recorded res
 
 Read [data access](../docs/DATA_ACCESS.md), [environment requirements](../docs/ENVIRONMENTS.md) and [reproducibility limitations](../docs/REPRODUCIBILITY.md) before considering execution. Historical notebooks can write to old input/output locations or call external services; this guide does not provide a verified Run All procedure.
 
-The [documented-exception policy](../docs/HISTORICAL_EXCEPTIONS.md) records the13 retained sources, original checksum failures, immutable E11 reference and runtime limitations. Acceptance preserves the actual failed/unverified outcomes; it is not permission to run experiments or publish changes.
+The [documented-exception policy](../docs/HISTORICAL_EXCEPTIONS.md) records the13 archived sources, original checksum failures, immutable E11 reference and runtime limitations. Acceptance preserves the actual failed/unverified outcomes; it is not permission to run experiments or publish changes.
 
 [Back to the project README](../README.md)

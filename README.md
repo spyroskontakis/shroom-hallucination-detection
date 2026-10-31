@@ -174,9 +174,7 @@ Selected experiments used Modal for remote execution.
 | Directory | Description |
 |---|---|
 | `research/` | Relocated research implementations, canonical CV, E6-v4, shared tools, historical sources/results and the entailment prototype |
-| `codex/` | Retained canonical metadata and a historical notebook with unresolved provenance requirements |
 | `data/` | Retained early notebooks; archived result tables are indexed under `research/` |
-| `RAG/` | Historical documentation and files whose migration still requires verified context or provenance work |
 | `project_records/` | Historical source snapshots, thesis verification records, release tools, runtime probes and migration reports |
 | `docs/` | Technical documentation, experimental results and reproducibility information |
 | `thesis/` | Complete thesis in PDF and Word formats |
@@ -184,7 +182,7 @@ Selected experiments used Modal for remote execution.
 | `manifests/` | File verification records and public release documentation |
 | `thesis_writing/` | Supporting script for verifying research results used during thesis writing |
 
-Most implementations and records are now under research/. Thirteen original files remain in codex/ and RAG/ to preserve immutable historical connections or await authentic notebook metadata. Relocated historical files preserve the published baseline bytes; public-safe derivatives remain distinct from the private originals required for replay. Their old commands and relative paths are not automatically valid at the new location. The [source-mode guide](docs/REPRODUCIBILITY.md) distinguishes authenticated historical snapshots from supported current integrations. Original source hashes and scientific results are preserved.
+Research implementations and records are organized under research/. The final 13 historical files are grouped in the [public-baseline source archive](research/historical_sources/public_baseline_11822d9/README.md). Its internal original namespace preserves immutable relative references; there are no top-level codex/ or RAG/ directories. The archive is a selected source collection, not a complete runnable snapshot. Authentic notebook preservation metadata remains unavailable. Relocated historical files preserve the published baseline bytes; public-safe derivatives remain distinct from the private originals required for replay. Their old commands and relative paths are not automatically valid at the new location. The [source-mode guide](docs/REPRODUCIBILITY.md) distinguishes authenticated historical snapshots from supported current integrations. Original source hashes and scientific results are preserved.
 
 ## Getting Started
 

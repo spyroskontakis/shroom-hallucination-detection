@@ -17,6 +17,15 @@ historical permalinks. The existing compatibility and H2 validators remain the
 source of truth. The verification index adds the approved destinations and test
 inventory; it is not a replacement historical source contract.
 
+The original 790-row V2 destination plan remains unchanged. A separately pinned
+current-layout overlay binds exactly 13 unchanged public-baseline sources to
+research/historical_sources/public_baseline_11822d9/, preserving their original
+internal namespace. The verifier checks these archive hashes against authentic
+Git blobs and rejects missing/extra sources, arbitrary paths, changed bytes and
+old active duplicates. MIGRATED_HISTORICAL_NAMESPACE is counted separately from
+V2-destination moves. The prior catalogs and all historical source requirements
+remain unchanged; the selected archive is not a complete executable snapshot.
+
 The default publication scope is the complete committed HEAD. Untracked local
 audits are excluded. A tracked file that differs from HEAD is a failure. Local
 release reviewers can supply a complete projected inventory with

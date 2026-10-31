@@ -19,9 +19,26 @@ import sys
 import urllib.parse
 
 INDEX = "project_records/current_layout/repository_verification_index.json"
-INDEX_SHA256 = "2777b3efccc2984560e5c00dc9154e0540865b48df423677435381073a917512"
+INDEX_SHA256 = "bb722ec5682a1ba8394c6993afe2bd10f7533ddfccb40bdc587dbd102c2c6f23"
 BASE = "11822d92070cd29360445cb4dacd8d110c655248"
 E11 = "RAG/results/phase3_e11_task_adaptation/E11_DATA_AUDIT.md"
+ARCHIVE_ROOT = "research/historical_sources/public_baseline_11822d9"
+ARCHIVE_VERSION = "public-baseline-archive-v1"
+ARCHIVE_ORIGINALS = frozenset((
+    "RAG/E6_REPRODUCIBILITY.md",
+    E11,
+    "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_backend.py",
+    "RAG/results/phase3_e9_claim_verification/minicheck_gpu/run_minicheck_gpu.py",
+    "RAG/results/rag_e6_v1/E6_PROTOCOL.md",
+    "RAG/results/rag_e6_v1/E6_RESULTS.md",
+    "RAG/results/rag_e6_v1/config/completion_manifest.json",
+    "RAG/results/rag_e6_v1/config/run_config.json",
+    "RAG/results/rag_e6_v2/scripts/nli_backend.py",
+    "RAG/results/rag_e6_v3/scripts/evaluate_v3.py",
+    "RAG/results/rag_e6_v3/scripts/hhem_backend.py",
+    "codex/canonical_fold_generation_metadata.json",
+    "codex/data/shroom_ensemble.ipynb",
+))
 sys.dont_write_bytecode = True
 
 
@@ -63,16 +80,50 @@ def root_of(path):
     raise ValueError("Repository markers not found")
 
 
+def approved_destinations(index, original_hashes=None):
+    """Keep the original V2 plan intact; bind a bounded, byte-identical archive.
+
+    This current-layout overlay is not an H0 source or execution contract.
+    The optional hashes are mandatory at the actual Git-backed verification gate.
+    """
+    entries = index["migration_destinations"]
+    if len(entries) != 790 or len({x["original"] for x in entries}) != 790:
+        raise ValueError("Incomplete migration map")
+    result = {logical(x["original"]): logical(x["destination"]) for x in entries}
+    overlay = index.get("historical_archive_layout")
+    if overlay is not None:
+        if (not isinstance(overlay, dict) or set(overlay) != {"version", "entries"}
+                or overlay["version"] != ARCHIVE_VERSION):
+            raise ValueError("Unknown historical archive layout")
+        rows = overlay["entries"]
+        if (not isinstance(rows, list) or len(rows) != 13 or
+                any(not isinstance(x, dict) for x in rows) or
+                {x.get("original") for x in rows} != ARCHIVE_ORIGINALS):
+            raise ValueError("Historical archive scope must be exactly the thirteen sources")
+        for row in rows:
+            if set(row) != {"original", "destination", "public_h1_sha256"}:
+                raise ValueError("Unknown archive binding field")
+            old = logical(row["original"])
+            target = logical(row["destination"])
+            if old not in result or target != ARCHIVE_ROOT+"/"+old:
+                raise ValueError("Historical namespace must be preserved")
+            pin = row["public_h1_sha256"]
+            if not isinstance(pin, str) or not re.fullmatch("[0-9a-f]{64}", pin):
+                raise ValueError("Invalid archive source identity")
+            if original_hashes is not None and original_hashes.get(old) != pin:
+                raise ValueError("Archive identity does not match the authentic Git original")
+            result[old] = target
+    if len({p.casefold() for p in result.values()}) != len(result):
+        raise ValueError("Current destination collision")
+    return result
+
+
 def load_index(root):
     raw = (root / INDEX).read_bytes()
     if digest(raw) != INDEX_SHA256:
         raise ValueError("Verification index identity mismatch")
     value = json.loads(raw)
-    entries = value["migration_destinations"]
-    if len(entries) != 790 or len({x["original"] for x in entries}) != 790:
-        raise ValueError("Incomplete migration map")
-    for row in entries:
-        logical(row["original"]); logical(row["destination"])
+    approved_destinations(value)
     return value
 
 
@@ -277,14 +328,28 @@ def verify(root, index, inventory, scope):
     if authority["path"] not in public:
         add("source_contract", "FAIL", reason="compatibility_validator_not_in_public_snapshot")
         return {"scope": scope, "files": len(inventory), "checks": rows}
+    current_catalog = index.get("compatibility_catalog")
+    if current_catalog is not None and current_catalog["path"] not in public:
+        add("source_contract", "FAIL", reason="compatibility_catalog_not_in_public_snapshot")
+        return {"scope": scope, "files": len(inventory), "checks": rows}
     try:
         module, catalog = load_compatibility(root, index)
+        if current_catalog is not None and (
+                module.CATALOG != current_catalog["path"] or
+                module.CATALOG_SHA256 != current_catalog["sha256"]):
+            raise ValueError("Current catalog authority mismatch")
     except (ValueError, OSError, KeyError):
         add("source_contract", "FAIL", reason="pinned_compatibility_source_or_catalog_rejected")
         return {"scope": scope, "files": len(inventory), "checks": rows}
     originals = git_inventory(root, BASE)
     paths = [x["original"] for x in index["migration_destinations"]]
     data = git_blobs(root, [originals[p]["git_blob"] for p in paths])
+    try:
+        destinations = approved_destinations(index, dict(zip(paths, map(digest, data))))
+    except (ValueError, KeyError):
+        add("destination_contract", "FAIL", reason="archive_layout_or_original_identity_rejected")
+        return {"scope": scope, "files": len(inventory), "checks": rows}
+    archived = ARCHIVE_ORIGINALS if index.get("historical_archive_layout") else frozenset()
     counts = collections.Counter()
     for projection, original in zip(index["migration_destinations"], data):
         old = projection["original"]; item = catalog.entries[old]
@@ -293,7 +358,12 @@ def verify(root, index, inventory, scope):
         current = item["current"]
         same = item["sha256"] == item["h1_sha256"]
         status = "MIGRATED_BYTE_IDENTICAL" if same else "MIGRATED_ADAPTED"
-        if current != projection["destination"]:
+        if old in archived:
+            status = "MIGRATED_HISTORICAL_NAMESPACE"
+            if current != destinations[old] or not same:
+                add("archive_identity", "FAIL", file=old,
+                    reason="archive_path_or_byte_identity_changed")
+        elif current != projection["destination"]:
             if current != old:
                 add("destination", "FAIL", file=old)
             status = "BLOCKED_HISTORICAL_METADATA" if old.endswith(".ipynb") else "BLOCKED_IMMUTABLE_CONTRACT"
