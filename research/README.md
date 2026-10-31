@@ -1,12 +1,12 @@
 # Research Guide
 
-This guide connects the thesis methodology to the code, protocols and recorded results. Most research code remains in `codex/` and `RAG/` to preserve existing paths and experimental provenance. The pages below are navigation indexes, not relocated pipelines.
+This guide connects the thesis methodology to code, protocols and recorded results. Research implementations and the final historical sources are physically organized under research/. The [public-baseline archive](historical_sources/public_baseline_11822d9/README.md) preserves the internal original namespace of 13 immutable files without top-level codex/ or RAG/ directories. Each page distinguishes current entry points, unchanged historical sources and records; a source link alone does not certify runtime reproduction.
 
 | Area | What to explore |
 |---|---|
 | [Core pipeline](core_pipeline/README.md) | Canonical data preparation, semantic features, fixed folds and shared evaluation |
 | [Exploratory analysis](exploratory_analysis/README.md) | Descriptive EDA and the different historical notebook versions |
-| [Shared tools and tests](shared_tools/README.md) | Utilities and tests at their original locations |
+| [Shared tools and tests](shared_tools/README.md) | Shared utilities, source-mode validation and experiment-specific tests |
 | [Phase 1: E1-E4](experiments/phase1_baselines/README.md) | NLI, similarity, their combination and synthetic-data diagnostics |
 | [Phase 2: E5-E8](experiments/phase2_rag_features/README.md) | RAG Modules 1-4, additional features, routing and Random Forest tuning |
 | [Phase 3: E9-E11](experiments/phase3_advanced_methods/README.md) | Claim verification, FactCG and transformer fine-tuning |
@@ -27,5 +27,7 @@ The [results overview](../docs/RESULTS.md) also separates development comparison
 The repository contains research code, protocols, documentation and recorded results. It does not include all original datasets, model weights or generated artifacts. Full reproduction using only this public repository has not been verified. File migration checks are not new experiment runs or independent confirmation of the reported metrics.
 
 Read [data access](../docs/DATA_ACCESS.md), [environment requirements](../docs/ENVIRONMENTS.md) and [reproducibility limitations](../docs/REPRODUCIBILITY.md) before considering execution. Historical notebooks can write to old input/output locations or call external services; this guide does not provide a verified Run All procedure.
+
+The [documented-exception policy](../docs/HISTORICAL_EXCEPTIONS.md) records the13 archived sources, original checksum failures, immutable E11 reference and runtime limitations. Acceptance preserves the actual failed/unverified outcomes; it is not permission to run experiments or publish changes.
 
 [Back to the project README](../README.md)

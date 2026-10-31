@@ -149,7 +149,7 @@ The official test set had also been used in earlier exploratory work. In additio
 
 These results therefore represent a **retrospective evaluation**, not an official SemEval submission or an independent untouched test.
 
-See the [test-use audit](RAG/results/e10_official_test_v1/recovery_audit/PRIOR_TEST_USE_AUDIT.md), [MT overlap audit](RAG/results/e10_official_test_v1/recovery_audit/E10_OFFICIAL_TEST_MT_OVERLAP_AUDIT.md) and [full results](docs/RESULTS.md).
+See the [test-use audit](research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/PRIOR_TEST_USE_AUDIT.md), [MT overlap audit](research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/E10_OFFICIAL_TEST_MT_OVERLAP_AUDIT.md) and [full results](docs/RESULTS.md).
 
 ## Key Findings
 
@@ -173,10 +173,8 @@ Selected experiments used Modal for remote execution.
 
 | Directory | Description |
 |---|---|
-| `research/` | Research navigation, archived Phase 1 result tables and the separate entailment prototype |
-| `codex/` | Canonical data preparation, semantic feature extraction, evaluation and retained historical notebooks |
+| `research/` | Relocated research implementations, canonical CV, E6-v4, shared tools, historical sources/results and the entailment prototype |
 | `data/` | Retained early notebooks; archived result tables are indexed under `research/` |
-| `RAG/` | Retrieval modules, additional verification methods and experiments E5-E11 |
 | `project_records/` | Historical source snapshots, thesis verification records, release tools, runtime probes and migration reports |
 | `docs/` | Technical documentation, experimental results and reproducibility information |
 | `thesis/` | Complete thesis in PDF and Word formats |
@@ -184,7 +182,7 @@ Selected experiments used Modal for remote execution.
 | `manifests/` | File verification records and public release documentation |
 | `thesis_writing/` | Supporting script for verifying research results used during thesis writing |
 
-Canonical research code remains in its historical `codex/` and `RAG/` paths to preserve compatibility and provenance. The indexes in `research/` link to those implementations; they do not indicate that the pipelines were moved.
+Research implementations and records are organized under research/. The final 13 historical files are grouped in the [public-baseline source archive](research/historical_sources/public_baseline_11822d9/README.md). Its internal original namespace preserves immutable relative references; there are no top-level codex/ or RAG/ directories. The archive is a selected source collection, not a complete runnable snapshot. Authentic notebook preservation metadata remains unavailable. Relocated historical files preserve the published baseline bytes; public-safe derivatives remain distinct from the private originals required for replay. Their old commands and relative paths are not automatically valid at the new location. The [source-mode guide](docs/REPRODUCIBILITY.md) distinguishes authenticated historical snapshots from supported current integrations. Original source hashes and scientific results are preserved.
 
 ## Getting Started
 
@@ -212,6 +210,16 @@ The repository includes implementation code, experiment configurations, evaluati
 Full datasets, model weights, intermediate features and some saved experimental artifacts are not distributed here. Exact reproduction may require separately obtained data, recorded model versions and experiment-specific environments.
 
 Full reproduction of the experiments using only this public repository has not been verified. File migration checks are not new experiment runs or independent confirmation of the reported metrics.
+
+### Safe local verification
+
+Run the offline source and structure checks with Python 3.12:
+
+~~~console
+python -I -S -B research/shared_tools/verify_repository.py
+~~~
+
+The [verification guide](docs/VERIFICATION.md) explains the checks, optional isolated tests and exit codes. Historical originals and current adapted bindings are verified separately. A frozen E11 link and three historical checksum failures are reported explicitly. The checksum differences are documented public-safe projections that predate this reorganization; they still fail the original replay checks. These checks do not rerun E1-E11 or reproduce their metrics. The [documented-exception policy](docs/HISTORICAL_EXCEPTIONS.md) defines which historical limitations may be accepted for a source release while their original checks remain failed or unverified.
 
 ## Thesis and Presentation
 

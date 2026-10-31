@@ -4,15 +4,15 @@ E1-E3 compare NLI, semantic similarity and their combination. E4 investigates sy
 
 ## Canonical evaluation
 
-The [core pipeline guide](../../core_pipeline/README.md) links to the canonical code, fixed-fold records and evaluation decisions in `codex/`. The [shared CV implementation](../../../codex/canonical_development_cv.py) evaluates E1-E4 on the later 561-example human development pool. Canonical E4 is diagnostic-only and adds synthetic rows only to training folds.
+The [core pipeline guide](../../core_pipeline/README.md) links to canonical code, fixed-fold records and evaluation decisions. The [shared CV implementation](../../data_and_evaluation/canonical/scripts/canonical_development_cv.py) evaluates E1-E4 on the later 561-example human development pool. Canonical E4 is diagnostic-only and adds synthetic rows only to training folds.
 
-Read the [canonical results summary](../../../codex/canonical_cv_outputs/canonical_cv_results_summary.md) for that evaluation. It is separate from the older settings below.
+Read the [canonical results summary](../../data_and_evaluation/canonical/results/canonical_561/canonical_cv_results_summary.md) for that evaluation. It is separate from the older settings below.
 
 ## Historical development experiments: 499 examples
 
-The [integrated baseline notebook](../../../RAG/shroom_ensemble.ipynb) retains the earlier E1-E3 evaluation and development E4 work. Other distinct source versions are indexed under [exploratory analysis](../../exploratory_analysis/README.md).
+The [integrated baseline notebook](../../data_and_evaluation/historical_baselines/notebooks/rag_baseline/shroom_ensemble.ipynb) retains the earlier E1-E3 evaluation and development E4 work. Other distinct source versions are indexed under [exploratory analysis](../../exploratory_analysis/README.md).
 
-The following aggregate CSVs are archived in this directory; their producer notebooks remain at the original paths.
+The following aggregate CSVs are archived in this directory. The relocated historical notebooks are organized under research/data_and_evaluation/historical_baselines/notebooks/ and research/experiments/phase1_baselines/e4_synthetic_data/notebooks/; their code and saved outputs are unchanged. The earlier codex/data notebook is archived under research/historical_sources/public_baseline_11822d9/. Its bytes are unchanged; the authentic original SHA/timestamp evidence needed for E10 historical recovery remains unavailable.
 
 | Record | Available table |
 |---|---|
@@ -26,7 +26,7 @@ The combined summary preserves E4 as excluded from model selection. These are hi
 
 ### Augmentation notebook variants
 
-Four source versions retain their original sampling settings: [5 samples per task](../../../codex/data/5.%20Augmentation/5%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb), [20](../../../codex/data/5.%20Augmentation/20%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb), [50](../../../codex/data/5.%20Augmentation/50%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb) and [200](../../../codex/data/5.%20Augmentation/200%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb). The sampling setting is not a claim about the final number of generated rows.
+Four source versions retain their original sampling settings: [5 samples per task](e4_synthetic_data/notebooks/5%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb), [20](e4_synthetic_data/notebooks/20%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb), [50](e4_synthetic_data/notebooks/50%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb) and [200](e4_synthetic_data/notebooks/200%20samples%20-%20augmentation_outputs_vertex/shroom_ensemble.ipynb). The sampling setting is not a claim about the final number of generated rows.
 
 ## Historical ablation using labeled test data
 
@@ -39,6 +39,6 @@ The [older synthetic-ablation notebook](../../../data/7.%20Ablation%20Synthetic%
 
 These records are not canonical development results or an untouched test evaluation. Keep them separate from both development-499 and canonical-561 comparisons.
 
-The notebooks have not been rewritten to follow the archive locations. A future run could recreate outputs at old paths. Full replay from the public repository has not been verified; review [data access](../../../docs/DATA_ACCESS.md) and [reproducibility](../../../docs/REPRODUCIBILITY.md) before execution. Migration checks do not independently confirm the saved metrics.
+The notebooks have not been rewritten to follow the archive locations. Their input/output behavior depends on the explicit working directory and SHROOM_PROJECT_ROOT, not the notebook filename. Do not use the new source folder as an assumed execution root or run all cells: historical writers, model downloads and API cells still require separately approved isolation. A future run could recreate outputs at old paths. Full replay from the public repository has not been verified; review [data access](../../../docs/DATA_ACCESS.md) and [reproducibility](../../../docs/REPRODUCIBILITY.md) before execution. Migration checks do not independently confirm the saved metrics.
 
 [Back to the research guide](../../README.md)

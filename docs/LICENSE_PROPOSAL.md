@@ -10,4 +10,4 @@ FactCG and BERTScore retain their independent MIT notices and copyright holders.
 
 The former [draft](MIT_LICENSE_DRAFT.txt) and earlier reports remain historical records and are superseded by the root LICENSE. They do not impose current licensing blockers.
 
-Public Git author name and exact GitHub noreply email still require separate confirmation. Copyright identity is not automatically approval of a Git author identity. See [Git identity preparation](GIT_IDENTITY_SETUP.md). No Git configuration or repository was created.
+Public Git identity was separately confirmed after PHASE 4D and is now configured as Spyros Kontakis with the approved GitHub noreply email. The [Git identity preparation guide](GIT_IDENTITY_SETUP.md) records the earlier setup procedure; identity approval is no longer pending. This does not authorize a further push, merge or release.

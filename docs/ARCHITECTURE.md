@@ -1,12 +1,9 @@
 # Architecture and dependencies
 
-The project evolved through four related layers:
+The implementation is organized under research/data_and_evaluation/, research/experiments/phase1_baselines/, research/experiments/phase2_rag_features/ and research/experiments/phase3_advanced_methods/. Shared tools and the entailment prototype remain distinct components. The [research index](../research/README.md) links to actual files.
 
-1. Dataset preparation and canonical fold assignment under `codex/`.
-2. NLI, semantic-similarity and Random Forest baseline experiments E1-E4.
-3. Retrieval and external-evidence modules under `RAG/`, followed by E6-E10 feature and routing experiments.
-4. DeBERTa task adaptation and contrastive objectives in E11.
+The final 13 historical files are in the [public-baseline source archive](../research/historical_sources/public_baseline_11822d9/README.md). The original namespace exists only inside that selected archive to preserve immutable references; no top-level codex/ or RAG/ directories remain. Relocated historical source bytes and scientific results are unchanged. Frozen scripts can depend on their old layout, missing inputs or run markers; their new location is not a verified execution entry point.
 
-Many scripts intentionally resolve files relative to their own experiment directory. The staging process therefore preserves the original `RAG/`, `codex/` and `solution/` paths. No import, path or source-hash refactoring was applied.
+The [compatibility layer](../research/shared_tools/repository_compatibility.py) separates authenticated immutable Git snapshots from independently identified current paths. It composes existing H2/cross-experiment infrastructure without replacing historical hashes. Its supported current integrations are E6-v2/v3 bindings and local E7/E8, FactCG and E11 scoring library views. E6-v4 retains its separately validated current binding. Other relocated workflows remain source-inspection or historical-context workflows; full execution is not certified.
 
-There is no single environment valid for every experiment. Existing requirements and runtime manifests are authoritative for their own stage. E6-v4 uses a separate pinned compatibility environment; E9 has distinct local/GPU specifications; E11 records Python 3.11.12, PyTorch 2.2.1+cu121, CUDA 12.1, Transformers 4.38.1, tokenizers 0.15.2 and NumPy 1.26.4 for the C/D/E runs.
+There is no single environment valid for every experiment. Requirements and runtime manifests describe their own stage. E6-v4 uses a separate pinned compatibility environment; E9 has local/GPU specifications; E11 records Python 3.11.12, PyTorch 2.2.1+cu121, CUDA 12.1, Transformers 4.38.1, tokenizers 0.15.2 and NumPy 1.26.4 for C/D/E. Read [safe execution](SAFE_EXECUTION.md).
