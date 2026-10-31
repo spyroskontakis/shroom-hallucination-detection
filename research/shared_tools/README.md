@@ -72,3 +72,7 @@ The [compatibility layer](repository_compatibility.py) composes the unchanged cr
 The layer also provides separately hashed current library views for E7, E8, FactCG and E11 scoring. It preserves AccessGuard class bodies and original-input hashes. Tests use isolated synthetic inputs and selected read-only public configuration checks. They do not launch full experimental pipelines.
 
 For modes, scope and the source-only CLI, read [reproducibility](../../docs/REPRODUCIBILITY.md). No historical source or public-safe record replaces a missing authentic original input.
+
+## Consolidated offline checks
+
+Use [verify_repository.py](verify_repository.py) for the committed source, migration and local-link checks, and optional isolated regression tests. The [verification guide](../../docs/VERIFICATION.md) explains the explicit scratch requirement, historical test contexts and known failures. It does not authorize experiment execution or certify historical metric reproduction.

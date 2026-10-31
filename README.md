@@ -213,6 +213,16 @@ Full datasets, model weights, intermediate features and some saved experimental 
 
 Full reproduction of the experiments using only this public repository has not been verified. File migration checks are not new experiment runs or independent confirmation of the reported metrics.
 
+### Safe local verification
+
+Run the offline source and structure checks with Python 3.12:
+
+~~~console
+python -I -S -B research/shared_tools/verify_repository.py
+~~~
+
+The [verification guide](docs/VERIFICATION.md) explains the checks, optional isolated tests and exit codes. Historical originals and current adapted bindings are verified separately. A frozen E11 link and three historical checksum failures remain open; the verifier reports them rather than returning a misleading all-clear. These checks do not rerun E1-E11 or reproduce their metrics.
+
 ## Thesis and Presentation
 
 **Thesis:** *Ανίχνευση hallucinations σε συστήματα παραγωγής φυσικής γλώσσας: πειραματική μελέτη στο πλαίσιο του διαγωνισμού SHROOM*

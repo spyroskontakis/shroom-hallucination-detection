@@ -1,0 +1,207 @@
+"""Offline negative/unit tests for the repository verifier, not experiment replay."""
+import ast
+import hashlib
+import importlib.util
+import json
+import os
+from pathlib import Path
+import unittest
+from unittest.mock import patch
+
+FILE = Path(__file__).resolve().parents[1] / "verify_repository.py"
+SPEC = importlib.util.spec_from_file_location("shroom_verifier_test_api", FILE)
+V = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(V)
+
+
+class VerifierTests(unittest.TestCase):
+    def test_module_import_has_no_main_call(self):
+        self.assertTrue(callable(V.verify))
+
+    def test_root_detection(self):
+        self.assertEqual(V.root_of(FILE), FILE.parents[2])
+
+    def test_status_actual_failure(self):
+        self.assertEqual(V.status_code({"checks":[{"status":"FAIL"}]}), 1)
+
+    def test_h0_failure_is_never_pass(self):
+        self.assertEqual(V.status_code({"checks":[{"status":"KNOWN_HISTORICAL_EXCEPTION","historical_status":"FAIL"}]}), 1)
+
+    def test_unknown_runtime_is_not_success(self):
+        self.assertEqual(V.status_code({"checks":[{"status":"NOT_VERIFIED"}]}), 2)
+
+    def test_missing_artifact_is_not_success(self):
+        self.assertEqual(V.status_code({"checks":[{"status":"BLOCKED_MISSING_ARTIFACT"}]}), 2)
+
+    def test_all_pass(self):
+        self.assertEqual(V.status_code({"checks":[{"status":"PASS"}]}), 0)
+
+    def test_source_failure_prevents_test_worker_start(self):
+        result={"scope":"TEST_FIXTURE","files":0,"checks":[{"check":"public_file","status":"FAIL"}]}
+        with patch.object(V,"root_of",return_value=FILE.parents[2]), \
+             patch.object(V,"load_index",return_value={}), \
+             patch.object(V,"publication_inventory",return_value=({},"TEST_FIXTURE")), \
+             patch.object(V,"verify",return_value=result), \
+             patch.object(V,"run_tests",side_effect=AssertionError("unsafe worker")), \
+             patch("builtins.print"):
+            self.assertEqual(V.main(["--tests","--scratch","never_created"]),1)
+        self.assertEqual(result["checks"][-1]["status"],"NOT_VERIFIED")
+
+    def test_relative_scratch_rejected_before_any_write(self):
+        with self.assertRaisesRegex(ValueError,"absolute"):
+            V.run_tests(FILE.parents[2],{},Path("relative_scratch"))
+
+    def test_network_scratch_rejected_before_any_filesystem_read(self):
+        with patch.object(V,"reject_links",side_effect=AssertionError("network path read")):
+            with self.assertRaisesRegex(ValueError,"Network scratch"):
+                V.run_tests(FILE.parents[2],{},Path("//unreachable.invalid/scratch"))
+
+    def test_read_only_git_disables_lazy_fetch_and_prompts(self):
+        from types import SimpleNamespace
+        with patch.object(V.subprocess,"run",return_value=SimpleNamespace(returncode=0,stdout=b"",stderr=b"")) as call:
+            V.git(FILE.parents[2],"ls-tree","HEAD")
+        env=call.call_args.kwargs["env"]
+        self.assertEqual(env["GIT_NO_LAZY_FETCH"],"1")
+        self.assertEqual(env["GIT_TERMINAL_PROMPT"],"0")
+        self.assertEqual(env["GIT_NO_REPLACE_OBJECTS"],"1")
+
+    def test_absolute_mapping_rejected(self):
+        with self.assertRaises(ValueError): V.logical("/private/file")
+
+    def test_parent_mapping_rejected(self):
+        with self.assertRaises(ValueError): V.logical("a/../private")
+
+    def test_windows_mapping_rejected(self):
+        with self.assertRaises(ValueError): V.logical("C:/private")
+
+    def test_backslash_mapping_rejected(self):
+        with self.assertRaises(ValueError): V.logical("a\\b")
+
+    def test_git_metadata_mapping_rejected(self):
+        with self.assertRaises(ValueError): V.logical("a/.git/config")
+
+    def test_valid_mapping(self):
+        self.assertEqual(V.logical("research/source.py"), "research/source.py")
+
+    def test_original_links_pass(self):
+        rows=V.local_links("docs/a.md","[ok](../research/x.py)",{"research/x.py"})
+        self.assertEqual(rows[0]["status"],"PASS")
+
+    def test_frozen_broken_link_stays_fail(self):
+        rows=V.local_links(V.E11,"[old](../../../codex/evaluation_protocol_decision.md)",set())
+        self.assertEqual(rows[0]["status"],"FAIL")
+
+    def test_directory_link(self):
+        self.assertEqual(V.local_links("README.md","[x](research/)",{"research/a.py"})[0]["status"],"PASS")
+
+    def test_external_links_not_claimed_live_verified(self):
+        self.assertEqual(V.local_links("README.md","[x](https://example.org/x)",set()),[])
+
+    def test_reference_link(self):
+        self.assertEqual(V.local_links("docs/x.md","[a]: ../missing.py",set())[0]["status"],"FAIL")
+
+    def test_percent_encoded_link(self):
+        self.assertEqual(V.local_links("README.md","[x](a%20b.md)",{"a b.md"})[0]["status"],"PASS")
+
+    def test_json_invalid(self):
+        self.assertEqual(V.syntax_status("x.json",b"{",{})["status"],"FAIL")
+
+    def test_notebook_invalid(self):
+        self.assertEqual(V.syntax_status("x.ipynb",b"{}",{})["status"],"FAIL")
+
+    def test_notebook_magics_are_not_executed(self):
+        raw=json.dumps({"nbformat":4,"cells":[{"cell_type":"code","source":["!never execute"],"outputs":[]}]}).encode()
+        self.assertEqual(V.syntax_status("x.ipynb",raw,{})["status"],"PASS")
+
+    def test_python_invalid(self):
+        self.assertEqual(V.syntax_status("x.py",b"if :",{})["status"],"FAIL")
+
+    def test_exact_historical_syntax_evidence(self):
+        raw=b"if :"
+        value=V.syntax_status("e8.py",raw,{"e8.py":V.digest(raw)})
+        self.assertEqual(value["status"],"KNOWN_HISTORICAL_EXCEPTION")
+        self.assertEqual(value["historical_status"],"FAIL")
+
+    def test_changed_historical_syntax_evidence_rejected(self):
+        self.assertEqual(V.syntax_status("e8.py",b"if : changed",{"e8.py":V.digest(b"if :")})["status"],"FAIL")
+
+    def test_credentials_signal_is_redacted(self):
+        raw=("ghp_"+"a"*35).encode()
+        result=V.privacy_findings("x.py",raw)
+        self.assertTrue(result)
+        self.assertNotIn(raw.decode(),json.dumps(result))
+
+    def test_json_escaped_personal_path(self):
+        raw=json.dumps({"path":"C:"+"/Users/"+"Someone/private"}).encode()
+        self.assertTrue(V.privacy_findings("x.json",raw))
+
+    def test_weights_disallowed(self):
+        self.assertEqual(V.privacy_findings("weights/model.safetensors",b"")[0]["status"],"FAIL")
+
+    def test_code_only_is_not_raw_dataset(self):
+        self.assertEqual(V.privacy_findings("research/source.py",b"MODEL='model/id'"),[])
+
+    def test_read_only_verification_source_avoids_add_commit_push(self):
+        tree=ast.parse(FILE.read_text())
+        for node in ast.walk(tree):
+            if isinstance(node,ast.Call) and isinstance(node.func,ast.Name) and node.func.id=="git":
+                args=[x.value for x in node.args if isinstance(x,ast.Constant) and isinstance(x.value,str)]
+                self.assertFalse(any(x in ("add","commit","push","merge","checkout","reset","fetch") for x in args))
+
+
+
+class SmokeImportCases:
+    NAME = None
+
+    def load(self):
+        root=V.root_of(FILE)
+        path=root/("research/experiments/phase3_advanced_methods/e10_factcg/development/local_smoke/"+self.NAME)
+        spec=importlib.util.spec_from_file_location("safe_smoke_"+self.NAME.replace(".","_"),path)
+        module=importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+
+    def test_actual_import_does_not_mutate_sys_path(self):
+        import sys
+        before=list(sys.path)
+        self.load()
+        self.assertEqual(sys.path,before)
+
+    def test_actual_import_does_not_load_model_or_frozen_helpers(self):
+        import sys
+        before=set(sys.modules)
+        self.load()
+        self.assertFalse((set(sys.modules)-before)&{"torch","transformers","factcg_common","factcg_backend","modal"})
+
+    def test_missing_original_helpers_fail_before_writes(self):
+        module=self.load()
+        with patch.object(Path,"is_file",return_value=False):
+            with self.assertRaisesRegex(FileNotFoundError,"BLOCKED_MISSING_INPUTS"):
+                module._load_historical_helpers()
+
+    def test_scientific_main_ast_matches_authentic_original(self):
+        module=self.load()
+        root=Path(os.environ["SHROOM_SNAPSHOT_H1"])
+        name="RAG/results/phase3_e9_claim_verification/factcg_local_smoke/"+self.NAME
+        old=next(n for n in ast.parse((root/name).read_bytes()).body if isinstance(n,ast.FunctionDef) and n.name=="main")
+        current=next(n for n in ast.parse(Path(module.__file__).read_bytes()).body if isinstance(n,ast.FunctionDef) and n.name=="main")
+        self.assertEqual(ast.unparse(current.body[0]),"_load_historical_helpers()")
+        current.body=current.body[1:]
+        # Three previously reviewed IO-only aliases follow the relocated,
+        # byte-identical selection/checkpoint records. Model logic is untouched.
+        aliases=[n for n in ast.walk(current) if isinstance(n,ast.Name) and n.id=="RECORDS"]
+        self.assertEqual(len(aliases),3 if self.NAME=="run_cpu_sun12.py" else 0)
+        for node in aliases: node.id="HERE"
+        self.assertEqual(ast.dump(current,include_attributes=False),ast.dump(old,include_attributes=False))
+
+
+class OriginalSmokeImportTests(SmokeImportCases,unittest.TestCase):
+    NAME="run_local_smoke.py"
+
+
+class SunSmokeImportTests(SmokeImportCases,unittest.TestCase):
+    NAME="run_cpu_sun12.py"
+
+
+if __name__=="__main__":
+    unittest.main()

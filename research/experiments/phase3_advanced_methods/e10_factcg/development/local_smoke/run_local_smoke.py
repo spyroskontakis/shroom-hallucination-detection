@@ -22,11 +22,22 @@ HERE = next(parent / "RAG/results/phase3_e9_claim_verification/factcg_local_smok
             if (parent / "research/shared_tools/canonical_execution_context.py").is_file()
             and (parent / "project_records/current_layout/canonical_relocation_v1.json").is_file())
 GPU = HERE.parent / 'factcg_gpu'
-sys.path.insert(0, str(GPU))
-from factcg_common import MODEL, REVISION, require, sha, write, validate_inputs, digest
-from factcg_backend import chunk_reference, tokenize
+def _load_historical_helpers():
+    """Resolve original package helpers only after explicit execution.
+
+    Importing this relocated source performs no package/model imports.
+    Public source archives do not contain a complete original run package.
+    """
+    required = (GPU / 'factcg_common.py', GPU / 'factcg_backend.py')
+    if not all(path.is_file() for path in required):
+        raise FileNotFoundError('BLOCKED_MISSING_INPUTS: original frozen FactCG package required; no current-source fallback')
+    global MODEL, REVISION, require, sha, write, validate_inputs, digest, chunk_reference, tokenize
+    sys.path.insert(0, str(GPU))
+    from factcg_common import MODEL, REVISION, require, sha, write, validate_inputs, digest
+    from factcg_backend import chunk_reference, tokenize
 
 def main():
+    _load_historical_helpers()
     started = time.perf_counter()
     write(HERE / 'SMOKE_STARTED.json', dict(model=MODEL, revision=REVISION,
           selected_per_task=4, device='cpu', precision='float32', batch_size=1,

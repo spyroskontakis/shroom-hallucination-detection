@@ -13436,7 +13436,7 @@
       "h1_blob": "b4ca3f781699cfd968003e89a054997808b90d45",
       "sha256": "6aaed1600d38cccfffa3d63e3cf82c0b1032e356f741f2c9003faf7bab710aaa",
       "bytes": 7192,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/E6_V3_REPRODUCIBILITY.md",
@@ -13445,7 +13445,7 @@
       "h1_blob": "8e39bc847302c529471243fa286fe7cbe5e610b7",
       "sha256": "cf87bd5c10fea72639dd5515a85819b05493e86267440f5f42abdde8c648665a",
       "bytes": 7385,
-      "status": "CURRENT_DOCUMENTATION_URL_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/MODULE1_RESULTS.md",
@@ -13454,7 +13454,7 @@
       "h1_blob": "c60416ddd2ac0d52339380b775d7a455624a5ca7",
       "sha256": "809848e6b31b14b5c72b7856afdd2ed3a0d671149bbaa39fccda8cd35f7e9182",
       "bytes": 8473,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/MODULE2_FINAL_RESULTS.md",
@@ -13463,7 +13463,7 @@
       "h1_blob": "7ab51b0c7b6c7241780dd321fe7447a5b7e0b347",
       "sha256": "574a75f7e0a2bef4ad2ac1b4c68e2892e8356fd9134a885293549e2773c82d92",
       "bytes": 14619,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/MODULE2_PLAN.md",
@@ -13472,7 +13472,7 @@
       "h1_blob": "3caa0034d554e1433785d2ba6facc0bed683292b",
       "sha256": "17e0cbfb810022771071154ba92dd51c6734ee1f74fd3a1183eef534b497c976",
       "bytes": 17547,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/RAG_CLEANUP_REPORT.md",
@@ -13481,7 +13481,7 @@
       "h1_blob": "b7a2dc2d4380ec337d81fd774670917b535bbdec",
       "sha256": "6a5fe98dc938cfcea2a67757233e203a5916a936e7c00bbcff3a66048cdb97db",
       "bytes": 18379,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/README_MODULE1.md",
@@ -13490,7 +13490,7 @@
       "h1_blob": "f61456cfb0e4f2c1644dccd4347a8c38d0ca832f",
       "sha256": "61c6c983241b674031d362bbd11e10f44d653af9cdab170b293b2c366c32c73b",
       "bytes": 5602,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/module4_release_v1/HANDOFF.md",
@@ -13562,7 +13562,7 @@
       "h1_blob": "edab622362aa65ce49b7a638fe87b1be52860179",
       "sha256": "33c7977e6f877d1add74ca8f515de7e99e4e19ac248f74e848d79fed30f37624",
       "bytes": 84,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/requirements-rag-module2.txt",
@@ -13571,7 +13571,7 @@
       "h1_blob": "23af2d7a238234f4de1195624d15958fc58dcc41",
       "sha256": "48cebb1f4722c48a681fc49927e45dfb9ddf66737a617531d0b10f6c7e2f0de2",
       "bytes": 17,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/E10_DEVELOPMENT_REPLAY.json",
@@ -13580,7 +13580,7 @@
       "h1_blob": "801e3f0b2615054779327db6632439c4ca6533d7",
       "sha256": "15254d3fed0175ef3ab3675f5b661823b93850d258e6ab465386af9f8ad74c12",
       "bytes": 2188,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/E10_OFFICIAL_TEST_DATA_AUDIT.md",
@@ -13589,7 +13589,7 @@
       "h1_blob": "c0501aab57f9ac24a50421b9ef5d3d9b012d52a7",
       "sha256": "c26fd57c970e8e1c9c7df09ce0c1f845a53da3894ddbcf5fbe93f605b960e86f",
       "bytes": 9957,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/E10_OFFICIAL_TEST_FEATURE_MANIFEST.json",
@@ -13607,7 +13607,7 @@
       "h1_blob": "704ba896221bbb8109d66fea79a8244f088dace5",
       "sha256": "c14b90bc1a5323cf8dca21cae253795acd3942db0f40e123433c2d1afd239f21",
       "bytes": 2237,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/E10_OFFICIAL_TEST_RESULTS.md",
@@ -13616,7 +13616,7 @@
       "h1_blob": "75371ebd7532fa679135a5ef2dc601f8cbaee4f7",
       "sha256": "05641772b892438a7ed42726cf0b3504ad443f2971cedb25d43f6bca880a07e5",
       "bytes": 2611,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/E10_OFFICIAL_TEST_SHA256SUMS.txt",
@@ -13643,7 +13643,7 @@
       "h1_blob": "e3cc300d2c30c6d9d5527ff29abcd4dccd3bb251",
       "sha256": "0d5e8976587097f5f8dadba57aea79abfd465c20a9b1c67e71068aa75f75cabe",
       "bytes": 1432,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/OVERLAP_AND_RESOURCE_CHECKS.json",
@@ -13652,7 +13652,7 @@
       "h1_blob": "dea67363858ee08ffc5d776d300cdc56a0820764",
       "sha256": "30f6dd6179671bb29b01e43db6847886b7a281f793625d3a982d97c0adc7b579",
       "bytes": 5948,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/PHASE0_DATA_CHECKS.json",
@@ -13670,7 +13670,7 @@
       "h1_blob": "9df7425afe27b004042b33a9f86fe364d95d6d98",
       "sha256": "78d20b0e6e3fe4a1111106af8388cf6bd48976589e306a502daddeb40736a76b",
       "bytes": 698,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/audit_data.py",
@@ -13688,7 +13688,7 @@
       "h1_blob": "713c376ff50279d6c81fad3d0f3c8c63925f2d8f",
       "sha256": "28f23d569eaf66a84839a376ba9f64707e2978da314aba96e0eb25cb3d31b320",
       "bytes": 3144,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/E10_OFFICIAL_TEST_FEATURES_MANIFEST.json",
@@ -13742,7 +13742,7 @@
       "h1_blob": "d568880a2f626f113569893c1e57422a0930c129",
       "sha256": "a2123cf7eb4387b108ff6c1576a39b25d6013b74a70990726c3ff45c14ab3f92",
       "bytes": 638,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/E10_RECONSTRUCTION_SHA256SUMS.txt",
@@ -13751,7 +13751,7 @@
       "h1_blob": "7aab380371f22ab375501d10558527b6dee7f10d",
       "sha256": "52e15d5a1fc5721d2bc0a2823a3cb072d923a2a894a90d86debebc8c3b912ba6",
       "bytes": 207853,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/FACTCG_LAUNCH.json",
@@ -13769,7 +13769,7 @@
       "h1_blob": "969e992ee1623a4959dec43aa9c903030b0d3366",
       "sha256": "2f05e9962727163f4b6a6a1825cbfe3c563cc90cb6e63587dba5624f076cadbb",
       "bytes": 2546,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/FACTCG_SOURCE_PACKAGE_VERIFICATION.json",
@@ -13778,7 +13778,7 @@
       "h1_blob": "25ac8277d60d551cdc1cdf593706d337b67f8149",
       "sha256": "a8f98e28347e9f7aa5977c272e6b73e89c0aa8c6e1cf75ec57be28eac50b2fbb",
       "bytes": 1288,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/GPU_EXECUTION_PLAN.json",
@@ -13787,7 +13787,7 @@
       "h1_blob": "cd35c6673a2284947f4a32286725be0e58db1a3b",
       "sha256": "1312023b2ffa5f4d76e5606cbe3655bd0ba8dfe3816d651541a0719e260934e2",
       "bytes": 1877,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/MODEL_FILE_VERIFICATION.json",
@@ -13796,7 +13796,7 @@
       "h1_blob": "e585983be35e89aff6695e4ea1936c994fbcca10",
       "sha256": "88df1a8aa3d60b560f78760f23e57f8c0764d4f9b42da836edc6913332b21767",
       "bytes": 2650,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/PRESCORING_CODE_LOCK.json",
@@ -13841,7 +13841,7 @@
       "h1_blob": "ccb92b17ef8404cb3178ca397fdbe7310681aca7",
       "sha256": "882400c38083df7c9fb948c95f4fa0605f4f969fe42cb303865eeb644bdcf2e6",
       "bytes": 1245,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/SCORING_STARTED.json",
@@ -13859,7 +13859,7 @@
       "h1_blob": "d2f8de0cffe198c523b6cfaf6496ea3884938add",
       "sha256": "6eca363cb01d1ec8c65a4748a1d1d940b6a2797644d16e73391b14ca402fea4b",
       "bytes": 429,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/reconstructed_v1/extract_cpu.py",
@@ -13940,7 +13940,7 @@
       "h1_blob": "a780e2014917c02537b4bd1204fc82bda2cf24be",
       "sha256": "ac40dd1dd9f92581ce1f7c18fc1dd94957c049bb35cdb9eb5f6ff8d9307807a8",
       "bytes": 2105,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/E6_V3_DEFINITION_LOGIC.md",
@@ -13949,7 +13949,7 @@
       "h1_blob": "52d048765c42daccaf80860995772855e46b31b8",
       "sha256": "7e7fccb7403a360bb385dcc478384a935ebbc816662ee382d1ff2089aa48ad55",
       "bytes": 6118,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/GIT_STATUS_SHORT.txt",
@@ -13958,7 +13958,7 @@
       "h1_blob": "da8a313b52ed92ec28af15616d77a951b71ad7bd",
       "sha256": "03bd26c1293476fbf22f38a129a4e70456b78502c0fb022c915e1f6f5f4b9f31",
       "bytes": 147,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/GIT_UNREACHABLE_INVENTORY.txt",
@@ -13967,7 +13967,7 @@
       "h1_blob": "71cb321830ff08f9361c54a651e084cb0dc136ed",
       "sha256": "db67d3ff9870fbec463fb3378f6caf9d3ca283cba250481f90980a5e9e96c0d9",
       "bytes": 77821,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/PRIOR_TEST_USE_AUDIT.md",
@@ -13976,7 +13976,7 @@
       "h1_blob": "8d8c2cc49f25bebd2ba84790dd3ff72e4e8a5f91",
       "sha256": "c80dc4bbcc8a0b3f4567ee508949a789469b94b709661ffd43d3afa5a0040977",
       "bytes": 5482,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/RECOVERY_REPORT.md",
@@ -13985,7 +13985,7 @@
       "h1_blob": "063ad458085842d1d5be3852b52b6c43f6dac7b7",
       "sha256": "e62d6c8c89b60a58d96d24189e213ac6af62d998db916f40c3d6d214797617d0",
       "bytes": 5436,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/RECOVERY_SUMMARY.json",
@@ -14012,7 +14012,7 @@
       "h1_blob": "84f952b7f93ed6713c362b4b7ed4782ece25014b",
       "sha256": "0da52c3a0f6ef996e1859e71efb335583b5c858ff05fe5b8d7d2c48cf34774a5",
       "bytes": 1624,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/TEST_RESULTS.txt",
@@ -14021,7 +14021,7 @@
       "h1_blob": "295aac7acb3bc874b37455e477edaed014dd4d3b",
       "sha256": "c1701bb03415679e14b1d1b27bca93c91f4203e345084757babb6877425a4c70",
       "bytes": 487,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/VERIFICATION.json",
@@ -14034,39 +14034,39 @@
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/finalize_audit.py",
-      "current": "RAG/results/e10_official_test_v1/recovery_audit/finalize_audit.py",
+      "current": "research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/finalize_audit.py",
       "h1_sha256": "9d8e0f69c6f7ad50f75d51da1fc9bd64d41c646844bb899a0e4a7786acd39e17",
       "h1_blob": "432211968ad2f8fd8e8850346785b4f61d331a5e",
       "sha256": "9d8e0f69c6f7ad50f75d51da1fc9bd64d41c646844bb899a0e4a7786acd39e17",
       "bytes": 12147,
-      "status": "BLOCKED_MISSING_ORIGINAL_CONTEXT"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/recover.py",
-      "current": "RAG/results/e10_official_test_v1/recovery_audit/recover.py",
+      "current": "research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/recover.py",
       "h1_sha256": "bc6161a061417038d19da21834412f9ede028669b963389fdacd2655eb2da639",
       "h1_blob": "24c3ede58f8804de8e6c4a23ad565393e8a7d8d2",
       "sha256": "bc6161a061417038d19da21834412f9ede028669b963389fdacd2655eb2da639",
       "bytes": 11453,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/supplement.py",
-      "current": "RAG/results/e10_official_test_v1/recovery_audit/supplement.py",
+      "current": "research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/supplement.py",
       "h1_sha256": "4558750359798c57f6ff0858c64e1fbbd76c68485e1bc78ff22784c3b846e307",
       "h1_blob": "b8f6fdfd92607da0d660d1586027042518302ffc",
       "sha256": "4558750359798c57f6ff0858c64e1fbbd76c68485e1bc78ff22784c3b846e307",
       "bytes": 1702,
-      "status": "BLOCKED_PRIVATE_HISTORY_AND_IMPORT_SIDE_EFFECTS"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/recovery_audit/test_recovery.py",
-      "current": "RAG/results/e10_official_test_v1/recovery_audit/test_recovery.py",
+      "current": "research/experiments/phase3_advanced_methods/e10_factcg/retrospective_official_test/recovery_audit/test_recovery.py",
       "h1_sha256": "9dc3b4f70254f6cfacf21369c6e756d7d7cba7d64cdfa7ff74f100b4ce3c8d8d",
       "h1_blob": "ce2434311334669f07188f5a2374bfd2f85cd1bb",
       "sha256": "9dc3b4f70254f6cfacf21369c6e756d7d7cba7d64cdfa7ff74f100b4ce3c8d8d",
       "bytes": 4283,
-      "status": "BLOCKED_MISSING_ORIGINAL_INPUTS"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/e10_official_test_v1/test_audit_data.py",
@@ -14075,7 +14075,7 @@
       "h1_blob": "f64ac5a5fd6db3edf594646e5bef7840d2b657c2",
       "sha256": "2cf0ea6f31364e4f84f04f7509dc2e98b8c53672edf5043fa3afb2a78949a219",
       "bytes": 4379,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/E11A_PREPARATION_MANIFEST.json",
@@ -14120,7 +14120,7 @@
       "h1_blob": "c4521f6f3d1ce73ce1b6317614ff7b2e5655cd76",
       "sha256": "2767b8f0e286deafd6ca6f5467ac393c9bf3ec55c8400c75b2da10643b2c544c",
       "bytes": 18519,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/E11_DATA_MANIFEST.json",
@@ -14138,7 +14138,7 @@
       "h1_blob": "26a8b6e160fdfa6e8a6004504cd0c29cfa96aaf2",
       "sha256": "b8b6a47b06b8d3336b369d9638dfee96854b3d37e0d797f9e0d57a2f059659fe",
       "bytes": 17071,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/E11_FINAL_SHA256SUMS.txt",
@@ -14156,7 +14156,7 @@
       "h1_blob": "20cc9a699838f7a25f6fb7a3db0a562ddadea398",
       "sha256": "e56516a51cc4e935bb8e40774617df4f415f7f612bbba45f7acddb12c69edee3",
       "bytes": 45133,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/E11_FINAL_SUMMARY.md",
@@ -14165,7 +14165,7 @@
       "h1_blob": "ab446615c27b9ec2add0c2522c38b4af4e3b911d",
       "sha256": "0e64e016e86a6b511c1bbe4766944c0a23d96646bc19ddc62fe5cf94a33e8474",
       "bytes": 8053,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/E11_FINAL_TABLE.csv",
@@ -14174,7 +14174,7 @@
       "h1_blob": "9bbe318b1e4792846e5bc468eec600325c297101",
       "sha256": "78464b64445d46b7db76de1360dbcb28350fbdc0924833bdc8e57a98d18c5a91",
       "bytes": 433,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/E11_INPUT_PREPARATION_REPORT.json",
@@ -15191,7 +15191,7 @@
       "h1_blob": "ee96042df18f696ee12addd4bf31279e44e5e088",
       "sha256": "21298a80208fd870db9ade2144ff21a856f26d661fc9b4af5385ab366e41278e",
       "bytes": 4382,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/FINAL_TEST_teacher.txt",
@@ -15200,7 +15200,7 @@
       "h1_blob": "d6a9c18ef4f006b53b35ca8c00bdfb12c16cc2e1",
       "sha256": "79f38961b707ea4790152a9922f025c5455afa650a874d365d57a8d28f4ab187",
       "bytes": 4461,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/FINAL_TEST_training.txt",
@@ -15209,7 +15209,7 @@
       "h1_blob": "e1d119e4fd4e7965a395f2fce1f12c7c7c4311cc",
       "sha256": "80d6576a7fd2a068e641af602e98040f4e114b2a6ded5795810a0dc419b8ca93",
       "bytes": 601,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/PRESERVATION_BASELINE.json",
@@ -15263,7 +15263,7 @@
       "h1_blob": "0956d198e045709d7d1cebf3598c6da2e23c7788",
       "sha256": "62eddbe052404837267914b1079ac1b6204d07b7f612e5fecccf3a5947fc412c",
       "bytes": 4382,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/PRETRAINING_TEST_teacher.txt",
@@ -15272,7 +15272,7 @@
       "h1_blob": "44faeec638e4d48f268163c74cac4f578e87d822",
       "sha256": "c9863eebc18b38de4db6cba9aa5bae1d089ecf5536e1a26f57ebff271e25419e",
       "bytes": 4461,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/PRETRAINING_TEST_training.txt",
@@ -15281,7 +15281,7 @@
       "h1_blob": "2cd1b3e99ec72973b0d68a4dec3ad354028eee7b",
       "sha256": "040b2e167374842527077583e2c1d787bf476adeba920f8847d5d9cdf3bac78b",
       "bytes": 601,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/README.md",
@@ -15308,7 +15308,7 @@
       "h1_blob": "c20a265b9a935d05c70a4d52b62f046b874b5ee3",
       "sha256": "5370abbabd238ffc0e06207eb29ec14ed94f09cc6a1d155336ebd510e83be28a",
       "bytes": 4382,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/RESUMED_FINAL_TEST_teacher.txt",
@@ -15317,7 +15317,7 @@
       "h1_blob": "51ad939257af14489bcff6285b648309cea02339",
       "sha256": "84b87e48d00c6f19fbeb0991c7d7b449230ccfc7d7b27ea1c4cc003cd9ef70ce",
       "bytes": 4461,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/RESUMED_FINAL_TEST_training.txt",
@@ -15326,7 +15326,7 @@
       "h1_blob": "923caafc9b02851c584fd6c5db75155282569adc",
       "sha256": "51fd768d742b3ec907a187eac027e0e76c1410b9aaabb6a69a818b4034177fff",
       "bytes": 708,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e11_task_adaptation/e11c_training/RUNTIME_MANIFEST.json",
@@ -16271,7 +16271,7 @@
       "h1_blob": "af0828cfba83276c2f2624d2e52e68abec0976e4",
       "sha256": "8b3914ca69e71ca9c98161428e909028c185f43d33920f2e03fc98ef3a41c2f7",
       "bytes": 2131,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/E10_metrics.json",
@@ -16298,7 +16298,7 @@
       "h1_blob": "309e4bf759fb5f6cd9906a3e6644d3d57751a988",
       "sha256": "18cf35bac0d1a9d22e124a78aa644ca1742fbadf780db6d0b4d305319ab22c5e",
       "bytes": 37,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_1_started.json",
@@ -16307,7 +16307,7 @@
       "h1_blob": "c690f8539c2ede36c597ec4bd7a1c82bc990c258",
       "sha256": "9056b022460727393d2eabf86d78bd1d508f647ae5cc620120496d0100d94b2f",
       "bytes": 17382,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_2_completed.json",
@@ -16316,7 +16316,7 @@
       "h1_blob": "c947dd0c2956466dd9cd2df431b769dcfb0c6c92",
       "sha256": "98aefa6e5057bdcf677ca2f8131d09c0c3a8d4bfcb4ec631f2c3cda3c02d0592",
       "bytes": 37,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_2_started.json",
@@ -16325,7 +16325,7 @@
       "h1_blob": "dca921c344008af3d466127c14df10c0c732cdf5",
       "sha256": "b23bec823723541634f102d14db97229567375ff2aa2df18a48a9959bcd1a1a1",
       "bytes": 17382,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_3_completed.json",
@@ -16334,7 +16334,7 @@
       "h1_blob": "57cb6cc6eace9de551119fbb402dec69947f46e0",
       "sha256": "f67315c0e51e0f21c53fc96af368ca585bf053e9e358fd4aa5e5c18fd1beb5ed",
       "bytes": 37,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_3_started.json",
@@ -16343,7 +16343,7 @@
       "h1_blob": "cac529d8c4ea3684d7e09114c8d272c2e411e4e8",
       "sha256": "c5e86dc60b63e6049d386095bd892c97d94c4237b046bbbd0e7042c8e8137889",
       "bytes": 17382,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_4_completed.json",
@@ -16352,7 +16352,7 @@
       "h1_blob": "69af04acbd8b155cbf92c36f82a038807ec11bfd",
       "sha256": "f780d79a5498d590ac943e8aaadb1c3f72af727aa5ddf0ec620e90b16b9584d3",
       "bytes": 37,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_4_started.json",
@@ -16361,7 +16361,7 @@
       "h1_blob": "3b77a6c6f5879f83df0d51f78dfa5ea5f149efd0",
       "sha256": "5eebbbdded9d7c04fcc2c38c25032df69a9f8531bee57c2ff99e5b55160da65f",
       "bytes": 17382,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_5_completed.json",
@@ -16370,7 +16370,7 @@
       "h1_blob": "56ba27f087fccec1f3d1e73f5dbd8b89384e3088",
       "sha256": "d991baecb9538a1bcf88df7be921b6a89622418c5e119299ba7996e1f2483b9b",
       "bytes": 37,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E10/fit_5_started.json",
@@ -16379,7 +16379,7 @@
       "h1_blob": "396cc4ae9ad407a821b14c72c2a2a19a29a39e9e",
       "sha256": "b52f30d6786ba643fd5a63e250ddc1dd794c3c1112a3942fd61872e8a2d6109b",
       "bytes": 17382,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/E9-A_metrics.json",
@@ -16523,7 +16523,7 @@
       "h1_blob": "55266b25b6033675137b54633caab1636c2a1bcf",
       "sha256": "50461be7d3994edc968cdec77fbc28464e4618d0dd8204888ee80d4cbac5c1fc",
       "bytes": 41,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_1_started.json",
@@ -16532,7 +16532,7 @@
       "h1_blob": "9263c05da28877e7941c4182d9dcb76256901d97",
       "sha256": "05f7fa3ed89138eb29e64073d252b92db216f34a16c96c8fcbad140a9c29ee7d",
       "bytes": 18242,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_2.json",
@@ -16541,7 +16541,7 @@
       "h1_blob": "3e8e52abcd09ef470d506cb900192e1737610bcd",
       "sha256": "18bcf83e5658735a430cecc135b56faf8a7ea3fdfd3ee13a7dbc69d99b3f25ee",
       "bytes": 41,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_2_started.json",
@@ -16550,7 +16550,7 @@
       "h1_blob": "e2fc31723f3faade4a2b8aa1c95d3e9ed0beed2d",
       "sha256": "8701eac74670693c017a752c14b11b487f1fef2faa5da478895ac2cbac87fdc7",
       "bytes": 18242,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_3.json",
@@ -16559,7 +16559,7 @@
       "h1_blob": "f80fcb9fc25b2546cce5ebdce2e296a5b7be9a83",
       "sha256": "e1e813e659957524a954199f4b05beadd95d33cd4637a614f8207e3bf9652e79",
       "bytes": 41,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_3_started.json",
@@ -16568,7 +16568,7 @@
       "h1_blob": "9882a95f09e7cb7d0a5038737af2ebcb614be032",
       "sha256": "9ac5976c07be74fc3fb4ff6305e274baca5622e7fb674d37d31e8099ff04d8ba",
       "bytes": 18242,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_4.json",
@@ -16577,7 +16577,7 @@
       "h1_blob": "6b62f396dfc7ea6dae54ef771f81e68730331734",
       "sha256": "3ea9019ac6e919405eb96911b8e860b32f87205f13c9f5344ac5a08a9c832c5e",
       "bytes": 41,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_4_started.json",
@@ -16586,7 +16586,7 @@
       "h1_blob": "7fcdfabd4b140e60484275cefb80133511123608",
       "sha256": "6fdbb3a4aaab679096bc4f3d870920afa9ba05ba866d7935a10fbe60fa46ed2d",
       "bytes": 18242,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_5.json",
@@ -16595,7 +16595,7 @@
       "h1_blob": "58a866e77026a2c15d3196d2d9b35a1bd2053bc3",
       "sha256": "d953f899486e1d931bb23e618f058ccc50f3487e4a06d4fc635a8877345b4e4a",
       "bytes": 41,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/evaluation/fit_E9-B_5_started.json",
@@ -16604,7 +16604,7 @@
       "h1_blob": "d6c332461660bed34f177d1f76a9efc66667453f",
       "sha256": "22a29acd81e20370eafaac74f3a82a181ba7eaab341167ffeaf5e6e42c361302",
       "bytes": 18242,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/.gitignore",
@@ -16640,7 +16640,7 @@
       "h1_blob": "0a473b00bd958ee10e8d560ce199f48751507e95",
       "sha256": "66857fd2aaa8d614cbd1cb0137299ed32b447cdb7b5c5f42ec44a124b812f5dc",
       "bytes": 137,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/LOCAL_VALIDATION_REPORT.md",
@@ -16649,7 +16649,7 @@
       "h1_blob": "b282cc3110e0b13e80804d072d1d41835948bfd8",
       "sha256": "ad1e54fac8573b4046a08252d8b5720c952351ff358dad46e8bb891244c9c210",
       "bytes": 5729,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/README_GPU_RUN.md",
@@ -16676,7 +16676,7 @@
       "h1_blob": "a75f76133cdebf6b4046def0527a758d4d496d0d",
       "sha256": "1e72485f9458ffd87ff8503f7ccdbe4fdd19e05f2a3bd0283607f94fb0f4a36e",
       "bytes": 3588,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/factcg_common.py",
@@ -16703,7 +16703,7 @@
       "h1_blob": "122d5b164ba8cb1c0d89ecb20845be3bff6789e8",
       "sha256": "9d8e2e74d9a381cc54de831ccb0c604b214f146437c17094605c694a62ccf57e",
       "bytes": 1326,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/local_preflight/environment_freeze.txt",
@@ -16712,7 +16712,7 @@
       "h1_blob": "fad9b666c8d95bb1fceb8290d887952db93b2489",
       "sha256": "40b5dee4028391170917689092a98deb6e25bb71f6db212112ca16bf554a0980",
       "bytes": 3066,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_gpu/prepare_gpu_inputs.py",
@@ -16847,7 +16847,7 @@
       "h1_blob": "da09931eb7067f010e5e65f86edd7700402a7ae3",
       "sha256": "4f562b8cef5bc58d3632a2235028276b773b23fb046a9b2d0e8c40a2e604f3db",
       "bytes": 9324,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/LOCAL_SMOKE_REPORT.json",
@@ -16856,7 +16856,7 @@
       "h1_blob": "6881261ca923f1562833bc4cff1109a1b13495ed",
       "sha256": "0c5717a44b75250562a457859e7a5c9c037edcc9373b1df2697212e313bd696c",
       "bytes": 3187,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/LOCAL_SMOKE_REPORT.md",
@@ -16865,7 +16865,7 @@
       "h1_blob": "63f202308b7e22d3ae07b73b71f64133165c0211",
       "sha256": "bbed67fcd35ed9e67e634adeadee6c858d3d0dabff26caae31c58696bd1d9a42",
       "bytes": 4043,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/SELECTION_MANIFEST.json",
@@ -16892,7 +16892,7 @@
       "h1_blob": "02cfe07b54940df3a92535d7c833c4d3fe67ec6b",
       "sha256": "4f2220b94f8755d4f502706d3c1e5c36cb5e84b512f7ce383756334ed757d56f",
       "bytes": 5005,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/factcg_local_smoke/cpu_sun12/SELECTION_MANIFEST.json",
@@ -16917,8 +16917,8 @@
       "current": "research/experiments/phase3_advanced_methods/e10_factcg/development/local_smoke/run_cpu_sun12.py",
       "h1_sha256": "3c90bd09c65c28873093b3fc534f5e4135732373f93f513feb3084d394ad8383",
       "h1_blob": "d0665a08ecf9ce899cc555ae4463074039cce759",
-      "sha256": "827387ae784a7dbb00f189375551c74c97a0e8f317a75516c2ef0aa15392df17",
-      "bytes": 13861,
+      "sha256": "1dbba1563c649117d4704ba27bd628e8fa45f2d9d252d373aa99eb613e413bf6",
+      "bytes": 14511,
       "status": "MIGRATED_ADAPTED"
     },
     {
@@ -16926,8 +16926,8 @@
       "current": "research/experiments/phase3_advanced_methods/e10_factcg/development/local_smoke/run_local_smoke.py",
       "h1_sha256": "276669aa9b7256ad39467f50b37fec4c6e0f2d103407573e6ed57a25e5b52f77",
       "h1_blob": "73449521d7b4f2ce43fdb17d5842a1d8a30d9295",
-      "sha256": "689323067b50bbe8789c30b51932f4392ffb005a402368f8be002491ee26e15a",
-      "bytes": 14353,
+      "sha256": "2e9f7df9c7c28a7ff084f5cf9c0e927b0f9983fed8efa936334c0356be5e1de7",
+      "bytes": 15003,
       "status": "MIGRATED_ADAPTED"
     },
     {
@@ -17081,7 +17081,7 @@
       "h1_blob": "a9796923376729cf635c1e94293ef0e2b402f23a",
       "sha256": "cb140483019a2c9885a3d858ebbfaf8981f52d354f2c108542251d5847bed0ef",
       "bytes": 10160,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/minicheck_gpu/test_gpu_package.py",
@@ -17126,7 +17126,7 @@
       "h1_blob": "63e5beeedd75018babbdd3986e6c1701ad2a00ab",
       "sha256": "328dc24c9357ae2a58a939dbba71c7fa5c19c6d7c9c4f3b8a1d91bce05a86e65",
       "bytes": 6547,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/modal_gpu/modal_phase3_gpu.py",
@@ -17135,7 +17135,7 @@
       "h1_blob": "755835ab118392df5fad2582175ee18d7031bd10",
       "sha256": "1ae546bf3d455ce4ff0de2e7850daf936b9e280e11268ce431bf60e39bb90534",
       "bytes": 13703,
-      "status": "BLOCKED_MISSING_FROZEN_PACKAGE_AND_IMPORT_SIDE_EFFECTS"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/phase3_e9_claim_verification/provenance/baseline_verification.json",
@@ -17477,7 +17477,7 @@
       "h1_blob": "adb3f0e9ae8e62ff3aadd37162ff2ad0fcb398c3",
       "sha256": "e921dc332d4038edaae3c964d8497c78ce7f1b1bda69ec4444d424de7d889e96",
       "bytes": 6699,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/rag_e6_v1/E6_RESULTS.md",
@@ -17486,7 +17486,7 @@
       "h1_blob": "2f1bd24243b7efc170913de2f625a65a64e2e429",
       "sha256": "0f09eb299ce928ca62bccdeb423b4016728ca5029f56052fcfcbd1a336a4ddd0",
       "bytes": 12245,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/rag_e6_v1/config/completion_manifest.json",
@@ -17495,7 +17495,7 @@
       "h1_blob": "4002c42d36119fe74fa2b17c2531c499593d8f62",
       "sha256": "b6dcb439b6a4791391afce55027831d746d4b007e1929043037816becdef566b",
       "bytes": 2654,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/rag_e6_v1/config/feature_freeze.json",
@@ -17540,7 +17540,7 @@
       "h1_blob": "fe1920e0a27cca3b604580d2a954111d0fe258b5",
       "sha256": "d50061c212e1166c13a757aff3840f059352b21b7fa91cab76db5fbc994dd5bc",
       "bytes": 83776,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/rag_e6_v1/evaluation/baseline_compatibility.json",
@@ -17639,7 +17639,7 @@
       "h1_blob": "afc06b8a5e4d163e28432592f27cd6de24d4017a",
       "sha256": "15e345ca3deb11e3eee54b39c915567b694f6cac399bde81361dc8b40bd74e35",
       "bytes": 120,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v2/.gitignore",
@@ -17675,7 +17675,7 @@
       "h1_blob": "f95baa033c055e242cad07197bc84d8a7533a76c",
       "sha256": "5c01fdc5b830fb67e1220fdb2405b8ea5ed8a92b2bb179a8eca2189fd7fba661",
       "bytes": 5506,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v2/config/completion_manifest.json",
@@ -17801,7 +17801,7 @@
       "h1_blob": "80ea570ee4e7da172dd4caa885898656b6a0c1b0",
       "sha256": "a79a4e99be480b6609ede289d0a491f54a6308db156b8297a60991be3284105d",
       "bytes": 5454,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v2/publication/artifact_inventory.json",
@@ -17810,7 +17810,7 @@
       "h1_blob": "f6008ffe7de103df3cea3c71e20af04976988fae",
       "sha256": "2beccd588af20d487af7ff5570ed09df5591f13c639f35a915d0e9f7b2c98373",
       "bytes": 144737,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v2/publication/audit_summary.json",
@@ -17819,7 +17819,7 @@
       "h1_blob": "382a072bd9430e432304c17b76f8604525006772",
       "sha256": "de2661c8ac12ef5889cfae5b9bbcd57f1861a93807b377d5977b75329357be8b",
       "bytes": 2544,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v2/publication/configuration.json",
@@ -17828,7 +17828,7 @@
       "h1_blob": "fdec7c9a0f838d196f732b084e4286c560349475",
       "sha256": "a0a0febe6ba88f8a8a28a76b4dd5fddd105439d1d91523e452cad601befb3b85",
       "bytes": 6615,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v2/publication/smoke_summary.json",
@@ -17837,7 +17837,7 @@
       "h1_blob": "1e9d2de5ccf13301a3c81c5a227192d54f20db0c",
       "sha256": "4688d62fee895525ce84eecaf008dafa591c5b8ac34fcc9062a35d2ffed226ae",
       "bytes": 3983,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v2/scripts/acquire_model.py",
@@ -17882,7 +17882,7 @@
       "h1_blob": "a164333a66190579e75a3eb6c0d49a55ba824efe",
       "sha256": "b2ab335aa8e856af65db64f6ba141c57090accc96642525cc2467f27e14f0702",
       "bytes": 3124,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/rag_e6_v2/scripts/prepare_inputs.py",
@@ -17936,7 +17936,7 @@
       "h1_blob": "54bfc2a084560cb04aa4f759515a748e0ec6aa3f",
       "sha256": "a88c7af7ee9ae851aa48a3090427653e3aa538726c4b0bb708aad584c84580a8",
       "bytes": 114,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/.gitignore",
@@ -17963,7 +17963,7 @@
       "h1_blob": "42ab96fd80bc942f1eb458b36e067c620f9f167b",
       "sha256": "edb5e566f79e60643b194c2d1dc4aac291e1dcf1b6f68c962206587c7e9b70dd",
       "bytes": 9882,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/config/completion_manifest.json",
@@ -17972,7 +17972,7 @@
       "h1_blob": "59a38c6133d5821071b15ae76f99542c903ff759",
       "sha256": "24b0f04d0df81e33e944a738aa078f5c09c3766cca12c113b325a2a7ed78215f",
       "bytes": 47153,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/config/contracts.json",
@@ -18044,7 +18044,7 @@
       "h1_blob": "ff5c90237bb5c1528783729ac9a5a1aa3241cf33",
       "sha256": "997fed6c5519b3fe25333570d2d33c0943e729c3271e86342e8c08d3d4b836e4",
       "bytes": 55583,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/analysis_completion_manifest.json",
@@ -18053,7 +18053,7 @@
       "h1_blob": "46f97d6e6d3975bc419be044dcffd3518df128fe",
       "sha256": "f468ddaf199a1210e213f53b1f09fd27bbc004d27de74a236a17a7f2e4813fa5",
       "bytes": 2168,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/analyze_saved.py",
@@ -18062,7 +18062,7 @@
       "h1_blob": "5f589ef7627d156af955dada87cfac92e895245f",
       "sha256": "c9db7a52c163c18e46acba2107067886cd14091e8ca17aab7d43dbaf8f0b2f17",
       "bytes": 9911,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/build_csv.mjs",
@@ -18080,7 +18080,7 @@
       "h1_blob": "0cc1e85cedf80545235a7a88208ad39dfb2face1",
       "sha256": "0c78a64521ab933c8362c11794a621ec08718d42971a36cff51011384b67d062",
       "bytes": 30010,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/csv_authoring_check.json",
@@ -18098,7 +18098,7 @@
       "h1_blob": "b243d0cc67bca7ce81eb5344e5f313e505601e79",
       "sha256": "3da299195d28e2328ec9a2f220f68ab554ca205ee1553a4e7f2bc6447b477ac9",
       "bytes": 250476,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/qualitative_summary.json",
@@ -18107,7 +18107,7 @@
       "h1_blob": "eb4941cd457c6c878d52341ece48c7d40a86ca0f",
       "sha256": "1a1d690c54a9fc5a32678b5797e50724dfa424f0878841a2796ddd5a0e7bbe25",
       "bytes": 1624,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/quantitative_summary.json",
@@ -18116,7 +18116,7 @@
       "h1_blob": "04177dd65d610d2e1522c0fbcbb59313767b8f08",
       "sha256": "2b0f1cc74eb8843f3774a6cd92c4001bd989a5299f6fa346d670f7b1f193e096",
       "bytes": 13787,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/refine_review_wording.py",
@@ -18125,7 +18125,7 @@
       "h1_blob": "2b03fbc69eec2e61c852745779e1e9ad62449bf3",
       "sha256": "02d0efc5fc0040c43a00ff406b64e779e0121961467303a18eff20fce305e94e",
       "bytes": 1267,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/rag_e6_v3/error_analysis/verify_deliverables.py",
@@ -18134,7 +18134,7 @@
       "h1_blob": "342457535809871298c353becf8b66ad28af8a3d",
       "sha256": "fc975386486e4e4b509ff699e5b7fa8ae4179e26e9aaff5dc6bc55c157c25fe7",
       "bytes": 4921,
-      "status": "BLOCKED_FROZEN"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/rag_e6_v3/evaluation/baseline_verification.json",
@@ -18197,7 +18197,7 @@
       "h1_blob": "f5f342398280926ee47619a7a87403d65f019e01",
       "sha256": "fd6a041ac07201f702a0927628d01e58060ed4e5ed3d1ab5cc0b9d468a251893",
       "bytes": 8109,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/rag_e6_v3/scripts/extract_features.py",
@@ -18224,7 +18224,7 @@
       "h1_blob": "11bb3f1f65bab3579636bf487a98c9a244c503fd",
       "sha256": "84a84df1a75563a57286291276abe91e6b490327a7ca662810c3c410ce0a6cb0",
       "bytes": 3255,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "RAG/results/rag_e6_v3/scripts/prepare_inputs.py",
@@ -18287,7 +18287,7 @@
       "h1_blob": "39fc76bdc46edc6dc177e2eb55befdc8ee1379cd",
       "sha256": "1baf15f82db5c2927665b6256beded9157082c68922954c965fb6f59ffc1adce",
       "bytes": 138,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/.gitignore",
@@ -18305,7 +18305,7 @@
       "h1_blob": "47bbbccf0561f5ff4182f74d956d92094886e6b0",
       "sha256": "4b349aaf37ef664eecbfb2e9979e0e02aada8bb06b064c96d41e8e0b29cd7ae8",
       "bytes": 5684,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/E6_V4_PROTOCOL_AMENDMENT_01.md",
@@ -18314,7 +18314,7 @@
       "h1_blob": "4d724ffd5986d22a6cdccdcb5a005bccd924da59",
       "sha256": "562023f2e837393eaad00156997946e592b04c9f4d711e1bf703c6b3c6ce288e",
       "bytes": 7933,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/E6_V4_RESULTS.md",
@@ -18323,7 +18323,7 @@
       "h1_blob": "ae81877f1861adf2affe28f898e1712174662f73",
       "sha256": "7cf4859412d839cdf969c40f9622deca451cf5550b4e4f0869e1635a50357992",
       "bytes": 12321,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/PUBLICATION_SCOPE.md",
@@ -18332,7 +18332,7 @@
       "h1_blob": "5c058e721834482f3c1e4597629c299d04be74f2",
       "sha256": "02c27fa1e8daed1e207b8dd37739b745a7838d4df1b9822d6b7065ac2dccc227",
       "bytes": 3483,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/E6_V4_COMPATIBILITY_ANALYSIS.md",
@@ -18341,7 +18341,7 @@
       "h1_blob": "64b59ae6fd3a9dfe180aed1a6acd3cc5ca77b8a6",
       "sha256": "60b9b9cca1da8766a38c1beef5e04ec04896e411834861a5c1b99a71e255c9ff",
       "bytes": 18251,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/diagnosis_manifest.json",
@@ -18350,7 +18350,7 @@
       "h1_blob": "4ff243efa6848cdaf9fff25a02b39115458f0e3e",
       "sha256": "cf4aa44d79e9b85360d8f8b4ef29e560967894a453a59134dc26ace3f1e8cf88",
       "bytes": 225273,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/final_integrity.json",
@@ -18359,7 +18359,7 @@
       "h1_blob": "b8fd71033fe84ed57c44253f97c0886a68308e51",
       "sha256": "c4dc892c1a5078dd610bffa55f6fd0ec5535a3b798ef45af1bd15a7c7aaf5864",
       "bytes": 900,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/finalize_diagnosis.py",
@@ -18368,7 +18368,7 @@
       "h1_blob": "9691947f3249d8cd1c5fe3e2f4277845c9cd5482",
       "sha256": "669bc9b5afbd00739177c2b1d587e0dde2645838a0538af52bae6c0623f7ecd2",
       "bytes": 21745,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/initial_integrity.json",
@@ -18377,7 +18377,7 @@
       "h1_blob": "1e842911b502c3787f63fd8f56caa2ce7d0d4a36",
       "sha256": "ba992cdb03a53093dd05370e0112d1376380be07631b263887dde54b1c32c01f",
       "bytes": 965,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/minimal_current.json",
@@ -18386,7 +18386,7 @@
       "h1_blob": "7117236075852e2ba6dc6c18ddf6d10a56493ad0",
       "sha256": "29d91c9141af73dfaf6a667c1e59deb536834efe0ea2ca59b00ce50c42dcf2dd",
       "bytes": 8683,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/minimal_pinned.json",
@@ -18395,7 +18395,7 @@
       "h1_blob": "2660915f222c5d4ca0fa89e4c63e899005f7da2d",
       "sha256": "9227cc8b7b0896965d39329f60189cc284460d52eb62d63365b6438fd9bc467e",
       "bytes": 6445,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/official_pinned_test.json",
@@ -18404,7 +18404,7 @@
       "h1_blob": "f1a2bf7a34beaf3c5f2b2d225e1d151f73a0fd64",
       "sha256": "c3bd7dec971efea6e1e2d56e6bb37c706848c4126b275e97b17e68f0ea0c011d",
       "bytes": 2008,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/official_sources.json",
@@ -18413,7 +18413,7 @@
       "h1_blob": "f5c30623a202b9398b89a8f69bb5a78f178b16bf",
       "sha256": "4b4bb2b7f1b6949f78d43fb49842fc8ea7fa8ca733dcb397f408049b22462e35",
       "bytes": 807,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/package_provenance.json",
@@ -18422,7 +18422,7 @@
       "h1_blob": "3e570e93276fa8eadf07af05925a16ba7b6814d1",
       "sha256": "2a8525f82a054d1203b75f312392dea7cda191bf4cef10afd189ce9b660d54d7",
       "bytes": 1022,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/compatibility_analysis/reproduce_minimal.py",
@@ -18440,7 +18440,7 @@
       "h1_blob": "994b758577db43224cfe708f02a2afc022837e5b",
       "sha256": "768bd94e8de1a9de7099fc30552aec315c33204f69613d9f79a9306ce5e80c2f",
       "bytes": 4236,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/baseline_verification.json",
@@ -18449,7 +18449,7 @@
       "h1_blob": "e28d0f657a843bf95edf93d00fab2b345159f321",
       "sha256": "0d5d68c627dc112d9b81aa577833c1818823a6e72619a2167049bf00a44226c0",
       "bytes": 490,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/blocked_state_manifest.json",
@@ -18458,7 +18458,7 @@
       "h1_blob": "c7e06ddc13c5eb30159f4872b9d24a660ebf99d8",
       "sha256": "9d529b798461e48fac2810d595bb1795a950935fabea5c232ee01212364e9d89",
       "bytes": 14361,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/feature_schema.json",
@@ -18467,7 +18467,7 @@
       "h1_blob": "be367d136a09a34781c3d554a6116abf22b5f1f5",
       "sha256": "bb090a68a9262ce6f39cc55d6400e0a29c7499540601f1232cc20ace0f492df0",
       "bytes": 2693,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/input_checks.json",
@@ -18476,7 +18476,7 @@
       "h1_blob": "7a6abb95ca6f47b4ad461a7cb4cf16351eb8e05e",
       "sha256": "af02651659deccf934b33e9a21cd637b14646b343e3848770b3af3da2bc082b7",
       "bytes": 1522,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/input_manifest.json",
@@ -18485,7 +18485,7 @@
       "h1_blob": "01a3c18a987f2ea0cdf53ad53b5a397f6533d972",
       "sha256": "91b41bd81a83acefd11ce72a90bb60d9a5193f0a0a3d55fb75b09de5699b501e",
       "bytes": 250844,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/integrity_audit.json",
@@ -18494,7 +18494,7 @@
       "h1_blob": "8ac20763b2559206446068d75b2e27f66f9e3568",
       "sha256": "54e21130c4e9bf15cb6e7216a8c70075760de5b851bb4fbf509e48396fa98c49",
       "bytes": 382,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/run_config.json",
@@ -18503,7 +18503,7 @@
       "h1_blob": "8f371701902546a507b064f818258301c42a0d6b",
       "sha256": "148e5e6ecd722e035d231b6819baa1f94faee621debfe6bdf4582796aa895a55",
       "bytes": 3902,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/structural_contracts.json",
@@ -18512,7 +18512,7 @@
       "h1_blob": "1f19d6a0f4bc40d47885c1d900a23e892698c335",
       "sha256": "712cec8f2bcb76a835f7ef457b76f5e69843d4de3f34306a69ba9b65ef58acdc",
       "bytes": 113,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/config/structure_spec.json",
@@ -18521,7 +18521,7 @@
       "h1_blob": "a784df0e6535448a8670ec8c3c52371ff3530f01",
       "sha256": "d86d5c1a00eb3c7eab22b4db983a2f50127c4a7b7aa2789119393e2f01f0b674",
       "bytes": 1321,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/evaluation/e6_v4_metrics.json",
@@ -18530,7 +18530,7 @@
       "h1_blob": "39c1b209e14aecd955fdb2a8c57991eefc434de0",
       "sha256": "91b27deeb82880d28b1c1abecf67e108ba303c555af82cd15b3eb54fd49960a4",
       "bytes": 5871,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/E6_V4_RESULTS_PHASE1_ARCHIVE.md",
@@ -18539,7 +18539,7 @@
       "h1_blob": "544a8cfd5476e49d53c399145dadb2c05db78357",
       "sha256": "8a77e55fe64ca9d1d11d153dd4d2a94b1435c0869e9bf603c477b77e0959ce27",
       "bytes": 8755,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/baseline_verification_final.json",
@@ -18548,7 +18548,7 @@
       "h1_blob": "4c7a5d81be93d5a5ffccde1dd87a0d017150caaa",
       "sha256": "30f18efb71881a4f1932dcdcf595f926e995a7e55592c9c2d7d146661e77d429",
       "bytes": 225,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/common.py",
@@ -18557,7 +18557,7 @@
       "h1_blob": "963f0f10bf7c3553171a4cef7eb4403e3462cd30",
       "sha256": "a9eb060411adab810afda7719234f41b51d56b17761c96f0d27a78453686c748",
       "bytes": 4406,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/completion_manifest.json",
@@ -18566,7 +18566,7 @@
       "h1_blob": "82bf1251fb7facd1b87b9e485ffdd58849ac19ce",
       "sha256": "f4fbb80716ada6f67031a0c0a51a21db4c634c531dbc32aa941b980009c28d24",
       "bytes": 9494,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/evaluate.py",
@@ -18584,7 +18584,7 @@
       "h1_blob": "20893853dc670a6f1645c733643b2f9182d4aa8e",
       "sha256": "abf7750ed35ba9d07eb8ed0dac410af17e8b7c99bb0b9dd3881bb77041729fa2",
       "bytes": 164,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/evaluation_started.json",
@@ -18593,7 +18593,7 @@
       "h1_blob": "9fa3d47327a6d4109d265d5ced7489a28d653431",
       "sha256": "7a503fceed5af783e0b9c8a5321e2995e1ff1d797f8f345d9cc084b4f0086962",
       "bytes": 227,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/extract.py",
@@ -18611,7 +18611,7 @@
       "h1_blob": "fbd3ef298791c3b6b4158184bd311a16d7687d1d",
       "sha256": "2c1be281970f4c35aaf021770e184a6cd98837d6fc05d4f55dfadc6b69a44a2e",
       "bytes": 1997,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/extraction_started.json",
@@ -18620,7 +18620,7 @@
       "h1_blob": "04bb426b6c103e48bbb4dc3e968c8ec46fccb730",
       "sha256": "c2c8813184cda46dd4c8623051f895afc7366f6e07b5d0c2a005c10cd1c36331",
       "bytes": 169,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/feature_freeze.json",
@@ -18629,7 +18629,7 @@
       "h1_blob": "7a547f58351b984effa2ed4389020dd56ca22e0f",
       "sha256": "c5b274bdb65df0d2e9f9c35438e23b3ff86a816bad0cf3a68907e4194ac37f91",
       "bytes": 583,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/final_integrity.json",
@@ -18638,7 +18638,7 @@
       "h1_blob": "2089114fdfe084170df2fcbf6d7e740dd2a753ed",
       "sha256": "3340350ffeecd568276c46266edaa9c6fc315cf1da63d050b7024c62a740fe0b",
       "bytes": 1872,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/freeze.py",
@@ -18656,7 +18656,7 @@
       "h1_blob": "f5758434bb6cff5610f7e92c21d83723a37d352c",
       "sha256": "77a523fa0c1ff333d5d8d9737fbf702ea1a6b35fdf327ca9cb0f132fb314b0e0",
       "bytes": 689,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/report.py",
@@ -18674,7 +18674,7 @@
       "h1_blob": "a4456c192479767c523a95c4583b528fce38d298",
       "sha256": "f3fd230a47dca1e401e5d93354e4d889b264a9fa54ed6c1e1e3dd6542f3694ab",
       "bytes": 21390,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/smoke.py",
@@ -18683,7 +18683,7 @@
       "h1_blob": "e062aedf1e27b962a5c05f490b18ea52487dd858",
       "sha256": "31279008bff896329d86edf91f89468c03fcdbee2f84ed5ffbf855eb442fdeb6",
       "bytes": 2045,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/execution/synthetic_contract.json",
@@ -18692,7 +18692,7 @@
       "h1_blob": "1946e66cdd47c01d55fdbc29dacf908b5fa8d7fc",
       "sha256": "0282d979f25fc84858cd8256353d323547c86c141502614f3702e6c42d4a575f",
       "bytes": 3702,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/packages/LICENSE.bert_score",
@@ -18773,7 +18773,7 @@
       "h1_blob": "bad2db930d7d55593355f72574ff15f792df2ae7",
       "sha256": "86ae33ec6e044069ef15171138c2c3a8f555e88dee092d72984ca4de2a8ecf49",
       "bytes": 4494,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/publication_manifest.json",
@@ -18782,7 +18782,7 @@
       "h1_blob": "7c2ab867b04c0c9ef246178470e22a4c5dbdbf4a",
       "sha256": "5d80d0b931a3073ffafb2b4d01c68bc8424025f924381b7702d9c7abad13805b",
       "bytes": 5077,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/publication_verification.json",
@@ -18791,7 +18791,7 @@
       "h1_blob": "c965703f99704ee04c55ca1ad0eec718743fdbdc",
       "sha256": "fec6660774515384b5aea1899944dc529b2d96c34e95c510902086b26fa04259",
       "bytes": 1229,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/scripts/check_compatibility.py",
@@ -18809,7 +18809,7 @@
       "h1_blob": "6b95f436528ed37a9fc68e1e463c44190b93d04b",
       "sha256": "fd871630b4d6be60b4af292943c9de976e9d31a9d111b13fd56c317058694009",
       "bytes": 21000,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/scripts/prepare_inputs.py",
@@ -18818,7 +18818,7 @@
       "h1_blob": "22c43e7f16875a21b82917176b6487dfe161e649",
       "sha256": "cc12e3e7bed85cedf69de7aa1b44d67d6bad3eb69ab4539db702bc281b3e663a",
       "bytes": 3080,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/scripts/structure.py",
@@ -18827,7 +18827,7 @@
       "h1_blob": "089666d4295d52d80dd63e9f5d74388752b1d824",
       "sha256": "755085b489308793ff7f2632f99fd3ee3a8025cf7fa0e7aa1480c69dcaa2232f",
       "bytes": 3260,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e6_v4/scripts/v4_common.py",
@@ -18836,7 +18836,7 @@
       "h1_blob": "067fb324ce7b8c280fa75a1a9be65651936dce21",
       "sha256": "25630fa00a18a88d8205fe56ec19c4f1e06d512b7fb8a2b574c2a6cab6230215",
       "bytes": 3454,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e7_agentic_v1/.gitattributes",
@@ -18845,7 +18845,7 @@
       "h1_blob": "39fc76bdc46edc6dc177e2eb55befdc8ee1379cd",
       "sha256": "1baf15f82db5c2927665b6256beded9157082c68922954c965fb6f59ffc1adce",
       "bytes": 138,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e7_agentic_v1/.gitignore",
@@ -18890,7 +18890,7 @@
       "h1_blob": "a1e502b7ad070c45d1c004ab5f98d79a591d1928",
       "sha256": "8fba75470c8d197b10afbc8d587873d62200477eababfcb990e7b9d27ef9e11e",
       "bytes": 3477,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e7_agentic_v1/config/access_contracts_repaired_v1.json",
@@ -19133,7 +19133,7 @@
       "h1_blob": "7e3f77520fbed09c65c46378d3793be88e0c5b4a",
       "sha256": "443138b7d4eeddc097336a26f3deda446a425ecba864690996dc696010d1169e",
       "bytes": 3783,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e7_agentic_v1/publication_verification.json",
@@ -19142,7 +19142,7 @@
       "h1_blob": "0223f04b20628f3803d27a629532a06cd1fb3530",
       "sha256": "e63ecd26166955b52bef3d0f0016ab301d0fffc1b88727a515c7c940dd89fabf",
       "bytes": 1115,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e7_agentic_v1/scripts/diagnose_imports.py",
@@ -19241,7 +19241,7 @@
       "h1_blob": "b2213a139093e9aec0820ce8d86d837daa465eee",
       "sha256": "45facdffa0826e47a0f2bead91b9fbb7476a27b7c3ce3b3cfbbc1b30a991cc08",
       "bytes": 286,
-      "status": "BLOCKED_DEPENDENCY"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/.gitignore",
@@ -19259,7 +19259,7 @@
       "h1_blob": "6d6feebcd8c543638c7d7c381448ff461e2ec468",
       "sha256": "c807ba195c5952c80bea2563041d78934c7ea9ffd2d1f9439d7d36ba7a2d6a79",
       "bytes": 3758,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/E8_PROTOCOL.md",
@@ -19286,7 +19286,7 @@
       "h1_blob": "f7a08875e92ffecc7fce3f3c565c29f9f7b5b32b",
       "sha256": "ada621fd62238ab5394542a517e3be0a76bc087c034cf7dd8da479d935b4c935",
       "bytes": 6679,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/config/baseline_verification.json",
@@ -19421,7 +19421,7 @@
       "h1_blob": "2bac928a2311a0b8360e2146b6a6135724c9bc93",
       "sha256": "b434b58c075a5e31163ab31c438cecb4de1bcd8652a8fab69cdf4ec4d950d94e",
       "bytes": 5669,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/publication/artifact_inventory.json",
@@ -19430,7 +19430,7 @@
       "h1_blob": "d0ec3e90915c5b90fa37161278ca0c52733b6773",
       "sha256": "661d79a9dc9a155d80fcd4e8f07fe3d8ec9749794b03f66b4a43313d0b69ede5",
       "bytes": 10565,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/publication/audit_summary.json",
@@ -19439,7 +19439,7 @@
       "h1_blob": "fd33fb1a6a1d50de6be3799da1b0a6a2d9dba169",
       "sha256": "8b8f217d7a814ad73a3fbc11c23e399b6e2cd8847524164c69c0133a3cf20d99",
       "bytes": 2710,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/publication/configuration.json",
@@ -19448,7 +19448,7 @@
       "h1_blob": "a4c3fac86bfdc97188831f2f21a2ce0eb874e35d",
       "sha256": "bd59629db679e1fd81a2f1a8db649238b7513e5bc902ceaeda57bee18138a9fd",
       "bytes": 5842,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/publication/inner_scores.json",
@@ -19457,7 +19457,7 @@
       "h1_blob": "7de9ffd993fe1808076f59c72a66122134223cd9",
       "sha256": "3237ba473b72f742202c5124256f07d2ac982c6c82ec96fe02403d88d0028717",
       "bytes": 5595,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/publication/posthoc_e8_vs_e6_v3.json",
@@ -19466,7 +19466,7 @@
       "h1_blob": "9e4bf4490292f4d91a8541118bbcc63719ff1795",
       "sha256": "e2bba771ca28244c2b899c58f16d573dd673cf19b18700d0632e635c5cef96df",
       "bytes": 5429,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/publication/selected_configurations.json",
@@ -19475,7 +19475,7 @@
       "h1_blob": "dfdbca508d010e5e04ba6ce0846812857ebadef4",
       "sha256": "bb33cc9d219afcdaaf1080d4120a9ce8129b150598774d2ab2cfffaf9347569f",
       "bytes": 10200,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_e8_rf_tuning_v1/scripts/e8_common.py",
@@ -19556,7 +19556,7 @@
       "h1_blob": "fd95524ab61008a48dbc85f707e20d0f1d8e08d7",
       "sha256": "90ce6038e71ffc9c21d964f4e76ffdee0e948367b5cac8009519dc9a71ad3229",
       "bytes": 23806,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/MODULE2_PHASE_A_RESULTS.md",
@@ -19565,7 +19565,7 @@
       "h1_blob": "a3a4e7494d3b5db054a12cc108f608d78fc1627a",
       "sha256": "fd377c10900acb5f9cb01276041aeff3731824ce824f21c1be1f407509b0a896",
       "bytes": 10488,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/annotation/MODULE2_ANNOTATION_GUIDE.md",
@@ -19574,7 +19574,7 @@
       "h1_blob": "b6ffe54f8dc346e0b70fd34eabc88ccb51321e55",
       "sha256": "b26441828507dcb7dab2dae530a48a22db1bab1f1b0b0b2d4a29782d1f23b64f",
       "bytes": 3212,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/annotation/MODULE2_PHASE_B_PREP_RESULTS.md",
@@ -19583,7 +19583,7 @@
       "h1_blob": "f0691c6806f8e5ac7f8a26802a01375b63ffce65",
       "sha256": "4218cf5ae44f6d4e3b3d7593f6fa1f37d2287c415d8ba995da58616137189d5f",
       "bytes": 3538,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/annotation/module2_annotation_pool_manifest.json",
@@ -19592,7 +19592,7 @@
       "h1_blob": "c802a283f228deaeca4d6564631cf0ff8bd79fd7",
       "sha256": "0244938b34ae37ddf09c365ed775316ed23b0fdcbf589ea010d82b682c1aa873",
       "bytes": 10894,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/dense_cache/dense_cache_manifest.json",
@@ -19601,7 +19601,7 @@
       "h1_blob": "8f7fa98abc61237736289c373182de5aec3c32fb",
       "sha256": "0fce7a0f4a2f7c6e3af3d59863546b768a99a17abc07be167bc05826d758f5b2",
       "bytes": 4728,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/evaluation/MODULE2_PHASE_B_RESULTS.md",
@@ -19610,7 +19610,7 @@
       "h1_blob": "f902a3b47dbf5d6399f246c038e44a9e4e0e950a",
       "sha256": "16e5e95c00a7ca252e810fe2a387a7658c459076f25e016ade01b950876ef5d5",
       "bytes": 2908,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/evaluation/module2_dev_retrieval_metrics.csv",
@@ -19619,7 +19619,7 @@
       "h1_blob": "8eb9122aa4037a5ef9ba7cd9016fc19d79f197e8",
       "sha256": "1b0d29b882105282ed3ba42c2b35294ee92ab409800f53f86cf9948535c0c2dd",
       "bytes": 2257,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/evaluation/module2_selected_retrieval_config.json",
@@ -19628,7 +19628,7 @@
       "h1_blob": "180f3ad4dd1b2a59f4530499f3f0a2cc5824b5a2",
       "sha256": "f9e8b35417222a97a29c17cd4d27b3140c9658f1c1ef84068eb61b72d63f572c",
       "bytes": 1838,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/holdout/MODULE2_HOLDOUT_PREPARATION.md",
@@ -19637,7 +19637,7 @@
       "h1_blob": "19244f49d6e405feb8876c382f940859b7703838",
       "sha256": "6399bda978a48b27cf6de04773858406c5d4b41df22cc69d56dc7d8dc1eab0d6",
       "bytes": 1844,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/holdout/MODULE2_HOLDOUT_RESULTS.md",
@@ -19646,7 +19646,7 @@
       "h1_blob": "f1cc9cd0ae791a58eb33b738878f9510407bbf3a",
       "sha256": "d2f28c1f816c32078aa18091976f27b4f631fc9bfea2e6e306fdcdd81243e4cc",
       "bytes": 3056,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/holdout/module2_holdout_frozen_manifest.json",
@@ -19655,7 +19655,7 @@
       "h1_blob": "ad45b2524c270f2a0139942968ad6bbedf64b82c",
       "sha256": "0cbaac9aaed20da8b3c397447702fe72efff1a8c0c1005a5081da6970a75c8c2",
       "bytes": 8805,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/holdout/module2_holdout_metrics.json",
@@ -19664,7 +19664,7 @@
       "h1_blob": "45e6a3dfb6eec3047e0c5b9ba6b5f642cfdda204",
       "sha256": "07d7a42987d78fab220ac2c205832c80b30592420d97708ee60020e76f0c0f2f",
       "bytes": 7101,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module2/module2_input_manifest.json",
@@ -19673,7 +19673,7 @@
       "h1_blob": "8c11bdffd73355bce3a9d9ac9ede18a0e0a41779",
       "sha256": "b8152b6c1cd90139bc81ec9a2c5c82643e20ae7e64c34a179409e64478894dcd",
       "bytes": 4308,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/MODULE3_FINAL_RESULTS.md",
@@ -19682,7 +19682,7 @@
       "h1_blob": "f1860e3af1ad657b28bf3278bf7610e895f7fa31",
       "sha256": "5fa251d03f9940d0749443346fc02de8370cd61a2825a8c6b4574d78dcee14e7",
       "bytes": 13113,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/MODULE3_PHASE0_FAILURE_AUDIT.md",
@@ -19691,7 +19691,7 @@
       "h1_blob": "58234f649bb5b321be609a32828ca66f2f590bf3",
       "sha256": "b89d2420866dc31f279f5ee5a8c2fb1a5bc45e6ede7c75aa805613272a14b606",
       "bytes": 20976,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/MODULE3_PHASE1_RESULTS.md",
@@ -19700,7 +19700,7 @@
       "h1_blob": "b073c549a7f486124ad4e6fac516627a09bbf8fc",
       "sha256": "00e8ae47d5ee6ddc98c568afe8fce6278a31244cc75c73bf7ebc37510c9f17bd",
       "bytes": 11781,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/annotation/MODULE3_PHASE1_PLAN.md",
@@ -19709,7 +19709,7 @@
       "h1_blob": "a8e300c5219f02dcad6fa66601d03a425bca3f5e",
       "sha256": "41144829f1634b65d3dc2faf808bb9701ecbe61d45b3cb37cd11a498d75b79db",
       "bytes": 12743,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/phase2/MODULE3_PHASE2A_PLAN.md",
@@ -19718,7 +19718,7 @@
       "h1_blob": "ea4fb1a8c3cfb80401a7ab0c24741c19142b8120",
       "sha256": "77766ae90d2b5c7d75d9ff64a8f251bf3ab51c2609da61e030506676ec36d3d3",
       "bytes": 13543,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/phase2/MODULE3_PHASE2A_RESULTS.md",
@@ -19727,7 +19727,7 @@
       "h1_blob": "3d0e5d1739adf568a8dbbf90c6b9bfde02dfcb75",
       "sha256": "b8bcfee1b093e776e8cbfd3fbee6a2e5b6fae9dd5eb733b277a31b98ec6c2d30",
       "bytes": 14680,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/phase2b/MODULE3_PHASE2B_PLAN.md",
@@ -19736,7 +19736,7 @@
       "h1_blob": "9e069c89aac05d982891845c6e74c837184dfde8",
       "sha256": "966e0ce44296429c9d5b2f147b485a1a3e29d49693bdfa41b0f3fb5d327d7733",
       "bytes": 13297,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/phase2b/MODULE3_PHASE2B_RESULTS.md",
@@ -19745,7 +19745,7 @@
       "h1_blob": "f2237658a3050fa6282554321b307385453eb467",
       "sha256": "82701d12b8fd6d1a7645275b7f417df4a4bbd471e836239e053868c576decff4",
       "bytes": 9190,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module3/phase2b/external_kb/MODULE3_PHASE2B_SOURCE_MANIFEST.json",
@@ -19754,7 +19754,7 @@
       "h1_blob": "b3ce5defb2882b4843546624959f99581009e97d",
       "sha256": "7376b6c104dbed70926d1f3abf18f69073ef571a9604cd1ec9f47a410c623324",
       "bytes": 16283,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/MODULE4_FINAL_RESULTS.md",
@@ -19763,7 +19763,7 @@
       "h1_blob": "c610f84a672c158c05d2750a16ae5996b50f4064",
       "sha256": "58b37f56302d47204a8202963c217931e8fdad8c6134d91bc5ae36349ddcfb74",
       "bytes": 3044,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/MODULE4_OVERNIGHT_AUDIT_MANIFEST.json",
@@ -19772,7 +19772,7 @@
       "h1_blob": "fc9860c28266641e1a10bfa3be5dc05361f46212",
       "sha256": "50304eccda12be54d3d5227f4b5fc841367aac47412043873949416380a03f51",
       "bytes": 3175,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/MODULE4_OVERNIGHT_RUN_STATE.json",
@@ -19781,7 +19781,7 @@
       "h1_blob": "1573b54d12a1b87acdd6fbfe248c1017e7d94fed",
       "sha256": "8009630834583f94675f93428c3eb2d910cfc089ff4cdbf0860a0799c0addf90",
       "bytes": 2025,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/MODULE4_RAG_ASSISTED_FUSION_PLAN.md",
@@ -19979,7 +19979,7 @@
       "h1_blob": "4324fa258b7cbb077dc12b2db1c7640d2bbef1cf",
       "sha256": "1965a4039f25e4c36853fc8c10713265da9ccdecb35b523bd2b4a6a941ec8c2f",
       "bytes": 1981,
-      "status": "CURRENT_TEST_PATH_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/results/rag_module4/continuation_v1/schannel_run_v1/SCHANNEL_CONTINUATION_FINAL_REPORT.md",
@@ -20105,7 +20105,7 @@
       "h1_blob": "c2a288dbc9f956012c118a67130489366d50de4c",
       "sha256": "c7e5d9398c67bebc93dd5d418591da94afb34923fdf6b2a522a6e3579fe6405a",
       "bytes": 3464,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_ADDENDUM.md",
@@ -20114,7 +20114,7 @@
       "h1_blob": "86cb04ede907b57a2cf943632ae345ccfabd8bea",
       "sha256": "bcb4e866ecd43e9072d98284421d6e194a16c8cc5c41e196d686cd285906de91",
       "bytes": 2243,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_MANIFEST.json",
@@ -20123,7 +20123,7 @@
       "h1_blob": "b76fae16c651a5839bf0784110af1bddabab3a16",
       "sha256": "771fc939502ffa7caee1100a2077a81132d877b0adfb6d2537d0170644418fc5",
       "bytes": 4756,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/static_protocol/MODULE4_STATIC_PROTOCOL_REPORT.md",
@@ -20132,7 +20132,7 @@
       "h1_blob": "451526558ef54317689322bba84f3a94e9e67294",
       "sha256": "a53fc398e19cc62005e3ca2ae11a608f1bcfe37e804ea7cb44cdd1c00dc43e7d",
       "bytes": 3799,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/results/rag_module4/static_protocol/MODULE4_WORDNET_TRANSPORT_RECOVERY_ADDENDUM.md",
@@ -20141,7 +20141,7 @@
       "h1_blob": "feb374d78f35fea2c23f03fd2552a6fb3025bcbb",
       "sha256": "09b809b0ce91bb184ac3d2e79840f443b63ebd75b8d988a7b4a45e27cab8e9d1",
       "bytes": 3114,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "RAG/scripts/module2_dense_cache.py",
@@ -20150,7 +20150,7 @@
       "h1_blob": "acad9ef644955cfd6a548d3774335b158c8452f2",
       "sha256": "7c0d0b79b83fb902459b59a47238d3f0dac4a180eefbc123680170a42db5f1ae",
       "bytes": 42539,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/scripts/module4_build_external_lexicon.py",
@@ -20177,7 +20177,7 @@
       "h1_blob": "be6a6a4ab797397803d18d1cc7ef7c970a97f1c3",
       "sha256": "1a08e262667f1d2397999713810a5fccafb3188e6b79f93f33b9de13af8d7993",
       "bytes": 55118,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/shroom_rag_e5_module1_gemini_trial.ipynb",
@@ -20186,7 +20186,7 @@
       "h1_blob": "f479218506606d0c630088235108f09395e7301e",
       "sha256": "c15f0b4b8643df5d2d49a6ba816d90b5bcb17cd4c753fdf40dbdfe3be2f16ba7",
       "bytes": 62686,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/shroom_rag_e5_module2_holdout_evaluation.ipynb",
@@ -20195,7 +20195,7 @@
       "h1_blob": "978236b1c4e77a1be5cbfdd358d156f04a627277",
       "sha256": "486ace0cc857a12742f033953fe175ec24d996c4a5ba490f5828201dc2e37487",
       "bytes": 34318,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/shroom_rag_e5_module2_phase_b_evaluation.ipynb",
@@ -20204,7 +20204,7 @@
       "h1_blob": "b143430d1b919637d893aeaa8bcad11f223b9f50",
       "sha256": "93a1ebda95f21d774de71ef31e71a65c1e5ad3322dd70d603d962e80453a80a2",
       "bytes": 43753,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/shroom_rag_e5_module2_retrieval.ipynb",
@@ -20213,7 +20213,7 @@
       "h1_blob": "0c5a9ea4437c4f7211627512aa9558a0a731d6fb",
       "sha256": "1b247899c204b37307391ff62f8b6a68b94017dc600f449ac5cd63756613d798",
       "bytes": 67885,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "RAG/tests/test_module4_external_lexicon.py",
@@ -20222,7 +20222,7 @@
       "h1_blob": "a10116a17866707431160af570c4c830bbd9a285",
       "sha256": "4fc945af25cc454ccb37578ad3b92aa0406821660f3e50c10bcf85b533e3770e",
       "bytes": 6125,
-      "status": "CURRENT_TEST_PATH_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_confusion_matrices.csv",
@@ -20231,7 +20231,7 @@
       "h1_blob": "f3762da502663e33e2a26a1a3429784809d3d3b0",
       "sha256": "6ee0b9eadf7c95510e76cf4731898b4a882b258b1a2461f3d458b918d9031f98",
       "bytes": 968,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_e4_vs_e3_diagnostic.csv",
@@ -20240,7 +20240,7 @@
       "h1_blob": "4a56acc9fffae28fff3025e74eefbbc535254b40",
       "sha256": "d1f1eee95d44d69bd7be6e1772dca79e524a690208625def03570a2efc8e469c",
       "bytes": 491,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_experiment_metadata.json",
@@ -20249,7 +20249,7 @@
       "h1_blob": "b23ba07a45b90303996603e92771082fbb95c6b1",
       "sha256": "42a612e8da01c599fb1358966ac620b067ac8f75ae164780947d6cc437f0f025",
       "bytes": 10031,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_feature_importance_by_fold.csv",
@@ -20258,7 +20258,7 @@
       "h1_blob": "6d5d09cd2df73ef1124c475a4a5de5a1661bd61b",
       "sha256": "c565c89ba7ea8b827b9c785679b5447a8acb3d9d06129c9b4c7bd3d0197e6da4",
       "bytes": 11250,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_feature_importance_summary.csv",
@@ -20267,7 +20267,7 @@
       "h1_blob": "339a81de5d1ac7bb60f1ced155ecb6fddab34fec",
       "sha256": "d3ad12b4fdaf8ee46f788e4eef085fd5d24fd2c461fd23c74a5ed15c85707759",
       "bytes": 4911,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_fold_metrics.csv",
@@ -20276,7 +20276,7 @@
       "h1_blob": "acabe15207d2211752fd483d09c0ea42a1c7bbe3",
       "sha256": "5a620d0472e69042f8a57772976daeab7db81d3195a2b063befe9b1cc6d954f3",
       "bytes": 2766,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_integrity_audit.csv",
@@ -20285,7 +20285,7 @@
       "h1_blob": "ea378f6565af6dc76ffdfed82563bf916239c08d",
       "sha256": "d8be834546a1b9ea776b5d041ea1ffc43936aa5a146230630025351f40fa039f",
       "bytes": 2229,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_metadata.json",
@@ -20294,7 +20294,7 @@
       "h1_blob": "870f7c48ed570297e61dbcc23aa88b5f70ae0341",
       "sha256": "d7ba30161db6937cc05e2e6bfa1ca93e8005a9ca9194491a7f0e9d402f8e9e47",
       "bytes": 9646,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_model_selection.csv",
@@ -20303,7 +20303,7 @@
       "h1_blob": "71105a159d5f993b9cc6959512f7d3059ee00c46",
       "sha256": "598907d29203950414f5285732e98fb80f0751baae7c00fcd0c7b2c5de3ea597",
       "bytes": 275,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_overall_metrics.csv",
@@ -20312,7 +20312,7 @@
       "h1_blob": "8a9a26d024878051c4b3257132114fdb038851e6",
       "sha256": "3f20f975a9051aba712787173d926a1c2e0971ab2708453d9cb78e8580641852",
       "bytes": 1614,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_per_task_metrics.csv",
@@ -20321,7 +20321,7 @@
       "h1_blob": "46bf330ff79c657dcd0d55ba5174114f4556b330",
       "sha256": "e102c2dd31baaf7d3009e72a5453e33a14379f922cf155e36ef1c0af7bb9425f",
       "bytes": 1563,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_reproducibility_audit.json",
@@ -20330,7 +20330,7 @@
       "h1_blob": "d8b340ebc63be62f271728b25e8e2f10d921b89d",
       "sha256": "8f9f0e65bc02afd799664e14b90387cf92b37672e4695be237cdaeed0922822b",
       "bytes": 2262,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_results_summary.md",
@@ -20339,7 +20339,7 @@
       "h1_blob": "0c1a6b91ca0a10c89051f2498fac30eedf033909",
       "sha256": "23c22618ec31146fc6db3587cf10a8ac9b503be6ace018e4298832b3375d84c3",
       "bytes": 4318,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_cv_outputs/canonical_cv_selection_decision.json",
@@ -20348,7 +20348,7 @@
       "h1_blob": "c184edfb07b641735dde09e26e9473477be9df12",
       "sha256": "a7e54fd892cfe037b847f979a03b9c88a408040ea477c8a2909b017a2350ad01",
       "bytes": 3464,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_development_cv.py",
@@ -20384,7 +20384,7 @@
       "h1_blob": "19275e5373305a7a0b1d704e1bc1e9ba2206f4a3",
       "sha256": "243ccdbb668f279425e57ca77e3e72d6c087df4e43592d5daacace7ca2058fac",
       "bytes": 2546,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_feature_outputs/canonical_feature_extraction_metadata.json",
@@ -20402,7 +20402,7 @@
       "h1_blob": "c1ed0da4a39b4cd566a1770bdbdaf6598bcce1e6",
       "sha256": "87db0e56e522fdf960d650d0f1af1b903d74260b4ee197093fa91e9f8b4db6b7",
       "bytes": 1691,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_fold_balance_audit.csv",
@@ -20411,7 +20411,7 @@
       "h1_blob": "9dcf958f1da450be97f55306a0a84c66ebdc7997",
       "sha256": "1ff7c62630930c52e3d5b85b3288e905fd32ccc9b8b8fbd72fa05ab732f9976a",
       "bytes": 385,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/canonical_fold_generation_metadata.json",
@@ -20420,7 +20420,7 @@
       "h1_blob": "052ad242ff270728f6de887e2e265f0bb05e73b4",
       "sha256": "bca7da770d1748028ffb4cb89c597b6aabedf5a9ff97a07e0f9f6827a0f0d6b1",
       "bytes": 3456,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_IMMUTABLE_CONTRACT"
     },
     {
       "original": "codex/data/2. EDA/shroom_final_implementation/shroom_ensemble.ipynb",
@@ -20483,7 +20483,7 @@
       "h1_blob": "bfc07a4076591978e80902af97cdd3d9c412a9a9",
       "sha256": "53e60b98c7eba15aa3fde27559885bdae70bf936513dfff60fda5c6a01486d03",
       "bytes": 121801,
-      "status": "BLOCKED_FROZEN"
+      "status": "BLOCKED_HISTORICAL_METADATA"
     },
     {
       "original": "codex/evaluation_data_manifest.md",
@@ -20492,7 +20492,7 @@
       "h1_blob": "b5b2cec92fdea32793b224ed4d2c0ce80d6c8cde",
       "sha256": "6eeec9e41b24fefd43d69ee265b1a63a4d76fe7532575af6189b08e19eac7500",
       "bytes": 24377,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/evaluation_protocol_decision.md",
@@ -20501,7 +20501,7 @@
       "h1_blob": "5c378a424702d9406dd03fb0327fb55593f8b94b",
       "sha256": "526880ad1a13b0370b1fcae3519a10d12f9d236dffa3437856b9bdb0390c3708",
       "bytes": 15080,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/methodology_component_manifest.md",
@@ -20510,7 +20510,7 @@
       "h1_blob": "b3a766df14f884ae4d242642a71585c6adbbbf74",
       "sha256": "b452b36eb7e3c0366886e8ae769d9fc5043284d28c08297794d4c71004d971a7",
       "bytes": 17765,
-      "status": "RELOCATED_BYTE_IDENTICAL"
+      "status": "MIGRATED_BYTE_IDENTICAL"
     },
     {
       "original": "codex/prompt6_development_eda.py",
@@ -20519,7 +20519,7 @@
       "h1_blob": "2589218f611425d9174a9d37c93be0c4b4d7f3b2",
       "sha256": "0aa3d17f4009e31dc1dbd76a0f79c1e19142f1c8e51563b6bd136512b249dd0c",
       "bytes": 16575,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     },
     {
       "original": "codex/regenerate_canonical_folds_sklearn.py",
@@ -20528,7 +20528,7 @@
       "h1_blob": "dd23526502234cd5ea0b44768976ae3b0734d4ad",
       "sha256": "5853e0a7e98132f72e7a553e3513aaf71d872d1d7c65e8c09030d11ec1921951",
       "bytes": 13414,
-      "status": "RELOCATED_AND_ADAPTED"
+      "status": "MIGRATED_ADAPTED"
     }
   ],
   "libraries": {

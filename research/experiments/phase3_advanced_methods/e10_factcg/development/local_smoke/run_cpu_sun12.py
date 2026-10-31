@@ -25,11 +25,22 @@ HERE = next(parent / "RAG/results/phase3_e9_claim_verification/factcg_local_smok
 RECORDS = Path(__file__).resolve().parent
 GPU = HERE.parent / 'factcg_gpu'
 OUT = HERE / 'cpu_sun12'
-sys.path.insert(0, str(GPU))
-from factcg_common import MODEL, REVISION, require, sha, digest, write, validate_inputs
-from factcg_backend import chunk_reference, tokenize
+def _load_historical_helpers():
+    """Resolve original package helpers only after explicit execution.
+
+    Importing this relocated source performs no package/model imports.
+    Public source archives do not contain a complete original run package.
+    """
+    required = (GPU / 'factcg_common.py', GPU / 'factcg_backend.py')
+    if not all(path.is_file() for path in required):
+        raise FileNotFoundError('BLOCKED_MISSING_INPUTS: original frozen FactCG package required; no current-source fallback')
+    global MODEL, REVISION, require, sha, digest, write, validate_inputs, chunk_reference, tokenize
+    sys.path.insert(0, str(GPU))
+    from factcg_common import MODEL, REVISION, require, sha, digest, write, validate_inputs
+    from factcg_backend import chunk_reference, tokenize
 
 def main():
+    _load_historical_helpers()
     OUT.mkdir(exist_ok=False)
     wall = time.perf_counter()
     # Hash only the prepared portable package, not experiment results or folds.
