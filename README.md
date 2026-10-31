@@ -1,8 +1,29 @@
 # SHROOM Hallucination Detection
 
-This repository contains the implementation and results of my diploma thesis on **hallucination detection in natural language generation**, developed in the context of **SemEval-2024 Task 6 (SHROOM)**.
+**Diploma Thesis | SemEval-2024 Task 6 (SHROOM) | Model-Agnostic Hallucination Detection**
 
-The goal of this research was to investigate different approaches to hallucination detection and compare their effectiveness across multiple natural language generation tasks.
+This repository contains the research implementation, experimental protocols and recorded results of my diploma thesis on **hallucination detection in natural language generation**.
+
+Across **11 experiments (E1-E11)**, the project compares model-agnostic approaches that detect inconsistencies between generated text and its source or reference, exploring semantic features, retrieval-augmented evidence, claim verification and transformer fine-tuning.
+
+## Project Overview
+
+- **Research focus:** Hallucination detection across Definition Modeling, Machine Translation and Paraphrase Generation.
+- **Methods:** Natural language inference, semantic similarity, Random Forest regression, external knowledge retrieval, factual verification and transformer fine-tuning.
+- **Best development accuracy:** **84.67% (475/561)** with E10, using out-of-fold predictions.
+- **Best development Spearman correlation:** **0.7886** with E9-B.
+- **Technologies:** Python, PyTorch, Hugging Face Transformers, Sentence Transformers and scikit-learn.
+
+The E10 development improvement over E6-v3 was one additional correct prediction and was not statistically established as significant. The separate official-test analysis was retrospective, not an official SemEval submission or an independent untouched-test evaluation.
+
+## Explore the Project
+
+- [Experiments E1-E11](docs/EXPERIMENTS.md)
+- [Results and Evaluation](docs/RESULTS.md)
+- [Research Implementation](research/README.md)
+- [Diploma Thesis (PDF)](thesis/Thesis.pdf)
+- [Thesis Presentation](presentation/Thesis_Presentation.pptx)
+- [Reproducibility and Limitations](docs/REPRODUCIBILITY.md)
 
 ## The Problem
 
